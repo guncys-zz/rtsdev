@@ -1,0 +1,1429 @@
+<PhysX30Collection version="3.3.3" >
+	<UpVector >0 0 0</UpVector>
+	<Scale >
+		<Length >0</Length>
+		<Mass >0</Mass>
+		<Speed >0</Speed>
+	</Scale>
+	<PxMaterial >
+		<Id >1330154176</Id>
+		<DynamicFriction >0.5</DynamicFriction>
+		<StaticFriction >0.5</StaticFriction>
+		<Restitution >1</Restitution>
+		<FrictionCombineMode >eMIN</FrictionCombineMode>
+		<RestitutionCombineMode >eMIN</RestitutionCombineMode>
+	</PxMaterial>
+	<PxMaterial >
+		<Id >1330154256</Id>
+		<DynamicFriction >0.2</DynamicFriction>
+		<StaticFriction >0.2</StaticFriction>
+		<Restitution >0.6</Restitution>
+		<FrictionCombineMode >eAVERAGE</FrictionCombineMode>
+		<RestitutionCombineMode >eAVERAGE</RestitutionCombineMode>
+	</PxMaterial>
+	<PxRigidStatic >
+		<Id >1330160416</Id>
+		<Name >groundPlane</Name>
+		<ActorFlags >eVISUALIZATION</ActorFlags>
+		<DominanceGroup >0</DominanceGroup>
+		<OwnerClient >0</OwnerClient>
+		<GlobalPose >0 0 0 1 0 0 0</GlobalPose>
+		<Shapes >
+			<PxShape >
+				<Geometry >
+					<PxPlaneGeometry />
+				</Geometry>
+				<LocalPose >0 0 0.707107 0.707107 0 0 0</LocalPose>
+				<SimulationFilterData >4294967295 4294967295 4294967295 4294967295</SimulationFilterData>
+				<QueryFilterData >0 0 0 0</QueryFilterData>
+				<Materials >
+					<PxMaterialRef >1330154176</PxMaterialRef>
+				</Materials>
+				<ContactOffset >0.00025</ContactOffset>
+				<RestOffset >0</RestOffset>
+				<Flags >eSIMULATION_SHAPE|eSCENE_QUERY_SHAPE|eVISUALIZATION</Flags>
+				<Name >Ground</Name>
+			</PxShape>
+		</Shapes>
+	</PxRigidStatic>
+	<PxRigidDynamic >
+		<Id >1330176784</Id>
+		<Name >Head</Name>
+		<ActorFlags >eVISUALIZATION</ActorFlags>
+		<DominanceGroup >0</DominanceGroup>
+		<OwnerClient >0</OwnerClient>
+		<GlobalPose >0 0 0.707107 0.707107 7.95221e-009 0.792844 -0.00120433</GlobalPose>
+		<Shapes >
+			<PxShape >
+				<Geometry >
+					<PxCapsuleGeometry >
+						<Radius >0.02914</Radius>
+						<HalfHeight >0.269371</HalfHeight>
+					</PxCapsuleGeometry>
+				</Geometry>
+				<LocalPose >0.213642 -0.213642 0.952059 0.0479411 0.243543 -1.11428e-016 -0.115098</LocalPose>
+				<SimulationFilterData >131074 1 0 0</SimulationFilterData>
+				<QueryFilterData >0 0 0 0</QueryFilterData>
+				<Materials >
+					<PxMaterialRef >1330154256</PxMaterialRef>
+				</Materials>
+				<ContactOffset >0.000851562</ContactOffset>
+				<RestOffset >0</RestOffset>
+				<Flags >eSIMULATION_SHAPE|eSCENE_QUERY_SHAPE|eVISUALIZATION</Flags>
+				<Name >PonyTailRigidShape1</Name>
+			</PxShape>
+			<PxShape >
+				<Geometry >
+					<PxCapsuleGeometry >
+						<Radius >0.02914</Radius>
+						<HalfHeight >0.132419</HalfHeight>
+					</PxCapsuleGeometry>
+				</Geometry>
+				<LocalPose >-0.107247 0.107247 0.869304 0.470433 0.0707622 -0.105259 0.0380525</LocalPose>
+				<SimulationFilterData >131074 1 0 0</SimulationFilterData>
+				<QueryFilterData >0 0 0 0</QueryFilterData>
+				<Materials >
+					<PxMaterialRef >1330154256</PxMaterialRef>
+				</Materials>
+				<ContactOffset >0.000851562</ContactOffset>
+				<RestOffset >0</RestOffset>
+				<Flags >eSIMULATION_SHAPE|eSCENE_QUERY_SHAPE|eVISUALIZATION</Flags>
+				<Name >LeftHairA1RigidShape1</Name>
+			</PxShape>
+			<PxShape >
+				<Geometry >
+					<PxCapsuleGeometry >
+						<Radius >0.02914</Radius>
+						<HalfHeight >0.132419</HalfHeight>
+					</PxCapsuleGeometry>
+				</Geometry>
+				<LocalPose >-0.31726 0.31726 0.816418 -0.363532 0.0707623 0.105259 0.0380525</LocalPose>
+				<SimulationFilterData >131074 1 0 0</SimulationFilterData>
+				<QueryFilterData >0 0 0 0</QueryFilterData>
+				<Materials >
+					<PxMaterialRef >1330154256</PxMaterialRef>
+				</Materials>
+				<ContactOffset >0.000851562</ContactOffset>
+				<RestOffset >0</RestOffset>
+				<Flags >eSIMULATION_SHAPE|eSCENE_QUERY_SHAPE|eVISUALIZATION</Flags>
+				<Name >RightHairA1RigidShape1</Name>
+			</PxShape>
+		</Shapes>
+		<CMassLocalPose >0 0.275754 0 0.961228 0.154981 1.44811e-008 -0.0365978</CMassLocalPose>
+		<Mass >3161.11</Mass>
+		<MassSpaceInertiaTensor >32.0974 90.4932 111.025</MassSpaceInertiaTensor>
+		<LinearVelocity >0 0 0</LinearVelocity>
+		<AngularVelocity >0 0 0</AngularVelocity>
+		<RigidDynamicFlags >eKINEMATIC</RigidDynamicFlags>
+		<RigidBodyFlags >eKINEMATIC</RigidBodyFlags>
+		<MinCCDAdvanceCoefficient >0.15</MinCCDAdvanceCoefficient>
+		<MaxDepenetrationVelocity >1e+032</MaxDepenetrationVelocity>
+		<LinearDamping >0</LinearDamping>
+		<AngularDamping >0</AngularDamping>
+		<MaxAngularVelocity >7</MaxAngularVelocity>
+		<SleepThreshold >5e-007</SleepThreshold>
+		<StabilizationThreshold >24.059</StabilizationThreshold>
+		<WakeCounter >0</WakeCounter>
+		<SolverIterationCounts >
+			<minPositionIters >8</minPositionIters>
+			<minVelocityIters >4</minVelocityIters>
+		</SolverIterationCounts>
+		<ContactReportThreshold >3.40282e+038</ContactReportThreshold>
+	</PxRigidDynamic>
+	<PxRigidDynamic >
+		<Id >1330177152</Id>
+		<Name >PonyTail</Name>
+		<ActorFlags >eVISUALIZATION</ActorFlags>
+		<DominanceGroup >0</DominanceGroup>
+		<OwnerClient >0</OwnerClient>
+		<GlobalPose >0.145259 0.692026 0.145259 0.692026 0 1.27993 -0.2314</GlobalPose>
+		<Shapes >
+			<PxShape >
+				<Geometry >
+					<PxCapsuleGeometry >
+						<Radius >0.02914</Radius>
+						<HalfHeight >0.0739533</HalfHeight>
+					</PxCapsuleGeometry>
+				</Geometry>
+				<LocalPose >-3.61138e-017 7.58044e-018 1 0 0.0739533 -3.33545e-015 5.54063e-017</LocalPose>
+				<SimulationFilterData >131074 1 0 0</SimulationFilterData>
+				<QueryFilterData >0 0 0 0</QueryFilterData>
+				<Materials >
+					<PxMaterialRef >1330154256</PxMaterialRef>
+				</Materials>
+				<ContactOffset >0.000851562</ContactOffset>
+				<RestOffset >0</RestOffset>
+				<Flags >eSIMULATION_SHAPE|eSCENE_QUERY_SHAPE|eVISUALIZATION</Flags>
+				<Name >PonyTail1RigidShape1</Name>
+			</PxShape>
+		</Shapes>
+		<CMassLocalPose >0 0 0 1 0.0739533 -3.33545e-015 5.54063e-017</CMassLocalPose>
+		<Mass >498.21</Mass>
+		<MassSpaceInertiaTensor >0.202724 1.57264 1.57264</MassSpaceInertiaTensor>
+		<LinearVelocity >0 0 0</LinearVelocity>
+		<AngularVelocity >0 0 0</AngularVelocity>
+		<MinCCDAdvanceCoefficient >0.15</MinCCDAdvanceCoefficient>
+		<MaxDepenetrationVelocity >1e+032</MaxDepenetrationVelocity>
+		<LinearDamping >0</LinearDamping>
+		<AngularDamping >0</AngularDamping>
+		<MaxAngularVelocity >7</MaxAngularVelocity>
+		<SleepThreshold >5e-007</SleepThreshold>
+		<StabilizationThreshold >24.059</StabilizationThreshold>
+		<WakeCounter >0.4</WakeCounter>
+		<SolverIterationCounts >
+			<minPositionIters >8</minPositionIters>
+			<minVelocityIters >4</minVelocityIters>
+		</SolverIterationCounts>
+		<ContactReportThreshold >3.40282e+038</ContactReportThreshold>
+	</PxRigidDynamic>
+	<PxRigidDynamic >
+		<Id >1330177520</Id>
+		<Name >LeftHairA1</Name>
+		<ActorFlags >eVISUALIZATION</ActorFlags>
+		<DominanceGroup >0</DominanceGroup>
+		<OwnerClient >0</OwnerClient>
+		<GlobalPose >0.546201 -0.44907 -0.444747 0.549727 0.210518 0.934369 0.0749007</GlobalPose>
+		<Shapes >
+			<PxShape >
+				<Geometry >
+					<PxCapsuleGeometry >
+						<Radius >0.0127704</Radius>
+						<HalfHeight >0.048179</HalfHeight>
+					</PxCapsuleGeometry>
+				</Geometry>
+				<LocalPose >-1.21835e-016 -5.11108e-017 1 0 0.048179 8.51404e-017 -1.08441e-015</LocalPose>
+				<SimulationFilterData >131074 1 0 0</SimulationFilterData>
+				<QueryFilterData >0 0 0 0</QueryFilterData>
+				<Materials >
+					<PxMaterialRef >1330154256</PxMaterialRef>
+				</Materials>
+				<ContactOffset >0.000851562</ContactOffset>
+				<RestOffset >0</RestOffset>
+				<Flags >eSIMULATION_SHAPE|eSCENE_QUERY_SHAPE|eVISUALIZATION</Flags>
+				<Name >LeftHairA2RigidShape1</Name>
+			</PxShape>
+		</Shapes>
+		<CMassLocalPose >0 0 0 1 0.048179 8.51404e-017 -1.08441e-015</CMassLocalPose>
+		<Mass >58.0914</Mass>
+		<MassSpaceInertiaTensor >0.00459456 0.0650544 0.0650544</MassSpaceInertiaTensor>
+		<LinearVelocity >0 0 0</LinearVelocity>
+		<AngularVelocity >0 0 0</AngularVelocity>
+		<MinCCDAdvanceCoefficient >0.15</MinCCDAdvanceCoefficient>
+		<MaxDepenetrationVelocity >1e+032</MaxDepenetrationVelocity>
+		<LinearDamping >0</LinearDamping>
+		<AngularDamping >0</AngularDamping>
+		<MaxAngularVelocity >7</MaxAngularVelocity>
+		<SleepThreshold >5e-007</SleepThreshold>
+		<StabilizationThreshold >24.059</StabilizationThreshold>
+		<WakeCounter >0.4</WakeCounter>
+		<SolverIterationCounts >
+			<minPositionIters >8</minPositionIters>
+			<minVelocityIters >4</minVelocityIters>
+		</SolverIterationCounts>
+		<ContactReportThreshold >3.40282e+038</ContactReportThreshold>
+	</PxRigidDynamic>
+	<PxRigidDynamic >
+		<Id >1330177888</Id>
+		<Name >RightHairA1</Name>
+		<ActorFlags >eVISUALIZATION</ActorFlags>
+		<DominanceGroup >0</DominanceGroup>
+		<OwnerClient >0</OwnerClient>
+		<GlobalPose >-0.549727 -0.444747 0.44907 0.546201 -0.210518 0.934369 0.0749007</GlobalPose>
+		<Shapes >
+			<PxShape >
+				<Geometry >
+					<PxCapsuleGeometry >
+						<Radius >0.0127704</Radius>
+						<HalfHeight >0.048179</HalfHeight>
+					</PxCapsuleGeometry>
+				</Geometry>
+				<LocalPose >-6.67914e-007 6.67914e-007 -2.68221e-007 1 -0.048179 2.50083e-008 6.43589e-008</LocalPose>
+				<SimulationFilterData >131074 1 0 0</SimulationFilterData>
+				<QueryFilterData >0 0 0 0</QueryFilterData>
+				<Materials >
+					<PxMaterialRef >1330154256</PxMaterialRef>
+				</Materials>
+				<ContactOffset >0.000851562</ContactOffset>
+				<RestOffset >0</RestOffset>
+				<Flags >eSIMULATION_SHAPE|eSCENE_QUERY_SHAPE|eVISUALIZATION</Flags>
+				<Name >RightHairA2RigidShape1</Name>
+			</PxShape>
+		</Shapes>
+		<CMassLocalPose >-1.79149e-013 6.67914e-007 -2.68221e-007 1 -0.048179 2.50083e-008 6.43589e-008</CMassLocalPose>
+		<Mass >58.0914</Mass>
+		<MassSpaceInertiaTensor >0.00459456 0.0650545 0.0650545</MassSpaceInertiaTensor>
+		<LinearVelocity >0 0 0</LinearVelocity>
+		<AngularVelocity >0 0 0</AngularVelocity>
+		<MinCCDAdvanceCoefficient >0.15</MinCCDAdvanceCoefficient>
+		<MaxDepenetrationVelocity >1e+032</MaxDepenetrationVelocity>
+		<LinearDamping >0</LinearDamping>
+		<AngularDamping >0</AngularDamping>
+		<MaxAngularVelocity >7</MaxAngularVelocity>
+		<SleepThreshold >5e-007</SleepThreshold>
+		<StabilizationThreshold >24.059</StabilizationThreshold>
+		<WakeCounter >0.4</WakeCounter>
+		<SolverIterationCounts >
+			<minPositionIters >8</minPositionIters>
+			<minVelocityIters >4</minVelocityIters>
+		</SolverIterationCounts>
+		<ContactReportThreshold >3.40282e+038</ContactReportThreshold>
+	</PxRigidDynamic>
+	<PxRigidDynamic >
+		<Id >1330178256</Id>
+		<Name >PonyTail1</Name>
+		<ActorFlags >eVISUALIZATION</ActorFlags>
+		<DominanceGroup >0</DominanceGroup>
+		<OwnerClient >0</OwnerClient>
+		<GlobalPose >-0.104417 0.699355 -0.104417 0.699355 0 1.3394 -0.366823</GlobalPose>
+		<Shapes >
+			<PxShape >
+				<Geometry >
+					<PxCapsuleGeometry >
+						<Radius >0.02914</Radius>
+						<HalfHeight >0.0854541</HalfHeight>
+					</PxCapsuleGeometry>
+				</Geometry>
+				<LocalPose >4.59915e-017 -4.01634e-017 1 0 0.0854541 -4.31069e-016 -9.61587e-017</LocalPose>
+				<SimulationFilterData >131074 1 0 0</SimulationFilterData>
+				<QueryFilterData >0 0 0 0</QueryFilterData>
+				<Materials >
+					<PxMaterialRef >1330154256</PxMaterialRef>
+				</Materials>
+				<ContactOffset >0.000851562</ContactOffset>
+				<RestOffset >0</RestOffset>
+				<Flags >eSIMULATION_SHAPE|eSCENE_QUERY_SHAPE|eVISUALIZATION</Flags>
+				<Name >PonyTail2RigidShape1</Name>
+			</PxShape>
+		</Shapes>
+		<CMassLocalPose >0 0 0 1 0.0854541 -4.31069e-016 -9.61587e-017</CMassLocalPose>
+		<Mass >559.57</Mass>
+		<MassSpaceInertiaTensor >0.228776 2.19221 2.19221</MassSpaceInertiaTensor>
+		<LinearVelocity >0 0 0</LinearVelocity>
+		<AngularVelocity >0 0 0</AngularVelocity>
+		<MinCCDAdvanceCoefficient >0.15</MinCCDAdvanceCoefficient>
+		<MaxDepenetrationVelocity >1e+032</MaxDepenetrationVelocity>
+		<LinearDamping >0</LinearDamping>
+		<AngularDamping >0</AngularDamping>
+		<MaxAngularVelocity >7</MaxAngularVelocity>
+		<SleepThreshold >5e-007</SleepThreshold>
+		<StabilizationThreshold >24.059</StabilizationThreshold>
+		<WakeCounter >0.4</WakeCounter>
+		<SolverIterationCounts >
+			<minPositionIters >8</minPositionIters>
+			<minVelocityIters >4</minVelocityIters>
+		</SolverIterationCounts>
+		<ContactReportThreshold >3.40282e+038</ContactReportThreshold>
+	</PxRigidDynamic>
+	<PxRigidDynamic >
+		<Id >1330178624</Id>
+		<Name >LeftHairA2</Name>
+		<ActorFlags >eVISUALIZATION</ActorFlags>
+		<DominanceGroup >0</DominanceGroup>
+		<OwnerClient >0</OwnerClient>
+		<GlobalPose >0.499773 -0.500227 -0.388981 0.590503 0.229893 0.839982 0.0756608</GlobalPose>
+		<Shapes >
+			<PxShape >
+				<Geometry >
+					<PxCapsuleGeometry >
+						<Radius >0.0127704</Radius>
+						<HalfHeight >0.042005</HalfHeight>
+					</PxCapsuleGeometry>
+				</Geometry>
+				<LocalPose >-6.95933e-017 8.46833e-017 1 0 0.042005 -8.18226e-017 -3.79604e-016</LocalPose>
+				<SimulationFilterData >131074 1 0 0</SimulationFilterData>
+				<QueryFilterData >0 0 0 0</QueryFilterData>
+				<Materials >
+					<PxMaterialRef >1330154256</PxMaterialRef>
+				</Materials>
+				<ContactOffset >0.000851562</ContactOffset>
+				<RestOffset >0</RestOffset>
+				<Flags >eSIMULATION_SHAPE|eSCENE_QUERY_SHAPE|eVISUALIZATION</Flags>
+				<Name >LeftHairA3RigidShape1</Name>
+			</PxShape>
+		</Shapes>
+		<CMassLocalPose >0 0 0 1 0.042005 -8.18226e-017 -3.79604e-016</CMassLocalPose>
+		<Mass >51.765</Mass>
+		<MassSpaceInertiaTensor >0.0040787 0.0465399 0.0465399</MassSpaceInertiaTensor>
+		<LinearVelocity >0 0 0</LinearVelocity>
+		<AngularVelocity >0 0 0</AngularVelocity>
+		<MinCCDAdvanceCoefficient >0.15</MinCCDAdvanceCoefficient>
+		<MaxDepenetrationVelocity >1e+032</MaxDepenetrationVelocity>
+		<LinearDamping >0</LinearDamping>
+		<AngularDamping >0</AngularDamping>
+		<MaxAngularVelocity >7</MaxAngularVelocity>
+		<SleepThreshold >5e-007</SleepThreshold>
+		<StabilizationThreshold >24.059</StabilizationThreshold>
+		<WakeCounter >0.4</WakeCounter>
+		<SolverIterationCounts >
+			<minPositionIters >8</minPositionIters>
+			<minVelocityIters >4</minVelocityIters>
+		</SolverIterationCounts>
+		<ContactReportThreshold >3.40282e+038</ContactReportThreshold>
+	</PxRigidDynamic>
+	<PxRigidDynamic >
+		<Id >1330178992</Id>
+		<Name >RightHairA2</Name>
+		<ActorFlags >eVISUALIZATION</ActorFlags>
+		<DominanceGroup >0</DominanceGroup>
+		<OwnerClient >0</OwnerClient>
+		<GlobalPose >0.590503 0.388981 -0.500227 -0.499773 -0.229893 0.839982 0.0756608</GlobalPose>
+		<Shapes >
+			<PxShape >
+				<Geometry >
+					<PxCapsuleGeometry >
+						<Radius >0.0127704</Radius>
+						<HalfHeight >0.0420048</HalfHeight>
+					</PxCapsuleGeometry>
+				</Geometry>
+				<LocalPose >2.29354e-006 -2.29354e-006 1.49012e-007 1 -0.0420048 -1.34622e-008 -1.9268e-007</LocalPose>
+				<SimulationFilterData >131074 1 0 0</SimulationFilterData>
+				<QueryFilterData >0 0 0 0</QueryFilterData>
+				<Materials >
+					<PxMaterialRef >1330154256</PxMaterialRef>
+				</Materials>
+				<ContactOffset >0.000851562</ContactOffset>
+				<RestOffset >0</RestOffset>
+				<Flags >eSIMULATION_SHAPE|eSCENE_QUERY_SHAPE|eVISUALIZATION</Flags>
+				<Name >RightHairA3RigidShape1</Name>
+			</PxShape>
+		</Shapes>
+		<CMassLocalPose >0.382683 -2.06193e-006 1.01536e-006 0.92388 -0.0420048 -1.34622e-008 -1.9268e-007</CMassLocalPose>
+		<Mass >51.7649</Mass>
+		<MassSpaceInertiaTensor >0.00407869 0.0465396 0.0465396</MassSpaceInertiaTensor>
+		<LinearVelocity >0 0 0</LinearVelocity>
+		<AngularVelocity >0 0 0</AngularVelocity>
+		<MinCCDAdvanceCoefficient >0.15</MinCCDAdvanceCoefficient>
+		<MaxDepenetrationVelocity >1e+032</MaxDepenetrationVelocity>
+		<LinearDamping >0</LinearDamping>
+		<AngularDamping >0</AngularDamping>
+		<MaxAngularVelocity >7</MaxAngularVelocity>
+		<SleepThreshold >5e-007</SleepThreshold>
+		<StabilizationThreshold >24.059</StabilizationThreshold>
+		<WakeCounter >0.4</WakeCounter>
+		<SolverIterationCounts >
+			<minPositionIters >8</minPositionIters>
+			<minVelocityIters >4</minVelocityIters>
+		</SolverIterationCounts>
+		<ContactReportThreshold >3.40282e+038</ContactReportThreshold>
+	</PxRigidDynamic>
+	<PxRigidDynamic >
+		<Id >1330179360</Id>
+		<Name >PonyTail2</Name>
+		<ActorFlags >eVISUALIZATION</ActorFlags>
+		<DominanceGroup >0</DominanceGroup>
+		<OwnerClient >0</OwnerClient>
+		<GlobalPose >-0.307737 0.63663 -0.307737 0.63663 0 1.28948 -0.530277</GlobalPose>
+		<Shapes >
+			<PxShape >
+				<Geometry >
+					<PxCapsuleGeometry >
+						<Radius >0.02914</Radius>
+						<HalfHeight >0.0842535</HalfHeight>
+					</PxCapsuleGeometry>
+				</Geometry>
+				<LocalPose >-1.49537e-018 -7.22835e-019 1 0 0.0842535 3.12639e-015 1.04661e-016</LocalPose>
+				<SimulationFilterData >131074 1 0 0</SimulationFilterData>
+				<QueryFilterData >0 0 0 0</QueryFilterData>
+				<Materials >
+					<PxMaterialRef >1330154256</PxMaterialRef>
+				</Materials>
+				<ContactOffset >0.000851562</ContactOffset>
+				<RestOffset >0</RestOffset>
+				<Flags >eSIMULATION_SHAPE|eSCENE_QUERY_SHAPE|eVISUALIZATION</Flags>
+				<Name >PonyTail3RigidShape1</Name>
+			</PxShape>
+		</Shapes>
+		<CMassLocalPose >0 0 0 1 0.0842535 3.12639e-015 1.04661e-016</CMassLocalPose>
+		<Mass >553.165</Mass>
+		<MassSpaceInertiaTensor >0.226056 2.1209 2.1209</MassSpaceInertiaTensor>
+		<LinearVelocity >0 0 0</LinearVelocity>
+		<AngularVelocity >0 0 0</AngularVelocity>
+		<MinCCDAdvanceCoefficient >0.15</MinCCDAdvanceCoefficient>
+		<MaxDepenetrationVelocity >1e+032</MaxDepenetrationVelocity>
+		<LinearDamping >0</LinearDamping>
+		<AngularDamping >0</AngularDamping>
+		<MaxAngularVelocity >7</MaxAngularVelocity>
+		<SleepThreshold >5e-007</SleepThreshold>
+		<StabilizationThreshold >24.059</StabilizationThreshold>
+		<WakeCounter >0.4</WakeCounter>
+		<SolverIterationCounts >
+			<minPositionIters >8</minPositionIters>
+			<minVelocityIters >4</minVelocityIters>
+		</SolverIterationCounts>
+		<ContactReportThreshold >3.40282e+038</ContactReportThreshold>
+	</PxRigidDynamic>
+	<PxRigidDynamic >
+		<Id >1330179728</Id>
+		<Name >PonyTail3</Name>
+		<ActorFlags >eVISUALIZATION</ActorFlags>
+		<DominanceGroup >0</DominanceGroup>
+		<OwnerClient >0</OwnerClient>
+		<GlobalPose >-0.470414 0.52793 -0.470414 0.52793 1.11022e-016 1.15743 -0.634953</GlobalPose>
+		<Shapes >
+			<PxShape >
+				<Geometry >
+					<PxCapsuleGeometry >
+						<Radius >0.02914</Radius>
+						<HalfHeight >0.0701132</HalfHeight>
+					</PxCapsuleGeometry>
+				</Geometry>
+				<LocalPose >2.42008e-017 2.15642e-017 1 0 0.0701132 -4.9738e-016 -4.68995e-017</LocalPose>
+				<SimulationFilterData >131074 1 0 0</SimulationFilterData>
+				<QueryFilterData >0 0 0 0</QueryFilterData>
+				<Materials >
+					<PxMaterialRef >1330154256</PxMaterialRef>
+				</Materials>
+				<ContactOffset >0.000851562</ContactOffset>
+				<RestOffset >0</RestOffset>
+				<Flags >eSIMULATION_SHAPE|eSCENE_QUERY_SHAPE|eVISUALIZATION</Flags>
+				<Name >PonyTail4RigidShape1</Name>
+			</PxShape>
+		</Shapes>
+		<CMassLocalPose >0 0 0 1 0.0701132 -4.9738e-016 -4.68995e-017</CMassLocalPose>
+		<Mass >477.722</Mass>
+		<MassSpaceInertiaTensor >0.194025 1.39592 1.39592</MassSpaceInertiaTensor>
+		<LinearVelocity >0 0 0</LinearVelocity>
+		<AngularVelocity >0 0 0</AngularVelocity>
+		<MinCCDAdvanceCoefficient >0.15</MinCCDAdvanceCoefficient>
+		<MaxDepenetrationVelocity >1e+032</MaxDepenetrationVelocity>
+		<LinearDamping >0</LinearDamping>
+		<AngularDamping >0</AngularDamping>
+		<MaxAngularVelocity >7</MaxAngularVelocity>
+		<SleepThreshold >5e-007</SleepThreshold>
+		<StabilizationThreshold >24.059</StabilizationThreshold>
+		<WakeCounter >0.4</WakeCounter>
+		<SolverIterationCounts >
+			<minPositionIters >8</minPositionIters>
+			<minVelocityIters >4</minVelocityIters>
+		</SolverIterationCounts>
+		<ContactReportThreshold >3.40282e+038</ContactReportThreshold>
+	</PxRigidDynamic>
+	<PxRigidDynamic >
+		<Id >1330180096</Id>
+		<Name >PonyTail4</Name>
+		<ActorFlags >eVISUALIZATION</ActorFlags>
+		<DominanceGroup >0</DominanceGroup>
+		<OwnerClient >0</OwnerClient>
+		<GlobalPose >0.600874 -0.37276 0.600874 -0.37276 0 1.01813 -0.651057</GlobalPose>
+		<Shapes >
+			<PxShape >
+				<Geometry >
+					<PxCapsuleGeometry >
+						<Radius >0.02914</Radius>
+						<HalfHeight >0.0534743</HalfHeight>
+					</PxCapsuleGeometry>
+				</Geometry>
+				<LocalPose >-8.01692e-017 -6.12883e-017 1 0 0.0534743 2.4869e-016 1.42275e-016</LocalPose>
+				<SimulationFilterData >131074 1 0 0</SimulationFilterData>
+				<QueryFilterData >0 0 0 0</QueryFilterData>
+				<Materials >
+					<PxMaterialRef >1330154256</PxMaterialRef>
+				</Materials>
+				<ContactOffset >0.000851562</ContactOffset>
+				<RestOffset >0</RestOffset>
+				<Flags >eSIMULATION_SHAPE|eSCENE_QUERY_SHAPE|eVISUALIZATION</Flags>
+				<Name >PonyTail5RigidShape1</Name>
+			</PxShape>
+		</Shapes>
+		<CMassLocalPose >0 0 0 1 0.0534743 2.4869e-016 1.42275e-016</CMassLocalPose>
+		<Mass >388.948</Mass>
+		<MassSpaceInertiaTensor >0.156335 0.785218 0.785218</MassSpaceInertiaTensor>
+		<LinearVelocity >0 0 0</LinearVelocity>
+		<AngularVelocity >0 0 0</AngularVelocity>
+		<MinCCDAdvanceCoefficient >0.15</MinCCDAdvanceCoefficient>
+		<MaxDepenetrationVelocity >1e+032</MaxDepenetrationVelocity>
+		<LinearDamping >0</LinearDamping>
+		<AngularDamping >0</AngularDamping>
+		<MaxAngularVelocity >7</MaxAngularVelocity>
+		<SleepThreshold >5e-007</SleepThreshold>
+		<StabilizationThreshold >24.059</StabilizationThreshold>
+		<WakeCounter >0.4</WakeCounter>
+		<SolverIterationCounts >
+			<minPositionIters >8</minPositionIters>
+			<minVelocityIters >4</minVelocityIters>
+		</SolverIterationCounts>
+		<ContactReportThreshold >3.40282e+038</ContactReportThreshold>
+	</PxRigidDynamic>
+	<PxD6Joint >
+		<Id >1329770464</Id>
+		<Actors >
+			<actor0 >1330179728</actor0>
+			<actor1 >1330180096</actor1>
+		</Actors>
+		<LocalPose >
+			<eACTOR0 >-0.707107 1.52482e-017 1.52482e-017 0.707107 0.0999999 7.62939e-008 -7.52758e-018</eACTOR0>
+			<eACTOR1 >-0.678046 -0.200632 0.200632 0.678046 -0.0337495 -0.0218893 -5.17468e-018</eACTOR1>
+		</LocalPose>
+		<BreakForce >
+			<force >3.40282e+036</force>
+			<torque >3.40282e+034</torque>
+		</BreakForce>
+		<InvMassScale0 >1</InvMassScale0>
+		<InvInertiaScale0 >1</InvInertiaScale0>
+		<InvMassScale1 >1</InvMassScale1>
+		<InvInertiaScale1 >1</InvInertiaScale1>
+		<Name >PonyTail4Constraint1</Name>
+		<Motion >
+			<eX >eLOCKED</eX>
+			<eY >eLOCKED</eY>
+			<eZ >eLOCKED</eZ>
+			<eTWIST >eLOCKED</eTWIST>
+			<eSWING1 >eLIMITED</eSWING1>
+			<eSWING2 >eLIMITED</eSWING2>
+		</Motion>
+		<LinearLimit >
+			<Restitution >0</Restitution>
+			<BounceThreshold >0</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.01</ContactDistance>
+			<Value >3.40282e+038</Value>
+		</LinearLimit>
+		<TwistLimit >
+			<Restitution >0</Restitution>
+			<BounceThreshold >0.5</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.1</ContactDistance>
+			<Upper >1.5708</Upper>
+			<Lower >-1.5708</Lower>
+		</TwistLimit>
+		<SwingLimit >
+			<Restitution >0.4</Restitution>
+			<BounceThreshold >0.5</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.0174533</ContactDistance>
+			<YAngle >0.349066</YAngle>
+			<ZAngle >0.349066</ZAngle>
+		</SwingLimit>
+		<Drive >
+			<eX >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eX>
+			<eY >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eY>
+			<eZ >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eZ>
+			<eSWING >
+				<Stiffness >0</Stiffness>
+				<Damping >5.23599e-005</Damping>
+				<ForceLimit >3.40282e+034</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eSWING>
+			<eTWIST >
+				<Stiffness >0</Stiffness>
+				<Damping >5.23599e-005</Damping>
+				<ForceLimit >3.40282e+034</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eTWIST>
+			<eSLERP >
+				<Stiffness >0</Stiffness>
+				<Damping >0</Damping>
+				<ForceLimit >0</ForceLimit>
+			</eSLERP>
+		</Drive>
+		<DrivePosition >0 0 0 1 0 0 0</DrivePosition>
+		<DriveVelocity >
+			<linear >0 0 0</linear>
+			<angular >0 0 0</angular>
+		</DriveVelocity>
+		<ProjectionLinearTolerance >1e+010</ProjectionLinearTolerance>
+		<ProjectionAngularTolerance >3.14159</ProjectionAngularTolerance>
+	</PxD6Joint>
+	<PxD6Joint >
+		<Id >1329770624</Id>
+		<Actors >
+			<actor0 >1330179360</actor0>
+			<actor1 >1330179728</actor1>
+		</Actors>
+		<LocalPose >
+			<eACTOR0 >-0.707107 -5.1112e-019 -5.1112e-019 0.707107 0.124 0 -1.17657e-017</eACTOR0>
+			<eACTOR1 >-0.680039 -0.193771 0.193771 0.680039 -0.0378227 -0.023459 7.18596e-018</eACTOR1>
+		</LocalPose>
+		<BreakForce >
+			<force >3.40282e+036</force>
+			<torque >3.40282e+034</torque>
+		</BreakForce>
+		<InvMassScale0 >1</InvMassScale0>
+		<InvInertiaScale0 >1</InvInertiaScale0>
+		<InvMassScale1 >1</InvMassScale1>
+		<InvInertiaScale1 >1</InvInertiaScale1>
+		<Name >PonyTail3Constraint1</Name>
+		<Motion >
+			<eX >eLOCKED</eX>
+			<eY >eLOCKED</eY>
+			<eZ >eLOCKED</eZ>
+			<eTWIST >eLOCKED</eTWIST>
+			<eSWING1 >eLIMITED</eSWING1>
+			<eSWING2 >eLIMITED</eSWING2>
+		</Motion>
+		<LinearLimit >
+			<Restitution >0</Restitution>
+			<BounceThreshold >0</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.01</ContactDistance>
+			<Value >3.40282e+038</Value>
+		</LinearLimit>
+		<TwistLimit >
+			<Restitution >0</Restitution>
+			<BounceThreshold >0.5</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.1</ContactDistance>
+			<Upper >1.5708</Upper>
+			<Lower >-1.5708</Lower>
+		</TwistLimit>
+		<SwingLimit >
+			<Restitution >0.4</Restitution>
+			<BounceThreshold >0.5</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.0174533</ContactDistance>
+			<YAngle >0.349066</YAngle>
+			<ZAngle >0.349066</ZAngle>
+		</SwingLimit>
+		<Drive >
+			<eX >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eX>
+			<eY >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eY>
+			<eZ >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eZ>
+			<eSWING >
+				<Stiffness >0</Stiffness>
+				<Damping >5.23599e-005</Damping>
+				<ForceLimit >3.40282e+034</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eSWING>
+			<eTWIST >
+				<Stiffness >0</Stiffness>
+				<Damping >5.23599e-005</Damping>
+				<ForceLimit >3.40282e+034</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eTWIST>
+			<eSLERP >
+				<Stiffness >0</Stiffness>
+				<Damping >0</Damping>
+				<ForceLimit >0</ForceLimit>
+			</eSLERP>
+		</Drive>
+		<DrivePosition >0 0 0 1 0 0 0</DrivePosition>
+		<DriveVelocity >
+			<linear >0 0 0</linear>
+			<angular >0 0 0</angular>
+		</DriveVelocity>
+		<ProjectionLinearTolerance >1e+010</ProjectionLinearTolerance>
+		<ProjectionAngularTolerance >3.14159</ProjectionAngularTolerance>
+	</PxD6Joint>
+	<PxD6Joint >
+		<Id >1329770784</Id>
+		<Actors >
+			<actor0 >1330178256</actor0>
+			<actor1 >1330179360</actor1>
+		</Actors>
+		<LocalPose >
+			<eACTOR0 >-0.707107 -1.49291e-017 -1.49291e-017 0.707107 0.105 0 -3.53185e-017</eACTOR0>
+			<eACTOR1 >-0.675094 -0.210353 0.210353 0.675094 -0.0542429 -0.0374378 1.04515e-017</eACTOR1>
+		</LocalPose>
+		<BreakForce >
+			<force >3.40282e+036</force>
+			<torque >3.40282e+034</torque>
+		</BreakForce>
+		<InvMassScale0 >1</InvMassScale0>
+		<InvInertiaScale0 >1</InvInertiaScale0>
+		<InvMassScale1 >1</InvMassScale1>
+		<InvInertiaScale1 >1</InvInertiaScale1>
+		<Name >PonyTail2Constraint1</Name>
+		<Motion >
+			<eX >eLOCKED</eX>
+			<eY >eLOCKED</eY>
+			<eZ >eLOCKED</eZ>
+			<eTWIST >eLOCKED</eTWIST>
+			<eSWING1 >eLIMITED</eSWING1>
+			<eSWING2 >eLIMITED</eSWING2>
+		</Motion>
+		<LinearLimit >
+			<Restitution >0</Restitution>
+			<BounceThreshold >0</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.01</ContactDistance>
+			<Value >3.40282e+038</Value>
+		</LinearLimit>
+		<TwistLimit >
+			<Restitution >0</Restitution>
+			<BounceThreshold >0.5</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.1</ContactDistance>
+			<Upper >1.5708</Upper>
+			<Lower >-1.5708</Lower>
+		</TwistLimit>
+		<SwingLimit >
+			<Restitution >0.4</Restitution>
+			<BounceThreshold >0.5</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.0174533</ContactDistance>
+			<YAngle >0.349066</YAngle>
+			<ZAngle >0.349066</ZAngle>
+		</SwingLimit>
+		<Drive >
+			<eX >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eX>
+			<eY >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eY>
+			<eZ >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eZ>
+			<eSWING >
+				<Stiffness >0</Stiffness>
+				<Damping >5.23599e-005</Damping>
+				<ForceLimit >3.40282e+034</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eSWING>
+			<eTWIST >
+				<Stiffness >0</Stiffness>
+				<Damping >5.23599e-005</Damping>
+				<ForceLimit >3.40282e+034</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eTWIST>
+			<eSLERP >
+				<Stiffness >0</Stiffness>
+				<Damping >0</Damping>
+				<ForceLimit >0</ForceLimit>
+			</eSLERP>
+		</Drive>
+		<DrivePosition >0 0 0 1 0 0 0</DrivePosition>
+		<DriveVelocity >
+			<linear >0 0 0</linear>
+			<angular >0 0 0</angular>
+		</DriveVelocity>
+		<ProjectionLinearTolerance >1e+010</ProjectionLinearTolerance>
+		<ProjectionAngularTolerance >3.14159</ProjectionAngularTolerance>
+	</PxD6Joint>
+	<PxD6Joint >
+		<Id >1329771264</Id>
+		<Actors >
+			<actor0 >1330177152</actor0>
+			<actor1 >1330178256</actor1>
+		</Actors>
+		<LocalPose >
+			<eACTOR0 >-0.707107 -3.38921e-017 -3.38921e-017 0.707107 0.0739533 7.62939e-008 -2.83299e-017</eACTOR0>
+			<eACTOR1 >-0.662989 -0.245857 0.245857 0.662989 -0.0560727 -0.0482176 1.84258e-017</eACTOR1>
+		</LocalPose>
+		<BreakForce >
+			<force >3.40282e+036</force>
+			<torque >3.40282e+034</torque>
+		</BreakForce>
+		<InvMassScale0 >1</InvMassScale0>
+		<InvInertiaScale0 >1</InvInertiaScale0>
+		<InvMassScale1 >1</InvMassScale1>
+		<InvInertiaScale1 >1</InvInertiaScale1>
+		<Name >PonyTail1Constraint1</Name>
+		<Motion >
+			<eX >eLOCKED</eX>
+			<eY >eLOCKED</eY>
+			<eZ >eLOCKED</eZ>
+			<eTWIST >eLOCKED</eTWIST>
+			<eSWING1 >eLIMITED</eSWING1>
+			<eSWING2 >eLIMITED</eSWING2>
+		</Motion>
+		<LinearLimit >
+			<Restitution >0</Restitution>
+			<BounceThreshold >0</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.01</ContactDistance>
+			<Value >3.40282e+038</Value>
+		</LinearLimit>
+		<TwistLimit >
+			<Restitution >0</Restitution>
+			<BounceThreshold >0.5</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.1</ContactDistance>
+			<Upper >1.5708</Upper>
+			<Lower >-1.5708</Lower>
+		</TwistLimit>
+		<SwingLimit >
+			<Restitution >0.4</Restitution>
+			<BounceThreshold >0.5</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.0174533</ContactDistance>
+			<YAngle >0.349066</YAngle>
+			<ZAngle >0.349066</ZAngle>
+		</SwingLimit>
+		<Drive >
+			<eX >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eX>
+			<eY >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eY>
+			<eZ >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eZ>
+			<eSWING >
+				<Stiffness >0</Stiffness>
+				<Damping >5.23599e-005</Damping>
+				<ForceLimit >3.40282e+034</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eSWING>
+			<eTWIST >
+				<Stiffness >0</Stiffness>
+				<Damping >5.23599e-005</Damping>
+				<ForceLimit >3.40282e+034</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eTWIST>
+			<eSLERP >
+				<Stiffness >0</Stiffness>
+				<Damping >0</Damping>
+				<ForceLimit >0</ForceLimit>
+			</eSLERP>
+		</Drive>
+		<DrivePosition >0 0 0 1 0 0 0</DrivePosition>
+		<DriveVelocity >
+			<linear >0 0 0</linear>
+			<angular >0 0 0</angular>
+		</DriveVelocity>
+		<ProjectionLinearTolerance >1e+010</ProjectionLinearTolerance>
+		<ProjectionAngularTolerance >3.14159</ProjectionAngularTolerance>
+	</PxD6Joint>
+	<PxD6Joint >
+		<Id >1329771104</Id>
+		<Actors >
+			<actor0 >1330177888</actor0>
+			<actor1 >1330178992</actor1>
+		</Actors>
+		<LocalPose >
+			<eACTOR0 >-5.00196e-007 0.707107 0.707107 5.00196e-007 -0.0779999 2.86102e-008 7.62939e-008</eACTOR0>
+			<eACTOR1 >0.0690031 0.703732 0.703732 0.0690008 0.0180086 -0.00356581 -7.62939e-008</eACTOR1>
+		</LocalPose>
+		<BreakForce >
+			<force >3.40282e+036</force>
+			<torque >3.40282e+034</torque>
+		</BreakForce>
+		<InvMassScale0 >1</InvMassScale0>
+		<InvInertiaScale0 >1</InvInertiaScale0>
+		<InvMassScale1 >1</InvMassScale1>
+		<InvInertiaScale1 >1</InvInertiaScale1>
+		<Name >RightHairA2Constraint1</Name>
+		<Motion >
+			<eX >eLOCKED</eX>
+			<eY >eLOCKED</eY>
+			<eZ >eLOCKED</eZ>
+			<eTWIST >eLOCKED</eTWIST>
+			<eSWING1 >eLIMITED</eSWING1>
+			<eSWING2 >eLIMITED</eSWING2>
+		</Motion>
+		<LinearLimit >
+			<Restitution >0</Restitution>
+			<BounceThreshold >0</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.01</ContactDistance>
+			<Value >3.40282e+038</Value>
+		</LinearLimit>
+		<TwistLimit >
+			<Restitution >0</Restitution>
+			<BounceThreshold >0.5</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.1</ContactDistance>
+			<Upper >1.5708</Upper>
+			<Lower >-1.5708</Lower>
+		</TwistLimit>
+		<SwingLimit >
+			<Restitution >0.4</Restitution>
+			<BounceThreshold >0.5</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.0174533</ContactDistance>
+			<YAngle >0.349066</YAngle>
+			<ZAngle >0.349066</ZAngle>
+		</SwingLimit>
+		<Drive >
+			<eX >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eX>
+			<eY >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eY>
+			<eZ >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eZ>
+			<eSWING >
+				<Stiffness >0</Stiffness>
+				<Damping >5.23599e-005</Damping>
+				<ForceLimit >3.40282e+034</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eSWING>
+			<eTWIST >
+				<Stiffness >0</Stiffness>
+				<Damping >5.23599e-005</Damping>
+				<ForceLimit >3.40282e+034</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eTWIST>
+			<eSLERP >
+				<Stiffness >0</Stiffness>
+				<Damping >0</Damping>
+				<ForceLimit >0</ForceLimit>
+			</eSLERP>
+		</Drive>
+		<DrivePosition >0 0 0 1 0 0 0</DrivePosition>
+		<DriveVelocity >
+			<linear >0 0 0</linear>
+			<angular >0 0 0</angular>
+		</DriveVelocity>
+		<ProjectionLinearTolerance >1e+010</ProjectionLinearTolerance>
+		<ProjectionAngularTolerance >3.14159</ProjectionAngularTolerance>
+	</PxD6Joint>
+	<PxD6Joint >
+		<Id >1329771744</Id>
+		<Actors >
+			<actor0 >1330177520</actor0>
+			<actor1 >1330178624</actor1>
+		</Actors>
+		<LocalPose >
+			<eACTOR0 >-0.707107 3.29272e-010 3.29272e-010 0.707107 0.0779999 -9.53674e-009 0</eACTOR0>
+			<eACTOR1 >-0.703732 0.0690015 -0.0690015 0.703732 -0.0180084 0.00356575 0</eACTOR1>
+		</LocalPose>
+		<BreakForce >
+			<force >3.40282e+036</force>
+			<torque >3.40282e+034</torque>
+		</BreakForce>
+		<InvMassScale0 >1</InvMassScale0>
+		<InvInertiaScale0 >1</InvInertiaScale0>
+		<InvMassScale1 >1</InvMassScale1>
+		<InvInertiaScale1 >1</InvInertiaScale1>
+		<Name >LeftHairA2Constraint1</Name>
+		<Motion >
+			<eX >eLOCKED</eX>
+			<eY >eLOCKED</eY>
+			<eZ >eLOCKED</eZ>
+			<eTWIST >eLOCKED</eTWIST>
+			<eSWING1 >eLIMITED</eSWING1>
+			<eSWING2 >eLIMITED</eSWING2>
+		</Motion>
+		<LinearLimit >
+			<Restitution >0</Restitution>
+			<BounceThreshold >0</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.01</ContactDistance>
+			<Value >3.40282e+038</Value>
+		</LinearLimit>
+		<TwistLimit >
+			<Restitution >0</Restitution>
+			<BounceThreshold >0.5</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.1</ContactDistance>
+			<Upper >1.5708</Upper>
+			<Lower >-1.5708</Lower>
+		</TwistLimit>
+		<SwingLimit >
+			<Restitution >0.4</Restitution>
+			<BounceThreshold >0.5</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.0174533</ContactDistance>
+			<YAngle >0.349066</YAngle>
+			<ZAngle >0.349066</ZAngle>
+		</SwingLimit>
+		<Drive >
+			<eX >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eX>
+			<eY >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eY>
+			<eZ >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eZ>
+			<eSWING >
+				<Stiffness >0</Stiffness>
+				<Damping >5.23599e-005</Damping>
+				<ForceLimit >3.40282e+034</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eSWING>
+			<eTWIST >
+				<Stiffness >0</Stiffness>
+				<Damping >5.23599e-005</Damping>
+				<ForceLimit >3.40282e+034</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eTWIST>
+			<eSLERP >
+				<Stiffness >0</Stiffness>
+				<Damping >0</Damping>
+				<ForceLimit >0</ForceLimit>
+			</eSLERP>
+		</Drive>
+		<DrivePosition >0 0 0 1 0 0 0</DrivePosition>
+		<DriveVelocity >
+			<linear >0 0 0</linear>
+			<angular >0 0 0</angular>
+		</DriveVelocity>
+		<ProjectionLinearTolerance >1e+010</ProjectionLinearTolerance>
+		<ProjectionAngularTolerance >3.14159</ProjectionAngularTolerance>
+	</PxD6Joint>
+	<PxD6Joint >
+		<Id >1329771584</Id>
+		<Actors >
+			<actor0 >1330176784</actor0>
+			<actor1 >1330177152</actor1>
+		</Actors>
+		<LocalPose >
+			<eACTOR0 >-0.689949 0.154824 0.154824 0.689949 0.414 1.47152e-017 -0.195</eACTOR0>
+			<eACTOR1 >0.937957 0.34675 -1.68337e-016 -8.24841e-017 -0.0616125 -0.052766 2.44091e-017</eACTOR1>
+		</LocalPose>
+		<BreakForce >
+			<force >3.40282e+036</force>
+			<torque >3.40282e+034</torque>
+		</BreakForce>
+		<InvMassScale0 >1</InvMassScale0>
+		<InvInertiaScale0 >1</InvInertiaScale0>
+		<InvMassScale1 >1</InvMassScale1>
+		<InvInertiaScale1 >1</InvInertiaScale1>
+		<Name >PonyTailConstraint1</Name>
+		<Motion >
+			<eX >eLOCKED</eX>
+			<eY >eLOCKED</eY>
+			<eZ >eLOCKED</eZ>
+			<eTWIST >eLOCKED</eTWIST>
+			<eSWING1 >eLIMITED</eSWING1>
+			<eSWING2 >eLIMITED</eSWING2>
+		</Motion>
+		<LinearLimit >
+			<Restitution >0</Restitution>
+			<BounceThreshold >0</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.01</ContactDistance>
+			<Value >3.40282e+038</Value>
+		</LinearLimit>
+		<TwistLimit >
+			<Restitution >0</Restitution>
+			<BounceThreshold >0.5</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.1</ContactDistance>
+			<Upper >1.5708</Upper>
+			<Lower >-1.5708</Lower>
+		</TwistLimit>
+		<SwingLimit >
+			<Restitution >0.4</Restitution>
+			<BounceThreshold >0.5</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.0174533</ContactDistance>
+			<YAngle >0.349066</YAngle>
+			<ZAngle >0.349066</ZAngle>
+		</SwingLimit>
+		<Drive >
+			<eX >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eX>
+			<eY >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eY>
+			<eZ >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eZ>
+			<eSWING >
+				<Stiffness >0</Stiffness>
+				<Damping >5.23599e-005</Damping>
+				<ForceLimit >3.40282e+034</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eSWING>
+			<eTWIST >
+				<Stiffness >0</Stiffness>
+				<Damping >5.23599e-005</Damping>
+				<ForceLimit >3.40282e+034</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eTWIST>
+			<eSLERP >
+				<Stiffness >0</Stiffness>
+				<Damping >0</Damping>
+				<ForceLimit >0</ForceLimit>
+			</eSLERP>
+		</Drive>
+		<DrivePosition >0 0 0 1 0 0 0</DrivePosition>
+		<DriveVelocity >
+			<linear >0 0 0</linear>
+			<angular >0 0 0</angular>
+		</DriveVelocity>
+		<ProjectionLinearTolerance >1e+010</ProjectionLinearTolerance>
+		<ProjectionAngularTolerance >3.14159</ProjectionAngularTolerance>
+	</PxD6Joint>
+	<PxD6Joint >
+		<Id >1329771904</Id>
+		<Actors >
+			<actor0 >1330176784</actor0>
+			<actor1 >1330177520</actor1>
+		</Actors>
+		<LocalPose >
+			<eACTOR0 >0.090321 -0.64354 0.754599 -0.0909927 0.161 -0.205 0.078</eACTOR0>
+			<eACTOR1 >0.995096 -0.0532877 -0.0326992 -0.0766474 -0.0201718 0.00205422 0.00148911</eACTOR1>
+		</LocalPose>
+		<BreakForce >
+			<force >3.40282e+036</force>
+			<torque >3.40282e+034</torque>
+		</BreakForce>
+		<InvMassScale0 >1</InvMassScale0>
+		<InvInertiaScale0 >1</InvInertiaScale0>
+		<InvMassScale1 >1</InvMassScale1>
+		<InvInertiaScale1 >1</InvInertiaScale1>
+		<Name >LeftHairA1Constraint1</Name>
+		<Motion >
+			<eX >eLOCKED</eX>
+			<eY >eLOCKED</eY>
+			<eZ >eLOCKED</eZ>
+			<eTWIST >eLOCKED</eTWIST>
+			<eSWING1 >eLIMITED</eSWING1>
+			<eSWING2 >eLIMITED</eSWING2>
+		</Motion>
+		<LinearLimit >
+			<Restitution >0</Restitution>
+			<BounceThreshold >0</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.01</ContactDistance>
+			<Value >3.40282e+038</Value>
+		</LinearLimit>
+		<TwistLimit >
+			<Restitution >0</Restitution>
+			<BounceThreshold >0.5</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.1</ContactDistance>
+			<Upper >1.5708</Upper>
+			<Lower >-1.5708</Lower>
+		</TwistLimit>
+		<SwingLimit >
+			<Restitution >0.4</Restitution>
+			<BounceThreshold >0.5</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.0174533</ContactDistance>
+			<YAngle >0.349066</YAngle>
+			<ZAngle >0.349066</ZAngle>
+		</SwingLimit>
+		<Drive >
+			<eX >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eX>
+			<eY >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eY>
+			<eZ >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eZ>
+			<eSWING >
+				<Stiffness >0</Stiffness>
+				<Damping >5.23599e-005</Damping>
+				<ForceLimit >3.40282e+034</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eSWING>
+			<eTWIST >
+				<Stiffness >0</Stiffness>
+				<Damping >5.23599e-005</Damping>
+				<ForceLimit >3.40282e+034</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eTWIST>
+			<eSLERP >
+				<Stiffness >0</Stiffness>
+				<Damping >0</Damping>
+				<ForceLimit >0</ForceLimit>
+			</eSLERP>
+		</Drive>
+		<DrivePosition >0 0 0 1 0 0 0</DrivePosition>
+		<DriveVelocity >
+			<linear >0 0 0</linear>
+			<angular >0 0 0</angular>
+		</DriveVelocity>
+		<ProjectionLinearTolerance >1e+010</ProjectionLinearTolerance>
+		<ProjectionAngularTolerance >3.14159</ProjectionAngularTolerance>
+	</PxD6Joint>
+	<PxD6Joint >
+		<Id >1329772064</Id>
+		<Actors >
+			<actor0 >1330176784</actor0>
+			<actor1 >1330177888</actor1>
+		</Actors>
+		<LocalPose >
+			<eACTOR0 >0.0906542 0.754524 -0.649204 -0.0317749 0.141 0.215 0.078</eACTOR0>
+			<eACTOR1 >0.803752 0.233948 -0.54698 -0.00805988 -0.00142998 -0.00188377 0.00428497</eACTOR1>
+		</LocalPose>
+		<BreakForce >
+			<force >3.40282e+036</force>
+			<torque >3.40282e+034</torque>
+		</BreakForce>
+		<InvMassScale0 >1</InvMassScale0>
+		<InvInertiaScale0 >1</InvInertiaScale0>
+		<InvMassScale1 >1</InvMassScale1>
+		<InvInertiaScale1 >1</InvInertiaScale1>
+		<Name >RightHairA1Constraint1</Name>
+		<Motion >
+			<eX >eLOCKED</eX>
+			<eY >eLOCKED</eY>
+			<eZ >eLOCKED</eZ>
+			<eTWIST >eLOCKED</eTWIST>
+			<eSWING1 >eLIMITED</eSWING1>
+			<eSWING2 >eLIMITED</eSWING2>
+		</Motion>
+		<LinearLimit >
+			<Restitution >0</Restitution>
+			<BounceThreshold >0</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.01</ContactDistance>
+			<Value >3.40282e+038</Value>
+		</LinearLimit>
+		<TwistLimit >
+			<Restitution >0</Restitution>
+			<BounceThreshold >0.5</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.1</ContactDistance>
+			<Upper >1.5708</Upper>
+			<Lower >-1.5708</Lower>
+		</TwistLimit>
+		<SwingLimit >
+			<Restitution >0.4</Restitution>
+			<BounceThreshold >0.5</BounceThreshold>
+			<Stiffness >0</Stiffness>
+			<Damping >0</Damping>
+			<ContactDistance >0.0174533</ContactDistance>
+			<YAngle >0.349066</YAngle>
+			<ZAngle >0.349066</ZAngle>
+		</SwingLimit>
+		<Drive >
+			<eX >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eX>
+			<eY >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eY>
+			<eZ >
+				<Stiffness >0</Stiffness>
+				<Damping >0.005</Damping>
+				<ForceLimit >3.40282e+036</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eZ>
+			<eSWING >
+				<Stiffness >0</Stiffness>
+				<Damping >5.23599e-005</Damping>
+				<ForceLimit >3.40282e+034</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eSWING>
+			<eTWIST >
+				<Stiffness >0</Stiffness>
+				<Damping >5.23599e-005</Damping>
+				<ForceLimit >3.40282e+034</ForceLimit>
+				<Flags >eACCELERATION</Flags>
+			</eTWIST>
+			<eSLERP >
+				<Stiffness >0</Stiffness>
+				<Damping >0</Damping>
+				<ForceLimit >0</ForceLimit>
+			</eSLERP>
+		</Drive>
+		<DrivePosition >0 0 0 1 0 0 0</DrivePosition>
+		<DriveVelocity >
+			<linear >0 0 0</linear>
+			<angular >0 0 0</angular>
+		</DriveVelocity>
+		<ProjectionLinearTolerance >1e+010</ProjectionLinearTolerance>
+		<ProjectionAngularTolerance >3.14159</ProjectionAngularTolerance>
+	</PxD6Joint>
+</PhysX30Collection>

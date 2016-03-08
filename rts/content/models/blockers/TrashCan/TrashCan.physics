@@ -1,0 +1,18 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "TrashCan"
+		node = "TrashCan"
+		shapes = [
+			{
+				material = "default"
+				shape = "TrashCan"
+				template = "blocker"
+				type = "box"
+			}
+		]
+		template = "static"
+	}
+]

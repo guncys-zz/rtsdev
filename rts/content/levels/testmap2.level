@@ -1,0 +1,5668 @@
+
+editor_metadata = {
+	Entities = [
+		{
+			id = "cb452151-b31f-434a-aac8-35e0669cfa53"
+			layer = "Default"
+			modified_components = {
+				"06c78e06-c921-4208-8069-d377b6415d30" = {
+					data = {
+						fog_enabled = false
+					}
+				}
+				"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
+					data = {
+						motion_blur_enabled = false
+					}
+				}
+				"dd1dccf2-6f2f-4b8c-9199-290c069ab62b" = {
+					data = {
+						vignette_enabled = false
+					}
+				}
+				"fd909d00-3e4d-4339-b1a9-784c7d6a60ad" = {
+					data = {
+						bloom_enabled = false
+					}
+				}
+			}
+			name = "Default Shading Environment"
+			prefab = {
+				"$resource_name" = "core/stingray_renderer/environments/midday/midday_shading_environment"
+				"$resource_type" = "entity"
+			}
+		}
+	]
+	Flow = {
+		Connections = [
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "2c0ef529-c338-4daa-9823-0fa0ca14335c"
+				ToItem = "Unit"
+				ToNode = "10ad9003-6107-46d4-bb09-54c142334211"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Pressed"
+				FromNode = "1793cfa5-5f89-46e3-ad7b-c483465ed108"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "ba425c14-fa4e-4270-a8a5-286dbd1102e4"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "dace9721-f45e-4029-93d1-b8b282d0684d"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "10ad9003-6107-46d4-bb09-54c142334211"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "2c0ef529-c338-4daa-9823-0fa0ca14335c"
+				ToItem = "Camera_Unit"
+				ToNode = "1e0c230f-b02e-4476-ab0a-34cc36fca84b"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "a4e06686-22aa-4539-897b-3f3e0a41fec8"
+				ToItem = "Target_Unit"
+				ToNode = "1e0c230f-b02e-4476-ab0a-34cc36fca84b"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "b1d053ef-5067-406a-a648-f5503017afad"
+				Priority = 0
+				ToItem = "Movement"
+				ToNode = "1e0c230f-b02e-4476-ab0a-34cc36fca84b"
+			}
+		]
+		Groups = [
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "adfc2119-7213-4b29-a231-f75cda847814"
+				Nodes = [
+					"ba425c14-fa4e-4270-a8a5-286dbd1102e4"
+					"1793cfa5-5f89-46e3-ad7b-c483465ed108"
+				]
+				Title = "reset"
+			}
+		]
+		Nodes = [
+			{
+				Brief = "Encapsulates a graph of logic stored in a separate flow resource file in the project."
+				Class = "Stingray.Foundation.Flow.FlowSubroutine"
+				Disable = {
+				}
+				Enable = {
+				}
+				Flow = {
+					Value = "script/Camera_Move_Constraint"
+				}
+				Id = "1e0c230f-b02e-4476-ab0a-34cc36fca84b"
+				InEvents = [
+					"Movement"
+				]
+				InVariableNames = [
+					"Camera_Unit"
+					"Height_scale"
+					"Target_Unit"
+				]
+				InVariables = [
+					{
+						Class = "Stingray.Foundation.Flow.InVariableUnit"
+						UseMyUnit = false
+					}
+					{
+						Class = "Stingray.Foundation.Flow.InVariableFloat"
+						Value = 0.15
+					}
+					{
+						Class = "Stingray.Foundation.Flow.InVariableUnit"
+						UseMyUnit = false
+					}
+				]
+				NodeLocation = {
+					X = -20
+					Y = -100
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				Title = "Flow Subroutine"
+				Width = 280
+			}
+			{
+				Brief = "References a unit constant"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "2c0ef529-c338-4daa-9823-0fa0ca14335c"
+				InEvents = [
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = -300
+					Y = -140
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "08864ce8-ce00-4511-88ac-e2831e178fd0"
+				}
+				Title = "Level Unit"
+				Type = "core/units/camera"
+				Unit = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Passes an event at every update interval of the engine."
+				Class = "Stingray.Foundation.Flow.LevelUpdate"
+				Id = "b1d053ef-5067-406a-a648-f5503017afad"
+				NodeLocation = {
+					X = -300
+					Y = 20
+				}
+				Out = {
+				}
+				Title = "Level Update"
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Camera"
+						Type = "camera"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableCamera"
+						}
+					}
+					{
+						RawName = "Unit"
+						Type = "unit"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableUnit"
+							UseMyUnit = false
+						}
+					}
+				]
+				Brief = "Sets the active camera for the engine."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/appkit/appkit"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "10ad9003-6107-46d4-bb09-54c142334211"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Set Active Camera"
+				NodeLocation = {
+					X = 220
+					Y = -260
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
+			{
+				Brief = "Passes an event when the level has been loaded into the world."
+				Class = "Stingray.Foundation.Flow.LevelLoaded"
+				Id = "dace9721-f45e-4029-93d1-b8b282d0684d"
+				NodeLocation = {
+					X = -320
+					Y = -300
+				}
+				Out = {
+				}
+				Title = "Level Loaded"
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Name"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+							Value = "content/levels/testmap"
+						}
+					}
+				]
+				Brief = ""
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/appkit/appkit"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "ba425c14-fa4e-4270-a8a5-286dbd1102e4"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Change Level"
+				NodeLocation = {
+					X = -40
+					Y = 180
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
+			{
+				Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
+				ButtonName = {
+					Value = "f5"
+				}
+				Class = "Stingray.Foundation.Flow.KeyboardButton"
+				Device = {
+					Value = "keyboard"
+				}
+				DeviceNumber = {
+					Value = 0
+				}
+				Held = {
+				}
+				Id = "1793cfa5-5f89-46e3-ad7b-c483465ed108"
+				NodeLocation = {
+					X = -280
+					Y = 160
+				}
+				Pressed = {
+				}
+				Released = {
+				}
+				Title = "Keyboard Button"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Name"
+						Type = "element"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableElement"
+							Type = "wwise_event"
+							Value = "bgm_ingame"
+						}
+					}
+					{
+						RawName = "Unit"
+						Type = "unit"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableUnit"
+							UseMyUnit = false
+						}
+					}
+					{
+						RawName = "Unit_Node"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+						}
+					}
+					{
+						RawName = "Position"
+						Type = "vector3"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableVector3"
+						}
+					}
+					{
+						RawName = "Existing_Source_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableFloat"
+						}
+					}
+				]
+				Brief = "Posts the given event to the Wwise engine, creating a source if none is provided."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/wwise/wwise"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "b446a9e4-9237-4a98-9551-bfbe74c59931"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Wwise Trigger Event"
+				NodeLocation = {
+					X = -20
+					Y = -460
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+					{
+						RawName = "Playing_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableFloat"
+						}
+					}
+					{
+						RawName = "Source_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableFloat"
+						}
+					}
+				]
+				Width = 160
+			}
+			{
+				Brief = "References a unit constant"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "a4e06686-22aa-4539-897b-3f3e0a41fec8"
+				InEvents = [
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = -380
+					Y = -80
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "47c698d2-0e6a-4fb2-9f5b-e8d77f3e36c3"
+				}
+				Title = "Level Unit"
+				Type = "content/models/characters/PPK/PPK_m"
+				Unit = {
+				}
+				Width = 160
+			}
+		]
+	}
+	Groups = [
+	]
+	Layers = [
+		"Default"
+		"Background"
+	]
+	LevelObjectSets = {
+		NestedSetNamesBySetName = {
+		}
+		ObjectIdsBySetName = {
+		}
+		VisibleSetNames = [
+		]
+	}
+	LevelReferences = [
+	]
+	LightBakeSettings = {
+		ExcludedObjectSets = [
+		]
+		FilterGain = 20
+		FilterType = "Both"
+		IlluminationType = "Both"
+		Layers = [
+		]
+		LightmapType = "Standard"
+		MaxSamples = 96
+		MinSamples = 32
+		QualityPreset = "Low"
+		SkylightIntensityRGB = {
+			X = 1
+			Y = 1
+			Z = 1
+		}
+		TexelScale = 10
+		Variance = 0.5
+	}
+	LuaPluginObjects = [
+	]
+	Navmeshes = [
+	]
+	Notes = [
+	]
+	ParticleEffects = [
+	]
+	PositionMarkers = [
+	]
+	Prototypes = [
+	]
+	Scatter = {
+		PoolSettings = {
+		}
+		ScatterData = {
+		}
+	}
+	Settings = {
+		FrozenLayers = [
+			"Background"
+		]
+		HiddenLayers = [
+		]
+		HiddenObjects = [
+		]
+		LastHiddenObjects = [
+		]
+		SoundEnvironment = ""
+		TimpaniSoundEnvironment = "default"
+	}
+	Sounds = [
+	]
+	Splines = [
+	]
+	Stories = [
+	]
+	Triggers = [
+	]
+	Units = [
+		{
+			Cameras = {
+			}
+			Id = "5ef77449-f33a-480d-8e9a-c93bcaeaf588"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = false
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = true
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1.5
+					Material = ""
+					MaterialResource = ""
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "directional"
+				}
+			}
+			Material = "core/units/light_source"
+			Materials = {
+			}
+			Name = "Sun Light"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 5
+			}
+			Rot = {
+				W = 0.5
+				X = -0.707106781186547
+				Y = -2.77555756156289E-17
+				Z = 0.5
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "76a5e0ef-ec1f-4fd2-b2d4-17cc4082b7f5"
+			Layer = "Background"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Skydome"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Rot = {
+				W = 1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/editor_slave/units/skydome/skydome"
+		}
+		{
+			Cameras = {
+			}
+			Id = "b549b9cf-a686-45d0-9899-37ca5c7e1cc4"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "map_flat"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 30.447718
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 21.239117
+				Y = 7.700333
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/map_flat"
+		}
+		{
+			Cameras = {
+			}
+			Id = "7e6389a3-6b08-4216-8f9b-3ef32ad24dc9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "object_passunder"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 67.610184
+				Z = -1.784988
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/object_passunder"
+		}
+		{
+			Cameras = {
+				camera = {
+					CameraInfo = {
+						FarRange = 1000
+						NearRange = 0.1
+						ProjectionType = "Perspective"
+						VerticalFov = 50
+					}
+					InterestPointDistance = 10
+					Name = "camera"
+					OrthographicPlane = {
+						W = 1
+						X = 0
+						Y = 0
+						Z = 1
+					}
+					OrthographicZoom = 10
+					Pos = {
+						X = 4.982636
+						Y = -4.642629
+						Z = 3.248763
+					}
+					Rot = {
+						W = -0.929792
+						X = 0.098436
+						Y = 0.036051
+						Z = -0.352841
+					}
+					RotationSpeed = 0.003
+					TranslationSpeed = 0.05
+				}
+			}
+			Id = "08864ce8-ce00-4511-88ac-e2831e178fd0"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "camera"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 4.982636
+				Y = -4.642629
+				Z = 3.248763
+			}
+			Rot = {
+				W = -0.929792
+				X = 0.098436
+				Y = 0.036051
+				Z = -0.352841
+			}
+			Scl = {
+				X = 1
+				Y = 1.000058
+				Z = 1.000013
+			}
+			ScriptData = {
+			}
+			Type = "core/units/camera"
+		}
+		{
+			Cameras = {
+			}
+			Id = "47c698d2-0e6a-4fb2-9f5b-e8d77f3e36c3"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "PPK_m"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = -0.72889
+				Z = 0.035595
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/characters/PPK/PPK_m"
+		}
+		{
+			Cameras = {
+			}
+			Id = "cbd63682-dd4e-4156-8f1e-cc3e4b81cb76"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TrashCan"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 89.155899
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TrashCan/TrashCan"
+		}
+		{
+			Cameras = {
+			}
+			Id = "df60ab8b-f611-452f-9951-2cd090fede56"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -2.117841
+				Y = 0.70962
+				Z = 0.037458
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 2.1703
+				Y = 2.1703
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "7a5b1eea-dc8c-45f6-a0a5-1d6e7823e677"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -2.902666
+				Y = -2.615701
+				Z = -0.300907
+			}
+			Rot = {
+				W = -0.960004
+				X = 0
+				Y = 0
+				Z = -0.279986
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6894df99-6605-4f5d-b603-48bba0b2f24a"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -7.119944
+				Y = 4.459496
+				Z = -3.138496
+			}
+			Rot = {
+				W = -0.76799
+				X = 0
+				Y = 0
+				Z = -0.640462
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "dee8c9c0-068c-43c7-acb3-1196397a27bb"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.541454
+				Y = 2.02061
+				Z = -0.300907
+			}
+			Rot = {
+				W = -0.997278
+				X = 0
+				Y = 0
+				Z = 0.073732
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ebf4dded-42ee-49b7-8d94-a66d4c5d81a8"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.174607
+				Y = 8.462132
+				Z = -0.34209
+			}
+			Rot = {
+				W = -0.612314
+				X = 0
+				Y = 0
+				Z = -0.790614
+			}
+			Scl = {
+				X = 1.557823
+				Y = 1.557823
+				Z = 1.557823
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "356d3490-2c9a-4dd2-b7cc-57b5815ea685"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 4.537011
+				Y = 7.333696
+				Z = -1.760968
+			}
+			Rot = {
+				W = -0.993571
+				X = 0
+				Y = 0
+				Z = -0.113208
+			}
+			Scl = {
+				X = 0.60271
+				Y = 0.60271
+				Z = 0.60271
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3c0b2455-0a25-4723-a7e6-c0005079f082"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "map_flat1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 88.227638
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 5
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/map_flat"
+		}
+		{
+			Cameras = {
+			}
+			Id = "cc42831b-ba69-4558-92a4-7dc3a44a885e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "map_flat2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 104.783936
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 5
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/map_flat"
+		}
+		{
+			Cameras = {
+			}
+			Id = "524bb3d9-c7b4-4602-bf03-3ce3f6a976fa"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.564614
+				Y = -0.652621
+				Z = 0.037458
+			}
+			Rot = {
+				W = -0.728828
+				X = 0
+				Y = 0
+				Z = -0.684697
+			}
+			Scl = {
+				X = 2.1703
+				Y = 2.1703
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "07f7ded9-5835-4c7c-835c-ea8b595a417f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 5.68034
+				Y = 2.02061
+				Z = -2.723665
+			}
+			Rot = {
+				W = -0.959696
+				X = 0
+				Y = 0
+				Z = -0.281041
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "34b073c4-ba15-48a2-b643-a2203a6a58ee"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree6"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -7.119944
+				Y = -0.37591
+				Z = -1.974737
+			}
+			Rot = {
+				W = -0.971487
+				X = 0
+				Y = 0
+				Z = -0.237091
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a684ada4-1708-4d22-b505-3740dfd8e454"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -1.441159
+				Y = -3.583673
+				Z = 0.037458
+			}
+			Rot = {
+				W = -0.965412
+				X = 0
+				Y = 0
+				Z = -0.26073
+			}
+			Scl = {
+				X = 2.1703
+				Y = 2.1703
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4c99ba10-3b63-439f-857d-a225bf2d4a4d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.698517
+				Y = 4.187592
+				Z = 0.037458
+			}
+			Rot = {
+				W = -0.917038
+				X = 0
+				Y = 0
+				Z = 0.398799
+			}
+			Scl = {
+				X = 1.637146
+				Y = 1.637146
+				Z = 0.615441
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c995269b-3c82-4091-98f9-1d1e639cb077"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 1.309722
+				Y = 8.168634
+				Z = 0.037458
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 2.1703
+				Y = 2.1703
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ce252752-6e64-4756-ad84-88fa34e5927a"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 7.458817
+				Z = 0.037458
+			}
+			Rot = {
+				W = -0.808535
+				X = 0
+				Y = 0
+				Z = 0.588448
+			}
+			Scl = {
+				X = 1.721409
+				Y = 1.721409
+				Z = 1.296809
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "431fd1c8-e887-46af-b970-47134aba22a8"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree7"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -5.718735
+				Y = 12.133713
+				Z = -3.138496
+			}
+			Rot = {
+				W = -0.76799
+				X = 0
+				Y = 0
+				Z = -0.640462
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e6be977a-69be-456c-aed7-82fbc4b1ce2c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree8"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 4.428994
+				Y = 12.371499
+				Z = -3.248847
+			}
+			Rot = {
+				W = -0.959696
+				X = 0
+				Y = 0
+				Z = -0.281041
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "587a6fe3-9b08-435b-b30c-b65bf279acde"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree9"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 2.966362
+				Y = 17.684586
+				Z = -1.760968
+			}
+			Rot = {
+				W = 0.315891
+				X = 0
+				Y = 0
+				Z = 0.948795
+			}
+			Scl = {
+				X = 0.60271
+				Y = 0.60271
+				Z = 0.60271
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c4468a8a-5868-4bbc-8daf-6732ca267ef7"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree10"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -2.902666
+				Y = 14.254878
+				Z = -0.300907
+			}
+			Rot = {
+				W = -0.930165
+				X = 0
+				Y = 0
+				Z = 0.367142
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "8d013831-818e-4934-8db0-1b355dfafc1d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree11"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -2.902666
+				Y = 18.87324
+				Z = -0.300907
+			}
+			Rot = {
+				W = -0.960004
+				X = 0
+				Y = 0
+				Z = -0.279986
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "2854ceec-7b11-4f5e-a5da-13247bcc22f8"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree12"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -7.119944
+				Y = 21.113031
+				Z = -1.974737
+			}
+			Rot = {
+				W = -0.971487
+				X = 0
+				Y = 0
+				Z = -0.237091
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "b83be4a5-3377-46c8-bbe0-3dd062af902d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree13"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.541454
+				Y = 23.509552
+				Z = -0.300907
+			}
+			Rot = {
+				W = -0.997278
+				X = 0
+				Y = 0
+				Z = 0.073732
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "97bb264b-b432-45a3-8f27-0da630bb938f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree14"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.174607
+				Y = 29.509342
+				Z = -1.053811
+			}
+			Rot = {
+				W = -0.967798
+				X = 0
+				Y = 0
+				Z = -0.25173
+			}
+			Scl = {
+				X = 4.183806
+				Y = 4.183806
+				Z = 4.183806
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "56fce9d3-1cb2-4af8-92c2-5fe1005a7b2e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree15"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -2.902666
+				Y = 35.74382
+				Z = -0.300907
+			}
+			Rot = {
+				W = -0.930165
+				X = 0
+				Y = 0
+				Z = 0.367142
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "35938811-96f2-4507-97aa-b570c1438aac"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump6"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.564614
+				Y = 20.836321
+				Z = 0.037458
+			}
+			Rot = {
+				W = -0.728828
+				X = 0
+				Y = 0
+				Z = -0.684697
+			}
+			Scl = {
+				X = 2.1703
+				Y = 2.1703
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f8c8f3ad-853b-4f32-8bf4-f1213d5672fc"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump7"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -2.117841
+				Y = 22.198561
+				Z = 0.037458
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 2.1703
+				Y = 2.1703
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "d1898c67-347b-4b8c-a991-cde5607a55ad"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump8"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.698517
+				Y = 25.676533
+				Z = 0.037458
+			}
+			Rot = {
+				W = -0.917038
+				X = 0
+				Y = 0
+				Z = 0.398799
+			}
+			Scl = {
+				X = 1.637146
+				Y = 1.637146
+				Z = 0.615441
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "b4ecc9ad-52c2-4654-a04c-6db703952c29"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree16"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -7.119944
+				Y = 25.948437
+				Z = -3.138496
+			}
+			Rot = {
+				W = -0.76799
+				X = 0
+				Y = 0
+				Z = -0.640462
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "aafd4fcb-679c-4e03-910c-71eb30b9484e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree17"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -5.718735
+				Y = 33.622654
+				Z = -3.138496
+			}
+			Rot = {
+				W = -0.76799
+				X = 0
+				Y = 0
+				Z = -0.640462
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6b2e2dd9-adfd-4265-89c8-0a2b650e6747"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump9"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 36.418369
+				Z = 0.037458
+			}
+			Rot = {
+				W = -0.808535
+				X = 0
+				Y = 0
+				Z = 0.588448
+			}
+			Scl = {
+				X = 1.721409
+				Y = 1.721409
+				Z = 1.525955
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e3860648-ee4e-4e5e-8752-a9b1464a2d16"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump10"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.825157
+				Y = 30.287674
+				Z = -0.088694
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3.705493
+				Y = 3.705493
+				Z = 1.707365
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "900450aa-6d0f-47f1-89c5-5651ee4a953b"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree18"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 3.656015
+				Y = 28.822638
+				Z = -1.760968
+			}
+			Rot = {
+				W = -0.993571
+				X = 0
+				Y = 0
+				Z = -0.113208
+			}
+			Scl = {
+				X = 0.60271
+				Y = 0.60271
+				Z = 0.60271
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "96abdd02-373f-4cba-b375-c87a99534d52"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree19"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 5.68034
+				Y = 23.509552
+				Z = -3.193063
+			}
+			Rot = {
+				W = -0.959696
+				X = 0
+				Y = 0
+				Z = -0.281041
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "15e898f3-20af-42e1-ae0e-504bab51df66"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree20"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 4.428994
+				Y = 33.860439
+				Z = -2.972789
+			}
+			Rot = {
+				W = -0.959696
+				X = 0
+				Y = 0
+				Z = -0.281041
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f27314e3-0959-4c37-8def-f922c5249834"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree21"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 5.013458
+				Y = 39.173527
+				Z = -1.760968
+			}
+			Rot = {
+				W = 0.315891
+				X = 0
+				Y = 0
+				Z = 0.948795
+			}
+			Scl = {
+				X = 0.60271
+				Y = 0.60271
+				Z = 0.60271
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "37a83c64-44eb-400e-8169-338aa28d19c8"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree22"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.708456
+				Y = 45.114655
+				Z = -0.300907
+			}
+			Rot = {
+				W = -0.989082
+				X = 0
+				Y = 0
+				Z = 0.147368
+			}
+			Scl = {
+				X = 1.466556
+				Y = 1.466556
+				Z = 1.466556
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f67a6e3c-6176-4a9c-823b-4fb2a81eb620"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree23"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -7.119944
+				Y = 47.354446
+				Z = -1.974737
+			}
+			Rot = {
+				W = -0.971487
+				X = 0
+				Y = 0
+				Z = -0.237091
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a693a360-686e-495f-bdee-d430b9850b71"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree24"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.541454
+				Y = 49.750969
+				Z = -0.300907
+			}
+			Rot = {
+				W = -0.997278
+				X = 0
+				Y = 0
+				Z = 0.073732
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "bd848391-dac4-424e-a66f-d411523b58cd"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree25"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.174607
+				Y = 56.19249
+				Z = -0.243939
+			}
+			Rot = {
+				W = -0.970235
+				X = 0
+				Y = 0
+				Z = -0.242166
+			}
+			Scl = {
+				X = 1.557822
+				Y = 1.557822
+				Z = 1.557823
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "b332dc1d-f71c-4c3b-9bea-6bca4fc35382"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree26"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -2.902666
+				Y = 61.985237
+				Z = -0.300907
+			}
+			Rot = {
+				W = -0.930165
+				X = 0
+				Y = 0
+				Z = 0.367142
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3300c6b8-500f-465e-9ae5-981b91e268da"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump11"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.564614
+				Y = 47.077736
+				Z = 0.037458
+			}
+			Rot = {
+				W = -0.728828
+				X = 0
+				Y = 0
+				Z = -0.684697
+			}
+			Scl = {
+				X = 2.1703
+				Y = 2.1703
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "7acb5519-a27c-4055-9e66-d51afd73d284"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump12"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -2.117841
+				Y = 48.43998
+				Z = 0.037458
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 2.1703
+				Y = 2.1703
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "076b0f13-bcd4-4972-82cc-822e8e969965"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump13"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.698517
+				Y = 51.91795
+				Z = 0.037458
+			}
+			Rot = {
+				W = -0.917038
+				X = 0
+				Y = 0
+				Z = 0.398799
+			}
+			Scl = {
+				X = 1.637146
+				Y = 1.637146
+				Z = 0.615441
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6b8736d4-cd83-446d-99f5-76243778fe46"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree27"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -7.119944
+				Y = 52.189854
+				Z = -3.138496
+			}
+			Rot = {
+				W = -0.76799
+				X = 0
+				Y = 0
+				Z = -0.640462
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "06b314a6-299e-4cbb-aa47-91bd766a829c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree28"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -5.718735
+				Y = 59.864071
+				Z = -3.138496
+			}
+			Rot = {
+				W = -0.76799
+				X = 0
+				Y = 0
+				Z = -0.640462
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "aadbb8c5-1bc5-4300-8208-5cb5affc5d83"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump14"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -1.258537
+				Y = 53.825687
+				Z = 0.038507
+			}
+			Rot = {
+				W = -0.808535
+				X = 0
+				Y = 0
+				Z = 0.588448
+			}
+			Scl = {
+				X = 1.721409
+				Y = 1.721409
+				Z = 0.706659
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ea3c9080-e1a7-42d8-8292-ac8b6fddcb3c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump15"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 2.955919
+				Y = 54.186871
+				Z = 0.037458
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 2.1703
+				Y = 2.1703
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4aafa394-3156-4570-902b-ed34ac75e802"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree29"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 4.537011
+				Y = 55.064056
+				Z = -1.760968
+			}
+			Rot = {
+				W = -0.993571
+				X = 0
+				Y = 0
+				Z = -0.113208
+			}
+			Scl = {
+				X = 0.60271
+				Y = 0.60271
+				Z = 0.60271
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "8609f159-12f5-46f5-8e21-6c9b244db09d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree30"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 3.943039
+				Y = 49.750969
+				Z = -3.306878
+			}
+			Rot = {
+				W = -0.959696
+				X = 0
+				Y = 0
+				Z = -0.281041
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "bbbba624-0e19-48da-8ff2-026be87c3855"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree31"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 4.428994
+				Y = 60.101856
+				Z = -3.336637
+			}
+			Rot = {
+				W = -0.959696
+				X = 0
+				Y = 0
+				Z = -0.281041
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "237b1f79-965a-4491-a854-3791d25ee9af"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree32"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 5.013458
+				Y = 65.414948
+				Z = -1.760968
+			}
+			Rot = {
+				W = 0.315891
+				X = 0
+				Y = 0
+				Z = 0.948795
+			}
+			Scl = {
+				X = 0.60271
+				Y = 0.60271
+				Z = 0.60271
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a18cbd3c-16ab-4cfb-ad49-80b3305190ec"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump16"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 24.89072
+				Z = -0.046166
+			}
+			Rot = {
+				W = -0.936992
+				X = 0
+				Y = 0
+				Z = -0.349351
+			}
+			Scl = {
+				X = 2.030046
+				Y = 2.030046
+				Z = 1.021195
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "fa4583b6-a168-4e30-9184-f82767845589"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree33"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -2.990785
+				Y = 42.745605
+				Z = -1.760968
+			}
+			Rot = {
+				W = 0.315891
+				X = 0
+				Y = 0
+				Z = 0.948795
+			}
+			Scl = {
+				X = 0.60271
+				Y = 0.60271
+				Z = 0.60271
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f11e2c04-b37c-49c6-a4dc-4066e7169a7a"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree34"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -2.184998
+				Y = 31.395306
+				Z = -1.760968
+			}
+			Rot = {
+				W = -0.701756
+				X = -0.062292
+				Y = -0.001571
+				Z = -0.709687
+			}
+			Scl = {
+				X = 0.60271
+				Y = 0.60271
+				Z = 0.60271
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "11b99fb8-e34c-4869-9a75-48c14b7f6be8"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree35"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -5.221474
+				Y = 17.67412
+				Z = 0.313828
+			}
+			Rot = {
+				W = 0.334046
+				X = 0.540869
+				Y = -0.35732
+				Z = 0.684249
+			}
+			Scl = {
+				X = 0.60271
+				Y = 0.60271
+				Z = 0.60271
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "0984a184-c2d7-4020-9d1d-c6b58dd8f60b"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree36"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -12.325571
+				Y = 10.051204
+				Z = -4.140938
+			}
+			Rot = {
+				W = -0.76799
+				X = 0
+				Y = 0
+				Z = -0.640462
+			}
+			Scl = {
+				X = 1.457002
+				Y = 1.457002
+				Z = 1.457002
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "95b56aca-fc29-49f4-87e2-8018fd5a352a"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree37"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -1.441005
+				Y = 44.443569
+				Z = 0.110408
+			}
+			Rot = {
+				W = -0.22466
+				X = -0.106749
+				Y = 0.524674
+				Z = 0.814156
+			}
+			Scl = {
+				X = 0.60271
+				Y = 0.60271
+				Z = 0.60271
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "2902c29d-0e3f-4e35-b3a4-a3b9b1c44f79"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree38"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 3.246206
+				Y = 56.144684
+				Z = 0.110409
+			}
+			Rot = {
+				W = -0.779206
+				X = 0.120417
+				Y = 0.592766
+				Z = -0.16421
+			}
+			Scl = {
+				X = 0.912909
+				Y = 0.912909
+				Z = 1.571604
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "87d19cbc-4ff2-4b32-9636-edef6c8242c8"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump17"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 41.804333
+				Z = 0.038507
+			}
+			Rot = {
+				W = -0.808535
+				X = 0
+				Y = 0
+				Z = 0.588448
+			}
+			Scl = {
+				X = 1.721409
+				Y = 1.721409
+				Z = 0.706659
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "41615903-f62a-4115-bf91-e9c04110279c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree39"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.074747
+				Y = 7.333696
+				Z = -1.481999
+			}
+			Rot = {
+				W = -0.993571
+				X = 0
+				Y = 0
+				Z = -0.113208
+			}
+			Scl = {
+				X = 0.463152
+				Y = 0.463152
+				Z = 0.463152
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "95215f96-6b3a-4b89-88a9-7b26bcd041db"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree40"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -5.574583
+				Y = -2.421878
+				Z = -1.481999
+			}
+			Rot = {
+				W = -0.803068
+				X = 0
+				Y = 0
+				Z = -0.595887
+			}
+			Scl = {
+				X = 0.463152
+				Y = 0.463152
+				Z = 0.463152
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "8d1e8276-3601-4037-be48-79390d2f8168"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree41"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.474929
+				Y = 0.391011
+				Z = -1.481999
+			}
+			Rot = {
+				W = -0.993571
+				X = 0
+				Y = 0
+				Z = -0.113208
+			}
+			Scl = {
+				X = 0.463152
+				Y = 0.463152
+				Z = 0.463152
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3251b5ff-ddcf-4554-944c-e5fc09420fd3"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "map_flat3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 121.106697
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 5
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/map_flat"
+		}
+		{
+			Cameras = {
+			}
+			Id = "33108e6c-58c7-4aaa-b329-6548d6d7561c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree42"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 3.118568
+				Y = 45.120483
+				Z = -1.760968
+			}
+			Rot = {
+				W = -0.825219
+				X = 0
+				Y = 0
+				Z = -0.564813
+			}
+			Scl = {
+				X = 0.60271
+				Y = 0.60271
+				Z = 0.60271
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+	]
+	Volumes = [
+	]
+}
+entities = [
+	{
+		id = "cb452151-b31f-434a-aac8-35e0669cfa53"
+		modified_components = {
+			"06c78e06-c921-4208-8069-d377b6415d30" = {
+				data = {
+					fog_enabled = false
+				}
+			}
+			"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
+				data = {
+					motion_blur_enabled = false
+				}
+			}
+			"dd1dccf2-6f2f-4b8c-9199-290c069ab62b" = {
+				data = {
+					vignette_enabled = false
+				}
+			}
+			"fd909d00-3e4d-4339-b1a9-784c7d6a60ad" = {
+				data = {
+					bloom_enabled = false
+				}
+			}
+		}
+		name = "Default Shading Environment"
+		prefab = {
+			"$resource_name" = "core/stingray_renderer/environments/midday/midday_shading_environment"
+			"$resource_type" = "entity"
+		}
+	}
+]
+flow = {
+	nodes = [
+		{
+			id = "1e0c230f-b02e-4476-ab0a-34cc36fca84b"
+			in_event_index = [
+				"Movement"
+			]
+			in_variables = {
+				camera__unit = {
+					node = "2c0ef529-c338-4daa-9823-0fa0ca14335c"
+					type = "unit"
+					variable = "unit"
+				}
+				height_scale = {
+					type = "float"
+				}
+				target__unit = {
+					node = "a4e06686-22aa-4539-897b-3f3e0a41fec8"
+					type = "unit"
+					variable = "unit"
+				}
+			}
+			out_event_index = [
+			]
+			type = "flow_subroutine"
+			variable_values = {
+				camera__unit = null
+				flow = "script/Camera_Move_Constraint"
+				height_scale = 0.15
+				target__unit = null
+			}
+		}
+		{
+			id = "2c0ef529-c338-4daa-9823-0fa0ca14335c"
+			in_event_index = [
+			]
+			out_event_index = [
+			]
+			out_variables = {
+				unit = {
+					type = "unit"
+				}
+			}
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "08864ce8-ce00-4511-88ac-e2831e178fd0"
+				}
+				unit = null
+			}
+		}
+		{
+			id = "b1d053ef-5067-406a-a648-f5503017afad"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "1e0c230f-b02e-4476-ab0a-34cc36fca84b:0"
+						node = "1e0c230f-b02e-4476-ab0a-34cc36fca84b"
+					}
+				]
+			}
+			type = "level_update"
+		}
+		{
+			flow_nodes_resource = "core/appkit/appkit"
+			id = "10ad9003-6107-46d4-bb09-54c142334211"
+			in_variables = {
+				Camera = {
+					type = "camera"
+				}
+				Unit = {
+					node = "2c0ef529-c338-4daa-9823-0fa0ca14335c"
+					type = "unit"
+					variable = "unit"
+				}
+			}
+			name = "Set Active Camera"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Camera = null
+				Unit = null
+			}
+			variables = [
+				{
+					name = "Camera"
+					type = "camera"
+				}
+				{
+					name = "Unit"
+					type = "unit"
+				}
+			]
+		}
+		{
+			id = "dace9721-f45e-4029-93d1-b8b282d0684d"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "10ad9003-6107-46d4-bb09-54c142334211:0"
+						node = "10ad9003-6107-46d4-bb09-54c142334211"
+					}
+				]
+			}
+			type = "level_loaded"
+		}
+		{
+			flow_nodes_resource = "core/appkit/appkit"
+			id = "ba425c14-fa4e-4270-a8a5-286dbd1102e4"
+			in_variables = {
+				Name = {
+					type = "string"
+				}
+			}
+			name = "Change Level"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Name = "content/levels/testmap"
+			}
+			variables = [
+				{
+					name = "Name"
+					type = "string"
+				}
+			]
+		}
+		{
+			id = "1793cfa5-5f89-46e3-ad7b-c483465ed108"
+			in_variables = {
+				button_name = {
+					type = "string"
+				}
+				device = {
+					type = "string"
+				}
+				device_number = {
+					type = "float"
+				}
+			}
+			out_events = {
+				pressed = [
+					{
+						event = 0
+						id = "ba425c14-fa4e-4270-a8a5-286dbd1102e4:0"
+						node = "ba425c14-fa4e-4270-a8a5-286dbd1102e4"
+					}
+				]
+			}
+			type = "keyboard_button"
+			variable_values = {
+				button_name = "f5"
+				device = "keyboard"
+				device_number = 0
+				value = null
+			}
+		}
+		{
+			flow_nodes_resource = "core/wwise/wwise"
+			id = "b446a9e4-9237-4a98-9551-bfbe74c59931"
+			in_variables = {
+				Existing_Source_Id = {
+					type = "float"
+				}
+				Name = {
+					type = "string"
+				}
+				Position = {
+					type = "vector3"
+				}
+				Unit = {
+					type = "unit"
+				}
+				Unit_Node = {
+					type = "string"
+				}
+			}
+			name = "Wwise Trigger Event"
+			query = false
+			return_values = [
+				{
+					name = "Playing_Id"
+					type = "float"
+				}
+				{
+					name = "Source_Id"
+					type = "float"
+				}
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Existing_Source_Id = null
+				Name = "bgm_ingame"
+				Playing_Id = null
+				Position = null
+				Source_Id = null
+				Unit = null
+				Unit_Node = null
+			}
+			variables = [
+				{
+					name = "Name"
+					type = "string"
+				}
+				{
+					name = "Unit"
+					type = "unit"
+				}
+				{
+					name = "Unit_Node"
+					type = "string"
+				}
+				{
+					name = "Position"
+					type = "vector3"
+				}
+				{
+					name = "Existing_Source_Id"
+					type = "float"
+				}
+			]
+		}
+		{
+			id = "a4e06686-22aa-4539-897b-3f3e0a41fec8"
+			in_event_index = [
+			]
+			out_event_index = [
+			]
+			out_variables = {
+				unit = {
+					type = "unit"
+				}
+			}
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "47c698d2-0e6a-4fb2-9f5b-e8d77f3e36c3"
+				}
+				unit = null
+			}
+		}
+	]
+}
+level_references = [
+]
+level_settings = {
+	num_background_units = 0
+	sound_environment = ""
+	timpani_sound_environment = "default"
+}
+navmeshes = [
+]
+object_sets = {
+}
+particle_effects = [
+]
+prototypes = [
+]
+scatter = [
+]
+sounds = [
+]
+splines = [
+]
+stories = [
+]
+triggers = [
+]
+units = [
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "5ef77449-f33a-480d-8e9a-c93bcaeaf588"
+		lights = {
+			light = {
+				baked = false
+				box_max = [
+					10
+					10
+					10
+				]
+				box_min = [
+					-10
+					0
+					-10
+				]
+				cast_shadows = true
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1.5
+				material = ""
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "directional"
+			}
+		}
+		material = "core/units/light_source"
+		materials = {
+		}
+		name = "Sun Light"
+		pos = [
+			0
+			0
+			5
+		]
+		rot = [
+			-0.707106781186547
+			-2.77555756156289E-17
+			0.5
+			0.5
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "76a5e0ef-ec1f-4fd2-b2d4-17cc4082b7f5"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Skydome"
+		pos = [
+			0
+			0
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/editor_slave/units/skydome/skydome"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "b549b9cf-a686-45d0-9899-37ca5c7e1cc4"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "map_flat"
+		pos = [
+			0
+			30.447718
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			21.239117
+			7.700333
+			1
+		]
+		type = "content/models/testmap/map_flat"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "7e6389a3-6b08-4216-8f9b-3ef32ad24dc9"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "object_passunder"
+		pos = [
+			0
+			67.610184
+			-1.784988
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "content/models/testmap/object_passunder"
+	}
+	{
+		cameras = {
+			camera = {
+				far_range = 1000
+				interest_point_distance = 10
+				near_range = 0.1
+				orthographic_plane = [
+					0
+					0
+					1
+					1
+				]
+				orthographic_zoom = 10
+				position = [
+					4.982636
+					-4.642629
+					3.248763
+				]
+				projection_type = "perspective"
+				rotation = [
+					0.098436
+					0.036051
+					-0.352841
+					-0.929792
+				]
+				rotation_speed = 0.003
+				translation_speed = 0.05
+				vertical_fov = 50
+			}
+		}
+		data = {
+		}
+		id = "08864ce8-ce00-4511-88ac-e2831e178fd0"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "camera"
+		pos = [
+			4.982636
+			-4.642629
+			3.248763
+		]
+		rot = [
+			0.098436
+			0.036051
+			-0.352841
+			-0.929792
+		]
+		scl = [
+			1
+			1.000058
+			1.000013
+		]
+		type = "core/units/camera"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "47c698d2-0e6a-4fb2-9f5b-e8d77f3e36c3"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "PPK_m"
+		pos = [
+			0
+			-0.72889
+			0.035595
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/characters/PPK/PPK_m"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "cbd63682-dd4e-4156-8f1e-cc3e4b81cb76"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TrashCan"
+		pos = [
+			0
+			89.155899
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/TrashCan/TrashCan"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "df60ab8b-f611-452f-9951-2cd090fede56"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump"
+		pos = [
+			-2.117841
+			0.70962
+			0.037458
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			2.1703
+			2.1703
+			1
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "7a5b1eea-dc8c-45f6-a0a5-1d6e7823e677"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree"
+		pos = [
+			-2.902666
+			-2.615701
+			-0.300907
+		]
+		rot = [
+			0
+			0
+			-0.279986
+			-0.960004
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6894df99-6605-4f5d-b603-48bba0b2f24a"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree1"
+		pos = [
+			-7.119944
+			4.459496
+			-3.138496
+		]
+		rot = [
+			0
+			0
+			-0.640462
+			-0.76799
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "dee8c9c0-068c-43c7-acb3-1196397a27bb"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree2"
+		pos = [
+			-3.541454
+			2.02061
+			-0.300907
+		]
+		rot = [
+			0
+			0
+			0.073732
+			-0.997278
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "ebf4dded-42ee-49b7-8d94-a66d4c5d81a8"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree3"
+		pos = [
+			-4.174607
+			8.462132
+			-0.34209
+		]
+		rot = [
+			0
+			0
+			-0.790614
+			-0.612314
+		]
+		scl = [
+			1.557823
+			1.557823
+			1.557823
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "356d3490-2c9a-4dd2-b7cc-57b5815ea685"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree4"
+		pos = [
+			4.537011
+			7.333696
+			-1.760968
+		]
+		rot = [
+			0
+			0
+			-0.113208
+			-0.993571
+		]
+		scl = [
+			0.60271
+			0.60271
+			0.60271
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3c0b2455-0a25-4723-a7e6-c0005079f082"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "map_flat1"
+		pos = [
+			0
+			88.227638
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			5
+			1
+			1
+		]
+		type = "content/models/testmap/map_flat"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "cc42831b-ba69-4558-92a4-7dc3a44a885e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "map_flat2"
+		pos = [
+			0
+			104.783936
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			5
+			1
+			1
+		]
+		type = "content/models/testmap/map_flat"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "524bb3d9-c7b4-4602-bf03-3ce3f6a976fa"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump1"
+		pos = [
+			-3.564614
+			-0.652621
+			0.037458
+		]
+		rot = [
+			0
+			0
+			-0.684697
+			-0.728828
+		]
+		scl = [
+			2.1703
+			2.1703
+			1
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "07f7ded9-5835-4c7c-835c-ea8b595a417f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree5"
+		pos = [
+			5.68034
+			2.02061
+			-2.723665
+		]
+		rot = [
+			0
+			0
+			-0.281041
+			-0.959696
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "34b073c4-ba15-48a2-b643-a2203a6a58ee"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree6"
+		pos = [
+			-7.119944
+			-0.37591
+			-1.974737
+		]
+		rot = [
+			0
+			0
+			-0.237091
+			-0.971487
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a684ada4-1708-4d22-b505-3740dfd8e454"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump2"
+		pos = [
+			-1.441159
+			-3.583673
+			0.037458
+		]
+		rot = [
+			0
+			0
+			-0.26073
+			-0.965412
+		]
+		scl = [
+			2.1703
+			2.1703
+			1
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "4c99ba10-3b63-439f-857d-a225bf2d4a4d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump3"
+		pos = [
+			-3.698517
+			4.187592
+			0.037458
+		]
+		rot = [
+			0
+			0
+			0.398799
+			-0.917038
+		]
+		scl = [
+			1.637146
+			1.637146
+			0.615441
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c995269b-3c82-4091-98f9-1d1e639cb077"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump4"
+		pos = [
+			1.309722
+			8.168634
+			0.037458
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			2.1703
+			2.1703
+			1
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "ce252752-6e64-4756-ad84-88fa34e5927a"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump5"
+		pos = [
+			0
+			7.458817
+			0.037458
+		]
+		rot = [
+			0
+			0
+			0.588448
+			-0.808535
+		]
+		scl = [
+			1.721409
+			1.721409
+			1.296809
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "431fd1c8-e887-46af-b970-47134aba22a8"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree7"
+		pos = [
+			-5.718735
+			12.133713
+			-3.138496
+		]
+		rot = [
+			0
+			0
+			-0.640462
+			-0.76799
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e6be977a-69be-456c-aed7-82fbc4b1ce2c"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree8"
+		pos = [
+			4.428994
+			12.371499
+			-3.248847
+		]
+		rot = [
+			0
+			0
+			-0.281041
+			-0.959696
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "587a6fe3-9b08-435b-b30c-b65bf279acde"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree9"
+		pos = [
+			2.966362
+			17.684586
+			-1.760968
+		]
+		rot = [
+			0
+			0
+			0.948795
+			0.315891
+		]
+		scl = [
+			0.60271
+			0.60271
+			0.60271
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c4468a8a-5868-4bbc-8daf-6732ca267ef7"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree10"
+		pos = [
+			-2.902666
+			14.254878
+			-0.300907
+		]
+		rot = [
+			0
+			0
+			0.367142
+			-0.930165
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "8d013831-818e-4934-8db0-1b355dfafc1d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree11"
+		pos = [
+			-2.902666
+			18.87324
+			-0.300907
+		]
+		rot = [
+			0
+			0
+			-0.279986
+			-0.960004
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "2854ceec-7b11-4f5e-a5da-13247bcc22f8"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree12"
+		pos = [
+			-7.119944
+			21.113031
+			-1.974737
+		]
+		rot = [
+			0
+			0
+			-0.237091
+			-0.971487
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "b83be4a5-3377-46c8-bbe0-3dd062af902d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree13"
+		pos = [
+			-3.541454
+			23.509552
+			-0.300907
+		]
+		rot = [
+			0
+			0
+			0.073732
+			-0.997278
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "97bb264b-b432-45a3-8f27-0da630bb938f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree14"
+		pos = [
+			-4.174607
+			29.509342
+			-1.053811
+		]
+		rot = [
+			0
+			0
+			-0.25173
+			-0.967798
+		]
+		scl = [
+			4.183806
+			4.183806
+			4.183806
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "56fce9d3-1cb2-4af8-92c2-5fe1005a7b2e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree15"
+		pos = [
+			-2.902666
+			35.74382
+			-0.300907
+		]
+		rot = [
+			0
+			0
+			0.367142
+			-0.930165
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "35938811-96f2-4507-97aa-b570c1438aac"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump6"
+		pos = [
+			-3.564614
+			20.836321
+			0.037458
+		]
+		rot = [
+			0
+			0
+			-0.684697
+			-0.728828
+		]
+		scl = [
+			2.1703
+			2.1703
+			1
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f8c8f3ad-853b-4f32-8bf4-f1213d5672fc"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump7"
+		pos = [
+			-2.117841
+			22.198561
+			0.037458
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			2.1703
+			2.1703
+			1
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "d1898c67-347b-4b8c-a991-cde5607a55ad"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump8"
+		pos = [
+			-3.698517
+			25.676533
+			0.037458
+		]
+		rot = [
+			0
+			0
+			0.398799
+			-0.917038
+		]
+		scl = [
+			1.637146
+			1.637146
+			0.615441
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "b4ecc9ad-52c2-4654-a04c-6db703952c29"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree16"
+		pos = [
+			-7.119944
+			25.948437
+			-3.138496
+		]
+		rot = [
+			0
+			0
+			-0.640462
+			-0.76799
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "aafd4fcb-679c-4e03-910c-71eb30b9484e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree17"
+		pos = [
+			-5.718735
+			33.622654
+			-3.138496
+		]
+		rot = [
+			0
+			0
+			-0.640462
+			-0.76799
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6b2e2dd9-adfd-4265-89c8-0a2b650e6747"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump9"
+		pos = [
+			0
+			36.418369
+			0.037458
+		]
+		rot = [
+			0
+			0
+			0.588448
+			-0.808535
+		]
+		scl = [
+			1.721409
+			1.721409
+			1.525955
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e3860648-ee4e-4e5e-8752-a9b1464a2d16"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump10"
+		pos = [
+			0.825157
+			30.287674
+			-0.088694
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3.705493
+			3.705493
+			1.707365
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "900450aa-6d0f-47f1-89c5-5651ee4a953b"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree18"
+		pos = [
+			3.656015
+			28.822638
+			-1.760968
+		]
+		rot = [
+			0
+			0
+			-0.113208
+			-0.993571
+		]
+		scl = [
+			0.60271
+			0.60271
+			0.60271
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "96abdd02-373f-4cba-b375-c87a99534d52"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree19"
+		pos = [
+			5.68034
+			23.509552
+			-3.193063
+		]
+		rot = [
+			0
+			0
+			-0.281041
+			-0.959696
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "15e898f3-20af-42e1-ae0e-504bab51df66"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree20"
+		pos = [
+			4.428994
+			33.860439
+			-2.972789
+		]
+		rot = [
+			0
+			0
+			-0.281041
+			-0.959696
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f27314e3-0959-4c37-8def-f922c5249834"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree21"
+		pos = [
+			5.013458
+			39.173527
+			-1.760968
+		]
+		rot = [
+			0
+			0
+			0.948795
+			0.315891
+		]
+		scl = [
+			0.60271
+			0.60271
+			0.60271
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "37a83c64-44eb-400e-8169-338aa28d19c8"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree22"
+		pos = [
+			-3.708456
+			45.114655
+			-0.300907
+		]
+		rot = [
+			0
+			0
+			0.147368
+			-0.989082
+		]
+		scl = [
+			1.466556
+			1.466556
+			1.466556
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f67a6e3c-6176-4a9c-823b-4fb2a81eb620"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree23"
+		pos = [
+			-7.119944
+			47.354446
+			-1.974737
+		]
+		rot = [
+			0
+			0
+			-0.237091
+			-0.971487
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a693a360-686e-495f-bdee-d430b9850b71"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree24"
+		pos = [
+			-3.541454
+			49.750969
+			-0.300907
+		]
+		rot = [
+			0
+			0
+			0.073732
+			-0.997278
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "bd848391-dac4-424e-a66f-d411523b58cd"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree25"
+		pos = [
+			-4.174607
+			56.19249
+			-0.243939
+		]
+		rot = [
+			0
+			0
+			-0.242166
+			-0.970235
+		]
+		scl = [
+			1.557822
+			1.557822
+			1.557823
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "b332dc1d-f71c-4c3b-9bea-6bca4fc35382"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree26"
+		pos = [
+			-2.902666
+			61.985237
+			-0.300907
+		]
+		rot = [
+			0
+			0
+			0.367142
+			-0.930165
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3300c6b8-500f-465e-9ae5-981b91e268da"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump11"
+		pos = [
+			-3.564614
+			47.077736
+			0.037458
+		]
+		rot = [
+			0
+			0
+			-0.684697
+			-0.728828
+		]
+		scl = [
+			2.1703
+			2.1703
+			1
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "7acb5519-a27c-4055-9e66-d51afd73d284"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump12"
+		pos = [
+			-2.117841
+			48.43998
+			0.037458
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			2.1703
+			2.1703
+			1
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "076b0f13-bcd4-4972-82cc-822e8e969965"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump13"
+		pos = [
+			-3.698517
+			51.91795
+			0.037458
+		]
+		rot = [
+			0
+			0
+			0.398799
+			-0.917038
+		]
+		scl = [
+			1.637146
+			1.637146
+			0.615441
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6b8736d4-cd83-446d-99f5-76243778fe46"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree27"
+		pos = [
+			-7.119944
+			52.189854
+			-3.138496
+		]
+		rot = [
+			0
+			0
+			-0.640462
+			-0.76799
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "06b314a6-299e-4cbb-aa47-91bd766a829c"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree28"
+		pos = [
+			-5.718735
+			59.864071
+			-3.138496
+		]
+		rot = [
+			0
+			0
+			-0.640462
+			-0.76799
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "aadbb8c5-1bc5-4300-8208-5cb5affc5d83"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump14"
+		pos = [
+			-1.258537
+			53.825687
+			0.038507
+		]
+		rot = [
+			0
+			0
+			0.588448
+			-0.808535
+		]
+		scl = [
+			1.721409
+			1.721409
+			0.706659
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "ea3c9080-e1a7-42d8-8292-ac8b6fddcb3c"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump15"
+		pos = [
+			2.955919
+			54.186871
+			0.037458
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			2.1703
+			2.1703
+			1
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "4aafa394-3156-4570-902b-ed34ac75e802"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree29"
+		pos = [
+			4.537011
+			55.064056
+			-1.760968
+		]
+		rot = [
+			0
+			0
+			-0.113208
+			-0.993571
+		]
+		scl = [
+			0.60271
+			0.60271
+			0.60271
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "8609f159-12f5-46f5-8e21-6c9b244db09d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree30"
+		pos = [
+			3.943039
+			49.750969
+			-3.306878
+		]
+		rot = [
+			0
+			0
+			-0.281041
+			-0.959696
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "bbbba624-0e19-48da-8ff2-026be87c3855"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree31"
+		pos = [
+			4.428994
+			60.101856
+			-3.336637
+		]
+		rot = [
+			0
+			0
+			-0.281041
+			-0.959696
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "237b1f79-965a-4491-a854-3791d25ee9af"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree32"
+		pos = [
+			5.013458
+			65.414948
+			-1.760968
+		]
+		rot = [
+			0
+			0
+			0.948795
+			0.315891
+		]
+		scl = [
+			0.60271
+			0.60271
+			0.60271
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a18cbd3c-16ab-4cfb-ad49-80b3305190ec"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump16"
+		pos = [
+			0
+			24.89072
+			-0.046166
+		]
+		rot = [
+			0
+			0
+			-0.349351
+			-0.936992
+		]
+		scl = [
+			2.030046
+			2.030046
+			1.021195
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "fa4583b6-a168-4e30-9184-f82767845589"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree33"
+		pos = [
+			-2.990785
+			42.745605
+			-1.760968
+		]
+		rot = [
+			0
+			0
+			0.948795
+			0.315891
+		]
+		scl = [
+			0.60271
+			0.60271
+			0.60271
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f11e2c04-b37c-49c6-a4dc-4066e7169a7a"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree34"
+		pos = [
+			-2.184998
+			31.395306
+			-1.760968
+		]
+		rot = [
+			-0.062292
+			-0.001571
+			-0.709687
+			-0.701756
+		]
+		scl = [
+			0.60271
+			0.60271
+			0.60271
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "11b99fb8-e34c-4869-9a75-48c14b7f6be8"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree35"
+		pos = [
+			-5.221474
+			17.67412
+			0.313828
+		]
+		rot = [
+			0.540869
+			-0.35732
+			0.684249
+			0.334046
+		]
+		scl = [
+			0.60271
+			0.60271
+			0.60271
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "0984a184-c2d7-4020-9d1d-c6b58dd8f60b"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree36"
+		pos = [
+			-12.325571
+			10.051204
+			-4.140938
+		]
+		rot = [
+			0
+			0
+			-0.640462
+			-0.76799
+		]
+		scl = [
+			1.457002
+			1.457002
+			1.457002
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "95b56aca-fc29-49f4-87e2-8018fd5a352a"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree37"
+		pos = [
+			-1.441005
+			44.443569
+			0.110408
+		]
+		rot = [
+			-0.106749
+			0.524674
+			0.814156
+			-0.22466
+		]
+		scl = [
+			0.60271
+			0.60271
+			0.60271
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "2902c29d-0e3f-4e35-b3a4-a3b9b1c44f79"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree38"
+		pos = [
+			3.246206
+			56.144684
+			0.110409
+		]
+		rot = [
+			0.120417
+			0.592766
+			-0.16421
+			-0.779206
+		]
+		scl = [
+			0.912909
+			0.912909
+			1.571604
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "87d19cbc-4ff2-4b32-9636-edef6c8242c8"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump17"
+		pos = [
+			0
+			41.804333
+			0.038507
+		]
+		rot = [
+			0
+			0
+			0.588448
+			-0.808535
+		]
+		scl = [
+			1.721409
+			1.721409
+			0.706659
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "41615903-f62a-4115-bf91-e9c04110279c"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree39"
+		pos = [
+			-3.074747
+			7.333696
+			-1.481999
+		]
+		rot = [
+			0
+			0
+			-0.113208
+			-0.993571
+		]
+		scl = [
+			0.463152
+			0.463152
+			0.463152
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "95215f96-6b3a-4b89-88a9-7b26bcd041db"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree40"
+		pos = [
+			-5.574583
+			-2.421878
+			-1.481999
+		]
+		rot = [
+			0
+			0
+			-0.595887
+			-0.803068
+		]
+		scl = [
+			0.463152
+			0.463152
+			0.463152
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "8d1e8276-3601-4037-be48-79390d2f8168"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree41"
+		pos = [
+			-4.474929
+			0.391011
+			-1.481999
+		]
+		rot = [
+			0
+			0
+			-0.113208
+			-0.993571
+		]
+		scl = [
+			0.463152
+			0.463152
+			0.463152
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3251b5ff-ddcf-4554-944c-e5fc09420fd3"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "map_flat3"
+		pos = [
+			0
+			121.106697
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			5
+			1
+			1
+		]
+		type = "content/models/testmap/map_flat"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "33108e6c-58c7-4aaa-b329-6548d6d7561c"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree42"
+		pos = [
+			3.118568
+			45.120483
+			-1.760968
+		]
+		rot = [
+			0
+			0
+			-0.564813
+			-0.825219
+		]
+		scl = [
+			0.60271
+			0.60271
+			0.60271
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+]
+volumes = [
+]

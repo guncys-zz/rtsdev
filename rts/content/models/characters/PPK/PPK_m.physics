@@ -1,0 +1,95 @@
+
+movers = [
+	{
+		collision_filter = "default"
+		height = 1
+		name = "mover"
+		radius = 0.3
+		slope_limit = 0.785398163397448
+	}
+]
+physx_scene = {
+	actors = {
+		groundPlane = {
+			enabled = true
+			shapes = {
+				Ground = {
+				}
+			}
+		}
+		Head = {
+			enabled = false
+			shapes = {
+				LeftHairA1RigidShape1 = {
+				}
+				PonyTailRigidShape1 = {
+				}
+				RightHairA1RigidShape1 = {
+				}
+			}
+		}
+		LeftHairA1 = {
+			enabled = false
+			shapes = {
+				LeftHairA2RigidShape1 = {
+				}
+			}
+		}
+		LeftHairA2 = {
+			enabled = false
+			shapes = {
+				LeftHairA3RigidShape1 = {
+				}
+			}
+		}
+		PonyTail = {
+			enabled = false
+			shapes = {
+				PonyTail1RigidShape1 = {
+				}
+			}
+		}
+		PonyTail1 = {
+			enabled = false
+			shapes = {
+				PonyTail2RigidShape1 = {
+				}
+			}
+		}
+		PonyTail2 = {
+			enabled = false
+			shapes = {
+				PonyTail3RigidShape1 = {
+				}
+			}
+		}
+		PonyTail3 = {
+			enabled = false
+			shapes = {
+				PonyTail4RigidShape1 = {
+				}
+			}
+		}
+		PonyTail4 = {
+			enabled = false
+			shapes = {
+				PonyTail5RigidShape1 = {
+				}
+			}
+		}
+		RightHairA1 = {
+			enabled = false
+			shapes = {
+				RightHairA2RigidShape1 = {
+				}
+			}
+		}
+		RightHairA2 = {
+			enabled = false
+			shapes = {
+				RightHairA3RigidShape1 = {
+				}
+			}
+		}
+	}
+}

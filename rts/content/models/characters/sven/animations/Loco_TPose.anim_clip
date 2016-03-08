@@ -1,0 +1,43 @@
+
+_data_root_version = 2
+_id = "50fc5e0b-4aab-455b-ab55-7e41effbeda6"
+_name = "content/models/characters/sven/animations/Loco_TPose"
+anim_skeleton_ref = {
+	_id = "e6f0fcf2-9352-4843-bba3-a7f20f8509ff"
+	ref_filename = "content/models/characters/sven/Sven_SKLTN.anim_skeleton"
+	ref_id = null
+}
+autostep = {
+	_id = "637a2984-65ce-40e9-a901-ed9a3446fad9"
+	autostep = false
+	rotation = 0.174532925199433
+	translation = 1
+}
+base_offset_preview_animation_clip_ref = {
+	_id = "62f84966-5bcf-4fd8-a764-6a4eb2ea43c5"
+	ref_filename = null
+	ref_id = null
+}
+beats = [
+]
+custom_compression_settings = [
+]
+dcc_asset_ref = {
+	_id = "baa32408-fed0-4d06-ac64-050c96955a40"
+	ref_filename = "content/models/characters/sven/Loco.dcc_asset"
+	ref_id = null
+}
+flow_events = [
+]
+global_compression_settings = {
+	_id = "43c0ee2a-91d7-4db6-9220-59fc765a0eff"
+	do_pack_positions = true
+	do_pack_rotations = true
+	do_pack_scales = true
+	position_tolerance = 0.001
+	rotation_tolerance = 0.001
+	scale_tolerance = 0.001
+}
+offset_animation = false
+take_name = "TPose"
+use_skeleton_base_pose = false

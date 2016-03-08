@@ -1,0 +1,13 @@
+nodes = [
+	{
+		name = "Load CSV file"
+		args = {
+			Path = "string"
+		}
+		function = "Tools.Load_csv"
+		category = "Tools"
+		returns = {
+				data = "string"
+		}
+	}
+]

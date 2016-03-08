@@ -1,0 +1,42 @@
+
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 7.339417
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			-5.033087
+			4.007319
+			5.140579
+		]
+		projection_type = "perspective"
+		rotation = [
+			0.111249
+			-0.226646
+			0.868606
+			-0.426355
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
+materials = {
+	object_3 = "content/models/testmap/object_3"
+}
+renderables = {
+	pCube9 = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

@@ -1,0 +1,16 @@
+
+materials = {
+	blinn1 = "content/models/blockers/Tree/blinn1"
+	lambert2 = "content/models/blockers/Tree/lambert2"
+}
+renderables = {
+	Tree = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

@@ -1,0 +1,443 @@
+
+bones_mapping = [ {
+		bone = "sm_rig:Skel:Bone__M__Hips_Base_Legs_Rotation"
+		id = 1
+		name = "Hips"
+	} {
+		bone = "sm_rig:Skel:Bone__L__Leg_Upr"
+		id = 2
+		name = "LeftUpLeg"
+	} {
+		bone = "sm_rig:Skel:Bone__L__Leg_Lwr"
+		id = 3
+		name = "LeftLeg"
+	} {
+		bone = "sm_rig:Skel:Bone__L__Leg_Ankle"
+		id = 4
+		name = "LeftFoot"
+	} {
+		bone = "sm_rig:Skel:Bone__L__Leg_Toe"
+		id = 16
+		name = "LeftToeBase"
+	} {
+		bone = "sm_rig:Skel:Bone__R__Leg_Upr"
+		id = 5
+		name = "RightUpLeg"
+	} {
+		bone = "sm_rig:Skel:Bone__R__Leg_Lwr"
+		id = 6
+		name = "RightLeg"
+	} {
+		bone = "sm_rig:Skel:Bone__R__Leg_Ankle"
+		id = 7
+		name = "RightFoot"
+	} {
+		bone = "sm_rig:Skel:Bone__R__Leg_Toe"
+		id = 17
+		name = "RightToeBase"
+	} {
+		bone = "sm_rig:Skel:Bone__M__Hips_Base_Spine_Rotation"
+		id = 8
+		name = "Spine"
+	} {
+		bone = "sm_rig:Skel:Bone__M__Spine_01"
+		id = 23
+		name = "Spine1"
+	} {
+		bone = "sm_rig:Skel:Bone__L__Arm_Clav"
+		id = 18
+		name = "LeftShoulder"
+	} {
+		bone = "sm_rig:Skel:Bone__L__Arm_Upr"
+		id = 9
+		name = "LeftArm"
+	} {
+		bone = "sm_rig:Skel:Bone__L__Arm_Lwr"
+		id = 10
+		name = "LeftForeArm"
+	} {
+		bone = "sm_rig:Skel:Bone__L__Arm_Hand"
+		id = 11
+		name = "LeftHand"
+	} {
+		bone = "sm_rig:Skel:Bone__R__Arm_Clav"
+		id = 19
+		name = "RightShoulder"
+	} {
+		bone = "sm_rig:Skel:Bone__R__Arm_Upr"
+		id = 12
+		name = "RightArm"
+	} {
+		bone = "sm_rig:Skel:Bone__R__Arm_Lwr"
+		id = 13
+		name = "RightForeArm"
+	} {
+		bone = "sm_rig:Skel:Bone__R__Arm_Hand"
+		id = 14
+		name = "RightHand"
+	} {
+		bone = "sm_rig:Skel:Bone__M__Neck_01"
+		id = 20
+		name = "Neck"
+	} {
+		bone = "sm_rig:Skel:Bone__M__Head"
+		id = 15
+		name = "Head"
+	} {
+		bone = "sm_rig:Skel:Bone__M__Spine_02"
+		id = 24
+		name = "Spine2"
+	} {
+		bone = "sm_rig:Skel:Bone__M__Spine_03"
+		id = 25
+		name = "Spine3"
+	} {
+		bone = "sm_rig:Skel:Bone__M__Spine_04"
+		id = 26
+		name = "Spine4"
+	} {
+		bone = "sm_rig:Skel:Bone__M__Spine_05"
+		id = 27
+		name = "Spine5"
+	} {
+		bone = "sm_rig:Skel:Bone__M__Root"
+		id = 0
+		name = "Reference"
+	} {
+		bone = "sm_rig:Skel:Bone__M__Hips"
+		id = 49
+		name = "HipsTranslation"
+	} {
+		bone = "sm_rig:Skel:Bone__M__Neck_02"
+		id = 32
+		name = "Neck1"
+	} ]
+contact_foot_back_to_ankle = 0.0525848
+contact_foot_bottom_to_ankle = 0.0845052
+contact_foot_front_to_middle = 0.0525848
+contact_foot_in_to_ankle = 0.0525848
+contact_foot_middle_to_ankle = 0.10517
+contact_foot_out_to_ankle = 0.0525848
+contact_foot_type = 0
+contact_hand_back_to_wrist = 0.0001
+contact_hand_bottom_to_wrist = 0.0332664
+contact_hand_front_to_middle = 0.0694119
+contact_hand_in_to_wrist = 0.0694119
+contact_hand_middle_to_wrist = 0.0694119
+contact_hand_out_to_wrist = 0.0694119
+contact_hand_type = 0
+limits = [ ]
+parent_offsets = [ {
+		nodeID = 0
+		parents = [ ]
+	} ]
+t_stance = [ {
+		qw = 0.99967
+		qx = 0.0256869
+		qy = -1.4254e-013
+		qz = 0.000716273
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 1.57165e-006
+		ty = 0.959661
+		tz = -0.0123124
+	} {
+		qw = 0.998855
+		qx = -0.0154996
+		qy = -0.0030073
+		qz = 0.0451624
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.0675217
+		ty = 0.912726
+		tz = -0.0113204
+	} {
+		qw = 0.997754
+		qx = 0.0485333
+		qy = -0.0191801
+		qz = 0.0420028
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.0993102
+		ty = 0.520264
+		tz = 0.000751926
+	} {
+		qw = 0.964803
+		qx = 0.25655
+		qy = 0.0558149
+		qz = -0.0148739
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.136956
+		ty = 0.0845052
+		tz = -0.0410934
+	} {
+		qw = 0.997613
+		qx = 3.03798e-006
+		qy = 0.0690589
+		qz = -3.13238e-005
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.149163
+		ty = 0.0239139
+		tz = 0.0640762
+	} {
+		qw = 0.0227322
+		qx = 0.997746
+		qy = -0.0629575
+		qz = -0.00469579
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.0703658
+		ty = 0.912814
+		tz = -0.0114858
+	} {
+		qw = 0.0586094
+		qx = -0.964609
+		qy = 0.0276402
+		qz = 0.255598
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.101179
+		ty = 0.519452
+		tz = 0.00156606
+	} {
+		qw = 0.258948
+		qx = -0.964585
+		qy = -0.0129884
+		qz = -0.048503
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.137688
+		ty = 0.0847623
+		tz = -0.0418067
+	} {
+		qw = -1.48749e-006
+		qx = -0.997102
+		qy = 3.1438e-005
+		qz = -0.0760791
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.148268
+		ty = 0.0237535
+		tz = 0.0631022
+	} {
+		qw = 1
+		qx = 0
+		qy = 0
+		qz = 0
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 1.57165e-006
+		ty = 0.959661
+		tz = -0.0123124
+	} {
+		qw = 1
+		qx = 0
+		qy = 0
+		qz = 0
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 1.57165e-006
+		ty = 1.07014
+		tz = -0.0123124
+	} {
+		qw = 0.986643
+		qx = -0.0133398
+		qy = 0.112684
+		qz = -0.116873
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.0700016
+		ty = 1.51008
+		tz = -0.0395718
+	} {
+		qw = 0.997829
+		qx = -0.0114743
+		qy = 0.0645706
+		qz = -0.00602064
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.173908
+		ty = 1.48446
+		tz = -0.0636198
+	} {
+		qw = 0.997873
+		qx = -0.0121515
+		qy = -0.0638917
+		qz = -0.00449986
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.435297
+		ty = 1.4809
+		tz = -0.0975519
+	} {
+		qw = 0.999981
+		qx = 0.0032421
+		qy = -0.00129743
+		qz = -0.00509395
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0.722052
+		ty = 1.47875
+		tz = -0.0606532
+	} {
+		qw = 0.113889
+		qx = -0.116825
+		qy = 0.986509
+		qz = -0.0134934
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.0699984
+		ty = 1.5101
+		tz = -0.0397436
+	} {
+		qw = 0.0114858
+		qx = 0.99775
+		qy = 0.00594381
+		qz = 0.0657908
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.173849
+		ty = 1.48448
+		tz = -0.0640458
+	} {
+		qw = 0.012153
+		qx = 0.99795
+		qy = 0.0044222
+		qz = -0.0626714
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.435153
+		ty = 1.48095
+		tz = -0.0986173
+	} {
+		qw = 0.00323596
+		qx = -0.999982
+		qy = -0.00503499
+		qz = 7.36775e-005
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -0.721994
+		ty = 1.47884
+		tz = -0.0624226
+	} {
+		qw = 0.984023
+		qx = 0.178038
+		qy = 2.32897e-005
+		qz = 0.000636397
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 1.57194e-006
+		ty = 1.55259
+		tz = -0.0184584
+	} {
+		qw = 1
+		qx = 0
+		qy = 0
+		qz = 0
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -9.76718e-005
+		ty = 1.64314
+		tz = 0.0153149
+	} {
+		qw = 1
+		qx = 0
+		qy = 0
+		qz = 0
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 1.57151e-006
+		ty = 1.15148
+		tz = -0.0123124
+	} {
+		qw = 1
+		qx = 0
+		qy = 0
+		qz = 0
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 1.57175e-006
+		ty = 1.23723
+		tz = -0.0123124
+	} {
+		qw = 1
+		qx = 0
+		qy = 0
+		qz = 0
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 1.57173e-006
+		ty = 1.31518
+		tz = -0.0123124
+	} {
+		qw = 1
+		qx = 0
+		qy = 0
+		qz = 0
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 1.57173e-006
+		ty = 1.39175
+		tz = -0.0123124
+	} {
+		qw = 1
+		qx = 0
+		qy = 0
+		qz = 0
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 0
+		ty = 0
+		tz = 0
+	} {
+		qw = 1
+		qx = 0
+		qy = 0
+		qz = 0
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = 1.57165e-006
+		ty = 0.959661
+		tz = -0.0123124
+	} {
+		qw = 0.984023
+		qx = 0.178038
+		qy = 2.32897e-005
+		qz = 0.000636397
+		sx = 1
+		sy = 1
+		sz = 1
+		tx = -4.97162e-005
+		ty = 1.59751
+		tz = -0.00168907
+	} ]
+unit_name = "Hit_Reaction"

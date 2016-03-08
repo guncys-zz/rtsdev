@@ -1,0 +1,54 @@
+
+nodes = [
+	{
+		id = "66133a6f-13d6-419b-807a-e4582a5aa681"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "d0574422-2aa7-4869-92e6-54950e625990:0"
+					node = "d0574422-2aa7-4869-92e6-54950e625990"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "Load CSV"
+		}
+	}
+	{
+		flow_nodes_resource = "script/custom_flows/load_csv"
+		id = "d0574422-2aa7-4869-92e6-54950e625990"
+		in_variables = {
+			Path = {
+				type = "string"
+			}
+		}
+		name = "Load CSV file"
+		query = false
+		return_values = [
+			{
+				name = "data"
+				type = "string"
+			}
+		]
+		type = "custom_script_node"
+		variable_values = {
+			data = null
+			Path = "C:\\Users\\syota.yoshikai\\Documents\\gitrepo\\rtsproto\\prototype1\\csv\\test.csv"
+		}
+		variables = [
+			{
+				name = "Path"
+				type = "string"
+			}
+		]
+	}
+	{
+		id = "11111111-2222-3333-4444-555555555555"
+		type = "unit_spawned"
+		variable_values = {
+			unit = null
+		}
+	}
+]

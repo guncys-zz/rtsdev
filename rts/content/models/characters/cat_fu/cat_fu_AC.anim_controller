@@ -1,0 +1,706 @@
+
+_data_root_version = 6
+_id = "8e77e8e4-4a7b-47df-bdb3-e32e7bde3065"
+_name = "content/models/characters/cat_fu/cat_fu_AC"
+anim_event_root_folder_name = "Events"
+anim_skeleton_ref = {
+	_id = "a5f55109-7a0a-4fc9-bebb-e157f04eded2"
+	ref_filename = "content/models/characters/cat_fu/SKLTN.anim_skeleton"
+	ref_id = null
+}
+clip_mappings = [
+]
+compiler_data = {
+	bones = "content/models/characters/cat_fu/SKLTN"
+	events = {
+		"Anim End" = {
+		}
+		IdleEvent = {
+		}
+		JumpEvent = {
+		}
+		RunEvent = {
+		}
+		WalkEvent = {
+		}
+	}
+	layers = [
+		{
+			default_state = "idle_state"
+			states = [
+				{
+					animations = [
+						"content/models/characters/cat_fu/animations/Cat_Fu_Idle"
+					]
+					loop_animation = true
+					name = "idle_state"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0.2
+							event = "JumpEvent"
+							mode = "direct"
+							on_beat = ""
+							to = "jump_state"
+						}
+						{
+							blend_time = 0.2
+							event = "WalkEvent"
+							mode = "direct"
+							on_beat = ""
+							to = "walk_state"
+						}
+						{
+							blend_time = 0.2
+							event = "RunEvent"
+							mode = "direct"
+							on_beat = ""
+							to = "run_state"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/characters/cat_fu/animations/Cat_Fu_Run"
+					]
+					loop_animation = true
+					name = "run_state"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0.2
+							event = "JumpEvent"
+							mode = "direct"
+							on_beat = ""
+							to = "jump_state"
+						}
+						{
+							blend_time = 0.2
+							event = "WalkEvent"
+							mode = "direct"
+							on_beat = ""
+							to = "walk_state"
+						}
+						{
+							blend_time = 0.2
+							event = "IdleEvent"
+							mode = "direct"
+							on_beat = ""
+							to = "idle_state"
+						}
+					]
+					weights = [
+						"0.44"
+					]
+				}
+				{
+					animations = [
+						"content/models/characters/cat_fu/animations/Cat_Fu_Run"
+					]
+					loop_animation = true
+					name = "walk_state"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "0.5"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0.2
+							event = "RunEvent"
+							mode = "direct"
+							on_beat = ""
+							to = "run_state"
+						}
+						{
+							blend_time = 0.2
+							event = "IdleEvent"
+							mode = "direct"
+							on_beat = ""
+							to = "idle_state"
+						}
+					]
+					weights = [
+						"1"
+					]
+				}
+				{
+					animations = [
+						"content/models/characters/cat_fu/animations/Cat_Fu_Punch_B"
+					]
+					loop_animation = true
+					name = "jump_state"
+					randomization_type = "on_entry"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0.2
+							event = "RunEvent"
+							mode = "direct"
+							on_beat = ""
+							to = "run_state"
+						}
+						{
+							blend_time = 0.2
+							event = "IdleEvent"
+							mode = "wait"
+							on_beat = ""
+							to = "idle_state"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+			]
+		}
+	]
+}
+constraint_root_folder_name = "Constraints"
+constraint_target_root_folder_name = "Constraint Targets"
+constraint_targets = {
+	_id = "4504de96-b3f2-4b5a-8d68-aa461a764a2a"
+	_name = "Constraint Targets"
+	data_list = [
+	]
+	sub_folders = [
+	]
+}
+constraints = {
+	_id = "120ef248-471e-4425-b67d-216199df551a"
+	_name = "Constraints"
+	data_list = [
+	]
+	sub_folders = [
+	]
+}
+events = {
+	_id = "062e4c9e-fe88-4050-91cc-051e3ba6ed89"
+	_name = "Events"
+	data_list = [
+		{
+			_id = "a3d4c47d-1655-4eb2-973f-58085fb6efdb"
+			_name = "Anim End"
+		}
+		{
+			_id = "d785cb61-230c-432a-aadd-c961d6b5b238"
+			_name = "RunEvent"
+		}
+		{
+			_id = "c0796331-e4c1-491a-b9f1-58a4dd65e3e5"
+			_name = "IdleEvent"
+		}
+		{
+			_id = "65695a4a-a34d-4c1a-938f-456e1c5e7a70"
+			_name = "WalkEvent"
+		}
+		{
+			_id = "6e3b56f9-f92a-47bd-b8f4-9f024a7077d3"
+			_name = "JumpEvent"
+		}
+	]
+	sub_folders = [
+	]
+}
+layers = [
+	{
+		_id = "22b4af79-d755-40d4-aa80-efef575db867"
+		_name = "Base"
+		blend_states = [
+		]
+		default_state_ref = {
+			_id = "02807ccc-7f5d-4a56-a69d-9cb94fb686cd"
+			ref_filename = null
+			ref_id = "10ee1702-184e-411c-bc6c-4182c44d2dcb"
+		}
+		empty_states = [
+		]
+		group_states = [
+		]
+		notes = [
+		]
+		ragdoll_states = [
+		]
+		shortcut_states = [
+		]
+		states = [
+			{
+				_id = "10ee1702-184e-411c-bc6c-4182c44d2dcb"
+				_name = "idle_state"
+				anim_blend_set_ref = {
+					_id = "e801f1f6-ce26-4fb4-9f13-3294f9cfca7a"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "29f88530-f031-4766-807c-4696d05ac2db"
+						ref_filename = "content/models/characters/cat_fu/animations/Cat_Fu_Idle.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "ab8dbfda-be5e-4ea7-9040-8e5a9ff4d1ef"
+					ref_filename = null
+					ref_id = "a3d4c47d-1655-4eb2-973f-58085fb6efdb"
+				}
+				group_transitions = [
+				]
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "487e750d-550a-4b7d-9689-b9327df87e6e"
+						actual_target_ref = {
+							_id = "6290b46a-02ee-470d-823d-07f8fa601c56"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "fcba949a-cc9a-47f3-9f6b-69a807af73aa"
+							ref_filename = null
+							ref_id = "d785cb61-230c-432a-aadd-c961d6b5b238"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "15d3e4f3-dd3d-4e93-842c-00245592ad5f"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "c6c33eb1-4e3e-4fb7-9313-3b84624b2b21"
+							ref_filename = null
+							ref_id = "84bcb0c9-6a9c-4879-8392-45a84098cbf9"
+						}
+					}
+					{
+						_id = "84e9f408-e2fb-4f08-9f09-d4b48f838dba"
+						actual_target_ref = {
+							_id = "7ddfb1b0-76e4-461c-8f05-86647e60c5c3"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "9941cd4b-8f26-42d5-b574-85d30e68b44c"
+							ref_filename = null
+							ref_id = "65695a4a-a34d-4c1a-938f-456e1c5e7a70"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "f6a23a5f-e214-4827-857a-2446a2cf6874"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "559e196d-83c1-4e6a-bfda-42b842c17824"
+							ref_filename = null
+							ref_id = "5eb8aa69-fa7e-459c-bb2e-ec82070423a7"
+						}
+					}
+					{
+						_id = "0f438738-6a8b-4c4d-a06b-d957fc15bc51"
+						actual_target_ref = {
+							_id = "ab190f3f-408a-48f4-9a4f-ea6399d16387"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "374d3c65-9513-4a01-8749-15903db2dba4"
+							ref_filename = null
+							ref_id = "6e3b56f9-f92a-47bd-b8f4-9f024a7077d3"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "a871c05a-0fd2-4011-b76f-94ae1a8ba269"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "fa20b5b7-e7b1-44c8-8821-a908fbd03cfb"
+							ref_filename = null
+							ref_id = "65dad4f0-d000-4895-a716-04bce9a4cd13"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 120
+				y = -100
+			}
+			{
+				_id = "84bcb0c9-6a9c-4879-8392-45a84098cbf9"
+				_name = "run_state"
+				anim_blend_set_ref = {
+					_id = "0d27fb09-94bb-4604-a44b-105b9ca674c9"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "747f1adc-dbf9-4ce8-9acc-fa0d080e422f"
+						ref_filename = "content/models/characters/cat_fu/animations/Cat_Fu_Run.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "1fae73fc-c440-4eea-b1f3-aea8c51fbc3b"
+					ref_filename = null
+					ref_id = "a3d4c47d-1655-4eb2-973f-58085fb6efdb"
+				}
+				group_transitions = [
+				]
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "082307bc-30b2-45ad-8e22-26cd11b96d48"
+						actual_target_ref = {
+							_id = "1e53d572-df4c-4ca6-8b6e-d8d054013e7f"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "1e9ebd59-82e9-4972-ade3-eb31d6376824"
+							ref_filename = null
+							ref_id = "c0796331-e4c1-491a-b9f1-58a4dd65e3e5"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "1e02506b-cd55-42cf-88cb-936d830b5ab8"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "8091308d-0419-4c01-add0-614f65a2f5b0"
+							ref_filename = null
+							ref_id = "10ee1702-184e-411c-bc6c-4182c44d2dcb"
+						}
+					}
+					{
+						_id = "4c7646ea-f70c-4daf-8ba4-dec539b2818f"
+						actual_target_ref = {
+							_id = "40f90ad4-d5ed-4039-b8f9-51a87090b77b"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "1cda85fc-d9b6-4b05-9bf5-e749c4e291b3"
+							ref_filename = null
+							ref_id = "65695a4a-a34d-4c1a-938f-456e1c5e7a70"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "ee1535b7-0c76-44e9-b1ca-64ea97446db2"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "6276706a-29e3-4c60-a583-89359cde7230"
+							ref_filename = null
+							ref_id = "5eb8aa69-fa7e-459c-bb2e-ec82070423a7"
+						}
+					}
+					{
+						_id = "cfd4b2bd-4134-4e03-a23f-34e9896167cc"
+						actual_target_ref = {
+							_id = "0c89b4d8-c94a-4fd1-89b2-a19852747cfc"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "c77e766f-3a01-4e10-90d7-da732f194745"
+							ref_filename = null
+							ref_id = "6e3b56f9-f92a-47bd-b8f4-9f024a7077d3"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "a331dea6-df5f-4754-ba46-d7be4fa31ed9"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "c4bddd84-2274-43c1-a818-c06eca1a238b"
+							ref_filename = null
+							ref_id = "65dad4f0-d000-4895-a716-04bce9a4cd13"
+						}
+					}
+				]
+				weights = [
+					"0.44"
+				]
+				width = 150
+				x = 460
+				y = 180
+			}
+			{
+				_id = "5eb8aa69-fa7e-459c-bb2e-ec82070423a7"
+				_name = "walk_state"
+				anim_blend_set_ref = {
+					_id = "8de98aff-23f5-4a86-9319-5a8adab90339"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "d640ff68-b81f-4291-ab9d-79ec93b3b836"
+						ref_filename = "content/models/characters/cat_fu/animations/Cat_Fu_Run.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "32ee9e4d-7ce5-413f-a976-f4b540b33fbf"
+					ref_filename = null
+					ref_id = "a3d4c47d-1655-4eb2-973f-58085fb6efdb"
+				}
+				group_transitions = [
+				]
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "0.5"
+				transitions = [
+					{
+						_id = "72c34d90-5521-4405-b13d-12d1b0889efe"
+						actual_target_ref = {
+							_id = "3f4e0df0-d65f-469b-b225-79dfc2839473"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "1e4b20a3-31d7-43e1-bf1c-149619471330"
+							ref_filename = null
+							ref_id = "c0796331-e4c1-491a-b9f1-58a4dd65e3e5"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "d2975f1a-b886-427c-a1f8-12d2978f776c"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "2638f011-75e4-4755-b2d7-2490d7641930"
+							ref_filename = null
+							ref_id = "10ee1702-184e-411c-bc6c-4182c44d2dcb"
+						}
+					}
+					{
+						_id = "6de307f8-575e-4fc8-86db-3bc6b60d3d3b"
+						actual_target_ref = {
+							_id = "d90903c8-d59a-4e21-acc2-b26064cbeb54"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "061fea69-1e61-41f5-b90f-edcb0bd8ce8a"
+							ref_filename = null
+							ref_id = "d785cb61-230c-432a-aadd-c961d6b5b238"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "93e95b89-d1c2-4f3b-8a45-98812321b233"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "52701c12-534d-4ba0-b637-38fa75446915"
+							ref_filename = null
+							ref_id = "84bcb0c9-6a9c-4879-8392-45a84098cbf9"
+						}
+					}
+				]
+				weights = [
+					"1"
+				]
+				width = 150
+				x = -180
+				y = 180
+			}
+			{
+				_id = "65dad4f0-d000-4895-a716-04bce9a4cd13"
+				_name = "jump_state"
+				anim_blend_set_ref = {
+					_id = "36d34823-cbd0-4f4f-b80b-708549b01dab"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "fcd324cb-d8a8-4431-9018-f956aace4588"
+						ref_filename = "content/models/characters/cat_fu/animations/Cat_Fu_Punch_B.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "f5539bde-b8b8-4dee-b2ea-a2442faa9597"
+					ref_filename = null
+					ref_id = "a3d4c47d-1655-4eb2-973f-58085fb6efdb"
+				}
+				group_transitions = [
+				]
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "on_entry"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "209bc5cf-50b4-4d5a-a6ac-3b7180b11f9c"
+						actual_target_ref = {
+							_id = "00c2d0a9-db56-4df5-9c92-a145804b82a7"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "e19e9444-6515-4b7c-98d5-52dbbdeeb443"
+							ref_filename = null
+							ref_id = "c0796331-e4c1-491a-b9f1-58a4dd65e3e5"
+						}
+						has_nested_from = false
+						mode = "wait"
+						nested_from_ref = {
+							_id = "ec8541ed-1b71-462e-b5af-9f94bdaec52f"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "852ca4ad-be9d-4b0b-bbba-95968ab02e1c"
+							ref_filename = null
+							ref_id = "10ee1702-184e-411c-bc6c-4182c44d2dcb"
+						}
+					}
+					{
+						_id = "adec3e55-eb59-4214-acb0-a6124dc3cedd"
+						actual_target_ref = {
+							_id = "63858005-f6b2-4641-b5bc-4c921d0e7f7b"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "bbd23517-978f-43df-bc94-ee774b54c406"
+							ref_filename = null
+							ref_id = "d785cb61-230c-432a-aadd-c961d6b5b238"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "8faaea72-a79a-4830-bcbb-591de66108d2"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "1001c068-e95d-4a21-99b5-e14e7a0f3325"
+							ref_filename = null
+							ref_id = "84bcb0c9-6a9c-4879-8392-45a84098cbf9"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 120
+				y = 80
+			}
+		]
+		time_states = [
+		]
+	}
+]
+ragdoll_root_folder_name = "Ragdolls"
+ragdolls = {
+	_id = "90824ce8-3a02-42e3-b103-60639a2181ea"
+	_name = "Ragdolls"
+	data_list = [
+	]
+	sub_folders = [
+	]
+}
+setup = {
+	_id = "a0e5e689-a086-4b69-8b3a-4606dff3edaf"
+	level = ""
+	unit_ref = {
+		_id = "8d8b7116-f11e-44c2-b039-023e0a166875"
+		ref_filename = "content/models/characters/cat_fu/Cat_Fu.unit_anim"
+		ref_id = null
+	}
+}
+variable_root_folder_name = "Variables"
+variables = {
+	_id = "fd5e3ed9-60ad-493a-8c28-573aaa4f7d54"
+	_name = "Variables"
+	data_list = [
+	]
+	sub_folders = [
+	]
+}

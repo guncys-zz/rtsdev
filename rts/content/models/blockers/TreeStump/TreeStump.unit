@@ -1,0 +1,42 @@
+
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 2.063182
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			1.955637
+			0.043423
+			0.903208
+		]
+		projection_type = "perspective"
+		rotation = [
+			0.087899
+			0.090144
+			-0.710267
+			-0.692581
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
+materials = {
+	lambert2 = "content/models/blockers/TreeStump/lambert2"
+}
+renderables = {
+	TreeStump = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

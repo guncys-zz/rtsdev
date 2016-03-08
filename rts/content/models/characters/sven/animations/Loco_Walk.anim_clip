@@ -1,0 +1,43 @@
+
+_data_root_version = 2
+_id = "71650031-50d1-4eb3-bbee-d239bc64033b"
+_name = "content/models/characters/sven/animations/Loco_Walk"
+anim_skeleton_ref = {
+	_id = "b226b454-aced-43d0-92b2-fe79ae798e44"
+	ref_filename = "content/models/characters/sven/Sven_SKLTN.anim_skeleton"
+	ref_id = null
+}
+autostep = {
+	_id = "222367d7-46db-4cea-9975-e1982a948483"
+	autostep = false
+	rotation = 0.174532925199433
+	translation = 1
+}
+base_offset_preview_animation_clip_ref = {
+	_id = "a7dfef07-00f4-4cf3-b120-8a2995100562"
+	ref_filename = null
+	ref_id = null
+}
+beats = [
+]
+custom_compression_settings = [
+]
+dcc_asset_ref = {
+	_id = "55799361-f6af-4d28-a3fe-6d68a297009e"
+	ref_filename = "content/models/characters/sven/Loco.dcc_asset"
+	ref_id = null
+}
+flow_events = [
+]
+global_compression_settings = {
+	_id = "36ad3f2f-839b-4aae-ad11-183c4e110362"
+	do_pack_positions = true
+	do_pack_rotations = true
+	do_pack_scales = true
+	position_tolerance = 0.001
+	rotation_tolerance = 0.001
+	scale_tolerance = 0.001
+}
+offset_animation = false
+take_name = "Walk"
+use_skeleton_base_pose = false

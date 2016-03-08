@@ -1,0 +1,68 @@
+
+Connections = [
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "66133a6f-13d6-419b-807a-e4582a5aa681"
+		Id = "74c3d693-5af7-4083-910b-5551055bae3e"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "d0574422-2aa7-4869-92e6-54950e625990"
+	}
+]
+Groups = [
+]
+Nodes = [
+	{
+		Class = "Stingray.Flow.ExternalEvent"
+		EventName = {
+			Value = "Load CSV"
+		}
+		Id = "66133a6f-13d6-419b-807a-e4582a5aa681"
+		NodeLocation = {
+			X = 380
+			Y = 280
+		}
+		Out = {
+		}
+		Width = 160
+	}
+	{
+		Arguments = [
+			{
+				RawName = "Path"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.InVariableString"
+					Value = "C:\\Users\\syota.yoshikai\\Documents\\gitrepo\\rtsproto\\prototype1\\csv\\test.csv"
+				}
+			}
+		]
+		Class = "Stingray.Flow.CustomScriptNode"
+		FlowNodesResource = "script/custom_flows/load_csv"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "d0574422-2aa7-4869-92e6-54950e625990"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "Load CSV file"
+		NodeLocation = {
+			X = 600
+			Y = 280
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = [
+			{
+				RawName = "data"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.OutVariableString"
+				}
+			}
+		]
+		Width = 160
+	}
+]
