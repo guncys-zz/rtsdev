@@ -5,11 +5,15 @@ materials = {
 collision_types = [
 	"default"
 	"character"
+    "player"
+    "blocker"
 ]
 
 collision_filters = {
 	default = {is = ["default"] collides_with_all_except = ["character"]}
+    blocker = {is = ["blocker"]}
 	character = {is = ["character"]}
+    player = {is = ["player"] collides_with = ["player" "blocker"]}
 	character_trigger = {collides_with = ["character"]}
 	non_collider = {is = [] collides_with = []}
 }
@@ -18,6 +22,8 @@ shapes = {
 	default = {}
 	trigger = {trigger = true}
 	sweeper = {sweep = true}
+    blocker = {collision_filter = "blocker"}
+    player = {collision_filter = "player"}
 	character = {collision_filter = "character"}
 	character_trigger = {trigger = true collision_filter = "character_trigger"}
 }
