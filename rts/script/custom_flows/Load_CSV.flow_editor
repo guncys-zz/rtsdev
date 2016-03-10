@@ -1,0 +1,179 @@
+
+Connections = [
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "66133a6f-13d6-419b-807a-e4582a5aa681"
+		Id = "74c3d693-5af7-4083-910b-5551055bae3e"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "d0574422-2aa7-4869-92e6-54950e625990"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "String"
+		FromNode = "803c0690-927d-4f14-a281-5d92fe4a073e"
+		Id = "02a0ee0c-9dd6-41f6-9a35-ce44bc7031d4"
+		ToItem = "B"
+		ToNode = "e9a691c3-b7fa-4252-9be3-e9d90b9018bc"
+		Type = "String"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "d6c7b7c0-82c6-4f8c-b501-4e04633442ec"
+		Id = "06d75344-ed71-4a50-9116-a69a8e5c3405"
+		ToItem = "A"
+		ToNode = "e9a691c3-b7fa-4252-9be3-e9d90b9018bc"
+		Type = "String"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "5e3d91c4-66cc-4c26-9780-a14de35d4028"
+		Id = "4091e6be-f6ec-4c9f-bb6e-5aa4e3597a44"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "280c820a-4f28-4d0d-85a9-9cf30b97746a"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "e9a691c3-b7fa-4252-9be3-e9d90b9018bc"
+		Id = "8361540f-4e2a-4405-bff5-62421fd55415"
+		ToItem = "Path"
+		ToNode = "280c820a-4f28-4d0d-85a9-9cf30b97746a"
+		Type = "String"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "280c820a-4f28-4d0d-85a9-9cf30b97746a"
+		Id = "fdf074ce-ab6a-480e-88e1-9e98d11329de"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "014f1c9c-de7a-468e-a32c-3ae6555b761e"
+	}
+]
+Groups = [
+	{
+		Collapsed = false
+		Groups = [
+		]
+		Id = "4268afa9-2e93-4083-bdc2-167e861e1d8f"
+		Nodes = [
+			"d6c7b7c0-82c6-4f8c-b501-4e04633442ec"
+		]
+		Title = "CSVのディレクトリの絶対パスを指定。パスの最後に必ず\\をつけてください。"
+	}
+]
+Nodes = [
+	{
+		Class = "Stingray.Flow.LevelFlowEvent"
+		Event = {
+			Value = "done_load_csv"
+		}
+		Id = "014f1c9c-de7a-468e-a32c-3ae6555b761e"
+		In = {
+		}
+		NodeLocation = {
+			X = 1320
+			Y = 620
+		}
+		Width = 160
+	}
+	{
+		Arguments = [
+			{
+				RawName = "Path"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.InVariableString"
+				}
+			}
+		]
+		Class = "Stingray.Flow.CustomScriptNode"
+		FlowNodesResource = "script/custom_nodes/load_csv"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "280c820a-4f28-4d0d-85a9-9cf30b97746a"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "Load CSV file"
+		NodeLocation = {
+			X = 1120
+			Y = 580
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = [
+			{
+				RawName = "data"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.OutVariableString"
+				}
+			}
+		]
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ExternalEvent"
+		EventName = {
+			Value = "start_load_csv"
+		}
+		Id = "5e3d91c4-66cc-4c26-9780-a14de35d4028"
+		NodeLocation = {
+			X = 740
+			Y = 660
+		}
+		Out = {
+		}
+		Width = 220
+	}
+	{
+		Class = "Stingray.Flow.ExternalInputString"
+		Id = "803c0690-927d-4f14-a281-5d92fe4a073e"
+		Name = {
+			Value = "csv_file_name"
+		}
+		NodeLocation = {
+			X = 540
+			Y = 580
+		}
+		String = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.StringData"
+		Id = "d6c7b7c0-82c6-4f8c-b501-4e04633442ec"
+		NodeLocation = {
+			X = -20
+			Y = 480
+		}
+		Set = {
+			Value = "C:\\Users\\syota.yoshikai\\Documents\\gitrepo\\rtsdev\\rts\\csv\\"
+		}
+		Value = {
+		}
+		Width = 700
+	}
+	{
+		A = {
+		}
+		B = {
+		}
+		Class = "Stingray.Flow.ConcatenateStrings"
+		Id = "e9a691c3-b7fa-4252-9be3-e9d90b9018bc"
+		NodeLocation = {
+			X = 800
+			Y = 580
+		}
+		Value = {
+		}
+		Width = 160
+	}
+]

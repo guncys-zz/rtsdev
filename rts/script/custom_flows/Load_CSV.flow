@@ -1,0 +1,124 @@
+
+nodes = [
+	{
+		id = "014f1c9c-de7a-468e-a32c-3ae6555b761e"
+		type = "level_flow_event"
+		variable_values = {
+			event = "done_load_csv"
+		}
+	}
+	{
+		flow_nodes_resource = "script/custom_nodes/load_csv"
+		id = "280c820a-4f28-4d0d-85a9-9cf30b97746a"
+		in_variables = {
+			Path = {
+				node = "e9a691c3-b7fa-4252-9be3-e9d90b9018bc"
+				type = "string"
+				variable = "value"
+			}
+		}
+		name = "Load CSV file"
+		out_events = {
+			Out = [
+				{
+					event = 0
+					id = "014f1c9c-de7a-468e-a32c-3ae6555b761e:0"
+					node = "014f1c9c-de7a-468e-a32c-3ae6555b761e"
+				}
+			]
+		}
+		query = false
+		return_values = [
+			{
+				name = "data"
+				type = "string"
+			}
+		]
+		type = "custom_script_node"
+		variable_values = {
+			data = null
+			Path = null
+		}
+		variables = [
+			{
+				name = "Path"
+				type = "string"
+			}
+		]
+	}
+	{
+		id = "5e3d91c4-66cc-4c26-9780-a14de35d4028"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "280c820a-4f28-4d0d-85a9-9cf30b97746a:0"
+					node = "280c820a-4f28-4d0d-85a9-9cf30b97746a"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "start_load_csv"
+		}
+	}
+	{
+		id = "803c0690-927d-4f14-a281-5d92fe4a073e"
+		out_variables = {
+			string = {
+				type = "string"
+			}
+		}
+		type = "external_input_string"
+		variable_values = {
+			name = "csv_file_name"
+			string = null
+		}
+	}
+	{
+		id = "d6c7b7c0-82c6-4f8c-b501-4e04633442ec"
+		out_variables = {
+			value = {
+				type = "string"
+			}
+		}
+		type = "string_data"
+		variable_values = {
+			set = "C:\\Users\\syota.yoshikai\\Documents\\gitrepo\\rtsdev\\rts\\csv\\"
+			value = null
+		}
+	}
+	{
+		id = "e9a691c3-b7fa-4252-9be3-e9d90b9018bc"
+		in_variables = {
+			a = {
+				node = "d6c7b7c0-82c6-4f8c-b501-4e04633442ec"
+				type = "string"
+				variable = "value"
+			}
+			b = {
+				node = "803c0690-927d-4f14-a281-5d92fe4a073e"
+				type = "string"
+				variable = "string"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "string"
+			}
+		}
+		type = "concatenate_strings"
+		variable_values = {
+			a = null
+			b = null
+			value = null
+		}
+	}
+	{
+		id = "11111111-2222-3333-4444-555555555555"
+		type = "unit_spawned"
+		variable_values = {
+			unit = null
+		}
+	}
+]
