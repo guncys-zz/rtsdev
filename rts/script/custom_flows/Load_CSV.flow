@@ -29,14 +29,9 @@ nodes = [
 		}
 		query = false
 		return_values = [
-			{
-				name = "data"
-				type = "string"
-			}
 		]
 		type = "custom_script_node"
 		variable_values = {
-			data = null
 			Path = null
 		}
 		variables = [

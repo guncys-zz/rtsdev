@@ -6,16 +6,6 @@ local Quaternion = stingray.Quaternion
 
 Tools = Tools or {}
 
-function Tools.hello(t)
-    local message = t.Text or ""
--- 	print("Example Node Message: " .. message)
-	
-	results = {}
-	results["gorira"] = "gorira"
-	Tools.read_csv()
-	return results
-end
-
 function Tools.Load_csv(t)
     
     print("csv path: "..t.Path)
@@ -27,7 +17,7 @@ function Tools.Load_csv(t)
     end
     
     for line in file:lines() do
-        print(line)
+        print("start spawn: "..line)
         name, px, py, pz, rx, ry, rz = string.match(line, "(.-)%,(.-)%,(.-)%,(.-)%,(.-)%,(.-)%,(.+)")
         Tools.Spawn(name, Vector3(px, py, pz), Quaternion.from_euler_angles_xyz(rx, ry, rz))
     end
