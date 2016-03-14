@@ -11,8 +11,8 @@ require 'script/lua/tools'
 --プロジェクトで使用するlevelにアクセスするための名前定義
 Project.level_names = {
     mainmenu = "content/levels/users/hisataka/mainmenu",
-	testmap1 = "content/levels/testmap1",   --なぜかメニューからテストマップをロードするときにエラーが出る
-	testmap = "content/levels/users/uehara/physx_test"
+	testmap = "content/levels/testmap1",   --なぜかメニューからテストマップをロードするときにエラーが出る
+	testmap1 = "content/levels/users/uehara/physx_test"
 }
 
 -- Can provide a config for the basic project, or it will use a default if not.
