@@ -82,6 +82,11 @@ function MainMenu.start()
 		custom_listener = scaleform.EventListener.create(custom_listener, MainMenu.on_custom_event)
 		MainMenu.custom_listener = custom_listener
 		scaleform.EventListener.connect(custom_listener, scaleform.EventTypes.Custom)
+		
+        --画面レンダの振る舞いの設定
+        --http://help.autodesk.com/view/ScaleformStudio/ENU/?guid=__scaleform_studio_help_getting_started_interface_overview_project_panel_html
+        scaleform.Stage.set_view_scale_mode(scaleform.ViewScaleModes.NoBorder)
+
 	end
 
 	local level = SimpleProject.level
