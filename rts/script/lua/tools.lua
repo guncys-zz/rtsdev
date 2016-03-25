@@ -12,7 +12,7 @@ function Tools.Load_csv(t)
 
     local file = io.open(t.Path)
     if file == nil then
-        error ("Error open csv file")
+        print ("Error open csv file")
         return 
     end
     
