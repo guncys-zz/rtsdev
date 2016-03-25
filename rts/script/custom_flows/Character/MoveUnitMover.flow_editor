@@ -1,0 +1,281 @@
+
+Connections = [
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "2f3f89ca-0ebf-4a13-b359-f678d2ec8435"
+		Id = "9472ff97-86e4-41f2-bbab-2b253cd45595"
+		ToItem = "Text"
+		ToNode = "61d4328c-7d66-4b7e-9108-d9f05ace1742"
+		Type = "String"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "d6f1e59f-91e9-4e01-b290-ed0d58b39718"
+		Id = "b77e6a98-7869-48f0-8b6e-fb07f6101486"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "61d4328c-7d66-4b7e-9108-d9f05ace1742"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Vector3"
+		FromNode = "41166043-bb44-4eee-bbdc-4c5303b3ecb6"
+		Id = "b4436e28-6b0b-4003-b609-7d48b4a4b7f3"
+		ToItem = "Vector"
+		ToNode = "2f3f89ca-0ebf-4a13-b359-f678d2ec8435"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Unit"
+		FromNode = "23a34107-7d36-46e6-a2b7-b8c7a97dec2b"
+		Id = "1c79c2d2-2be3-4510-b642-d6113fde8cfb"
+		ToItem = "Unit"
+		ToNode = "b2cd393c-63b9-4561-9c40-1014a45c5c92"
+		Type = "Unit"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "d6f1e59f-91e9-4e01-b290-ed0d58b39718"
+		Id = "303f4d5e-6138-4dcc-838d-c87c9436b834"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "b2cd393c-63b9-4561-9c40-1014a45c5c92"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Unit"
+		FromNode = "23a34107-7d36-46e6-a2b7-b8c7a97dec2b"
+		Id = "83d93ab3-82f7-4c47-9fda-17a1f3fa419f"
+		ToItem = "Unit"
+		ToNode = "4f4b0c1a-634f-403c-b68d-7b6ceca70df2"
+		Type = "Unit"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "b2cd393c-63b9-4561-9c40-1014a45c5c92"
+		Id = "9bc9a24f-ac4a-42ba-9a7a-2b2569af1be2"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "87b25357-e790-4831-b27b-ef4ac332d831"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Unit"
+		FromNode = "23a34107-7d36-46e6-a2b7-b8c7a97dec2b"
+		Id = "d2d5e1b4-a083-4555-82a0-f2693c1588ec"
+		ToItem = "Unit"
+		ToNode = "87b25357-e790-4831-b27b-ef4ac332d831"
+		Type = "Unit"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Position"
+		FromNode = "4f4b0c1a-634f-403c-b68d-7b6ceca70df2"
+		Id = "e01d1901-067a-421e-a7b1-2f6a2eb0dd86"
+		ToItem = "Position"
+		ToNode = "87b25357-e790-4831-b27b-ef4ac332d831"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Vector"
+		FromNode = "8a33d9cc-8b8d-4da2-9088-d6cb2925b2bf"
+		Id = "0a692bf7-9f70-4e4b-b590-513f0f14fd4f"
+		ToItem = "DeltaPosition"
+		ToNode = "b2cd393c-63b9-4561-9c40-1014a45c5c92"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Numeric"
+		FromNode = "9a9133e4-e0e8-4e25-ae75-58132313605c"
+		Id = "1498f915-191c-4853-a8a6-e64a2bffa4a3"
+		ToItem = "X"
+		ToNode = "8a33d9cc-8b8d-4da2-9088-d6cb2925b2bf"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Numeric"
+		FromNode = "b4b538f7-5e5d-4f95-8d4d-4262a86b9118"
+		Id = "d8a5832c-f9d8-4479-bdd8-fd12f5c968f6"
+		ToItem = "Y"
+		ToNode = "8a33d9cc-8b8d-4da2-9088-d6cb2925b2bf"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Numeric"
+		FromNode = "edd2997e-5b24-484e-a107-d75441fe62d8"
+		Id = "884bd211-9d92-4a76-ab40-d4c1d6189870"
+		ToItem = "Z"
+		ToNode = "8a33d9cc-8b8d-4da2-9088-d6cb2925b2bf"
+		Type = "Float"
+	}
+]
+Groups = [
+	{
+		Collapsed = false
+		Groups = [
+		]
+		Id = "1a040d52-07ab-4733-b38e-87a4636071fe"
+		Nodes = [
+			"87b25357-e790-4831-b27b-ef4ac332d831"
+			"b2cd393c-63b9-4561-9c40-1014a45c5c92"
+			"4f4b0c1a-634f-403c-b68d-7b6ceca70df2"
+		]
+		Title = "Move Unit Using Mover"
+	}
+]
+Nodes = [
+	{
+		Class = "Stingray.Flow.GetMoverPosition"
+		Id = "4f4b0c1a-634f-403c-b68d-7b6ceca70df2"
+		Mover = {
+		}
+		NodeLocation = {
+			X = 40
+			Y = -80
+		}
+		Position = {
+		}
+		Unit = {
+			UseMyUnit = false
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.SetUnitLocalPosition"
+		Id = "87b25357-e790-4831-b27b-ef4ac332d831"
+		In = {
+		}
+		NodeLocation = {
+			X = 280
+			Y = 60
+		}
+		Object = {
+		}
+		Out = {
+		}
+		Position = {
+		}
+		Teleport = {
+		}
+		Unit = {
+			UseMyUnit = false
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.MoveMover"
+		DeltaPosition = {
+		}
+		Id = "b2cd393c-63b9-4561-9c40-1014a45c5c92"
+		In = {
+		}
+		Mover = {
+		}
+		NodeLocation = {
+			X = 20
+			Y = 100
+		}
+		Out = {
+		}
+		Unit = {
+			UseMyUnit = false
+		}
+		Width = 180
+	}
+	{
+		Class = "Stingray.Flow.VectorFromComponents"
+		Id = "8a33d9cc-8b8d-4da2-9088-d6cb2925b2bf"
+		NodeLocation = {
+			X = -320
+			Y = 40
+		}
+		Vector = {
+		}
+		Width = 160
+		X = {
+		}
+		Y = {
+		}
+		Z = {
+		}
+	}
+	{
+		Class = "Stingray.Flow.ExternalInputUnit"
+		Id = "23a34107-7d36-46e6-a2b7-b8c7a97dec2b"
+		Name = {
+			Value = "Unit"
+		}
+		NodeLocation = {
+			X = -560
+			Y = -160
+		}
+		Unit = {
+		}
+		Width = 200
+	}
+	{
+		Class = "Stingray.Flow.ExternalInputNumeric"
+		Id = "9a9133e4-e0e8-4e25-ae75-58132313605c"
+		Name = {
+			Value = "DeltaX"
+		}
+		NodeLocation = {
+			X = -540
+			Y = -60
+		}
+		Numeric = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ExternalInputNumeric"
+		Id = "b4b538f7-5e5d-4f95-8d4d-4262a86b9118"
+		Name = {
+			Value = "DeltaY"
+		}
+		NodeLocation = {
+			X = -540
+			Y = 20
+		}
+		Numeric = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ExternalInputNumeric"
+		Id = "edd2997e-5b24-484e-a107-d75441fe62d8"
+		Name = {
+			Value = "DeltaZ"
+		}
+		NodeLocation = {
+			X = -540
+			Y = 100
+		}
+		Numeric = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ExternalEvent"
+		EventName = {
+			Value = "Move"
+		}
+		Id = "d6f1e59f-91e9-4e01-b290-ed0d58b39718"
+		NodeLocation = {
+			X = -580
+			Y = 180
+		}
+		Out = {
+		}
+		Width = 200
+	}
+]
