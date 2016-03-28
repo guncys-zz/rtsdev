@@ -1,0 +1,781 @@
+
+particle_system = {
+	CameraDistance = 3
+	clouds = [
+		{
+			controllers = [
+				{
+					AdditiveBlend = false
+					DepthFadeDistance = 0
+					DiffuseMap = "effect/fx_t_star00"
+					DissolveUsingVertexAlpha = false
+					Glossiness = 0
+					LitParticles = false
+					MaterialMap = null
+					Name = "Material: Billboard"
+					NormalMap = null
+					OneBitAlpha = false
+					SpecularMask = 0
+					type = "billboard_material"
+					UVAnimationX = 0.1
+					UVAnimationY = 0.1
+				}
+				{
+					CustomHeight = false
+					InitialMax = 0.3
+					InitialMaxHeight = 0.1
+					InitialMin = 0.1
+					InitialMinHeight = 0.1
+					Name = "Size"
+					Scale = [
+						[
+							0
+							0
+						]
+						[
+							0.2609
+							0.493
+						]
+						[
+							0.6196
+							0.8178
+						]
+						[
+							1
+							0.3697
+						]
+					]
+					ScaleHeight = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "size"
+					UseSystemLifetime = false
+					UseSystemLifetimeHeight = false
+				}
+				{
+					Gradient = [
+						[
+							0.0161922442244224
+							[
+								255
+								255
+								255
+							]
+						]
+						[
+							0.146194306930693
+							[
+								255
+								48
+								0
+							]
+						]
+						[
+							0.312242161716172
+							[
+								255
+								112
+								0
+							]
+						]
+						[
+							0.419451320132013
+							[
+								56
+								255
+								207
+							]
+						]
+						[
+							0.550587871287129
+							[
+								43
+								132
+								255
+							]
+						]
+						[
+							0.72792904290429
+							[
+								246
+								223
+								94
+							]
+						]
+					]
+					LuminanceMax = 1
+					LuminanceMin = 1
+					Name = "Color"
+					Opacity = [
+						[
+							0
+							0
+						]
+						[
+							0.125
+							1
+						]
+						[
+							0.3309
+							1
+						]
+						[
+							1
+							0
+						]
+					]
+					type = "color_controller"
+				}
+				{
+					MaxX = 6
+					MaxY = 6
+					MaxZ = 6
+					MinX = -6
+					MinY = -6
+					MinZ = -6
+					Name = "Velocity: Box"
+					type = "velocity_box"
+				}
+				{
+					MaxRadius = 0
+					MinRadius = 0
+					Name = "Position: Sphere"
+					type = "position_sphere"
+				}
+				{
+					MaxDegrees = 360
+					MinDegrees = 0
+					type = "rotation_random"
+				}
+				{
+					Bursts = [
+						[
+							0
+							7
+						]
+					]
+					Name = "Emitter: Bursts"
+					type = "burst_emitter"
+				}
+				{
+					CurvePoints = [
+						[
+							0
+							1
+						]
+						[
+							1
+							-0.0848
+						]
+					]
+					Name = "Velocity: Scale"
+					OverSystemLifetime = false
+					ScaleVariableId = "00000000-0000-0000-0000-000000000000"
+					type = "velocity_scale"
+				}
+			]
+			Id = "fa540eb5-fea5-4bcc-9323-a88e0eb0e97b"
+			max_particle_life = 0.2
+			min_particle_life = 0.5
+			Mute = false
+			name = "star"
+			OffsetX = 0
+			OffsetY = 0
+			OffsetZ = 0
+			Spin = 180
+			Tilt = 0
+			total = 100
+		}
+		{
+			controllers = [
+				{
+					AdditiveBlend = false
+					DepthFadeDistance = 0
+					DiffuseMap = "effect/fx_t_hitmark00"
+					DissolveUsingVertexAlpha = false
+					Glossiness = 1
+					LitParticles = false
+					MaterialMap = null
+					Name = "Material: Billboard"
+					NormalMap = null
+					OneBitAlpha = false
+					SpecularMask = 0
+					type = "billboard_material"
+					UVAnimationX = 0.5
+					UVAnimationY = 0.1
+				}
+				{
+					Gradient = [
+						[
+							0.670706775700935
+							[
+								255
+								104
+								0
+							]
+						]
+					]
+					LuminanceMax = 1
+					LuminanceMin = 1
+					Name = "Color"
+					Opacity = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "color_controller"
+				}
+				{
+					Bursts = [
+						[
+							0
+							1
+						]
+					]
+					Name = "Emitter: Bursts"
+					type = "burst_emitter"
+				}
+				{
+					CustomHeight = false
+					InitialMax = 0.5
+					InitialMaxHeight = 0.1
+					InitialMin = 0.5
+					InitialMinHeight = 0.1
+					Name = "Size"
+					Scale = [
+						[
+							0
+							0
+						]
+						[
+							0.0076
+							9.8644
+						]
+						[
+							0.053
+							0.7366
+						]
+						[
+							0.0985
+							4.2349
+						]
+						[
+							0.1667
+							6.4448
+						]
+						[
+							0.2727
+							7.918
+						]
+						[
+							0.5227
+							9.0115
+						]
+						[
+							1
+							10.8522
+						]
+					]
+					ScaleHeight = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "size"
+					UseSystemLifetime = false
+					UseSystemLifetimeHeight = false
+				}
+				{
+					MaxDegrees = 360
+					MinDegrees = 0
+					type = "rotation_random"
+				}
+				{
+					Gradient = [
+						[
+							0.5
+							[
+								255
+								255
+								255
+							]
+						]
+					]
+					LuminanceMax = 1
+					LuminanceMin = 1
+					Name = "Color"
+					Opacity = [
+						[
+							0
+							1
+						]
+						[
+							0.669
+							0.9831
+						]
+						[
+							0.8592
+							0.6441
+						]
+						[
+							1
+							0
+						]
+					]
+					type = "color_controller"
+				}
+				{
+					CustomHeight = false
+					InitialMax = 0.5
+					InitialMaxHeight = 0.1
+					InitialMin = 0.5
+					InitialMinHeight = 0.1
+					Name = "Size"
+					Scale = [
+						[
+							0
+							0
+						]
+						[
+							0.1856
+							0.69
+						]
+						[
+							0.5361
+							1.4864
+						]
+						[
+							1
+							2.132
+						]
+					]
+					ScaleHeight = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "size"
+					UseSystemLifetime = false
+					UseSystemLifetimeHeight = false
+				}
+			]
+			Id = "68c5634b-d2bc-4226-9801-49420f90675b"
+			max_particle_life = 0.15
+			min_particle_life = 0.15
+			Mute = false
+			name = "shock"
+			OffsetX = 0
+			OffsetY = 0
+			OffsetZ = 0
+			Spin = 0
+			Tilt = 0
+			total = 1
+		}
+		{
+			controllers = [
+				{
+					AdditiveBlend = true
+					DepthFadeDistance = 0
+					DiffuseMap = "effect/fx_t_flash00"
+					DissolveUsingVertexAlpha = false
+					Glossiness = 0
+					LitParticles = false
+					MaterialMap = null
+					Name = "Material: Billboard"
+					NormalMap = null
+					OneBitAlpha = false
+					SpecularMask = 0
+					type = "billboard_material"
+					UVAnimationX = 0.1
+					UVAnimationY = 0.1
+				}
+				{
+					CustomHeight = false
+					InitialMax = 1
+					InitialMaxHeight = 0.1
+					InitialMin = 1
+					InitialMinHeight = 0.1
+					Name = "Size"
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							1
+							3
+						]
+					]
+					ScaleHeight = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "size"
+					UseSystemLifetime = false
+					UseSystemLifetimeHeight = false
+				}
+				{
+					Gradient = [
+						[
+							0.500657894736842
+							[
+								255
+								80
+								59
+							]
+						]
+					]
+					LuminanceMax = 1
+					LuminanceMin = -0.0004
+					Name = "Color"
+					Opacity = [
+						[
+							0
+							0
+						]
+						[
+							0.0352
+							1
+						]
+						[
+							0.2465
+							0.9322
+						]
+						[
+							0.4648
+							0.7627
+						]
+						[
+							0.662
+							0.4237
+						]
+						[
+							0.8028
+							0.1525
+						]
+						[
+							1
+							0
+						]
+					]
+					type = "color_controller"
+				}
+				{
+					Bursts = [
+						[
+							0
+							3
+						]
+					]
+					Name = "Emitter: Bursts"
+					type = "burst_emitter"
+				}
+			]
+			Id = "fd9afeea-f90d-4d4a-b56a-985056f5b7b0"
+			max_particle_life = 0.1
+			min_particle_life = 0.1
+			Mute = false
+			name = "Flash"
+			OffsetX = 0
+			OffsetY = 0
+			OffsetZ = 0
+			Spin = 0
+			Tilt = 0
+			total = 10
+		}
+		{
+			controllers = [
+				{
+					AdditiveBlend = true
+					DepthFadeDistance = 0
+					DiffuseMap = "effect/fx_t_sw00"
+					DissolveUsingVertexAlpha = false
+					Glossiness = 0
+					LitParticles = false
+					MaterialMap = null
+					Name = "Material: Billboard"
+					NormalMap = null
+					OneBitAlpha = false
+					SpecularMask = 0
+					type = "billboard_material"
+					UVAnimationX = 0.1
+					UVAnimationY = 0.1
+				}
+				{
+					CustomHeight = false
+					InitialMax = 0.2
+					InitialMaxHeight = 0.1
+					InitialMin = 0.2
+					InitialMinHeight = 0.1
+					Name = "Size"
+					Scale = [
+						[
+							0
+							0
+						]
+						[
+							0.1371
+							4.3737
+						]
+						[
+							0.4032
+							7.9521
+						]
+						[
+							1
+							10.7288
+						]
+					]
+					ScaleHeight = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "size"
+					UseSystemLifetime = false
+					UseSystemLifetimeHeight = false
+				}
+				{
+					Gradient = [
+						[
+							0.00130935754189944
+							[
+								255
+								255
+								255
+							]
+						]
+						[
+							0.31171438547486
+							[
+								255
+								255
+								255
+							]
+						]
+					]
+					LuminanceMax = 1
+					LuminanceMin = 1
+					Name = "Color"
+					Opacity = [
+						[
+							0
+							0
+						]
+						[
+							0.2174
+							1
+						]
+						[
+							1
+							0
+						]
+					]
+					type = "color_controller"
+				}
+				{
+					Bursts = [
+						[
+							0
+							1
+						]
+					]
+					Name = "Emitter: Bursts"
+					type = "burst_emitter"
+				}
+				{
+					MaxDegrees = 360
+					MinDegrees = 0
+					type = "rotation_random"
+				}
+			]
+			Id = "6ce0ad63-3fbf-449b-95f3-50d081330c22"
+			max_particle_life = 0.2
+			min_particle_life = 0.2
+			Mute = false
+			name = "circle"
+			OffsetX = 0
+			OffsetY = 0
+			OffsetZ = 0
+			Spin = 0
+			Tilt = 0
+			total = 2
+		}
+		{
+			controllers = [
+				{
+					AdditiveBlend = false
+					DepthFadeDistance = 0
+					DiffuseMap = "effect/fx_t_circle00"
+					DissolveUsingVertexAlpha = false
+					Glossiness = 0
+					LitParticles = false
+					MaterialMap = null
+					Name = "Material: Billboard"
+					NormalMap = null
+					OneBitAlpha = false
+					SpecularMask = 0
+					type = "billboard_material"
+					UVAnimationX = 0.1
+					UVAnimationY = 0.1
+				}
+				{
+					CustomHeight = false
+					InitialMax = 0.2
+					InitialMaxHeight = 0.1
+					InitialMin = 0.01
+					InitialMinHeight = 0.1
+					Name = "Size"
+					Scale = [
+						[
+							0
+							0.5824
+						]
+						[
+							0.2243
+							1.4559
+						]
+						[
+							1
+							0
+						]
+					]
+					ScaleHeight = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "size"
+					UseSystemLifetime = false
+					UseSystemLifetimeHeight = false
+				}
+				{
+					Gradient = [
+						[
+							0.5
+							[
+								255
+								255
+								255
+							]
+						]
+					]
+					LuminanceMax = 1
+					LuminanceMin = 1
+					Name = "Color"
+					Opacity = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "color_controller"
+				}
+				{
+					MaxRadius = 0
+					MinRadius = 0
+					Name = "Position: Sphere"
+					type = "position_sphere"
+				}
+				{
+					MaxX = 6
+					MaxY = 6
+					MaxZ = 6
+					MinX = -6
+					MinY = -6
+					MinZ = -6
+					Name = "Velocity: Box"
+					type = "velocity_box"
+				}
+				{
+					Bursts = [
+						[
+							0
+							10
+						]
+					]
+					Name = "Emitter: Bursts"
+					type = "burst_emitter"
+				}
+				{
+					CurvePoints = [
+						[
+							0
+							1
+						]
+						[
+							1
+							-0.2204
+						]
+					]
+					Name = "Velocity: Scale"
+					OverSystemLifetime = false
+					ScaleVariableId = "00000000-0000-0000-0000-000000000000"
+					type = "velocity_scale"
+				}
+			]
+			Id = "085e3fed-06cf-4140-aaeb-5b1f27a91d41"
+			max_particle_life = 0.5
+			min_particle_life = 0.1
+			Mute = false
+			name = "particle01"
+			OffsetX = 0
+			OffsetY = 0
+			OffsetZ = 0
+			Spin = 0
+			Tilt = 0
+			total = 10
+		}
+	]
+	Level = "core/editor_slave/levels/animation_preview_level/animation_preview_level"
+	life_time = 10000000000
+	ShowRuler = true
+	SpawnHeight = 1
+	UseRandomSeed = true
+	Variables = {
+		Variables = [
+		]
+	}
+}

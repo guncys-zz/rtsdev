@@ -1,0 +1,186 @@
+
+particle_system = {
+	CameraDistance = 5
+	clouds = [
+		{
+			controllers = [
+				{
+					AdditiveBlend = false
+					DepthFadeDistance = 0
+					DiffuseMap = "effect/fx_t_smk04"
+					DissolveUsingVertexAlpha = false
+					Glossiness = 0
+					LitParticles = false
+					MaterialMap = null
+					Name = "Material: Billboard"
+					NormalMap = null
+					OneBitAlpha = false
+					SpecularMask = 0
+					type = "billboard_material"
+					UVAnimationX = 0.1
+					UVAnimationY = 0.1
+				}
+				{
+					CustomHeight = false
+					InitialMax = 0.2
+					InitialMaxHeight = 0.1
+					InitialMin = 0.08
+					InitialMinHeight = 0.1
+					Name = "Size"
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							0.2609
+							1.5283
+						]
+						[
+							0.5652
+							1.8974
+						]
+						[
+							1
+							2.1094
+						]
+					]
+					ScaleHeight = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "size"
+					UseSystemLifetime = false
+					UseSystemLifetimeHeight = false
+				}
+				{
+					Gradient = [
+						[
+							0.5
+							[
+								255
+								255
+								255
+							]
+						]
+					]
+					LuminanceMax = 1
+					LuminanceMin = 1
+					Name = "Color"
+					Opacity = [
+						[
+							0
+							0
+						]
+						[
+							0.2065
+							0
+						]
+						[
+							0.3478
+							0.5085
+						]
+						[
+							0.5
+							0.6271
+						]
+						[
+							0.701
+							0.1695
+						]
+						[
+							1
+							0
+						]
+					]
+					type = "color_controller"
+				}
+				{
+					MaxAngular = 0
+					MaxRadial = 1
+					MaxZ = 0
+					MinAngular = 0
+					MinRadial = 1
+					MinZ = 0
+					Name = "Velocity: Cylinder"
+					type = "velocity_cylinder"
+				}
+				{
+					Bursts = [
+						[
+							0
+							100
+						]
+					]
+					Name = "Emitter: Bursts"
+					type = "burst_emitter"
+				}
+				{
+					CurvePoints = [
+						[
+							0
+							1
+						]
+						[
+							1
+							-0.0848
+						]
+					]
+					Name = "Velocity: Scale"
+					OverSystemLifetime = false
+					ScaleVariableId = "00000000-0000-0000-0000-000000000000"
+					type = "velocity_scale"
+				}
+				{
+					AngleVariableId = "00000000-0000-0000-0000-000000000000"
+					HeightVariableId = "00000000-0000-0000-0000-000000000000"
+					MaxAngle = 360
+					MaxHeight = 0
+					MaxRadius = 0.1
+					MinAngle = 0
+					MinHeight = 0
+					MinRadius = 0.1
+					Name = "Position: Cylinder"
+					RadiusVariableId = "00000000-0000-0000-0000-000000000000"
+					type = "position_cylinder"
+				}
+				{
+					MaxX = 6
+					MaxY = 6
+					MaxZ = 0
+					MinX = -6
+					MinY = -6
+					MinZ = 0
+					Name = "Velocity: Box"
+					type = "velocity_box"
+				}
+			]
+			Id = "0b6c7a5e-f7cc-4658-a556-e6a91e034acc"
+			max_particle_life = 0.2
+			min_particle_life = 0.4
+			Mute = false
+			name = "smk01_landing"
+			OffsetX = 0
+			OffsetY = 0
+			OffsetZ = 0
+			Spin = 0
+			Tilt = 0
+			total = 10
+		}
+	]
+	Level = "core/editor_slave/levels/animation_preview_level/animation_preview_level"
+	life_time = 10000000000
+	ShowRuler = true
+	SpawnHeight = 0
+	UseRandomSeed = true
+	Variables = {
+		Variables = [
+		]
+	}
+}

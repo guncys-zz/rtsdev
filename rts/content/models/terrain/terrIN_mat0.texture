@@ -1,0 +1,17 @@
+
+common = {
+	input = {
+		filename = "content/models/terrain/terrIN_mat0"
+		format = "R8G8B8A8"
+		height = 2048
+		type = "IMAGE2D"
+		width = 2048
+	}
+	output = {
+		apply_processing = false
+		format = "BC3"
+		mipmap_filter = "box"
+		mipmap_filter_wrap_mode = "clamp"
+		srgb = false
+	}
+}

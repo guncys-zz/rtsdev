@@ -1,0 +1,27 @@
+
+terrains = {
+	terrain = {
+		base_material = "default"
+		height = [
+			0
+			1000
+		]
+		layers = [
+			{
+				file = "content/models/terrain/terrIN_hmap"
+				resolution = 2048
+				type = "hmap"
+			}
+			{
+				file = "content/models/terrain/terrIN_mat0"
+				resolution = 2048
+				type = "material"
+			}
+		]
+		node = "terrain"
+		size = [
+			2000
+			2000
+		]
+	}
+}

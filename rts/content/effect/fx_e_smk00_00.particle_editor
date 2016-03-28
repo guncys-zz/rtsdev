@@ -1,0 +1,159 @@
+
+particle_system = {
+	CameraDistance = 2
+	clouds = [
+		{
+			controllers = [
+				{
+					Name = "Emitter: Rate"
+					RateMax = 7
+					RateMin = 5
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							0
+							1
+						]
+						[
+							0.5327
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "rate_emitter"
+				}
+				{
+					AdditiveBlend = false
+					DepthFadeDistance = 0
+					DiffuseMap = "effect/fx_t_smk04"
+					DissolveUsingVertexAlpha = false
+					Glossiness = 0
+					LitParticles = false
+					MaterialMap = null
+					Name = "Material: Billboard"
+					NormalMap = null
+					OneBitAlpha = false
+					SpecularMask = 0
+					type = "billboard_material"
+					UVAnimationX = 0.1
+					UVAnimationY = 0.1
+				}
+				{
+					CustomHeight = false
+					InitialMax = 0.2
+					InitialMaxHeight = 0.1
+					InitialMin = 0.05
+					InitialMinHeight = 0.1
+					Name = "Size"
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							0.2609
+							1.5283
+						]
+						[
+							0.5652
+							1.8974
+						]
+						[
+							1
+							2.1094
+						]
+					]
+					ScaleHeight = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "size"
+					UseSystemLifetime = false
+					UseSystemLifetimeHeight = false
+				}
+				{
+					Gradient = [
+						[
+							0.5
+							[
+								255
+								255
+								255
+							]
+						]
+					]
+					LuminanceMax = 1
+					LuminanceMin = 1
+					Name = "Color"
+					Opacity = [
+						[
+							0
+							0.661
+						]
+						[
+							0.5
+							0.6271
+						]
+						[
+							1
+							0
+						]
+					]
+					type = "color_controller"
+				}
+				{
+					MaxX = -0.05
+					MaxY = 0
+					MaxZ = -0.05
+					MinX = 0.05
+					MinY = 0
+					MinZ = 0.05
+					Name = "Velocity: Box"
+					type = "velocity_box"
+				}
+				{
+					MaxX = -0.2
+					MaxY = -0.2
+					MaxZ = 0
+					MinX = 0.2
+					MinY = 0.2
+					MinZ = 0
+					Name = "Position: Box"
+					type = "position_box"
+				}
+			]
+			Id = "0b6c7a5e-f7cc-4658-a556-e6a91e034acc"
+			max_particle_life = 0.3
+			min_particle_life = 0.5
+			Mute = false
+			name = "smk"
+			OffsetX = 0
+			OffsetY = 0
+			OffsetZ = 0
+			Spin = 0
+			Tilt = 0
+			total = 10
+		}
+	]
+	Level = "core/editor_slave/levels/animation_preview_level/animation_preview_level"
+	life_time = 10000000000
+	ShowRuler = true
+	SpawnHeight = 1
+	UseRandomSeed = true
+	Variables = {
+		Variables = [
+		]
+	}
+}
