@@ -151,22 +151,6 @@ nodes = [
 		}
 	}
 	{
-		id = "7ff23016-5716-4bef-8298-9554f68dbd3b"
-		out_events = {
-			out = [
-				{
-					event = 0
-					id = "a37ab05a-6dce-4cfc-a381-82af5dfcde80:0"
-					node = "a37ab05a-6dce-4cfc-a381-82af5dfcde80"
-				}
-			]
-		}
-		type = "external_event"
-		variable_values = {
-			event_name = "Start"
-		}
-	}
-	{
 		id = "a37ab05a-6dce-4cfc-a381-82af5dfcde80"
 		out_events = {
 			out1 = [
@@ -257,6 +241,22 @@ nodes = [
 		type = "level_flow_event"
 		variable_values = {
 			event = "False"
+		}
+	}
+	{
+		id = "7ff23016-5716-4bef-8298-9554f68dbd3b"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "a37ab05a-6dce-4cfc-a381-82af5dfcde80:0"
+					node = "a37ab05a-6dce-4cfc-a381-82af5dfcde80"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "Start"
 		}
 	}
 	{
