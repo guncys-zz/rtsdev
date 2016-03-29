@@ -4,13 +4,6 @@ editor_metadata = {
 		{
 			id = "6a47c7fa-1f5c-4b5d-b670-ecff26fdf751"
 			layer = "Default"
-			modified_components = {
-				"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
-					data = {
-						motion_blur_enabled = false
-					}
-				}
-			}
 			name = "Default Shading Environment"
 			prefab = {
 				"$resource_name" = "core/stingray_renderer/environments/midday/midday_shading_environment"
@@ -60,14 +53,6 @@ editor_metadata = {
 				ToNode = "e1ebe0cb-7c5a-4f11-8575-8d1eed73a7c1"
 				Type = "Unit"
 			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
-				FromNode = "f5b80e33-f7ab-4eff-ae5f-304ed7f45c2b"
-				Priority = 0
-				ToItem = "start_load_csv"
-				ToNode = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
-			}
 		]
 		Groups = [
 			{
@@ -76,6 +61,7 @@ editor_metadata = {
 				]
 				Id = "30610309-e8dd-4e6c-b5b3-e33abdfd848c"
 				Nodes = [
+					"f5b80e33-f7ab-4eff-ae5f-304ed7f45c2b"
 					"4ecdeb84-04d4-4622-a07f-963c9438a8e3"
 					"3cb2a8cc-50ab-43c1-a31c-edeae9c822e5"
 					"9c7b5dd9-2e42-40da-801d-de561afb533e"
@@ -84,16 +70,6 @@ editor_metadata = {
 				]
 				Title = "Camera"
 			}
-			{
-				Collapsed = false
-				Groups = [
-				]
-				Id = "6f404ecf-95e8-48e6-a511-fb0e938d79e9"
-				Nodes = [
-					"a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
-				]
-				Title = "Load_CSV"
-			}
 		]
 		Nodes = [
 			{
@@ -101,8 +77,8 @@ editor_metadata = {
 				Class = "Stingray.Foundation.Flow.LevelLoaded"
 				Id = "f5b80e33-f7ab-4eff-ae5f-304ed7f45c2b"
 				NodeLocation = {
-					X = -580
-					Y = -180
+					X = -260
+					Y = -200
 				}
 				Out = {
 				}
@@ -164,6 +140,7 @@ editor_metadata = {
 					}
 					{
 						Class = "Stingray.Foundation.Flow.InVariableFloat"
+						Value = 3
 					}
 					{
 						Class = "Stingray.Foundation.Flow.InVariableUnit"
@@ -263,43 +240,6 @@ editor_metadata = {
 				ReturnValues = [
 				]
 				Width = 160
-			}
-			{
-				Brief = "Encapsulates a graph of logic stored in a separate flow resource file in the project."
-				Class = "Stingray.Foundation.Flow.FlowSubroutine"
-				Disable = {
-				}
-				Enable = {
-				}
-				Flow = {
-					Value = "script/custom_flows/Load_CSV"
-				}
-				Id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
-				InEvents = [
-					"start_load_csv"
-				]
-				InVariableNames = [
-					"csv_file_name"
-				]
-				InVariables = [
-					{
-						Class = "Stingray.Foundation.Flow.InVariableString"
-						Value = "stage1.csv"
-					}
-				]
-				NodeLocation = {
-					X = -260
-					Y = -400
-				}
-				OutEvents = [
-					"done_load_csv"
-				]
-				OutVariableNames = [
-				]
-				OutVariables = [
-				]
-				Title = "Flow Subroutine"
-				Width = 280
 			}
 		]
 	}
@@ -602,13 +542,6 @@ editor_metadata = {
 entities = [
 	{
 		id = "6a47c7fa-1f5c-4b5d-b670-ecff26fdf751"
-		modified_components = {
-			"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
-				data = {
-					motion_blur_enabled = false
-				}
-			}
-		}
 		name = "Default Shading Environment"
 		prefab = {
 			"$resource_name" = "core/stingray_renderer/environments/midday/midday_shading_environment"
@@ -626,11 +559,6 @@ flow = {
 						event = 0
 						id = "e1ebe0cb-7c5a-4f11-8575-8d1eed73a7c1:0"
 						node = "e1ebe0cb-7c5a-4f11-8575-8d1eed73a7c1"
-					}
-					{
-						event = 0
-						id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7:0"
-						node = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
 					}
 				]
 			}
@@ -681,7 +609,7 @@ flow = {
 			variable_values = {
 				camera__unit = null
 				flow = "script/custom_flows/Camera_Move_Constraint"
-				height_scale = null
+				height_scale = 3
 				target__unit = null
 			}
 		}
@@ -749,25 +677,6 @@ flow = {
 					type = "unit"
 				}
 			]
-		}
-		{
-			id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
-			in_event_index = [
-				"start_load_csv"
-			]
-			in_variables = {
-				csv_file_name = {
-					type = "string"
-				}
-			}
-			out_event_index = [
-				"done_load_csv"
-			]
-			type = "flow_subroutine"
-			variable_values = {
-				csv_file_name = "stage1.csv"
-				flow = "script/custom_flows/Load_CSV"
-			}
 		}
 	]
 }
