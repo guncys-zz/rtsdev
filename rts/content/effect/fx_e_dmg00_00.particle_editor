@@ -7,7 +7,7 @@ particle_system = {
 				{
 					AdditiveBlend = false
 					DepthFadeDistance = 0
-					DiffuseMap = "effect/fx_t_star00"
+					DiffuseMap = "content/effect/fx_t_star00"
 					DissolveUsingVertexAlpha = false
 					Glossiness = 0
 					LitParticles = false
@@ -198,7 +198,7 @@ particle_system = {
 				{
 					AdditiveBlend = false
 					DepthFadeDistance = 0
-					DiffuseMap = "effect/fx_t_hitmark00"
+					DiffuseMap = "content/effect/fx_t_hitmark00"
 					DissolveUsingVertexAlpha = false
 					Glossiness = 1
 					LitParticles = false
@@ -398,7 +398,7 @@ particle_system = {
 				{
 					AdditiveBlend = true
 					DepthFadeDistance = 0
-					DiffuseMap = "effect/fx_t_flash00"
+					DiffuseMap = "content/effect/fx_t_flash00"
 					DissolveUsingVertexAlpha = false
 					Glossiness = 0
 					LitParticles = false
@@ -444,6 +444,14 @@ particle_system = {
 				}
 				{
 					Gradient = [
+						[
+							0.098046875
+							[
+								255
+								255
+								255
+							]
+						]
 						[
 							0.500657894736842
 							[
@@ -516,7 +524,7 @@ particle_system = {
 				{
 					AdditiveBlend = true
 					DepthFadeDistance = 0
-					DiffuseMap = "effect/fx_t_sw00"
+					DiffuseMap = "content/effect/fx_t_sw00"
 					DissolveUsingVertexAlpha = false
 					Glossiness = 0
 					LitParticles = false
@@ -639,7 +647,7 @@ particle_system = {
 				{
 					AdditiveBlend = false
 					DepthFadeDistance = 0
-					DiffuseMap = "effect/fx_t_circle00"
+					DiffuseMap = "content/effect/fx_t_circle00"
 					DissolveUsingVertexAlpha = false
 					Glossiness = 0
 					LitParticles = false
