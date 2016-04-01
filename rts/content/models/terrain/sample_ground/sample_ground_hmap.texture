@@ -1,0 +1,16 @@
+
+common = {
+	input = {
+		filename = "content/models/terrain/sample_ground/sample_ground_hmap"
+		format = "R16UNORM"
+		height = 2048
+		type = "IMAGE2D"
+		width = 2048
+	}
+	output = {
+		format = "R16UNORM"
+		mipmap_filter = "box"
+		mipmap_filter_wrap_mode = "clamp"
+		srgb = false
+	}
+}
