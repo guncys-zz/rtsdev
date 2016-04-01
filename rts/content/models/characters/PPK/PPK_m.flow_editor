@@ -1657,6 +1657,24 @@ Connections = [
 		ToNode = "3954e7ec-8cdc-4246-a469-ea8c48c56fc7"
 	}
 	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Pressed"
+		FromNode = "1202037b-f32b-42a3-9fd6-92eed23f6df4"
+		Id = "281e7863-7205-4647-b1a5-7a67bc635cd0"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "ed802c7d-232c-4322-ba2a-ed59bc863714"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "ed802c7d-232c-4322-ba2a-ed59bc863714"
+		Id = "a22e1ad1-0f4d-4e63-aec4-20aafcfa0d25"
+		Priority = 0
+		ToItem = "Create"
+		ToNode = "2b961d4b-6e3d-47d3-8298-8f7f92cac9df"
+	}
+	{
 		Class = "Stingray.Flow.VariableConnection"
 		FromItem = "Value"
 		FromNode = "5cffc219-9188-46e1-9279-bb3fd0dc24c3"
@@ -2151,6 +2169,33 @@ Connections = [
 		ToNode = "026c47e2-e715-462d-b34e-210b62e1f756"
 		Type = "Float"
 	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "74b56552-dc8a-40bb-a9a9-fffa0b81c069"
+		Id = "16ecc58d-e433-4428-9e7c-2ce7a621f298"
+		ToItem = "Condition"
+		ToNode = "60e35027-6868-4474-b7ad-1cce8ba8f5cf"
+		Type = "Bool"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Pressed"
+		FromNode = "1202037b-f32b-42a3-9fd6-92eed23f6df4"
+		Id = "ebb014ba-cf0d-4176-8bc9-0b98eaad088c"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "60e35027-6868-4474-b7ad-1cce8ba8f5cf"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "True"
+		FromNode = "60e35027-6868-4474-b7ad-1cce8ba8f5cf"
+		Id = "0ef07b4e-e1cd-429b-9979-6f14168fab84"
+		Priority = 0
+		ToItem = "Create"
+		ToNode = "2b961d4b-6e3d-47d3-8298-8f7f92cac9df"
+	}
 ]
 Groups = [
 	{
@@ -2293,6 +2338,18 @@ Groups = [
 		]
 		Title = "走っているとき"
 	}
+	{
+		Collapsed = false
+		Groups = [
+		]
+		Id = "94fd7447-6583-468b-8dd6-705dd06cf285"
+		Nodes = [
+			"74b56552-dc8a-40bb-a9a9-fffa0b81c069"
+			"60e35027-6868-4474-b7ad-1cce8ba8f5cf"
+			"2b961d4b-6e3d-47d3-8298-8f7f92cac9df"
+		]
+		Title = "Jump Effect"
+	}
 ]
 Nodes = [
 	{
@@ -2347,23 +2404,6 @@ Nodes = [
 		Width = 160
 	}
 	{
-		Class = "Stingray.Flow.Branch"
-		Condition = {
-		}
-		False = {
-		}
-		Id = "0c1b0430-a6ef-4ebf-98e6-4a5078e12811"
-		In = {
-		}
-		NodeLocation = {
-			X = 580
-			Y = 380
-		}
-		True = {
-		}
-		Width = 160
-	}
-	{
 		ButtonName = {
 			Value = "space"
 		}
@@ -2378,29 +2418,12 @@ Nodes = [
 		}
 		Id = "1202037b-f32b-42a3-9fd6-92eed23f6df4"
 		NodeLocation = {
-			X = 1360
+			X = 1440
 			Y = 680
 		}
 		Pressed = {
 		}
 		Released = {
-		}
-		Value = {
-		}
-		Width = 160
-	}
-	{
-		Class = "Stingray.Flow.GetUnitBoolData"
-		Id = "14cd23e1-d12a-44f8-8ac4-1edcb14784bf"
-		Key = {
-			Value = "OnGround"
-		}
-		NodeLocation = {
-			X = 80
-			Y = 140
-		}
-		Unit = {
-			UseMyUnit = true
 		}
 		Value = {
 		}
@@ -2462,7 +2485,7 @@ Nodes = [
 			Value = "SpeedDeceleration"
 		}
 		NodeLocation = {
-			X = 1600
+			X = 1680
 			Y = 500
 		}
 		Unit = {
@@ -2523,7 +2546,7 @@ Nodes = [
 			Value = "IsRun"
 		}
 		NodeLocation = {
-			X = 1540
+			X = 1620
 			Y = 700
 		}
 		Unit = {
@@ -2548,8 +2571,8 @@ Nodes = [
 		}
 		Id = "21d7e786-3d80-4d3a-b89d-3b97ab9e5d17"
 		NodeLocation = {
-			X = 2640
-			Y = 680
+			X = 2700
+			Y = 800
 		}
 		Pressed = {
 		}
@@ -2565,7 +2588,7 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 1580
+			X = 1660
 			Y = 840
 		}
 		Out1 = {
@@ -2596,7 +2619,7 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 1820
+			X = 1900
 			Y = 700
 		}
 		True = {
@@ -2705,7 +2728,7 @@ Nodes = [
 			Value = "Gravity"
 		}
 		NodeLocation = {
-			X = 1600
+			X = 1680
 			Y = 0
 		}
 		Unit = {
@@ -2827,7 +2850,7 @@ Nodes = [
 			Value = "Speed"
 		}
 		NodeLocation = {
-			X = 1600
+			X = 1680
 			Y = 400
 		}
 		Unit = {
@@ -2872,7 +2895,7 @@ Nodes = [
 			Value = "rate"
 		}
 		NodeLocation = {
-			X = 1600
+			X = 1680
 			Y = 300
 		}
 		Unit = {
@@ -2889,7 +2912,7 @@ Nodes = [
 			Value = "OnGround"
 		}
 		NodeLocation = {
-			X = 1600
+			X = 1680
 			Y = 200
 		}
 		Unit = {
@@ -2908,7 +2931,7 @@ Nodes = [
 			Value = "OnGround"
 		}
 		NodeLocation = {
-			X = 2240
+			X = 2320
 			Y = 540
 		}
 		Out = {
@@ -2926,7 +2949,7 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 1840
+			X = 1920
 			Y = 820
 		}
 		Out = {
@@ -2989,7 +3012,7 @@ Nodes = [
 			Value = "Speed"
 		}
 		NodeLocation = {
-			X = 2240
+			X = 2320
 			Y = 280
 		}
 		Out = {
@@ -3033,7 +3056,7 @@ Nodes = [
 			Value = "JumpPower"
 		}
 		NodeLocation = {
-			X = 1600
+			X = 1680
 			Y = 100
 		}
 		Unit = {
@@ -3114,25 +3137,6 @@ Nodes = [
 		Width = 160
 	}
 	{
-		Class = "Stingray.Flow.AnimationEvent"
-		Event = {
-			Value = "AnimEvent_Jump"
-		}
-		Id = "d74d978e-7c16-4af4-8b4f-04644c3c5ffd"
-		In = {
-		}
-		NodeLocation = {
-			X = 2240
-			Y = 400
-		}
-		Out = {
-		}
-		Unit = {
-			UseMyUnit = true
-		}
-		Width = 240
-	}
-	{
 		Class = "Stingray.Flow.GetUnitBoolData"
 		Id = "d8941c9e-b99f-4359-9b1a-6d544b6bfccd"
 		Key = {
@@ -3156,7 +3160,7 @@ Nodes = [
 		Class = "Stingray.Flow.OnAnimationControllerFlowEvents"
 		Id = "e002cfb3-38c2-49c8-9844-498aadc2d158"
 		NodeLocation = {
-			X = 1340
+			X = 1420
 			Y = 580
 		}
 		OutEvents = [
@@ -3228,8 +3232,8 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 3080
-			Y = 720
+			X = 3140
+			Y = 840
 		}
 		Out = {
 		}
@@ -3262,7 +3266,7 @@ Nodes = [
 			Value = "MoverHeight"
 		}
 		NodeLocation = {
-			X = 2240
+			X = 2320
 			Y = 160
 		}
 		Numeric = {
@@ -3283,8 +3287,8 @@ Nodes = [
 			Value = "IsRun"
 		}
 		NodeLocation = {
-			X = 2860
-			Y = 740
+			X = 2920
+			Y = 860
 		}
 		Out = {
 		}
@@ -3417,7 +3421,7 @@ Nodes = [
 			}
 		]
 		NodeLocation = {
-			X = 2060
+			X = 2140
 			Y = 320
 		}
 		OutEvents = [
@@ -3443,5 +3447,126 @@ Nodes = [
 			}
 		]
 		Width = 140
+	}
+	{
+		Class = "Stingray.Flow.GetUnitBoolData"
+		Id = "14cd23e1-d12a-44f8-8ac4-1edcb14784bf"
+		Key = {
+			Value = "OnGround"
+		}
+		NodeLocation = {
+			X = 80
+			Y = 140
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.Branch"
+		Condition = {
+		}
+		False = {
+		}
+		Id = "0c1b0430-a6ef-4ebf-98e6-4a5078e12811"
+		In = {
+		}
+		NodeLocation = {
+			X = 580
+			Y = 380
+		}
+		True = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.AnimationEvent"
+		Event = {
+			Value = "AnimEvent_Jump"
+		}
+		Id = "d74d978e-7c16-4af4-8b4f-04644c3c5ffd"
+		In = {
+		}
+		NodeLocation = {
+			X = 2320
+			Y = 400
+		}
+		Out = {
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Width = 240
+	}
+	{
+		Class = "Stingray.Flow.GetUnitBoolData"
+		Id = "74b56552-dc8a-40bb-a9a9-fffa0b81c069"
+		Key = {
+			Value = "OnGround"
+		}
+		NodeLocation = {
+			X = 2720
+			Y = 460
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.Branch"
+		Condition = {
+		}
+		False = {
+		}
+		Id = "60e35027-6868-4474-b7ad-1cce8ba8f5cf"
+		In = {
+		}
+		NodeLocation = {
+			X = 2900
+			Y = 480
+		}
+		True = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ParticleEffect"
+		Create = {
+		}
+		Destroy = {
+		}
+		Effect = {
+			Value = "content/effect/fx_e_smk00_00"
+		}
+		EffectId = {
+		}
+		Id = "2b961d4b-6e3d-47d3-8298-8f7f92cac9df"
+		Kill = {
+		}
+		Linked = {
+			Value = false
+		}
+		NodeLocation = {
+			X = 3100
+			Y = 480
+		}
+		Object = {
+		}
+		Offset = {
+		}
+		OrphanedPolicy = {
+		}
+		RotationOffset = {
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Width = 160
 	}
 ]
