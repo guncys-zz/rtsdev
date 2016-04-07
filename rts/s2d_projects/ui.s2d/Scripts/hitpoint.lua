@@ -3,10 +3,10 @@ local thisActor = ...
 
 --hitpointのanimationを拾う
 --子要素のhp1,hp2,hp3を拾って、そのanimationを保持
-local rootAnimation = scaleform.Actor.component_by_name(thisActor, "animation")
+local hitpointAnimation = scaleform.Actor.component_by_name(thisActor, "Animation")
 
-local hitpoint = scaleform.ContainerComponent.actor_by_name(rootAnimation, "hitpoint")
-local hitpointAnimation = scaleform.Actor.component_by_name(hitpoint, "animation")
+--local hitpoint = scaleform.ContainerComponent.actor_by_name(rootAnimation, "hitpoint")
+--local hitpointAnimation = scaleform.Actor.component_by_name(hitpoint, "animation")
 
 -- http://help.autodesk.com/view/ScaleformStudio/ENU/?guid=__lua_ref_obj_scaleform_AnimationComponent_html
 --animetionを止める
@@ -16,7 +16,7 @@ scaleform.AnimationComponent.stop(hitpointAnimation)
 --外部でe.data.valueの値を1-36まで変えてあげることで、
 --1-12までで1ダメージ、13-24までで2ダメージ、25-36までで3ダメージを表現
 local customListener = scaleform.EventListener.create(customListener, function(e)
-if e.name == "damage" then
+if e.name == "damage_1" or e.name == "damage_2" or e.name == "damage_3" then
     scaleform.AnimationComponent.goto_frame(hitpointAnimation, e.data.value)
 end
 end );
