@@ -1,0 +1,19 @@
+
+parent_material = "core/stingray_renderer/shader_import/standard"
+textures = {
+	color_map = "content/models/stage3/textures/trap_root_C_color"
+}
+variables = {
+	roughness = {
+		type = "scalar"
+		value = 0.98
+	}
+	use_color_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_normal_map = {
+		type = "scalar"
+		value = 0
+	}
+}

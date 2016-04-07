@@ -1,0 +1,42 @@
+
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 7.27348
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			-0.819104
+			7.101774
+			1.262639
+		]
+		projection_type = "perspective"
+		rotation = [
+			0.00499
+			-0.086986
+			0.994562
+			-0.057052
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
+materials = {
+	trap_branch_A_SH = "content/models/stage3/materials/trap_branch_A"
+}
+renderables = {
+	trap_branch_A = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

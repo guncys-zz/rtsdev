@@ -1,0 +1,117 @@
+
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 1.366697
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			1.002501
+			0.884238
+			-0.555876
+		]
+		projection_type = "perspective"
+		rotation = [
+			-0.013105
+			-0.028902
+			0.910292
+			0.412749
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
+lights = {
+	tunnel_lamp_A_volumeLight1 = {
+		box_max = [
+			10
+			10
+			10
+		]
+		box_min = [
+			-10
+			0
+			-10
+		]
+		cast_shadows = true
+		color = [
+			1
+			1
+			1
+		]
+		falloff_end = 8
+		falloff_exponent = 1
+		falloff_start = 0
+		node = "tunnel_lamp_A_volumeLight1"
+		spot_angle_end = 0
+		spot_angle_start = 0
+		type = "omni"
+	}
+}
+materials = {
+	candle_SH = "content/models/stage3/materials/candle_SH"
+	candleFlame_SH = "content/models/stage3/materials/candleFlame_SH"
+	lampFrame_SH = "content/models/stage3/materials/lampFrame_SH"
+	lampGlass_SH = "content/models/stage3/materials/lampGlass_SH"
+}
+renderables = {
+	tunnel_lamp_A_candle = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	tunnel_lamp_A_candleFlame = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	tunnel_lamp_A_glass = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	tunnel_lamp_A_lampFrame = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	tunnel_lamp_A_lampPlate = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	tunnel_lamp_A_string1 = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}
