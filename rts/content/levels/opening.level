@@ -13,10 +13,351 @@ editor_metadata = {
 	]
 	Flow = {
 		Connections = [
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "f8844a2d-a8e8-4a93-82e0-2d36191a13eb"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "b660b3e8-50c0-4987-be29-5143db99a8d6"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "6d3b5017-8529-4094-a8de-fafc31f2f7b4"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "f8844a2d-a8e8-4a93-82e0-2d36191a13eb"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Time"
+				FromNode = "2df78c31-ff5b-43e1-a7d0-fb8fd2a8b299"
+				ToItem = "Increment"
+				ToNode = "24368359-dd01-4d47-a118-e47fd622fa87"
+				Type = "Float"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "24368359-dd01-4d47-a118-e47fd622fa87"
+				ToItem = "A"
+				ToNode = "6839ae57-76a6-48da-bf39-5d0d518b2ad4"
+				Type = "Float"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "6839ae57-76a6-48da-bf39-5d0d518b2ad4"
+				ToItem = "Condition"
+				ToNode = "94074e6c-ea4a-441f-a553-f4aa656fa60a"
+				Type = "Bool"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out2"
+				FromNode = "c9e205b4-3cfe-4a61-8909-1186664c509b"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "94074e6c-ea4a-441f-a553-f4aa656fa60a"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out1"
+				FromNode = "c9e205b4-3cfe-4a61-8909-1186664c509b"
+				Priority = 0
+				ToItem = "Increase"
+				ToNode = "24368359-dd01-4d47-a118-e47fd622fa87"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "True"
+				FromNode = "94074e6c-ea4a-441f-a553-f4aa656fa60a"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "6d3b5017-8529-4094-a8de-fafc31f2f7b4"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "24368359-dd01-4d47-a118-e47fd622fa87"
+				ToItem = "Numeric"
+				ToNode = "92f799a4-3233-4e90-8a08-7bd3bab9fdd6"
+				Type = "Float"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "92f799a4-3233-4e90-8a08-7bd3bab9fdd6"
+				ToItem = "Text"
+				ToNode = "38934b0b-2dfb-4adf-8f9e-bba3a7f0d90f"
+				Type = "String"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Changed"
+				FromNode = "24368359-dd01-4d47-a118-e47fd622fa87"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "38934b0b-2dfb-4adf-8f9e-bba3a7f0d90f"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "77d1212b-f3d7-46df-a34f-bc77ce765489"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "c9e205b4-3cfe-4a61-8909-1186664c509b"
+			}
 		]
 		Groups = [
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "7308fad4-4281-4481-a77f-d2962dc9c896"
+				Nodes = [
+					"c9e205b4-3cfe-4a61-8909-1186664c509b"
+					"2df78c31-ff5b-43e1-a7d0-fb8fd2a8b299"
+					"6d3b5017-8529-4094-a8de-fafc31f2f7b4"
+					"94074e6c-ea4a-441f-a553-f4aa656fa60a"
+					"38934b0b-2dfb-4adf-8f9e-bba3a7f0d90f"
+					"24368359-dd01-4d47-a118-e47fd622fa87"
+					"92f799a4-3233-4e90-8a08-7bd3bab9fdd6"
+					"6839ae57-76a6-48da-bf39-5d0d518b2ad4"
+					"f8844a2d-a8e8-4a93-82e0-2d36191a13eb"
+					"b660b3e8-50c0-4987-be29-5143db99a8d6"
+				]
+				Title = "10秒でStage1に遷移"
+			}
 		]
 		Nodes = [
+			{
+				Arguments = [
+					{
+						RawName = "Name"
+						Type = "resource"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableResource"
+							Extension = "level"
+							Value = "content/levels/stage1"
+						}
+					}
+				]
+				Brief = "Switches the currently active level in the world to the specified level."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/appkit/appkit"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "f8844a2d-a8e8-4a93-82e0-2d36191a13eb"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Change Level"
+				NodeLocation = {
+					X = 740
+					Y = -280
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 220
+			}
+			{
+				Brief = "Prints the combined label and text to the log console."
+				Class = "Stingray.Foundation.Flow.DebugPrint"
+				Id = "b660b3e8-50c0-4987-be29-5143db99a8d6"
+				In = {
+				}
+				Label = {
+				}
+				NodeLocation = {
+					X = 980
+					Y = -280
+				}
+				Out = {
+				}
+				Text = {
+					Value = "Done change level"
+				}
+				Title = "Debug Print"
+				Width = 160
+			}
+			{
+				Brief = "Prints the combined label and text to the log console."
+				Class = "Stingray.Foundation.Flow.DebugPrint"
+				Id = "6d3b5017-8529-4094-a8de-fafc31f2f7b4"
+				In = {
+				}
+				Label = {
+				}
+				NodeLocation = {
+					X = 500
+					Y = -280
+				}
+				Out = {
+				}
+				Text = {
+					Value = "Start change level "
+				}
+				Title = "Debug Print"
+				Width = 220
+			}
+			{
+				Brief = "Passes an event at every update interval of the engine."
+				Class = "Stingray.Foundation.Flow.LevelUpdate"
+				Id = "77d1212b-f3d7-46df-a34f-bc77ce765489"
+				NodeLocation = {
+					X = -600
+					Y = -140
+				}
+				Out = {
+				}
+				Title = "Level Update"
+				Width = 160
+			}
+			{
+				Brief = "Returns the time elapsed since the last frame update."
+				Class = "Stingray.Foundation.Flow.GetLastDeltaTime"
+				Id = "2df78c31-ff5b-43e1-a7d0-fb8fd2a8b299"
+				NodeLocation = {
+					X = -340
+					Y = -240
+				}
+				Time = {
+				}
+				Title = "Get Last Delta Time"
+				Width = 160
+			}
+			{
+				Brief = "Increases or decreases a specified value based on input event. Returns a current value and a changed event."
+				Changed = {
+				}
+				Class = "Stingray.Foundation.Flow.Counter"
+				Decrease = {
+				}
+				Id = "24368359-dd01-4d47-a118-e47fd622fa87"
+				Increase = {
+				}
+				Increment = {
+				}
+				NodeLocation = {
+					X = -120
+					Y = -360
+				}
+				Reset = {
+				}
+				StartValue = {
+					Value = 0
+				}
+				Title = "Counter"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				A = {
+				}
+				B = {
+					Value = 10
+				}
+				Brief = "Returns a boolean based on whether A is greater than B."
+				Class = "Stingray.Foundation.Flow.NumericGreaterThanNumeric"
+				Id = "6839ae57-76a6-48da-bf39-5d0d518b2ad4"
+				NodeLocation = {
+					X = 80
+					Y = -280
+				}
+				Title = "Greater Than"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Creates a decision based data flow from a single boolean condition."
+				Class = "Stingray.Foundation.Flow.Branch"
+				Condition = {
+				}
+				False = {
+				}
+				Id = "94074e6c-ea4a-441f-a553-f4aa656fa60a"
+				In = {
+				}
+				NodeLocation = {
+					X = 280
+					Y = -280
+				}
+				Title = "Branch"
+				True = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Allows for a single event pin to execute multiple event pins in order."
+				Class = "Stingray.Foundation.Flow.Sequence"
+				Id = "c9e205b4-3cfe-4a61-8909-1186664c509b"
+				In = {
+				}
+				NodeLocation = {
+					X = -340
+					Y = -140
+				}
+				Out1 = {
+				}
+				Out2 = {
+				}
+				Out3 = {
+				}
+				Out4 = {
+				}
+				Out5 = {
+				}
+				Out6 = {
+				}
+				Out7 = {
+				}
+				Out8 = {
+				}
+				Title = "Sequence"
+				Width = 160
+			}
+			{
+				Brief = "Converts a numeric value to a string."
+				Class = "Stingray.Foundation.Flow.NumericToString"
+				Id = "92f799a4-3233-4e90-8a08-7bd3bab9fdd6"
+				NodeLocation = {
+					X = 120
+					Y = -420
+				}
+				Numeric = {
+				}
+				Title = "Numeric To String"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Prints the combined label and text to the log console."
+				Class = "Stingray.Foundation.Flow.DebugPrint"
+				Id = "38934b0b-2dfb-4adf-8f9e-bba3a7f0d90f"
+				In = {
+				}
+				Label = {
+					Value = "time: "
+				}
+				NodeLocation = {
+					X = 340
+					Y = -440
+				}
+				Out = {
+				}
+				Text = {
+				}
+				Title = "Debug Print"
+				Width = 220
+			}
 		]
 	}
 	Groups = [
@@ -215,6 +556,242 @@ entities = [
 ]
 flow = {
 	nodes = [
+		{
+			flow_nodes_resource = "core/appkit/appkit"
+			id = "f8844a2d-a8e8-4a93-82e0-2d36191a13eb"
+			in_variables = {
+				Name = {
+					type = "string"
+				}
+			}
+			name = "Change Level"
+			out_events = {
+				Out = [
+					{
+						event = 0
+						id = "b660b3e8-50c0-4987-be29-5143db99a8d6:0"
+						node = "b660b3e8-50c0-4987-be29-5143db99a8d6"
+					}
+				]
+			}
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Name = "content/levels/stage1"
+			}
+			variables = [
+				{
+					name = "Name"
+					type = "string"
+				}
+			]
+		}
+		{
+			id = "b660b3e8-50c0-4987-be29-5143db99a8d6"
+			in_variables = {
+				label = {
+					type = "string"
+				}
+				text = {
+					type = "string"
+				}
+			}
+			type = "debug_print"
+			variable_values = {
+				label = null
+				text = "Done change level"
+			}
+		}
+		{
+			id = "6d3b5017-8529-4094-a8de-fafc31f2f7b4"
+			in_variables = {
+				label = {
+					type = "string"
+				}
+				text = {
+					type = "string"
+				}
+			}
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "f8844a2d-a8e8-4a93-82e0-2d36191a13eb:0"
+						node = "f8844a2d-a8e8-4a93-82e0-2d36191a13eb"
+					}
+				]
+			}
+			type = "debug_print"
+			variable_values = {
+				label = null
+				text = "Start change level "
+			}
+		}
+		{
+			id = "77d1212b-f3d7-46df-a34f-bc77ce765489"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "c9e205b4-3cfe-4a61-8909-1186664c509b:0"
+						node = "c9e205b4-3cfe-4a61-8909-1186664c509b"
+					}
+				]
+			}
+			type = "level_update"
+		}
+		{
+			id = "2df78c31-ff5b-43e1-a7d0-fb8fd2a8b299"
+			out_variables = {
+				time = {
+					type = "float"
+				}
+			}
+			type = "get_last_delta_time"
+			variable_values = {
+				time = null
+			}
+		}
+		{
+			id = "24368359-dd01-4d47-a118-e47fd622fa87"
+			in_variables = {
+				increment = {
+					node = "2df78c31-ff5b-43e1-a7d0-fb8fd2a8b299"
+					type = "float"
+					variable = "time"
+				}
+				start_value = {
+					type = "float"
+				}
+			}
+			out_events = {
+				changed = [
+					{
+						event = 0
+						id = "38934b0b-2dfb-4adf-8f9e-bba3a7f0d90f:0"
+						node = "38934b0b-2dfb-4adf-8f9e-bba3a7f0d90f"
+					}
+				]
+			}
+			out_variables = {
+				value = {
+					type = "float"
+				}
+			}
+			type = "counter"
+			variable_values = {
+				increment = null
+				start_value = 0
+				value = null
+			}
+		}
+		{
+			id = "6839ae57-76a6-48da-bf39-5d0d518b2ad4"
+			in_variables = {
+				a = {
+					node = "24368359-dd01-4d47-a118-e47fd622fa87"
+					type = "float"
+					variable = "value"
+				}
+				b = {
+					type = "float"
+				}
+			}
+			out_variables = {
+				value = {
+					type = "bool"
+				}
+			}
+			type = "numeric_greater_than_numeric"
+			variable_values = {
+				a = null
+				b = 10
+				value = null
+			}
+		}
+		{
+			id = "94074e6c-ea4a-441f-a553-f4aa656fa60a"
+			in_variables = {
+				condition = {
+					node = "6839ae57-76a6-48da-bf39-5d0d518b2ad4"
+					type = "bool"
+					variable = "value"
+				}
+			}
+			out_events = {
+				true = [
+					{
+						event = 0
+						id = "6d3b5017-8529-4094-a8de-fafc31f2f7b4:0"
+						node = "6d3b5017-8529-4094-a8de-fafc31f2f7b4"
+					}
+				]
+			}
+			type = "branch"
+			variable_values = {
+				condition = null
+			}
+		}
+		{
+			id = "c9e205b4-3cfe-4a61-8909-1186664c509b"
+			out_events = {
+				out1 = [
+					{
+						event = 0
+						id = "24368359-dd01-4d47-a118-e47fd622fa87:0"
+						node = "24368359-dd01-4d47-a118-e47fd622fa87"
+					}
+				]
+				out2 = [
+					{
+						event = 0
+						id = "94074e6c-ea4a-441f-a553-f4aa656fa60a:0"
+						node = "94074e6c-ea4a-441f-a553-f4aa656fa60a"
+					}
+				]
+			}
+			type = "sequence"
+		}
+		{
+			id = "92f799a4-3233-4e90-8a08-7bd3bab9fdd6"
+			in_variables = {
+				numeric = {
+					node = "24368359-dd01-4d47-a118-e47fd622fa87"
+					type = "float"
+					variable = "value"
+				}
+			}
+			out_variables = {
+				value = {
+					type = "string"
+				}
+			}
+			type = "numeric_to_string"
+			variable_values = {
+				numeric = null
+				value = null
+			}
+		}
+		{
+			id = "38934b0b-2dfb-4adf-8f9e-bba3a7f0d90f"
+			in_variables = {
+				label = {
+					type = "string"
+				}
+				text = {
+					node = "92f799a4-3233-4e90-8a08-7bd3bab9fdd6"
+					type = "string"
+					variable = "value"
+				}
+			}
+			type = "debug_print"
+			variable_values = {
+				label = "time: "
+				text = null
+			}
+		}
 	]
 }
 level_references = [

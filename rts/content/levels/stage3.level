@@ -98,6 +98,54 @@ editor_metadata = {
 				ToNode = "4ecdeb84-04d4-4622-a07f-963c9438a8e3"
 				Type = "Unit"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "9c7b5dd9-2e42-40da-801d-de561afb533e"
+				Priority = 0
+				ToItem = "Increase"
+				ToNode = "d23d0f7d-5486-47e3-b62e-e47892e2c108"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Time"
+				FromNode = "79ce72ad-20e9-4414-ae2d-f92613a3a82d"
+				ToItem = "Increment"
+				ToNode = "d23d0f7d-5486-47e3-b62e-e47892e2c108"
+				Type = "Float"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "d23d0f7d-5486-47e3-b62e-e47892e2c108"
+				ToItem = "A"
+				ToNode = "067c836f-146c-4143-9ee9-74966d8261f3"
+				Type = "Float"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "067c836f-146c-4143-9ee9-74966d8261f3"
+				ToItem = "Condition"
+				ToNode = "0183aca3-7c0c-49b7-b1d0-ef551e003f89"
+				Type = "Bool"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Changed"
+				FromNode = "d23d0f7d-5486-47e3-b62e-e47892e2c108"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "0183aca3-7c0c-49b7-b1d0-ef551e003f89"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "True"
+				FromNode = "0183aca3-7c0c-49b7-b1d0-ef551e003f89"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "4f3e591b-a63b-4fc1-ae43-d30b4433145f"
+			}
 		]
 		Groups = [
 			{
@@ -283,6 +331,115 @@ editor_metadata = {
 				Type = "content/models/characters/PPK/PPK_m"
 				Unit = {
 				}
+				Width = 160
+			}
+			{
+				Brief = "Increases or decreases a specified value based on input event. Returns a current value and a changed event."
+				Changed = {
+				}
+				Class = "Stingray.Foundation.Flow.Counter"
+				Decrease = {
+				}
+				Id = "d23d0f7d-5486-47e3-b62e-e47892e2c108"
+				Increase = {
+				}
+				Increment = {
+				}
+				NodeLocation = {
+					X = 140
+					Y = 240
+				}
+				Reset = {
+				}
+				StartValue = {
+					Value = 0
+				}
+				Title = "Counter"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Returns the time elapsed since the last frame update."
+				Class = "Stingray.Foundation.Flow.GetLastDeltaTime"
+				Id = "79ce72ad-20e9-4414-ae2d-f92613a3a82d"
+				NodeLocation = {
+					X = -60
+					Y = 300
+				}
+				Time = {
+				}
+				Title = "Get Last Delta Time"
+				Width = 160
+			}
+			{
+				A = {
+				}
+				B = {
+					Value = 10
+				}
+				Brief = "Returns a boolean based on whether A is greater than B."
+				Class = "Stingray.Foundation.Flow.NumericGreaterThanNumeric"
+				Id = "067c836f-146c-4143-9ee9-74966d8261f3"
+				NodeLocation = {
+					X = 340
+					Y = 240
+				}
+				Title = "Greater Than"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Creates a decision based data flow from a single boolean condition."
+				Class = "Stingray.Foundation.Flow.Branch"
+				Condition = {
+				}
+				False = {
+				}
+				Id = "0183aca3-7c0c-49b7-b1d0-ef551e003f89"
+				In = {
+				}
+				NodeLocation = {
+					X = 540
+					Y = 240
+				}
+				Title = "Branch"
+				True = {
+				}
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Name"
+						Type = "resource"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableResource"
+							Extension = "level"
+							Value = "content/levels/stage4"
+						}
+					}
+				]
+				Brief = "Switches the currently active level in the world to the specified level."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/appkit/appkit"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "4f3e591b-a63b-4fc1-ae43-d30b4433145f"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Change Level"
+				NodeLocation = {
+					X = 740
+					Y = 240
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
 				Width = 160
 			}
 		]
@@ -15197,6 +15354,11 @@ flow = {
 						id = "4ecdeb84-04d4-4622-a07f-963c9438a8e3:0"
 						node = "4ecdeb84-04d4-4622-a07f-963c9438a8e3"
 					}
+					{
+						event = 0
+						id = "d23d0f7d-5486-47e3-b62e-e47892e2c108:0"
+						node = "d23d0f7d-5486-47e3-b62e-e47892e2c108"
+					}
 				]
 			}
 			type = "level_update"
@@ -15219,6 +15381,121 @@ flow = {
 				}
 				unit = null
 			}
+		}
+		{
+			id = "d23d0f7d-5486-47e3-b62e-e47892e2c108"
+			in_variables = {
+				increment = {
+					node = "79ce72ad-20e9-4414-ae2d-f92613a3a82d"
+					type = "float"
+					variable = "time"
+				}
+				start_value = {
+					type = "float"
+				}
+			}
+			out_events = {
+				changed = [
+					{
+						event = 0
+						id = "0183aca3-7c0c-49b7-b1d0-ef551e003f89:0"
+						node = "0183aca3-7c0c-49b7-b1d0-ef551e003f89"
+					}
+				]
+			}
+			out_variables = {
+				value = {
+					type = "float"
+				}
+			}
+			type = "counter"
+			variable_values = {
+				increment = null
+				start_value = 0
+				value = null
+			}
+		}
+		{
+			id = "79ce72ad-20e9-4414-ae2d-f92613a3a82d"
+			out_variables = {
+				time = {
+					type = "float"
+				}
+			}
+			type = "get_last_delta_time"
+			variable_values = {
+				time = null
+			}
+		}
+		{
+			id = "067c836f-146c-4143-9ee9-74966d8261f3"
+			in_variables = {
+				a = {
+					node = "d23d0f7d-5486-47e3-b62e-e47892e2c108"
+					type = "float"
+					variable = "value"
+				}
+				b = {
+					type = "float"
+				}
+			}
+			out_variables = {
+				value = {
+					type = "bool"
+				}
+			}
+			type = "numeric_greater_than_numeric"
+			variable_values = {
+				a = null
+				b = 10
+				value = null
+			}
+		}
+		{
+			id = "0183aca3-7c0c-49b7-b1d0-ef551e003f89"
+			in_variables = {
+				condition = {
+					node = "067c836f-146c-4143-9ee9-74966d8261f3"
+					type = "bool"
+					variable = "value"
+				}
+			}
+			out_events = {
+				true = [
+					{
+						event = 0
+						id = "4f3e591b-a63b-4fc1-ae43-d30b4433145f:0"
+						node = "4f3e591b-a63b-4fc1-ae43-d30b4433145f"
+					}
+				]
+			}
+			type = "branch"
+			variable_values = {
+				condition = null
+			}
+		}
+		{
+			flow_nodes_resource = "core/appkit/appkit"
+			id = "4f3e591b-a63b-4fc1-ae43-d30b4433145f"
+			in_variables = {
+				Name = {
+					type = "string"
+				}
+			}
+			name = "Change Level"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Name = "content/levels/stage4"
+			}
+			variables = [
+				{
+					name = "Name"
+					type = "string"
+				}
+			]
 		}
 	]
 }
