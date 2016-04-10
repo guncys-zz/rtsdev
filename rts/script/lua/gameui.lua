@@ -114,13 +114,13 @@ end
 
 --hpのアニメーション制御関数
 function update_hp(dt)
-    local event = {
+    local event = { --eventは関数内localではなく、このファイル内でアクセスできるようにする
 		eventId = scaleform.EventTypes.Custom,
 		name = nil,
 		data = nil
 	}
     --キーボード入力をテスト用に受け取る
-    if stingray.Keyboard.released(stingray.Keyboard.button_index("d")) then
+    if stingray.Keyboard.released(stingray.Keyboard.button_index("d")) or damage_bool == true then--damage_boolの判定はここにあるべきではない
 		if damage_anim < 12 then
 		    event.name = "damage_1"
 		    damage_bool = true
@@ -137,9 +137,9 @@ function update_hp(dt)
 	    damage_anim = damage_anim + 1
 	    event.data =  {value = damage_anim}
 	    scaleform.Stage.dispatch_event(event)
-	    --if damage_anim == 12 or damage_anim == 24 or damage_anim == 36 then
+	    if damage_anim == 12 or damage_anim == 24 or damage_anim == 36 then
 	        damage_bool = false
-        --end
+        end
     end
 end
 return GameUI
