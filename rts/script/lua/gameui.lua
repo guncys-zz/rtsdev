@@ -137,9 +137,9 @@ function update_hp(dt)
 	    damage_anim = damage_anim + 1
 	    event.data =  {value = damage_anim}
 	    scaleform.Stage.dispatch_event(event)
-	    if damage_anim == 12 or damage_anim == 24 or damage_anim == 36 then
+	    --if damage_anim == 12 or damage_anim == 24 or damage_anim == 36 then
 	        damage_bool = false
-        end
+        --end
     end
 end
 return GameUI
