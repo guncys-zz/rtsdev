@@ -83,6 +83,14 @@ editor_metadata = {
 				ToItem = "Movement"
 				ToNode = "1e0c230f-b02e-4476-ab0a-34cc36fca84b"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Pressed"
+				FromNode = "6d026d95-904d-4d2c-8190-97b3e57e635d"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "ba425c14-fa4e-4270-a8a5-286dbd1102e4"
+			}
 		]
 		Groups = [
 			{
@@ -93,6 +101,7 @@ editor_metadata = {
 				Nodes = [
 					"ba425c14-fa4e-4270-a8a5-286dbd1102e4"
 					"1793cfa5-5f89-46e3-ad7b-c483465ed108"
+					"6d026d95-904d-4d2c-8190-97b3e57e635d"
 				]
 				Title = "reset"
 			}
@@ -245,7 +254,7 @@ editor_metadata = {
 						Type = "string"
 						Variable = {
 							Class = "Stingray.Foundation.Flow.InVariableString"
-							Value = "content/levels/testmap"
+							Value = "content/levels/testmap1"
 						}
 					}
 				]
@@ -385,8 +394,8 @@ editor_metadata = {
 				InVariables = [
 				]
 				NodeLocation = {
-					X = -380
-					Y = -80
+					X = -360
+					Y = -60
 				}
 				OutEvents = [
 				]
@@ -400,6 +409,34 @@ editor_metadata = {
 				Title = "Level Unit"
 				Type = "content/models/characters/PPK/PPK_m"
 				Unit = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
+				ButtonName = {
+					Value = "r"
+				}
+				Class = "Stingray.Foundation.Flow.KeyboardButton"
+				Device = {
+					Value = "keyboard"
+				}
+				DeviceNumber = {
+					Value = 0
+				}
+				Held = {
+				}
+				Id = "6d026d95-904d-4d2c-8190-97b3e57e635d"
+				NodeLocation = {
+					X = -280
+					Y = 300
+				}
+				Pressed = {
+				}
+				Released = {
+				}
+				Title = "Keyboard Button"
+				Value = {
 				}
 				Width = 160
 			}
@@ -762,43 +799,6 @@ editor_metadata = {
 			ScriptData = {
 			}
 			Type = "content/models/characters/PPK/PPK_m"
-		}
-		{
-			Cameras = {
-			}
-			Id = "cbd63682-dd4e-4156-8f1e-cc3e4b81cb76"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "TrashCan"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 89.155899
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/blockers/TrashCan/TrashCan"
 		}
 		{
 			Cameras = {
@@ -1299,7 +1299,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = 1.309722
+				X = 1.514173
 				Y = 8.168634
 				Z = 0.037458
 			}
@@ -1336,7 +1336,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = 0
+				X = -1.807149
 				Y = 7.458817
 				Z = 0.037458
 			}
@@ -1891,7 +1891,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = 0
+				X = -2.008754
 				Y = 36.418369
 				Z = 0.037458
 			}
@@ -1928,7 +1928,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = 0.825157
+				X = 2.42238
 				Y = 30.287674
 				Z = -0.088694
 			}
@@ -2596,7 +2596,7 @@ editor_metadata = {
 			Pos = {
 				X = 3.943039
 				Y = 49.750969
-				Z = -3.306878
+				Z = -3.886593
 			}
 			Rot = {
 				W = -0.959696
@@ -2964,7 +2964,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = 0
+				X = -2.008754
 				Y = 41.804333
 				Z = 0.038507
 			}
@@ -3168,6 +3168,228 @@ editor_metadata = {
 			}
 			Type = "content/models/blockers/Tree/Tree"
 		}
+		{
+			Cameras = {
+			}
+			Id = "009ac6a3-ada4-45c1-89ef-c45eb8a82038"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TrashCan1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.090054
+				Y = 7.276573
+				Z = -0.011363
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1.86467
+				Y = 1.86467
+				Z = 1.86467
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TrashCan/TrashCan"
+		}
+		{
+			Cameras = {
+			}
+			Id = "1b07daba-1095-4373-b960-a7de7d5a4541"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TrashCan2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.090054
+				Y = 17.595551
+				Z = -0.011363
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1.86467
+				Y = 1.86467
+				Z = 1.86467
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TrashCan/TrashCan"
+		}
+		{
+			Cameras = {
+			}
+			Id = "b400186d-3d1a-46c0-9d96-14494c0864bc"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TrashCan3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.090054
+				Y = 24.668564
+				Z = -0.011363
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1.86467
+				Y = 1.86467
+				Z = 1.86467
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TrashCan/TrashCan"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e313f53b-09d4-4153-8483-39b351b56f99"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TrashCan4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.090054
+				Y = 31.207552
+				Z = -0.011363
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 2.415253
+				Y = 2.415253
+				Z = 2.415253
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TrashCan/TrashCan"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c64233e5-c575-4ed1-b0df-5e9ff852b38f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TrashCan"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.090054
+				Y = 45.157448
+				Z = -0.011363
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1.86467
+				Y = 1.86467
+				Z = 1.86467
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TrashCan/TrashCan"
+		}
+		{
+			Cameras = {
+			}
+			Id = "7b0697da-4d41-4910-b8e7-0fe5ca2b3618"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TrashCan5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.090054
+				Y = 85.528847
+				Z = -0.011363
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 2.415253
+				Y = 2.415253
+				Z = 2.415253
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TrashCan/TrashCan"
+		}
 	]
 	Volumes = [
 	]
@@ -3328,7 +3550,7 @@ flow = {
 			]
 			type = "custom_script_node"
 			variable_values = {
-				Name = "content/levels/testmap"
+				Name = "content/levels/testmap1"
 			}
 			variables = [
 				{
@@ -3449,6 +3671,36 @@ flow = {
 					id = "47c698d2-0e6a-4fb2-9f5b-e8d77f3e36c3"
 				}
 				unit = null
+			}
+		}
+		{
+			id = "6d026d95-904d-4d2c-8190-97b3e57e635d"
+			in_variables = {
+				button_name = {
+					type = "string"
+				}
+				device = {
+					type = "string"
+				}
+				device_number = {
+					type = "float"
+				}
+			}
+			out_events = {
+				pressed = [
+					{
+						event = 0
+						id = "ba425c14-fa4e-4270-a8a5-286dbd1102e4:0"
+						node = "ba425c14-fa4e-4270-a8a5-286dbd1102e4"
+					}
+				]
+			}
+			type = "keyboard_button"
+			variable_values = {
+				button_name = "r"
+				device = "keyboard"
+				device_number = 0
+				value = null
 			}
 		}
 	]
@@ -3712,36 +3964,6 @@ units = [
 			1
 		]
 		type = "content/models/characters/PPK/PPK_m"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "cbd63682-dd4e-4156-8f1e-cc3e4b81cb76"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "TrashCan"
-		pos = [
-			0
-			89.155899
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/blockers/TrashCan/TrashCan"
 	}
 	{
 		cameras = {
@@ -4146,7 +4368,7 @@ units = [
 		}
 		name = "TreeStump4"
 		pos = [
-			1.309722
+			1.514173
 			8.168634
 			0.037458
 		]
@@ -4176,7 +4398,7 @@ units = [
 		}
 		name = "TreeStump5"
 		pos = [
-			0
+			-1.807149
 			7.458817
 			0.037458
 		]
@@ -4626,7 +4848,7 @@ units = [
 		}
 		name = "TreeStump9"
 		pos = [
-			0
+			-2.008754
 			36.418369
 			0.037458
 		]
@@ -4656,7 +4878,7 @@ units = [
 		}
 		name = "TreeStump10"
 		pos = [
-			0.825157
+			2.42238
 			30.287674
 			-0.088694
 		]
@@ -5198,7 +5420,7 @@ units = [
 		pos = [
 			3.943039
 			49.750969
-			-3.306878
+			-3.886593
 		]
 		rot = [
 			0
@@ -5496,7 +5718,7 @@ units = [
 		}
 		name = "TreeStump17"
 		pos = [
-			0
+			-2.008754
 			41.804333
 			0.038507
 		]
@@ -5662,6 +5884,186 @@ units = [
 			0.60271
 		]
 		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "009ac6a3-ada4-45c1-89ef-c45eb8a82038"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TrashCan1"
+		pos = [
+			0.090054
+			7.276573
+			-0.011363
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1.86467
+			1.86467
+			1.86467
+		]
+		type = "content/models/blockers/TrashCan/TrashCan"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "1b07daba-1095-4373-b960-a7de7d5a4541"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TrashCan2"
+		pos = [
+			0.090054
+			17.595551
+			-0.011363
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1.86467
+			1.86467
+			1.86467
+		]
+		type = "content/models/blockers/TrashCan/TrashCan"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "b400186d-3d1a-46c0-9d96-14494c0864bc"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TrashCan3"
+		pos = [
+			0.090054
+			24.668564
+			-0.011363
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1.86467
+			1.86467
+			1.86467
+		]
+		type = "content/models/blockers/TrashCan/TrashCan"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e313f53b-09d4-4153-8483-39b351b56f99"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TrashCan4"
+		pos = [
+			0.090054
+			31.207552
+			-0.011363
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			2.415253
+			2.415253
+			2.415253
+		]
+		type = "content/models/blockers/TrashCan/TrashCan"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c64233e5-c575-4ed1-b0df-5e9ff852b38f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TrashCan"
+		pos = [
+			0.090054
+			45.157448
+			-0.011363
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1.86467
+			1.86467
+			1.86467
+		]
+		type = "content/models/blockers/TrashCan/TrashCan"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "7b0697da-4d41-4910-b8e7-0fe5ca2b3618"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TrashCan5"
+		pos = [
+			0.090054
+			85.528847
+			-0.011363
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			2.415253
+			2.415253
+			2.415253
+		]
+		type = "content/models/blockers/TrashCan/TrashCan"
 	}
 ]
 volumes = [

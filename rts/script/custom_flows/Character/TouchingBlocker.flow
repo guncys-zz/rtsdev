@@ -1,0 +1,211 @@
+
+nodes = [
+	{
+		id = "14ca3c19-a9b0-45d3-b66f-a8c491655d21"
+		in_variables = {
+			type = {
+				type = "string"
+			}
+			unit = {
+				node = "d71fac7f-12b7-4469-ad29-ec3b9ded2c15"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "bool"
+			}
+		}
+		type = "unit_is_of_type"
+		variable_values = {
+			type = "content/models/blockers/TrashCan/TrashCan"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "41d3b702-ac47-4811-85dd-9b7abd5ee90a"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "edb82e1e-143e-49be-86f9-9a6de0219d18:0"
+					node = "edb82e1e-143e-49be-86f9-9a6de0219d18"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "Start"
+		}
+	}
+	{
+		id = "edb82e1e-143e-49be-86f9-9a6de0219d18"
+		out_events = {
+			out1 = [
+				{
+					event = 0
+					id = "40e040b2-978f-4c09-8969-5f240abdf7a4:0"
+					node = "40e040b2-978f-4c09-8969-5f240abdf7a4"
+				}
+			]
+		}
+		type = "sequence"
+	}
+	{
+		id = "d71fac7f-12b7-4469-ad29-ec3b9ded2c15"
+		out_variables = {
+			unit = {
+				type = "unit"
+			}
+		}
+		type = "external_input_unit"
+		variable_values = {
+			name = "TouchingUnit"
+			unit = null
+		}
+	}
+	{
+		id = "f2b69046-4787-42b8-89c5-0fdeaefb2b33"
+		in_variables = {
+			event = {
+				type = "string"
+			}
+			unit = {
+				node = "22d4e9dc-e685-4fa4-9c74-90b40b39af44"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "cca2f928-12cd-4651-ab19-c85f1375f152:0"
+					node = "cca2f928-12cd-4651-ab19-c85f1375f152"
+				}
+			]
+		}
+		type = "animation_event"
+		variable_values = {
+			event = "AnimEvent_Damage"
+			unit = null
+		}
+	}
+	{
+		id = "22d4e9dc-e685-4fa4-9c74-90b40b39af44"
+		out_variables = {
+			unit = {
+				type = "unit"
+			}
+		}
+		type = "external_input_unit"
+		variable_values = {
+			name = "Me"
+			unit = null
+		}
+	}
+	{
+		id = "40e040b2-978f-4c09-8969-5f240abdf7a4"
+		in_variables = {
+			condition = {
+				node = "14ca3c19-a9b0-45d3-b66f-a8c491655d21"
+				type = "bool"
+				variable = "value"
+			}
+		}
+		out_events = {
+			true = [
+				{
+					event = 0
+					id = "f2b69046-4787-42b8-89c5-0fdeaefb2b33:0"
+					node = "f2b69046-4787-42b8-89c5-0fdeaefb2b33"
+				}
+				{
+					event = 0
+					id = "f4fcace0-2bb4-4590-b4f0-57172e511a74:0"
+					node = "f4fcace0-2bb4-4590-b4f0-57172e511a74"
+				}
+			]
+		}
+		type = "branch"
+		variable_values = {
+			condition = null
+		}
+	}
+	{
+		id = "a607e142-13ec-415d-b78f-d5c26846178c"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "d71fac7f-12b7-4469-ad29-ec3b9ded2c15"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		type = "get_unit_bool_data"
+		variable_values = {
+			key = "IsBlocker"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "f4fcace0-2bb4-4590-b4f0-57172e511a74"
+		type = "level_flow_event"
+		variable_values = {
+			event = "Touched"
+		}
+	}
+	{
+		id = "cca2f928-12cd-4651-ab19-c85f1375f152"
+		type = "level_flow_event"
+		variable_values = {
+			event = "Damage"
+		}
+	}
+	{
+		id = "677a66fa-9306-40da-94aa-3cc537e3a237"
+		type = "level_flow_event"
+		variable_values = {
+			event = "DamageExit"
+		}
+	}
+	{
+		event_names = [
+			"ExitFlowEvent_PPK_jump"
+			"flowevent_damage_exit"
+		]
+		id = "da8483f6-88e5-4436-b0e9-d4a5266dd3cd"
+		out_events = {
+			ExitFlowEvent_PPK_jump = [
+				{
+					event = 0
+					id = "677a66fa-9306-40da-94aa-3cc537e3a237:0"
+					node = "677a66fa-9306-40da-94aa-3cc537e3a237"
+				}
+			]
+			flowevent_damage_exit = [
+				{
+					event = 0
+					id = "677a66fa-9306-40da-94aa-3cc537e3a237:0"
+					node = "677a66fa-9306-40da-94aa-3cc537e3a237"
+				}
+			]
+		}
+		type = "on_animation_controller_flow_events"
+		variable_values = {
+			animation_controller = "content/models/characters/PPK/PPK_m"
+		}
+	}
+	{
+		id = "11111111-2222-3333-4444-555555555555"
+		type = "unit_spawned"
+		variable_values = {
+			unit = null
+		}
+	}
+]

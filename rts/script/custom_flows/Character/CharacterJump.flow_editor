@@ -451,6 +451,24 @@ Connections = [
 		Type = "Float"
 	}
 	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out7"
+		FromNode = "6ad92f7c-c150-41d3-892d-736129de7a32"
+		Id = "87afae46-0a43-4c5a-953e-f0b153bd980f"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "af047e76-2f11-411f-aa00-e59c89d8a529"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out6"
+		FromNode = "765f5f4a-5f85-4e19-b082-705d38f96e8e"
+		Id = "d8ce919d-ff11-4e63-922e-cfe32b5e7251"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "3471e0a9-45a0-49f3-8a9c-ae40b4b8d581"
+	}
+	{
 		Class = "Stingray.Flow.VariableConnection"
 		FromItem = "Numeric"
 		FromNode = "135fa3dc-3ad6-47a2-83fb-9bcccfe32a5e"
