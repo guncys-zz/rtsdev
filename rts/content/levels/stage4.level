@@ -68,6 +68,14 @@ editor_metadata = {
 				ToItem = "start_load_csv"
 				ToNode = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Pressed"
+				FromNode = "abb3ba29-2a11-4732-82c4-d091e15d0cb9"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "ebb73ab1-8ab6-4758-8aa6-88f66954c4c1"
+			}
 		]
 		Groups = [
 			{
@@ -93,6 +101,17 @@ editor_metadata = {
 					"a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
 				]
 				Title = "Load_CSV"
+			}
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "e5844db8-da60-47b2-8d24-1205735eb47f"
+				Nodes = [
+					"ebb73ab1-8ab6-4758-8aa6-88f66954c4c1"
+					"abb3ba29-2a11-4732-82c4-d091e15d0cb9"
+				]
+				Title = "CキーでEDに遷移"
 			}
 		]
 		Nodes = [
@@ -300,6 +319,67 @@ editor_metadata = {
 				]
 				Title = "Flow Subroutine"
 				Width = 280
+			}
+			{
+				Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
+				ButtonName = {
+					Value = "c"
+				}
+				Class = "Stingray.Foundation.Flow.KeyboardButton"
+				Device = {
+					Value = "keyboard"
+				}
+				DeviceNumber = {
+					Value = 0
+				}
+				Held = {
+				}
+				Id = "abb3ba29-2a11-4732-82c4-d091e15d0cb9"
+				NodeLocation = {
+					X = -253
+					Y = 313
+				}
+				Pressed = {
+				}
+				Released = {
+				}
+				Title = "Keyboard Button"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Name"
+						Type = "resource"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableResource"
+							Extension = "level"
+							Value = "content/levels/ending"
+						}
+					}
+				]
+				Brief = "Switches the currently active level in the world to the specified level."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/appkit/appkit"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "ebb73ab1-8ab6-4758-8aa6-88f66954c4c1"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Change Level"
+				NodeLocation = {
+					X = -40
+					Y = 320
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 220
 			}
 		]
 	}
@@ -768,6 +848,59 @@ flow = {
 				csv_file_name = "stage4.csv"
 				flow = "script/custom_flows/Load_CSV"
 			}
+		}
+		{
+			id = "abb3ba29-2a11-4732-82c4-d091e15d0cb9"
+			in_variables = {
+				button_name = {
+					type = "string"
+				}
+				device = {
+					type = "string"
+				}
+				device_number = {
+					type = "float"
+				}
+			}
+			out_events = {
+				pressed = [
+					{
+						event = 0
+						id = "ebb73ab1-8ab6-4758-8aa6-88f66954c4c1:0"
+						node = "ebb73ab1-8ab6-4758-8aa6-88f66954c4c1"
+					}
+				]
+			}
+			type = "keyboard_button"
+			variable_values = {
+				button_name = "c"
+				device = "keyboard"
+				device_number = 0
+				value = null
+			}
+		}
+		{
+			flow_nodes_resource = "core/appkit/appkit"
+			id = "ebb73ab1-8ab6-4758-8aa6-88f66954c4c1"
+			in_variables = {
+				Name = {
+					type = "string"
+				}
+			}
+			name = "Change Level"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Name = "content/levels/ending"
+			}
+			variables = [
+				{
+					name = "Name"
+					type = "string"
+				}
+			]
 		}
 	]
 }

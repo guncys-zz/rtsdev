@@ -98,6 +98,22 @@ editor_metadata = {
 				ToNode = "4ecdeb84-04d4-4622-a07f-963c9438a8e3"
 				Type = "Unit"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Pressed"
+				FromNode = "16e87ff3-f7d9-4f3f-af56-0f442e09ee12"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "93a42ee8-822c-42fe-b212-603f8a40ef40"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "521d7dc9-9688-40d9-be08-d47ea675c8c2"
+				Priority = 0
+				ToItem = "start_load_csv"
+				ToNode = "90165171-fc61-4beb-80e4-01572a1e7628"
+			}
 		]
 		Groups = [
 			{
@@ -114,6 +130,27 @@ editor_metadata = {
 					"29beef00-a9a2-4383-9095-daa70a7066ac"
 				]
 				Title = "Camera"
+			}
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "61050386-2c6d-47a3-9a67-db68b08ad13e"
+				Nodes = [
+					"16e87ff3-f7d9-4f3f-af56-0f442e09ee12"
+					"93a42ee8-822c-42fe-b212-603f8a40ef40"
+				]
+				Title = "Cキーでステージ4に遷移"
+			}
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "1b53068e-6b4c-4a35-810c-13cd991f1371"
+				Nodes = [
+					"90165171-fc61-4beb-80e4-01572a1e7628"
+				]
+				Title = "Load_CSV"
 			}
 		]
 		Nodes = [
@@ -283,6 +320,117 @@ editor_metadata = {
 				Type = "content/models/characters/PPK/PPK_m"
 				Unit = {
 				}
+				Width = 160
+			}
+			{
+				Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
+				ButtonName = {
+					Value = "c"
+				}
+				Class = "Stingray.Foundation.Flow.KeyboardButton"
+				Device = {
+					Value = "keyboard"
+				}
+				DeviceNumber = {
+					Value = 0
+				}
+				Held = {
+				}
+				Id = "16e87ff3-f7d9-4f3f-af56-0f442e09ee12"
+				NodeLocation = {
+					X = -260
+					Y = 280
+				}
+				Pressed = {
+				}
+				Released = {
+				}
+				Title = "Keyboard Button"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Name"
+						Type = "resource"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableResource"
+							Extension = "level"
+							Value = "content/levels/stage4"
+						}
+					}
+				]
+				Brief = "Switches the currently active level in the world to the specified level."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/appkit/appkit"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "93a42ee8-822c-42fe-b212-603f8a40ef40"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Change Level"
+				NodeLocation = {
+					X = -60
+					Y = 280
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 240
+			}
+			{
+				Brief = "Encapsulates a graph of logic stored in a separate flow resource file in the project."
+				Class = "Stingray.Foundation.Flow.FlowSubroutine"
+				Disable = {
+				}
+				Enable = {
+				}
+				Flow = {
+					Value = "script/custom_flows/Load_CSV"
+				}
+				Id = "90165171-fc61-4beb-80e4-01572a1e7628"
+				InEvents = [
+					"start_load_csv"
+				]
+				InVariableNames = [
+					"csv_file_name"
+				]
+				InVariables = [
+					{
+						Class = "Stingray.Foundation.Flow.InVariableString"
+						Value = "stage3.csv"
+					}
+				]
+				NodeLocation = {
+					X = -260
+					Y = -440
+				}
+				OutEvents = [
+					"done_load_csv"
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				Title = "Flow Subroutine"
+				Width = 200
+			}
+			{
+				Brief = "Passes an event when the level has been loaded into the world."
+				Class = "Stingray.Foundation.Flow.LevelLoaded"
+				Id = "521d7dc9-9688-40d9-be08-d47ea675c8c2"
+				NodeLocation = {
+					X = -500
+					Y = -420
+				}
+				Out = {
+				}
+				Title = "Level Loaded"
 				Width = 160
 			}
 		]
@@ -15219,6 +15367,91 @@ flow = {
 				}
 				unit = null
 			}
+		}
+		{
+			id = "16e87ff3-f7d9-4f3f-af56-0f442e09ee12"
+			in_variables = {
+				button_name = {
+					type = "string"
+				}
+				device = {
+					type = "string"
+				}
+				device_number = {
+					type = "float"
+				}
+			}
+			out_events = {
+				pressed = [
+					{
+						event = 0
+						id = "93a42ee8-822c-42fe-b212-603f8a40ef40:0"
+						node = "93a42ee8-822c-42fe-b212-603f8a40ef40"
+					}
+				]
+			}
+			type = "keyboard_button"
+			variable_values = {
+				button_name = "c"
+				device = "keyboard"
+				device_number = 0
+				value = null
+			}
+		}
+		{
+			flow_nodes_resource = "core/appkit/appkit"
+			id = "93a42ee8-822c-42fe-b212-603f8a40ef40"
+			in_variables = {
+				Name = {
+					type = "string"
+				}
+			}
+			name = "Change Level"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Name = "content/levels/stage4"
+			}
+			variables = [
+				{
+					name = "Name"
+					type = "string"
+				}
+			]
+		}
+		{
+			id = "90165171-fc61-4beb-80e4-01572a1e7628"
+			in_event_index = [
+				"start_load_csv"
+			]
+			in_variables = {
+				csv_file_name = {
+					type = "string"
+				}
+			}
+			out_event_index = [
+				"done_load_csv"
+			]
+			type = "flow_subroutine"
+			variable_values = {
+				csv_file_name = "stage3.csv"
+				flow = "script/custom_flows/Load_CSV"
+			}
+		}
+		{
+			id = "521d7dc9-9688-40d9-be08-d47ea675c8c2"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "90165171-fc61-4beb-80e4-01572a1e7628:0"
+						node = "90165171-fc61-4beb-80e4-01572a1e7628"
+					}
+				]
+			}
+			type = "level_loaded"
 		}
 	]
 }

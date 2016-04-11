@@ -13,10 +13,90 @@ editor_metadata = {
 	]
 	Flow = {
 		Connections = [
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Pressed"
+				FromNode = "6c919e3b-ebb9-4109-bcc1-534db83be983"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "1958cc76-af59-4227-b936-0475aea034c4"
+			}
 		]
 		Groups = [
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "816cbae9-88b8-4e84-ad42-0971879b5e98"
+				Nodes = [
+					"6c919e3b-ebb9-4109-bcc1-534db83be983"
+					"1958cc76-af59-4227-b936-0475aea034c4"
+				]
+				Title = "Cキーでステージ1に遷移"
+			}
 		]
 		Nodes = [
+			{
+				Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
+				ButtonName = {
+					Value = "c"
+				}
+				Class = "Stingray.Foundation.Flow.KeyboardButton"
+				Device = {
+					Value = "keyboard"
+				}
+				DeviceNumber = {
+					Value = 0
+				}
+				Held = {
+				}
+				Id = "6c919e3b-ebb9-4109-bcc1-534db83be983"
+				NodeLocation = {
+					X = -159
+					Y = -71
+				}
+				Pressed = {
+				}
+				Released = {
+				}
+				Title = "Keyboard Button"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Name"
+						Type = "resource"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableResource"
+							Extension = "level"
+							Value = "content/levels/stage1"
+						}
+					}
+				]
+				Brief = "Switches the currently active level in the world to the specified level."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/appkit/appkit"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "1958cc76-af59-4227-b936-0475aea034c4"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Change Level"
+				NodeLocation = {
+					X = 60
+					Y = -40
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 220
+			}
 		]
 	}
 	Groups = [
@@ -215,6 +295,59 @@ entities = [
 ]
 flow = {
 	nodes = [
+		{
+			id = "6c919e3b-ebb9-4109-bcc1-534db83be983"
+			in_variables = {
+				button_name = {
+					type = "string"
+				}
+				device = {
+					type = "string"
+				}
+				device_number = {
+					type = "float"
+				}
+			}
+			out_events = {
+				pressed = [
+					{
+						event = 0
+						id = "1958cc76-af59-4227-b936-0475aea034c4:0"
+						node = "1958cc76-af59-4227-b936-0475aea034c4"
+					}
+				]
+			}
+			type = "keyboard_button"
+			variable_values = {
+				button_name = "c"
+				device = "keyboard"
+				device_number = 0
+				value = null
+			}
+		}
+		{
+			flow_nodes_resource = "core/appkit/appkit"
+			id = "1958cc76-af59-4227-b936-0475aea034c4"
+			in_variables = {
+				Name = {
+					type = "string"
+				}
+			}
+			name = "Change Level"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Name = "content/levels/stage1"
+			}
+			variables = [
+				{
+					name = "Name"
+					type = "string"
+				}
+			]
+		}
 	]
 }
 level_references = [
