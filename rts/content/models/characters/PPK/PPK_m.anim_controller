@@ -68,6 +68,8 @@ compiler_data = {
 	events = {
 		"Anim End" = {
 		}
+		AnimEvent_Cinematics_Start = {
+		}
 		AnimEvent_Damage = {
 		}
 		AnimEvent_Jump = {
@@ -135,6 +137,13 @@ compiler_data = {
 					speed = "1"
 					state_type = "regular"
 					transitions = [
+						{
+							blend_time = 0.2
+							event = "AnimEvent_Cinematics_Start"
+							mode = "direct"
+							on_beat = ""
+							to = "Cinematics_State/Clip_c01"
+						}
 						{
 							blend_time = 0.3
 							event = "AnimEvent_Run"
@@ -441,6 +450,181 @@ compiler_data = {
 						"1.0"
 					]
 				}
+				{
+					animations = [
+						"content/models/characters/PPK/animations/OP/PPK_op_c01"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Cinematics_State/Clip_c01"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Cinematics_State/Clip_c02"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/characters/PPK/animations/OP/PPK_op_c02"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Cinematics_State/Clip_c02"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Cinematics_State/Clip_c04"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/characters/PPK/animations/OP/PPK_op_c04"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Cinematics_State/Clip_c04"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Cinematics_State/Clip_c05"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/characters/PPK/animations/OP/PPK_op_c05"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Cinematics_State/Clip_c05"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Cinematics_State/Clip_c06"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/characters/PPK/animations/OP/PPK_op_c06"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Cinematics_State/Clip_c06"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Cinematics_State/Clip_c07"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/characters/PPK/animations/OP/PPK_op_c07"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Cinematics_State/Clip_c07"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Cinematics_State/Clip_c08"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/characters/PPK/animations/OP/PPK_op_c08"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Cinematics_State/Clip_c08"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Cinematics_State/Clip_c01"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
 			]
 		}
 		{
@@ -614,6 +798,10 @@ events = {
 		{
 			_id = "35deb496-3ba5-46d6-8a16-c23aa9a6f55a"
 			_name = "AnimExitEvent_Damage"
+		}
+		{
+			_id = "9cfe4988-11ee-42ea-923d-b86d96895dd9"
+			_name = "AnimEvent_Cinematics_Start"
 		}
 	]
 	sub_folders = [
@@ -1743,6 +1931,532 @@ layers = [
 				x = 40
 				y = 160
 			}
+			{
+				_id = "dad9652a-6859-40ba-bf10-28833c57076d"
+				_name = "Cinematics_State"
+				blend_states = [
+				]
+				empty_states = [
+				]
+				group_states = [
+				]
+				group_transitions = [
+				]
+				notes = [
+				]
+				ragdoll_states = [
+				]
+				shortcut_states = [
+					{
+						_id = "313f81c5-df39-4282-8eb6-1de3e44daa57"
+						_name = "(Cinematics_State/Clip_c01)"
+						group_transitions = [
+						]
+						state_ref = {
+							_id = "0faf915b-6690-4dda-aa7e-1883972de429"
+							ref_filename = null
+							ref_id = "7f0ba0bc-879e-422b-9c5a-da9188d33f59"
+						}
+						transitions = [
+						]
+						width = 150
+						x = 540
+						y = -120
+					}
+				]
+				states = [
+					{
+						_id = "7f0ba0bc-879e-422b-9c5a-da9188d33f59"
+						_name = "Clip_c01"
+						anim_blend_set_ref = {
+							_id = "1439405d-5634-4aac-a48a-7ed9d511125e"
+							ref_filename = null
+							ref_id = null
+						}
+						animations = [
+							{
+								_id = "58e0968d-b265-4a95-aa4b-8e9d4ddb5e94"
+								ref_filename = "content/models/characters/PPK/animations/OP/PPK_op_c01.anim_clip"
+								ref_id = null
+							}
+						]
+						constraints = [
+						]
+						exit_event_ref = {
+							_id = "2fbb0236-4d32-4c13-aeeb-225af8b6d0e9"
+							ref_filename = null
+							ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+						}
+						group_transitions = [
+						]
+						loop_animation = false
+						markers = [
+						]
+						muted_layers = [
+						]
+						offset_state = false
+						randomization_type = "every_loop"
+						root_driving = "ignore"
+						speed = "1"
+						transitions = [
+							{
+								_id = "6259a510-8410-42f8-8ae0-206c1c464591"
+								actual_target_ref = {
+									_id = "7eb2af43-970a-4822-b01b-99c02c1ed2c2"
+									ref_filename = null
+									ref_id = null
+								}
+								blend_time = 0
+								event_ref = {
+									_id = "1a05f9a7-7ca0-4f72-94b6-eba00e14dd72"
+									ref_filename = null
+									ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+								}
+								has_nested_from = false
+								mode = "direct"
+								nested_from_ref = {
+									_id = "6c4f9517-b44a-4b44-b72b-5675cd9a7fc0"
+									ref_filename = null
+									ref_id = null
+								}
+								on_beat = ""
+								to_state_ref = {
+									_id = "14008538-3b80-49e6-b001-a87b8012e416"
+									ref_filename = null
+									ref_id = "6f815186-0fd0-4981-b8f5-299269f17da8"
+								}
+							}
+						]
+						weights = [
+							"1.0"
+						]
+						width = 150
+						x = -100
+						y = -180
+					}
+					{
+						_id = "6f815186-0fd0-4981-b8f5-299269f17da8"
+						_name = "Clip_c02"
+						anim_blend_set_ref = {
+							_id = "17db7a23-b948-49b1-a140-4c0d2d07af06"
+							ref_filename = null
+							ref_id = null
+						}
+						animations = [
+							{
+								_id = "70627d1a-0143-4252-8dd4-8eae1eccc2d0"
+								ref_filename = "content/models/characters/PPK/animations/OP/PPK_op_c02.anim_clip"
+								ref_id = null
+							}
+						]
+						constraints = [
+						]
+						exit_event_ref = {
+							_id = "ed7ab42c-9daa-4b0f-b01a-98803e65a5d6"
+							ref_filename = null
+							ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+						}
+						group_transitions = [
+						]
+						loop_animation = false
+						markers = [
+						]
+						muted_layers = [
+						]
+						offset_state = false
+						randomization_type = "every_loop"
+						root_driving = "ignore"
+						speed = "1"
+						transitions = [
+							{
+								_id = "a40110d6-f1b4-471f-9a6d-b1e41fad6df5"
+								actual_target_ref = {
+									_id = "c0849090-e54e-4cb6-a4d3-bab8afd72189"
+									ref_filename = null
+									ref_id = null
+								}
+								blend_time = 0
+								event_ref = {
+									_id = "bc7e4b07-a9e3-4f9c-bafb-d8d474560c3b"
+									ref_filename = null
+									ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+								}
+								has_nested_from = false
+								mode = "direct"
+								nested_from_ref = {
+									_id = "b02e5277-9820-4fb7-803a-8ce78277ee24"
+									ref_filename = null
+									ref_id = null
+								}
+								on_beat = ""
+								to_state_ref = {
+									_id = "7d2dc000-d7b2-444f-a494-43b72064c4a1"
+									ref_filename = null
+									ref_id = "a0d8b257-3132-4956-9561-ead08f84e26e"
+								}
+							}
+						]
+						weights = [
+							"1.0"
+						]
+						width = 150
+						x = -160
+						y = 40
+					}
+					{
+						_id = "a0d8b257-3132-4956-9561-ead08f84e26e"
+						_name = "Clip_c04"
+						anim_blend_set_ref = {
+							_id = "f58f7ddd-1b3f-401d-8bd1-8c6b3b070136"
+							ref_filename = null
+							ref_id = null
+						}
+						animations = [
+							{
+								_id = "4f905d08-f889-44c8-b68c-9be2442f0326"
+								ref_filename = "content/models/characters/PPK/animations/OP/PPK_op_c04.anim_clip"
+								ref_id = null
+							}
+						]
+						constraints = [
+						]
+						exit_event_ref = {
+							_id = "d11538cd-432b-4f58-98c5-e5418501f9c8"
+							ref_filename = null
+							ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+						}
+						group_transitions = [
+						]
+						loop_animation = false
+						markers = [
+						]
+						muted_layers = [
+						]
+						offset_state = false
+						randomization_type = "every_loop"
+						root_driving = "ignore"
+						speed = "1"
+						transitions = [
+							{
+								_id = "87bafdd6-7a34-44d9-8f64-22d8077bbcae"
+								actual_target_ref = {
+									_id = "e8c454b0-f191-4d1c-a443-49fdcd5ab3db"
+									ref_filename = null
+									ref_id = null
+								}
+								blend_time = 0
+								event_ref = {
+									_id = "f917c459-58f6-47b2-86ad-75933ad9b2e0"
+									ref_filename = null
+									ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+								}
+								has_nested_from = false
+								mode = "direct"
+								nested_from_ref = {
+									_id = "e6cf2719-2fcf-45c1-8aec-3123e4f2bcf2"
+									ref_filename = null
+									ref_id = null
+								}
+								on_beat = ""
+								to_state_ref = {
+									_id = "5e427a21-46d1-4311-aaf1-e1370b03e026"
+									ref_filename = null
+									ref_id = "3e039106-a94c-4605-a516-31f79b4117db"
+								}
+							}
+						]
+						weights = [
+							"1.0"
+						]
+						width = 150
+						x = 40
+						y = 180
+					}
+					{
+						_id = "3e039106-a94c-4605-a516-31f79b4117db"
+						_name = "Clip_c05"
+						anim_blend_set_ref = {
+							_id = "842cf4d9-f484-48a4-b6bf-53feb962bda3"
+							ref_filename = null
+							ref_id = null
+						}
+						animations = [
+							{
+								_id = "25245615-a13a-4d5d-ba73-d90ef9dd6a25"
+								ref_filename = "content/models/characters/PPK/animations/OP/PPK_op_c05.anim_clip"
+								ref_id = null
+							}
+						]
+						constraints = [
+						]
+						exit_event_ref = {
+							_id = "3032998e-9e0d-4366-864f-2c5063e3072f"
+							ref_filename = null
+							ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+						}
+						group_transitions = [
+						]
+						loop_animation = false
+						markers = [
+						]
+						muted_layers = [
+						]
+						offset_state = false
+						randomization_type = "every_loop"
+						root_driving = "ignore"
+						speed = "1"
+						transitions = [
+							{
+								_id = "17328414-b827-4d2b-8e84-d600b5f656f3"
+								actual_target_ref = {
+									_id = "ea4dc223-3f80-4b74-b59f-19c3ae303b84"
+									ref_filename = null
+									ref_id = null
+								}
+								blend_time = 0
+								event_ref = {
+									_id = "564406c0-cfdb-4ea8-bc96-272bbcf18f94"
+									ref_filename = null
+									ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+								}
+								has_nested_from = false
+								mode = "direct"
+								nested_from_ref = {
+									_id = "83e2198b-ef00-46fe-a917-ddf99449ddee"
+									ref_filename = null
+									ref_id = null
+								}
+								on_beat = ""
+								to_state_ref = {
+									_id = "ac69049f-9e6e-4802-a47f-9e8f7c727121"
+									ref_filename = null
+									ref_id = "56211c68-19a2-4ed1-9126-1ebcd36f7bd1"
+								}
+							}
+						]
+						weights = [
+							"1.0"
+						]
+						width = 150
+						x = 140
+						y = -60
+					}
+					{
+						_id = "56211c68-19a2-4ed1-9126-1ebcd36f7bd1"
+						_name = "Clip_c06"
+						anim_blend_set_ref = {
+							_id = "b7a0178f-c735-48de-8afc-99a34fcad56f"
+							ref_filename = null
+							ref_id = null
+						}
+						animations = [
+							{
+								_id = "97c10c08-0b20-486f-a228-a1ad242f536c"
+								ref_filename = "content/models/characters/PPK/animations/OP/PPK_op_c06.anim_clip"
+								ref_id = null
+							}
+						]
+						constraints = [
+						]
+						exit_event_ref = {
+							_id = "03b63f98-da45-4d8a-953d-16495732f720"
+							ref_filename = null
+							ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+						}
+						group_transitions = [
+						]
+						loop_animation = false
+						markers = [
+						]
+						muted_layers = [
+						]
+						offset_state = false
+						randomization_type = "every_loop"
+						root_driving = "ignore"
+						speed = "1"
+						transitions = [
+							{
+								_id = "36a58e6b-af01-4583-91b7-9707e14b3b00"
+								actual_target_ref = {
+									_id = "9eaea7cf-814b-4edf-8acb-d907388e5c86"
+									ref_filename = null
+									ref_id = null
+								}
+								blend_time = 0
+								event_ref = {
+									_id = "0a2f2a3d-4588-4d00-a1e6-0065da111375"
+									ref_filename = null
+									ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+								}
+								has_nested_from = false
+								mode = "direct"
+								nested_from_ref = {
+									_id = "a91178d4-d664-47b0-b231-0ef1c2e1e052"
+									ref_filename = null
+									ref_id = null
+								}
+								on_beat = ""
+								to_state_ref = {
+									_id = "78626802-1244-4971-b6a5-c3d34f56f008"
+									ref_filename = null
+									ref_id = "9dd5230c-bb70-4a84-bf07-1e4b25af2f4b"
+								}
+							}
+						]
+						weights = [
+							"1.0"
+						]
+						width = 150
+						x = 260
+						y = 120
+					}
+					{
+						_id = "9dd5230c-bb70-4a84-bf07-1e4b25af2f4b"
+						_name = "Clip_c07"
+						anim_blend_set_ref = {
+							_id = "9af68ad4-764d-45e1-b46a-18adec2275b9"
+							ref_filename = null
+							ref_id = null
+						}
+						animations = [
+							{
+								_id = "a239eaf1-3f81-4168-8164-447c8912012c"
+								ref_filename = "content/models/characters/PPK/animations/OP/PPK_op_c07.anim_clip"
+								ref_id = null
+							}
+						]
+						constraints = [
+						]
+						exit_event_ref = {
+							_id = "a3edd733-b0ee-44e3-9a54-783889eb6e11"
+							ref_filename = null
+							ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+						}
+						group_transitions = [
+						]
+						loop_animation = false
+						markers = [
+						]
+						muted_layers = [
+						]
+						offset_state = false
+						randomization_type = "every_loop"
+						root_driving = "ignore"
+						speed = "1"
+						transitions = [
+							{
+								_id = "7addd98b-d218-44ff-b41f-419d5ca39af3"
+								actual_target_ref = {
+									_id = "c5ddba4e-76bb-4733-9048-0a84c202b334"
+									ref_filename = null
+									ref_id = null
+								}
+								blend_time = 0
+								event_ref = {
+									_id = "c8f500ae-4299-4a65-8eda-3c598b18e879"
+									ref_filename = null
+									ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+								}
+								has_nested_from = false
+								mode = "direct"
+								nested_from_ref = {
+									_id = "d2bf67ad-21b3-4ed7-84bb-881e2da35789"
+									ref_filename = null
+									ref_id = null
+								}
+								on_beat = ""
+								to_state_ref = {
+									_id = "e92bee57-96cd-4f16-9bcb-1951e7794871"
+									ref_filename = null
+									ref_id = "b9a75b39-63d2-41e4-8e46-c6d1df50530f"
+								}
+							}
+						]
+						weights = [
+							"1.0"
+						]
+						width = 150
+						x = 380
+						y = -20
+					}
+					{
+						_id = "b9a75b39-63d2-41e4-8e46-c6d1df50530f"
+						_name = "Clip_c08"
+						anim_blend_set_ref = {
+							_id = "3d7328bc-3c5e-4801-aa13-94d642de1912"
+							ref_filename = null
+							ref_id = null
+						}
+						animations = [
+							{
+								_id = "8092cd21-be1e-4c23-b0dc-3a897c91df2c"
+								ref_filename = "content/models/characters/PPK/animations/OP/PPK_op_c08.anim_clip"
+								ref_id = null
+							}
+						]
+						constraints = [
+						]
+						exit_event_ref = {
+							_id = "3aceb17e-b285-423d-a148-200348c4d03b"
+							ref_filename = null
+							ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+						}
+						group_transitions = [
+						]
+						loop_animation = false
+						markers = [
+						]
+						muted_layers = [
+						]
+						offset_state = false
+						randomization_type = "every_loop"
+						root_driving = "ignore"
+						speed = "1"
+						transitions = [
+							{
+								_id = "3b7d866b-d855-415d-81d7-9e2cd756aa98"
+								actual_target_ref = {
+									_id = "0c02fe27-a001-4b8f-846a-4700654a39c4"
+									ref_filename = null
+									ref_id = null
+								}
+								blend_time = 0
+								event_ref = {
+									_id = "4d4f1072-1bcd-4c71-bd7c-ccac41e0fea7"
+									ref_filename = null
+									ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+								}
+								has_nested_from = false
+								mode = "direct"
+								nested_from_ref = {
+									_id = "cbea8781-ff8d-4b73-80e4-0073ff7b042a"
+									ref_filename = null
+									ref_id = null
+								}
+								on_beat = ""
+								to_state_ref = {
+									_id = "deecd0d4-cd2b-48bb-8000-0995477119b4"
+									ref_filename = null
+									ref_id = "313f81c5-df39-4282-8eb6-1de3e44daa57"
+								}
+							}
+						]
+						weights = [
+							"1.0"
+						]
+						width = 150
+						x = 580
+						y = 140
+					}
+				]
+				time_states = [
+				]
+				transitions = [
+				]
+				width = 150
+				x = 80
+				y = -140
+			}
 		]
 		notes = [
 		]
@@ -1810,6 +2524,33 @@ layers = [
 							_id = "2def6ee3-3d86-43bb-a7f7-08b782b2dada"
 							ref_filename = null
 							ref_id = "a73c2225-5d12-4d1b-8358-715280db2842"
+						}
+					}
+					{
+						_id = "4e204701-b179-43d7-a913-78a1b283cc8f"
+						actual_target_ref = {
+							_id = "196b9c0b-c191-41de-82a9-1127159cdc77"
+							ref_filename = null
+							ref_id = "7f0ba0bc-879e-422b-9c5a-da9188d33f59"
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "889be097-098d-4e7c-a235-6b0e66f69ce9"
+							ref_filename = null
+							ref_id = "9cfe4988-11ee-42ea-923d-b86d96895dd9"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "eaf17858-116c-426f-ad12-edf007f6e6b0"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "72b854f4-0145-4f67-b994-48ef559c7d68"
+							ref_filename = null
+							ref_id = "dad9652a-6859-40ba-bf10-28833c57076d"
 						}
 					}
 				]

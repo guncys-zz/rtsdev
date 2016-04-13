@@ -1,0 +1,17 @@
+
+materials = {
+	blinn1 = "content/models/shots/OP/blinn1"
+	blinn2 = "content/models/shots/OP/blinn2"
+	lambert1 = "content/models/shots/OP/lambert1"
+}
+renderables = {
+	Combined = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

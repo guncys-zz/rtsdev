@@ -1,0 +1,34 @@
+
+_data_root_version = 1
+_id = "af43a321-76ad-4553-a600-24ff6dfd3d99"
+_name = "content/models/shots/ED/camera/cam"
+anim_blend_sets = [
+]
+anim_bones = [
+	{
+		_id = "82dcd39b-4ac9-476c-a56e-b89019549b9d"
+		_name = "StingrayEntityRoot"
+		lod_level = 5
+	}
+	{
+		_id = "b0696a85-0028-467b-ba79-785ad231a5c9"
+		_name = "FbxAxisSystem_ConvertNode"
+		lod_level = 5
+	}
+	{
+		_id = "878a86dd-3b06-4301-b904-1aec6526fd60"
+		_name = "cam"
+		lod_level = 5
+	}
+]
+dcc_asset_ref = {
+	_id = "9c9bb481-2b7d-45ab-9815-c693f10a581a"
+	ref_filename = "content/models/shots/ED/camera/cam.dcc_asset"
+	ref_id = null
+}
+default_bonelod_and_maxlod_count = 5
+locomotion_root_bone_ref = {
+	_id = "897d40d9-cb8c-4023-b525-09a41b61c5d1"
+	ref_filename = null
+	ref_id = null
+}

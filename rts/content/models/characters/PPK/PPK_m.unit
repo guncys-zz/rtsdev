@@ -11,7 +11,7 @@ data = {
 editor_metadata = {
 	camera_settings = {
 		far_range = 1000
-		interest_point_distance = 4.024196
+		interest_point_distance = 1.813598
 		orthographic_plane = [
 			0
 			0
@@ -20,16 +20,16 @@ editor_metadata = {
 		]
 		orthographic_zoom = 10
 		position = [
-			2.16186
-			3.149775
-			1.347881
+			-0.957582
+			1.465508
+			1.066223
 		]
 		projection_type = "perspective"
 		rotation = [
-			-0.029109
-			-0.094705
-			0.951164
-			0.292353
+			0.02675
+			-0.103125
+			0.962456
+			-0.249656
 		]
 		rotation_speed = 0.003
 		translation_speed = 0.05
@@ -51,7 +51,7 @@ materials = {
 renderables = {
 	C_body_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -60,7 +60,7 @@ renderables = {
 	}
 	C_hairBand_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -69,7 +69,7 @@ renderables = {
 	}
 	C_hairNeckline_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -78,7 +78,7 @@ renderables = {
 	}
 	C_hairPonytail_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -87,7 +87,7 @@ renderables = {
 	}
 	C_headphoneArm_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -96,7 +96,7 @@ renderables = {
 	}
 	C_jacket_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -105,7 +105,7 @@ renderables = {
 	}
 	C_knitCap_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -114,7 +114,7 @@ renderables = {
 	}
 	C_pants_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -123,7 +123,7 @@ renderables = {
 	}
 	C_teeth_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -132,7 +132,7 @@ renderables = {
 	}
 	C_tongue_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -141,7 +141,7 @@ renderables = {
 	}
 	L_earPad001_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -150,7 +150,7 @@ renderables = {
 	}
 	L_earPad002_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -159,7 +159,7 @@ renderables = {
 	}
 	L_earPad003_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -168,7 +168,7 @@ renderables = {
 	}
 	L_earPad004_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -177,7 +177,7 @@ renderables = {
 	}
 	L_earPad005_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -186,7 +186,7 @@ renderables = {
 	}
 	L_eyeball_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -195,7 +195,7 @@ renderables = {
 	}
 	L_eyebrow_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -204,7 +204,7 @@ renderables = {
 	}
 	L_eyelash_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -213,7 +213,7 @@ renderables = {
 	}
 	L_hair_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -222,7 +222,7 @@ renderables = {
 	}
 	L_hand_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -231,7 +231,7 @@ renderables = {
 	}
 	L_leg_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -240,7 +240,7 @@ renderables = {
 	}
 	L_shoe001_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -249,7 +249,7 @@ renderables = {
 	}
 	L_shoe002_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -258,7 +258,7 @@ renderables = {
 	}
 	R_earPad001_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -267,7 +267,7 @@ renderables = {
 	}
 	R_earPad002_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -276,7 +276,7 @@ renderables = {
 	}
 	R_earPad003_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -285,7 +285,7 @@ renderables = {
 	}
 	R_earPad004_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -294,7 +294,7 @@ renderables = {
 	}
 	R_earPad005_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -303,7 +303,7 @@ renderables = {
 	}
 	R_eyeball_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -312,7 +312,7 @@ renderables = {
 	}
 	R_eyebrow_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -321,7 +321,7 @@ renderables = {
 	}
 	R_eyelash_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -330,7 +330,7 @@ renderables = {
 	}
 	R_hair_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -339,7 +339,7 @@ renderables = {
 	}
 	R_hand_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -348,7 +348,7 @@ renderables = {
 	}
 	R_leg_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -357,7 +357,7 @@ renderables = {
 	}
 	R_shoe001_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
@@ -366,7 +366,7 @@ renderables = {
 	}
 	R_shoe002_GEO = {
 		always_keep = false
-		culling = "bounding_volume"
+		culling = "disabled"
 		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true

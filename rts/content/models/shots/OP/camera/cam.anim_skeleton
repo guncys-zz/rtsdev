@@ -1,0 +1,34 @@
+
+_data_root_version = 1
+_id = "735ff261-dbdc-4a57-b6be-77b10c354779"
+_name = "content/models/shots/OP/camera/cam"
+anim_blend_sets = [
+]
+anim_bones = [
+	{
+		_id = "54b83c54-661d-4b62-ab9c-9bb68d7ec6c0"
+		_name = "StingrayEntityRoot"
+		lod_level = 5
+	}
+	{
+		_id = "b6f48318-a37b-4211-8f07-13497653d6d5"
+		_name = "FbxAxisSystem_ConvertNode"
+		lod_level = 5
+	}
+	{
+		_id = "7d2a2fe9-61f0-4731-a248-e5ee0ca988d9"
+		_name = "cam"
+		lod_level = 5
+	}
+]
+dcc_asset_ref = {
+	_id = "5a864a61-d3df-455a-82e8-aca6f1dd207d"
+	ref_filename = "content/models/shots/OP/camera/cam.dcc_asset"
+	ref_id = null
+}
+default_bonelod_and_maxlod_count = 5
+locomotion_root_bone_ref = {
+	_id = "9cbc55d0-61cd-4796-ada1-57d369f99377"
+	ref_filename = null
+	ref_id = null
+}
