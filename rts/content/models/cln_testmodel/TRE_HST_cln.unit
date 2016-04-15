@@ -1,0 +1,72 @@
+
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 4.955297
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			4.113515
+			2.5107
+			1.156943
+		]
+		projection_type = "perspective"
+		rotation = [
+			-0.056496
+			-0.100718
+			0.866324
+			0.48595
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
+materials = {
+	lambert1 = "content/models/cln_testmodel/materials/lambert1"
+	lambert6 = "content/models/cln_testmodel/materials/lambert6"
+	lambert7 = "content/models/cln_testmodel/materials/lambert7"
+	lambert8 = "content/models/cln_testmodel/materials/lambert8"
+}
+renderables = {
+	TRE_HST = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	TRE_HST_cln0 = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = false
+	}
+	TRE_HST_cln1 = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = false
+	}
+	TRE_HST_cln2 = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = false
+	}
+}

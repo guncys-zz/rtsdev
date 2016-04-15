@@ -1,0 +1,48 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "TRE_HST_cln1"
+		node = "StingrayEntityRoot"
+		shapes = [
+			{
+				material = "default"
+				shape = "TRE_HST_cln1"
+				template = "default"
+				type = "box"
+			}
+		]
+		template = "static"
+	}
+	{
+		enabled = true
+		mass = 0
+		name = "TRE_HST_cln0"
+		node = "TRE_HST_cln0"
+		shapes = [
+			{
+				material = "default"
+				shape = "TRE_HST_cln0"
+				template = "default"
+				type = "box"
+			}
+		]
+		template = "static"
+	}
+	{
+		enabled = true
+		mass = 0
+		name = "TRE_HST_cln2"
+		node = "TRE_HST_cln2"
+		shapes = [
+			{
+				material = "default"
+				shape = "TRE_HST_cln2"
+				template = "default"
+				type = "box"
+			}
+		]
+		template = "static"
+	}
+]
