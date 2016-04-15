@@ -7,6 +7,13 @@ movers = [
 		radius = 0.3
 		slope_limit = 0.785398163397448
 	}
+	{
+		collision_filter = "default"
+		height = 0.5
+		name = "moverPassThrough"
+		radius = 0.25
+		slope_limit = 0.785398163397448
+	}
 ]
 physx_scene = {
 	actors = {

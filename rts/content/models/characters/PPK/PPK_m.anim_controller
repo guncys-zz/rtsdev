@@ -166,6 +166,13 @@ compiler_data = {
 					root_driving = "ignore"
 					speed = "1.2"
 					state_type = "regular"
+					timeline = [
+						{
+							name = "run_Enter"
+							time = 0
+							type = "enter_trigger"
+						}
+					]
 					transitions = [
 						{
 							blend_time = 0.2
@@ -373,11 +380,18 @@ compiler_data = {
 					root_driving = "ignore"
 					speed = "1"
 					state_type = "regular"
+					timeline = [
+						{
+							name = "roll_exit"
+							time = 0
+							type = "exit_trigger"
+						}
+					]
 					transitions = [
 						{
 							blend_time = 0.2
 							event = "AnimEvent_PassThrough_Exit"
-							mode = "direct"
+							mode = "wait"
 							on_beat = ""
 							to = "Running_State/Clip_Run"
 						}
@@ -398,6 +412,18 @@ compiler_data = {
 					root_driving = "ignore"
 					speed = "1"
 					state_type = "regular"
+					timeline = [
+						{
+							name = "rolln_exit"
+							time = 0
+							type = "exit_trigger"
+						}
+						{
+							name = "rolln_enter"
+							time = 0
+							type = "enter_trigger"
+						}
+					]
 					transitions = [
 						{
 							blend_time = 0.2
@@ -736,6 +762,9 @@ compiler_data = {
 			]
 		}
 	}
+	variables = {
+		Variable = 0
+	}
 }
 constraint_root_folder_name = "Constraints"
 constraint_target_root_folder_name = "Constraint Targets"
@@ -1058,6 +1087,13 @@ layers = [
 						]
 						loop_animation = true
 						markers = [
+							{
+								_id = "4f6b523f-8d3c-4493-bcca-99fd06b13931"
+								_name = "run_Enter"
+								_time = 0
+								time = 0
+								type = "enter_trigger"
+							}
 						]
 						muted_layers = [
 						]
@@ -1707,6 +1743,13 @@ layers = [
 						]
 						loop_animation = true
 						markers = [
+							{
+								_id = "b7ac6a48-344e-442b-a3db-bec4ba1bf435"
+								_name = "roll_exit"
+								_time = 0
+								time = 0
+								type = "exit_trigger"
+							}
 						]
 						muted_layers = [
 						]
@@ -1729,7 +1772,7 @@ layers = [
 									ref_id = "756047e7-1cba-4f09-a556-5ce296bed653"
 								}
 								has_nested_from = false
-								mode = "direct"
+								mode = "wait"
 								nested_from_ref = {
 									_id = "580123d2-568e-46fa-a8a2-329d3152ea9e"
 									ref_filename = null
@@ -1776,6 +1819,20 @@ layers = [
 						]
 						loop_animation = false
 						markers = [
+							{
+								_id = "ffeb24fd-aa7f-4b21-8df0-0a5181f6c0e5"
+								_name = "rolln_exit"
+								_time = 0
+								time = 0
+								type = "exit_trigger"
+							}
+							{
+								_id = "9bc217fe-7814-4acf-8859-54428c766aee"
+								_name = "rolln_enter"
+								_time = 0
+								time = 0
+								type = "enter_trigger"
+							}
 						]
 						muted_layers = [
 						]
@@ -2850,6 +2907,13 @@ variables = {
 	_id = "b2bf5da5-92cf-4bef-9cbf-225ca90938fc"
 	_name = "Variables"
 	data_list = [
+		{
+			_id = "4b030467-61f3-478c-9860-384d0da85431"
+			_name = "Variable"
+			default_value = 0
+			max_value = 1
+			min_value = 0
+		}
 	]
 	sub_folders = [
 	]
