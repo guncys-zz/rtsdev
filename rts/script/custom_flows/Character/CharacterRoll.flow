@@ -95,6 +95,13 @@ nodes = [
 					node = "6e92cedd-3802-4fb7-9ba1-94460513287e"
 				}
 			]
+			out4 = [
+				{
+					event = 0
+					id = "3ef0c35d-7e91-4a08-9af9-4b65f988f39c:0"
+					node = "3ef0c35d-7e91-4a08-9af9-4b65f988f39c"
+				}
+			]
 		}
 		type = "sequence"
 	}
@@ -142,7 +149,7 @@ nodes = [
 		id = "eec47825-6533-4ad1-9080-e4e44a04d891"
 		in_variables = {
 			a = {
-				node = "435523ef-598c-4b64-8bd0-456bc98c525e"
+				node = "67008c60-7b80-41c0-a953-4ba28a614be1"
 				type = "string"
 				variable = "string"
 			}
@@ -246,13 +253,13 @@ nodes = [
 			out = [
 				{
 					event = 0
-					id = "6f3389e7-a48c-4d69-995d-3124f7fe4af9:0"
-					node = "6f3389e7-a48c-4d69-995d-3124f7fe4af9"
+					id = "399c869c-4291-44d9-bc78-1ce6e3caf146:0"
+					node = "399c869c-4291-44d9-bc78-1ce6e3caf146"
 				}
 				{
 					event = 0
-					id = "399c869c-4291-44d9-bc78-1ce6e3caf146:0"
-					node = "399c869c-4291-44d9-bc78-1ce6e3caf146"
+					id = "724cfa1f-058c-404e-97da-0acdc9f78cbf:0"
+					node = "724cfa1f-058c-404e-97da-0acdc9f78cbf"
 				}
 			]
 		}
@@ -289,35 +296,8 @@ nodes = [
 		}
 	}
 	{
-		id = "6f3389e7-a48c-4d69-995d-3124f7fe4af9"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-			string = {
-				type = "string"
-			}
-		}
-		type = "set_string_variable"
-		variable_values = {
-			name = "state"
-			scope = "local"
-			string = "roll"
-		}
-	}
-	{
 		id = "4c1e2af6-9290-4355-9d1f-7cc67e6cc913"
 		out_events = {
-			out1 = [
-				{
-					event = 0
-					id = "da2ff65e-28f5-4ced-8631-fec0e77695f6:0"
-					node = "da2ff65e-28f5-4ced-8631-fec0e77695f6"
-				}
-			]
 			out2 = [
 				{
 					event = 0
@@ -325,28 +305,8 @@ nodes = [
 					node = "73d0a215-9eb5-4598-9b3a-89a316b05b31"
 				}
 			]
-			out8 = [
-				{
-					event = 0
-					id = "724cfa1f-058c-404e-97da-0acdc9f78cbf:0"
-					node = "724cfa1f-058c-404e-97da-0acdc9f78cbf"
-				}
-			]
 		}
 		type = "sequence"
-	}
-	{
-		id = "8bcf000c-28c5-4536-ba63-06072f0e153d"
-		out_variables = {
-			string = {
-				type = "string"
-			}
-		}
-		type = "external_input_string"
-		variable_values = {
-			name = "state"
-			string = null
-		}
 	}
 	{
 		id = "e7394341-6033-42ff-af0b-bc5a6086bb6e"
@@ -362,43 +322,6 @@ nodes = [
 		type = "external_event"
 		variable_values = {
 			event_name = "start"
-		}
-	}
-	{
-		id = "2d108851-24cd-4d56-960d-f6018e082dc1"
-		in_variables = {
-			string = {
-				node = "d2a5715e-bb02-4870-86e2-9e61c8c03758"
-				type = "string"
-				variable = "string"
-			}
-		}
-		type = "external_output_string"
-		variable_values = {
-			name = "output_state"
-			string = null
-		}
-	}
-	{
-		id = "435523ef-598c-4b64-8bd0-456bc98c525e"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		out_variables = {
-			string = {
-				type = "string"
-			}
-		}
-		type = "get_string_variable"
-		variable_values = {
-			name = "state"
-			scope = "local"
-			string = null
 		}
 	}
 	{
@@ -511,13 +434,6 @@ nodes = [
 		}
 	}
 	{
-		id = "724cfa1f-058c-404e-97da-0acdc9f78cbf"
-		type = "level_flow_event"
-		variable_values = {
-			event = "end"
-		}
-	}
-	{
 		id = "b90441e1-3aad-4deb-a121-7c49e0a598b2"
 		in_variables = {
 			bool = {
@@ -547,9 +463,7 @@ nodes = [
 				type = "string"
 			}
 			string = {
-				node = "8bcf000c-28c5-4536-ba63-06072f0e153d"
 				type = "string"
-				variable = "string"
 			}
 		}
 		type = "set_string_variable"
@@ -557,6 +471,145 @@ nodes = [
 			name = "state"
 			scope = "local"
 			string = null
+		}
+	}
+	{
+		flow_nodes_resource = "core/appkit/appkit"
+		id = "3ef0c35d-7e91-4a08-9af9-4b65f988f39c"
+		in_variables = {
+			Color = {
+				type = "vector3"
+			}
+			Label = {
+				type = "string"
+			}
+			Text = {
+				node = "67008c60-7b80-41c0-a953-4ba28a614be1"
+				type = "string"
+				variable = "string"
+			}
+		}
+		name = "Print To Screen"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Color = null
+			Label = null
+			Text = null
+		}
+		variables = [
+			{
+				name = "Label"
+				type = "string"
+			}
+			{
+				name = "Color"
+				type = "vector3"
+			}
+			{
+				name = "Text"
+				type = "string"
+			}
+		]
+	}
+	{
+		flow_nodes_resource = "core/appkit/appkit"
+		id = "6a4a3ec2-96fa-4601-a4ad-4bfe59a9f54b"
+		in_variables = {
+			Color = {
+				type = "vector3"
+			}
+			Label = {
+				type = "string"
+			}
+			Text = {
+				node = "d2a5715e-bb02-4870-86e2-9e61c8c03758"
+				type = "string"
+				variable = "string"
+			}
+		}
+		name = "Print To Screen"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Color = [
+				0
+				0
+				255
+			]
+			Label = null
+			Text = null
+		}
+		variables = [
+			{
+				name = "Label"
+				type = "string"
+			}
+			{
+				name = "Color"
+				type = "vector3"
+			}
+			{
+				name = "Text"
+				type = "string"
+			}
+		]
+	}
+	{
+		id = "67008c60-7b80-41c0-a953-4ba28a614be1"
+		out_variables = {
+			string = {
+				type = "string"
+			}
+		}
+		type = "external_input_string"
+		variable_values = {
+			name = "state"
+			string = null
+		}
+	}
+	{
+		id = "724cfa1f-058c-404e-97da-0acdc9f78cbf"
+		type = "level_flow_event"
+		variable_values = {
+			event = "set_state_roll"
+		}
+	}
+	{
+		id = "6f3389e7-a48c-4d69-995d-3124f7fe4af9"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+			string = {
+				type = "string"
+			}
+		}
+		type = "set_string_variable"
+		variable_values = {
+			name = "state"
+			scope = "local"
+			string = "roll"
+		}
+	}
+	{
+		id = "dca6fd94-0739-45a1-9414-2f4fa60471f9"
+		in_variables = {
+			string = {
+				type = "string"
+			}
+		}
+		type = "external_output_string"
+		variable_values = {
+			name = "output_state"
+			string = "roll"
 		}
 	}
 	{
