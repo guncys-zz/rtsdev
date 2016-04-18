@@ -76,6 +76,38 @@ editor_metadata = {
 				ToItem = "In"
 				ToNode = "f4946a4f-4dd9-4028-8e1c-09d32a380aa8"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Pressed"
+				FromNode = "ecdba273-9834-48b2-b43f-3d9baafa51e8"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "11352e9a-dde0-47c5-b32a-4e4ebbf9f62e"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Pressed"
+				FromNode = "5d513c80-db23-44ca-969b-7b66f87afc60"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "bccb9673-c2a4-4683-804d-c123be13662b"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Pressed"
+				FromNode = "797d1f86-d2bb-4f41-ae0b-0c9aa08ab50a"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "84ff3b8b-f38b-4be5-81a0-79736e9dbbc6"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "f5b80e33-f7ab-4eff-ae5f-304ed7f45c2b"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "b6771c36-964d-4e20-b68b-e14fb17a94ad"
+			}
 		]
 		Groups = [
 			{
@@ -112,6 +144,21 @@ editor_metadata = {
 					"f4946a4f-4dd9-4028-8e1c-09d32a380aa8"
 				]
 				Title = "Cキーでステージ3に遷移"
+			}
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "c680de0a-6a69-4377-aede-990fc936aa7e"
+				Nodes = [
+					"b6771c36-964d-4e20-b68b-e14fb17a94ad"
+					"84ff3b8b-f38b-4be5-81a0-79736e9dbbc6"
+					"11352e9a-dde0-47c5-b32a-4e4ebbf9f62e"
+					"bccb9673-c2a4-4683-804d-c123be13662b"
+					"5d513c80-db23-44ca-969b-7b66f87afc60"
+					"ecdba273-9834-48b2-b43f-3d9baafa51e8"
+				]
+				Title = "Sound"
 			}
 		]
 		Nodes = [
@@ -371,6 +418,298 @@ editor_metadata = {
 				NodeLocation = {
 					X = -260
 					Y = 260
+				}
+				Pressed = {
+				}
+				Released = {
+				}
+				Title = "Keyboard Button"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Name"
+						Type = "element"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableElement"
+							Type = "wwise_event"
+							Value = "Play_BGM_Stage_2"
+						}
+					}
+					{
+						RawName = "Unit"
+						Type = "unit"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableUnit"
+							UseMyUnit = false
+						}
+					}
+					{
+						RawName = "Unit_Node"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+						}
+					}
+					{
+						RawName = "Position"
+						Type = "vector3"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableVector3"
+						}
+					}
+					{
+						RawName = "Existing_Source_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableFloat"
+						}
+					}
+				]
+				Brief = "Posts the given event to the Wwise engine, creating a source if none is provided."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/wwise/wwise"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "b6771c36-964d-4e20-b68b-e14fb17a94ad"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Wwise Trigger Event"
+				NodeLocation = {
+					X = 469
+					Y = -386
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+					{
+						RawName = "Playing_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableFloat"
+						}
+					}
+					{
+						RawName = "Source_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableFloat"
+						}
+					}
+				]
+				Width = 220
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Name"
+						Type = "element"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableElement"
+							Type = "wwise_event"
+							Value = "Stop_All"
+						}
+					}
+					{
+						RawName = "Unit"
+						Type = "unit"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableUnit"
+							UseMyUnit = false
+						}
+					}
+					{
+						RawName = "Unit_Node"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+						}
+					}
+					{
+						RawName = "Position"
+						Type = "vector3"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableVector3"
+						}
+					}
+					{
+						RawName = "Existing_Source_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableFloat"
+						}
+					}
+				]
+				Brief = "Posts the given event to the Wwise engine, creating a source if none is provided."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/wwise/wwise"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "84ff3b8b-f38b-4be5-81a0-79736e9dbbc6"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Wwise Trigger Event"
+				NodeLocation = {
+					X = 468
+					Y = -135
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+					{
+						RawName = "Playing_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableFloat"
+						}
+					}
+					{
+						RawName = "Source_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableFloat"
+						}
+					}
+				]
+				Width = 220
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Group"
+						Type = "element"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableElement"
+							Type = "wwise_state_group"
+							Value = "State_Player"
+						}
+					}
+					{
+						RawName = "State"
+						Type = "element"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableElement"
+							Type = "wwise_state"
+							Value = "State_Player_Hurry"
+						}
+					}
+				]
+				Brief = "Sets the Wwise state for the given source to the given value."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/wwise/wwise"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "11352e9a-dde0-47c5-b32a-4e4ebbf9f62e"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Wwise Set State"
+				NodeLocation = {
+					X = 949
+					Y = -226
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 220
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Group"
+						Type = "element"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableElement"
+							Type = "wwise_state_group"
+							Value = "State_Player"
+						}
+					}
+					{
+						RawName = "State"
+						Type = "element"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableElement"
+							Type = "wwise_state"
+							Value = "State_Player_Normal"
+						}
+					}
+				]
+				Brief = "Sets the Wwise state for the given source to the given value."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/wwise/wwise"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "bccb9673-c2a4-4683-804d-c123be13662b"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Wwise Set State"
+				NodeLocation = {
+					X = 949
+					Y = -426
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 240
+			}
+			{
+				Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
+				ButtonName = {
+					Value = "1"
+				}
+				Class = "Stingray.Foundation.Flow.KeyboardButton"
+				Device = {
+					Value = "keyboard"
+				}
+				DeviceNumber = {
+					Value = 0
+				}
+				Held = {
+				}
+				Id = "5d513c80-db23-44ca-969b-7b66f87afc60"
+				NodeLocation = {
+					X = 749
+					Y = -386
+				}
+				Pressed = {
+				}
+				Released = {
+				}
+				Title = "Keyboard Button"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
+				ButtonName = {
+					Value = "2"
+				}
+				Class = "Stingray.Foundation.Flow.KeyboardButton"
+				Device = {
+					Value = "keyboard"
+				}
+				DeviceNumber = {
+					Value = 0
+				}
+				Held = {
+				}
+				Id = "ecdba273-9834-48b2-b43f-3d9baafa51e8"
+				NodeLocation = {
+					X = 749
+					Y = -186
 				}
 				Pressed = {
 				}
@@ -712,6 +1051,11 @@ flow = {
 						id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7:0"
 						node = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
 					}
+					{
+						event = 0
+						id = "b6771c36-964d-4e20-b68b-e14fb17a94ad:0"
+						node = "b6771c36-964d-4e20-b68b-e14fb17a94ad"
+					}
 				]
 			}
 			type = "level_loaded"
@@ -892,11 +1236,268 @@ flow = {
 						id = "f4946a4f-4dd9-4028-8e1c-09d32a380aa8:0"
 						node = "f4946a4f-4dd9-4028-8e1c-09d32a380aa8"
 					}
+					{
+						event = 0
+						id = "84ff3b8b-f38b-4be5-81a0-79736e9dbbc6:0"
+						node = "84ff3b8b-f38b-4be5-81a0-79736e9dbbc6"
+					}
 				]
 			}
 			type = "keyboard_button"
 			variable_values = {
 				button_name = "c"
+				device = "keyboard"
+				device_number = 0
+				value = null
+			}
+		}
+		{
+			flow_nodes_resource = "core/wwise/wwise"
+			id = "b6771c36-964d-4e20-b68b-e14fb17a94ad"
+			in_variables = {
+				Existing_Source_Id = {
+					type = "float"
+				}
+				Name = {
+					type = "string"
+				}
+				Position = {
+					type = "vector3"
+				}
+				Unit = {
+					type = "unit"
+				}
+				Unit_Node = {
+					type = "string"
+				}
+			}
+			name = "Wwise Trigger Event"
+			query = false
+			return_values = [
+				{
+					name = "Playing_Id"
+					type = "float"
+				}
+				{
+					name = "Source_Id"
+					type = "float"
+				}
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Existing_Source_Id = null
+				Name = "Play_BGM_Stage_2"
+				Playing_Id = null
+				Position = null
+				Source_Id = null
+				Unit = null
+				Unit_Node = null
+			}
+			variables = [
+				{
+					name = "Name"
+					type = "string"
+				}
+				{
+					name = "Unit"
+					type = "unit"
+				}
+				{
+					name = "Unit_Node"
+					type = "string"
+				}
+				{
+					name = "Position"
+					type = "vector3"
+				}
+				{
+					name = "Existing_Source_Id"
+					type = "float"
+				}
+			]
+		}
+		{
+			flow_nodes_resource = "core/wwise/wwise"
+			id = "84ff3b8b-f38b-4be5-81a0-79736e9dbbc6"
+			in_variables = {
+				Existing_Source_Id = {
+					type = "float"
+				}
+				Name = {
+					type = "string"
+				}
+				Position = {
+					type = "vector3"
+				}
+				Unit = {
+					type = "unit"
+				}
+				Unit_Node = {
+					type = "string"
+				}
+			}
+			name = "Wwise Trigger Event"
+			query = false
+			return_values = [
+				{
+					name = "Playing_Id"
+					type = "float"
+				}
+				{
+					name = "Source_Id"
+					type = "float"
+				}
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Existing_Source_Id = null
+				Name = "Stop_All"
+				Playing_Id = null
+				Position = null
+				Source_Id = null
+				Unit = null
+				Unit_Node = null
+			}
+			variables = [
+				{
+					name = "Name"
+					type = "string"
+				}
+				{
+					name = "Unit"
+					type = "unit"
+				}
+				{
+					name = "Unit_Node"
+					type = "string"
+				}
+				{
+					name = "Position"
+					type = "vector3"
+				}
+				{
+					name = "Existing_Source_Id"
+					type = "float"
+				}
+			]
+		}
+		{
+			flow_nodes_resource = "core/wwise/wwise"
+			id = "11352e9a-dde0-47c5-b32a-4e4ebbf9f62e"
+			in_variables = {
+				Group = {
+					type = "string"
+				}
+				State = {
+					type = "string"
+				}
+			}
+			name = "Wwise Set State"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Group = "State_Player"
+				State = "State_Player_Hurry"
+			}
+			variables = [
+				{
+					name = "Group"
+					type = "string"
+				}
+				{
+					name = "State"
+					type = "string"
+				}
+			]
+		}
+		{
+			flow_nodes_resource = "core/wwise/wwise"
+			id = "bccb9673-c2a4-4683-804d-c123be13662b"
+			in_variables = {
+				Group = {
+					type = "string"
+				}
+				State = {
+					type = "string"
+				}
+			}
+			name = "Wwise Set State"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Group = "State_Player"
+				State = "State_Player_Normal"
+			}
+			variables = [
+				{
+					name = "Group"
+					type = "string"
+				}
+				{
+					name = "State"
+					type = "string"
+				}
+			]
+		}
+		{
+			id = "5d513c80-db23-44ca-969b-7b66f87afc60"
+			in_variables = {
+				button_name = {
+					type = "string"
+				}
+				device = {
+					type = "string"
+				}
+				device_number = {
+					type = "float"
+				}
+			}
+			out_events = {
+				pressed = [
+					{
+						event = 0
+						id = "bccb9673-c2a4-4683-804d-c123be13662b:0"
+						node = "bccb9673-c2a4-4683-804d-c123be13662b"
+					}
+				]
+			}
+			type = "keyboard_button"
+			variable_values = {
+				button_name = "1"
+				device = "keyboard"
+				device_number = 0
+				value = null
+			}
+		}
+		{
+			id = "ecdba273-9834-48b2-b43f-3d9baafa51e8"
+			in_variables = {
+				button_name = {
+					type = "string"
+				}
+				device = {
+					type = "string"
+				}
+				device_number = {
+					type = "float"
+				}
+			}
+			out_events = {
+				pressed = [
+					{
+						event = 0
+						id = "11352e9a-dde0-47c5-b32a-4e4ebbf9f62e:0"
+						node = "11352e9a-dde0-47c5-b32a-4e4ebbf9f62e"
+					}
+				]
+			}
+			type = "keyboard_button"
+			variable_values = {
+				button_name = "2"
 				device = "keyboard"
 				device_number = 0
 				value = null
