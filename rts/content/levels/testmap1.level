@@ -91,6 +91,62 @@ editor_metadata = {
 				ToItem = "In"
 				ToNode = "ba425c14-fa4e-4270-a8a5-286dbd1102e4"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "dace9721-f45e-4029-93d1-b8b282d0684d"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "eadee0c9-0cd4-4343-8236-ff8232ad94d0"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "d03566cf-d669-4d58-954e-ea83437574e7"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "bb3decba-7c1d-4159-97e8-e7623ea04924"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "97a3da47-975d-4621-90d5-0e0341f37e38"
+				ToItem = "Frame"
+				ToNode = "bb3decba-7c1d-4159-97e8-e7623ea04924"
+				Type = "Float"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "2f4ef494-ef48-4a19-abc3-e9ba6711937b"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "d03566cf-d669-4d58-954e-ea83437574e7"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Released"
+				FromNode = "33fe0a18-349a-4b66-bde3-b1147c4c556f"
+				Priority = 0
+				ToItem = "Increase"
+				ToNode = "97a3da47-975d-4621-90d5-0e0341f37e38"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Changed"
+				FromNode = "97a3da47-975d-4621-90d5-0e0341f37e38"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "2f4ef494-ef48-4a19-abc3-e9ba6711937b"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Numeric"
+				FromNode = "ada7a8b9-9ede-4cd4-a57f-08f64e8cf87e"
+				ToItem = "StartValue"
+				ToNode = "97a3da47-975d-4621-90d5-0e0341f37e38"
+				Type = "Float"
+			}
 		]
 		Groups = [
 			{
@@ -104,6 +160,53 @@ editor_metadata = {
 					"6d026d95-904d-4d2c-8190-97b3e57e635d"
 				]
 				Title = "reset"
+			}
+			{
+				Collapsed = false
+				Groups = [
+					"957d7b83-3782-47a9-aed9-db4c7bb5cf0e"
+				]
+				Id = "470018fd-d3b1-47ae-808d-5a31627b5b68"
+				Nodes = [
+					"d03566cf-d669-4d58-954e-ea83437574e7"
+					"bb3decba-7c1d-4159-97e8-e7623ea04924"
+					"97a3da47-975d-4621-90d5-0e0341f37e38"
+				]
+				Title = "ui_hitpoint"
+			}
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "8b89ca0c-a452-4a01-aa6d-f828c1ac9222"
+				Nodes = [
+					"eadee0c9-0cd4-4343-8236-ff8232ad94d0"
+				]
+				Title = "ui_load"
+			}
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "957d7b83-3782-47a9-aed9-db4c7bb5cf0e"
+				Nodes = [
+					"2f4ef494-ef48-4a19-abc3-e9ba6711937b"
+					"192c5fc8-2479-4843-bfc6-111b68e1e3c6"
+					"6a1ec640-41bd-4c55-8f87-ca424f145e6e"
+				]
+				Title = "damage_event"
+			}
+			{
+				Collapsed = false
+				Groups = [
+					"470018fd-d3b1-47ae-808d-5a31627b5b68"
+					"957d7b83-3782-47a9-aed9-db4c7bb5cf0e"
+					"8b89ca0c-a452-4a01-aa6d-f828c1ac9222"
+				]
+				Id = "aaafd39c-e546-4ea1-b08a-4d58d0bd4a70"
+				Nodes = [
+				]
+				Title = "ui"
 			}
 		]
 		Nodes = [
@@ -438,6 +541,317 @@ editor_metadata = {
 				Title = "Keyboard Button"
 				Value = {
 				}
+				Width = 160
+			}
+			{
+				Brief = "Increases or decreases a specified value based on input event. Returns a current value and a changed event."
+				Changed = {
+				}
+				Class = "Stingray.Foundation.Flow.Counter"
+				Decrease = {
+				}
+				Id = "97a3da47-975d-4621-90d5-0e0341f37e38"
+				Increase = {
+				}
+				Increment = {
+					Value = 1
+				}
+				NodeLocation = {
+					X = -1640
+					Y = -560
+				}
+				Reset = {
+				}
+				StartValue = {
+				}
+				Title = "Counter"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
+				ButtonName = {
+					Value = "d"
+				}
+				Class = "Stingray.Foundation.Flow.KeyboardButton"
+				Device = {
+					Value = "keyboard"
+				}
+				DeviceNumber = {
+					Value = 0
+				}
+				Held = {
+				}
+				Id = "33fe0a18-349a-4b66-bde3-b1147c4c556f"
+				NodeLocation = {
+					X = -1900
+					Y = -420
+				}
+				Pressed = {
+				}
+				Released = {
+				}
+				Title = "Keyboard Button"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Project"
+						Type = "resource"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableResource"
+							Extension = "s2dproj"
+							Value = "s2d_projects/ui.s2d/ui"
+						}
+					}
+					{
+						RawName = "Scene"
+						Type = "resource"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableResource"
+							Extension = "s2dscene"
+							Value = "s2d_projects/ui.s2d/GameUI"
+						}
+					}
+				]
+				Brief = "This node loads a Scaleform Studio project. This node must be called before using any other Scaleform Flow nodes. If a scene is provided it will set that scene as the start up scene."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/scaleform_studio/scaleform_studio"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "eadee0c9-0cd4-4343-8236-ff8232ad94d0"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Scaleform Load Project And Scene"
+				NodeLocation = {
+					X = -860
+					Y = -640
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+					{
+						RawName = "Loaded"
+						Type = "bool"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableBoolean"
+						}
+					}
+				]
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Event"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+							Value = "damage_1"
+						}
+					}
+				]
+				Brief = "This node sends a custom Event to the currently loaded Scaleform Studio project. Any Custom Event listener will be notified."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/scaleform_studio/scaleform_studio"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "2f4ef494-ef48-4a19-abc3-e9ba6711937b"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Scaleform Dispatch Custom Event"
+				NodeLocation = {
+					X = -1440
+					Y = -640
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Event"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+							Value = "damage_1"
+						}
+					}
+				]
+				Brief = "This node registers a listener for a Custom Event. Any Custom Event which is not registered will be ignored."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/scaleform_studio/scaleform_studio"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "d03566cf-d669-4d58-954e-ea83437574e7"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Scaleform Register Custom Event Listener"
+				NodeLocation = {
+					X = -1220
+					Y = -680
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "ActorPath"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+							Value = "GameUI.hitpoint"
+						}
+					}
+					{
+						RawName = "Frame"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableFloat"
+						}
+					}
+				]
+				Brief = "Goes to a specified frame on the timeline and stops the animation at that point."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/scaleform_studio/scaleform_studio"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "bb3decba-7c1d-4159-97e8-e7623ea04924"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Scaleform Goto Frame and Stop"
+				NodeLocation = {
+					X = -1120
+					Y = -560
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Event"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+							Value = "damage_2"
+						}
+					}
+				]
+				Brief = "This node sends a custom Event to the currently loaded Scaleform Studio project. Any Custom Event listener will be notified."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/scaleform_studio/scaleform_studio"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "192c5fc8-2479-4843-bfc6-111b68e1e3c6"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Scaleform Dispatch Custom Event"
+				NodeLocation = {
+					X = -1440
+					Y = -540
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Event"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+							Value = "damage_3"
+						}
+					}
+				]
+				Brief = "This node sends a custom Event to the currently loaded Scaleform Studio project. Any Custom Event listener will be notified."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/scaleform_studio/scaleform_studio"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "6a1ec640-41bd-4c55-8f87-ca424f145e6e"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Scaleform Dispatch Custom Event"
+				NodeLocation = {
+					X = -1440
+					Y = -440
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
+			{
+				Brief = "Sets a variable to the specified numeric value."
+				Class = "Stingray.Foundation.Flow.SetNumericVariable"
+				Id = "7c214a39-feb1-4ae2-abd9-a92199472566"
+				Name = {
+					Value = "damage_counter"
+				}
+				NodeLocation = {
+					X = -1760
+					Y = -280
+				}
+				Numeric = {
+					Value = 0
+				}
+				Scope = {
+					Value = "local"
+				}
+				Set = {
+				}
+				Title = "Set Numeric Variable"
+				Width = 160
+			}
+			{
+				Brief = "Returns the current numeric value of the specified named variable."
+				Class = "Stingray.Foundation.Flow.GetNumericVariable"
+				Id = "ada7a8b9-9ede-4cd4-a57f-08f64e8cf87e"
+				Name = {
+					Value = "damage_counter"
+				}
+				NodeLocation = {
+					X = -1560
+					Y = -280
+				}
+				Numeric = {
+				}
+				Scope = {
+					Value = "local"
+				}
+				Title = "Get Numeric Variable"
 				Width = 160
 			}
 		]
@@ -3495,6 +3909,11 @@ flow = {
 						id = "10ad9003-6107-46d4-bb09-54c142334211:0"
 						node = "10ad9003-6107-46d4-bb09-54c142334211"
 					}
+					{
+						event = 0
+						id = "eadee0c9-0cd4-4343-8236-ff8232ad94d0:0"
+						node = "eadee0c9-0cd4-4343-8236-ff8232ad94d0"
+					}
 				]
 			}
 			type = "level_loaded"
@@ -3664,6 +4083,290 @@ flow = {
 				device = "keyboard"
 				device_number = 0
 				value = null
+			}
+		}
+		{
+			id = "97a3da47-975d-4621-90d5-0e0341f37e38"
+			in_variables = {
+				increment = {
+					type = "float"
+				}
+				start_value = {
+					node = "ada7a8b9-9ede-4cd4-a57f-08f64e8cf87e"
+					type = "float"
+					variable = "numeric"
+				}
+			}
+			out_events = {
+				changed = [
+					{
+						event = 0
+						id = "2f4ef494-ef48-4a19-abc3-e9ba6711937b:0"
+						node = "2f4ef494-ef48-4a19-abc3-e9ba6711937b"
+					}
+				]
+			}
+			out_variables = {
+				value = {
+					type = "float"
+				}
+			}
+			type = "counter"
+			variable_values = {
+				increment = 1
+				start_value = null
+				value = null
+			}
+		}
+		{
+			id = "33fe0a18-349a-4b66-bde3-b1147c4c556f"
+			in_variables = {
+				button_name = {
+					type = "string"
+				}
+				device = {
+					type = "string"
+				}
+				device_number = {
+					type = "float"
+				}
+			}
+			out_events = {
+				released = [
+					{
+						event = 0
+						id = "97a3da47-975d-4621-90d5-0e0341f37e38:0"
+						node = "97a3da47-975d-4621-90d5-0e0341f37e38"
+					}
+				]
+			}
+			type = "keyboard_button"
+			variable_values = {
+				button_name = "d"
+				device = "keyboard"
+				device_number = 0
+				value = null
+			}
+		}
+		{
+			flow_nodes_resource = "core/scaleform_studio/scaleform_studio"
+			id = "eadee0c9-0cd4-4343-8236-ff8232ad94d0"
+			in_variables = {
+				Project = {
+					type = "string"
+				}
+				Scene = {
+					type = "string"
+				}
+			}
+			name = "Scaleform Load Project And Scene"
+			query = false
+			return_values = [
+				{
+					name = "Loaded"
+					type = "bool"
+				}
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Loaded = null
+				Project = "s2d_projects/ui.s2d/ui"
+				Scene = "s2d_projects/ui.s2d/GameUI"
+			}
+			variables = [
+				{
+					name = "Project"
+					type = "string"
+				}
+				{
+					name = "Scene"
+					type = "string"
+				}
+			]
+		}
+		{
+			flow_nodes_resource = "core/scaleform_studio/scaleform_studio"
+			id = "2f4ef494-ef48-4a19-abc3-e9ba6711937b"
+			in_variables = {
+				Event = {
+					type = "string"
+				}
+			}
+			name = "Scaleform Dispatch Custom Event"
+			out_events = {
+				Out = [
+					{
+						event = 0
+						id = "d03566cf-d669-4d58-954e-ea83437574e7:0"
+						node = "d03566cf-d669-4d58-954e-ea83437574e7"
+					}
+				]
+			}
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Event = "damage_1"
+			}
+			variables = [
+				{
+					name = "Event"
+					type = "string"
+				}
+			]
+		}
+		{
+			flow_nodes_resource = "core/scaleform_studio/scaleform_studio"
+			id = "d03566cf-d669-4d58-954e-ea83437574e7"
+			in_variables = {
+				Event = {
+					type = "string"
+				}
+			}
+			name = "Scaleform Register Custom Event Listener"
+			out_events = {
+				Out = [
+					{
+						event = 0
+						id = "bb3decba-7c1d-4159-97e8-e7623ea04924:0"
+						node = "bb3decba-7c1d-4159-97e8-e7623ea04924"
+					}
+				]
+			}
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Event = "damage_1"
+			}
+			variables = [
+				{
+					name = "Event"
+					type = "string"
+				}
+			]
+		}
+		{
+			flow_nodes_resource = "core/scaleform_studio/scaleform_studio"
+			id = "bb3decba-7c1d-4159-97e8-e7623ea04924"
+			in_variables = {
+				ActorPath = {
+					type = "string"
+				}
+				Frame = {
+					node = "97a3da47-975d-4621-90d5-0e0341f37e38"
+					type = "float"
+					variable = "value"
+				}
+			}
+			name = "Scaleform Goto Frame and Stop"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				ActorPath = "GameUI.hitpoint"
+				Frame = null
+			}
+			variables = [
+				{
+					name = "ActorPath"
+					type = "string"
+				}
+				{
+					name = "Frame"
+					type = "float"
+				}
+			]
+		}
+		{
+			flow_nodes_resource = "core/scaleform_studio/scaleform_studio"
+			id = "192c5fc8-2479-4843-bfc6-111b68e1e3c6"
+			in_variables = {
+				Event = {
+					type = "string"
+				}
+			}
+			name = "Scaleform Dispatch Custom Event"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Event = "damage_2"
+			}
+			variables = [
+				{
+					name = "Event"
+					type = "string"
+				}
+			]
+		}
+		{
+			flow_nodes_resource = "core/scaleform_studio/scaleform_studio"
+			id = "6a1ec640-41bd-4c55-8f87-ca424f145e6e"
+			in_variables = {
+				Event = {
+					type = "string"
+				}
+			}
+			name = "Scaleform Dispatch Custom Event"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Event = "damage_3"
+			}
+			variables = [
+				{
+					name = "Event"
+					type = "string"
+				}
+			]
+		}
+		{
+			id = "7c214a39-feb1-4ae2-abd9-a92199472566"
+			in_variables = {
+				name = {
+					type = "string"
+				}
+				numeric = {
+					type = "float"
+				}
+				scope = {
+					type = "string"
+				}
+			}
+			type = "set_numeric_variable"
+			variable_values = {
+				name = "damage_counter"
+				numeric = 0
+				scope = "local"
+			}
+		}
+		{
+			id = "ada7a8b9-9ede-4cd4-a57f-08f64e8cf87e"
+			in_variables = {
+				name = {
+					type = "string"
+				}
+				scope = {
+					type = "string"
+				}
+			}
+			out_variables = {
+				numeric = {
+					type = "float"
+				}
+			}
+			type = "get_numeric_variable"
+			variable_values = {
+				name = "damage_counter"
+				numeric = null
+				scope = "local"
 			}
 		}
 	]
