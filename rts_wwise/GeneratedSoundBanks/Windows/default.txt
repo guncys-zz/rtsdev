@@ -1,0 +1,38 @@
+Event	ID	Name			Wwise Object Path	Notes
+	452547817	Stop_All			\Default Work Unit\MUSIC\Stop_All	
+	605006720	Play_BGM_Stage_2			\Default Work Unit\MUSIC\Play_BGM_Stage_2	
+	605006721	Play_BGM_Stage_3			\Default Work Unit\MUSIC\Play_BGM_Stage_3	
+	605006723	Play_BGM_Stage_1			\Default Work Unit\MUSIC\Play_BGM_Stage_1	
+	605006726	Play_BGM_Stage_4			\Default Work Unit\MUSIC\Play_BGM_Stage_4	
+	605006727	Play_BGM_Stage_5			\Default Work Unit\MUSIC\Play_BGM_Stage_5	
+	1464838723	Play_BGM_test			\Default Work Unit\MUSIC\Play_BGM_test	
+	1577926306	sfx_spawn_sound			\Default Work Unit\SFX\sfx_spawn_sound	
+	2630068541	Set_State_Normal			\Default Work Unit\MUSIC\Set_State_Normal	
+	3126765036	Play_BGM			\Default Work Unit\MUSIC\Play_BGM	
+	3741836291	bgm_switch_stage_1			\Default Work Unit\MUSIC\bgm_switch_stage_1	
+	3933739290	Set_State_Hurry			\Default Work Unit\MUSIC\Set_State_Hurry	
+	4052737657	Set_Switch_S1			\Default Work Unit\MUSIC\Set_Switch_S1	
+	4052737659	Set_Switch_S3			\Default Work Unit\MUSIC\Set_Switch_S3	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	4016824040	State_Player			\Default Work Unit\State_Player	
+
+State	ID	Name	State Group			Notes
+	748895195	None	State_Player			
+	4022567155	State_Player_Hurry	State_Player			
+	4233572294	State_Player_Normal	State_Player			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2473447035	CODE_Player_Status			\Default Work Unit\CODE_Player_Status	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	8337968	bgm_4_2	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\bgm_4_2_6BBC2BAA.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Switch_stage_4\Music_Playlist_2\BGM_2\bgm_4_2		732445
+	166489343	bgm_2_2	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\bgm_2_2_6BBC2BAA.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Switch_stage_1\Music_Playlist_2\BGM_2\bgm_2_2		899475
+	193401151	bgm_4_1	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\bgm_4_1_6BBC2BAA.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Switch_stage_4\Music_Playlist_1\BGM_1\bgm_4_1		1190535
+	407460578	bgm_3_1	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\bgm_3_1_6BBC2BAA.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Switch_stage_3\Music_Playlist_1\BGM_1\bgm_3_1		1125790
+	597989343	bgm_5_2	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\bgm_5_2_6BBC2BAA.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Switch_stage_5\Music_Playlist_2\BGM_2\bgm_5_2		911370
+	704244969	sfx_spawn_sound	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\sfx_spawn_sound_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\sfx_spawn_sound		33980
+	931110851	bgm_2_1	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\bgm_2_1 _6BBC2BAA.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Switch_stage_1\Music_Playlist_1\BGM_1\bgm_2_1		1311202
+	967914306	bgm_5_1	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\bgm_5_1_6BBC2BAA.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Switch_stage_5\Music_Playlist_1\BGM_1\bgm_5_1		1344456
+	1057127781	bgm_3_2	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\bgm_3_2_6BBC2BAA.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Switch_stage_3\Music_Playlist_2\BGM_2\bgm_3_2		862053
+
