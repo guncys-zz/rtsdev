@@ -12,6 +12,7 @@ banks = {
 			"Play_BGM_Stage_4"
 			"Play_BGM_Stage_5"
 			"Play_BGM_test"
+			"SE_PPK_jump"
 			"Set_State_Hurry"
 			"Set_State_Normal"
 			"Set_Switch_S1"
@@ -86,6 +87,13 @@ events = {
 		attenuation_max = 0
 		duration_max = 85.47946
 		duration_min = 85.47946
+		duration_type = "OneShot"
+		positioning = "2D"
+	}
+	SE_PPK_jump = {
+		attenuation_max = 0
+		duration_max = 1.266
+		duration_min = 1.266
 		duration_type = "OneShot"
 		positioning = "2D"
 	}
