@@ -8,69 +8,6 @@ nodes = [
 		}
 	}
 	{
-		flow_nodes_resource = "script/custom_nodes/load_csv"
-		id = "280c820a-4f28-4d0d-85a9-9cf30b97746a"
-		in_variables = {
-			Path = {
-				node = "e9a691c3-b7fa-4252-9be3-e9d90b9018bc"
-				type = "string"
-				variable = "value"
-			}
-		}
-		name = "Load CSV file"
-		out_events = {
-			Out = [
-				{
-					event = 0
-					id = "014f1c9c-de7a-468e-a32c-3ae6555b761e:0"
-					node = "014f1c9c-de7a-468e-a32c-3ae6555b761e"
-				}
-			]
-		}
-		query = false
-		return_values = [
-		]
-		type = "custom_script_node"
-		variable_values = {
-			Path = null
-		}
-		variables = [
-			{
-				name = "Path"
-				type = "string"
-			}
-		]
-	}
-	{
-		id = "5e3d91c4-66cc-4c26-9780-a14de35d4028"
-		out_events = {
-			out = [
-				{
-					event = 0
-					id = "280c820a-4f28-4d0d-85a9-9cf30b97746a:0"
-					node = "280c820a-4f28-4d0d-85a9-9cf30b97746a"
-				}
-			]
-		}
-		type = "external_event"
-		variable_values = {
-			event_name = "start_load_csv"
-		}
-	}
-	{
-		id = "803c0690-927d-4f14-a281-5d92fe4a073e"
-		out_variables = {
-			string = {
-				type = "string"
-			}
-		}
-		type = "external_input_string"
-		variable_values = {
-			name = "csv_file_name"
-			string = null
-		}
-	}
-	{
 		id = "d6c7b7c0-82c6-4f8c-b501-4e04633442ec"
 		out_variables = {
 			value = {
@@ -108,6 +45,96 @@ nodes = [
 			b = null
 			value = null
 		}
+	}
+	{
+		id = "803c0690-927d-4f14-a281-5d92fe4a073e"
+		out_variables = {
+			string = {
+				type = "string"
+			}
+		}
+		type = "external_input_string"
+		variable_values = {
+			name = "csv_file_name"
+			string = null
+		}
+	}
+	{
+		id = "5e3d91c4-66cc-4c26-9780-a14de35d4028"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "71133440-df49-4ef7-bde4-068786340d02:0"
+					node = "71133440-df49-4ef7-bde4-068786340d02"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "start_load_csv"
+		}
+	}
+	{
+		id = "bd649338-71f0-4b5a-96fa-21567ffb6b0c"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "5da8ead6-5476-4db4-a97f-9cc68c237ef3:0"
+					node = "5da8ead6-5476-4db4-a97f-9cc68c237ef3"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "destroy units CSV file"
+		}
+	}
+	{
+		flow_nodes_resource = "script/custom_nodes/load_csv"
+		id = "71133440-df49-4ef7-bde4-068786340d02"
+		in_variables = {
+			Path = {
+				node = "e9a691c3-b7fa-4252-9be3-e9d90b9018bc"
+				type = "string"
+				variable = "value"
+			}
+		}
+		name = "Spawn units CSV file"
+		out_events = {
+			Out = [
+				{
+					event = 0
+					id = "014f1c9c-de7a-468e-a32c-3ae6555b761e:0"
+					node = "014f1c9c-de7a-468e-a32c-3ae6555b761e"
+				}
+			]
+		}
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Path = null
+		}
+		variables = [
+			{
+				name = "Path"
+				type = "string"
+			}
+		]
+	}
+	{
+		flow_nodes_resource = "script/custom_nodes/load_csv"
+		id = "5da8ead6-5476-4db4-a97f-9cc68c237ef3"
+		name = "Destory units CSV file"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variables = [
+		]
 	}
 	{
 		id = "11111111-2222-3333-4444-555555555555"

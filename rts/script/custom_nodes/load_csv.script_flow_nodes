@@ -1,10 +1,17 @@
 nodes = [
 	{
-		name = "Load CSV file"
+		name = "Spawn units CSV file"
 		args = {
 			Path = "string"
 		}
 		function = "Tools.Load_csv"
+		category = "Tools"
+		returns = {}
+	}
+	{
+		name = "Destory units CSV file"
+		args = {}
+		function = "Tools.Destroy_units_csv"
 		category = "Tools"
 		returns = {}
 	}

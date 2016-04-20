@@ -62,14 +62,6 @@ editor_metadata = {
 			}
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
-				FromNode = "f5b80e33-f7ab-4eff-ae5f-304ed7f45c2b"
-				Priority = 0
-				ToItem = "start_load_csv"
-				ToNode = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
 				FromItem = "Pressed"
 				FromNode = "abb3ba29-2a11-4732-82c4-d091e15d0cb9"
 				Priority = 0
@@ -108,6 +100,22 @@ editor_metadata = {
 				ToItem = "In"
 				ToNode = "b2cfc21b-b1fb-461f-887e-277d2b9a6132"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "e1086cb1-d2f0-49f6-ba32-ef4e3ce247cf"
+				Priority = 0
+				ToItem = "destroy units CSV file"
+				ToNode = "6ea7bc87-b84b-4fec-9f19-4d610fc1d45e"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "f5b80e33-f7ab-4eff-ae5f-304ed7f45c2b"
+				Priority = 0
+				ToItem = "start_load_csv"
+				ToNode = "6ea7bc87-b84b-4fec-9f19-4d610fc1d45e"
+			}
 		]
 		Groups = [
 			{
@@ -123,16 +131,6 @@ editor_metadata = {
 					"e1ebe0cb-7c5a-4f11-8575-8d1eed73a7c1"
 				]
 				Title = "Camera"
-			}
-			{
-				Collapsed = false
-				Groups = [
-				]
-				Id = "6f404ecf-95e8-48e6-a511-fb0e938d79e9"
-				Nodes = [
-					"a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
-				]
-				Title = "Load_CSV"
 			}
 			{
 				Collapsed = false
@@ -159,6 +157,16 @@ editor_metadata = {
 					"b5a3dadb-1c84-464d-a0fe-fe6ee87ed560"
 				]
 				Title = "Sound"
+			}
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "6f404ecf-95e8-48e6-a511-fb0e938d79e9"
+				Nodes = [
+					"6ea7bc87-b84b-4fec-9f19-4d610fc1d45e"
+				]
+				Title = "Load_CSV"
 			}
 		]
 		Nodes = [
@@ -329,43 +337,6 @@ editor_metadata = {
 				ReturnValues = [
 				]
 				Width = 160
-			}
-			{
-				Brief = "Encapsulates a graph of logic stored in a separate flow resource file in the project."
-				Class = "Stingray.Foundation.Flow.FlowSubroutine"
-				Disable = {
-				}
-				Enable = {
-				}
-				Flow = {
-					Value = "script/custom_flows/Load_CSV"
-				}
-				Id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
-				InEvents = [
-					"start_load_csv"
-				]
-				InVariableNames = [
-					"csv_file_name"
-				]
-				InVariables = [
-					{
-						Class = "Stingray.Foundation.Flow.InVariableString"
-						Value = "stage4.csv"
-					}
-				]
-				NodeLocation = {
-					X = -260
-					Y = -400
-				}
-				OutEvents = [
-					"done_load_csv"
-				]
-				OutVariableNames = [
-				]
-				OutVariables = [
-				]
-				Title = "Flow Subroutine"
-				Width = 280
 			}
 			{
 				Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
@@ -720,6 +691,57 @@ editor_metadata = {
 				}
 				Width = 160
 			}
+			{
+				Brief = "Passes an event when the level shuts down."
+				Class = "Stingray.Foundation.Flow.LevelShutdown"
+				Id = "e1086cb1-d2f0-49f6-ba32-ef4e3ce247cf"
+				NodeLocation = {
+					X = -540
+					Y = -400
+				}
+				Out = {
+				}
+				Title = "Level Shutdown"
+				Width = 160
+			}
+			{
+				Brief = "Encapsulates a graph of logic stored in a separate flow resource file in the project."
+				Class = "Stingray.Foundation.Flow.FlowSubroutine"
+				Disable = {
+				}
+				Enable = {
+				}
+				Flow = {
+					Value = "script/custom_flows/Load_CSV"
+				}
+				Id = "6ea7bc87-b84b-4fec-9f19-4d610fc1d45e"
+				InEvents = [
+					"destroy units CSV file"
+					"start_load_csv"
+				]
+				InVariableNames = [
+					"csv_file_name"
+				]
+				InVariables = [
+					{
+						Class = "Stingray.Foundation.Flow.InVariableString"
+						Value = "stage4.csv"
+					}
+				]
+				NodeLocation = {
+					X = -260
+					Y = -460
+				}
+				OutEvents = [
+					"done_load_csv"
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				Title = "Flow Subroutine"
+				Width = 220
+			}
 		]
 	}
 	Groups = [
@@ -1049,13 +1071,13 @@ flow = {
 					}
 					{
 						event = 0
-						id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7:0"
-						node = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
-					}
-					{
-						event = 0
 						id = "61db55b4-31f7-42b5-8573-7312a9e2b2ca:0"
 						node = "61db55b4-31f7-42b5-8573-7312a9e2b2ca"
+					}
+					{
+						event = 1
+						id = "6ea7bc87-b84b-4fec-9f19-4d610fc1d45e:1"
+						node = "6ea7bc87-b84b-4fec-9f19-4d610fc1d45e"
 					}
 				]
 			}
@@ -1174,25 +1196,6 @@ flow = {
 					type = "unit"
 				}
 			]
-		}
-		{
-			id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
-			in_event_index = [
-				"start_load_csv"
-			]
-			in_variables = {
-				csv_file_name = {
-					type = "string"
-				}
-			}
-			out_event_index = [
-				"done_load_csv"
-			]
-			type = "flow_subroutine"
-			variable_values = {
-				csv_file_name = "stage4.csv"
-				flow = "script/custom_flows/Load_CSV"
-			}
 		}
 		{
 			id = "abb3ba29-2a11-4732-82c4-d091e15d0cb9"
@@ -1502,6 +1505,39 @@ flow = {
 				device = "keyboard"
 				device_number = 0
 				value = null
+			}
+		}
+		{
+			id = "e1086cb1-d2f0-49f6-ba32-ef4e3ce247cf"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "6ea7bc87-b84b-4fec-9f19-4d610fc1d45e:0"
+						node = "6ea7bc87-b84b-4fec-9f19-4d610fc1d45e"
+					}
+				]
+			}
+			type = "level_shutdown"
+		}
+		{
+			id = "6ea7bc87-b84b-4fec-9f19-4d610fc1d45e"
+			in_event_index = [
+				"destroy units CSV file"
+				"start_load_csv"
+			]
+			in_variables = {
+				csv_file_name = {
+					type = "string"
+				}
+			}
+			out_event_index = [
+				"done_load_csv"
+			]
+			type = "flow_subroutine"
+			variable_values = {
+				csv_file_name = "stage4.csv"
+				flow = "script/custom_flows/Load_CSV"
 			}
 		}
 	]

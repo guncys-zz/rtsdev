@@ -108,6 +108,14 @@ editor_metadata = {
 				ToItem = "In"
 				ToNode = "b6771c36-964d-4e20-b68b-e14fb17a94ad"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "34fe9618-404c-4c67-a99c-719e5c8e86ca"
+				Priority = 0
+				ToItem = "destroy units CSV file"
+				ToNode = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
+			}
 		]
 		Groups = [
 			{
@@ -342,6 +350,7 @@ editor_metadata = {
 				}
 				Id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
 				InEvents = [
+					"destroy units CSV file"
 					"start_load_csv"
 				]
 				InVariableNames = [
@@ -720,6 +729,19 @@ editor_metadata = {
 				}
 				Width = 160
 			}
+			{
+				Brief = "Passes an event when the level shuts down."
+				Class = "Stingray.Foundation.Flow.LevelShutdown"
+				Id = "34fe9618-404c-4c67-a99c-719e5c8e86ca"
+				NodeLocation = {
+					X = -580
+					Y = -340
+				}
+				Out = {
+				}
+				Title = "Level Shutdown"
+				Width = 160
+			}
 		]
 	}
 	Groups = [
@@ -1048,8 +1070,8 @@ flow = {
 						node = "e1ebe0cb-7c5a-4f11-8575-8d1eed73a7c1"
 					}
 					{
-						event = 0
-						id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7:0"
+						event = 1
+						id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7:1"
 						node = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
 					}
 					{
@@ -1178,6 +1200,7 @@ flow = {
 		{
 			id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
 			in_event_index = [
+				"destroy units CSV file"
 				"start_load_csv"
 			]
 			in_variables = {
@@ -1503,6 +1526,19 @@ flow = {
 				device_number = 0
 				value = null
 			}
+		}
+		{
+			id = "34fe9618-404c-4c67-a99c-719e5c8e86ca"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7:0"
+						node = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
+					}
+				]
+			}
+			type = "level_shutdown"
 		}
 	]
 }

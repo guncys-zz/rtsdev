@@ -146,6 +146,14 @@ editor_metadata = {
 				ToItem = "In"
 				ToNode = "56124abf-0c14-4df3-8ca6-32f17ddde406"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "7b4da74e-f9e8-45b9-867b-87c4533ddefa"
+				Priority = 0
+				ToItem = "destroy units CSV file"
+				ToNode = "90165171-fc61-4beb-80e4-01572a1e7628"
+			}
 		]
 		Groups = [
 			{
@@ -442,6 +450,7 @@ editor_metadata = {
 				}
 				Id = "90165171-fc61-4beb-80e4-01572a1e7628"
 				InEvents = [
+					"destroy units CSV file"
 					"start_load_csv"
 				]
 				InVariableNames = [
@@ -472,8 +481,8 @@ editor_metadata = {
 				Class = "Stingray.Foundation.Flow.LevelLoaded"
 				Id = "521d7dc9-9688-40d9-be08-d47ea675c8c2"
 				NodeLocation = {
-					X = -500
-					Y = -420
+					X = -520
+					Y = -300
 				}
 				Out = {
 				}
@@ -770,6 +779,19 @@ editor_metadata = {
 				Title = "Keyboard Button"
 				Value = {
 				}
+				Width = 160
+			}
+			{
+				Brief = "Passes an event when the level shuts down."
+				Class = "Stingray.Foundation.Flow.LevelShutdown"
+				Id = "7b4da74e-f9e8-45b9-867b-87c4533ddefa"
+				NodeLocation = {
+					X = -520
+					Y = -380
+				}
+				Out = {
+				}
+				Title = "Level Shutdown"
 				Width = 160
 			}
 		]
@@ -15769,6 +15791,7 @@ flow = {
 		{
 			id = "90165171-fc61-4beb-80e4-01572a1e7628"
 			in_event_index = [
+				"destroy units CSV file"
 				"start_load_csv"
 			]
 			in_variables = {
@@ -15790,8 +15813,8 @@ flow = {
 			out_events = {
 				out = [
 					{
-						event = 0
-						id = "90165171-fc61-4beb-80e4-01572a1e7628:0"
+						event = 1
+						id = "90165171-fc61-4beb-80e4-01572a1e7628:1"
 						node = "90165171-fc61-4beb-80e4-01572a1e7628"
 					}
 					{
@@ -16054,6 +16077,19 @@ flow = {
 				device_number = 0
 				value = null
 			}
+		}
+		{
+			id = "7b4da74e-f9e8-45b9-867b-87c4533ddefa"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "90165171-fc61-4beb-80e4-01572a1e7628:0"
+						node = "90165171-fc61-4beb-80e4-01572a1e7628"
+					}
+				]
+			}
+			type = "level_shutdown"
 		}
 	]
 }

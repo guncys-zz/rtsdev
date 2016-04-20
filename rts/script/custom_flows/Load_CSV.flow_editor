@@ -10,6 +10,15 @@ Connections = [
 		ToNode = "d0574422-2aa7-4869-92e6-54950e625990"
 	}
 	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "280c820a-4f28-4d0d-85a9-9cf30b97746a"
+		Id = "fdf074ce-ab6a-480e-88e1-9e98d11329de"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "014f1c9c-de7a-468e-a32c-3ae6555b761e"
+	}
+	{
 		Class = "Stingray.Flow.VariableConnection"
 		FromItem = "String"
 		FromNode = "803c0690-927d-4f14-a281-5d92fe4a073e"
@@ -28,31 +37,40 @@ Connections = [
 		Type = "String"
 	}
 	{
-		Class = "Stingray.Flow.EventConnection"
-		FromItem = "Out"
-		FromNode = "5e3d91c4-66cc-4c26-9780-a14de35d4028"
-		Id = "4091e6be-f6ec-4c9f-bb6e-5aa4e3597a44"
-		Priority = 0
-		ToItem = "In"
-		ToNode = "280c820a-4f28-4d0d-85a9-9cf30b97746a"
-	}
-	{
 		Class = "Stingray.Flow.VariableConnection"
 		FromItem = "Value"
 		FromNode = "e9a691c3-b7fa-4252-9be3-e9d90b9018bc"
-		Id = "8361540f-4e2a-4405-bff5-62421fd55415"
+		Id = "09d1aa7f-c3bc-4a82-b665-41de00ee56b3"
 		ToItem = "Path"
-		ToNode = "280c820a-4f28-4d0d-85a9-9cf30b97746a"
+		ToNode = "71133440-df49-4ef7-bde4-068786340d02"
 		Type = "String"
 	}
 	{
 		Class = "Stingray.Flow.EventConnection"
 		FromItem = "Out"
-		FromNode = "280c820a-4f28-4d0d-85a9-9cf30b97746a"
-		Id = "fdf074ce-ab6a-480e-88e1-9e98d11329de"
+		FromNode = "5e3d91c4-66cc-4c26-9780-a14de35d4028"
+		Id = "e878f344-79bf-4315-bd13-45ec49137f1c"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "71133440-df49-4ef7-bde4-068786340d02"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "71133440-df49-4ef7-bde4-068786340d02"
+		Id = "6cf4b999-3ff3-48dd-9492-a6c84062477b"
 		Priority = 0
 		ToItem = "In"
 		ToNode = "014f1c9c-de7a-468e-a32c-3ae6555b761e"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "bd649338-71f0-4b5a-96fa-21567ffb6b0c"
+		Id = "de00d123-5329-4307-bd77-1152cabe6f58"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "5da8ead6-5476-4db4-a97f-9cc68c237ef3"
 	}
 ]
 Groups = [
@@ -65,6 +83,17 @@ Groups = [
 			"d6c7b7c0-82c6-4f8c-b501-4e04633442ec"
 		]
 		Title = "CSVのディレクトリの絶対パスを指定。パスの最後に必ず\\をつけてください。"
+	}
+	{
+		Collapsed = false
+		Groups = [
+		]
+		Id = "d0b0daf8-2e77-4aa0-85f8-63467dde63b3"
+		Nodes = [
+			"bd649338-71f0-4b5a-96fa-21567ffb6b0c"
+			"5da8ead6-5476-4db4-a97f-9cc68c237ef3"
+		]
+		Title = "CSVで読み込んだUnitを削除する処理。これをしないと別のレベルに移動してもUnitが残ってしまう。"
 	}
 ]
 Nodes = [
@@ -79,64 +108,6 @@ Nodes = [
 		NodeLocation = {
 			X = 1320
 			Y = 620
-		}
-		Width = 160
-	}
-	{
-		Arguments = [
-			{
-				RawName = "Path"
-				Type = "string"
-				Variable = {
-					Class = "Stingray.Flow.InVariableString"
-				}
-			}
-		]
-		Class = "Stingray.Flow.CustomScriptNode"
-		FlowNodesResource = "script/custom_nodes/load_csv"
-		FlowNodesResourceKey = "flow_nodes_resource"
-		Id = "280c820a-4f28-4d0d-85a9-9cf30b97746a"
-		InEvents = [
-			"In"
-		]
-		IsQuery = false
-		Name = "Load CSV file"
-		NodeLocation = {
-			X = 1120
-			Y = 580
-		}
-		OutEvents = [
-			"Out"
-		]
-		ReturnValues = [
-		]
-		Width = 160
-	}
-	{
-		Class = "Stingray.Flow.ExternalEvent"
-		EventName = {
-			Value = "start_load_csv"
-		}
-		Id = "5e3d91c4-66cc-4c26-9780-a14de35d4028"
-		NodeLocation = {
-			X = 740
-			Y = 660
-		}
-		Out = {
-		}
-		Width = 220
-	}
-	{
-		Class = "Stingray.Flow.ExternalInputString"
-		Id = "803c0690-927d-4f14-a281-5d92fe4a073e"
-		Name = {
-			Value = "csv_file_name"
-		}
-		NodeLocation = {
-			X = 540
-			Y = 580
-		}
-		String = {
 		}
 		Width = 160
 	}
@@ -167,6 +138,101 @@ Nodes = [
 		}
 		Value = {
 		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ExternalInputString"
+		Id = "803c0690-927d-4f14-a281-5d92fe4a073e"
+		Name = {
+			Value = "csv_file_name"
+		}
+		NodeLocation = {
+			X = 540
+			Y = 580
+		}
+		String = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ExternalEvent"
+		EventName = {
+			Value = "start_load_csv"
+		}
+		Id = "5e3d91c4-66cc-4c26-9780-a14de35d4028"
+		NodeLocation = {
+			X = 740
+			Y = 660
+		}
+		Out = {
+		}
+		Width = 200
+	}
+	{
+		Class = "Stingray.Flow.ExternalEvent"
+		EventName = {
+			Value = "destroy units CSV file"
+		}
+		Id = "bd649338-71f0-4b5a-96fa-21567ffb6b0c"
+		NodeLocation = {
+			X = 760
+			Y = 880
+		}
+		Out = {
+		}
+		Width = 260
+	}
+	{
+		Arguments = [
+			{
+				RawName = "Path"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.InVariableString"
+				}
+			}
+		]
+		Class = "Stingray.Flow.CustomScriptNode"
+		FlowNodesResource = "script/custom_nodes/load_csv"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "71133440-df49-4ef7-bde4-068786340d02"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "Spawn units CSV file"
+		NodeLocation = {
+			X = 1080
+			Y = 620
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = [
+		]
+		Width = 160
+	}
+	{
+		Arguments = [
+		]
+		Class = "Stingray.Flow.CustomScriptNode"
+		FlowNodesResource = "script/custom_nodes/load_csv"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "5da8ead6-5476-4db4-a97f-9cc68c237ef3"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "Destory units CSV file"
+		NodeLocation = {
+			X = 1540
+			Y = 900
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = [
+		]
 		Width = 160
 	}
 ]
