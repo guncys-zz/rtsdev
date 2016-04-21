@@ -1,7 +1,7 @@
 require 'core/appkit/lua/class'
 require 'core/appkit/lua/app'
 
-local damage_anim = 0
+local damage_anim = 1
 
 UI = UI or{}
 
@@ -14,7 +14,7 @@ function PlayUI.damage(hp)
 	}
 	event.name = "damage"
 	
-	local i = 1
+	local i = 0
 	while i < 12 do
 	    damage_anim = damage_anim + 1
 	    event.data =  {value = damage_anim}
@@ -22,3 +22,13 @@ function PlayUI.damage(hp)
 	    i = i + 1
     end
 end
+
+function PlayUI.move_player(position)
+    --プレイヤーの現在地から、UI上での長さでどのあたりかを求めて、そこにプレイヤーキャラを移動
+end
+
+function PlayUI.move_cat(position)
+    --猫の仮の現在地から、UI上での長さでどのあたりかを求めて、そこに猫キャラを移動
+end
+
+return UI

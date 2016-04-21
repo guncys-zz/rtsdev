@@ -2281,6 +2281,42 @@ Connections = [
 		Class = "Stingray.Flow.VariableConnection"
 		FromItem = "Value"
 		FromNode = "6f361b76-429e-458c-8bc7-b01a55fd2041"
+		Id = "b416bfd5-a826-4df1-880d-1f87ca8b6791"
+		ToItem = "HP"
+		ToNode = "a55620fe-b4ef-45b8-97b7-1ce2e7d94fba"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "71c8a25f-219e-4075-aba0-f105322cda09"
+		Id = "31a30fb8-817f-44c4-a735-5f362e924d57"
+		Priority = 0
+		ToItem = "DamageIn"
+		ToNode = "a55620fe-b4ef-45b8-97b7-1ce2e7d94fba"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "6f361b76-429e-458c-8bc7-b01a55fd2041"
+		Id = "3197ef73-8141-420e-8a40-d1cc8476877f"
+		ToItem = "HP"
+		ToNode = "6ce6126f-2701-4067-a2b0-92f67b6fb2cb"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "71c8a25f-219e-4075-aba0-f105322cda09"
+		Id = "00fbda66-70d2-4233-bcac-5c948d45a8bd"
+		Priority = 0
+		ToItem = "DamageIn"
+		ToNode = "6ce6126f-2701-4067-a2b0-92f67b6fb2cb"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "6f361b76-429e-458c-8bc7-b01a55fd2041"
 		Id = "027e14fc-fc0b-4a85-9ac4-267e8ab58810"
 		ToItem = "Numeric"
 		ToNode = "273bbd3f-9356-4225-a36d-d8b440fda8a3"
@@ -3082,19 +3118,19 @@ Connections = [
 		Class = "Stingray.Flow.VariableConnection"
 		FromItem = "Value"
 		FromNode = "6f361b76-429e-458c-8bc7-b01a55fd2041"
-		Id = "b416bfd5-a826-4df1-880d-1f87ca8b6791"
+		Id = "3ed76b8b-9afa-4272-b50c-67b9eeef3b05"
 		ToItem = "HP"
-		ToNode = "a55620fe-b4ef-45b8-97b7-1ce2e7d94fba"
+		ToNode = "49bee8ee-15f7-4147-930a-15d7aa37df84"
 		Type = "Float"
 	}
 	{
 		Class = "Stingray.Flow.EventConnection"
 		FromItem = "Out"
 		FromNode = "71c8a25f-219e-4075-aba0-f105322cda09"
-		Id = "31a30fb8-817f-44c4-a735-5f362e924d57"
+		Id = "cb09ee14-5562-4a48-811d-251b14ce3206"
 		Priority = 0
 		ToItem = "DamageIn"
-		ToNode = "a55620fe-b4ef-45b8-97b7-1ce2e7d94fba"
+		ToNode = "49bee8ee-15f7-4147-930a-15d7aa37df84"
 	}
 ]
 Groups = [
@@ -5143,7 +5179,7 @@ Nodes = [
 		Flow = {
 			Value = "script/custom_flows/Damage_Player"
 		}
-		Id = "a55620fe-b4ef-45b8-97b7-1ce2e7d94fba"
+		Id = "49bee8ee-15f7-4147-930a-15d7aa37df84"
 		InEvents = [
 			"DamageIn"
 		]
@@ -5156,8 +5192,8 @@ Nodes = [
 			}
 		]
 		NodeLocation = {
-			X = -1260
-			Y = 720
+			X = -1160
+			Y = 820
 		}
 		OutEvents = [
 			"DamageOut"
