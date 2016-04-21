@@ -32,36 +32,6 @@ Groups = [
 ]
 Nodes = [
 	{
-		Arguments = [
-			{
-				RawName = "HP"
-				Type = "float"
-				Variable = {
-					Class = "Stingray.Flow.InVariableFloat"
-				}
-			}
-		]
-		Class = "Stingray.Flow.CustomScriptNode"
-		FlowNodesResource = "script/custom_nodes/damage_player"
-		FlowNodesResourceKey = "flow_nodes_resource"
-		Id = "5e3c0e78-da60-4a78-b99e-2ae45b58b9b6"
-		InEvents = [
-			"In"
-		]
-		IsQuery = false
-		Name = "Damage Player"
-		NodeLocation = {
-			X = 560
-			Y = 180
-		}
-		OutEvents = [
-			"Out"
-		]
-		ReturnValues = [
-		]
-		Width = 160
-	}
-	{
 		Class = "Stingray.Flow.ExternalEvent"
 		EventName = {
 			Value = "DamageIn"
@@ -101,6 +71,36 @@ Nodes = [
 		}
 		Numeric = {
 		}
+		Width = 160
+	}
+	{
+		Arguments = [
+			{
+				RawName = "HP"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Flow.InVariableFloat"
+				}
+			}
+		]
+		Class = "Stingray.Flow.CustomScriptNode"
+		FlowNodesResource = "script/custom_nodes/damage_player"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "5e3c0e78-da60-4a78-b99e-2ae45b58b9b6"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "Damage Player"
+		NodeLocation = {
+			X = 580
+			Y = 160
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = [
+		]
 		Width = 160
 	}
 ]

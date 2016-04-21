@@ -12,13 +12,7 @@ function PlayUI.damage(hp)
 		name = nil,
 		data = nil
 	}
-	if damage_anim < 12 then
-	    event.name = "damage_1"
-    elseif damage_anim < 24 then
-        event.name = "damage_2"
-    elseif damage_anim < 36 then
-        event.name = "damage_3"
-    end
+	event.name = "damage"
 	
 	local i = 1
 	while i < 12 do

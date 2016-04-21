@@ -16,7 +16,7 @@ scaleform.AnimationComponent.stop(hitpointAnimation)
 --外部でe.data.valueの値を1-36まで変えてあげることで、
 --1-12までで1ダメージ、13-24までで2ダメージ、25-36までで3ダメージを表現
 local customListener = scaleform.EventListener.create(customListener, function(e)
-if e.name == "damage_1" or e.name == "damage_2" or e.name == "damage_3" then
+if e.name == "damage" then
     scaleform.AnimationComponent.goto_frame(hitpointAnimation, e.data.value)
 end
 end );
