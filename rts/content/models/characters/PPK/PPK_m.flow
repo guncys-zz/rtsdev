@@ -1246,6 +1246,11 @@ nodes = [
 					id = "74eb63c1-b379-43cb-8279-ae3608db3497:0"
 					node = "74eb63c1-b379-43cb-8279-ae3608db3497"
 				}
+				{
+					event = 0
+					id = "a55620fe-b4ef-45b8-97b7-1ce2e7d94fba:0"
+					node = "a55620fe-b4ef-45b8-97b7-1ce2e7d94fba"
+				}
 			]
 		}
 		type = "set_unit_numeric_data"
@@ -2236,6 +2241,27 @@ nodes = [
 			bool = true
 			name = "IsMove"
 			scope = "local"
+		}
+	}
+	{
+		id = "a55620fe-b4ef-45b8-97b7-1ce2e7d94fba"
+		in_event_index = [
+			"DamageIn"
+		]
+		in_variables = {
+			h_p = {
+				node = "6f361b76-429e-458c-8bc7-b01a55fd2041"
+				type = "float"
+				variable = "value"
+			}
+		}
+		out_event_index = [
+			"DamageOut"
+		]
+		type = "flow_subroutine"
+		variable_values = {
+			flow = "script/custom_flows/Damage_Player"
+			h_p = null
 		}
 	}
 	{

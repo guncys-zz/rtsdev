@@ -17,7 +17,7 @@ local GameUI = Project.GameUI
 GameUI.custom_listener = GameUI.custom_listener or nil
 
 local start_time = 0
-local damage_anim = 1   --ダメージのアニメーション制御
+--local damage_anim = 1   --ダメージのアニメーション制御
 local damage_bool = false
 --GameUIの呼び出し
 function GameUI.start()
@@ -91,7 +91,7 @@ function GameUI.update(object, dt)
 	if GameUI.action == nil  then
 		local time = stingray.World.time(SimpleProject.world)
 		local p = stingray.Application.platform()
-		update_hp(dt)
+		--update_hp(dt)
 		if time - start_time > 1 then
 		--[[	if Appkit.Util.is_pc() then
 				if stingray.Keyboard.pressed(stingray.Keyboard.button_id("1")) then
@@ -114,32 +114,32 @@ end
 
 --hpのアニメーション制御関数
 function update_hp(dt)
-    local event = { --eventは関数内localではなく、このファイル内でアクセスできるようにする
-		eventId = scaleform.EventTypes.Custom,
-		name = nil,
-		data = nil
-	}
+--    local event = { --eventは関数内localではなく、このファイル内でアクセスできるようにする
+--		eventId = scaleform.EventTypes.Custom,
+--		name = nil,
+--		data = nil
+--	}
     --キーボード入力をテスト用に受け取る
-    if stingray.Keyboard.released(stingray.Keyboard.button_index("d")) or damage_bool == true then--damage_boolの判定はここにあるべきではない
-		if damage_anim < 12 then
-		    event.name = "damage_1"
-		    damage_bool = true
-	    elseif damage_anim < 24 then
-	        event.name = "damage_2"
-		    damage_bool = true
-        elseif damage_anim < 36 then
-            event.name = "damage_3"
-		    damage_bool = true
-        end
-	end
+--    if stingray.Keyboard.released(stingray.Keyboard.button_index("d")) or damage_bool == true then--damage_boolの判定はここにあるべきではない
+--		if damage_anim < 12 then
+--		    event.name = "damage_1"
+--		    damage_bool = true
+--	    elseif damage_anim < 24 then
+--	        event.name = "damage_2"
+--		    damage_bool = true
+  --      elseif damage_anim < 36 then
+    --        event.name = "damage_3"
+	--	    damage_bool = true
+      --  end
+--	end
 	
-	if damage_bool == true then
-	    damage_anim = damage_anim + 1
-	    event.data =  {value = damage_anim}
-	    scaleform.Stage.dispatch_event(event)
-	    if damage_anim == 12 or damage_anim == 24 or damage_anim == 36 then
-	        damage_bool = false
-        end
-    end
+--	if damage_bool == true then
+--	    damage_anim = damage_anim + 1
+--	    event.data =  {value = damage_anim}
+--	    scaleform.Stage.dispatch_event(event)
+--	    if damage_anim == 12 or damage_anim == 24 or damage_anim == 36 then
+--	        damage_bool = false
+  --      end
+ --   end
 end
 return GameUI

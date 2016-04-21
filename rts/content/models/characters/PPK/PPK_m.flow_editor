@@ -3078,6 +3078,24 @@ Connections = [
 		ToNode = "037b76ea-ecef-42c0-a556-60eb2957a2da"
 		Type = "Bool"
 	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "6f361b76-429e-458c-8bc7-b01a55fd2041"
+		Id = "b416bfd5-a826-4df1-880d-1f87ca8b6791"
+		ToItem = "HP"
+		ToNode = "a55620fe-b4ef-45b8-97b7-1ce2e7d94fba"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "71c8a25f-219e-4075-aba0-f105322cda09"
+		Id = "31a30fb8-817f-44c4-a735-5f362e924d57"
+		Priority = 0
+		ToItem = "DamageIn"
+		ToNode = "a55620fe-b4ef-45b8-97b7-1ce2e7d94fba"
+	}
 ]
 Groups = [
 	{
@@ -5114,6 +5132,40 @@ Nodes = [
 		}
 		Set = {
 		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.FlowSubroutine"
+		Disable = {
+		}
+		Enable = {
+		}
+		Flow = {
+			Value = "script/custom_flows/Damage_Player"
+		}
+		Id = "a55620fe-b4ef-45b8-97b7-1ce2e7d94fba"
+		InEvents = [
+			"DamageIn"
+		]
+		InVariableNames = [
+			"HP"
+		]
+		InVariables = [
+			{
+				Class = "Stingray.Flow.InVariableFloat"
+			}
+		]
+		NodeLocation = {
+			X = -1200
+			Y = 660
+		}
+		OutEvents = [
+			"DamageOut"
+		]
+		OutVariableNames = [
+		]
+		OutVariables = [
+		]
 		Width = 160
 	}
 ]

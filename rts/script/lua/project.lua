@@ -43,8 +43,8 @@ function Project.on_level_load_pre_flow()
 		MainMenu.start()
     elseif level_name == Project.level_names.testmap then
        --testmapならgameuiスクリプトを読み込んで、Start関数を呼ぶ
-        --local GameUI = require 'script/lua/gameui'
-        --GameUI.start()
+        local GameUI = require 'script/lua/gameui'
+        GameUI.start()
         --Flowからの呼び出し実験のために上2行をコメントアウト
     end
 end

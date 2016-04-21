@@ -1,0 +1,11 @@
+nodes = [
+	{
+		name = "Damage Player"
+		args = {
+			HP = "float"
+		}
+		function = "PlayUI.damage"
+		category = "UI"
+		returns = {}
+	}
+]

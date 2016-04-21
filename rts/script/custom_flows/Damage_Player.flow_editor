@@ -1,0 +1,106 @@
+
+Connections = [
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "d4f616ff-5736-4128-b598-ca7ba2b01f43"
+		Id = "e361ad25-7122-4e11-a2c9-54cf5ebfc251"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "5e3c0e78-da60-4a78-b99e-2ae45b58b9b6"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "5e3c0e78-da60-4a78-b99e-2ae45b58b9b6"
+		Id = "1c584af9-2a0b-4a12-a243-bdb182ed015d"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "d4fd08e7-a53d-4a11-b7c4-4bed68f4932d"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Numeric"
+		FromNode = "7224e68f-4bc1-44c5-8bd5-04d78df07538"
+		Id = "139bdf6c-2009-4fd3-91cb-138f797e28f3"
+		ToItem = "HP"
+		ToNode = "5e3c0e78-da60-4a78-b99e-2ae45b58b9b6"
+		Type = "Float"
+	}
+]
+Groups = [
+]
+Nodes = [
+	{
+		Arguments = [
+			{
+				RawName = "HP"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Flow.InVariableFloat"
+				}
+			}
+		]
+		Class = "Stingray.Flow.CustomScriptNode"
+		FlowNodesResource = "script/custom_nodes/damage_player"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "5e3c0e78-da60-4a78-b99e-2ae45b58b9b6"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "Damage Player"
+		NodeLocation = {
+			X = 560
+			Y = 180
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = [
+		]
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ExternalEvent"
+		EventName = {
+			Value = "DamageIn"
+		}
+		Id = "d4f616ff-5736-4128-b598-ca7ba2b01f43"
+		NodeLocation = {
+			X = 340
+			Y = 240
+		}
+		Out = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.LevelFlowEvent"
+		Event = {
+			Value = "DamageOut"
+		}
+		Id = "d4fd08e7-a53d-4a11-b7c4-4bed68f4932d"
+		In = {
+		}
+		NodeLocation = {
+			X = 820
+			Y = 280
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ExternalInputNumeric"
+		Id = "7224e68f-4bc1-44c5-8bd5-04d78df07538"
+		Name = {
+			Value = "HP"
+		}
+		NodeLocation = {
+			X = 260
+			Y = 140
+		}
+		Numeric = {
+		}
+		Width = 160
+	}
+]
