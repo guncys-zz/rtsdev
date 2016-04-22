@@ -3127,7 +3127,7 @@ Connections = [
 		Class = "Stingray.Flow.EventConnection"
 		FromItem = "Out"
 		FromNode = "71c8a25f-219e-4075-aba0-f105322cda09"
-		Id = "cb09ee14-5562-4a48-811d-251b14ce3206"
+		Id = "762ed3d8-ace6-4473-8908-21073b0d8a46"
 		Priority = 0
 		ToItem = "DamageIn"
 		ToNode = "49bee8ee-15f7-4147-930a-15d7aa37df84"
@@ -3326,6 +3326,16 @@ Groups = [
 			"377bd1e8-cd70-43d8-9b6f-c38ff27fb869"
 		]
 		Title = "Runのモーションの再生が始まったらstateをrunに変更"
+	}
+	{
+		Collapsed = false
+		Groups = [
+		]
+		Id = "84e4451d-fd76-481b-b42c-6d66f6e2372d"
+		Nodes = [
+			"49bee8ee-15f7-4147-930a-15d7aa37df84"
+		]
+		Title = "DamageInにトリガーしたらUIは動くけど、一回のダメージで1減っているとかではない気がする。エラーでるのでトリガーはまだしない。"
 	}
 ]
 Nodes = [
@@ -5192,7 +5202,7 @@ Nodes = [
 			}
 		]
 		NodeLocation = {
-			X = -1160
+			X = -1240
 			Y = 820
 		}
 		OutEvents = [

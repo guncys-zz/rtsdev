@@ -81,6 +81,33 @@ Connections = [
 		ToItem = "In"
 		ToNode = "d4fd08e7-a53d-4a11-b7c4-4bed68f4932d"
 	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Numeric"
+		FromNode = "7224e68f-4bc1-44c5-8bd5-04d78df07538"
+		Id = "fb9b3e2f-9dea-40c4-85ec-1a6f5f910f7c"
+		ToItem = "HP"
+		ToNode = "445f53ac-a0da-49fd-a812-31a573f12144"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "d4f616ff-5736-4128-b598-ca7ba2b01f43"
+		Id = "384d389c-b25c-401b-a6ed-cfd3e5e6e2a7"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "445f53ac-a0da-49fd-a812-31a573f12144"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "445f53ac-a0da-49fd-a812-31a573f12144"
+		Id = "656cda24-5898-49de-b6c6-f9153cf14755"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "d4fd08e7-a53d-4a11-b7c4-4bed68f4932d"
+	}
 ]
 Groups = [
 ]
@@ -140,7 +167,7 @@ Nodes = [
 		Class = "Stingray.Flow.CustomScriptNode"
 		FlowNodesResource = "script/custom_nodes/damage_player"
 		FlowNodesResourceKey = "flow_nodes_resource"
-		Id = "fe3dcf93-933f-4eba-9a74-9e86c5f20ba1"
+		Id = "445f53ac-a0da-49fd-a812-31a573f12144"
 		InEvents = [
 			"In"
 		]
@@ -148,7 +175,7 @@ Nodes = [
 		Name = "Damage Player"
 		NodeLocation = {
 			X = 740
-			Y = 60
+			Y = 20
 		}
 		OutEvents = [
 			"Out"

@@ -7,6 +7,7 @@ Project = Project or {}
 
 require 'script/lua/flow_callbacks'
 require 'script/lua/tools'
+require 'script/lua/ui' --UI用のスクリプトのインポート
 
 --プロジェクトで使用するlevelにアクセスするための名前定義
 Project.level_names = {
