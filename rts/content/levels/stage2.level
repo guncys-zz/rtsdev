@@ -1002,14 +1002,13 @@ editor_metadata = {
 		{
 			Cameras = {
 			}
-			Id = "91ab1808-0f2d-44b7-a234-652e3db51857"
-			Layer = ""
+			Id = "507a0d59-487d-4d19-a68f-d2eafba06930"
+			Layer = "Default"
 			Lights = {
 			}
-			Material = "content/models/terrain/sample_ground/sample_ground"
 			Materials = {
 			}
-			Name = "content/models/terrain/sample_ground/sample_ground"
+			Name = "forest_ground"
 			OverridePoses = {
 			}
 			Pivot = {
@@ -1019,11 +1018,11 @@ editor_metadata = {
 			}
 			Pos = {
 				X = 0
-				Y = 0
+				Y = -2
 				Z = 0
 			}
 			Rot = {
-				W = 1
+				W = -1
 				X = 0
 				Y = 0
 				Z = 0
@@ -1035,7 +1034,155 @@ editor_metadata = {
 			}
 			ScriptData = {
 			}
-			Type = "content/models/terrain/sample_ground/sample_ground"
+			Type = "content/models/stage2/forest_ground"
+		}
+		{
+			Cameras = {
+			}
+			Id = "92d84716-40b9-477f-b7bb-f949d7fb919d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "forest_ground1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 48
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/forest_ground"
+		}
+		{
+			Cameras = {
+			}
+			Id = "cee633a7-a2bd-439a-88e9-60bb44a65a70"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "forest_ground2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 98
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/forest_ground"
+		}
+		{
+			Cameras = {
+			}
+			Id = "81f23beb-608b-4be0-b284-b9f5bd5ea2a5"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "forest_ground3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 148
+				Z = -2E-06
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/forest_ground"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c3c820d0-1e2b-462b-b407-6dd0b75c6335"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "forest_ground4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 198
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/forest_ground"
 		}
 	]
 	Volumes = [
@@ -1721,30 +1868,150 @@ units = [
 		}
 		data = {
 		}
-		id = "91ab1808-0f2d-44b7-a234-652e3db51857"
+		id = "507a0d59-487d-4d19-a68f-d2eafba06930"
 		lights = {
 		}
-		material = "content/models/terrain/sample_ground/sample_ground"
+		material = ""
 		materials = {
 		}
-		name = "content/models/terrain/sample_ground/sample_ground"
+		name = "forest_ground"
 		pos = [
 			0
-			0
+			-2
 			0
 		]
 		rot = [
 			0
 			0
 			0
-			1
+			-1
 		]
 		scl = [
 			1
 			1
 			1
 		]
-		type = "content/models/terrain/sample_ground/sample_ground"
+		type = "content/models/stage2/forest_ground"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "92d84716-40b9-477f-b7bb-f949d7fb919d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "forest_ground1"
+		pos = [
+			0
+			48
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage2/forest_ground"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "cee633a7-a2bd-439a-88e9-60bb44a65a70"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "forest_ground2"
+		pos = [
+			0
+			98
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage2/forest_ground"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "81f23beb-608b-4be0-b284-b9f5bd5ea2a5"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "forest_ground3"
+		pos = [
+			0
+			148
+			-2E-06
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage2/forest_ground"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c3c820d0-1e2b-462b-b407-6dd0b75c6335"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "forest_ground4"
+		pos = [
+			0
+			198
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage2/forest_ground"
 	}
 ]
 volumes = [
