@@ -858,37 +858,6 @@ nodes = [
 		]
 	}
 	{
-		id = "4dfe2112-d662-4c02-9546-b0e9cf759d57"
-		in_variables = {
-			key = {
-				type = "string"
-			}
-			unit = {
-				node = "11111111-2222-3333-4444-555555555555"
-				type = "unit"
-				variable = "unit"
-			}
-			value = {
-				type = "float"
-			}
-		}
-		out_events = {
-			out = [
-				{
-					event = 0
-					id = "5ca42444-019a-4feb-84c9-53e50736fec2:0"
-					node = "5ca42444-019a-4feb-84c9-53e50736fec2"
-				}
-			]
-		}
-		type = "set_unit_numeric_data"
-		variable_values = {
-			key = "Speed"
-			unit = null
-			value = -3
-		}
-	}
-	{
 		id = "4ed017e0-6d39-4c2b-9acf-30a955600d1c"
 		in_variables = {
 			a = {
@@ -1013,33 +982,6 @@ nodes = [
 		type = "delay"
 		variable_values = {
 			time = 2
-		}
-	}
-	{
-		id = "5ca42444-019a-4feb-84c9-53e50736fec2"
-		in_variables = {
-			mover_name = {
-				type = "string"
-			}
-			unit = {
-				node = "11111111-2222-3333-4444-555555555555"
-				type = "unit"
-				variable = "unit"
-			}
-		}
-		out_events = {
-			out = [
-				{
-					event = 0
-					id = "b0014a5d-dc97-492a-aaa4-814e9e459420:0"
-					node = "b0014a5d-dc97-492a-aaa4-814e9e459420"
-				}
-			]
-		}
-		type = "set_unit_mover"
-		variable_values = {
-			mover_name = "mover"
-			unit = null
 		}
 	}
 	{
@@ -1839,28 +1781,6 @@ nodes = [
 		}
 	}
 	{
-		id = "c7b743d3-cf9f-4f5a-9b1c-7ae11af00f03"
-		in_variables = {
-			key = {
-				type = "string"
-			}
-			unit = {
-				node = "11111111-2222-3333-4444-555555555555"
-				type = "unit"
-				variable = "unit"
-			}
-			value = {
-				type = "float"
-			}
-		}
-		type = "set_unit_numeric_data"
-		variable_values = {
-			key = "Speed"
-			unit = null
-			value = 4.8
-		}
-	}
-	{
 		id = "c87c7756-7496-4c56-9d55-db5fc09bb57b"
 		out_events = {
 			out = [
@@ -2310,6 +2230,138 @@ nodes = [
 			button_name = "g"
 			device = "keyboard"
 			device_number = 0
+			value = null
+		}
+	}
+	{
+		id = "4dfe2112-d662-4c02-9546-b0e9cf759d57"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+			value = {
+				node = "67fe372c-fb92-4ac4-9dd4-b0a5afc76668"
+				type = "float"
+				variable = "value"
+			}
+		}
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "5ca42444-019a-4feb-84c9-53e50736fec2:0"
+					node = "5ca42444-019a-4feb-84c9-53e50736fec2"
+				}
+			]
+		}
+		type = "set_unit_numeric_data"
+		variable_values = {
+			key = "Speed"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "5ca42444-019a-4feb-84c9-53e50736fec2"
+		in_variables = {
+			mover_name = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "b0014a5d-dc97-492a-aaa4-814e9e459420:0"
+					node = "b0014a5d-dc97-492a-aaa4-814e9e459420"
+				}
+			]
+		}
+		type = "set_unit_mover"
+		variable_values = {
+			mover_name = "mover"
+			unit = null
+		}
+	}
+	{
+		id = "c7b743d3-cf9f-4f5a-9b1c-7ae11af00f03"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+			value = {
+				node = "e8e9acaa-b676-400e-acb9-87a8810acc00"
+				type = "float"
+				variable = "value"
+			}
+		}
+		type = "set_unit_numeric_data"
+		variable_values = {
+			key = "Speed"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "67fe372c-fb92-4ac4-9dd4-b0a5afc76668"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "get_unit_numeric_data"
+		variable_values = {
+			key = "KnockBack"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "e8e9acaa-b676-400e-acb9-87a8810acc00"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "get_unit_numeric_data"
+		variable_values = {
+			key = "RunSpeed"
+			unit = null
 			value = null
 		}
 	}

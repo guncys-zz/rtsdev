@@ -3168,6 +3168,24 @@ Connections = [
 		ToItem = "UpdateGaugeIn"
 		ToNode = "753f4c3b-2a8e-48d4-b1ad-5ccf61a6527d"
 	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "67fe372c-fb92-4ac4-9dd4-b0a5afc76668"
+		Id = "3ae67b1f-38da-46d9-a0c8-622e74b911a3"
+		ToItem = "Value"
+		ToNode = "4dfe2112-d662-4c02-9546-b0e9cf759d57"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "e8e9acaa-b676-400e-acb9-87a8810acc00"
+		Id = "449d9d63-1d49-409b-8317-cdce63fee813"
+		ToItem = "Value"
+		ToNode = "c7b743d3-cf9f-4f5a-9b1c-7ae11af00f03"
+		Type = "Float"
+	}
 ]
 Groups = [
 	{
@@ -3332,6 +3350,7 @@ Groups = [
 			"4dfe2112-d662-4c02-9546-b0e9cf759d57"
 			"c7b743d3-cf9f-4f5a-9b1c-7ae11af00f03"
 			"b0014a5d-dc97-492a-aaa4-814e9e459420"
+			"67fe372c-fb92-4ac4-9dd4-b0a5afc76668"
 		]
 		Title = "暫定対応。ダメージを受けると少しバックする。イーズインイーズアウトでやりたい。"
 	}
@@ -4112,28 +4131,6 @@ Nodes = [
 		Width = 160
 	}
 	{
-		Class = "Stingray.Flow.SetUnitNumericData"
-		Id = "4dfe2112-d662-4c02-9546-b0e9cf759d57"
-		In = {
-		}
-		Key = {
-			Value = "Speed"
-		}
-		NodeLocation = {
-			X = -880
-			Y = 1440
-		}
-		Out = {
-		}
-		Unit = {
-			UseMyUnit = true
-		}
-		Value = {
-			Value = -3
-		}
-		Width = 160
-	}
-	{
 		A = {
 		}
 		B = {
@@ -4232,25 +4229,6 @@ Nodes = [
 			Value = 2
 		}
 		Width = 140
-	}
-	{
-		Class = "Stingray.Flow.SetUnitMover"
-		Id = "5ca42444-019a-4feb-84c9-53e50736fec2"
-		In = {
-		}
-		MoverName = {
-			Value = "mover"
-		}
-		NodeLocation = {
-			X = -620
-			Y = 1460
-		}
-		Out = {
-		}
-		Unit = {
-			UseMyUnit = true
-		}
-		Width = 160
 	}
 	{
 		Class = "Stingray.Flow.GetUnitNumericData"
@@ -4943,28 +4921,6 @@ Nodes = [
 		Width = 160
 	}
 	{
-		Class = "Stingray.Flow.SetUnitNumericData"
-		Id = "c7b743d3-cf9f-4f5a-9b1c-7ae11af00f03"
-		In = {
-		}
-		Key = {
-			Value = "Speed"
-		}
-		NodeLocation = {
-			X = -880
-			Y = 1580
-		}
-		Out = {
-		}
-		Unit = {
-			UseMyUnit = true
-		}
-		Value = {
-			Value = 4.8
-		}
-		Width = 160
-	}
-	{
 		Class = "Stingray.Flow.Once"
 		Id = "c87c7756-7496-4c56-9d55-db5fc09bb57b"
 		In = {
@@ -5315,6 +5271,101 @@ Nodes = [
 		Pressed = {
 		}
 		Released = {
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.SetUnitNumericData"
+		Id = "4dfe2112-d662-4c02-9546-b0e9cf759d57"
+		In = {
+		}
+		Key = {
+			Value = "Speed"
+		}
+		NodeLocation = {
+			X = -700
+			Y = 1460
+		}
+		Out = {
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.SetUnitMover"
+		Id = "5ca42444-019a-4feb-84c9-53e50736fec2"
+		In = {
+		}
+		MoverName = {
+			Value = "mover"
+		}
+		NodeLocation = {
+			X = -520
+			Y = 1460
+		}
+		Out = {
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.SetUnitNumericData"
+		Id = "c7b743d3-cf9f-4f5a-9b1c-7ae11af00f03"
+		In = {
+		}
+		Key = {
+			Value = "Speed"
+		}
+		NodeLocation = {
+			X = -700
+			Y = 1600
+		}
+		Out = {
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.GetUnitNumericData"
+		Id = "67fe372c-fb92-4ac4-9dd4-b0a5afc76668"
+		Key = {
+			Value = "KnockBack"
+		}
+		NodeLocation = {
+			X = -900
+			Y = 1420
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.GetUnitNumericData"
+		Id = "e8e9acaa-b676-400e-acb9-87a8810acc00"
+		Key = {
+			Value = "RunSpeed"
+		}
+		NodeLocation = {
+			X = -900
+			Y = 1560
+		}
+		Unit = {
+			UseMyUnit = true
 		}
 		Value = {
 		}
