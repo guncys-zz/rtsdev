@@ -1,0 +1,106 @@
+
+Connections = [
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "b0246018-5b47-48de-9ab0-33a3ea5598d6"
+		Id = "6593e6c3-ea2a-4abd-b1d2-a7853c0d0e28"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "579bbf0d-6501-429a-934e-7d99099cf978"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "579bbf0d-6501-429a-934e-7d99099cf978"
+		Id = "0cfc37dc-c765-4bb8-9038-a824a62ae6b7"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "01b73c1c-8a74-4070-81bb-cddce0bccef3"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Numeric"
+		FromNode = "3519bb93-2557-4401-b455-c99afe093f1e"
+		Id = "5e623d9f-11f4-4969-8744-f374140d54ac"
+		ToItem = "Position"
+		ToNode = "579bbf0d-6501-429a-934e-7d99099cf978"
+		Type = "Float"
+	}
+]
+Groups = [
+]
+Nodes = [
+	{
+		Arguments = [
+			{
+				RawName = "Position"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Flow.InVariableFloat"
+				}
+			}
+		]
+		Class = "Stingray.Flow.CustomScriptNode"
+		FlowNodesResource = "script/custom_nodes/update_gauge"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "579bbf0d-6501-429a-934e-7d99099cf978"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "Update Gauge"
+		NodeLocation = {
+			X = 520
+			Y = 140
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = [
+		]
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ExternalEvent"
+		EventName = {
+			Value = "UpdateGaugeIn"
+		}
+		Id = "b0246018-5b47-48de-9ab0-33a3ea5598d6"
+		NodeLocation = {
+			X = 340
+			Y = 260
+		}
+		Out = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.LevelFlowEvent"
+		Event = {
+			Value = "UpdateGaugeOut"
+		}
+		Id = "01b73c1c-8a74-4070-81bb-cddce0bccef3"
+		In = {
+		}
+		NodeLocation = {
+			X = 720
+			Y = 220
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ExternalInputNumeric"
+		Id = "3519bb93-2557-4401-b455-c99afe093f1e"
+		Name = {
+			Value = "PositionY"
+		}
+		NodeLocation = {
+			X = 260
+			Y = 80
+		}
+		Numeric = {
+		}
+		Width = 160
+	}
+]

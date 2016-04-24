@@ -1,7 +1,8 @@
 require 'core/appkit/lua/class'
 require 'core/appkit/lua/app'
 
-local damage_anim = 0
+local damage_anim = 0   --ダメージのアニメーション
+local gauge_anim = 0    --ゲージのアニメーション   
 
 PlayUI = PlayUI or{}
 
@@ -30,12 +31,26 @@ function PlayUI.damage(hp)
 --    print(damage_anim)
 end
 
-function PlayUI.move_player(position)
-    --プレイヤーの現在地から、UI上での長さでどのあたりかを求めて、そこにプレイヤーキャラを移動
-end
-
-function PlayUI.move_cat(position)
-    --猫の仮の現在地から、UI上での長さでどのあたりかを求めて、そこに猫キャラを移動
+function PlayUI.gauge_update(pos)  --positionにはプレイヤーのY方向の位置が入る
+    --プレイヤーの現在地から、UI上での長さでどのあたりかを求めて、アニメーションを制御
+     local event = { --eventは関数内localではなく、このファイル内でアクセスできるようにする
+		eventId = scaleform.EventTypes.Custom,
+		name = nil,
+		data = nil
+	}
+	--ダメージアニメーションの呼び出しイベント名登録
+	event.name = "update_gauge"
+--	print(hp)
+    
+    --アニメーション処理
+    --positionは1-100の値を受け取る
+	--gauge_anim = pos.Position
+	gauge_anim = gauge_anim + 1
+	print(gauge_anim)
+	if gauge_anim <= 100 then
+	    event.data =  {value = gauge_anim}
+	    scaleform.Stage.dispatch_event(event)
+    end
 end
 
 return PlayUI

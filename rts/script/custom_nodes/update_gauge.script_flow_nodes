@@ -1,0 +1,11 @@
+nodes = [
+	{
+		name = "Update Gauge"
+		args = {
+			Position = "float"
+		}
+		function = "PlayUI.gauge_update"
+		category = "UI"
+		returns = {}
+	}
+]

@@ -1,0 +1,80 @@
+
+nodes = [
+	{
+		flow_nodes_resource = "script/custom_nodes/update_gauge"
+		id = "579bbf0d-6501-429a-934e-7d99099cf978"
+		in_variables = {
+			Position = {
+				node = "3519bb93-2557-4401-b455-c99afe093f1e"
+				type = "float"
+				variable = "numeric"
+			}
+		}
+		name = "Update Gauge"
+		out_events = {
+			Out = [
+				{
+					event = 0
+					id = "01b73c1c-8a74-4070-81bb-cddce0bccef3:0"
+					node = "01b73c1c-8a74-4070-81bb-cddce0bccef3"
+				}
+			]
+		}
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Position = null
+		}
+		variables = [
+			{
+				name = "Position"
+				type = "float"
+			}
+		]
+	}
+	{
+		id = "b0246018-5b47-48de-9ab0-33a3ea5598d6"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "579bbf0d-6501-429a-934e-7d99099cf978:0"
+					node = "579bbf0d-6501-429a-934e-7d99099cf978"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "UpdateGaugeIn"
+		}
+	}
+	{
+		id = "01b73c1c-8a74-4070-81bb-cddce0bccef3"
+		type = "level_flow_event"
+		variable_values = {
+			event = "UpdateGaugeOut"
+		}
+	}
+	{
+		id = "3519bb93-2557-4401-b455-c99afe093f1e"
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "external_input_numeric"
+		variable_values = {
+			name = "PositionY"
+			numeric = null
+		}
+	}
+	{
+		id = "11111111-2222-3333-4444-555555555555"
+		type = "unit_spawned"
+		variable_values = {
+			unit = null
+		}
+	}
+]
