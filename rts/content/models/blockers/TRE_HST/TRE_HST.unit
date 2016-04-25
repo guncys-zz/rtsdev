@@ -1,0 +1,60 @@
+
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 4.879403
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			2.81477
+			2.746303
+			2.83734
+		]
+		projection_type = "perspective"
+		rotation = [
+			-0.115917
+			-0.279848
+			0.880476
+			0.364705
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
+materials = {
+	lambert9 = "content/models/blockers/TRE_HST/lambert9"
+}
+renderables = {
+	TRE_HST = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	TRE_HST_cln1 = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = false
+		surface_queries = false
+		viewport_visible = false
+	}
+	TRE_HST_cln2 = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = false
+		surface_queries = false
+		viewport_visible = false
+	}
+}
