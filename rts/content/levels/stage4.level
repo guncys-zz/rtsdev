@@ -76,6 +76,14 @@ editor_metadata = {
 				ToItem = "In"
 				ToNode = "ebb73ab1-8ab6-4758-8aa6-88f66954c4c1"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "1a0cac56-884e-4b37-92d5-e650aed65bb7"
+				Priority = 0
+				ToItem = "destroy units CSV file"
+				ToNode = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
+			}
 		]
 		Groups = [
 			{
@@ -295,6 +303,7 @@ editor_metadata = {
 				}
 				Id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
 				InEvents = [
+					"destroy units CSV file"
 					"start_load_csv"
 				]
 				InVariableNames = [
@@ -380,6 +389,19 @@ editor_metadata = {
 				ReturnValues = [
 				]
 				Width = 220
+			}
+			{
+				Brief = "Passes an event when the level shuts down."
+				Class = "Stingray.Foundation.Flow.LevelShutdown"
+				Id = "1a0cac56-884e-4b37-92d5-e650aed65bb7"
+				NodeLocation = {
+					X = -580
+					Y = -340
+				}
+				Out = {
+				}
+				Title = "Level Shutdown"
+				Width = 160
 			}
 		]
 	}
@@ -634,6 +656,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				IsRun = true
 			}
 			Type = "content/models/characters/PPK/PPK_m"
 		}
@@ -1818,8 +1841,8 @@ flow = {
 						node = "e1ebe0cb-7c5a-4f11-8575-8d1eed73a7c1"
 					}
 					{
-						event = 0
-						id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7:0"
+						event = 1
+						id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7:1"
 						node = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
 					}
 				]
@@ -1943,6 +1966,7 @@ flow = {
 		{
 			id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
 			in_event_index = [
+				"destroy units CSV file"
 				"start_load_csv"
 			]
 			in_variables = {
@@ -2011,6 +2035,19 @@ flow = {
 					type = "string"
 				}
 			]
+		}
+		{
+			id = "1a0cac56-884e-4b37-92d5-e650aed65bb7"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7:0"
+						node = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
+					}
+				]
+			}
+			type = "level_shutdown"
 		}
 	]
 }
@@ -2161,6 +2198,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			IsRun = true
 		}
 		id = "2fe3bace-091e-488b-9117-6ad90b1ff01c"
 		lights = {
