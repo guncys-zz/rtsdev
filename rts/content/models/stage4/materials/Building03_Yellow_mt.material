@@ -1,0 +1,39 @@
+
+parent_material = "core/stingray_renderer/shader_import/standard"
+textures = {
+	color_map = "content/models/stage4/textures/crystal2_Yellow"
+}
+variables = {
+	base_color = {
+		type = "vector3"
+		value = [
+			1
+			1
+			1
+		]
+	}
+	emissive = {
+		type = "vector3"
+		value = [
+			0.1
+			0.1
+			0.1
+		]
+	}
+	metallic = {
+		type = "scalar"
+		value = 0.7
+	}
+	roughness = {
+		type = "scalar"
+		value = 1
+	}
+	use_color_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_roughness_map = {
+		type = "scalar"
+		value = 1
+	}
+}

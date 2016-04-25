@@ -1,0 +1,35 @@
+
+materials = {
+	Building03_Blue_mt = "content/models/stage4/materials/Building03_Blue_mt"
+	Building03_Blue_Top_mt = "content/models/stage4/materials/Building03_Blue_Top_mt"
+	Building03_Blue_window_mt = "content/models/stage4/materials/Building03_Blue_window_mt"
+}
+renderables = {
+	Building03_out = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	Building03_top = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	Building03_window = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

@@ -1,0 +1,15 @@
+
+materials = {
+	Building02_Green_mt = "content/models/stage4/materials/Building02_Green_mt"
+}
+renderables = {
+	Building02_Green = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}
