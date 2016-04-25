@@ -1,0 +1,33 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "Building03_out"
+		node = "StingrayEntityRoot"
+		shapes = [
+			{
+				material = "default"
+				shape = "Building03_out"
+				template = "default"
+				type = "box"
+			}
+		]
+		template = "static"
+	}
+	{
+		enabled = true
+		mass = 0
+		name = "Building03_top"
+		node = "Building03_top"
+		shapes = [
+			{
+				material = "default"
+				shape = "Building03_top"
+				template = "default"
+				type = "box"
+			}
+		]
+		template = "static"
+	}
+]
