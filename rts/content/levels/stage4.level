@@ -62,59 +62,19 @@ editor_metadata = {
 			}
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "f5b80e33-f7ab-4eff-ae5f-304ed7f45c2b"
+				Priority = 0
+				ToItem = "start_load_csv"
+				ToNode = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
 				FromItem = "Pressed"
 				FromNode = "abb3ba29-2a11-4732-82c4-d091e15d0cb9"
 				Priority = 0
 				ToItem = "In"
 				ToNode = "ebb73ab1-8ab6-4758-8aa6-88f66954c4c1"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Pressed"
-				FromNode = "b5a3dadb-1c84-464d-a0fe-fe6ee87ed560"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "be592dde-eb89-4db9-8c7b-d92fe20050db"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Pressed"
-				FromNode = "0ba3a354-39fd-4d28-b923-19bf6ea554fa"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "76d30754-8003-4959-bcd6-ca2728c0c2b6"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
-				FromNode = "f5b80e33-f7ab-4eff-ae5f-304ed7f45c2b"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "61db55b4-31f7-42b5-8573-7312a9e2b2ca"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Pressed"
-				FromNode = "abb3ba29-2a11-4732-82c4-d091e15d0cb9"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "b2cfc21b-b1fb-461f-887e-277d2b9a6132"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
-				FromNode = "e1086cb1-d2f0-49f6-ba32-ef4e3ce247cf"
-				Priority = 0
-				ToItem = "destroy units CSV file"
-				ToNode = "6ea7bc87-b84b-4fec-9f19-4d610fc1d45e"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
-				FromNode = "f5b80e33-f7ab-4eff-ae5f-304ed7f45c2b"
-				Priority = 0
-				ToItem = "start_load_csv"
-				ToNode = "6ea7bc87-b84b-4fec-9f19-4d610fc1d45e"
 			}
 		]
 		Groups = [
@@ -136,37 +96,22 @@ editor_metadata = {
 				Collapsed = false
 				Groups = [
 				]
+				Id = "6f404ecf-95e8-48e6-a511-fb0e938d79e9"
+				Nodes = [
+					"a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
+				]
+				Title = "Load_CSV"
+			}
+			{
+				Collapsed = false
+				Groups = [
+				]
 				Id = "e5844db8-da60-47b2-8d24-1205735eb47f"
 				Nodes = [
 					"ebb73ab1-8ab6-4758-8aa6-88f66954c4c1"
 					"abb3ba29-2a11-4732-82c4-d091e15d0cb9"
 				]
 				Title = "CキーでEDに遷移"
-			}
-			{
-				Collapsed = false
-				Groups = [
-				]
-				Id = "063b47ab-83c9-4baf-91a7-fe081ce5b654"
-				Nodes = [
-					"61db55b4-31f7-42b5-8573-7312a9e2b2ca"
-					"b2cfc21b-b1fb-461f-887e-277d2b9a6132"
-					"be592dde-eb89-4db9-8c7b-d92fe20050db"
-					"76d30754-8003-4959-bcd6-ca2728c0c2b6"
-					"0ba3a354-39fd-4d28-b923-19bf6ea554fa"
-					"b5a3dadb-1c84-464d-a0fe-fe6ee87ed560"
-				]
-				Title = "Sound"
-			}
-			{
-				Collapsed = false
-				Groups = [
-				]
-				Id = "6f404ecf-95e8-48e6-a511-fb0e938d79e9"
-				Nodes = [
-					"6ea7bc87-b84b-4fec-9f19-4d610fc1d45e"
-				]
-				Title = "Load_CSV"
 			}
 		]
 		Nodes = [
@@ -339,6 +284,43 @@ editor_metadata = {
 				Width = 160
 			}
 			{
+				Brief = "Encapsulates a graph of logic stored in a separate flow resource file in the project."
+				Class = "Stingray.Foundation.Flow.FlowSubroutine"
+				Disable = {
+				}
+				Enable = {
+				}
+				Flow = {
+					Value = "script/custom_flows/Load_CSV"
+				}
+				Id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
+				InEvents = [
+					"start_load_csv"
+				]
+				InVariableNames = [
+					"csv_file_name"
+				]
+				InVariables = [
+					{
+						Class = "Stingray.Foundation.Flow.InVariableString"
+						Value = "stage4.csv"
+					}
+				]
+				NodeLocation = {
+					X = -260
+					Y = -400
+				}
+				OutEvents = [
+					"done_load_csv"
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				Title = "Flow Subroutine"
+				Width = 280
+			}
+			{
 				Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
 				ButtonName = {
 					Value = "c"
@@ -397,349 +379,6 @@ editor_metadata = {
 				]
 				ReturnValues = [
 				]
-				Width = 220
-			}
-			{
-				Arguments = [
-					{
-						RawName = "Name"
-						Type = "element"
-						Variable = {
-							Class = "Stingray.Foundation.Flow.InVariableElement"
-							Type = "wwise_event"
-							Value = "Play_BGM_Stage_4"
-						}
-					}
-					{
-						RawName = "Unit"
-						Type = "unit"
-						Variable = {
-							Class = "Stingray.Foundation.Flow.InVariableUnit"
-							UseMyUnit = false
-						}
-					}
-					{
-						RawName = "Unit_Node"
-						Type = "string"
-						Variable = {
-							Class = "Stingray.Foundation.Flow.InVariableString"
-						}
-					}
-					{
-						RawName = "Position"
-						Type = "vector3"
-						Variable = {
-							Class = "Stingray.Foundation.Flow.InVariableVector3"
-						}
-					}
-					{
-						RawName = "Existing_Source_Id"
-						Type = "float"
-						Variable = {
-							Class = "Stingray.Foundation.Flow.InVariableFloat"
-						}
-					}
-				]
-				Brief = "Posts the given event to the Wwise engine, creating a source if none is provided."
-				Class = "Stingray.Foundation.Flow.CustomScriptNode"
-				FlowNodesResource = "core/wwise/wwise"
-				FlowNodesResourceKey = "flow_nodes_resource"
-				Id = "61db55b4-31f7-42b5-8573-7312a9e2b2ca"
-				InEvents = [
-					"In"
-				]
-				IsQuery = false
-				Name = "Wwise Trigger Event"
-				NodeLocation = {
-					X = 400
-					Y = -400
-				}
-				OutEvents = [
-					"Out"
-				]
-				ReturnValues = [
-					{
-						RawName = "Playing_Id"
-						Type = "float"
-						Variable = {
-							Class = "Stingray.Foundation.Flow.OutVariableFloat"
-						}
-					}
-					{
-						RawName = "Source_Id"
-						Type = "float"
-						Variable = {
-							Class = "Stingray.Foundation.Flow.OutVariableFloat"
-						}
-					}
-				]
-				Width = 160
-			}
-			{
-				Arguments = [
-					{
-						RawName = "Name"
-						Type = "element"
-						Variable = {
-							Class = "Stingray.Foundation.Flow.InVariableElement"
-							Type = "wwise_event"
-							Value = "Stop_All"
-						}
-					}
-					{
-						RawName = "Unit"
-						Type = "unit"
-						Variable = {
-							Class = "Stingray.Foundation.Flow.InVariableUnit"
-							UseMyUnit = false
-						}
-					}
-					{
-						RawName = "Unit_Node"
-						Type = "string"
-						Variable = {
-							Class = "Stingray.Foundation.Flow.InVariableString"
-						}
-					}
-					{
-						RawName = "Position"
-						Type = "vector3"
-						Variable = {
-							Class = "Stingray.Foundation.Flow.InVariableVector3"
-						}
-					}
-					{
-						RawName = "Existing_Source_Id"
-						Type = "float"
-						Variable = {
-							Class = "Stingray.Foundation.Flow.InVariableFloat"
-						}
-					}
-				]
-				Brief = "Posts the given event to the Wwise engine, creating a source if none is provided."
-				Class = "Stingray.Foundation.Flow.CustomScriptNode"
-				FlowNodesResource = "core/wwise/wwise"
-				FlowNodesResourceKey = "flow_nodes_resource"
-				Id = "b2cfc21b-b1fb-461f-887e-277d2b9a6132"
-				InEvents = [
-					"In"
-				]
-				IsQuery = false
-				Name = "Wwise Trigger Event"
-				NodeLocation = {
-					X = 400
-					Y = -160
-				}
-				OutEvents = [
-					"Out"
-				]
-				ReturnValues = [
-					{
-						RawName = "Playing_Id"
-						Type = "float"
-						Variable = {
-							Class = "Stingray.Foundation.Flow.OutVariableFloat"
-						}
-					}
-					{
-						RawName = "Source_Id"
-						Type = "float"
-						Variable = {
-							Class = "Stingray.Foundation.Flow.OutVariableFloat"
-						}
-					}
-				]
-				Width = 160
-			}
-			{
-				Arguments = [
-					{
-						RawName = "Group"
-						Type = "element"
-						Variable = {
-							Class = "Stingray.Foundation.Flow.InVariableElement"
-							Type = "wwise_state_group"
-							Value = "State_Player"
-						}
-					}
-					{
-						RawName = "State"
-						Type = "element"
-						Variable = {
-							Class = "Stingray.Foundation.Flow.InVariableElement"
-							Type = "wwise_state"
-							Value = "State_Player_Hurry"
-						}
-					}
-				]
-				Brief = "Sets the Wwise state for the given source to the given value."
-				Class = "Stingray.Foundation.Flow.CustomScriptNode"
-				FlowNodesResource = "core/wwise/wwise"
-				FlowNodesResourceKey = "flow_nodes_resource"
-				Id = "be592dde-eb89-4db9-8c7b-d92fe20050db"
-				InEvents = [
-					"In"
-				]
-				IsQuery = false
-				Name = "Wwise Set State"
-				NodeLocation = {
-					X = 880
-					Y = -240
-				}
-				OutEvents = [
-					"Out"
-				]
-				ReturnValues = [
-				]
-				Width = 220
-			}
-			{
-				Arguments = [
-					{
-						RawName = "Group"
-						Type = "element"
-						Variable = {
-							Class = "Stingray.Foundation.Flow.InVariableElement"
-							Type = "wwise_state_group"
-							Value = "State_Player"
-						}
-					}
-					{
-						RawName = "State"
-						Type = "element"
-						Variable = {
-							Class = "Stingray.Foundation.Flow.InVariableElement"
-							Type = "wwise_state"
-							Value = "State_Player_Normal"
-						}
-					}
-				]
-				Brief = "Sets the Wwise state for the given source to the given value."
-				Class = "Stingray.Foundation.Flow.CustomScriptNode"
-				FlowNodesResource = "core/wwise/wwise"
-				FlowNodesResourceKey = "flow_nodes_resource"
-				Id = "76d30754-8003-4959-bcd6-ca2728c0c2b6"
-				InEvents = [
-					"In"
-				]
-				IsQuery = false
-				Name = "Wwise Set State"
-				NodeLocation = {
-					X = 880
-					Y = -440
-				}
-				OutEvents = [
-					"Out"
-				]
-				ReturnValues = [
-				]
-				Width = 240
-			}
-			{
-				Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
-				ButtonName = {
-					Value = "1"
-				}
-				Class = "Stingray.Foundation.Flow.KeyboardButton"
-				Device = {
-					Value = "keyboard"
-				}
-				DeviceNumber = {
-					Value = 0
-				}
-				Held = {
-				}
-				Id = "0ba3a354-39fd-4d28-b923-19bf6ea554fa"
-				NodeLocation = {
-					X = 680
-					Y = -400
-				}
-				Pressed = {
-				}
-				Released = {
-				}
-				Title = "Keyboard Button"
-				Value = {
-				}
-				Width = 160
-			}
-			{
-				Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
-				ButtonName = {
-					Value = "2"
-				}
-				Class = "Stingray.Foundation.Flow.KeyboardButton"
-				Device = {
-					Value = "keyboard"
-				}
-				DeviceNumber = {
-					Value = 0
-				}
-				Held = {
-				}
-				Id = "b5a3dadb-1c84-464d-a0fe-fe6ee87ed560"
-				NodeLocation = {
-					X = 680
-					Y = -200
-				}
-				Pressed = {
-				}
-				Released = {
-				}
-				Title = "Keyboard Button"
-				Value = {
-				}
-				Width = 160
-			}
-			{
-				Brief = "Passes an event when the level shuts down."
-				Class = "Stingray.Foundation.Flow.LevelShutdown"
-				Id = "e1086cb1-d2f0-49f6-ba32-ef4e3ce247cf"
-				NodeLocation = {
-					X = -540
-					Y = -400
-				}
-				Out = {
-				}
-				Title = "Level Shutdown"
-				Width = 160
-			}
-			{
-				Brief = "Encapsulates a graph of logic stored in a separate flow resource file in the project."
-				Class = "Stingray.Foundation.Flow.FlowSubroutine"
-				Disable = {
-				}
-				Enable = {
-				}
-				Flow = {
-					Value = "script/custom_flows/Load_CSV"
-				}
-				Id = "6ea7bc87-b84b-4fec-9f19-4d610fc1d45e"
-				InEvents = [
-					"destroy units CSV file"
-					"start_load_csv"
-				]
-				InVariableNames = [
-					"csv_file_name"
-				]
-				InVariables = [
-					{
-						Class = "Stingray.Foundation.Flow.InVariableString"
-						Value = "stage4.csv"
-					}
-				]
-				NodeLocation = {
-					X = -260
-					Y = -460
-				}
-				OutEvents = [
-					"done_load_csv"
-				]
-				OutVariableNames = [
-				]
-				OutVariables = [
-				]
-				Title = "Flow Subroutine"
 				Width = 220
 			}
 		]
@@ -995,7 +634,6 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
-				IsRun = true
 			}
 			Type = "content/models/characters/PPK/PPK_m"
 		}
@@ -1020,7 +658,7 @@ editor_metadata = {
 			Pos = {
 				X = 0
 				Y = 0
-				Z = 0
+				Z = -22
 			}
 			Rot = {
 				W = 1
@@ -1036,6 +674,1116 @@ editor_metadata = {
 			ScriptData = {
 			}
 			Type = "content/models/terrain/sample_ground/sample_ground"
+		}
+		{
+			Cameras = {
+			}
+			Id = "d1c865bd-ad9b-45bc-a58f-9bedccf4f401"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Building_01_Blue"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -35.486774
+				Y = 18.754963
+				Z = -22
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = -0.707107
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/Building_01_Blue"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6bef445e-389a-4b98-858d-344ec6cc01d4"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Building_01_Green"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 2.060171
+				Y = 38.015682
+				Z = -22
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = -0.707107
+			}
+			Scl = {
+				X = 1.506212
+				Y = 1.728453
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/Building_01_Green"
+		}
+		{
+			Cameras = {
+			}
+			Id = "57465a36-c113-4368-8b5f-132c4284fb35"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Building_01_Red"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 1.696508
+				Y = 115.047974
+				Z = -22
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/Building_01_Red"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3e8fb276-9dd3-4f02-bed9-10f991aca00b"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Building_01_Skyblue"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 5.2967
+				Y = 9.054509
+				Z = -22
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = -0.707107
+			}
+			Scl = {
+				X = 1.91824
+				Y = 2.347296
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/Building_01_Skyblue"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a9270c12-920d-4beb-8834-36101a1b9239"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Building_01_Yellow"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -41.163769
+				Y = 132.315445
+				Z = -22
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = -0.707107
+			}
+			Scl = {
+				X = 1.318158
+				Y = 1.318158
+				Z = 1.318158
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/Building_01_Yellow"
+		}
+		{
+			Cameras = {
+			}
+			Id = "dcd1ff3c-cb57-42ee-9d84-84e2b22867d1"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Building_03_Blue"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.385581
+				Y = 62.689964
+				Z = -22
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = -0.707107
+			}
+			Scl = {
+				X = 0.814518
+				Y = 0.814518
+				Z = 0.721854
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/Building_03_Blue"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a766f653-dc31-492e-82a4-58ac5ababd0d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Building_03_Yellow"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.427234
+				Y = 215.860977
+				Z = -22
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = -0.707107
+			}
+			Scl = {
+				X = 0.86502
+				Y = 0.86502
+				Z = 0.86502
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/Building_03_Yellow"
+		}
+		{
+			Cameras = {
+			}
+			Id = "add4d666-d574-483c-ae59-31dfe85fd9f2"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Building_02_Blue"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -36.46727
+				Y = 52.205643
+				Z = -22
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = -0.707107
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/Building_02_Blue"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c7bf5b8e-e513-46be-a87b-b02eee1fca3a"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Building_02_Green"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -11.624703
+				Y = 91.327164
+				Z = -22
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = -0.707107
+			}
+			Scl = {
+				X = 0.659423
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/Building_02_Green"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e70ee736-7892-476b-ae5a-069dc44d324f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Building_02_Red"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 2.819523
+				Y = 85.467026
+				Z = -22
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = -0.707107
+			}
+			Scl = {
+				X = 1.072722
+				Y = 1.079482
+				Z = 0.590024
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/Building_02_Red"
+		}
+		{
+			Cameras = {
+			}
+			Id = "615af3e9-d6b2-4ed0-925a-6d2ac1caf1e2"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Building_02_Skyblue"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -33.437744
+				Y = 91.056023
+				Z = -22
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = -0.707107
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/Building_02_Skyblue"
+		}
+		{
+			Cameras = {
+			}
+			Id = "71924978-12b0-45c8-963c-b03158c8ac07"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Building_02_Yellow"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -34.01442
+				Y = 68.87059
+				Z = -22
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = -0.707107
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/Building_02_Yellow"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c74d8b45-fc64-4461-aed2-e9dca77f6d05"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Building_02_Skyblue1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.451591
+				Y = 250
+				Z = -22
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = -0.707107
+			}
+			Scl = {
+				X = 0.757529
+				Y = 0.757529
+				Z = 0.757529
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/Building_02_Skyblue"
+		}
+		{
+			Cameras = {
+			}
+			Id = "087624f1-8066-4fc9-b3a8-cdd35ef1a2e3"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ConstructionSite"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 2.546286
+				Y = 135.877686
+				Z = -22
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1.130665
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/ConstructionSite"
+		}
+		{
+			Cameras = {
+			}
+			Id = "62b64bbf-6af5-45de-9b75-ae63e2f7d617"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "road_06_A"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -18.772614
+				Y = 102.007973
+				Z = 0.268589
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1.616812
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/road_06_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "40bbe3f8-0337-4b38-a6d1-48c9b1d9c101"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "road_06_B"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 1.558963
+				Y = 176.617294
+				Z = 6.046799
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1.452873
+				Y = 1.452873
+				Z = 1.452873
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/road_06_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e789274c-c700-4e1e-a3ed-696a3246e090"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ConstructionSite2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.909687
+				Y = 160.263809
+				Z = -21.992001
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1.410531
+				Y = 1.410531
+				Z = 1.415218
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/ConstructionSite"
+		}
+		{
+			Cameras = {
+			}
+			Id = "73c2406a-a9cf-42e7-9edf-891957ec28ae"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "road_01"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -51.030014
+				Y = 9.83696
+				Z = -21.992001
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/road_01"
+		}
+		{
+			Cameras = {
+			}
+			Id = "483cf02a-6fa7-4c45-b2be-41fa9075071b"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "road_01_bridge"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -21.939911
+				Y = 0
+				Z = -21.991997
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/road_01_bridge"
+		}
+		{
+			Cameras = {
+			}
+			Id = "62d4c245-129b-4a2c-892d-aaee5a99cc40"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "road_01_bridge1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -21.939911
+				Y = 24.5
+				Z = -21.991997
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/road_01_bridge"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a1faf3f1-be97-41c6-9083-01937b246cfb"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "road_01_bridge2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -21.939911
+				Y = 49
+				Z = -21.991997
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/road_01_bridge"
+		}
+		{
+			Cameras = {
+			}
+			Id = "2686ace2-85c0-46d6-92f6-1e7177b88322"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "road_01_bridge3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -21.939911
+				Y = 73.5
+				Z = -21.991997
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/road_01_bridge"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ad671bd2-7b9d-440c-af2b-6a585a8bf406"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "road_01_bridge4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -21.939911
+				Y = 171.5
+				Z = -21.991997
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/road_01_bridge"
+		}
+		{
+			Cameras = {
+			}
+			Id = "35cd57d4-a17c-4d88-b414-5b6c4e90034d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "road_01_bridge5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -21.939911
+				Y = 98
+				Z = -21.991997
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/road_01_bridge"
+		}
+		{
+			Cameras = {
+			}
+			Id = "8ca7f4b1-ca2f-4069-890a-f1f7e63f281a"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "road_01_bridge6"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -21.939911
+				Y = 122.5
+				Z = -21.991997
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/road_01_bridge"
+		}
+		{
+			Cameras = {
+			}
+			Id = "5b37d54f-cd95-47b6-9db5-f2b6848bacb4"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "road_01_bridge7"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -21.939911
+				Y = 147
+				Z = -21.991997
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/road_01_bridge"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a46c1922-2946-42cd-a374-6cae4e5c8133"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "road_01_bridge8"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -21.939911
+				Y = 196
+				Z = -21.991997
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/road_01_bridge"
+		}
+		{
+			Cameras = {
+			}
+			Id = "9c335c9b-e1c9-4149-b39e-c6db7dc1f069"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "road_01_bridge9"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -21.939911
+				Y = 220.5
+				Z = -21.991997
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/road_01_bridge"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6538cfd6-be18-4231-9901-6460d1e3c83f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "road_01_bridge10"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -21.939911
+				Y = 245
+				Z = -21.991997
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/road_01_bridge"
+		}
+		{
+			Cameras = {
+			}
+			Id = "94af064a-b808-4b51-b5f3-2d6c931886e7"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "road_01_bridge11"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -21.939911
+				Y = 269.5
+				Z = -21.991997
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/road_01_bridge"
 		}
 	]
 	Volumes = [
@@ -1071,13 +1819,8 @@ flow = {
 					}
 					{
 						event = 0
-						id = "61db55b4-31f7-42b5-8573-7312a9e2b2ca:0"
-						node = "61db55b4-31f7-42b5-8573-7312a9e2b2ca"
-					}
-					{
-						event = 1
-						id = "6ea7bc87-b84b-4fec-9f19-4d610fc1d45e:1"
-						node = "6ea7bc87-b84b-4fec-9f19-4d610fc1d45e"
+						id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7:0"
+						node = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
 					}
 				]
 			}
@@ -1198,6 +1941,25 @@ flow = {
 			]
 		}
 		{
+			id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
+			in_event_index = [
+				"start_load_csv"
+			]
+			in_variables = {
+				csv_file_name = {
+					type = "string"
+				}
+			}
+			out_event_index = [
+				"done_load_csv"
+			]
+			type = "flow_subroutine"
+			variable_values = {
+				csv_file_name = "stage4.csv"
+				flow = "script/custom_flows/Load_CSV"
+			}
+		}
+		{
 			id = "abb3ba29-2a11-4732-82c4-d091e15d0cb9"
 			in_variables = {
 				button_name = {
@@ -1216,11 +1978,6 @@ flow = {
 						event = 0
 						id = "ebb73ab1-8ab6-4758-8aa6-88f66954c4c1:0"
 						node = "ebb73ab1-8ab6-4758-8aa6-88f66954c4c1"
-					}
-					{
-						event = 0
-						id = "b2cfc21b-b1fb-461f-887e-277d2b9a6132:0"
-						node = "b2cfc21b-b1fb-461f-887e-277d2b9a6132"
 					}
 				]
 			}
@@ -1254,291 +2011,6 @@ flow = {
 					type = "string"
 				}
 			]
-		}
-		{
-			flow_nodes_resource = "core/wwise/wwise"
-			id = "61db55b4-31f7-42b5-8573-7312a9e2b2ca"
-			in_variables = {
-				Existing_Source_Id = {
-					type = "float"
-				}
-				Name = {
-					type = "string"
-				}
-				Position = {
-					type = "vector3"
-				}
-				Unit = {
-					type = "unit"
-				}
-				Unit_Node = {
-					type = "string"
-				}
-			}
-			name = "Wwise Trigger Event"
-			query = false
-			return_values = [
-				{
-					name = "Playing_Id"
-					type = "float"
-				}
-				{
-					name = "Source_Id"
-					type = "float"
-				}
-			]
-			type = "custom_script_node"
-			variable_values = {
-				Existing_Source_Id = null
-				Name = "Play_BGM_Stage_4"
-				Playing_Id = null
-				Position = null
-				Source_Id = null
-				Unit = null
-				Unit_Node = null
-			}
-			variables = [
-				{
-					name = "Name"
-					type = "string"
-				}
-				{
-					name = "Unit"
-					type = "unit"
-				}
-				{
-					name = "Unit_Node"
-					type = "string"
-				}
-				{
-					name = "Position"
-					type = "vector3"
-				}
-				{
-					name = "Existing_Source_Id"
-					type = "float"
-				}
-			]
-		}
-		{
-			flow_nodes_resource = "core/wwise/wwise"
-			id = "b2cfc21b-b1fb-461f-887e-277d2b9a6132"
-			in_variables = {
-				Existing_Source_Id = {
-					type = "float"
-				}
-				Name = {
-					type = "string"
-				}
-				Position = {
-					type = "vector3"
-				}
-				Unit = {
-					type = "unit"
-				}
-				Unit_Node = {
-					type = "string"
-				}
-			}
-			name = "Wwise Trigger Event"
-			query = false
-			return_values = [
-				{
-					name = "Playing_Id"
-					type = "float"
-				}
-				{
-					name = "Source_Id"
-					type = "float"
-				}
-			]
-			type = "custom_script_node"
-			variable_values = {
-				Existing_Source_Id = null
-				Name = "Stop_All"
-				Playing_Id = null
-				Position = null
-				Source_Id = null
-				Unit = null
-				Unit_Node = null
-			}
-			variables = [
-				{
-					name = "Name"
-					type = "string"
-				}
-				{
-					name = "Unit"
-					type = "unit"
-				}
-				{
-					name = "Unit_Node"
-					type = "string"
-				}
-				{
-					name = "Position"
-					type = "vector3"
-				}
-				{
-					name = "Existing_Source_Id"
-					type = "float"
-				}
-			]
-		}
-		{
-			flow_nodes_resource = "core/wwise/wwise"
-			id = "be592dde-eb89-4db9-8c7b-d92fe20050db"
-			in_variables = {
-				Group = {
-					type = "string"
-				}
-				State = {
-					type = "string"
-				}
-			}
-			name = "Wwise Set State"
-			query = false
-			return_values = [
-			]
-			type = "custom_script_node"
-			variable_values = {
-				Group = "State_Player"
-				State = "State_Player_Hurry"
-			}
-			variables = [
-				{
-					name = "Group"
-					type = "string"
-				}
-				{
-					name = "State"
-					type = "string"
-				}
-			]
-		}
-		{
-			flow_nodes_resource = "core/wwise/wwise"
-			id = "76d30754-8003-4959-bcd6-ca2728c0c2b6"
-			in_variables = {
-				Group = {
-					type = "string"
-				}
-				State = {
-					type = "string"
-				}
-			}
-			name = "Wwise Set State"
-			query = false
-			return_values = [
-			]
-			type = "custom_script_node"
-			variable_values = {
-				Group = "State_Player"
-				State = "State_Player_Normal"
-			}
-			variables = [
-				{
-					name = "Group"
-					type = "string"
-				}
-				{
-					name = "State"
-					type = "string"
-				}
-			]
-		}
-		{
-			id = "0ba3a354-39fd-4d28-b923-19bf6ea554fa"
-			in_variables = {
-				button_name = {
-					type = "string"
-				}
-				device = {
-					type = "string"
-				}
-				device_number = {
-					type = "float"
-				}
-			}
-			out_events = {
-				pressed = [
-					{
-						event = 0
-						id = "76d30754-8003-4959-bcd6-ca2728c0c2b6:0"
-						node = "76d30754-8003-4959-bcd6-ca2728c0c2b6"
-					}
-				]
-			}
-			type = "keyboard_button"
-			variable_values = {
-				button_name = "1"
-				device = "keyboard"
-				device_number = 0
-				value = null
-			}
-		}
-		{
-			id = "b5a3dadb-1c84-464d-a0fe-fe6ee87ed560"
-			in_variables = {
-				button_name = {
-					type = "string"
-				}
-				device = {
-					type = "string"
-				}
-				device_number = {
-					type = "float"
-				}
-			}
-			out_events = {
-				pressed = [
-					{
-						event = 0
-						id = "be592dde-eb89-4db9-8c7b-d92fe20050db:0"
-						node = "be592dde-eb89-4db9-8c7b-d92fe20050db"
-					}
-				]
-			}
-			type = "keyboard_button"
-			variable_values = {
-				button_name = "2"
-				device = "keyboard"
-				device_number = 0
-				value = null
-			}
-		}
-		{
-			id = "e1086cb1-d2f0-49f6-ba32-ef4e3ce247cf"
-			out_events = {
-				out = [
-					{
-						event = 0
-						id = "6ea7bc87-b84b-4fec-9f19-4d610fc1d45e:0"
-						node = "6ea7bc87-b84b-4fec-9f19-4d610fc1d45e"
-					}
-				]
-			}
-			type = "level_shutdown"
-		}
-		{
-			id = "6ea7bc87-b84b-4fec-9f19-4d610fc1d45e"
-			in_event_index = [
-				"destroy units CSV file"
-				"start_load_csv"
-			]
-			in_variables = {
-				csv_file_name = {
-					type = "string"
-				}
-			}
-			out_event_index = [
-				"done_load_csv"
-			]
-			type = "flow_subroutine"
-			variable_values = {
-				csv_file_name = "stage4.csv"
-				flow = "script/custom_flows/Load_CSV"
-			}
 		}
 	]
 }
@@ -1689,7 +2161,6 @@ units = [
 		cameras = {
 		}
 		data = {
-			IsRun = true
 		}
 		id = "2fe3bace-091e-488b-9117-6ad90b1ff01c"
 		lights = {
@@ -1731,7 +2202,7 @@ units = [
 		pos = [
 			0
 			0
-			0
+			-22
 		]
 		rot = [
 			0
@@ -1745,6 +2216,906 @@ units = [
 			1
 		]
 		type = "content/models/terrain/sample_ground/sample_ground"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "d1c865bd-ad9b-45bc-a58f-9bedccf4f401"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Building_01_Blue"
+		pos = [
+			-35.486774
+			18.754963
+			-22
+		]
+		rot = [
+			0
+			0
+			-0.707107
+			-0.707107
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage4/Building_01_Blue"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6bef445e-389a-4b98-858d-344ec6cc01d4"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Building_01_Green"
+		pos = [
+			2.060171
+			38.015682
+			-22
+		]
+		rot = [
+			0
+			0
+			-0.707107
+			-0.707107
+		]
+		scl = [
+			1.506212
+			1.728453
+			1
+		]
+		type = "content/models/stage4/Building_01_Green"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "57465a36-c113-4368-8b5f-132c4284fb35"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Building_01_Red"
+		pos = [
+			1.696508
+			115.047974
+			-22
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage4/Building_01_Red"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3e8fb276-9dd3-4f02-bed9-10f991aca00b"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Building_01_Skyblue"
+		pos = [
+			5.2967
+			9.054509
+			-22
+		]
+		rot = [
+			0
+			0
+			-0.707107
+			-0.707107
+		]
+		scl = [
+			1.91824
+			2.347296
+			1
+		]
+		type = "content/models/stage4/Building_01_Skyblue"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a9270c12-920d-4beb-8834-36101a1b9239"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Building_01_Yellow"
+		pos = [
+			-41.163769
+			132.315445
+			-22
+		]
+		rot = [
+			0
+			0
+			-0.707107
+			-0.707107
+		]
+		scl = [
+			1.318158
+			1.318158
+			1.318158
+		]
+		type = "content/models/stage4/Building_01_Yellow"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "dcd1ff3c-cb57-42ee-9d84-84e2b22867d1"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Building_03_Blue"
+		pos = [
+			0.385581
+			62.689964
+			-22
+		]
+		rot = [
+			0
+			0
+			-0.707107
+			-0.707107
+		]
+		scl = [
+			0.814518
+			0.814518
+			0.721854
+		]
+		type = "content/models/stage4/Building_03_Blue"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a766f653-dc31-492e-82a4-58ac5ababd0d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Building_03_Yellow"
+		pos = [
+			0.427234
+			215.860977
+			-22
+		]
+		rot = [
+			0
+			0
+			-0.707107
+			-0.707107
+		]
+		scl = [
+			0.86502
+			0.86502
+			0.86502
+		]
+		type = "content/models/stage4/Building_03_Yellow"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "add4d666-d574-483c-ae59-31dfe85fd9f2"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Building_02_Blue"
+		pos = [
+			-36.46727
+			52.205643
+			-22
+		]
+		rot = [
+			0
+			0
+			-0.707107
+			-0.707107
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage4/Building_02_Blue"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c7bf5b8e-e513-46be-a87b-b02eee1fca3a"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Building_02_Green"
+		pos = [
+			-11.624703
+			91.327164
+			-22
+		]
+		rot = [
+			0
+			0
+			-0.707107
+			-0.707107
+		]
+		scl = [
+			0.659423
+			1
+			1
+		]
+		type = "content/models/stage4/Building_02_Green"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e70ee736-7892-476b-ae5a-069dc44d324f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Building_02_Red"
+		pos = [
+			2.819523
+			85.467026
+			-22
+		]
+		rot = [
+			0
+			0
+			-0.707107
+			-0.707107
+		]
+		scl = [
+			1.072722
+			1.079482
+			0.590024
+		]
+		type = "content/models/stage4/Building_02_Red"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "615af3e9-d6b2-4ed0-925a-6d2ac1caf1e2"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Building_02_Skyblue"
+		pos = [
+			-33.437744
+			91.056023
+			-22
+		]
+		rot = [
+			0
+			0
+			-0.707107
+			-0.707107
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage4/Building_02_Skyblue"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "71924978-12b0-45c8-963c-b03158c8ac07"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Building_02_Yellow"
+		pos = [
+			-34.01442
+			68.87059
+			-22
+		]
+		rot = [
+			0
+			0
+			-0.707107
+			-0.707107
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage4/Building_02_Yellow"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c74d8b45-fc64-4461-aed2-e9dca77f6d05"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Building_02_Skyblue1"
+		pos = [
+			0.451591
+			250
+			-22
+		]
+		rot = [
+			0
+			0
+			-0.707107
+			-0.707107
+		]
+		scl = [
+			0.757529
+			0.757529
+			0.757529
+		]
+		type = "content/models/stage4/Building_02_Skyblue"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "087624f1-8066-4fc9-b3a8-cdd35ef1a2e3"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ConstructionSite"
+		pos = [
+			2.546286
+			135.877686
+			-22
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1.130665
+		]
+		type = "content/models/stage4/ConstructionSite"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "62b64bbf-6af5-45de-9b75-ae63e2f7d617"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "road_06_A"
+		pos = [
+			-18.772614
+			102.007973
+			0.268589
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1.616812
+			1
+		]
+		type = "content/models/stage4/road_06_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "40bbe3f8-0337-4b38-a6d1-48c9b1d9c101"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "road_06_B"
+		pos = [
+			1.558963
+			176.617294
+			6.046799
+		]
+		rot = [
+			0
+			0
+			1
+			0
+		]
+		scl = [
+			1.452873
+			1.452873
+			1.452873
+		]
+		type = "content/models/stage4/road_06_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e789274c-c700-4e1e-a3ed-696a3246e090"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ConstructionSite2"
+		pos = [
+			0.909687
+			160.263809
+			-21.992001
+		]
+		rot = [
+			0
+			0
+			1
+			0
+		]
+		scl = [
+			1.410531
+			1.410531
+			1.415218
+		]
+		type = "content/models/stage4/ConstructionSite"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "73c2406a-a9cf-42e7-9edf-891957ec28ae"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "road_01"
+		pos = [
+			-51.030014
+			9.83696
+			-21.992001
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage4/road_01"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "483cf02a-6fa7-4c45-b2be-41fa9075071b"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "road_01_bridge"
+		pos = [
+			-21.939911
+			0
+			-21.991997
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage4/road_01_bridge"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "62d4c245-129b-4a2c-892d-aaee5a99cc40"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "road_01_bridge1"
+		pos = [
+			-21.939911
+			24.5
+			-21.991997
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage4/road_01_bridge"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a1faf3f1-be97-41c6-9083-01937b246cfb"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "road_01_bridge2"
+		pos = [
+			-21.939911
+			49
+			-21.991997
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage4/road_01_bridge"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "2686ace2-85c0-46d6-92f6-1e7177b88322"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "road_01_bridge3"
+		pos = [
+			-21.939911
+			73.5
+			-21.991997
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage4/road_01_bridge"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "ad671bd2-7b9d-440c-af2b-6a585a8bf406"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "road_01_bridge4"
+		pos = [
+			-21.939911
+			171.5
+			-21.991997
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage4/road_01_bridge"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "35cd57d4-a17c-4d88-b414-5b6c4e90034d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "road_01_bridge5"
+		pos = [
+			-21.939911
+			98
+			-21.991997
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage4/road_01_bridge"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "8ca7f4b1-ca2f-4069-890a-f1f7e63f281a"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "road_01_bridge6"
+		pos = [
+			-21.939911
+			122.5
+			-21.991997
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage4/road_01_bridge"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "5b37d54f-cd95-47b6-9db5-f2b6848bacb4"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "road_01_bridge7"
+		pos = [
+			-21.939911
+			147
+			-21.991997
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage4/road_01_bridge"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a46c1922-2946-42cd-a374-6cae4e5c8133"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "road_01_bridge8"
+		pos = [
+			-21.939911
+			196
+			-21.991997
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage4/road_01_bridge"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "9c335c9b-e1c9-4149-b39e-c6db7dc1f069"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "road_01_bridge9"
+		pos = [
+			-21.939911
+			220.5
+			-21.991997
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage4/road_01_bridge"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6538cfd6-be18-4231-9901-6460d1e3c83f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "road_01_bridge10"
+		pos = [
+			-21.939911
+			245
+			-21.991997
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage4/road_01_bridge"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "94af064a-b808-4b51-b5f3-2d6c931886e7"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "road_01_bridge11"
+		pos = [
+			-21.939911
+			269.5
+			-21.991997
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage4/road_01_bridge"
 	}
 ]
 volumes = [
