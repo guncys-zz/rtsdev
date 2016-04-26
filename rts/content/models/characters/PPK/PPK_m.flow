@@ -1589,30 +1589,6 @@ nodes = [
 		}
 	}
 	{
-		id = "a85e36ad-229c-4cef-8abb-5cd6339e0e66"
-		in_variables = {
-			key = {
-				type = "string"
-			}
-			unit = {
-				node = "11111111-2222-3333-4444-555555555555"
-				type = "unit"
-				variable = "unit"
-			}
-		}
-		out_variables = {
-			value = {
-				type = "float"
-			}
-		}
-		type = "get_unit_numeric_data"
-		variable_values = {
-			key = "Speed"
-			unit = null
-			value = null
-		}
-	}
-	{
 		id = "ae48ccca-ba9c-4530-9285-34d582999f4c"
 		out_events = {
 			out1 = [
@@ -1737,6 +1713,13 @@ nodes = [
 					event = 0
 					id = "5954ab64-7170-450a-8a94-75b1a1ede301:0"
 					node = "5954ab64-7170-450a-8a94-75b1a1ede301"
+				}
+			]
+			out4 = [
+				{
+					event = 0
+					id = "b4933379-ecc3-4cb9-9be9-f4395eb6e246:0"
+					node = "b4933379-ecc3-4cb9-9be9-f4395eb6e246"
 				}
 			]
 		}
@@ -2361,10 +2344,10 @@ nodes = [
 		}
 	}
 	{
-		id = "99c1ac8a-2953-47af-b928-a005f2c2090b"
+		id = "a85e36ad-229c-4cef-8abb-5cd6339e0e66"
 		in_variables = {
-			mover = {
-				type = "mover"
+			key = {
+				type = "string"
 			}
 			unit = {
 				node = "11111111-2222-3333-4444-555555555555"
@@ -2373,30 +2356,174 @@ nodes = [
 			}
 		}
 		out_variables = {
-			actor = {
-				type = "actor"
+			value = {
+				type = "float"
 			}
 		}
-		type = "get_actor_colliding_below_mover"
+		type = "get_unit_numeric_data"
 		variable_values = {
-			actor = null
-			mover = null
+			key = "Speed"
 			unit = null
+			value = null
 		}
 	}
 	{
-		id = "e0a05547-1e89-461b-ba65-3da2216227f6"
+		id = "cec06339-f036-49ea-9230-3f9787a7a23e"
 		in_variables = {
-			actor = {
-				node = "99c1ac8a-2953-47af-b928-a005f2c2090b"
-				type = "actor"
-				variable = "actor"
+			a = {
+				node = "0ec60575-58cc-442a-bc46-3ef43e70ce7a"
+				type = "float"
+				variable = "value"
+			}
+			b = {
+				node = "4ed017e0-6d39-4c2b-9acf-30a955600d1c"
+				type = "float"
+				variable = "value"
 			}
 		}
-		type = "get_actor_unit"
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_plus_numeric"
 		variable_values = {
-			actor = null
+			a = null
+			b = null
+			value = null
+		}
+	}
+	{
+		id = "b4933379-ecc3-4cb9-9be9-f4395eb6e246"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+			value = {
+				node = "cec06339-f036-49ea-9230-3f9787a7a23e"
+				type = "float"
+				variable = "value"
+			}
+		}
+		type = "set_unit_numeric_data"
+		variable_values = {
+			key = "Distance"
 			unit = null
+			value = null
+		}
+	}
+	{
+		flow_nodes_resource = "core/appkit/appkit"
+		id = "c0fce45b-cc87-4473-89ab-0e2c30b8ac9b"
+		in_variables = {
+			Color = {
+				type = "vector3"
+			}
+			Label = {
+				type = "string"
+			}
+			Text = {
+				node = "8bfbcd09-4df2-4e40-a2d6-acdf008c6012"
+				type = "string"
+				variable = "value"
+			}
+		}
+		name = "Print To Screen"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Color = null
+			Label = null
+			Text = null
+		}
+		variables = [
+			{
+				name = "Label"
+				type = "string"
+			}
+			{
+				name = "Color"
+				type = "vector3"
+			}
+			{
+				name = "Text"
+				type = "string"
+			}
+		]
+	}
+	{
+		id = "0ec60575-58cc-442a-bc46-3ef43e70ce7a"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "get_unit_numeric_data"
+		variable_values = {
+			key = "Distance"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "0139b838-b4f5-4987-bf5e-d5ecd96c690b"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "get_unit_numeric_data"
+		variable_values = {
+			key = "Distance"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "8bfbcd09-4df2-4e40-a2d6-acdf008c6012"
+		in_variables = {
+			numeric = {
+				node = "0139b838-b4f5-4987-bf5e-d5ecd96c690b"
+				type = "float"
+				variable = "value"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "string"
+			}
+		}
+		type = "numeric_to_string"
+		variable_values = {
+			numeric = null
+			value = null
 		}
 	}
 	{

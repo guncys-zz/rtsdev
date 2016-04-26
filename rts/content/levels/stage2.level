@@ -116,6 +116,22 @@ editor_metadata = {
 				ToItem = "destroy units CSV file"
 				ToNode = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "f5b80e33-f7ab-4eff-ae5f-304ed7f45c2b"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "121ab2e8-e899-4bc0-939f-15535a49f17b"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "29beef00-a9a2-4383-9095-daa70a7066ac"
+				ToItem = "Unit"
+				ToNode = "121ab2e8-e899-4bc0-939f-15535a49f17b"
+				Type = "Unit"
+			}
 		]
 		Groups = [
 			{
@@ -167,6 +183,16 @@ editor_metadata = {
 					"ecdba273-9834-48b2-b43f-3d9baafa51e8"
 				]
 				Title = "Sound"
+			}
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "488070c7-96fb-4e9b-91ca-fbcf92ab2ed7"
+				Nodes = [
+					"121ab2e8-e899-4bc0-939f-15535a49f17b"
+				]
+				Title = "PPKの移動距離を250に初期化"
 			}
 		]
 		Nodes = [
@@ -489,8 +515,8 @@ editor_metadata = {
 				IsQuery = false
 				Name = "Wwise Trigger Event"
 				NodeLocation = {
-					X = 469
-					Y = -386
+					X = 500
+					Y = -380
 				}
 				OutEvents = [
 					"Out"
@@ -565,8 +591,8 @@ editor_metadata = {
 				IsQuery = false
 				Name = "Wwise Trigger Event"
 				NodeLocation = {
-					X = 468
-					Y = -135
+					X = 500
+					Y = -140
 				}
 				OutEvents = [
 					"Out"
@@ -621,8 +647,8 @@ editor_metadata = {
 				IsQuery = false
 				Name = "Wwise Set State"
 				NodeLocation = {
-					X = 949
-					Y = -226
+					X = 980
+					Y = -220
 				}
 				OutEvents = [
 					"Out"
@@ -663,8 +689,8 @@ editor_metadata = {
 				IsQuery = false
 				Name = "Wwise Set State"
 				NodeLocation = {
-					X = 949
-					Y = -426
+					X = 980
+					Y = -420
 				}
 				OutEvents = [
 					"Out"
@@ -689,8 +715,8 @@ editor_metadata = {
 				}
 				Id = "5d513c80-db23-44ca-969b-7b66f87afc60"
 				NodeLocation = {
-					X = 749
-					Y = -386
+					X = 780
+					Y = -380
 				}
 				Pressed = {
 				}
@@ -717,8 +743,8 @@ editor_metadata = {
 				}
 				Id = "ecdba273-9834-48b2-b43f-3d9baafa51e8"
 				NodeLocation = {
-					X = 749
-					Y = -186
+					X = 780
+					Y = -180
 				}
 				Pressed = {
 				}
@@ -741,6 +767,30 @@ editor_metadata = {
 				}
 				Title = "Level Shutdown"
 				Width = 160
+			}
+			{
+				Brief = "Sets the unit script data property to the specified numeric value."
+				Class = "Stingray.Foundation.Flow.SetUnitNumericData"
+				Id = "121ab2e8-e899-4bc0-939f-15535a49f17b"
+				In = {
+				}
+				Key = {
+					Value = "Distance"
+				}
+				NodeLocation = {
+					X = 80
+					Y = -360
+				}
+				Out = {
+				}
+				Title = "Set Unit Numeric Data"
+				Unit = {
+					UseMyUnit = false
+				}
+				Value = {
+					Value = 250
+				}
+				Width = 360
 			}
 		]
 	}
@@ -1226,6 +1276,11 @@ flow = {
 						id = "b6771c36-964d-4e20-b68b-e14fb17a94ad:0"
 						node = "b6771c36-964d-4e20-b68b-e14fb17a94ad"
 					}
+					{
+						event = 0
+						id = "121ab2e8-e899-4bc0-939f-15535a49f17b:0"
+						node = "121ab2e8-e899-4bc0-939f-15535a49f17b"
+					}
 				]
 			}
 			type = "level_loaded"
@@ -1686,6 +1741,28 @@ flow = {
 				]
 			}
 			type = "level_shutdown"
+		}
+		{
+			id = "121ab2e8-e899-4bc0-939f-15535a49f17b"
+			in_variables = {
+				key = {
+					type = "string"
+				}
+				unit = {
+					node = "29beef00-a9a2-4383-9095-daa70a7066ac"
+					type = "unit"
+					variable = "unit"
+				}
+				value = {
+					type = "float"
+				}
+			}
+			type = "set_unit_numeric_data"
+			variable_values = {
+				key = "Distance"
+				unit = null
+				value = 250
+			}
 		}
 	]
 }
