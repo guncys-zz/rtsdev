@@ -226,15 +226,6 @@ Connections = [
 		ToNode = "e5b02873-92ef-44a1-b978-0468d4bd976d"
 	}
 	{
-		Class = "Stingray.Flow.VariableConnection"
-		FromItem = "Bool"
-		FromNode = "e5b02873-92ef-44a1-b978-0468d4bd976d"
-		Id = "780e96f6-1110-4038-b4c2-8d6aa6e23b5c"
-		ToItem = "Condition"
-		ToNode = "40e040b2-978f-4c09-8969-5f240abdf7a4"
-		Type = "Bool"
-	}
-	{
 		Class = "Stingray.Flow.EventConnection"
 		FromItem = "Out"
 		FromNode = "e5b02873-92ef-44a1-b978-0468d4bd976d"
@@ -242,6 +233,42 @@ Connections = [
 		Priority = 0
 		ToItem = "In"
 		ToNode = "40e040b2-978f-4c09-8969-5f240abdf7a4"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Bool"
+		FromNode = "e5b02873-92ef-44a1-b978-0468d4bd976d"
+		Id = "4f3a7523-8d7b-4b1a-b891-18e842f1d23d"
+		ToItem = "A"
+		ToNode = "252df0b6-8093-4e51-98ec-e554d59eec74"
+		Type = "Bool"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "5e3d3bb1-9d0f-4d4a-8954-e58a37284591"
+		Id = "1f7abc0d-07ac-4757-910f-3841f7c37549"
+		ToItem = "B"
+		ToNode = "252df0b6-8093-4e51-98ec-e554d59eec74"
+		Type = "Bool"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "252df0b6-8093-4e51-98ec-e554d59eec74"
+		Id = "ef987716-cde2-4c3b-8602-46ec88cf4c3a"
+		ToItem = "Condition"
+		ToNode = "40e040b2-978f-4c09-8969-5f240abdf7a4"
+		Type = "Bool"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Unit"
+		FromNode = "d71fac7f-12b7-4469-ad29-ec3b9ded2c15"
+		Id = "ee2b921a-88f7-487a-aaad-ab2259e5899c"
+		ToItem = "Unit"
+		ToNode = "5e3d3bb1-9d0f-4d4a-8954-e58a37284591"
+		Type = "Unit"
 	}
 ]
 Groups = [
@@ -255,22 +282,20 @@ Groups = [
 		]
 		Title = "うまく動作していない気がするのでUnitFlowの方でやってます"
 	}
+	{
+		Collapsed = false
+		Groups = [
+		]
+		Id = "6ea1b5ae-615d-4f3c-98a0-9b598b757d05"
+		Nodes = [
+			"5e3d3bb1-9d0f-4d4a-8954-e58a37284591"
+			"e5b02873-92ef-44a1-b978-0468d4bd976d"
+			"252df0b6-8093-4e51-98ec-e554d59eec74"
+		]
+		Title = "IsBlockerがTrueのUnitか、 cube_primtiveのUnitであればTrue"
+	}
 ]
 Nodes = [
-	{
-		Class = "Stingray.Flow.ExternalEvent"
-		EventName = {
-			Value = "Start"
-		}
-		Id = "41d3b702-ac47-4811-85dd-9b7abd5ee90a"
-		NodeLocation = {
-			X = 440
-			Y = -120
-		}
-		Out = {
-		}
-		Width = 160
-	}
 	{
 		Class = "Stingray.Flow.ExternalInputUnit"
 		Id = "d71fac7f-12b7-4469-ad29-ec3b9ded2c15"
@@ -278,8 +303,8 @@ Nodes = [
 			Value = "TouchingUnit"
 		}
 		NodeLocation = {
-			X = 420
-			Y = 100
+			X = 60
+			Y = 60
 		}
 		Unit = {
 		}
@@ -311,27 +336,10 @@ Nodes = [
 			Value = "Me"
 		}
 		NodeLocation = {
-			X = 420
-			Y = 0
-		}
-		Unit = {
-		}
-		Width = 160
-	}
-	{
-		Class = "Stingray.Flow.Branch"
-		Condition = {
-		}
-		False = {
-		}
-		Id = "40e040b2-978f-4c09-8969-5f240abdf7a4"
-		In = {
-		}
-		NodeLocation = {
-			X = 1040
+			X = 60
 			Y = -40
 		}
-		True = {
+		Unit = {
 		}
 		Width = 160
 	}
@@ -398,6 +406,37 @@ Nodes = [
 		Width = 600
 	}
 	{
+		Class = "Stingray.Flow.Branch"
+		Condition = {
+		}
+		False = {
+		}
+		Id = "40e040b2-978f-4c09-8969-5f240abdf7a4"
+		In = {
+		}
+		NodeLocation = {
+			X = 1120
+			Y = -40
+		}
+		True = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ExternalEvent"
+		EventName = {
+			Value = "Start"
+		}
+		Id = "41d3b702-ac47-4811-85dd-9b7abd5ee90a"
+		NodeLocation = {
+			X = 60
+			Y = -160
+		}
+		Out = {
+		}
+		Width = 160
+	}
+	{
 		Arguments = [
 			{
 				RawName = "Unit"
@@ -418,8 +457,8 @@ Nodes = [
 		IsQuery = false
 		Name = "IsBlocker"
 		NodeLocation = {
-			X = 740
-			Y = -80
+			X = 660
+			Y = -100
 		}
 		OutEvents = [
 			"Out"
@@ -433,6 +472,38 @@ Nodes = [
 				}
 			}
 		]
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.UnitIsOfType"
+		Id = "5e3d3bb1-9d0f-4d4a-8954-e58a37284591"
+		NodeLocation = {
+			X = 300
+			Y = 80
+		}
+		Type = {
+			Value = "core/units/primitives/cube_primitive"
+		}
+		Unit = {
+			UseMyUnit = false
+		}
+		Value = {
+		}
+		Width = 540
+	}
+	{
+		A = {
+		}
+		B = {
+		}
+		Class = "Stingray.Flow.BooleanOr"
+		Id = "252df0b6-8093-4e51-98ec-e554d59eec74"
+		NodeLocation = {
+			X = 900
+			Y = -20
+		}
+		Value = {
+		}
 		Width = 160
 	}
 ]

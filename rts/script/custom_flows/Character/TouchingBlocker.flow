@@ -1,22 +1,6 @@
 
 nodes = [
 	{
-		id = "41d3b702-ac47-4811-85dd-9b7abd5ee90a"
-		out_events = {
-			out = [
-				{
-					event = 0
-					id = "e5b02873-92ef-44a1-b978-0468d4bd976d:0"
-					node = "e5b02873-92ef-44a1-b978-0468d4bd976d"
-				}
-			]
-		}
-		type = "external_event"
-		variable_values = {
-			event_name = "Start"
-		}
-	}
-	{
 		id = "d71fac7f-12b7-4469-ad29-ec3b9ded2c15"
 		out_variables = {
 			unit = {
@@ -67,34 +51,6 @@ nodes = [
 		variable_values = {
 			name = "Me"
 			unit = null
-		}
-	}
-	{
-		id = "40e040b2-978f-4c09-8969-5f240abdf7a4"
-		in_variables = {
-			condition = {
-				node = "e5b02873-92ef-44a1-b978-0468d4bd976d"
-				type = "bool"
-				variable = "Bool"
-			}
-		}
-		out_events = {
-			true = [
-				{
-					event = 0
-					id = "f2b69046-4787-42b8-89c5-0fdeaefb2b33:0"
-					node = "f2b69046-4787-42b8-89c5-0fdeaefb2b33"
-				}
-				{
-					event = 0
-					id = "f4fcace0-2bb4-4590-b4f0-57172e511a74:0"
-					node = "f4fcace0-2bb4-4590-b4f0-57172e511a74"
-				}
-			]
-		}
-		type = "branch"
-		variable_values = {
-			condition = null
 		}
 	}
 	{
@@ -150,6 +106,50 @@ nodes = [
 		}
 	}
 	{
+		id = "40e040b2-978f-4c09-8969-5f240abdf7a4"
+		in_variables = {
+			condition = {
+				node = "252df0b6-8093-4e51-98ec-e554d59eec74"
+				type = "bool"
+				variable = "value"
+			}
+		}
+		out_events = {
+			true = [
+				{
+					event = 0
+					id = "f2b69046-4787-42b8-89c5-0fdeaefb2b33:0"
+					node = "f2b69046-4787-42b8-89c5-0fdeaefb2b33"
+				}
+				{
+					event = 0
+					id = "f4fcace0-2bb4-4590-b4f0-57172e511a74:0"
+					node = "f4fcace0-2bb4-4590-b4f0-57172e511a74"
+				}
+			]
+		}
+		type = "branch"
+		variable_values = {
+			condition = null
+		}
+	}
+	{
+		id = "41d3b702-ac47-4811-85dd-9b7abd5ee90a"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "e5b02873-92ef-44a1-b978-0468d4bd976d:0"
+					node = "e5b02873-92ef-44a1-b978-0468d4bd976d"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "Start"
+		}
+	}
+	{
 		flow_nodes_resource = "script/custom_nodes/load_csv"
 		id = "e5b02873-92ef-44a1-b978-0468d4bd976d"
 		in_variables = {
@@ -192,6 +192,56 @@ nodes = [
 				type = "unit"
 			}
 		]
+	}
+	{
+		id = "5e3d3bb1-9d0f-4d4a-8954-e58a37284591"
+		in_variables = {
+			type = {
+				type = "string"
+			}
+			unit = {
+				node = "d71fac7f-12b7-4469-ad29-ec3b9ded2c15"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "bool"
+			}
+		}
+		type = "unit_is_of_type"
+		variable_values = {
+			type = "core/units/primitives/cube_primitive"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "252df0b6-8093-4e51-98ec-e554d59eec74"
+		in_variables = {
+			a = {
+				node = "e5b02873-92ef-44a1-b978-0468d4bd976d"
+				type = "bool"
+				variable = "Bool"
+			}
+			b = {
+				node = "5e3d3bb1-9d0f-4d4a-8954-e58a37284591"
+				type = "bool"
+				variable = "value"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "bool"
+			}
+		}
+		type = "boolean_or"
+		variable_values = {
+			a = null
+			b = null
+			value = null
+		}
 	}
 	{
 		id = "11111111-2222-3333-4444-555555555555"
