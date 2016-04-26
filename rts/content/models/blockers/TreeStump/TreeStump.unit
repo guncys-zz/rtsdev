@@ -1,4 +1,7 @@
 
+data = {
+	IsBlocker = true
+}
 editor_metadata = {
 	camera_settings = {
 		far_range = 1000
@@ -33,7 +36,7 @@ renderables = {
 	TreeStump = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
 		surface_queries = false

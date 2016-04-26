@@ -2186,11 +2186,6 @@ nodes = [
 			out = [
 				{
 					event = 0
-					id = "49bee8ee-15f7-4147-930a-15d7aa37df84:0"
-					node = "49bee8ee-15f7-4147-930a-15d7aa37df84"
-				}
-				{
-					event = 0
 					id = "74eb63c1-b379-43cb-8279-ae3608db3497:0"
 					node = "74eb63c1-b379-43cb-8279-ae3608db3497"
 				}
@@ -2363,6 +2358,45 @@ nodes = [
 			key = "RunSpeed"
 			unit = null
 			value = null
+		}
+	}
+	{
+		id = "99c1ac8a-2953-47af-b928-a005f2c2090b"
+		in_variables = {
+			mover = {
+				type = "mover"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			actor = {
+				type = "actor"
+			}
+		}
+		type = "get_actor_colliding_below_mover"
+		variable_values = {
+			actor = null
+			mover = null
+			unit = null
+		}
+	}
+	{
+		id = "e0a05547-1e89-461b-ba65-3da2216227f6"
+		in_variables = {
+			actor = {
+				node = "99c1ac8a-2953-47af-b928-a005f2c2090b"
+				type = "actor"
+				variable = "actor"
+			}
+		}
+		type = "get_actor_unit"
+		variable_values = {
+			actor = null
+			unit = null
 		}
 	}
 	{

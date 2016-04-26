@@ -2468,15 +2468,6 @@ Connections = [
 	}
 	{
 		Class = "Stingray.Flow.VariableConnection"
-		FromItem = "TouchingUnit"
-		FromNode = "a724d015-9c23-44dd-b1b0-e8cace8d04c4"
-		Id = "2e597ba6-6ced-4ebb-b0dc-650cc634f141"
-		ToItem = "TouchingUnit"
-		ToNode = "da507579-c407-41d2-9f61-5fc76c7510a5"
-		Type = "Unit"
-	}
-	{
-		Class = "Stingray.Flow.VariableConnection"
 		FromItem = "outSpeed"
 		FromNode = "026c47e2-e715-462d-b34e-210b62e1f756"
 		Id = "2ff4fd2a-8460-4754-8e6d-688783fec5dc"
@@ -2645,15 +2636,6 @@ Connections = [
 		Priority = 0
 		ToItem = "In"
 		ToNode = "b33f1e63-83bb-4089-b122-851b9ffcd7ca"
-	}
-	{
-		Class = "Stingray.Flow.EventConnection"
-		FromItem = "Out"
-		FromNode = "71c8a25f-219e-4075-aba0-f105322cda09"
-		Id = "762ed3d8-ace6-4473-8908-21073b0d8a46"
-		Priority = 0
-		ToItem = "DamageIn"
-		ToNode = "49bee8ee-15f7-4147-930a-15d7aa37df84"
 	}
 	{
 		Class = "Stingray.Flow.EventConnection"
@@ -3185,6 +3167,24 @@ Connections = [
 		ToItem = "Value"
 		ToNode = "c7b743d3-cf9f-4f5a-9b1c-7ae11af00f03"
 		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Actor"
+		FromNode = "99c1ac8a-2953-47af-b928-a005f2c2090b"
+		Id = "8d240e69-e7b1-4289-8119-3b000892706c"
+		ToItem = "Actor"
+		ToNode = "e0a05547-1e89-461b-ba65-3da2216227f6"
+		Type = "Actor"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "TouchingUnit"
+		FromNode = "a724d015-9c23-44dd-b1b0-e8cace8d04c4"
+		Id = "36ad98bc-3dd5-4ae1-8c6a-f96dadacf451"
+		ToItem = "TouchingUnit"
+		ToNode = "da507579-c407-41d2-9f61-5fc76c7510a5"
+		Type = "Unit"
 	}
 ]
 Groups = [
@@ -4054,7 +4054,7 @@ Nodes = [
 		]
 		OutVariables = [
 		]
-		Width = 160
+		Width = 420
 	}
 	{
 		Arguments = [
@@ -5368,6 +5368,35 @@ Nodes = [
 			UseMyUnit = true
 		}
 		Value = {
+		}
+		Width = 160
+	}
+	{
+		Actor = {
+		}
+		Class = "Stingray.Flow.GetActorCollidingBelowMover"
+		Id = "99c1ac8a-2953-47af-b928-a005f2c2090b"
+		Mover = {
+		}
+		NodeLocation = {
+			X = -1560
+			Y = 1600
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Width = 140
+	}
+	{
+		Actor = {
+		}
+		Class = "Stingray.Flow.GetActorUnit"
+		Id = "e0a05547-1e89-461b-ba65-3da2216227f6"
+		NodeLocation = {
+			X = -1620
+			Y = 1600
+		}
+		Unit = {
 		}
 		Width = 160
 	}

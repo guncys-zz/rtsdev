@@ -15,4 +15,15 @@ nodes = [
 		category = "Tools"
 		returns = {}
 	}
+	{
+		name = "IsBlocker"
+		args = {
+			Unit = "unit"
+		}
+		function = "Tools.IsBlocker"
+		category = "Tools"
+		returns = {
+			Bool = "bool"
+		}
+	}
 ]

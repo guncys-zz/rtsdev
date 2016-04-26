@@ -47,3 +47,23 @@ function Tools.Spawn(name, position, rotation)
     local unit = stingray.World.spawn_unit(world, name, position, rotation)
     table.insert(unit_objects, unit)
 end
+
+
+function Tools.IsBlocker(t)
+    
+    r = {}
+    
+    -- 返り値のテーブル
+    r["Bool"] = false
+    
+    -- IsBlockerがTrueか判定
+    if stingray.Unit.get_data(t.Unit, "IsBlocker") then
+        r["Bool"] = true
+        
+    end
+    
+    return r
+    
+end
+
+
