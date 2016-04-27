@@ -1,30 +1,6 @@
 
 nodes = [
 	{
-		id = "0139b838-b4f5-4987-bf5e-d5ecd96c690b"
-		in_variables = {
-			key = {
-				type = "string"
-			}
-			unit = {
-				node = "11111111-2222-3333-4444-555555555555"
-				type = "unit"
-				variable = "unit"
-			}
-		}
-		out_variables = {
-			value = {
-				type = "float"
-			}
-		}
-		type = "get_unit_numeric_data"
-		variable_values = {
-			key = "Distance"
-			unit = null
-			value = null
-		}
-	}
-	{
 		id = "026c47e2-e715-462d-b34e-210b62e1f756"
 		in_event_index = [
 			"ExitFlowEventJump"
@@ -2534,6 +2510,30 @@ nodes = [
 			button_name = "g"
 			device = "keyboard"
 			device_number = 0
+			value = null
+		}
+	}
+	{
+		id = "0139b838-b4f5-4987-bf5e-d5ecd96c690b"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "get_unit_numeric_data"
+		variable_values = {
+			key = "Distance"
+			unit = null
 			value = null
 		}
 	}

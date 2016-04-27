@@ -43,7 +43,8 @@ function PlayUI.gauge_update(pos)  --positionにはプレイヤーのY方向の�
 --	print(hp)
     
     --アニメーション処理
-    --positionは1-100の値を受け取る
+    --positionは1-1000の値を受け取る
+    --1-100に変換
 	gauge_anim = pos.Position / 10
 	--gauge_anim = gauge_anim + 1
 	gauge_anim = math.ceil(gauge_anim)

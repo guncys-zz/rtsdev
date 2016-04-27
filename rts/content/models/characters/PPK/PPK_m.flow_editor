@@ -3558,23 +3558,6 @@ Groups = [
 ]
 Nodes = [
 	{
-		Class = "Stingray.Flow.GetUnitNumericData"
-		Id = "0139b838-b4f5-4987-bf5e-d5ecd96c690b"
-		Key = {
-			Value = "Distance"
-		}
-		NodeLocation = {
-			X = -780
-			Y = 400
-		}
-		Unit = {
-			UseMyUnit = true
-		}
-		Value = {
-		}
-		Width = 160
-	}
-	{
 		Class = "Stingray.Flow.FlowSubroutine"
 		Disable = {
 		}
@@ -5646,6 +5629,23 @@ Nodes = [
 		Pressed = {
 		}
 		Released = {
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.GetUnitNumericData"
+		Id = "0139b838-b4f5-4987-bf5e-d5ecd96c690b"
+		Key = {
+			Value = "Distance"
+		}
+		NodeLocation = {
+			X = -920
+			Y = 480
+		}
+		Unit = {
+			UseMyUnit = true
 		}
 		Value = {
 		}
