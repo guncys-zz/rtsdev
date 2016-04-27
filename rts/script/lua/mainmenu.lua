@@ -130,7 +130,7 @@ local function perform_action()
 	-- Load empty level
 	if MainMenu.action == "start" then
 		MainMenu.shutdown()
-		SimpleProject.change_level(Project.level_names.testmap)    --testmapに遷移
+		SimpleProject.change_level(Project.level_names.stage1)    --stage1に遷移
 	-- Exit the program
 	elseif MainMenu.action == "exit" then
 		stingray.Application.quit()

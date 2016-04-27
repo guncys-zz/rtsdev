@@ -2,7 +2,7 @@ require 'core/appkit/lua/class'
 require 'core/appkit/lua/app'
 
 local damage_anim = 0   --ダメージのアニメーション
-local gauge_anim = 0    --ゲージのアニメーション   
+local gauge_anim = 1    --ゲージのアニメーション   
 
 PlayUI = PlayUI or{}
 
@@ -44,8 +44,9 @@ function PlayUI.gauge_update(pos)  --positionにはプレイヤーのY方向の�
     
     --アニメーション処理
     --positionは1-100の値を受け取る
-	--gauge_anim = pos.Position
-	gauge_anim = gauge_anim + 1
+	gauge_anim = pos.Position / 10
+	--gauge_anim = gauge_anim + 1
+	gauge_anim = math.ceil(gauge_anim)
 	print(gauge_anim)
 	if gauge_anim <= 100 then
 	    event.data =  {value = gauge_anim}

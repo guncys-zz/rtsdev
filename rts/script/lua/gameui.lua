@@ -92,7 +92,7 @@ function GameUI.update(object, dt)
 		local time = stingray.World.time(SimpleProject.world)
 		local p = stingray.Application.platform()
 		--update_hp(dt)
-		if time - start_time > 1 then
+		--if time - start_time > 1 then
 		--[[	if Appkit.Util.is_pc() then
 				if stingray.Keyboard.pressed(stingray.Keyboard.button_id("1")) then
 					GameUI.action = "start"
@@ -107,7 +107,7 @@ function GameUI.update(object, dt)
     			end 
     		end
     		]]--
-		end
+	--	end
 	end
 	perform_action()
 end

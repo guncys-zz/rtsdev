@@ -132,6 +132,14 @@ editor_metadata = {
 				ToNode = "121ab2e8-e899-4bc0-939f-15535a49f17b"
 				Type = "Unit"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "f4946a4f-4dd9-4028-8e1c-09d32a380aa8"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "da8dbc8d-aa8f-40f5-bdc3-a10731b6d1b9"
+			}
 		]
 		Groups = [
 			{
@@ -792,6 +800,30 @@ editor_metadata = {
 				}
 				Width = 360
 			}
+			{
+				Arguments = [
+				]
+				Brief = "This node clears the currently loaded project. It should be used before switching projects or before shutting down."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/scaleform_studio/scaleform_studio"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "da8dbc8d-aa8f-40f5-bdc3-a10731b6d1b9"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Scaleform Unload Project"
+				NodeLocation = {
+					X = 185
+					Y = 279
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
 		]
 	}
 	Groups = [
@@ -1428,6 +1460,15 @@ flow = {
 				}
 			}
 			name = "Change Level"
+			out_events = {
+				Out = [
+					{
+						event = 0
+						id = "da8dbc8d-aa8f-40f5-bdc3-a10731b6d1b9:0"
+						node = "da8dbc8d-aa8f-40f5-bdc3-a10731b6d1b9"
+					}
+				]
+			}
 			query = false
 			return_values = [
 			]
@@ -1763,6 +1804,17 @@ flow = {
 				unit = null
 				value = 250
 			}
+		}
+		{
+			flow_nodes_resource = "core/scaleform_studio/scaleform_studio"
+			id = "da8dbc8d-aa8f-40f5-bdc3-a10731b6d1b9"
+			name = "Scaleform Unload Project"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variables = [
+			]
 		}
 	]
 }

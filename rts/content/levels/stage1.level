@@ -116,6 +116,14 @@ editor_metadata = {
 				ToItem = "destroy units CSV file"
 				ToNode = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "dba8d47d-c0f7-4fbf-9c80-7fec766674da"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "d83c57bd-e16a-41e9-bbe2-2d2c574285fa"
+			}
 		]
 		Groups = [
 			{
@@ -742,6 +750,30 @@ editor_metadata = {
 				Title = "Level Shutdown"
 				Width = 160
 			}
+			{
+				Arguments = [
+				]
+				Brief = "This node clears the currently loaded project. It should be used before switching projects or before shutting down."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/scaleform_studio/scaleform_studio"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "d83c57bd-e16a-41e9-bbe2-2d2c574285fa"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Scaleform Unload Project"
+				NodeLocation = {
+					X = 260
+					Y = 260
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
 		]
 	}
 	Groups = [
@@ -1260,6 +1292,15 @@ flow = {
 				}
 			}
 			name = "Change Level"
+			out_events = {
+				Out = [
+					{
+						event = 0
+						id = "d83c57bd-e16a-41e9-bbe2-2d2c574285fa:0"
+						node = "d83c57bd-e16a-41e9-bbe2-2d2c574285fa"
+					}
+				]
+			}
 			query = false
 			return_values = [
 			]
@@ -1538,6 +1579,17 @@ flow = {
 				]
 			}
 			type = "level_shutdown"
+		}
+		{
+			flow_nodes_resource = "core/scaleform_studio/scaleform_studio"
+			id = "d83c57bd-e16a-41e9-bbe2-2d2c574285fa"
+			name = "Scaleform Unload Project"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variables = [
+			]
 		}
 	]
 }
