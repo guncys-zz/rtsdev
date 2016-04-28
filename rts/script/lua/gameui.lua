@@ -29,11 +29,12 @@ function GameUI.start()
 	    scaleform.Stingray.load_project_and_scene("s2d_projects/ui.s2d/ui")
 		--scaleform.Stingray.load_project("test_mainmenu.s2dproj", "s2d_projects/test_mainmenu")
 		scaleform.Stage.set_view_scale_mode(1)
-		--Register menu button mouse listener
+
 		local custom_listener = GameUI.custom_listener
-		custom_listener = scaleform.EventListener.create(custom_listener, GameUI.on_custom_event)
+		custom_listener = scaleform.EventListener.create(custom_listener, GameUI.on_custom_event)--Creates an event listener. 
+		
 		GameUI.custom_listener = custom_listener
-		scaleform.EventListener.connect(custom_listener, scaleform.EventTypes.Custom)
+		scaleform.EventListener.connect(custom_listener, scaleform.EventTypes.Custom)--Connects the event listener to stage events of the input type. 
 		local loading = scaleform.Actor.load("GameUI.s2dscene")	--GameUI用のシーンをロード
 	    -- Remove the main menu scene
         scaleform.Stage.remove_scene_by_index(1)
@@ -41,15 +42,15 @@ function GameUI.start()
         scaleform.Stage.add_scene(loading)
 	end
 
-	local level = SimpleProject.level
-	start_time = stingray.World.time(SimpleProject.world)
+	--local level = SimpleProject.level
+--	start_time = stingray.World.time(SimpleProject.world)
 	-- make sure camera is at correct location
-	local camera_unit = SimpleProject.camera_unit
-	local camera = stingray.Unit.camera(camera_unit, 1)
-	stingray.Unit.set_local_pose(camera_unit, 1, stingray.Matrix4x4.identity())
-	stingray.Camera.set_local_pose(camera, camera_unit, stingray.Matrix4x4.identity())
+--	local camera_unit = SimpleProject.camera_unit
+---	local camera = stingray.Unit.camera(camera_unit, 1)
+--	stingray.Unit.set_local_pose(camera_unit, 1, stingray.Matrix4x4.identity())
+--	stingray.Camera.set_local_pose(camera, camera_unit, stingray.Matrix4x4.identity())
 
-	Appkit.manage_level_object(level, GameUI, nil)
+--	Appkit.manage_level_object(level, GameUI, nil)
 end
 --GameUIのリリース
 function GameUI.shutdown(object)
