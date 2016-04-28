@@ -48,7 +48,7 @@ function PlayUI.gauge_update(pos)  --positionにはプレイヤーのY方向の�
 	gauge_anim = pos.Position / 10
 	--gauge_anim = gauge_anim + 1
 	gauge_anim = math.ceil(gauge_anim)
-	print(gauge_anim)
+--	print(gauge_anim)
 	if gauge_anim <= 100 then
 	    event.data =  {value = gauge_anim}
 	    scaleform.Stage.dispatch_event(event)
