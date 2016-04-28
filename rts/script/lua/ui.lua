@@ -4,10 +4,10 @@ require 'core/appkit/lua/app'
 local damage_anim = 0   --ダメージのアニメーション
 local gauge_anim = 1    --ゲージのアニメーション   
 
-PlayUI = PlayUI or{}
+UI = UI or{}
 
 --ダメージアニメーションの制御
-function PlayUI.damage(hp)
+function UI.damage(hp)
     local event = { --eventは関数内localではなく、このファイル内でアクセスできるようにする
 		eventId = scaleform.EventTypes.Custom,
 		name = nil,
@@ -31,7 +31,7 @@ function PlayUI.damage(hp)
 --    print(damage_anim)
 end
 
-function PlayUI.gauge_update(pos)  --positionにはプレイヤーのY方向の位置が入る
+function UI.gauge_update(pos)  --positionにはプレイヤーのY方向の位置が入る
     --プレイヤーの現在地から、UI上での長さでどのあたりかを求めて、アニメーションを制御
      local event = { --eventは関数内localではなく、このファイル内でアクセスできるようにする
 		eventId = scaleform.EventTypes.Custom,
@@ -55,4 +55,4 @@ function PlayUI.gauge_update(pos)  --positionにはプレイヤーのY方向の�
     end
 end
 
-return PlayUI
+return UI
