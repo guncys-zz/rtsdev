@@ -1,0 +1,26 @@
+
+materials = {
+	crane_mt1 = "content/models/stage4/materials/crane_mt1"
+	crane_mt10 = "content/models/stage4/materials/crane_mt10"
+	crane_mt11 = "content/models/stage4/materials/crane_mt11"
+	crane_mt12 = "content/models/stage4/materials/crane_mt12"
+	crane_mt2 = "content/models/stage4/materials/crane_mt2"
+	crane_mt3 = "content/models/stage4/materials/crane_mt3"
+	crane_mt4 = "content/models/stage4/materials/crane_mt4"
+	crane_mt5 = "content/models/stage4/materials/crane_mt5"
+	crane_mt6 = "content/models/stage4/materials/crane_mt6"
+	crane_mt7 = "content/models/stage4/materials/crane_mt7"
+	crane_mt8 = "content/models/stage4/materials/crane_mt8"
+	crane_mt9 = "content/models/stage4/materials/crane_mt9"
+}
+renderables = {
+	crane = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

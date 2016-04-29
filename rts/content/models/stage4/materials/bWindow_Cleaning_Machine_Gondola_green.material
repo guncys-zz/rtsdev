@@ -1,0 +1,24 @@
+
+parent_material = "core/stingray_renderer/shader_import/standard"
+variables = {
+	base_color = {
+		type = "vector3"
+		value = [
+			0.1529412
+			0.4235294
+			0.1843137
+		]
+	}
+	emissive = {
+		type = "vector3"
+		value = [
+			0.06117648
+			0.1694118
+			0.07372549
+		]
+	}
+	roughness = {
+		type = "scalar"
+		value = 0
+	}
+}

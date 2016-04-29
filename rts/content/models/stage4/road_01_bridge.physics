@@ -1,0 +1,48 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "road_01"
+		node = "StingrayEntityRoot"
+		shapes = [
+			{
+				material = "default"
+				shape = "road_01"
+				template = "default"
+				type = "mesh"
+			}
+		]
+		template = "static"
+	}
+	{
+		enabled = true
+		mass = 0
+		name = "Hashira_3_ncl1_1"
+		node = "Hashira_3_ncl1_1"
+		shapes = [
+			{
+				material = "default"
+				shape = "Hashira_3_ncl1_1"
+				template = "default"
+				type = "box"
+			}
+		]
+		template = "static"
+	}
+	{
+		enabled = true
+		mass = 0
+		name = "Hashira_3"
+		node = "Hashira_3"
+		shapes = [
+			{
+				material = "default"
+				shape = "Hashira_3"
+				template = "default"
+				type = "box"
+			}
+		]
+		template = "static"
+	}
+]

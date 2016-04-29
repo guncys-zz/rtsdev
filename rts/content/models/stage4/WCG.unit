@@ -1,0 +1,23 @@
+
+materials = {
+	bWindow_Cleaning_Machine_Gondola_ase_orange = "content/models/stage4/materials/bWindow_Cleaning_Machine_Gondola_ase_orange"
+	bWindow_Cleaning_Machine_Gondola_black = "content/models/stage4/materials/bWindow_Cleaning_Machine_Gondola_black"
+	bWindow_Cleaning_Machine_Gondola_Concrete = "content/models/stage4/materials/bWindow_Cleaning_Machine_Gondola_Concrete"
+	bWindow_Cleaning_Machine_Gondola_green = "content/models/stage4/materials/bWindow_Cleaning_Machine_Gondola_green"
+	bWindow_Cleaning_Machine_Gondola_Metal_Steel = "content/models/stage4/materials/bWindow_Cleaning_Machine_Gondola_Metal_Steel"
+	bWindow_Cleaning_Machine_Gondola_motor = "content/models/stage4/materials/bWindow_Cleaning_Machine_Gondola_motor"
+	bWindow_Cleaning_Machine_Gondola_red = "content/models/stage4/materials/bWindow_Cleaning_Machine_Gondola_red"
+	bWindow_Cleaning_Machine_Gondola_red1 = "content/models/stage4/materials/bWindow_Cleaning_Machine_Gondola_red1"
+	bWindow_Cleaning_Machine_Gondola_white = "content/models/stage4/materials/bWindow_Cleaning_Machine_Gondola_white"
+}
+renderables = {
+	Window_Cleaning_Machine_Gondola_chair_base1 = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

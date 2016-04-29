@@ -1,0 +1,34 @@
+
+materials = {
+	Building_far_01_mt = "content/models/stage4/materials/Building_far_01_mt"
+	Building_far_01_window_mt = "content/models/stage4/materials/Building_far_01_window_mt"
+}
+renderables = {
+	building1 = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	building2 = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	window = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

@@ -14,14 +14,14 @@ variables = {
 	emissive = {
 		type = "vector3"
 		value = [
-			0
-			0
+			1
+			1
 			0
 		]
 	}
 	emissive_intensity = {
 		type = "scalar"
-		value = 0
+		value = 0.5
 	}
 	metallic = {
 		type = "scalar"
@@ -29,7 +29,7 @@ variables = {
 	}
 	opacity = {
 		type = "scalar"
-		value = 0.4
+		value = 0.2
 	}
 	roughness = {
 		type = "scalar"
