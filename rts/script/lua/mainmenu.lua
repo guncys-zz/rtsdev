@@ -71,25 +71,44 @@ function MainMenu.start()
 	if stingray.Window then
 		stingray.Window.set_show_cursor(true)
 	end
-
+    print("MainMenu.startを通った")
 	if scaleform then
-	    scaleform.Stingray.load_project_and_scene("s2d_projects/ui.s2d/ui")
-		--scaleform.Stingray.load_project("test_mainmenu.s2dproj", "s2d_projects/test_mainmenu")
-		scaleform.Stage.set_view_scale_mode(1)
-		--Register menu button mouse listener
-                --メニュ―画面のボタンが押されたのを拾うリスナーを登録
-		local custom_listener = MainMenu.custom_listener
-		custom_listener = scaleform.EventListener.create(custom_listener, MainMenu.on_custom_event)
-		MainMenu.custom_listener = custom_listener
-		scaleform.EventListener.connect(custom_listener, scaleform.EventTypes.Custom)
+	    scaleform.Stingray.load_project_and_scene("s2d_projects/ui.s2d/ui") --Loads a Scaleform Studio project. 
 		
-        --画面レンダの振る舞いの設定
+		 --画面レンダの振る舞いの設定
         --http://help.autodesk.com/view/ScaleformStudio/ENU/?guid=__scaleform_studio_help_getting_started_interface_overview_project_panel_html
-        scaleform.Stage.set_view_scale_mode(scaleform.ViewScaleModes.NoBorder)
+		scaleform.Stage.set_view_scale_mode(2)  --Sets the current scale mode for the stage
+		--Enumeration values(scaleform.Stage.set_view_scale_mode)
+        --ExactFit
+        ----Scales the view so that the content bounds matches the viewport 
+        ----while changing the viewport aspect ratio to match the content bounds ratio. 
+        
+        --NoBorder
+        ----Scales the view so that the viewport fits inside the content bounds 
+        ----while maintaining the viewport aspect ratio stage and clipping any content that is outside the viewport. 
+         
+        --NoScale
+        ----The view does does not scale. 
+        
+        --ShowAll
+        ----Scales the view so that the content bounds fits inside the viewport which maintaining the viewport aspect ratio.  
+        --END:Enumeration values(scaleform.Stage.set_view_scale_mode)
+        
+        
+		--Register menu button mouse listener
+        --メニュ―画面のボタンが押されたのを拾うリスナーを登録
+        --MainMenu.on_custom_eventをリスナー関数として、ローカルなリスナーオブジェクトを作成
+		local custom_listener = scaleform.EventListener.create(custom_listener, MainMenu.on_custom_event)   --Creates an event listener.
+		MainMenu.custom_listener = custom_listener  --ローカルオブジェクトをクラスオブジェクトにコピー
+		scaleform.EventListener.connect(custom_listener, scaleform.EventTypes.Custom)   --Connects the event listener to stage events of the input type
+		--http://help.autodesk.com/view/ScaleformStudio/ENU/?guid=__lua_ref_enu_scaleform_EventTypes_htmlのイベントタイプの中から
+		--カスタムイベントと紐づける
+		--The event parameters for Custom event. 
+        --The table passed as the data parameter can only contain specific types. For additional details please refer to the Events section in the Programming Guide.
 
 	end
 
-	local level = SimpleProject.level
+	--local level = SimpleProject.level
 	start_time = stingray.World.time(SimpleProject.world)
 	-- make sure camera is at correct location
 	local camera_unit = SimpleProject.camera_unit
@@ -97,24 +116,69 @@ function MainMenu.start()
 	stingray.Unit.set_local_pose(camera_unit, 1, stingray.Matrix4x4.identity())
 	stingray.Camera.set_local_pose(camera, camera_unit, stingray.Matrix4x4.identity())
 
-	Appkit.manage_level_object(level, MainMenu, nil)
+	Appkit.manage_level_object(SimpleProject.level, MainMenu, nil) -- Managed objects receive type.update(object, dt) and type.shutdown(object) calls
+	--[[
+        
+        `Appkit` provides management for Editor Test Level and basic application objects,
+        such as `Window`. It also exposes an interface to manage `World` objects, `Level`
+        objects, and arbitrary game objects.
+        
+        The core usage of `Appkit` is to call `Appkit.setup_application` at Init time,
+        then `Appkit.Update`, `Appkit.Render`, and `Appkit.Shutdown` from the respective
+        engine Lua hooks.
+        
+        -------------------------------------------------------------------------------
+        World Management
+        -------------------------------------------------------------------------------
+        
+            -- Registers a `World` to be managed by Appkit. The `world` will update
+            -- each frame, and render each frame with any enabled cameras and its
+            -- shading environment. See the Appkit.WorldWrapper lua for information
+            -- on using WorldWrapper objects.
+            local world_wrapper = Appkit.manage_world(Project.world)
+        
+            -- Gets a managed `WorldWrapper` from the Appkit for a given `World`, or
+            -- nil if the world is not managed by appkit.
+            local world_wrapper = Appkit.get_managed_world(Project.world)
+        
+        -------------------------------------------------------------------------------
+        Level Management
+        -------------------------------------------------------------------------------
+        
+            -- Registers a `Level` to be managed by Appkit. The `Level` will update
+            -- each frame. See the Appkit.LevelWrapper lua for information
+            -- on using LevelWrapper objects.
+            local Level_wrapper = Appkit.manage_Level(Project.Level)
+        
+            -- Gets a managed `LevelWrapper` from the Appkit for a given `Level`, or
+            -- nil if the level is not managed by appkit.
+            local level_wrapper = Appkit.get_managed_level(Project.level)
+        
+            -- Defines custom level unload and load functions for manaaged levels.
+            -- This is used by the Appkit's Level / Change Level flow node and by
+            -- Appkit.SimpleProject's change_level function. See the below Config
+            -- section for default Appkit managed level load/unload behavior.
+            Appkit.custom_unload_level_function = Project.unload_level
+            Appkit.custom_load_level_function = Project.load_level
+        
+        ]]--
 end
 
 --Mainmenuのリリース（シャットダウン）
 function MainMenu.shutdown(object)
 	if scaleform then
-		scaleform.EventListener.disconnect(MainMenu.custom_listener)
-		scaleform.Stingray.unload_project()
+		scaleform.EventListener.disconnect(MainMenu.custom_listener)--Disconnects all connections to the event listener. 
+		scaleform.Stingray.unload_project()--Unloads a Scaleform Studio project. 
 	end
 
 	MainMenu.evt_listener_handle = nil
-	Appkit.unmanage_level_object(SimpleProject.level, MainMenu, nil)
+	Appkit.unmanage_level_object(SimpleProject.level, MainMenu, nil)-- Unmanaged objects receive type.update(object, dt) and type.shutdown(object) calls
 	if stingray.Window then
 		stingray.Window.set_show_cursor(false)
 	end
 end
 
---ボタンクリックイベントが発生したときの処理
+--カスタムイベントが発生したときの処理
 MainMenu.action = nil
 function MainMenu.on_custom_event(evt)
 	if evt.name == "start_game" then

@@ -11,8 +11,6 @@ local pousemenuAnimation = scaleform.Actor.component_by_name(thisActor, "Animati
 scaleform.AnimationComponent.stop(pousemenuAnimation)
 
 --カスタムリスナーを作成
---外部でe.data.valueの値を1-36まで変えてあげることで、
---1-12までで1ダメージ、13-24までで2ダメージ、25-36までで3ダメージを表現
 local customListener = scaleform.EventListener.create(customListener, function(e)
 if e.name == "pause_menu" then
     scaleform.AnimationComponent.goto_frame(pousemenuAnimation, 13)
