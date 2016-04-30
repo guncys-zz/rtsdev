@@ -1,0 +1,53 @@
+
+nodes = [
+	{
+		id = "6b188794-0f63-4fb6-9d99-3026e22391a3"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "aa438561-79a2-4537-904f-18862b337399:0"
+					node = "aa438561-79a2-4537-904f-18862b337399"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "Reset UI Start"
+		}
+	}
+	{
+		id = "ffae6896-c959-4cbe-9120-c9599eb91337"
+		type = "level_flow_event"
+		variable_values = {
+			event = "Reset UI Done"
+		}
+	}
+	{
+		flow_nodes_resource = "script/custom_nodes/reser_ui"
+		id = "aa438561-79a2-4537-904f-18862b337399"
+		name = "Reset UI"
+		out_events = {
+			Out = [
+				{
+					event = 0
+					id = "ffae6896-c959-4cbe-9120-c9599eb91337:0"
+					node = "ffae6896-c959-4cbe-9120-c9599eb91337"
+				}
+			]
+		}
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variables = [
+		]
+	}
+	{
+		id = "11111111-2222-3333-4444-555555555555"
+		type = "unit_spawned"
+		variable_values = {
+			unit = null
+		}
+	}
+]
