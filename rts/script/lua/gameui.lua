@@ -17,7 +17,6 @@ local GameUI = Project.GameUI
 GameUI.custom_listener = GameUI.custom_listener or nil
 
 local start_time = 0
---local damage_anim = 1   --ダメージのアニメーション制御
 local damage_bool = false
 --GameUIの呼び出し
 function GameUI.start()
@@ -42,15 +41,14 @@ function GameUI.start()
         scaleform.Stage.add_scene(loading)
 	end
 
-	--local level = SimpleProject.level
+	local level = SimpleProject.level
 --	start_time = stingray.World.time(SimpleProject.world)
 	-- make sure camera is at correct location
 --	local camera_unit = SimpleProject.camera_unit
 ---	local camera = stingray.Unit.camera(camera_unit, 1)
 --	stingray.Unit.set_local_pose(camera_unit, 1, stingray.Matrix4x4.identity())
 --	stingray.Camera.set_local_pose(camera, camera_unit, stingray.Matrix4x4.identity())
-
---	Appkit.manage_level_object(level, GameUI, nil)
+	Appkit.manage_level_object(level, GameUI, nil)
 end
 --GameUIのリリース
 function GameUI.shutdown(object)
@@ -77,12 +75,15 @@ end
 --更新処理で呼ばれる
 local function perform_action()
 	-- Load empty level
+	if GameUI.action == "exit" then
+	    stingray.Application.quit()
+    end
+    
 	if GameUI.action == "pause" then
 		--ゲームのタイムを止める処理を記述予定
 		--今はメインメニューに戻る処理とする
 		GameUI.shutdown()
 		SimpleProject.change_level(Project.level_names.mainmenu)    --testmapに遷移
-	-- Exit the program
 	end
 	GameUI.action = nil
 end
@@ -92,55 +93,18 @@ function GameUI.update(object, dt)
 	if GameUI.action == nil  then
 		local time = stingray.World.time(SimpleProject.world)
 		local p = stingray.Application.platform()
-		--update_hp(dt)
-		--if time - start_time > 1 then
-		--[[	if Appkit.Util.is_pc() then
+		if time - start_time > 1 then
+			if Appkit.Util.is_pc() then
 				if stingray.Keyboard.pressed(stingray.Keyboard.button_id("1")) then
 					GameUI.action = "start"
 				elseif stingray.Keyboard.pressed(stingray.Keyboard.button_id("esc")) then
 					GameUI.action = "exit"
 				end
-			elseif p == stingray.Application.XB1 or p == stingray.Application.PS4 then 
-				if stingray.Pad1.pressed(stingray.Pad1.button_id(Appkit.Util.plat(nil, "a", nil, "cross"))) then
-    				GameUI.action = "start"
-    			elseif stingray.Pad1.pressed(stingray.Pad1.button_id(Appkit.Util.plat(nil, "b", nil, "circle"))) then
-    				GameUI.action = "exit"
-    			end 
-    		end
-    		]]--
-	--	end
-	end
+			end
+		end
+    end
 	perform_action()
 end
 
---hpのアニメーション制御関数
-function update_hp(dt)
---    local event = { --eventは関数内localではなく、このファイル内でアクセスできるようにする
---		eventId = scaleform.EventTypes.Custom,
---		name = nil,
---		data = nil
---	}
-    --キーボード入力をテスト用に受け取る
---    if stingray.Keyboard.released(stingray.Keyboard.button_index("d")) or damage_bool == true then--damage_boolの判定はここにあるべきではない
---		if damage_anim < 12 then
---		    event.name = "damage_1"
---		    damage_bool = true
---	    elseif damage_anim < 24 then
---	        event.name = "damage_2"
---		    damage_bool = true
-  --      elseif damage_anim < 36 then
-    --        event.name = "damage_3"
-	--	    damage_bool = true
-      --  end
---	end
-	
---	if damage_bool == true then
---	    damage_anim = damage_anim + 1
---	    event.data =  {value = damage_anim}
---	    scaleform.Stage.dispatch_event(event)
---	    if damage_anim == 12 or damage_anim == 24 or damage_anim == 36 then
---	        damage_bool = false
-  --      end
- --   end
-end
+
 return GameUI

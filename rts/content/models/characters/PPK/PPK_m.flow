@@ -1,6 +1,30 @@
 
 nodes = [
 	{
+		id = "0139b838-b4f5-4987-bf5e-d5ecd96c690b"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "get_unit_numeric_data"
+		variable_values = {
+			key = "Distance"
+			unit = null
+			value = null
+		}
+	}
+	{
 		id = "026c47e2-e715-462d-b34e-210b62e1f756"
 		in_event_index = [
 			"ExitFlowEventJump"
@@ -1317,6 +1341,11 @@ nodes = [
 					id = "74eb63c1-b379-43cb-8279-ae3608db3497:0"
 					node = "74eb63c1-b379-43cb-8279-ae3608db3497"
 				}
+				{
+					event = 0
+					id = "49bee8ee-15f7-4147-930a-15d7aa37df84:0"
+					node = "49bee8ee-15f7-4147-930a-15d7aa37df84"
+				}
 			]
 		}
 		type = "set_unit_numeric_data"
@@ -1516,6 +1545,36 @@ nodes = [
 		type = "on_animation_controller_flow_events"
 		variable_values = {
 			animation_controller = "content/models/characters/PPK/PPK_m"
+		}
+	}
+	{
+		id = "8822a8be-6bc8-4d53-adfe-35164d12d007"
+		in_variables = {
+			button_name = {
+				type = "string"
+			}
+			device = {
+				type = "string"
+			}
+			device_number = {
+				type = "float"
+			}
+		}
+		out_events = {
+			held = [
+				{
+					event = 0
+					id = "753f4c3b-2a8e-48d4-b1ad-5ccf61a6527d:0"
+					node = "753f4c3b-2a8e-48d4-b1ad-5ccf61a6527d"
+				}
+			]
+		}
+		type = "keyboard_button"
+		variable_values = {
+			button_name = "g"
+			device = "keyboard"
+			device_number = 0
+			value = null
 		}
 	}
 	{
@@ -2479,60 +2538,6 @@ nodes = [
 		type = "set_unit_numeric_data"
 		variable_values = {
 			key = "Speed"
-			unit = null
-			value = null
-		}
-	}
-	{
-		id = "8822a8be-6bc8-4d53-adfe-35164d12d007"
-		in_variables = {
-			button_name = {
-				type = "string"
-			}
-			device = {
-				type = "string"
-			}
-			device_number = {
-				type = "float"
-			}
-		}
-		out_events = {
-			held = [
-				{
-					event = 0
-					id = "753f4c3b-2a8e-48d4-b1ad-5ccf61a6527d:0"
-					node = "753f4c3b-2a8e-48d4-b1ad-5ccf61a6527d"
-				}
-			]
-		}
-		type = "keyboard_button"
-		variable_values = {
-			button_name = "g"
-			device = "keyboard"
-			device_number = 0
-			value = null
-		}
-	}
-	{
-		id = "0139b838-b4f5-4987-bf5e-d5ecd96c690b"
-		in_variables = {
-			key = {
-				type = "string"
-			}
-			unit = {
-				node = "11111111-2222-3333-4444-555555555555"
-				type = "unit"
-				variable = "unit"
-			}
-		}
-		out_variables = {
-			value = {
-				type = "float"
-			}
-		}
-		type = "get_unit_numeric_data"
-		variable_values = {
-			key = "Distance"
 			unit = null
 			value = null
 		}
