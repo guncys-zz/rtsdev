@@ -32,8 +32,6 @@ SimpleProject.config = {
 	exit_standalone_with_esc_key = true
 }
 
-
-
 -- Optional function by SimpleProject after level, world and player is loaded
 -- but before lua trigger level loaded node is activated.
 --この関数はlevelとworldとplayerがロードされた後にSimpleProjectに呼ばれる。（lua trigger level nodeがアクティブになる前）
@@ -50,7 +48,8 @@ function Project.on_level_load_pre_flow()
        --testmapならgameuiスクリプトを読み込んで、Start関数を呼ぶ
         local GameUI = require 'script/lua/gameui'
         GameUI.start()
-        --Flowからの呼び出し実験のために上2行をコメントアウト
+       -- local UIanim = require 'script/lua/ui'
+        --UIanim.reset()
     end
 end
 

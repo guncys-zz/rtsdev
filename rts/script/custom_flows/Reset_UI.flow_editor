@@ -1,0 +1,76 @@
+
+Connections = [
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "6b188794-0f63-4fb6-9d99-3026e22391a3"
+		Id = "a8f2d536-1d3f-41ba-9579-9003986e0e1b"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "aa438561-79a2-4537-904f-18862b337399"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "aa438561-79a2-4537-904f-18862b337399"
+		Id = "6136c4e8-4cff-4494-964a-6b37cc701925"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "ffae6896-c959-4cbe-9120-c9599eb91337"
+	}
+]
+Groups = [
+]
+Nodes = [
+	{
+		Class = "Stingray.Flow.ExternalEvent"
+		EventName = {
+			Value = "Reset UI Start"
+		}
+		Id = "6b188794-0f63-4fb6-9d99-3026e22391a3"
+		NodeLocation = {
+			X = 100
+			Y = 220
+		}
+		Out = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.LevelFlowEvent"
+		Event = {
+			Value = "Reset UI Done"
+		}
+		Id = "ffae6896-c959-4cbe-9120-c9599eb91337"
+		In = {
+		}
+		NodeLocation = {
+			X = 520
+			Y = 280
+		}
+		Width = 160
+	}
+	{
+		Arguments = [
+		]
+		Class = "Stingray.Flow.CustomScriptNode"
+		FlowNodesResource = "script/custom_nodes/reser_ui"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "aa438561-79a2-4537-904f-18862b337399"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "Reset UI"
+		NodeLocation = {
+			X = 300
+			Y = 160
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = [
+		]
+		Width = 160
+	}
+]
