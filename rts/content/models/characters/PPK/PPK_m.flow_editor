@@ -2918,6 +2918,15 @@ Connections = [
 	}
 	{
 		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "71c8a25f-219e-4075-aba0-f105322cda09"
+		Id = "a2d87e3d-e0ad-4622-b138-66f649f2262e"
+		Priority = 0
+		ToItem = "DamageIn"
+		ToNode = "49bee8ee-15f7-4147-930a-15d7aa37df84"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
 		FromItem = "True"
 		FromNode = "692a30de-4159-47a9-bb88-656fe1624efb"
 		Id = "a4ecba38-c052-4207-9008-3b3e50a425ba"
@@ -3338,15 +3347,6 @@ Connections = [
 		Priority = 0
 		ToItem = "In"
 		ToNode = "389ff40a-b561-4344-bd9a-69d243d06a31"
-	}
-	{
-		Class = "Stingray.Flow.EventConnection"
-		FromItem = "Out"
-		FromNode = "71c8a25f-219e-4075-aba0-f105322cda09"
-		Id = "a2d87e3d-e0ad-4622-b138-66f649f2262e"
-		Priority = 0
-		ToItem = "DamageIn"
-		ToNode = "49bee8ee-15f7-4147-930a-15d7aa37df84"
 	}
 ]
 Groups = [

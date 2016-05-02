@@ -23,7 +23,7 @@ local handler = {
         print(actorName .. " button clicked")
          local evt = { eventId = scaleform.EventTypes.Custom,
                       name = "show_menu",  --あとでpouseに変更
-                      data = {} }
+                      data = { value = 1 }}
          scaleform.Stage.dispatch_event(evt)
         -- The code below gives an example of how to dispatch a custom event from this event handler function.
         --[[

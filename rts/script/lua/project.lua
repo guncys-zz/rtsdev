@@ -48,8 +48,8 @@ function Project.on_level_load_pre_flow()
        --testmapならgameuiスクリプトを読み込んで、Start関数を呼ぶ
         local GameUI = require 'script/lua/gameui'
         GameUI.start()
-       -- local UIanim = require 'script/lua/ui'
-        --UIanim.reset()
+        local UIanim = require 'script/lua/ui'
+        UIanim.reset()
     end
 end
 

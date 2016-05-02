@@ -18,6 +18,9 @@ scaleform.AnimationComponent.stop(hitpointAnimation)
 local customListener = scaleform.EventListener.create(customListener, function(e)
 if e.name == "damage" then
     scaleform.AnimationComponent.goto_frame(hitpointAnimation, e.data.value)
+    scaleform.AnimationComponent.play(hitpointAnimation)
+elseif e.name == "damage_reset" then 
+     scaleform.AnimationComponent.goto_frame(hitpointAnimation, e.data.value)
 end
 end );
 ----http://help.autodesk.com/view/ScaleformStudio/ENU/?guid=__lua_ref_ns_scaleform_EventListener_html
