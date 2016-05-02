@@ -21,7 +21,10 @@ local handler = {
     -- Invoked when the button is clicked
     clicked = function()
         print(actorName .. " button clicked")
-
+        local evt = { eventId = scaleform.EventTypes.Custom,
+                      name = "restart",
+                      data = {} }
+         scaleform.Stage.dispatch_event(evt)
         -- The code below gives an example of how to dispatch a custom event from this event handler function.
         --[[
         local evt = { eventId = scaleform.EventTypes.Custom,
