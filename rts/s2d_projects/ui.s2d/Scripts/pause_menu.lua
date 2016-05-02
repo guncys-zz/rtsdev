@@ -13,7 +13,7 @@ scaleform.AnimationComponent.stop(pousemenuAnimation)
 --カスタムリスナーを作成
 local customListener = scaleform.EventListener.create(customListener, function(e)
 if e.name == "pause_menu" then
-    scaleform.AnimationComponent.goto_frame(pousemenuAnimation, 13)
+    scaleform.AnimationComponent.goto_frame(pousemenuAnimation, e.data.value)
 end
 end );
 ----http://help.autodesk.com/view/ScaleformStudio/ENU/?guid=__lua_ref_ns_scaleform_EventListener_html

@@ -22,7 +22,7 @@ local handler = {
     clicked = function()
         print(actorName .. " button clicked")
          local evt = { eventId = scaleform.EventTypes.Custom,
-                      name = "pause_game",
+                      name = "pause",
                       data = {} }
          scaleform.Stage.dispatch_event(evt)
         -- The code below gives an example of how to dispatch a custom event from this event handler function.
