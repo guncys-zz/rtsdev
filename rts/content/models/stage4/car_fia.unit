@@ -1,0 +1,28 @@
+
+materials = {
+	"03 - Default" = "content/models/stage4/materials/03 - Default"
+	"03 - Defaults" = "content/models/stage4/materials/03 - Defaults"
+	"03 - Defaultss" = "content/models/stage4/materials/03 - Defaultss"
+	"16 - Default" = "content/models/stage4/materials/16 - Default"
+	"16 - Defaults" = "content/models/stage4/materials/16 - Defaults"
+	"16 - Defaultsa" = "content/models/stage4/materials/16 - Defaultsa"
+	"17 - Default" = "content/models/stage4/materials/17 - Default"
+	Aluminium = "content/models/stage4/materials/Aluminium"
+	"Aluminium Furnit" = "content/models/stage4/materials/Aluminium Furnit"
+	cromo = "content/models/stage4/materials/cromo"
+	Default = "content/models/stage4/Default"
+	goma = "content/models/stage4/materials/goma"
+	gomass = "content/models/stage4/gomass"
+	"Material #0" = "content/models/stage4/Material #0"
+}
+renderables = {
+	"CAR_FIA:Box081" = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

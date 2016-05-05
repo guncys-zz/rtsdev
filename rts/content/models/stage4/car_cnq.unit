@@ -1,0 +1,20 @@
+
+materials = {
+	"03 - Default" = "content/models/stage4/materials/03 - Default"
+	"03 - Defaults" = "content/models/stage4/materials/03 - Defaults"
+	"03 - Defaultsa" = "content/models/stage4/materials/03 - Defaultsa"
+	"07 - Default" = "content/models/stage4/materials/07 - Default"
+	Aluminium = "content/models/stage4/materials/Aluminium"
+	plastic10 = "content/models/stage4/plastic10"
+}
+renderables = {
+	"CAR_CNQ:Cylinder010" = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

@@ -1,0 +1,36 @@
+
+materials = {
+	0_Metalic_White = "content/models/stage4/materials/0_Metalic_White"
+	"02 - Default" = "content/models/stage4/materials/02 - Default"
+	"03 - Default" = "content/models/stage4/materials/03 - Default"
+	"03 - Defaultx" = "content/models/stage4/materials/03 - Defaultx"
+	"05 - Default" = "content/models/stage4/materials/05 - Default"
+	"05 - Defaults" = "content/models/stage4/materials/05 - Defaults"
+	"07 - Default" = "content/models/stage4/materials/07 - Default"
+	1Hrome4 = "content/models/stage4/materials/1Hrome4"
+	"21 - Default" = "content/models/stage4/materials/21 - Default"
+	"21 - Default1" = "content/models/stage4/materials/21 - Default1"
+	"22 - Default" = "content/models/stage4/materials/22 - Default"
+	Aluminium = "content/models/stage4/materials/Aluminium"
+	carpaint = "content/models/stage4/materials/carpaint"
+	Default = "content/models/stage4/Default"
+	goma = "content/models/stage4/materials/goma"
+	"goma withe" = "content/models/stage4/materials/goma withe"
+	gomax = "content/models/stage4/gomax"
+	interior = "content/models/stage4/interior"
+	phong1 = "content/models/stage4/phong1"
+	Ray_01 = "content/models/stage4/Ray_01"
+	Red_trans = "content/models/stage4/Red_trans"
+	VR_crohme_glossy = "content/models/stage4/VR_crohme_glossy"
+}
+renderables = {
+	"CAR_MNC:Line08s010" = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

@@ -1,0 +1,27 @@
+
+materials = {
+	"03 - Default" = "content/models/stage4/materials/03 - Default"
+	"03 - Defaults" = "content/models/stage4/materials/03 - Defaults"
+	"04 - Default" = "content/models/stage4/materials/04 - Default"
+	"04 - Defaults" = "content/models/stage4/materials/04 - Defaults"
+	"10 - Default" = "content/models/stage4/materials/10 - Default"
+	"10 - Defaults" = "content/models/stage4/materials/10 - Defaults"
+	"22 - Default" = "content/models/stage4/materials/22 - Default"
+	Aluminium = "content/models/stage4/materials/Aluminium"
+	"Blue magesticaS" = "content/models/stage4/materials/Blue magesticaS"
+	goma = "content/models/stage4/materials/goma"
+	"goma blanca" = "content/models/stage4/materials/goma blanca"
+	gomasss = "content/models/stage4/gomasss"
+	"Material #25" = "content/models/stage4/Material #25"
+}
+renderables = {
+	Line66 = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

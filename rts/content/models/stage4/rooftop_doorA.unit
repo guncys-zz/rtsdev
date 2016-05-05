@@ -1,0 +1,15 @@
+
+materials = {
+	doorA_MT = "content/models/stage4/doorA_MT"
+}
+renderables = {
+	doorA_geo = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}
