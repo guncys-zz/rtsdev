@@ -1,14 +1,15 @@
 
 parent_material = "core/stingray_renderer/shader_import/standard"
 textures = {
+	roughness_map = "content/models/stage4/materials/cubeclouds"
 }
 variables = {
 	base_color = {
 		type = "vector3"
 		value = [
-			0.525490196078431
-			0.231372549019608
-			0.0313725490196078
+			0.501960784313725
+			0.501960784313725
+			0.501960784313725
 		]
 	}
 	emissive = {
@@ -19,8 +20,16 @@ variables = {
 			0
 		]
 	}
+	metallic = {
+		type = "scalar"
+		value = 0.5
+	}
 	roughness = {
 		type = "scalar"
-		value = 0.66
+		value = 0.98
+	}
+	use_roughness_map = {
+		type = "scalar"
+		value = 1
 	}
 }

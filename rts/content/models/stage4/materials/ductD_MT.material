@@ -3,6 +3,24 @@ shader = {
 	connections = [
 		{
 			destination = {
+				connector_id = "1ee9af1f-65f2-4739-ad28-5ea6a0e68fc3"
+				instance_id = "20461e9a-8cc0-4af3-a588-22191cc9cfcd"
+			}
+			source = {
+				instance_id = "a464c282-44a3-40ee-a808-8d9541b6ad70"
+			}
+		}
+		{
+			destination = {
+				connector_id = "1ee9af1f-65f2-4739-ad28-5ea6a0e68fc3"
+				instance_id = "0231d6f6-9bda-4f34-b016-9b7c7c371c1c"
+			}
+			source = {
+				instance_id = "a464c282-44a3-40ee-a808-8d9541b6ad70"
+			}
+		}
+		{
+			destination = {
 				connector_id = "f2f74e58-402d-472b-87dd-331e00db416c"
 				instance_id = "4480f32a-9f95-4bee-8f67-f5567221534d"
 			}
@@ -60,6 +78,15 @@ shader = {
 		}
 		{
 			destination = {
+				connector_id = "1ee9af1f-65f2-4739-ad28-5ea6a0e68fc3"
+				instance_id = "3e7dc014-b974-42e7-a316-4e5696ae6c8c"
+			}
+			source = {
+				instance_id = "a464c282-44a3-40ee-a808-8d9541b6ad70"
+			}
+		}
+		{
+			destination = {
 				connector_id = "ced7bbf3-0b48-4335-b933-095a41ca0294"
 				instance_id = "3f9d5218-b649-4a59-bdb0-0ac51415ce46"
 			}
@@ -107,6 +134,15 @@ shader = {
 			]
 			source = {
 				instance_id = "06e20b35-09bf-4f22-84dd-db8f9e5588da"
+			}
+		}
+		{
+			destination = {
+				connector_id = "1ee9af1f-65f2-4739-ad28-5ea6a0e68fc3"
+				instance_id = "06e20b35-09bf-4f22-84dd-db8f9e5588da"
+			}
+			source = {
+				instance_id = "a464c282-44a3-40ee-a808-8d9541b6ad70"
 			}
 		}
 		{
@@ -207,6 +243,15 @@ shader = {
 		}
 		{
 			destination = {
+				connector_id = "1ee9af1f-65f2-4739-ad28-5ea6a0e68fc3"
+				instance_id = "b960341a-d562-4b3b-a6b2-e99e1e0ce6fb"
+			}
+			source = {
+				instance_id = "a464c282-44a3-40ee-a808-8d9541b6ad70"
+			}
+		}
+		{
+			destination = {
 				connector_id = "4cbb4480-79e8-4ce7-ac0f-8b09baf12390"
 				instance_id = "829e0be2-93fb-4831-a842-5b7ea3944c08"
 			}
@@ -255,74 +300,11 @@ shader = {
 		}
 		{
 			destination = {
-				connector_id = "242d1648-a626-445b-9534-bccec094112f"
-				instance_id = "80c2f8b3-52a4-4c68-992c-078afaebf615"
-			}
-			source = {
-				instance_id = "7fbf50b7-905f-413b-a04e-53951f4e3e9d"
-			}
-		}
-		{
-			destination = {
-				connector_id = "c5823c75-4ae5-4c71-b070-315fa4d03e8e"
-				instance_id = "80c2f8b3-52a4-4c68-992c-078afaebf615"
-			}
-			source = {
-				instance_id = "a464c282-44a3-40ee-a808-8d9541b6ad70"
-			}
-		}
-		{
-			destination = {
-				connector_id = "1ee9af1f-65f2-4739-ad28-5ea6a0e68fc3"
-				instance_id = "0231d6f6-9bda-4f34-b016-9b7c7c371c1c"
-			}
-			source = {
-				instance_id = "80c2f8b3-52a4-4c68-992c-078afaebf615"
-			}
-		}
-		{
-			destination = {
-				connector_id = "1ee9af1f-65f2-4739-ad28-5ea6a0e68fc3"
-				instance_id = "20461e9a-8cc0-4af3-a588-22191cc9cfcd"
-			}
-			source = {
-				instance_id = "80c2f8b3-52a4-4c68-992c-078afaebf615"
-			}
-		}
-		{
-			destination = {
-				connector_id = "1ee9af1f-65f2-4739-ad28-5ea6a0e68fc3"
-				instance_id = "3e7dc014-b974-42e7-a316-4e5696ae6c8c"
-			}
-			source = {
-				instance_id = "80c2f8b3-52a4-4c68-992c-078afaebf615"
-			}
-		}
-		{
-			destination = {
 				connector_id = "1ee9af1f-65f2-4739-ad28-5ea6a0e68fc3"
 				instance_id = "d65549bb-2c6b-4b39-86d4-210200c5529c"
 			}
 			source = {
-				instance_id = "80c2f8b3-52a4-4c68-992c-078afaebf615"
-			}
-		}
-		{
-			destination = {
-				connector_id = "1ee9af1f-65f2-4739-ad28-5ea6a0e68fc3"
-				instance_id = "06e20b35-09bf-4f22-84dd-db8f9e5588da"
-			}
-			source = {
-				instance_id = "80c2f8b3-52a4-4c68-992c-078afaebf615"
-			}
-		}
-		{
-			destination = {
-				connector_id = "1ee9af1f-65f2-4739-ad28-5ea6a0e68fc3"
-				instance_id = "b960341a-d562-4b3b-a6b2-e99e1e0ce6fb"
-			}
-			source = {
-				instance_id = "80c2f8b3-52a4-4c68-992c-078afaebf615"
+				instance_id = "a464c282-44a3-40ee-a808-8d9541b6ad70"
 			}
 		}
 	]
@@ -439,8 +421,8 @@ shader = {
 				"9a84282b-f1a2-46d4-9fc4-5a76fc9b30dd"
 			]
 			position = [
-				1040
-				-360
+				1020
+				-340
 			]
 			samplers = {
 			}
@@ -519,8 +501,8 @@ shader = {
 				"9a84282b-f1a2-46d4-9fc4-5a76fc9b30dd"
 			]
 			position = [
-				1720
-				660
+				1020
+				1100
 			]
 			samplers = {
 			}
@@ -538,8 +520,8 @@ shader = {
 			options = [
 			]
 			position = [
-				-200
-				80
+				-120
+				440
 			]
 			samplers = {
 			}
@@ -810,7 +792,6 @@ shader = {
 				"5dd59b3d-1762-4a14-9930-7500230ef3db"
 				"1e067464-12d8-4826-9b72-cfd5765003e3"
 				"90e20826-8689-42fa-8e24-f484ec64c5c3"
-				"0268506c-b417-49dc-bbbe-3d5949595940"
 			]
 			position = [
 				440
@@ -1155,72 +1136,24 @@ shader = {
 			title = "Emissive Intensity"
 			type = "core/shader_nodes/material_variable"
 		}
-		{
-			content_size = [
-				160
-				0
-			]
-			export = {
-				material_variable = {
-					display_name = "material_variable"
-					name = "material_variable"
-					type = "float"
-					ui = {
-						max = 50
-						min = 0
-						step = 0.001
-						ui_type = "NumberSlider"
-					}
-					value = 0
-				}
-			}
-			id = "7fbf50b7-905f-413b-a04e-53951f4e3e9d"
-			options = [
-			]
-			position = [
-				-220
-				200
-			]
-			samplers = {
-			}
-			type = "core/shader_nodes/material_variable"
-		}
-		{
-			content_size = [
-				160
-				0
-			]
-			export = {
-			}
-			id = "80c2f8b3-52a4-4c68-992c-078afaebf615"
-			options = [
-			]
-			position = [
-				80
-				140
-			]
-			samplers = {
-			}
-			type = "core/shader_nodes/mul"
-		}
 	]
 	version = 3
 }
 textures = {
 	ao_map = null
-	color_map = "content/models/stage4/textures/Ground"
+	color_map = null
 	emissive_map = null
 	metallic_map = null
-	normal_map = "content/models/stage4/textures/Ground_nml"
-	roughness_map = null
+	normal_map = null
+	roughness_map = "content/models/stage4/materials/cubeclouds"
 }
 variables = {
 	base_color = {
 		type = "vector3"
 		value = [
-			1
-			1
-			1
+			0.313
+			0.313
+			0.313
 		]
 	}
 	emissive = {
@@ -1235,17 +1168,13 @@ variables = {
 		type = "scalar"
 		value = 0
 	}
-	material_variable = {
-		type = "scalar"
-		value = 6
-	}
 	metallic = {
 		type = "scalar"
-		value = 0
+		value = 0.5
 	}
 	roughness = {
 		type = "scalar"
-		value = 0.98
+		value = 0
 	}
 	use_ao_map = {
 		type = "scalar"
@@ -1253,7 +1182,7 @@ variables = {
 	}
 	use_color_map = {
 		type = "scalar"
-		value = 1
+		value = 0
 	}
 	use_emissive_map = {
 		type = "scalar"
@@ -1265,10 +1194,10 @@ variables = {
 	}
 	use_normal_map = {
 		type = "scalar"
-		value = 1
+		value = 0
 	}
 	use_roughness_map = {
 		type = "scalar"
-		value = 0
+		value = 1
 	}
 }

@@ -1,6 +1,8 @@
 
 parent_material = "core/stingray_renderer/shader_import/standard"
 textures = {
+	color_map = "content/models/stage4/textures/antena_difC"
+	roughness_map = "content/models/stage4/textures/antena_ro"
 }
 variables = {
 	base_color = {
@@ -32,6 +34,14 @@ variables = {
 		value = 0.4
 	}
 	use_ao_map = {
+		type = "scalar"
+		value = 0
+	}
+	use_color_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_roughness_map = {
 		type = "scalar"
 		value = 1
 	}

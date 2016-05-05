@@ -1,14 +1,12 @@
 
 parent_material = "core/stingray_renderer/shader_import/standard"
-textures = {
-}
 variables = {
 	base_color = {
 		type = "vector3"
 		value = [
-			0.525490196078431
-			0.231372549019608
-			0.0313725490196078
+			0.5
+			0.5
+			0.5
 		]
 	}
 	emissive = {
@@ -21,6 +19,6 @@ variables = {
 	}
 	roughness = {
 		type = "scalar"
-		value = 0.66
+		value = 0.9368821
 	}
 }
