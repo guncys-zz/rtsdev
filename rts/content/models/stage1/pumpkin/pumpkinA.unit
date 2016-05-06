@@ -1,0 +1,15 @@
+
+materials = {
+	pumpkinA_col = "content/models/stage1/pumpkin/materials/pumpkinA_col"
+}
+renderables = {
+	pumpkinA = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

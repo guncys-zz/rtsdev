@@ -1,0 +1,15 @@
+
+materials = {
+	lambert63 = "content/models/stage2/tree/materials/treeH"
+}
+renderables = {
+	treeH = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

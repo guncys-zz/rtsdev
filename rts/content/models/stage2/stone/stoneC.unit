@@ -1,0 +1,15 @@
+
+materials = {
+	lambert67 = "content/models/stage2/stone/materials/stoneC"
+}
+renderables = {
+	stoneC = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

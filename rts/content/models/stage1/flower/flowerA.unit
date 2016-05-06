@@ -1,0 +1,15 @@
+
+materials = {
+	flowerA_col = "content/models/stage1/flower/materials/flowerA_col"
+}
+renderables = {
+	flowerA = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

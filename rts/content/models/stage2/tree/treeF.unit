@@ -1,0 +1,15 @@
+
+materials = {
+	lambert61 = "content/models/stage2/tree/materials/treeF"
+}
+renderables = {
+	treeF = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

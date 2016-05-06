@@ -1,0 +1,15 @@
+
+materials = {
+	stump_col = "content/models/stage1/stump/materials/stump_col"
+}
+renderables = {
+	stump = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

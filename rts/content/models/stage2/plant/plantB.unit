@@ -1,0 +1,15 @@
+
+materials = {
+	lambert71 = "content/models/stage2/plant/materials/plantB"
+}
+renderables = {
+	plantB = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}
