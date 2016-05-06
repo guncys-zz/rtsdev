@@ -2,7 +2,7 @@
 editor_metadata = {
 	camera_settings = {
 		far_range = 1000
-		interest_point_distance = 427.832062
+		interest_point_distance = 327.832062
 		orthographic_plane = [
 			0
 			0
@@ -11,16 +11,16 @@ editor_metadata = {
 		]
 		orthographic_zoom = 10
 		position = [
-			246.9785
-			362.932281
-			218.134262
+			-109.543518
+			398.606415
+			95.908607
 		]
 		projection_type = "perspective"
 		rotation = [
-			-0.115917
-			-0.279848
-			0.880476
-			0.364705
+			0.035648
+			-0.190699
+			0.964297
+			-0.18026
 		]
 		rotation_speed = 0.003
 		translation_speed = 0.05
@@ -34,7 +34,7 @@ renderables = {
 	cliff = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
@@ -43,63 +43,63 @@ renderables = {
 	ground_plane_1 = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = true
 		occluder = false
-		shadow_caster = true
+		shadow_caster = false
 		surface_queries = false
 		viewport_visible = true
 	}
 	ground_plane_2 = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = true
 		occluder = false
-		shadow_caster = true
+		shadow_caster = false
 		surface_queries = false
 		viewport_visible = true
 	}
 	ground_plane_3 = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = true
 		occluder = false
-		shadow_caster = true
+		shadow_caster = false
 		surface_queries = false
 		viewport_visible = true
 	}
 	ground_plane_4 = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = true
 		occluder = false
-		shadow_caster = true
+		shadow_caster = false
 		surface_queries = false
 		viewport_visible = true
 	}
 	ground_plane_5 = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = true
 		occluder = false
-		shadow_caster = true
+		shadow_caster = false
 		surface_queries = false
 		viewport_visible = true
 	}
 	ground_plane_6 = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = true
 		occluder = false
-		shadow_caster = true
+		shadow_caster = false
 		surface_queries = false
 		viewport_visible = true
 	}
 	ground_plane_end = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = true
 		occluder = false
-		shadow_caster = true
+		shadow_caster = false
 		surface_queries = false
 		viewport_visible = true
 	}

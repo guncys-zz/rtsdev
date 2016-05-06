@@ -10,37 +10,38 @@ editor_metadata = {
 						fog_color = {
 							intensity = 0.3
 							rgb = [
-								0.157280727890073
-								0.157280727890073
-								0.157280727890073
+								0.164723851516777
+								0.116187422269899
+								0.45626345839647
 							]
 						}
 						fog_depth_range = [
 							2
 							200
 						]
-						fog_sun_strength = 0.1
+						fog_sun_exponent = 2
+						fog_sun_strength = 0.2
 					}
 				}
 				"3eb1ba63-3a53-4846-970b-57e3d4d75d2b" = {
 					data = {
 						baked_diffuse_tint = {
-							intensity = 1.6
+							intensity = 1.3
 							rgb = [
-								0.227136525505149
-								0.227136525505149
-								0.227136525505149
+								0.242298356024435
+								0.388304777464
+								1
 							]
 						}
 						emissive_particle_intensity = 0.89
 						reflections_tint = {
-							intensity = 0.5
 							rgb = [
 								0.052841625522879
 								0.0012017395224384
 								0.000175123977503027
 							]
 						}
+						skydome_intensity = 0.1
 					}
 				}
 				"778c5da5-eaa2-4a5f-951f-8c8bf13a2a6e" = {
@@ -899,13 +900,13 @@ editor_metadata = {
 					Color = {
 						A = 255
 						B = 255
-						G = 255
-						R = 255
+						G = 121
+						R = 153
 					}
 					Enabled = true
 					FalloffEnd = 8
 					FalloffStart = 0
-					Intensity = 0.1
+					Intensity = 0.5
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 60
@@ -930,10 +931,10 @@ editor_metadata = {
 				Z = 5
 			}
 			Rot = {
-				W = -0.5
-				X = 0.707107
-				Y = 0
-				Z = -0.5
+				W = 0.011914
+				X = -0.600235
+				Y = -0.436471
+				Z = 0.670126
 			}
 			Scl = {
 				X = 1
@@ -1120,9 +1121,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -1186,9 +1187,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -1548,9 +1549,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -1725,9 +1726,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -1791,9 +1792,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -1852,14 +1853,14 @@ editor_metadata = {
 					CastShadows = true
 					Color = {
 						A = 255
-						B = 182
-						G = 205
-						R = 242
+						B = 51
+						G = 128
+						R = 255
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -2219,9 +2220,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -2581,9 +2582,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -2647,9 +2648,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -2713,9 +2714,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -2779,9 +2780,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -5916,9 +5917,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -5982,9 +5983,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -6048,9 +6049,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -6114,9 +6115,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -6180,9 +6181,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -6246,9 +6247,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -6312,9 +6313,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -6378,9 +6379,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -6444,9 +6445,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -6510,9 +6511,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -6576,9 +6577,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -10638,9 +10639,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -10704,9 +10705,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -10770,9 +10771,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -10836,9 +10837,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -10902,9 +10903,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -10968,9 +10969,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -11034,9 +11035,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -11100,9 +11101,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -11166,9 +11167,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -11232,9 +11233,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -11298,9 +11299,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -14213,9 +14214,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -14279,9 +14280,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -14345,9 +14346,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -14411,9 +14412,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -14477,9 +14478,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -14543,9 +14544,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -14609,9 +14610,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -14675,9 +14676,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -14741,9 +14742,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -14807,9 +14808,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -14873,9 +14874,9 @@ editor_metadata = {
 						R = 242
 					}
 					Enabled = true
-					FalloffEnd = 8
-					FalloffStart = 0
-					Intensity = 3
+					FalloffEnd = 5
+					FalloffStart = 1
+					Intensity = 4
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 0
@@ -15542,709 +15543,6 @@ editor_metadata = {
 			}
 			Type = "content/models/stage3/rock_B"
 		}
-		{
-			Cameras = {
-			}
-			Id = "70b4c151-663e-461d-a4d9-f5c80604e384"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Jump1"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 20
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "b7962869-7645-406a-833c-4e467f6ffc14"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Jump2"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 35
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "12674a8f-64ca-4965-83d6-ad9c498ba48c"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Jump3"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 70
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "b48a1421-3aad-4a52-b410-5ebb2864f089"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Jump4"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 80
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "6fa73a4e-76e0-4ff3-b5c5-281767d4a0d5"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Jump5"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 90
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "7af5051e-0d23-4567-8c3c-3f7eb93c209a"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Jump6"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 115
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "1a967862-dd34-4575-91e5-bcbcc944e336"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Jump7"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 130
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "4db64d0d-385b-43cb-8ceb-36ad45402dae"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Jump8"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 160
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "22ddfd85-a059-4046-aee3-a39c96cf605d"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Jump9"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 175
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "d6f1c988-afb6-415e-90b3-7b719fafda4e"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Jump10"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 185
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "3f8a9e28-8209-467b-87e2-71b31237b0a7"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Jump11"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 205
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "577c07e4-d7a7-4581-9c88-351acddcf91a"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Jump12"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 220
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "0b7d2caa-62aa-4315-b9a7-b0e06fd04799"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Dive1"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 50
-				Z = 1
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 3
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "ac1d4384-fd41-4627-b434-83847264ed2d"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Dive2"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 120
-				Z = 1
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 3
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "a33d97bc-4a3d-49c6-8107-0f7286cff3ed"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Dive3"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 150
-				Z = 1
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 3
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "f7047f27-9ce0-4dc2-a4f2-df545aca7d4d"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Dive4"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 155
-				Z = 1
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 3
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "b14a177c-284f-4ede-a509-cc76cb7dadd9"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Dive5"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 170
-				Z = 1
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 3
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "d341fabd-4076-4506-a1a2-fe2f0fbbca7c"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Dive6"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 210
-				Z = 1
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 3
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "cc4b912a-1403-4354-b19b-de9b13b5cec3"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Dive7"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 215
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
 	]
 	Volumes = [
 	]
@@ -16258,37 +15556,38 @@ entities = [
 					fog_color = {
 						intensity = 0.3
 						rgb = [
-							0.157280727890073
-							0.157280727890073
-							0.157280727890073
+							0.164723851516777
+							0.116187422269899
+							0.45626345839647
 						]
 					}
 					fog_depth_range = [
 						2
 						200
 					]
-					fog_sun_strength = 0.1
+					fog_sun_exponent = 2
+					fog_sun_strength = 0.2
 				}
 			}
 			"3eb1ba63-3a53-4846-970b-57e3d4d75d2b" = {
 				data = {
 					baked_diffuse_tint = {
-						intensity = 1.6
+						intensity = 1.3
 						rgb = [
-							0.227136525505149
-							0.227136525505149
-							0.227136525505149
+							0.242298356024435
+							0.388304777464
+							1
 						]
 					}
 					emissive_particle_intensity = 0.89
 					reflections_tint = {
-						intensity = 0.5
 						rgb = [
 							0.052841625522879
 							0.0012017395224384
 							0.000175123977503027
 						]
 					}
+					skydome_intensity = 0.1
 				}
 			}
 			"778c5da5-eaa2-4a5f-951f-8c8bf13a2a6e" = {
@@ -16844,14 +16143,14 @@ units = [
 				]
 				cast_shadows = true
 				color = [
-					1
-					1
+					0.6
+					0.474509803921569
 					1
 				]
 				enabled = true
 				falloff_end = 8
 				falloff_start = 0
-				intensity = 0.1
+				intensity = 0.5
 				material = ""
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
@@ -16868,10 +16167,10 @@ units = [
 			5
 		]
 		rot = [
-			0.707107
-			0
-			-0.5
-			-0.5
+			-0.600235
+			-0.436471
+			0.670126
+			0.011914
 		]
 		scl = [
 			1
@@ -17027,9 +16326,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -17084,9 +16383,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -17381,9 +16680,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -17528,9 +16827,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -17585,9 +16884,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -17637,14 +16936,14 @@ units = [
 				]
 				cast_shadows = true
 				color = [
-					0.949019607843137
-					0.803921568627451
-					0.713725490196078
+					1
+					0.501960784313725
+					0.2
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -17939,9 +17238,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -18236,9 +17535,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -18293,9 +17592,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -18350,9 +17649,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -18407,9 +17706,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -20954,9 +20253,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -21011,9 +20310,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -21068,9 +20367,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -21125,9 +20424,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -21182,9 +20481,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -21239,9 +20538,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -21296,9 +20595,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -21353,9 +20652,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -21410,9 +20709,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -21467,9 +20766,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -21524,9 +20823,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -24821,9 +24120,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -24878,9 +24177,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -24935,9 +24234,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -24992,9 +24291,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -25049,9 +24348,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -25106,9 +24405,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -25163,9 +24462,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -25220,9 +24519,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -25277,9 +24576,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -25334,9 +24633,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -25391,9 +24690,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -27758,9 +27057,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -27815,9 +27114,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -27872,9 +27171,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -27929,9 +27228,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -27986,9 +27285,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -28043,9 +27342,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -28100,9 +27399,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -28157,9 +27456,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -28214,9 +27513,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -28271,9 +27570,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -28328,9 +27627,9 @@ units = [
 					0.713725490196078
 				]
 				enabled = true
-				falloff_end = 8
-				falloff_start = 0
-				intensity = 3
+				falloff_end = 5
+				falloff_start = 1
+				intensity = 4
 				material = ""
 				spot_angle_end = 0
 				spot_angle_start = 0
@@ -28868,576 +28167,6 @@ units = [
 			2.343227
 		]
 		type = "content/models/stage3/rock_B"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "70b4c151-663e-461d-a4d9-f5c80604e384"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Jump1"
-		pos = [
-			0
-			20
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "b7962869-7645-406a-833c-4e467f6ffc14"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Jump2"
-		pos = [
-			0
-			35
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "12674a8f-64ca-4965-83d6-ad9c498ba48c"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Jump3"
-		pos = [
-			0
-			70
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "b48a1421-3aad-4a52-b410-5ebb2864f089"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Jump4"
-		pos = [
-			0
-			80
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "6fa73a4e-76e0-4ff3-b5c5-281767d4a0d5"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Jump5"
-		pos = [
-			0
-			90
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "7af5051e-0d23-4567-8c3c-3f7eb93c209a"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Jump6"
-		pos = [
-			0
-			115
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "1a967862-dd34-4575-91e5-bcbcc944e336"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Jump7"
-		pos = [
-			0
-			130
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "4db64d0d-385b-43cb-8ceb-36ad45402dae"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Jump8"
-		pos = [
-			0
-			160
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "22ddfd85-a059-4046-aee3-a39c96cf605d"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Jump9"
-		pos = [
-			0
-			175
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "d6f1c988-afb6-415e-90b3-7b719fafda4e"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Jump10"
-		pos = [
-			0
-			185
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "3f8a9e28-8209-467b-87e2-71b31237b0a7"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Jump11"
-		pos = [
-			0
-			205
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "577c07e4-d7a7-4581-9c88-351acddcf91a"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Jump12"
-		pos = [
-			0
-			220
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "0b7d2caa-62aa-4315-b9a7-b0e06fd04799"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Dive1"
-		pos = [
-			0
-			50
-			1
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			3
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "ac1d4384-fd41-4627-b434-83847264ed2d"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Dive2"
-		pos = [
-			0
-			120
-			1
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			3
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "a33d97bc-4a3d-49c6-8107-0f7286cff3ed"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Dive3"
-		pos = [
-			0
-			150
-			1
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			3
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "f7047f27-9ce0-4dc2-a4f2-df545aca7d4d"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Dive4"
-		pos = [
-			0
-			155
-			1
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			3
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "b14a177c-284f-4ede-a509-cc76cb7dadd9"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Dive5"
-		pos = [
-			0
-			170
-			1
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			3
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "d341fabd-4076-4506-a1a2-fe2f0fbbca7c"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Dive6"
-		pos = [
-			0
-			210
-			1
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			3
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "cc4b912a-1403-4354-b19b-de9b13b5cec3"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Dive7"
-		pos = [
-			0
-			215
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
 	}
 ]
 volumes = [

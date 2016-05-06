@@ -1,30 +1,27 @@
 
 parent_material = "core/stingray_renderer/shader_import/standard"
 textures = {
-	brdf_lut = "core/stingray_renderer/lookup_tables/ibl_brdf_lut"
-	global_diffuse_cube = "core/stingray_renderer/environments/midday/diffuse_cube"
-	global_specular_cube = "core/stingray_renderer/environments/midday/specular_cube"
 }
 variables = {
 	base_color = {
 		type = "vector3"
 		value = [
-			0.8148465
-			0.760535
-			0.6866995
+			1
+			0.510176443479278
+			0.175
 		]
 	}
 	emissive = {
 		type = "vector3"
 		value = [
-			0
-			0
-			0
+			1
+			0.510896551724138
+			0.212
 		]
 	}
 	emissive_intensity = {
 		type = "scalar"
-		value = 0
+		value = 10
 	}
 	metallic = {
 		type = "scalar"

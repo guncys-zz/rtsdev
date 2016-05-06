@@ -14,10 +14,14 @@ variables = {
 	emissive = {
 		type = "vector3"
 		value = [
-			0
-			0
-			0
+			1
+			0.407843137254902
+			0.133
 		]
+	}
+	emissive_intensity = {
+		type = "scalar"
+		value = 6
 	}
 	opacity = {
 		type = "scalar"
@@ -26,5 +30,9 @@ variables = {
 	roughness = {
 		type = "scalar"
 		value = 0.9368821
+	}
+	use_emissive_map = {
+		type = "scalar"
+		value = 0
 	}
 }
