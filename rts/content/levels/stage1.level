@@ -5,6 +5,15 @@ editor_metadata = {
 			id = "6a47c7fa-1f5c-4b5d-b670-ecff26fdf751"
 			layer = "Default"
 			modified_components = {
+				"04d5202f-c4cb-45b5-8e0f-4c5605fb7533" = {
+					data = {
+						color_grading_enabled = true
+						color_grading_map = {
+							"$resource_name" = "content/lut/color_grading_identity_test"
+							"$resource_type" = "texture"
+						}
+					}
+				}
 				"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
 					data = {
 						motion_blur_enabled = false
@@ -1742,6 +1751,15 @@ entities = [
 	{
 		id = "6a47c7fa-1f5c-4b5d-b670-ecff26fdf751"
 		modified_components = {
+			"04d5202f-c4cb-45b5-8e0f-4c5605fb7533" = {
+				data = {
+					color_grading_enabled = true
+					color_grading_map = {
+						"$resource_name" = "content/lut/color_grading_identity_test"
+						"$resource_type" = "texture"
+					}
+				}
+			}
 			"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
 				data = {
 					motion_blur_enabled = false
