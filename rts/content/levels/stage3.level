@@ -109,14 +109,6 @@ editor_metadata = {
 			}
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
-				FromNode = "521d7dc9-9688-40d9-be08-d47ea675c8c2"
-				Priority = 0
-				ToItem = "start_load_csv"
-				ToNode = "90165171-fc61-4beb-80e4-01572a1e7628"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
 				FromItem = "Pressed"
 				FromNode = "a09f2635-d7f2-4f03-9a65-110328d0341e"
 				Priority = 0
@@ -15814,11 +15806,6 @@ flow = {
 			id = "521d7dc9-9688-40d9-be08-d47ea675c8c2"
 			out_events = {
 				out = [
-					{
-						event = 1
-						id = "90165171-fc61-4beb-80e4-01572a1e7628:1"
-						node = "90165171-fc61-4beb-80e4-01572a1e7628"
-					}
 					{
 						event = 0
 						id = "8a839719-7dca-4cba-87c3-a3b3652d4e7b:0"
