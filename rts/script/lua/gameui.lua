@@ -106,8 +106,14 @@ function GameUI.update(object, dt)
 		local p = stingray.Application.platform()
 		if time - start_time > 1 then
 			if Appkit.Util.is_pc() then
-				if stingray.Keyboard.pressed(stingray.Keyboard.button_id("1")) then
-					GameUI.action = "start"
+				if stingray.Keyboard.pressed(stingray.Keyboard.button_id("c")) then
+				--	GameUI.action = "start"
+					--local loading = scaleform.Actor.load("Loading.s2dscene")	--Loding用のシーンをロード
+				--	print("cボタンが押されたよ！！！！！")
+            	    -- Remove the main menu scene
+                   -- scaleform.Stage.remove_scene_by_index(1)
+                    -- Add the loading scene
+                   -- scaleform.Stage.add_scene(loading)
 				elseif stingray.Keyboard.pressed(stingray.Keyboard.button_id("esc")) then
 					GameUI.action = "exit"
 				end
