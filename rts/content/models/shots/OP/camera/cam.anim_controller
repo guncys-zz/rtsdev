@@ -115,7 +115,7 @@ compiler_data = {
 							event = "Anim End"
 							mode = "direct"
 							on_beat = ""
-							to = "Clip_c06"
+							to = "Clip_c07"
 						}
 					]
 					weights = [
@@ -135,13 +135,6 @@ compiler_data = {
 					speed = "1"
 					state_type = "regular"
 					transitions = [
-						{
-							blend_time = 0
-							event = "Anim End"
-							mode = "direct"
-							on_beat = ""
-							to = "Clip_c07"
-						}
 					]
 					weights = [
 						"1.0"
@@ -484,8 +477,8 @@ layers = [
 					"1.0"
 				]
 				width = 150
-				x = 60
-				y = 220
+				x = 40
+				y = 260
 			}
 			{
 				_id = "5750e45d-5500-4337-a606-cf0c62a77a6f"
@@ -553,7 +546,7 @@ layers = [
 					"1.0"
 				]
 				width = 150
-				x = 280
+				x = 240
 				y = 100
 			}
 			{
@@ -591,30 +584,30 @@ layers = [
 				speed = "1"
 				transitions = [
 					{
-						_id = "29918db2-34c9-496c-b67e-a322c4579f21"
+						_id = "668ef549-aef1-47a1-a4cf-cc6648a4a6ad"
 						actual_target_ref = {
-							_id = "8e253b98-ef65-43e0-8a69-87feb2e324fd"
+							_id = "3f46496b-7ab4-4730-8fe1-60f1fbb6ab26"
 							ref_filename = null
 							ref_id = null
 						}
 						blend_time = 0
 						event_ref = {
-							_id = "5032d6fe-fb04-4af9-aded-a599c9f1c2b6"
+							_id = "4965b430-d064-440b-9fe9-f16b7ca58948"
 							ref_filename = null
 							ref_id = "94c7ef79-a11d-4fdd-9de2-fd026eed22c6"
 						}
 						has_nested_from = false
 						mode = "direct"
 						nested_from_ref = {
-							_id = "353cbf07-a5fd-4a0a-9b54-311aeb71b57f"
+							_id = "5aeadb7a-8a87-4003-8be7-db80b84e519a"
 							ref_filename = null
 							ref_id = null
 						}
 						on_beat = ""
 						to_state_ref = {
-							_id = "ca866662-ae5f-4690-949f-66e09204c5e2"
+							_id = "714742aa-59d4-4ae9-b30e-742f28723656"
 							ref_filename = null
-							ref_id = "dfe26b56-973b-4ab6-80f1-a4b9189f0f7d"
+							ref_id = "39541030-7417-4ffb-86c4-8796825fc2fd"
 						}
 					}
 				]
@@ -659,33 +652,6 @@ layers = [
 				root_driving = "ignore"
 				speed = "1"
 				transitions = [
-					{
-						_id = "b597bebd-e20a-47dc-950d-1d2aee4b261e"
-						actual_target_ref = {
-							_id = "21f1f144-0866-4c99-a523-efcc72ac5c3c"
-							ref_filename = null
-							ref_id = null
-						}
-						blend_time = 0
-						event_ref = {
-							_id = "eee3fd3b-1d0f-4063-a1a4-4407db1d3d32"
-							ref_filename = null
-							ref_id = "94c7ef79-a11d-4fdd-9de2-fd026eed22c6"
-						}
-						has_nested_from = false
-						mode = "direct"
-						nested_from_ref = {
-							_id = "4c2cc666-d9c0-41a9-8bb8-932f1437f7c7"
-							ref_filename = null
-							ref_id = null
-						}
-						on_beat = ""
-						to_state_ref = {
-							_id = "f93aafde-3c45-4aae-a2cf-f3a82a50869f"
-							ref_filename = null
-							ref_id = "39541030-7417-4ffb-86c4-8796825fc2fd"
-						}
-					}
 				]
 				weights = [
 					"1.0"

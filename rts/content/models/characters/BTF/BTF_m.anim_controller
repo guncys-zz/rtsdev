@@ -1,0 +1,772 @@
+
+_data_root_version = 6
+_id = "18ed19bf-495d-4e6b-ac5c-f8c5722256b4"
+_name = "content/models/characters/BTF/BTF_m"
+anim_event_root_folder_name = "events"
+anim_skeleton_ref = {
+	_id = "fd1e771e-1e98-48de-b8eb-eb82de52690e"
+	ref_filename = "content/models/characters/BTF/BTF_m.anim_skeleton"
+	ref_id = null
+}
+clip_mappings = [
+]
+compiler_data = {
+	bones = "content/models/characters/BTF/BTF_m"
+	events = {
+		"Anim End" = {
+		}
+		AnimEvent_Cinematics_Start = {
+		}
+	}
+	layers = [
+		{
+			default_state = "Empty"
+			states = [
+				{
+					animations = [
+						"content/models/characters/BTF/animations/BTF_op_c01"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Clip_c01"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Clip_c02"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/characters/BTF/animations/BTF_op_c02"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Clip_c02"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Clip_c04"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/characters/BTF/animations/BTF_op_c04"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Clip_c04"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Clip_c05"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/characters/BTF/animations/BTF_op_c05"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Clip_c05"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Clip_c07"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/characters/BTF/animations/BTF_op_c07"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Clip_c07"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Clip_c08"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/characters/BTF/animations/BTF_op_c08"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Clip_c08"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Clip_c01"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					name = "Empty"
+					state_type = "empty"
+					transitions = [
+						{
+							blend_time = 0.2
+							event = "AnimEvent_Cinematics_Start"
+							mode = "direct"
+							on_beat = ""
+							to = "Clip_c01"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+constraint_root_folder_name = "Constraints"
+constraint_target_root_folder_name = "Constraint Targets"
+constraint_targets = {
+	_id = "a30a3a44-29d1-444d-a4bf-2323d39295ce"
+	_name = "Constraint Targets"
+	data_list = [
+	]
+	sub_folders = [
+	]
+}
+constraints = {
+	_id = "f149757a-5052-44a8-92de-bcc9da2a1061"
+	_name = "Constraints"
+	data_list = [
+	]
+	sub_folders = [
+	]
+}
+events = {
+	_id = "88b9d117-cef6-4373-8b4a-2e8f5059acfa"
+	_name = "events"
+	data_list = [
+		{
+			_id = "e823620d-a9c8-4397-ad98-2c53e02e9756"
+			_name = "Anim End"
+		}
+		{
+			_id = "c1134196-5cc1-4df3-826c-02765fa1b55a"
+			_name = "AnimEvent_Cinematics_Start"
+		}
+	]
+	sub_folders = [
+	]
+}
+layers = [
+	{
+		_id = "69e40e19-5d2c-4fb1-8672-617385cf9def"
+		_name = "Base"
+		blend_states = [
+		]
+		default_state_ref = {
+			_id = "9c3af289-f0ce-4ae0-bdc2-38d11dc47cbe"
+			ref_filename = null
+			ref_id = "bd05d852-367c-408e-8c8e-cc77220eabb4"
+		}
+		empty_states = [
+			{
+				_id = "bd05d852-367c-408e-8c8e-cc77220eabb4"
+				_name = "Empty"
+				anim_blend_set_ref = {
+					_id = "5e041f16-c30c-4353-beca-daf80179b83e"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "c3eaebdc-4c0e-4190-9c87-4cfe96574fc2"
+					ref_filename = null
+					ref_id = null
+				}
+				group_transitions = [
+				]
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "7f9ae5e4-beee-41be-9ff7-d04f0509a4bb"
+						actual_target_ref = {
+							_id = "4ce92d68-88a7-449a-9819-615a79ed9335"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "0208b0b1-4152-4c30-97aa-6a89c6e0d358"
+							ref_filename = null
+							ref_id = "c1134196-5cc1-4df3-826c-02765fa1b55a"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "1eb00fc2-e21f-40b8-9036-a7f923f3c449"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "a1f307ea-5e33-42a0-8afd-6cb0bc0f6ca0"
+							ref_filename = null
+							ref_id = "686ccb1c-aad2-426a-a89f-ce03a0a714aa"
+						}
+					}
+				]
+				weights = [
+				]
+				width = 150
+				x = 20
+				y = -20
+			}
+		]
+		group_states = [
+		]
+		notes = [
+		]
+		ragdoll_states = [
+		]
+		shortcut_states = [
+			{
+				_id = "9e92da71-5f2c-4b5d-9ea1-bac3deca4423"
+				_name = "(Clip_c01)"
+				group_transitions = [
+				]
+				state_ref = {
+					_id = "627fd29d-8926-49d1-b8e2-8ddead87c31a"
+					ref_filename = null
+					ref_id = "686ccb1c-aad2-426a-a89f-ce03a0a714aa"
+				}
+				transitions = [
+				]
+				width = 150
+				x = 798
+				y = 102
+			}
+		]
+		states = [
+			{
+				_id = "686ccb1c-aad2-426a-a89f-ce03a0a714aa"
+				_name = "Clip_c01"
+				anim_blend_set_ref = {
+					_id = "9d794e1e-c3c5-4e44-83ab-13bf115aac74"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "e5824eb6-6f18-42b0-8055-68123649df4d"
+						ref_filename = "content/models/characters/BTF/animations/BTF_op_c01.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "96a303ea-4a6a-4b2e-91c3-8539c5041bb0"
+					ref_filename = null
+					ref_id = "e823620d-a9c8-4397-ad98-2c53e02e9756"
+				}
+				group_transitions = [
+				]
+				loop_animation = false
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "500a5a54-b936-4f5f-9412-a9e46f791434"
+						actual_target_ref = {
+							_id = "24b82094-f812-4231-9484-4588f05d8392"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0
+						event_ref = {
+							_id = "94f1e7d6-3a12-42ab-8d9c-a822647c00c6"
+							ref_filename = null
+							ref_id = "e823620d-a9c8-4397-ad98-2c53e02e9756"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "50698a92-2450-4ccf-b652-698f5761303b"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "4533939c-a914-4c65-9b60-c62d4fef0e44"
+							ref_filename = null
+							ref_id = "d45fa206-ddc1-4dc3-a817-c5e14d2c38c9"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 20
+				y = 120
+			}
+			{
+				_id = "d45fa206-ddc1-4dc3-a817-c5e14d2c38c9"
+				_name = "Clip_c02"
+				anim_blend_set_ref = {
+					_id = "9c4ca0c2-6fa5-40e4-bfeb-e59eb867b299"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "106bb21f-6f3e-49d8-b0e4-047394a09e87"
+						ref_filename = "content/models/characters/BTF/animations/BTF_op_c02.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "7724353b-451b-4423-b2ff-52df06e26420"
+					ref_filename = null
+					ref_id = "e823620d-a9c8-4397-ad98-2c53e02e9756"
+				}
+				group_transitions = [
+				]
+				loop_animation = false
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "19ea1ac6-13d4-4ed6-9165-be1f45f01ae4"
+						actual_target_ref = {
+							_id = "059a3bb7-51ad-4962-8cc8-fd5f2f90ad5a"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0
+						event_ref = {
+							_id = "c8d26809-f152-4a9c-a9d7-46df1fd12542"
+							ref_filename = null
+							ref_id = "e823620d-a9c8-4397-ad98-2c53e02e9756"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "67e73b2e-9ebb-461c-a1e6-81c4bffd00a1"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "5c785b67-c475-4ae4-8a90-eb5373e40b22"
+							ref_filename = null
+							ref_id = "0bdc1153-3f13-42c8-aa95-2bd80a4ffead"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 140
+				y = 220
+			}
+			{
+				_id = "0bdc1153-3f13-42c8-aa95-2bd80a4ffead"
+				_name = "Clip_c04"
+				anim_blend_set_ref = {
+					_id = "3bd7289f-1743-4851-a704-9926c73d0200"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "ede9080f-4262-4a5b-ba51-0f7a90c956ac"
+						ref_filename = "content/models/characters/BTF/animations/BTF_op_c04.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "1a429cf7-c5bc-4526-8598-f9470afb1d24"
+					ref_filename = null
+					ref_id = "e823620d-a9c8-4397-ad98-2c53e02e9756"
+				}
+				group_transitions = [
+				]
+				loop_animation = false
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "0c5eedb4-14fb-4d0a-83bf-2afd7e891047"
+						actual_target_ref = {
+							_id = "b456cb99-2d5b-47c1-9df5-feec3716f5c1"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0
+						event_ref = {
+							_id = "5362af96-0327-4f04-97aa-137a8dfcaf7d"
+							ref_filename = null
+							ref_id = "e823620d-a9c8-4397-ad98-2c53e02e9756"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "c2323fcc-4446-4c6a-b66c-56e01fca4ab2"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "ffcdbe19-2646-43da-8b1f-4ecb649fab72"
+							ref_filename = null
+							ref_id = "90b00206-942a-4b9f-aa7c-cc07b8f2f0e3"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 320
+				y = 140
+			}
+			{
+				_id = "90b00206-942a-4b9f-aa7c-cc07b8f2f0e3"
+				_name = "Clip_c05"
+				anim_blend_set_ref = {
+					_id = "f7e1c58b-b3b7-4ad0-b4cb-71e7a3462411"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "8a415dec-e171-4d5c-9e57-1eaddf5a6f23"
+						ref_filename = "content/models/characters/BTF/animations/BTF_op_c05.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "244eb957-6057-42e8-828f-17afc04b4c1f"
+					ref_filename = null
+					ref_id = "e823620d-a9c8-4397-ad98-2c53e02e9756"
+				}
+				group_transitions = [
+				]
+				loop_animation = false
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "4e471b0e-afff-4684-a528-66e8e6f34703"
+						actual_target_ref = {
+							_id = "83be4c8f-b02e-44eb-a456-8ecca2543a0b"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0
+						event_ref = {
+							_id = "3984dac2-0408-402b-93c6-953c6b835468"
+							ref_filename = null
+							ref_id = "e823620d-a9c8-4397-ad98-2c53e02e9756"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "96e549bf-50b9-44f5-bf10-01cbf99bce73"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "f8af6d1f-6d7d-425f-acc7-5ea25e29e9b5"
+							ref_filename = null
+							ref_id = "8c928496-82d2-41e4-a5b3-f443d40fba2a"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 440
+				y = 260
+			}
+			{
+				_id = "8c928496-82d2-41e4-a5b3-f443d40fba2a"
+				_name = "Clip_c07"
+				anim_blend_set_ref = {
+					_id = "72dffe3c-7f83-4603-b70c-5dd965e7f114"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "b2433446-0858-4eb9-a627-e10bddae11f6"
+						ref_filename = "content/models/characters/BTF/animations/BTF_op_c07.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "f4843966-5e3b-44ca-b1e1-99416c747438"
+					ref_filename = null
+					ref_id = "e823620d-a9c8-4397-ad98-2c53e02e9756"
+				}
+				group_transitions = [
+				]
+				loop_animation = false
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "fa11b22e-8d2b-4fe9-8ae1-a6b39f47db83"
+						actual_target_ref = {
+							_id = "0161a1e4-d7b8-4898-ac0b-e8cdb504ad58"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0
+						event_ref = {
+							_id = "935a8b0d-289f-42a2-b644-fc46cac766fa"
+							ref_filename = null
+							ref_id = "e823620d-a9c8-4397-ad98-2c53e02e9756"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "947e616d-c848-43ec-8c0f-8f86082bc30f"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "6740456d-d9eb-4716-8846-5b6c01a57b8c"
+							ref_filename = null
+							ref_id = "7a6e6c25-8274-472a-847e-008154f8fd59"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 580
+				y = 160
+			}
+			{
+				_id = "7a6e6c25-8274-472a-847e-008154f8fd59"
+				_name = "Clip_c08"
+				anim_blend_set_ref = {
+					_id = "bf5dab63-f05a-4652-88ae-3f6b9a603c9d"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "177e4720-ca91-4e2d-a23b-36ead2a9f235"
+						ref_filename = "content/models/characters/BTF/animations/BTF_op_c08.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "2d05bdd3-5ed2-40c9-9c2b-8a95e9304fdc"
+					ref_filename = null
+					ref_id = "e823620d-a9c8-4397-ad98-2c53e02e9756"
+				}
+				group_transitions = [
+				]
+				loop_animation = false
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "63ffe880-cdc5-44bc-80fd-76c249bfae20"
+						actual_target_ref = {
+							_id = "ec4c4170-524a-4a35-9cde-20575794b110"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0
+						event_ref = {
+							_id = "af188d1b-a01d-432a-a068-a5ac581cac28"
+							ref_filename = null
+							ref_id = "e823620d-a9c8-4397-ad98-2c53e02e9756"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "c105089b-be61-4b74-93bd-eb078a68e966"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "40f2e933-5c06-44bf-9639-1404ef82fafe"
+							ref_filename = null
+							ref_id = "9e92da71-5f2c-4b5d-9ea1-bac3deca4423"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 720
+				y = 260
+			}
+		]
+		time_states = [
+		]
+	}
+]
+ragdoll_root_folder_name = "Ragdolls"
+ragdolls = {
+	_id = "5d760bfe-f07c-4de9-9b4d-effe38da82b4"
+	_name = "Ragdolls"
+	data_list = [
+	]
+	sub_folders = [
+	]
+}
+setup = {
+	_id = "d4791b77-855b-45ee-bea9-9b5f6b8ec699"
+	level = ""
+	unit_ref = {
+		_id = "36967847-1101-44ba-9e40-ca2e85da5fbe"
+		ref_filename = "content/models/characters/BTF/BTF_m.unit_anim"
+		ref_id = null
+	}
+}
+variable_root_folder_name = "Variables"
+variables = {
+	_id = "7cddfa6f-e342-406e-a607-7a2165281952"
+	_name = "Variables"
+	data_list = [
+	]
+	sub_folders = [
+	]
+}

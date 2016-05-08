@@ -1,0 +1,39 @@
+
+_data_root_version = 1
+_id = "ca96bccb-5f36-4985-9f82-c6bb6493982e"
+_name = "content/models/props/GCR/GCR_m"
+anim_blend_sets = [
+]
+anim_bones = [
+	{
+		_id = "f6e5412d-9045-420b-8c7a-604a7722a354"
+		_name = "StingrayEntityRoot"
+		lod_level = 5
+	}
+	{
+		_id = "203fa198-69ee-4e0b-a265-d98fc350d228"
+		_name = "FbxAxisSystem_ConvertNode"
+		lod_level = 5
+	}
+	{
+		_id = "15dd55a9-91dd-4193-9ef1-df46ad289f21"
+		_name = "GCR:GCR"
+		lod_level = 5
+	}
+	{
+		_id = "f7a6e83b-ce6e-45bc-bbdd-3787c4c77cfc"
+		_name = "GCR:GUR_joint"
+		lod_level = 5
+	}
+]
+dcc_asset_ref = {
+	_id = "f3db4d42-5d35-473b-83a4-7c42662470b1"
+	ref_filename = "content/models/props/GCR/GCR_m.dcc_asset"
+	ref_id = null
+}
+default_bonelod_and_maxlod_count = 5
+locomotion_root_bone_ref = {
+	_id = "ec81ef3b-3e82-4891-a065-37737a65469a"
+	ref_filename = null
+	ref_id = null
+}

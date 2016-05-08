@@ -11,59 +11,6 @@ anim_skeleton_ref = {
 clip_mappings = [
 ]
 compiler_data = {
-	blend_sets = {
-		BlendSet_Eye = {
-			LeftEye = 1
-			RightEye = 1
-		}
-		BlendSet_Face = {
-			Jaw = 1
-			LeftCheek = 1
-			LeftEye = 1
-			LeftEyebrow1 = 1
-			LeftEyebrow2 = 1
-			LeftEyelid1 = 1
-			LeftEyelid2 = 1
-			LeftEyelid3 = 1
-			LeftLipRound1 = 1
-			LeftLipRound2 = 1
-			LeftLipSide1 = 1
-			LeftLipSide2 = 1
-			LipDown = 1
-			LipDownRound = 1
-			LipTop = 1
-			LipTopRound = 1
-			RightCheek = 1
-			RightEye = 1
-			RightEyebrow1 = 1
-			RightEyebrow2 = 1
-			RightEyelid1 = 1
-			RightEyelid2 = 1
-			RightEyelid3 = 1
-			RightLipRound1 = 1
-			RightLipRound2 = 1
-			RightLipSide1 = 1
-			RightLipSide2 = 1
-		}
-		BlendSet_Mouse = {
-			Jaw = 1
-			JawBase = 1
-			LeftCheek = 1
-			LeftLipRound1 = 1
-			LeftLipRound2 = 1
-			LeftLipSide1 = 1
-			LeftLipSide2 = 1
-			LipDown = 1
-			LipDownRound = 1
-			LipTop = 1
-			LipTopRound = 1
-			RightCheek = 1
-			RightLipRound1 = 1
-			RightLipRound2 = 1
-			RightLipSide1 = 1
-			RightLipSide2 = 1
-		}
-	}
 	bones = "content/models/characters/PPK/PPK_m"
 	events = {
 		"Anim End" = {
@@ -119,6 +66,17 @@ compiler_data = {
 							on_beat = ""
 							to = "All_Enable"
 						}
+					]
+				}
+			]
+		}
+		{
+			default_state = "Empty_State"
+			states = [
+				{
+					name = "Empty_State"
+					state_type = "empty"
+					transitions = [
 					]
 				}
 			]
@@ -583,7 +541,7 @@ compiler_data = {
 							event = "Anim End"
 							mode = "direct"
 							on_beat = ""
-							to = "Cinematics_State/Clip_c06"
+							to = "Cinematics_State/Clip_c07"
 						}
 					]
 					weights = [
@@ -603,13 +561,6 @@ compiler_data = {
 					speed = "1"
 					state_type = "regular"
 					transitions = [
-						{
-							blend_time = 0
-							event = "Anim End"
-							mode = "direct"
-							on_beat = ""
-							to = "Cinematics_State/Clip_c07"
-						}
 					]
 					weights = [
 						"1.0"
@@ -668,75 +619,23 @@ compiler_data = {
 			]
 		}
 		{
-			default_state = "Clip_State"
+			default_state = "Empty_State"
 			states = [
 				{
-					animations = [
-						"content/models/characters/PPK/animations/PPK_a_FaceDefault"
-						"content/models/characters/PPK/animations/PPK_a_Blink01"
-					]
-					blend_set = "BlendSet_Face"
-					loop_animation = true
-					name = "Clip_State"
-					randomization_type = "every_loop"
-					root_driving = "ignore"
-					speed = "1"
-					state_type = "regular"
+					name = "Empty_State"
+					state_type = "empty"
 					transitions = [
-					]
-					weights = [
-						"0.78"
-						"0.59"
 					]
 				}
 			]
 		}
 		{
-			default_state = "Clip_State"
+			default_state = "Empty_State"
 			states = [
 				{
-					animations = [
-						"content/models/characters/PPK/animations/PPK_a_FaceEyeMisc01"
-						"content/models/characters/PPK/animations/PPK_a_FaceDefault"
-					]
-					blend_set = "BlendSet_Eye"
-					loop_animation = true
-					name = "Clip_State"
-					randomization_type = "every_loop"
-					root_driving = "ignore"
-					speed = "1"
-					state_type = "regular"
+					name = "Empty_State"
+					state_type = "empty"
 					transitions = [
-					]
-					weights = [
-						"0.27"
-						"0.8"
-					]
-				}
-			]
-		}
-		{
-			default_state = "Clip_State"
-			states = [
-				{
-					animations = [
-						"content/models/characters/PPK/animations/PPK_a_FaceDefault"
-						"content/models/characters/PPK/animations/PPK_a_FaceMouseMisc01"
-						"content/models/characters/PPK/animations/PPK_a_FaceMouseMisc02"
-					]
-					blend_set = "BlendSet_Mouse"
-					loop_animation = true
-					name = "Clip_State"
-					randomization_type = "every_loop"
-					root_driving = "ignore"
-					speed = "1"
-					state_type = "regular"
-					transitions = [
-					]
-					weights = [
-						"0.71"
-						"0.05"
-						"0.3"
 					]
 				}
 			]
@@ -1004,6 +903,67 @@ layers = [
 				x = 140
 				y = 120
 			}
+		]
+		shortcut_states = [
+		]
+		states = [
+		]
+		time_states = [
+		]
+	}
+	{
+		_id = "8180431c-1656-4eed-833e-155121598f26"
+		_name = "Layer_Mouse"
+		blend_states = [
+		]
+		default_state_ref = {
+			_id = "566e8939-49db-431f-8929-0bc1e1748e65"
+			ref_filename = null
+			ref_id = "67ad6b36-fee0-4dc8-8617-901cc80240a1"
+		}
+		empty_states = [
+			{
+				_id = "67ad6b36-fee0-4dc8-8617-901cc80240a1"
+				_name = "Empty_State"
+				anim_blend_set_ref = {
+					_id = "a108b810-5a29-40c4-bd4b-fc92d65f0dc1"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "d6caf536-defa-493e-b249-3e74fff3db1e"
+					ref_filename = null
+					ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+				}
+				group_transitions = [
+				]
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+				]
+				weights = [
+				]
+				width = 150
+				x = -180
+				y = 20
+			}
+		]
+		group_states = [
+		]
+		notes = [
+		]
+		ragdoll_states = [
 		]
 		shortcut_states = [
 		]
@@ -2332,30 +2292,30 @@ layers = [
 						speed = "1"
 						transitions = [
 							{
-								_id = "17328414-b827-4d2b-8e84-d600b5f656f3"
+								_id = "2a8a18dc-c420-4fdd-8fec-72b7510772cd"
 								actual_target_ref = {
-									_id = "ea4dc223-3f80-4b74-b59f-19c3ae303b84"
+									_id = "7e855884-31f9-405b-9c43-05b43af39d86"
 									ref_filename = null
 									ref_id = null
 								}
 								blend_time = 0
 								event_ref = {
-									_id = "564406c0-cfdb-4ea8-bc96-272bbcf18f94"
+									_id = "1a4181a8-4332-4cb4-baaf-bef741c6f271"
 									ref_filename = null
 									ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
 								}
 								has_nested_from = false
 								mode = "direct"
 								nested_from_ref = {
-									_id = "83e2198b-ef00-46fe-a917-ddf99449ddee"
+									_id = "3279f6dc-625c-4e7d-ac42-94751171b688"
 									ref_filename = null
 									ref_id = null
 								}
 								on_beat = ""
 								to_state_ref = {
-									_id = "ac69049f-9e6e-4802-a47f-9e8f7c727121"
+									_id = "d57e0ced-8f57-4742-bd5f-d5922970f7fb"
 									ref_filename = null
-									ref_id = "56211c68-19a2-4ed1-9126-1ebcd36f7bd1"
+									ref_id = "9dd5230c-bb70-4a84-bf07-1e4b25af2f4b"
 								}
 							}
 						]
@@ -2400,33 +2360,6 @@ layers = [
 						root_driving = "ignore"
 						speed = "1"
 						transitions = [
-							{
-								_id = "36a58e6b-af01-4583-91b7-9707e14b3b00"
-								actual_target_ref = {
-									_id = "9eaea7cf-814b-4edf-8acb-d907388e5c86"
-									ref_filename = null
-									ref_id = null
-								}
-								blend_time = 0
-								event_ref = {
-									_id = "0a2f2a3d-4588-4d00-a1e6-0065da111375"
-									ref_filename = null
-									ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
-								}
-								has_nested_from = false
-								mode = "direct"
-								nested_from_ref = {
-									_id = "a91178d4-d664-47b0-b231-0ef1c2e1e052"
-									ref_filename = null
-									ref_id = null
-								}
-								on_beat = ""
-								to_state_ref = {
-									_id = "78626802-1244-4971-b6a5-c3d34f56f008"
-									ref_filename = null
-									ref_id = "9dd5230c-bb70-4a84-bf07-1e4b25af2f4b"
-								}
-							}
 						]
 						weights = [
 							"1.0"
@@ -2501,7 +2434,7 @@ layers = [
 							"1.0"
 						]
 						width = 150
-						x = 380
+						x = 400
 						y = -20
 					}
 					{
@@ -2691,123 +2624,30 @@ layers = [
 		]
 	}
 	{
-		_id = "3c973f6b-f78f-4ff9-a0d8-78f24552a795"
-		_name = "Layer_Face"
-		blend_states = [
-		]
-		default_state_ref = {
-			_id = "af4dead6-3f5e-4b05-8815-24b2468b3456"
-			ref_filename = null
-			ref_id = "03d5453a-92ad-493a-bc3b-8583e7a1ce41"
-		}
-		empty_states = [
-		]
-		group_states = [
-		]
-		notes = [
-		]
-		ragdoll_states = [
-		]
-		shortcut_states = [
-		]
-		states = [
-			{
-				_id = "03d5453a-92ad-493a-bc3b-8583e7a1ce41"
-				_name = "Clip_State"
-				anim_blend_set_ref = {
-					_id = "7e03d462-6e5b-4b75-b80b-2d845f44e0ac"
-					ref_filename = "content/models/characters/PPK/PPK_m.anim_skeleton"
-					ref_id = "c85e9c7c-9626-4e48-a613-4b7461f075f7"
-				}
-				animations = [
-					{
-						_id = "022bdf30-9ecd-4790-8b09-c4e2b6d93785"
-						ref_filename = "content/models/characters/PPK/animations/PPK_a_FaceDefault.anim_clip"
-						ref_id = null
-					}
-					{
-						_id = "53417891-76c3-4171-b2de-e80b69b43dea"
-						ref_filename = "content/models/characters/PPK/animations/PPK_a_Blink01.anim_clip"
-						ref_id = null
-					}
-				]
-				constraints = [
-				]
-				exit_event_ref = {
-					_id = "6be4c2b9-a27a-432a-88bc-3e57edade86f"
-					ref_filename = null
-					ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
-				}
-				group_transitions = [
-				]
-				loop_animation = true
-				markers = [
-				]
-				muted_layers = [
-				]
-				offset_state = false
-				randomization_type = "every_loop"
-				root_driving = "ignore"
-				speed = "1"
-				transitions = [
-				]
-				weights = [
-					"0.78"
-					"0.59"
-				]
-				width = 150
-				x = -60
-				y = 100
-			}
-		]
-		time_states = [
-		]
-	}
-	{
 		_id = "1842b6f3-e2bc-4023-bfe5-ead94c6fd526"
 		_name = "Layer_Eye"
 		blend_states = [
 		]
 		default_state_ref = {
-			_id = "fabf09c9-a7c5-4b97-b6de-5bfbb296e0b0"
+			_id = "eed0a95e-7226-4f07-b356-e5e0e17969fd"
 			ref_filename = null
-			ref_id = "1fef91e7-4b3c-4246-8413-e71e0d1b5281"
+			ref_id = "12b5957e-fb27-4517-b064-08d2c323f12e"
 		}
 		empty_states = [
-		]
-		group_states = [
-		]
-		notes = [
-		]
-		ragdoll_states = [
-		]
-		shortcut_states = [
-		]
-		states = [
 			{
-				_id = "1fef91e7-4b3c-4246-8413-e71e0d1b5281"
-				_name = "Clip_State"
+				_id = "12b5957e-fb27-4517-b064-08d2c323f12e"
+				_name = "Empty_State"
 				anim_blend_set_ref = {
-					_id = "56ca67e9-89ce-4c67-89eb-3b45be1f7b7b"
-					ref_filename = "content/models/characters/PPK/PPK_m.anim_skeleton"
-					ref_id = "9d21635d-9957-491f-aece-9c8836ebef92"
+					_id = "a5d38220-ec7a-4ae6-ae04-099c3eb61650"
+					ref_filename = null
+					ref_id = null
 				}
 				animations = [
-					{
-						_id = "3a139e2e-bf98-4907-aa81-e07a7f745616"
-						ref_filename = "content/models/characters/PPK/animations/PPK_a_FaceEyeMisc01.anim_clip"
-						ref_id = null
-					}
-					{
-						_id = "946f342b-e210-4b61-824f-55cd479ba593"
-						ref_filename = "content/models/characters/PPK/animations/PPK_a_FaceDefault.anim_clip"
-						ref_id = null
-					}
 				]
 				constraints = [
 				]
 				exit_event_ref = {
-					_id = "6492bc81-c2ff-4487-a242-bdf1115c7071"
+					_id = "48ace599-af53-4f3f-8607-b028c142dfb3"
 					ref_filename = null
 					ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
 				}
@@ -2825,67 +2665,50 @@ layers = [
 				transitions = [
 				]
 				weights = [
-					"0.27"
-					"0.8"
 				]
 				width = 150
-				x = -60
-				y = 160
+				x = -120
+				y = 80
 			}
+		]
+		group_states = [
+		]
+		notes = [
+		]
+		ragdoll_states = [
+		]
+		shortcut_states = [
+		]
+		states = [
 		]
 		time_states = [
 		]
 	}
 	{
-		_id = "8180431c-1656-4eed-833e-155121598f26"
-		_name = "Layer_Mouse"
+		_id = "3c973f6b-f78f-4ff9-a0d8-78f24552a795"
+		_name = "Layer_Face"
 		blend_states = [
 		]
 		default_state_ref = {
-			_id = "588c61ae-9d2f-4042-887f-1293ba297ab5"
+			_id = "06e5c2b3-6fe7-49f4-a9e0-990271fc1805"
 			ref_filename = null
-			ref_id = "49126e4b-97ab-44d2-a6eb-9204dee5f895"
+			ref_id = "cf51e692-aacb-4bc5-bd99-29b29642d850"
 		}
 		empty_states = [
-		]
-		group_states = [
-		]
-		notes = [
-		]
-		ragdoll_states = [
-		]
-		shortcut_states = [
-		]
-		states = [
 			{
-				_id = "49126e4b-97ab-44d2-a6eb-9204dee5f895"
-				_name = "Clip_State"
+				_id = "cf51e692-aacb-4bc5-bd99-29b29642d850"
+				_name = "Empty_State"
 				anim_blend_set_ref = {
-					_id = "f5fd0f65-df28-4545-b0f9-5e6d26ead1b7"
-					ref_filename = "content/models/characters/PPK/PPK_m.anim_skeleton"
-					ref_id = "fcce5c2a-7f9f-4148-81c7-c2842c747797"
+					_id = "7a720dfb-fef6-4b73-9db0-266049b5d678"
+					ref_filename = null
+					ref_id = null
 				}
 				animations = [
-					{
-						_id = "8d6a03d6-72f0-4736-93eb-53d74d7ab86f"
-						ref_filename = "content/models/characters/PPK/animations/PPK_a_FaceDefault.anim_clip"
-						ref_id = null
-					}
-					{
-						_id = "1ae965b2-e17c-4d66-8892-d3724eccb7dd"
-						ref_filename = "content/models/characters/PPK/animations/PPK_a_FaceMouseMisc01.anim_clip"
-						ref_id = null
-					}
-					{
-						_id = "5b992b9a-66de-41d3-8f8f-9a404e7459d0"
-						ref_filename = "content/models/characters/PPK/animations/PPK_a_FaceMouseMisc02.anim_clip"
-						ref_id = null
-					}
 				]
 				constraints = [
 				]
 				exit_event_ref = {
-					_id = "fedde78f-17fa-464e-85d2-5854f3d8d9e2"
+					_id = "43ca3965-644b-4ce6-9f1c-c56396fe0094"
 					ref_filename = null
 					ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
 				}
@@ -2903,14 +2726,21 @@ layers = [
 				transitions = [
 				]
 				weights = [
-					"0.71"
-					"0.05"
-					"0.3"
 				]
 				width = 150
-				x = -60
-				y = 146
+				x = -120
+				y = 0
 			}
+		]
+		group_states = [
+		]
+		notes = [
+		]
+		ragdoll_states = [
+		]
+		shortcut_states = [
+		]
+		states = [
 		]
 		time_states = [
 		]

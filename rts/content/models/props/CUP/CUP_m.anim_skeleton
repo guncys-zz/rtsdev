@@ -1,0 +1,39 @@
+
+_data_root_version = 1
+_id = "25393340-2d22-4213-8a4a-f5598ad53369"
+_name = "content/models/props/CUP/CUP_m"
+anim_blend_sets = [
+]
+anim_bones = [
+	{
+		_id = "3beb9e65-6681-4324-99ce-ba2d966bef41"
+		_name = "StingrayEntityRoot"
+		lod_level = 5
+	}
+	{
+		_id = "4868a864-41d7-4599-a789-6773c48d8200"
+		_name = "FbxAxisSystem_ConvertNode"
+		lod_level = 5
+	}
+	{
+		_id = "18826fb2-a8c6-467b-a783-1eacb7c0c264"
+		_name = "CUP:CUP_joint"
+		lod_level = 5
+	}
+	{
+		_id = "7d92f74d-288e-4eab-a213-0d781938226b"
+		_name = "CUP:Cup"
+		lod_level = 5
+	}
+]
+dcc_asset_ref = {
+	_id = "d0c2b6b4-2858-408a-9638-40b6857bd948"
+	ref_filename = "content/models/props/CUP/CUP_m.dcc_asset"
+	ref_id = null
+}
+default_bonelod_and_maxlod_count = 5
+locomotion_root_bone_ref = {
+	_id = "f6d48895-c834-4dd4-bea6-e71a55051e23"
+	ref_filename = null
+	ref_id = null
+}

@@ -115,7 +115,7 @@ compiler_data = {
 							event = "Anim End"
 							mode = "direct"
 							on_beat = ""
-							to = "Clip_c06"
+							to = "Clip_c07"
 						}
 					]
 					weights = [
@@ -135,13 +135,6 @@ compiler_data = {
 					speed = "1"
 					state_type = "regular"
 					transitions = [
-						{
-							blend_time = 0
-							event = "Anim End"
-							mode = "direct"
-							on_beat = ""
-							to = "Clip_c07"
-						}
 					]
 					weights = [
 						"1.0"
@@ -591,30 +584,30 @@ layers = [
 				speed = "1"
 				transitions = [
 					{
-						_id = "16ae1bed-13ee-41ba-bc94-744bef69985f"
+						_id = "8f1a2f3c-dd75-4a02-b11b-b3108dfac389"
 						actual_target_ref = {
-							_id = "df00faf4-b97b-425b-8eb9-90815ce6de8f"
+							_id = "63663ea4-8a7d-413c-a223-d53323b2d7c0"
 							ref_filename = null
 							ref_id = null
 						}
 						blend_time = 0
 						event_ref = {
-							_id = "373dcd2c-616a-49bc-a8a4-254af3fcf0f1"
+							_id = "ac7dd31e-c6cc-484d-a873-4243d8cb98c8"
 							ref_filename = null
 							ref_id = "bc16ed7e-55d4-4259-809d-9a7909a92375"
 						}
 						has_nested_from = false
 						mode = "direct"
 						nested_from_ref = {
-							_id = "5cdd856e-e3a4-41a7-be4b-0ec833da1832"
+							_id = "fc1d7267-c3f0-4e19-97c9-e67fa3288111"
 							ref_filename = null
 							ref_id = null
 						}
 						on_beat = ""
 						to_state_ref = {
-							_id = "f68b5ace-b617-4a94-9a9c-2ec1adb67baf"
+							_id = "269dc320-f040-4e9d-b153-cc8cdedcbd82"
 							ref_filename = null
-							ref_id = "7e41d20f-19db-4b8e-ad8d-14d93f9b589c"
+							ref_id = "fd548efb-d11f-4615-81dd-7eddfb156a58"
 						}
 					}
 				]
@@ -659,33 +652,6 @@ layers = [
 				root_driving = "ignore"
 				speed = "1"
 				transitions = [
-					{
-						_id = "e1e0a621-44c3-44ae-8674-4e018acb256c"
-						actual_target_ref = {
-							_id = "6ac3b478-5a3f-4f68-9c48-0f9f1f8bac4a"
-							ref_filename = null
-							ref_id = null
-						}
-						blend_time = 0
-						event_ref = {
-							_id = "9d81c6d4-6907-41dd-befb-c295788abc12"
-							ref_filename = null
-							ref_id = "bc16ed7e-55d4-4259-809d-9a7909a92375"
-						}
-						has_nested_from = false
-						mode = "direct"
-						nested_from_ref = {
-							_id = "bf6f3e23-539e-4bd8-a27f-3ef7c001c6d7"
-							ref_filename = null
-							ref_id = null
-						}
-						on_beat = ""
-						to_state_ref = {
-							_id = "568b60b1-1fe8-4b7e-b904-a5c766d63b83"
-							ref_filename = null
-							ref_id = "fd548efb-d11f-4615-81dd-7eddfb156a58"
-						}
-					}
 				]
 				weights = [
 					"1.0"

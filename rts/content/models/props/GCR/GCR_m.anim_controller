@@ -1,0 +1,772 @@
+
+_data_root_version = 6
+_id = "d350466a-a6a8-4fa3-9f4f-4ce1e421916b"
+_name = "content/models/props/GCR/GCR_m"
+anim_event_root_folder_name = "events"
+anim_skeleton_ref = {
+	_id = "ed4d7aab-7f28-430b-9c2a-0725ef0fba80"
+	ref_filename = "content/models/props/GCR/GCR_m.anim_skeleton"
+	ref_id = null
+}
+clip_mappings = [
+]
+compiler_data = {
+	bones = "content/models/props/GCR/GCR_m"
+	events = {
+		"Anim End" = {
+		}
+		AnimEvent_Cinematics_Start = {
+		}
+	}
+	layers = [
+		{
+			default_state = "Empty"
+			states = [
+				{
+					animations = [
+						"content/models/props/GCR/animations/GCR_op_c01"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Clip_c01"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Clip_c02"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/props/GCR/animations/GCR_op_c02"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Clip_c02"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Clip_c04"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/props/GCR/animations/GCR_op_c04"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Clip_c04"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Clip_c05"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/props/GCR/animations/GCR_op_c05"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Clip_c05"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Clip_c07"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/props/GCR/animations/GCR_op_c07"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Clip_c07"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Clip_c08"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/props/GCR/animations/GCR_op_c08"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Clip_c08"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Clip_c01"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					name = "Empty"
+					state_type = "empty"
+					transitions = [
+						{
+							blend_time = 0.2
+							event = "AnimEvent_Cinematics_Start"
+							mode = "direct"
+							on_beat = ""
+							to = "Clip_c01"
+						}
+					]
+				}
+			]
+		}
+	]
+}
+constraint_root_folder_name = "Constraints"
+constraint_target_root_folder_name = "Constraint Targets"
+constraint_targets = {
+	_id = "cd7f735b-5f3f-4e78-9db4-a8df0ff187d2"
+	_name = "Constraint Targets"
+	data_list = [
+	]
+	sub_folders = [
+	]
+}
+constraints = {
+	_id = "302597d6-9e07-4cce-9ca2-f8432050a1f8"
+	_name = "Constraints"
+	data_list = [
+	]
+	sub_folders = [
+	]
+}
+events = {
+	_id = "dc28e2b4-851f-4916-a2fd-660da076cd24"
+	_name = "events"
+	data_list = [
+		{
+			_id = "711f1bdf-b9d5-46e5-b785-310c92613269"
+			_name = "Anim End"
+		}
+		{
+			_id = "fdc79b23-a570-4540-a564-59e4912cf3f6"
+			_name = "AnimEvent_Cinematics_Start"
+		}
+	]
+	sub_folders = [
+	]
+}
+layers = [
+	{
+		_id = "b7f35491-4aac-42a6-85aa-463f6aaa8ea8"
+		_name = "Base"
+		blend_states = [
+		]
+		default_state_ref = {
+			_id = "04af0d09-60e6-4bb8-aa13-f8938c79011e"
+			ref_filename = null
+			ref_id = "14fe9207-0a81-4079-bfea-48992ade7d00"
+		}
+		empty_states = [
+			{
+				_id = "14fe9207-0a81-4079-bfea-48992ade7d00"
+				_name = "Empty"
+				anim_blend_set_ref = {
+					_id = "654740d3-4673-4915-8c4f-78eb43a794ab"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "51732652-1d62-4070-8c00-c3bb090364d0"
+					ref_filename = null
+					ref_id = null
+				}
+				group_transitions = [
+				]
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "bf838e5f-0bf7-4697-b186-603df0d6f4c4"
+						actual_target_ref = {
+							_id = "61b4af74-7541-44f2-a1c0-fd8dfb796843"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "5cd164fd-f90d-49e1-87b3-2c3decc1cab2"
+							ref_filename = null
+							ref_id = "fdc79b23-a570-4540-a564-59e4912cf3f6"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "7efc144c-084a-4437-84de-f0654145ed91"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "ee73691b-aced-43ca-a8b4-e5152e9e8a99"
+							ref_filename = null
+							ref_id = "5f873401-1dfe-4dbf-b6ab-8bcee55d6410"
+						}
+					}
+				]
+				weights = [
+				]
+				width = 150
+				x = 20
+				y = 0
+			}
+		]
+		group_states = [
+		]
+		notes = [
+		]
+		ragdoll_states = [
+		]
+		shortcut_states = [
+			{
+				_id = "fe6de672-02b3-4200-938c-4f7cf36f781d"
+				_name = "(Clip_c01)"
+				group_transitions = [
+				]
+				state_ref = {
+					_id = "d972c64c-925d-419d-90b6-39bd24e4e7cf"
+					ref_filename = null
+					ref_id = "5f873401-1dfe-4dbf-b6ab-8bcee55d6410"
+				}
+				transitions = [
+				]
+				width = 150
+				x = 820
+				y = -20
+			}
+		]
+		states = [
+			{
+				_id = "5f873401-1dfe-4dbf-b6ab-8bcee55d6410"
+				_name = "Clip_c01"
+				anim_blend_set_ref = {
+					_id = "f3643814-d654-4eaa-b827-6adfc2c31d0d"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "b0d958a8-f80d-48b6-9c7a-0bb78e47d014"
+						ref_filename = "content/models/props/GCR/animations/GCR_op_c01.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "c2355cbe-e189-4405-8283-d6802112d69e"
+					ref_filename = null
+					ref_id = "711f1bdf-b9d5-46e5-b785-310c92613269"
+				}
+				group_transitions = [
+				]
+				loop_animation = false
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "2c8c4be3-6771-4fa4-8c93-64fb7c9a6471"
+						actual_target_ref = {
+							_id = "57f8a854-ecb6-4cbd-9ad7-44ffee4e33f2"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0
+						event_ref = {
+							_id = "9a74e311-9d64-4e55-a1fe-408619bdc3ef"
+							ref_filename = null
+							ref_id = "711f1bdf-b9d5-46e5-b785-310c92613269"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "74316954-741d-4465-890c-1af573eb650a"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "03991300-fe41-4726-95ec-4b8b841c43c7"
+							ref_filename = null
+							ref_id = "ff082fdd-b4ab-48ff-8b0a-f3d04886abf0"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = -140
+				y = 120
+			}
+			{
+				_id = "ff082fdd-b4ab-48ff-8b0a-f3d04886abf0"
+				_name = "Clip_c02"
+				anim_blend_set_ref = {
+					_id = "ecdeca54-15d4-463a-b471-39fe6f097360"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "45acc91b-2e33-4f90-a9ea-0f4e107a5059"
+						ref_filename = "content/models/props/GCR/animations/GCR_op_c02.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "6c4c52cb-b198-4a92-bd93-d0bd2935e0b8"
+					ref_filename = null
+					ref_id = "711f1bdf-b9d5-46e5-b785-310c92613269"
+				}
+				group_transitions = [
+				]
+				loop_animation = false
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "74b9f51f-a317-4761-962f-4f0bf52272c0"
+						actual_target_ref = {
+							_id = "e9cb855b-68f4-4dc5-8eee-407c4766296f"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0
+						event_ref = {
+							_id = "a56f6e2f-2e48-4f6f-932c-2413a286b3b5"
+							ref_filename = null
+							ref_id = "711f1bdf-b9d5-46e5-b785-310c92613269"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "59fef0a8-2084-44a2-a19c-a66d3307daee"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "6ff6c8ca-2d73-4a54-bfde-d420a875dbdf"
+							ref_filename = null
+							ref_id = "62dea565-afe0-4e95-8087-a84fe1f364ea"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 120
+				y = 200
+			}
+			{
+				_id = "62dea565-afe0-4e95-8087-a84fe1f364ea"
+				_name = "Clip_c04"
+				anim_blend_set_ref = {
+					_id = "db09f5fe-d08a-48b8-bf60-840d00e959ac"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "f60abfb9-9a12-40ce-9adc-6d4e58290ff0"
+						ref_filename = "content/models/props/GCR/animations/GCR_op_c04.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "22da571b-000d-4200-b7e9-510b39122a4b"
+					ref_filename = null
+					ref_id = "711f1bdf-b9d5-46e5-b785-310c92613269"
+				}
+				group_transitions = [
+				]
+				loop_animation = false
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "778a9c2f-311f-4842-b582-ccd7b2018412"
+						actual_target_ref = {
+							_id = "a7666bfa-e94a-4180-a9fa-509e2973db5b"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0
+						event_ref = {
+							_id = "4593acef-8f21-45be-9ad8-3a40a24b18b3"
+							ref_filename = null
+							ref_id = "711f1bdf-b9d5-46e5-b785-310c92613269"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "957a45be-8525-4a41-a508-4f63a5118210"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "7dd124dd-05a9-45e1-9fbf-8926044aa20f"
+							ref_filename = null
+							ref_id = "a070cff7-91de-464d-8179-8c000c570ac1"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 280
+				y = 100
+			}
+			{
+				_id = "a070cff7-91de-464d-8179-8c000c570ac1"
+				_name = "Clip_c05"
+				anim_blend_set_ref = {
+					_id = "3b58a3b9-5e15-4446-aec4-ad09ecb58b35"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "f4493f14-27f1-4c20-846f-bdff584a5d5e"
+						ref_filename = "content/models/props/GCR/animations/GCR_op_c05.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "3e40f7c5-10f1-449b-a08e-4d4f2e1e3d9a"
+					ref_filename = null
+					ref_id = "711f1bdf-b9d5-46e5-b785-310c92613269"
+				}
+				group_transitions = [
+				]
+				loop_animation = false
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "6443e200-8b4c-427e-9911-a2c69667b514"
+						actual_target_ref = {
+							_id = "48c460ad-fce7-41cb-ae94-d41672829e16"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0
+						event_ref = {
+							_id = "426d61f5-b640-4efc-b0c4-645e7cf1f34f"
+							ref_filename = null
+							ref_id = "711f1bdf-b9d5-46e5-b785-310c92613269"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "41c1cf28-e130-46f0-aa6b-620c7ddc9a36"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "4a9ea5c0-f787-4e41-be0d-f4a11102990a"
+							ref_filename = null
+							ref_id = "50bf9de9-b9a1-4595-b5a2-5402dcb2e409"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 440
+				y = 200
+			}
+			{
+				_id = "50bf9de9-b9a1-4595-b5a2-5402dcb2e409"
+				_name = "Clip_c07"
+				anim_blend_set_ref = {
+					_id = "89c8935b-8986-4859-a918-47c906efa580"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "9c596b0c-5027-4d29-800a-f3afb8b11a57"
+						ref_filename = "content/models/props/GCR/animations/GCR_op_c07.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "b111aee2-de4e-4a9e-af59-9c85fc6066e2"
+					ref_filename = null
+					ref_id = "711f1bdf-b9d5-46e5-b785-310c92613269"
+				}
+				group_transitions = [
+				]
+				loop_animation = false
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "e6b76970-b094-442f-872a-65783198d53d"
+						actual_target_ref = {
+							_id = "1d3cbafc-2428-44b1-b366-0d38d75a504f"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0
+						event_ref = {
+							_id = "c2982c1a-9722-4e99-b1a5-bc0713a16b62"
+							ref_filename = null
+							ref_id = "711f1bdf-b9d5-46e5-b785-310c92613269"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "457ea6cd-b479-4a3d-9e60-a02c46f2f61e"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "af9d432b-6835-4650-b126-4391c51d2cf2"
+							ref_filename = null
+							ref_id = "744587ad-46dc-4938-871d-89bdf1a95d2a"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 640
+				y = 100
+			}
+			{
+				_id = "744587ad-46dc-4938-871d-89bdf1a95d2a"
+				_name = "Clip_c08"
+				anim_blend_set_ref = {
+					_id = "b8936cba-e9c6-44a6-a403-3c960325b3db"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "30367c8c-0266-43b9-90ad-de3dd65a8bc3"
+						ref_filename = "content/models/props/GCR/animations/GCR_op_c08.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "9e223ab9-5b16-4cb9-92d2-6d7545b701d1"
+					ref_filename = null
+					ref_id = "711f1bdf-b9d5-46e5-b785-310c92613269"
+				}
+				group_transitions = [
+				]
+				loop_animation = false
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "09b34a8f-5419-47e4-8d15-1c91d336c709"
+						actual_target_ref = {
+							_id = "13914ee3-b530-47d6-bbf8-853d2cee9c39"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0
+						event_ref = {
+							_id = "08764e59-a92d-4619-8687-7703476921fd"
+							ref_filename = null
+							ref_id = "711f1bdf-b9d5-46e5-b785-310c92613269"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "a980f30e-e57e-42fc-8fa8-a3be8cd7085b"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "31558a64-4ec6-461d-a81c-62b6a69456cb"
+							ref_filename = null
+							ref_id = "fe6de672-02b3-4200-938c-4f7cf36f781d"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 780.083822296731
+				y = 193.09248393406
+			}
+		]
+		time_states = [
+		]
+	}
+]
+ragdoll_root_folder_name = "Ragdolls"
+ragdolls = {
+	_id = "bedbeb17-9bfb-4a85-9bc4-e7d6f42c6009"
+	_name = "Ragdolls"
+	data_list = [
+	]
+	sub_folders = [
+	]
+}
+setup = {
+	_id = "1a551125-00eb-4a6a-852e-5294b70119f9"
+	level = ""
+	unit_ref = {
+		_id = "1c24e3ac-316f-4299-beb9-6ced280db1b4"
+		ref_filename = "content/models/props/GCR/GCR_m.unit_anim"
+		ref_id = null
+	}
+}
+variable_root_folder_name = "Variables"
+variables = {
+	_id = "a72a86e8-a1ca-4003-8836-d8bbe4fb5cae"
+	_name = "Variables"
+	data_list = [
+	]
+	sub_folders = [
+	]
+}
