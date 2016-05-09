@@ -3348,6 +3348,15 @@ Connections = [
 		ToItem = "In"
 		ToNode = "389ff40a-b561-4344-bd9a-69d243d06a31"
 	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Damage"
+		FromNode = "da507579-c407-41d2-9f61-5fc76c7510a5"
+		Id = "f055b366-b35b-4f21-a84b-4a1f9f4114b0"
+		Priority = 0
+		ToItem = "Create"
+		ToNode = "f0b4f2f1-f3fa-462f-8b1e-93ed3896e4be"
+	}
 ]
 Groups = [
 	{
@@ -3540,6 +3549,7 @@ Groups = [
 			"a724d015-9c23-44dd-b1b0-e8cace8d04c4"
 			"da507579-c407-41d2-9f61-5fc76c7510a5"
 			"8daf3f9b-e244-48e5-af99-32d026e86791"
+			"f0b4f2f1-f3fa-462f-8b1e-93ed3896e4be"
 		]
 		Title = "障害物との接触"
 	}
@@ -3836,7 +3846,7 @@ Nodes = [
 		}
 		NodeLocation = {
 			X = -380
-			Y = 1920
+			Y = 2040
 		}
 		Out1 = {
 		}
@@ -3950,7 +3960,7 @@ Nodes = [
 		Name = "Print To Screen"
 		NodeLocation = {
 			X = -120
-			Y = 1980
+			Y = 2100
 		}
 		OutEvents = [
 			"Out"
@@ -4539,7 +4549,7 @@ Nodes = [
 		}
 		NodeLocation = {
 			X = -580
-			Y = 1940
+			Y = 2060
 		}
 		True = {
 		}
@@ -5408,7 +5418,7 @@ Nodes = [
 		}
 		NodeLocation = {
 			X = -780
-			Y = 1940
+			Y = 2060
 		}
 		Unit = {
 			UseMyUnit = true
@@ -5657,6 +5667,40 @@ Nodes = [
 			UseMyUnit = true
 		}
 		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ParticleEffect"
+		Create = {
+		}
+		Destroy = {
+		}
+		Effect = {
+			Value = "content/effect/fx_e_dmg00_00"
+		}
+		EffectId = {
+		}
+		Id = "f0b4f2f1-f3fa-462f-8b1e-93ed3896e4be"
+		Kill = {
+		}
+		Linked = {
+			Value = false
+		}
+		NodeLocation = {
+			X = -900
+			Y = 1880
+		}
+		Object = {
+		}
+		Offset = {
+		}
+		OrphanedPolicy = {
+		}
+		RotationOffset = {
+		}
+		Unit = {
+			UseMyUnit = true
 		}
 		Width = 160
 	}
