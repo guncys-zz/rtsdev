@@ -2282,6 +2282,11 @@ nodes = [
 					id = "4dfe2112-d662-4c02-9546-b0e9cf759d57:0"
 					node = "4dfe2112-d662-4c02-9546-b0e9cf759d57"
 				}
+				{
+					event = 0
+					id = "b7d61344-71bd-4e9f-866e-c42f8c0c0177:0"
+					node = "b7d61344-71bd-4e9f-866e-c42f8c0c0177"
+				}
 			]
 			damage_exit = [
 				{
@@ -2540,6 +2545,45 @@ nodes = [
 			key = "Speed"
 			unit = null
 			value = null
+		}
+	}
+	{
+		id = "b7d61344-71bd-4e9f-866e-c42f8c0c0177"
+		in_variables = {
+			effect = {
+				type = "string"
+			}
+			linked = {
+				type = "bool"
+			}
+			object = {
+				type = "id"
+			}
+			offset = {
+				type = "vector3"
+			}
+			orphaned_policy = {
+				type = "string"
+			}
+			rotation_offset = {
+				type = "quaternion"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		type = "particle_effect"
+		variable_values = {
+			effect = "content/effect/fx_e_dmg00_00"
+			effect_id = null
+			linked = false
+			object = null
+			offset = null
+			orphaned_policy = null
+			rotation_offset = null
+			unit = null
 		}
 	}
 	{
