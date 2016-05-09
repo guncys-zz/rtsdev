@@ -20,16 +20,14 @@ editor_metadata = {
 				}
 				"3eb1ba63-3a53-4846-970b-57e3d4d75d2b" = {
 					data = {
+						baked_diffuse_tint = {
+							intensity = 1.5
+						}
 						global_diffuse_map = {
 							"$resource_name" = "content/models/shots/OP/lighting/diffuse_interior"
 							"$resource_type" = "texture"
 						}
 						skydome_intensity = 3
-					}
-				}
-				"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
-					data = {
-						motion_blur_enabled = false
 					}
 				}
 			}
@@ -1617,7 +1615,7 @@ editor_metadata = {
 					Enabled = true
 					FalloffEnd = 100
 					FalloffStart = 0
-					Intensity = 10
+					Intensity = 5
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 59.9999999984761
@@ -1636,9 +1634,9 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = -0.783653
-				Y = 0.215829
-				Z = 1.892991
+				X = -1.818877
+				Y = 0.38333
+				Z = 1.872038
 			}
 			Rot = {
 				W = -0.746234
@@ -1678,16 +1676,14 @@ entities = [
 			}
 			"3eb1ba63-3a53-4846-970b-57e3d4d75d2b" = {
 				data = {
+					baked_diffuse_tint = {
+						intensity = 1.5
+					}
 					global_diffuse_map = {
 						"$resource_name" = "content/models/shots/OP/lighting/diffuse_interior"
 						"$resource_type" = "texture"
 					}
 					skydome_intensity = 3
-				}
-			}
-			"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
-				data = {
-					motion_blur_enabled = false
 				}
 			}
 		}
@@ -2869,7 +2865,7 @@ units = [
 				enabled = true
 				falloff_end = 100
 				falloff_start = 0
-				intensity = 10
+				intensity = 5
 				material = ""
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
@@ -2881,9 +2877,9 @@ units = [
 		}
 		name = "light_source1"
 		pos = [
-			-0.783653
-			0.215829
-			1.892991
+			-1.818877
+			0.38333
+			1.872038
 		]
 		rot = [
 			-0.060712
