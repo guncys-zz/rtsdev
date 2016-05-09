@@ -14,6 +14,7 @@ Project.level_names = {
     mainmenu = "content/levels/users/hisataka/mainmenu",
 	testmap = "content/levels/testmap1",  
 	testmap1 = "content/levels/users/uehara/physx_test",
+	tani_sandbox = "content/levels/users/taniguchi/tani_sandbox",
 	stage1 = "content/levels/stage1",
 	stage2 = "content/levels/stage2",
 	stage3 = "content/levels/stage3",
@@ -44,7 +45,12 @@ function Project.on_level_load_pre_flow()
        --mainmenuならmainmenuスクリプトを読み込んで、Start関数を呼ぶ
 		local MainMenu = require 'script/lua/mainmenu'
 		MainMenu.start()
-    elseif level_name == Project.level_names.testmap or level_name == Project.level_names.stage1 or level_name == Project.level_names.stage2 or level_name == Project.level_names.stage3 or level_name == Project.level_names.stage4 then
+    elseif level_name == Project.level_names.testmap or 
+        level_name == Project.level_names.stage1 or
+        level_name == Project.level_names.stage2 or 
+        level_name == Project.level_names.stage3 or
+        level_name == Project.level_names.stage4 or
+        level_name == Project.level_names.tani_sandbox then
        --testmapならgameuiスクリプトを読み込んで、Start関数を呼ぶ
         local GameUI = require 'script/lua/gameui'
         GameUI.start()

@@ -651,6 +651,26 @@ nodes = [
 		}
 	}
 	{
+		id = "3a611a19-ca04-489c-9baa-1b79712253e6"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+			string = {
+				type = "string"
+			}
+		}
+		type = "set_string_variable"
+		variable_values = {
+			name = "status"
+			scope = "local"
+			string = "run"
+		}
+	}
+	{
 		id = "3ca14ad6-a519-4fb4-ae11-8f605c0694ed"
 		in_variables = {
 			name = {
@@ -2047,45 +2067,6 @@ nodes = [
 		}
 	}
 	{
-		id = "b7d61344-71bd-4e9f-866e-c42f8c0c0177"
-		in_variables = {
-			effect = {
-				type = "string"
-			}
-			linked = {
-				type = "bool"
-			}
-			object = {
-				type = "id"
-			}
-			offset = {
-				type = "vector3"
-			}
-			orphaned_policy = {
-				type = "string"
-			}
-			rotation_offset = {
-				type = "quaternion"
-			}
-			unit = {
-				node = "11111111-2222-3333-4444-555555555555"
-				type = "unit"
-				variable = "unit"
-			}
-		}
-		type = "particle_effect"
-		variable_values = {
-			effect = "content/effect/fx_e_dmg00_00"
-			effect_id = null
-			linked = false
-			object = null
-			offset = null
-			orphaned_policy = null
-			rotation_offset = null
-			unit = null
-		}
-	}
-	{
 		flow_nodes_resource = "core/appkit/appkit"
 		id = "c0fce45b-cc87-4473-89ab-0e2c30b8ac9b"
 		in_variables = {
@@ -2303,8 +2284,8 @@ nodes = [
 				}
 				{
 					event = 0
-					id = "b7d61344-71bd-4e9f-866e-c42f8c0c0177:0"
-					node = "b7d61344-71bd-4e9f-866e-c42f8c0c0177"
+					id = "f0b4f2f1-f3fa-462f-8b1e-93ed3896e4be:0"
+					node = "f0b4f2f1-f3fa-462f-8b1e-93ed3896e4be"
 				}
 			]
 			damage_exit = [
@@ -2445,8 +2426,8 @@ nodes = [
 			out = [
 				{
 					event = 0
-					id = "e3ed28a5-2d1a-4c55-ab2b-5ce9b24ed015:0"
-					node = "e3ed28a5-2d1a-4c55-ab2b-5ce9b24ed015"
+					id = "3a611a19-ca04-489c-9baa-1b79712253e6:0"
+					node = "3a611a19-ca04-489c-9baa-1b79712253e6"
 				}
 			]
 		}
@@ -2567,43 +2548,25 @@ nodes = [
 		}
 	}
 	{
-		id = "e3ed28a5-2d1a-4c55-ab2b-5ce9b24ed015"
+		id = "f0b4f2f1-f3fa-462f-8b1e-93ed3896e4be"
 		in_variables = {
-			key = {
+			effect = {
 				type = "string"
 			}
-			unit = {
-				node = "11111111-2222-3333-4444-555555555555"
-				type = "unit"
-				variable = "unit"
+			linked = {
+				type = "bool"
 			}
-			value = {
-				node = "5c9bae6f-7ed8-4d6c-b1d1-9b747a984f33"
-				type = "float"
-				variable = "value"
+			object = {
+				type = "id"
 			}
-		}
-		out_events = {
-			out = [
-				{
-					event = 0
-					id = "3a611a19-ca04-489c-9baa-1b79712253e6:0"
-					node = "3a611a19-ca04-489c-9baa-1b79712253e6"
-				}
-			]
-		}
-		type = "set_unit_numeric_data"
-		variable_values = {
-			key = "Speed"
-			unit = null
-			value = null
-		}
-	}
-	{
-		id = "5c9bae6f-7ed8-4d6c-b1d1-9b747a984f33"
-		in_variables = {
-			key = {
+			offset = {
+				type = "vector3"
+			}
+			orphaned_policy = {
 				type = "string"
+			}
+			rotation_offset = {
+				type = "quaternion"
 			}
 			unit = {
 				node = "11111111-2222-3333-4444-555555555555"
@@ -2611,36 +2574,16 @@ nodes = [
 				variable = "unit"
 			}
 		}
-		out_variables = {
-			value = {
-				type = "float"
-			}
-		}
-		type = "get_unit_numeric_data"
+		type = "particle_effect"
 		variable_values = {
-			key = "RunSpeed"
+			effect = "content/effect/fx_e_dmg00_00"
+			effect_id = null
+			linked = false
+			object = null
+			offset = null
+			orphaned_policy = null
+			rotation_offset = null
 			unit = null
-			value = null
-		}
-	}
-	{
-		id = "3a611a19-ca04-489c-9baa-1b79712253e6"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-			string = {
-				type = "string"
-			}
-		}
-		type = "set_string_variable"
-		variable_values = {
-			name = "status"
-			scope = "local"
-			string = "run"
 		}
 	}
 	{
