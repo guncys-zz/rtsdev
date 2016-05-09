@@ -1,13 +1,10 @@
-android = {
-	output = {
-		apply_processing = true
-	}
-}
+
 common = {
 	input = {
 		filename = "content/lut/color_grading_identity_test"
 	}
 	output = {
+		apply_processing = true
 		category = ""
 		cut_alpha_threshold = 0.5
 		enable_cut_alpha_threshold = false
@@ -18,25 +15,5 @@ common = {
 		mipmap_num_largest_steps_to_discard = 0
 		mipmap_num_smallest_steps_to_discard = 0
 		srgb = true
-	}
-}
-ios = {
-	output = {
-		apply_processing = true
-	}
-}
-ps4 = {
-	output = {
-		apply_processing = true
-	}
-}
-win32 = {
-	output = {
-		apply_processing = false
-	}
-}
-xb1 = {
-	output = {
-		apply_processing = true
 	}
 }
