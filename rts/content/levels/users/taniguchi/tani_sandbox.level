@@ -708,7 +708,6 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
-				IsRun = true
 			}
 			Type = "content/models/characters/PPK/PPK_m"
 		}
@@ -731,14 +730,14 @@ editor_metadata = {
 			}
 			Pos = {
 				X = 1.855238
-				Y = -6.350645
+				Y = -3.450181
 				Z = 0.790693
 			}
 			Rot = {
-				W = -0.880395
-				X = 0
-				Y = 0
-				Z = -0.474241
+				W = -0.649803
+				X = 0.063088
+				Y = 0.054259
+				Z = -0.755535
 			}
 			Scl = {
 				X = 1
@@ -748,6 +747,43 @@ editor_metadata = {
 			ScriptData = {
 			}
 			Type = "core/units/camera"
+		}
+		{
+			Cameras = {
+			}
+			Id = "870726eb-89d4-4247-afb4-87197bca6279"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "BNN"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.102451
+				Y = -3.491422
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/BNN/BNN"
 		}
 	]
 	Volumes = [
@@ -1219,7 +1255,6 @@ units = [
 		cameras = {
 		}
 		data = {
-			IsRun = true
 		}
 		id = "e5107aa7-b20f-489d-a554-cf5cb75d8a20"
 		lights = {
@@ -1260,14 +1295,14 @@ units = [
 		name = "camera"
 		pos = [
 			1.855238
-			-6.350645
+			-3.450181
 			0.790693
 		]
 		rot = [
-			0
-			0
-			-0.474241
-			-0.880395
+			0.063088
+			0.054259
+			-0.755535
+			-0.649803
 		]
 		scl = [
 			1
@@ -1275,6 +1310,36 @@ units = [
 			1
 		]
 		type = "core/units/camera"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "870726eb-89d4-4247-afb4-87197bca6279"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "BNN"
+		pos = [
+			-0.102451
+			-3.491422
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/BNN/BNN"
 	}
 ]
 volumes = [
