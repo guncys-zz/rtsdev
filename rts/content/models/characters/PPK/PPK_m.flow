@@ -651,26 +651,6 @@ nodes = [
 		}
 	}
 	{
-		id = "3a611a19-ca04-489c-9baa-1b79712253e6"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-			string = {
-				type = "string"
-			}
-		}
-		type = "set_string_variable"
-		variable_values = {
-			name = "status"
-			scope = "local"
-			string = "run"
-		}
-	}
-	{
 		id = "3ca14ad6-a519-4fb4-ae11-8f605c0694ed"
 		in_variables = {
 			name = {
@@ -1784,33 +1764,6 @@ nodes = [
 		}
 	}
 	{
-		id = "a724d015-9c23-44dd-b1b0-e8cace8d04c4"
-		out_events = {
-			out = [
-				{
-					event = 0
-					id = "da507579-c407-41d2-9f61-5fc76c7510a5:0"
-					node = "da507579-c407-41d2-9f61-5fc76c7510a5"
-				}
-			]
-		}
-		out_variables = {
-			touching_unit = {
-				type = "unit"
-			}
-		}
-		type = "mover_actor_collision"
-		variable_values = {
-			motion_direction = null
-			motion_length = null
-			normal = null
-			position = null
-			touched_mover = null
-			touching_actor = null
-			touching_unit = null
-		}
-	}
-	{
 		id = "a831ce3f-15cb-47ae-a059-a1d40010c779"
 		in_variables = {
 			key = {
@@ -2429,6 +2382,11 @@ nodes = [
 					id = "3a611a19-ca04-489c-9baa-1b79712253e6:0"
 					node = "3a611a19-ca04-489c-9baa-1b79712253e6"
 				}
+				{
+					event = 0
+					id = "5c9277b0-ad69-450f-96d6-9e63cf9386a6:0"
+					node = "5c9277b0-ad69-450f-96d6-9e63cf9386a6"
+				}
 			]
 		}
 		type = "animation_event"
@@ -2584,6 +2542,101 @@ nodes = [
 			orphaned_policy = null
 			rotation_offset = null
 			unit = null
+		}
+	}
+	{
+		id = "a724d015-9c23-44dd-b1b0-e8cace8d04c4"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "da507579-c407-41d2-9f61-5fc76c7510a5:0"
+					node = "da507579-c407-41d2-9f61-5fc76c7510a5"
+				}
+			]
+		}
+		out_variables = {
+			touching_unit = {
+				type = "unit"
+			}
+		}
+		type = "mover_actor_collision"
+		variable_values = {
+			motion_direction = null
+			motion_length = null
+			normal = null
+			position = null
+			touched_mover = null
+			touching_actor = null
+			touching_unit = null
+		}
+	}
+	{
+		id = "5c9277b0-ad69-450f-96d6-9e63cf9386a6"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+			value = {
+				node = "caea7e85-cca1-4fe5-b413-29af7070f57e"
+				type = "float"
+				variable = "value"
+			}
+		}
+		type = "set_unit_numeric_data"
+		variable_values = {
+			key = "Speed"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "caea7e85-cca1-4fe5-b413-29af7070f57e"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "get_unit_numeric_data"
+		variable_values = {
+			key = "RunSpeed"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "3a611a19-ca04-489c-9baa-1b79712253e6"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+			string = {
+				type = "string"
+			}
+		}
+		type = "set_string_variable"
+		variable_values = {
+			name = "status"
+			scope = "local"
+			string = "run"
 		}
 	}
 	{

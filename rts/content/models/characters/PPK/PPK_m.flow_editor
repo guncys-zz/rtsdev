@@ -3357,6 +3357,24 @@ Connections = [
 		ToItem = "Create"
 		ToNode = "f0b4f2f1-f3fa-462f-8b1e-93ed3896e4be"
 	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "caea7e85-cca1-4fe5-b413-29af7070f57e"
+		Id = "f0f490a8-242a-483e-b846-270312fa445b"
+		ToItem = "Value"
+		ToNode = "5c9277b0-ad69-450f-96d6-9e63cf9386a6"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "e90f9a95-ef50-48c3-98ee-ff34dcd8ce80"
+		Id = "e8198c2c-07de-43aa-9ad5-121e9f831126"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "5c9277b0-ad69-450f-96d6-9e63cf9386a6"
+	}
 ]
 Groups = [
 	{
@@ -3454,6 +3472,8 @@ Groups = [
 			"3a611a19-ca04-489c-9baa-1b79712253e6"
 			"432b511b-ab8f-449f-871a-c2b45a03649e"
 			"8c5ef320-dad9-40d6-836d-73631b2645b3"
+			"5c9277b0-ad69-450f-96d6-9e63cf9386a6"
+			"caea7e85-cca1-4fe5-b413-29af7070f57e"
 		]
 		Title = "レベルの読み込みから若干遅らせて Runをスタート"
 	}
@@ -4099,26 +4119,6 @@ Nodes = [
 			UseMyUnit = true
 		}
 		Value = {
-		}
-		Width = 160
-	}
-	{
-		Class = "Stingray.Flow.SetStringVariable"
-		Id = "3a611a19-ca04-489c-9baa-1b79712253e6"
-		Name = {
-			Value = "status"
-		}
-		NodeLocation = {
-			X = 280
-			Y = -40
-		}
-		Scope = {
-			Value = "local"
-		}
-		Set = {
-		}
-		String = {
-			Value = "run"
 		}
 		Width = 160
 	}
@@ -5052,31 +5052,6 @@ Nodes = [
 		Width = 160
 	}
 	{
-		Class = "Stingray.Flow.MoverActorCollision"
-		Id = "a724d015-9c23-44dd-b1b0-e8cace8d04c4"
-		MotionDirection = {
-		}
-		MotionLength = {
-		}
-		NodeLocation = {
-			X = -1680
-			Y = 1340
-		}
-		Normal = {
-		}
-		Out = {
-		}
-		Position = {
-		}
-		TouchedMover = {
-		}
-		TouchingActor = {
-		}
-		TouchingUnit = {
-		}
-		Width = 160
-	}
-	{
 		Class = "Stingray.Flow.GetUnitNumericData"
 		Id = "a831ce3f-15cb-47ae-a059-a1d40010c779"
 		Key = {
@@ -5701,6 +5676,89 @@ Nodes = [
 		}
 		Unit = {
 			UseMyUnit = true
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.MoverActorCollision"
+		Id = "a724d015-9c23-44dd-b1b0-e8cace8d04c4"
+		MotionDirection = {
+		}
+		MotionLength = {
+		}
+		NodeLocation = {
+			X = -1680
+			Y = 1320
+		}
+		Normal = {
+		}
+		Out = {
+		}
+		Position = {
+		}
+		TouchedMover = {
+		}
+		TouchingActor = {
+		}
+		TouchingUnit = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.SetUnitNumericData"
+		Id = "5c9277b0-ad69-450f-96d6-9e63cf9386a6"
+		In = {
+		}
+		Key = {
+			Value = "Speed"
+		}
+		NodeLocation = {
+			X = 460
+			Y = -160
+		}
+		Out = {
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.GetUnitNumericData"
+		Id = "caea7e85-cca1-4fe5-b413-29af7070f57e"
+		Key = {
+			Value = "RunSpeed"
+		}
+		NodeLocation = {
+			X = 260
+			Y = -200
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.SetStringVariable"
+		Id = "3a611a19-ca04-489c-9baa-1b79712253e6"
+		Name = {
+			Value = "status"
+		}
+		NodeLocation = {
+			X = 280
+			Y = -40
+		}
+		Scope = {
+			Value = "local"
+		}
+		Set = {
+		}
+		String = {
+			Value = "run"
 		}
 		Width = 160
 	}
