@@ -1,0 +1,43 @@
+
+parent_material = "core/stingray_renderer/shader_import/standard"
+textures = {
+	color_map = "content/models/stage4/textures/cone"
+}
+variables = {
+	base_color = {
+		type = "vector3"
+		value = [
+			1
+			1
+			1
+		]
+	}
+	emissive = {
+		type = "vector3"
+		value = [
+			0
+			0
+			0
+		]
+	}
+	metallic = {
+		type = "scalar"
+		value = 0.5
+	}
+	roughness = {
+		type = "scalar"
+		value = 0.2
+	}
+	use_color_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_metallic_map = {
+		type = "scalar"
+		value = 0
+	}
+	use_roughness_map = {
+		type = "scalar"
+		value = 1
+	}
+}
