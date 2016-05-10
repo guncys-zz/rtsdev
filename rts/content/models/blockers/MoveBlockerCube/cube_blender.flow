@@ -1,0 +1,430 @@
+
+nodes = [
+	{
+		id = "c7563638-2b03-4157-b432-46015ecf2d8c"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "ffac8d4b-685f-4c2c-83d0-f8348d4ae327:0"
+					node = "ffac8d4b-685f-4c2c-83d0-f8348d4ae327"
+				}
+				{
+					event = 0
+					id = "4b9d3cc7-0f65-4eaa-81a3-e478fce4c5f1:0"
+					node = "4b9d3cc7-0f65-4eaa-81a3-e478fce4c5f1"
+				}
+				{
+					event = 0
+					id = "fed6965c-4062-4686-ae71-e9730c8f4d3f:0"
+					node = "fed6965c-4062-4686-ae71-e9730c8f4d3f"
+				}
+			]
+		}
+		type = "level_update"
+	}
+	{
+		id = "b63e4836-9997-4fbf-a323-7028608d9980"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "get_numeric_variable"
+		variable_values = {
+			name = "ElaspedTime"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "d109d4e4-3273-4af1-91ac-3a406866879e"
+		out_variables = {
+			time = {
+				type = "float"
+			}
+		}
+		type = "get_last_delta_time"
+		variable_values = {
+			time = null
+		}
+	}
+	{
+		id = "c4829af7-466e-4e61-a98b-34cdc7694b43"
+		in_variables = {
+			a = {
+				node = "b63e4836-9997-4fbf-a323-7028608d9980"
+				type = "float"
+				variable = "numeric"
+			}
+			b = {
+				node = "d109d4e4-3273-4af1-91ac-3a406866879e"
+				type = "float"
+				variable = "time"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_plus_numeric"
+		variable_values = {
+			a = null
+			b = null
+			value = null
+		}
+	}
+	{
+		id = "3d89b4ee-9897-47a4-8a03-7dd70d8925a9"
+		in_variables = {
+			object = {
+				type = "id"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			position = {
+				type = "vector3"
+			}
+		}
+		type = "get_unit_local_position"
+		variable_values = {
+			object = null
+			position = null
+			unit = null
+		}
+	}
+	{
+		id = "f8b7715c-45ac-40f3-8b71-901a000f33ca"
+		in_variables = {
+			vector = {
+				node = "3d89b4ee-9897-47a4-8a03-7dd70d8925a9"
+				type = "vector3"
+				variable = "position"
+			}
+		}
+		out_variables = {
+			y = {
+				type = "float"
+			}
+			z = {
+				type = "float"
+			}
+		}
+		type = "vector_components"
+		variable_values = {
+			vector = null
+			x = null
+			y = null
+			z = null
+		}
+	}
+	{
+		id = "1166f874-7d8f-4a30-81e8-1c6205108c26"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "get_unit_numeric_data"
+		variable_values = {
+			key = "Freq"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "ea387a2d-5aa3-4e44-a96b-93c0a6c3ef53"
+		type = "numeric_data"
+		variable_values = {
+			set = 5
+			value = null
+		}
+	}
+	{
+		id = "22e98b0a-1f9a-466a-89d1-841eaadcd19a"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "get_unit_numeric_data"
+		variable_values = {
+			key = "Amplitude"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "8f30b6e2-9426-4e85-8038-b4149a47b3c6"
+		in_variables = {
+			a = {
+				node = "116c1715-975c-4c25-a2de-9f6b552bbe23"
+				type = "float"
+				variable = "value"
+			}
+			b = {
+				node = "22e98b0a-1f9a-466a-89d1-841eaadcd19a"
+				type = "float"
+				variable = "value"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_times_numeric"
+		variable_values = {
+			a = null
+			b = null
+			value = null
+		}
+	}
+	{
+		id = "02fe729a-37c4-4acc-aa0c-76477e92bddd"
+		in_variables = {
+			a = {
+				node = "c4829af7-466e-4e61-a98b-34cdc7694b43"
+				type = "float"
+				variable = "value"
+			}
+			b = {
+				node = "1166f874-7d8f-4a30-81e8-1c6205108c26"
+				type = "float"
+				variable = "value"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_times_numeric"
+		variable_values = {
+			a = null
+			b = null
+			value = null
+		}
+	}
+	{
+		id = "ffac8d4b-685f-4c2c-83d0-f8348d4ae327"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			numeric = {
+				node = "c4829af7-466e-4e61-a98b-34cdc7694b43"
+				type = "float"
+				variable = "value"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_numeric_variable"
+		variable_values = {
+			name = "ElaspedTime"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "116c1715-975c-4c25-a2de-9f6b552bbe23"
+		in_variables = {
+			numeric = {
+				node = "02fe729a-37c4-4acc-aa0c-76477e92bddd"
+				type = "float"
+				variable = "value"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "sin"
+		variable_values = {
+			numeric = null
+			value = null
+		}
+	}
+	{
+		id = "d8e1e09d-ecda-4692-9907-f3f55ed92c1c"
+		in_variables = {
+			x = {
+				node = "8f30b6e2-9426-4e85-8038-b4149a47b3c6"
+				type = "float"
+				variable = "value"
+			}
+			y = {
+				node = "f8b7715c-45ac-40f3-8b71-901a000f33ca"
+				type = "float"
+				variable = "y"
+			}
+			z = {
+				node = "f8b7715c-45ac-40f3-8b71-901a000f33ca"
+				type = "float"
+				variable = "z"
+			}
+		}
+		out_variables = {
+			vector = {
+				type = "vector3"
+			}
+		}
+		type = "vector_from_components"
+		variable_values = {
+			vector = null
+			x = null
+			y = null
+			z = null
+		}
+	}
+	{
+		id = "4b9d3cc7-0f65-4eaa-81a3-e478fce4c5f1"
+		in_variables = {
+			object = {
+				type = "id"
+			}
+			position = {
+				node = "d8e1e09d-ecda-4692-9907-f3f55ed92c1c"
+				type = "vector3"
+				variable = "vector"
+			}
+			teleport = {
+				type = "bool"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		type = "set_unit_local_position"
+		variable_values = {
+			object = null
+			position = null
+			teleport = null
+			unit = null
+		}
+	}
+	{
+		id = "8ed4eb4c-ec71-496b-84d0-f2dc69513b83"
+		in_variables = {
+			actor_index = {
+				type = "float"
+			}
+			actor_name = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			actor = {
+				type = "actor"
+			}
+		}
+		type = "get_unit_actor"
+		variable_values = {
+			actor = null
+			actor_index = 1
+			actor_name = "CubePhysics"
+			unit = null
+		}
+	}
+	{
+		id = "fed6965c-4062-4686-ae71-e9730c8f4d3f"
+		in_variables = {
+			actor = {
+				node = "8ed4eb4c-ec71-496b-84d0-f2dc69513b83"
+				type = "actor"
+				variable = "actor"
+			}
+			position = {
+				node = "7b969222-5e0f-4dc3-b28c-1900fa351fbb"
+				type = "vector3"
+				variable = "position"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		type = "set_actor_position"
+		variable_values = {
+			actor = null
+			position = null
+			unit = null
+		}
+	}
+	{
+		id = "7b969222-5e0f-4dc3-b28c-1900fa351fbb"
+		in_variables = {
+			object = {
+				type = "id"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			position = {
+				type = "vector3"
+			}
+		}
+		type = "get_unit_world_position"
+		variable_values = {
+			object = null
+			position = null
+			unit = null
+		}
+	}
+	{
+		id = "11111111-2222-3333-4444-555555555555"
+		type = "unit_spawned"
+		variable_values = {
+			unit = null
+		}
+	}
+]

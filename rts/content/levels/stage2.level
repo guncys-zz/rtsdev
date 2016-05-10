@@ -835,6 +835,7 @@ editor_metadata = {
 	LevelReferences = [
 	]
 	LightBakeSettings = {
+		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
 		FilterGain = 20
@@ -852,6 +853,7 @@ editor_metadata = {
 			Z = 1
 		}
 		TexelScale = 10
+		TotalPasses = 256
 		Variance = 0.5
 	}
 	LuaPluginObjects = [
@@ -925,6 +927,7 @@ editor_metadata = {
 					Intensity = 4
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "directional"
@@ -1813,6 +1816,43 @@ editor_metadata = {
 			}
 			Type = "core/units/primitives/cube_primitive"
 		}
+		{
+			Cameras = {
+			}
+			Id = "8953d662-45bb-471b-80fa-c9c387b4a968"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "cube_blender"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 15.617699
+				Z = 1.11651
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/MoveBlockerCube/cube_blender"
+		}
 	]
 	Volumes = [
 	]
@@ -2416,6 +2456,7 @@ units = [
 				falloff_start = 0
 				intensity = 4
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "directional"
@@ -3133,6 +3174,36 @@ units = [
 			1
 		]
 		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "8953d662-45bb-471b-80fa-c9c387b4a968"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "cube_blender"
+		pos = [
+			0
+			15.617699
+			1.11651
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/MoveBlockerCube/cube_blender"
 	}
 ]
 volumes = [

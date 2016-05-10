@@ -3,12 +3,12 @@ actors = [
 	{
 		enabled = true
 		mass = 0
-		name = "BNN_cln1"
-		node = "StingrayEntityRoot"
+		name = "CubePhysics"
+		node = "Cube"
 		shapes = [
 			{
 				material = "default"
-				shape = "BNN_cln1"
+				shape = "Cube"
 				template = "blocker"
 				type = "box"
 			}

@@ -2431,6 +2431,15 @@ Connections = [
 		Type = "Float"
 	}
 	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "a724d015-9c23-44dd-b1b0-e8cace8d04c4"
+		Id = "97875e26-3256-4403-a484-fb2e74beff92"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "b79ced4b-eaf0-4160-8e5f-14d7ccfe00e8"
+	}
+	{
 		Class = "Stingray.Flow.VariableConnection"
 		FromItem = "Value"
 		FromNode = "6f361b76-429e-458c-8bc7-b01a55fd2041"
@@ -3738,6 +3747,8 @@ Nodes = [
 		Numeric = {
 			Value = 0
 		}
+		Out = {
+		}
 		Scope = {
 			Value = "local"
 		}
@@ -4112,6 +4123,8 @@ Nodes = [
 			X = 280
 			Y = -40
 		}
+		Out = {
+		}
 		Scope = {
 			Value = "local"
 		}
@@ -4131,6 +4144,8 @@ Nodes = [
 		NodeLocation = {
 			X = 2780
 			Y = 740
+		}
+		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -4901,6 +4916,8 @@ Nodes = [
 			X = 60
 			Y = -160
 		}
+		Out = {
+		}
 		Scope = {
 			Value = "local"
 		}
@@ -4937,6 +4954,8 @@ Nodes = [
 		NodeLocation = {
 			X = 2240
 			Y = -200
+		}
+		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -5146,6 +5165,8 @@ Nodes = [
 		NodeLocation = {
 			X = -140
 			Y = 1460
+		}
+		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -5501,6 +5522,8 @@ Nodes = [
 		}
 		Numeric = {
 		}
+		Out = {
+		}
 		Scope = {
 			Value = "local"
 		}
@@ -5620,6 +5643,8 @@ Nodes = [
 			X = -140
 			Y = 700
 		}
+		Out = {
+		}
 		Scope = {
 			Value = "local"
 		}
@@ -5641,6 +5666,8 @@ Nodes = [
 			Y = 340
 		}
 		Numeric = {
+		}
+		Out = {
 		}
 		Scope = {
 			Value = "local"

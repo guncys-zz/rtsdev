@@ -1,11 +1,13 @@
 
 data = {
-	ElaspedTime = 0
+	Amplitude = 5
+	Freq = 60
+	IsBlocker = true
 }
 editor_metadata = {
 	camera_settings = {
 		far_range = 1000
-		interest_point_distance = 0.481286
+		interest_point_distance = 4.519736
 		orthographic_plane = [
 			0
 			0
@@ -14,9 +16,9 @@ editor_metadata = {
 		]
 		orthographic_zoom = 10
 		position = [
-			0.281909
-			0.280108
-			0.335459
+			2.609471
+			2.609472
+			2.609471
 		]
 		projection_type = "perspective"
 		rotation = [
@@ -29,16 +31,16 @@ editor_metadata = {
 		translation_speed = 0.05
 	}
 	flow_framing = {
-		scale = 0.833333333333333
-		x = 131.866666666666
-		y = 44.5525925925926
+		scale = 0.578703703703704
+		x = -107.402874074074
+		y = -251.793718518519
 	}
 }
 materials = {
-	lambert3 = "content/models/blockers/BNN/lambert3"
+	Material = "content/models/blockers/MoveBlockerCube/Material"
 }
 renderables = {
-	banana = {
+	Cube = {
 		always_keep = false
 		culling = "bounding_volume"
 		generate_uv_unwrap = false
@@ -46,14 +48,5 @@ renderables = {
 		shadow_caster = true
 		surface_queries = false
 		viewport_visible = true
-	}
-	BNN_cln1 = {
-		always_keep = false
-		culling = "bounding_volume"
-		generate_uv_unwrap = false
-		occluder = false
-		shadow_caster = false
-		surface_queries = false
-		viewport_visible = false
 	}
 }
