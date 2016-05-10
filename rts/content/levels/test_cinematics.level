@@ -18,19 +18,16 @@ editor_metadata = {
 						fog_enabled = false
 					}
 				}
-				"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
+				"3eb1ba63-3a53-4846-970b-57e3d4d75d2b" = {
 					data = {
-						motion_blur_enabled = false
-					}
-				}
-				"dd1dccf2-6f2f-4b8c-9199-290c069ab62b" = {
-					data = {
-						vignette_enabled = false
-					}
-				}
-				"fd909d00-3e4d-4339-b1a9-784c7d6a60ad" = {
-					data = {
-						bloom_enabled = false
+						baked_diffuse_tint = {
+							intensity = 1.5
+						}
+						global_diffuse_map = {
+							"$resource_name" = "content/models/shots/OP/lighting/diffuse_interior"
+							"$resource_type" = "texture"
+						}
+						skydome_intensity = 3
 					}
 				}
 			}
@@ -972,15 +969,15 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = 0
-				Y = 0
-				Z = 8.881621
+				X = -0.754225
+				Y = 7.918961
+				Z = 10.430471
 			}
 			Rot = {
-				W = -0.327399
-				X = 0.689021
-				Y = 0.244497
-				Z = -0.598566
+				W = -0.37763
+				X = 0.689965
+				Y = 0.233724
+				Z = -0.571592
 			}
 			Scl = {
 				X = 1
@@ -1027,43 +1024,6 @@ editor_metadata = {
 			ScriptData = {
 			}
 			Type = "core/editor_slave/units/skydome/skydome"
-		}
-		{
-			Cameras = {
-			}
-			Id = "b549b9cf-a686-45d0-9899-37ca5c7e1cc4"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "map_flat"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = -31.082205
-				Z = 0.690519
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 21.239117
-				Y = 7.700333
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/testmap/map_flat"
 		}
 		{
 			Cameras = {
@@ -1152,7 +1112,7 @@ editor_metadata = {
 			Pos = {
 				X = 0
 				Y = 0
-				Z = 0
+				Z = -15.96169
 			}
 			Rot = {
 				W = -1
@@ -1449,7 +1409,147 @@ editor_metadata = {
 					Enabled = true
 					FalloffEnd = 20
 					FalloffStart = 0
-					Intensity = 2
+					Intensity = 4
+					Material = ""
+					MaterialResource = ""
+					SpotAngleEnd = 59.9999999984761
+					SpotAngleStart = 0
+					Type = "omni"
+				}
+			}
+			Materials = {
+			}
+			Name = "ceilingLamp_LGT"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -1.184961
+				Y = 4.468946
+				Z = 3.632076
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 0.421885
+				Y = 0.421885
+				Z = 0.421885
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "8ec660a0-0970-4920-ab1d-16ffe3f17322"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ground"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = -11.65258
+				Z = 0.603826
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage1/ground"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f0d2658c-f767-41b6-bf7f-8455ed67e216"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "house_layout"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/model/house_layout"
+		}
+		{
+			Cameras = {
+			}
+			Id = "0f145c7b-f306-41d9-81c4-e388f5761942"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = false
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = true
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 10
 					Material = ""
 					MaterialResource = ""
 					SpotAngleEnd = 59.9999999984761
@@ -1468,15 +1568,81 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = 0.442921
-				Y = 3.665083
-				Z = 2.159791
+				X = 0.008839
+				Y = 0.231684
+				Z = 4.769888
 			}
 			Rot = {
 				W = -1
 				X = 0
 				Y = 0
 				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a8344ff2-7fb1-4090-b497-2d002ee31650"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = false
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = true
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 100
+					FalloffStart = 0
+					Intensity = 5
+					Material = ""
+					MaterialResource = ""
+					SpotAngleEnd = 59.9999999984761
+					SpotAngleStart = 0
+					Type = "omni"
+				}
+			}
+			Materials = {
+			}
+			Name = "light_source1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -1.818877
+				Y = 0.38333
+				Z = 1.872038
+			}
+			Rot = {
+				W = -0.746234
+				X = -0.060712
+				Y = 0.650496
+				Z = 0.127682
 			}
 			Scl = {
 				X = 1
@@ -1508,19 +1674,16 @@ entities = [
 					fog_enabled = false
 				}
 			}
-			"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
+			"3eb1ba63-3a53-4846-970b-57e3d4d75d2b" = {
 				data = {
-					motion_blur_enabled = false
-				}
-			}
-			"dd1dccf2-6f2f-4b8c-9199-290c069ab62b" = {
-				data = {
-					vignette_enabled = false
-				}
-			}
-			"fd909d00-3e4d-4339-b1a9-784c7d6a60ad" = {
-				data = {
-					bloom_enabled = false
+					baked_diffuse_tint = {
+						intensity = 1.5
+					}
+					global_diffuse_map = {
+						"$resource_name" = "content/models/shots/OP/lighting/diffuse_interior"
+						"$resource_type" = "texture"
+					}
+					skydome_intensity = 3
 				}
 			}
 		}
@@ -2159,15 +2322,15 @@ units = [
 		}
 		name = "Sun Light"
 		pos = [
-			0
-			0
-			8.881621
+			-0.754225
+			7.918961
+			10.430471
 		]
 		rot = [
-			0.689021
-			0.244497
-			-0.598566
-			-0.327399
+			0.689965
+			0.233724
+			-0.571592
+			-0.37763
 		]
 		scl = [
 			1
@@ -2205,36 +2368,6 @@ units = [
 			1
 		]
 		type = "core/editor_slave/units/skydome/skydome"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "b549b9cf-a686-45d0-9899-37ca5c7e1cc4"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "map_flat"
-		pos = [
-			0
-			-31.082205
-			0.690519
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			21.239117
-			7.700333
-			1
-		]
-		type = "content/models/testmap/map_flat"
 	}
 	{
 		cameras = {
@@ -2308,7 +2441,7 @@ units = [
 		pos = [
 			0
 			0
-			0
+			-15.96169
 		]
 		rot = [
 			0
@@ -2558,7 +2691,124 @@ units = [
 				enabled = true
 				falloff_end = 20
 				falloff_start = 0
-				intensity = 2
+				intensity = 4
+				material = ""
+				spot_angle_end = 1.04719755117
+				spot_angle_start = 0
+				type = "omni"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "ceilingLamp_LGT"
+		pos = [
+			-1.184961
+			4.468946
+			3.632076
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			0.421885
+			0.421885
+			0.421885
+		]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "8ec660a0-0970-4920-ab1d-16ffe3f17322"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ground"
+		pos = [
+			0
+			-11.65258
+			0.603826
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/stage1/ground"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f0d2658c-f767-41b6-bf7f-8455ed67e216"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "house_layout"
+		pos = [
+			0
+			0
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/model/house_layout"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "0f145c7b-f306-41d9-81c4-e388f5761942"
+		lights = {
+			light = {
+				baked = false
+				box_max = [
+					10
+					10
+					10
+				]
+				box_min = [
+					-10
+					0
+					-10
+				]
+				cast_shadows = true
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 10
 				material = ""
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
@@ -2570,15 +2820,72 @@ units = [
 		}
 		name = "light_source"
 		pos = [
-			0.442921
-			3.665083
-			2.159791
+			0.008839
+			0.231684
+			4.769888
 		]
 		rot = [
 			0
 			0
 			0
 			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a8344ff2-7fb1-4090-b497-2d002ee31650"
+		lights = {
+			light = {
+				baked = false
+				box_max = [
+					10
+					10
+					10
+				]
+				box_min = [
+					-10
+					0
+					-10
+				]
+				cast_shadows = true
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 100
+				falloff_start = 0
+				intensity = 5
+				material = ""
+				spot_angle_end = 1.04719755117
+				spot_angle_start = 0
+				type = "omni"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "light_source1"
+		pos = [
+			-1.818877
+			0.38333
+			1.872038
+		]
+		rot = [
+			-0.060712
+			0.650496
+			0.127682
+			-0.746234
 		]
 		scl = [
 			1
