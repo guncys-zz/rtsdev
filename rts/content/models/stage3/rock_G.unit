@@ -1,0 +1,15 @@
+
+materials = {
+	lambert65 = "content/models/stage3/materials/lambert65"
+}
+renderables = {
+	polySurface175 = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}
