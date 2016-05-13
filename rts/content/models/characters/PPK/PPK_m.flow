@@ -2748,29 +2748,6 @@ nodes = [
 		}
 	}
 	{
-		id = "68533231-935a-4e4d-9480-6df5eddb1eb4"
-		in_variables = {
-			condition = {
-				node = "8b1d36fa-4818-4c7c-90d8-df67b6f60533"
-				type = "bool"
-				variable = "value"
-			}
-		}
-		out_events = {
-			true = [
-				{
-					event = 0
-					id = "12e3fba0-a865-452b-adee-3ea1da3f77fc:0"
-					node = "12e3fba0-a865-452b-adee-3ea1da3f77fc"
-				}
-			]
-		}
-		type = "branch"
-		variable_values = {
-			condition = null
-		}
-	}
-	{
 		id = "df502459-82b2-4806-bfa0-84fb95f2c134"
 		in_variables = {
 			condition = {
@@ -2879,6 +2856,45 @@ nodes = [
 			unit = null
 			value = null
 		}
+	}
+	{
+		id = "68533231-935a-4e4d-9480-6df5eddb1eb4"
+		in_variables = {
+			condition = {
+				node = "8b1d36fa-4818-4c7c-90d8-df67b6f60533"
+				type = "bool"
+				variable = "value"
+			}
+		}
+		out_events = {
+			true = [
+				{
+					event = 0
+					id = "12e3fba0-a865-452b-adee-3ea1da3f77fc:0"
+					node = "12e3fba0-a865-452b-adee-3ea1da3f77fc"
+				}
+				{
+					event = 0
+					id = "aee3ed3d-d425-41cd-a117-c2c71c8acc79:0"
+					node = "aee3ed3d-d425-41cd-a117-c2c71c8acc79"
+				}
+			]
+		}
+		type = "branch"
+		variable_values = {
+			condition = null
+		}
+	}
+	{
+		flow_nodes_resource = "script/custom_nodes/go_to_top"
+		id = "aee3ed3d-d425-41cd-a117-c2c71c8acc79"
+		name = "Go To Top"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variables = [
+		]
 	}
 	{
 		id = "11111111-2222-3333-4444-555555555555"

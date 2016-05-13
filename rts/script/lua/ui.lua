@@ -126,5 +126,11 @@ function UI.show_pouse_menu()
     end
 end
 
+function UI.go_to_top()
+    local evt = { eventId = scaleform.EventTypes.Custom,
+                      name = "go_to_top",
+                      data = {} }
+    scaleform.Stage.dispatch_event(evt)
+end
 
 return UI

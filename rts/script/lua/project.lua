@@ -11,14 +11,15 @@ require 'script/lua/ui' --UI用のスクリプトのインポート
 
 --プロジェクトで使用するlevelにアクセスするための名前定義
 Project.level_names = {
-    mainmenu = "content/levels/users/hisataka/mainmenu",
+    mainmenu = "content/levels/mainmenu",
 	testmap = "content/levels/testmap1",  
 	testmap1 = "content/levels/users/uehara/physx_test",
 	tani_sandbox = "content/levels/users/taniguchi/tani_sandbox",
 	stage1 = "content/levels/stage1",
 	stage2 = "content/levels/stage2",
 	stage3 = "content/levels/stage3",
-	stage4 = "content/levels/stage4"
+	stage4 = "content/levels/stage4",
+	test_cinematics = "content/levels/test_cinematics"
 }
 
 -- Can provide a config for the basic project, or it will use a default if not.
