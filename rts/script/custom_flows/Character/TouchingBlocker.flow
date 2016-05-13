@@ -126,27 +126,16 @@ nodes = [
 					id = "f4fcace0-2bb4-4590-b4f0-57172e511a74:0"
 					node = "f4fcace0-2bb4-4590-b4f0-57172e511a74"
 				}
+				{
+					event = 0
+					id = "a06b0c3c-db70-4270-8d0c-fcfbd894b9fd:0"
+					node = "a06b0c3c-db70-4270-8d0c-fcfbd894b9fd"
+				}
 			]
 		}
 		type = "branch"
 		variable_values = {
 			condition = null
-		}
-	}
-	{
-		id = "41d3b702-ac47-4811-85dd-9b7abd5ee90a"
-		out_events = {
-			out = [
-				{
-					event = 0
-					id = "e5b02873-92ef-44a1-b978-0468d4bd976d:0"
-					node = "e5b02873-92ef-44a1-b978-0468d4bd976d"
-				}
-			]
-		}
-		type = "external_event"
-		variable_values = {
-			event_name = "Start"
 		}
 	}
 	{
@@ -241,6 +230,200 @@ nodes = [
 			a = null
 			b = null
 			value = null
+		}
+	}
+	{
+		id = "b3e7f25a-0bab-4003-9db8-7f45f8dad588"
+		in_variables = {
+			a = {
+				node = "edee7af9-42ee-4ef3-a37d-d5f0abc62717"
+				type = "float"
+				variable = "numeric"
+			}
+			b = {
+				node = "2d2cbb76-f48f-47c7-8f23-c946e82e9856"
+				type = "float"
+				variable = "time"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_minus_numeric"
+		variable_values = {
+			a = null
+			b = null
+			value = null
+		}
+	}
+	{
+		id = "2d2cbb76-f48f-47c7-8f23-c946e82e9856"
+		out_variables = {
+			time = {
+				type = "float"
+			}
+		}
+		type = "get_last_delta_time"
+		variable_values = {
+			time = null
+		}
+	}
+	{
+		id = "edee7af9-42ee-4ef3-a37d-d5f0abc62717"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "get_numeric_variable"
+		variable_values = {
+			name = "unrivaled_time"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "4929bd7e-67ad-4d24-9940-94fad9cd143b"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "get_numeric_variable"
+		variable_values = {
+			name = "unrivaled_time"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "8e895986-678c-47d2-8d8e-b2582ad2d929"
+		in_variables = {
+			a = {
+				node = "4929bd7e-67ad-4d24-9940-94fad9cd143b"
+				type = "float"
+				variable = "numeric"
+			}
+			b = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "bool"
+			}
+		}
+		type = "numeric_greater_than_numeric"
+		variable_values = {
+			a = null
+			b = 0
+			value = null
+		}
+	}
+	{
+		id = "79f0765c-bdc6-460d-bbd2-0b8ec5a3935c"
+		in_variables = {
+			condition = {
+				node = "8e895986-678c-47d2-8d8e-b2582ad2d929"
+				type = "bool"
+				variable = "value"
+			}
+		}
+		out_events = {
+			false = [
+				{
+					event = 0
+					id = "e5b02873-92ef-44a1-b978-0468d4bd976d:0"
+					node = "e5b02873-92ef-44a1-b978-0468d4bd976d"
+				}
+			]
+			true = [
+				{
+					event = 0
+					id = "f5c24756-c0fe-483a-8fcb-2936c83d0fcb:0"
+					node = "f5c24756-c0fe-483a-8fcb-2936c83d0fcb"
+				}
+			]
+		}
+		type = "branch"
+		variable_values = {
+			condition = null
+		}
+	}
+	{
+		id = "41d3b702-ac47-4811-85dd-9b7abd5ee90a"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "79f0765c-bdc6-460d-bbd2-0b8ec5a3935c:0"
+					node = "79f0765c-bdc6-460d-bbd2-0b8ec5a3935c"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "Start"
+		}
+	}
+	{
+		id = "f5c24756-c0fe-483a-8fcb-2936c83d0fcb"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			numeric = {
+				node = "b3e7f25a-0bab-4003-9db8-7f45f8dad588"
+				type = "float"
+				variable = "value"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_numeric_variable"
+		variable_values = {
+			name = "unrivaled_time"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "a06b0c3c-db70-4270-8d0c-fcfbd894b9fd"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			numeric = {
+				type = "float"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_numeric_variable"
+		variable_values = {
+			name = "unrivaled_time"
+			numeric = 2
+			scope = "local"
 		}
 	}
 	{
