@@ -1,0 +1,1039 @@
+
+clouds = [
+	{
+		capacity = 500
+		casts_shadows = false
+		disable_culling = false
+		float_channels = [
+			"age"
+			"life"
+			"size"
+			"rotation"
+			"luminance"
+			"spin"
+			"spiral_rotation"
+			"spiral_speed"
+		]
+		initializers = [
+			{
+				channel = "size"
+				range = [
+					0.1
+					0.25
+				]
+				type = "random_float"
+			}
+			{
+				channel = "luminance"
+				range = [
+					0.8
+					1
+				]
+				type = "random_float"
+			}
+			{
+				type = "position_box"
+				x = [
+					-3
+					3
+				]
+				y = [
+					0
+					0
+				]
+				z = [
+					-3
+					3
+				]
+			}
+			{
+				channel = "spiral_rotation"
+				range = [
+					0.00174532925199433
+					0.0174532925199433
+				]
+				type = "random_float"
+			}
+			{
+				channel = "spiral_speed"
+				range = [
+					0
+					0.1
+				]
+				type = "random_float"
+			}
+			{
+				channel = "rotation"
+				range = [
+					0
+					6.28318530717959
+				]
+				type = "random_float"
+			}
+			{
+				channel = "spin"
+				range = [
+					-8.72664625997165
+					8.72664625997165
+				]
+				type = "random_float"
+			}
+			{
+				channel = "life"
+				range = [
+					1
+					10
+				]
+				type = "random_float"
+			}
+			{
+				type = "zero_velocity"
+			}
+			{
+				channel = "age"
+				type = "zero"
+			}
+			{
+				channel = "wind_velocity"
+				type = "zero"
+			}
+		]
+		max_radius = 0.125
+		offset = [
+			0
+			0
+			0
+			0
+			0.174532925199433
+		]
+		simulators = [
+			{
+				type = "age_age"
+			}
+			{
+				acceleration = [
+					0
+					0
+					-12.5
+				]
+				type = "velocity_accelerate"
+			}
+			{
+				amplitude = [
+					2
+					1
+					0.5
+					0.25
+				]
+				base_wind = [
+					0
+					0
+					0
+				]
+				frequency = [
+					0.1
+					0.5
+					1
+					2
+				]
+				particle_jitter_amplitude = 1
+				scale = [
+					[
+						0
+						1
+					]
+					[
+						1
+						1
+					]
+				]
+				type = "wind"
+				wind_coefficient = 1
+			}
+			{
+				over_system_lifetime = true
+				scale = [
+					[
+						0
+						1
+					]
+					[
+						1
+						1
+					]
+				]
+				type = "spiral"
+			}
+			{
+				position_channel = "rotation"
+				scale = [
+					[
+						0
+						1
+					]
+					[
+						1
+						1
+					]
+				]
+				type = "integrate_float_scaled"
+				velocity_channel = "spin"
+			}
+			{
+				rate_max = 30
+				rate_min = 10
+				scale = [
+					[
+						0
+						1
+					]
+					[
+						1
+						1
+					]
+				]
+				type = "rate_emitter"
+			}
+			{
+				output_channel = "wind_velocity"
+				type = "query_vector_field"
+				vector_field = "wind"
+			}
+			{
+				noise_amplitude = 2
+				type = "air_resistance"
+				wind_coefficient = 5
+				wind_velocity_channel = "wind_velocity"
+			}
+			{
+				type = "position_integrate"
+			}
+		]
+		vector3_channels = [
+			"position"
+			"velocity"
+			"wind_velocity"
+		]
+		visualizers = [
+			{
+				channels = [
+					{
+						component = "position"
+						name = "position"
+						set = 0
+						type = "float3"
+					}
+					{
+						component = "color"
+						name = "color"
+						set = 0
+						type = "ubyte4"
+					}
+					{
+						component = "texcoord"
+						name = "size"
+						set = 7
+						type = "float2"
+					}
+					{
+						component = "texcoord"
+						name = "rotation"
+						set = 1
+						type = "float1"
+					}
+					{
+						component = "texcoord"
+						name = "pivot"
+						set = 6
+						type = "float2"
+					}
+				]
+				material = "paper_A"
+				sort = false
+				type = "billboard"
+				vertex_writers = [
+					{
+						over_system_lifetime = false
+						scale = [
+							[
+								0
+								1
+							]
+							[
+								1
+								1
+							]
+						]
+						type = "size"
+					}
+					{
+						gradient = [
+							[
+								0.095811170212766
+								[
+									255
+									65
+									65
+								]
+							]
+							[
+								0.328401548672566
+								[
+									247
+									255
+									43
+								]
+							]
+							[
+								0.501451880530973
+								[
+									98
+									255
+									92
+								]
+							]
+							[
+								0.679188829787234
+								[
+									0
+									31
+									255
+								]
+							]
+							[
+								0.894856770833333
+								[
+									255
+									0
+									255
+								]
+							]
+						]
+						luminance = true
+						opacity = [
+							[
+								0
+								0
+							]
+							[
+								0.0417
+								1
+							]
+							[
+								0.7024
+								1
+							]
+							[
+								1
+								0
+							]
+						]
+						type = "color"
+					}
+					{
+						dest = "pivot"
+						offset = 0
+						type = "write_float"
+						value = 0.1
+					}
+					{
+						dest = "pivot"
+						offset = 1
+						type = "write_float"
+						value = 0.5
+					}
+					{
+						dest = "position"
+						source = "position"
+						type = "copy_vector3"
+					}
+					{
+						dest = "rotation"
+						source = "rotation"
+						type = "copy_float"
+					}
+				]
+			}
+		]
+	}
+	{
+		capacity = 500
+		casts_shadows = false
+		disable_culling = false
+		float_channels = [
+			"age"
+			"life"
+			"size"
+			"rotation"
+			"spin"
+			"spiral_rotation"
+			"spiral_speed"
+		]
+		initializers = [
+			{
+				channel = "size"
+				range = [
+					0.1
+					0.2
+				]
+				type = "random_float"
+			}
+			{
+				type = "position_box"
+				x = [
+					-3
+					3
+				]
+				y = [
+					0
+					0
+				]
+				z = [
+					-3
+					3
+				]
+			}
+			{
+				channel = "spiral_rotation"
+				range = [
+					0.00174532925199433
+					0.0174532925199433
+				]
+				type = "random_float"
+			}
+			{
+				channel = "spiral_speed"
+				range = [
+					0
+					0
+				]
+				type = "random_float"
+			}
+			{
+				channel = "rotation"
+				range = [
+					0
+					6.28318530717959
+				]
+				type = "random_float"
+			}
+			{
+				channel = "spin"
+				range = [
+					8.72664625997165
+					-8.72664625997165
+				]
+				type = "random_float"
+			}
+			{
+				channel = "life"
+				range = [
+					1
+					10
+				]
+				type = "random_float"
+			}
+			{
+				type = "zero_velocity"
+			}
+			{
+				channel = "age"
+				type = "zero"
+			}
+			{
+				channel = "wind_velocity"
+				type = "zero"
+			}
+		]
+		max_radius = 0.1
+		offset = [
+			0
+			0
+			0
+			0
+			0.174532925199433
+		]
+		simulators = [
+			{
+				type = "age_age"
+			}
+			{
+				rate_max = 30
+				rate_min = 10
+				scale = [
+					[
+						0
+						1
+					]
+					[
+						1
+						1
+					]
+				]
+				type = "rate_emitter"
+			}
+			{
+				acceleration = [
+					0
+					0
+					-12.5
+				]
+				type = "velocity_accelerate"
+			}
+			{
+				amplitude = [
+					2
+					1
+					0.5
+					0.25
+				]
+				base_wind = [
+					0
+					0
+					0
+				]
+				frequency = [
+					0.1
+					0.5
+					1
+					2
+				]
+				particle_jitter_amplitude = 1
+				scale = [
+					[
+						0
+						1
+					]
+					[
+						1
+						1
+					]
+				]
+				type = "wind"
+				wind_coefficient = 1
+			}
+			{
+				over_system_lifetime = false
+				scale = [
+					[
+						0
+						1
+					]
+					[
+						1
+						1
+					]
+				]
+				type = "spiral"
+			}
+			{
+				position_channel = "rotation"
+				scale = [
+					[
+						0
+						1
+					]
+					[
+						1
+						1
+					]
+				]
+				type = "integrate_float_scaled"
+				velocity_channel = "spin"
+			}
+			{
+				output_channel = "wind_velocity"
+				type = "query_vector_field"
+				vector_field = "wind"
+			}
+			{
+				noise_amplitude = 2
+				type = "air_resistance"
+				wind_coefficient = 5
+				wind_velocity_channel = "wind_velocity"
+			}
+			{
+				type = "position_integrate"
+			}
+		]
+		vector3_channels = [
+			"position"
+			"velocity"
+			"wind_velocity"
+		]
+		visualizers = [
+			{
+				channels = [
+					{
+						component = "position"
+						name = "position"
+						set = 0
+						type = "float3"
+					}
+					{
+						component = "color"
+						name = "color"
+						set = 0
+						type = "ubyte4"
+					}
+					{
+						component = "texcoord"
+						name = "size"
+						set = 7
+						type = "float2"
+					}
+					{
+						component = "texcoord"
+						name = "rotation"
+						set = 1
+						type = "float1"
+					}
+					{
+						component = "texcoord"
+						name = "pivot"
+						set = 6
+						type = "float2"
+					}
+				]
+				material = "paper_B"
+				sort = false
+				type = "billboard"
+				vertex_writers = [
+					{
+						over_system_lifetime = false
+						scale = [
+							[
+								0
+								1
+							]
+							[
+								1
+								1
+							]
+						]
+						type = "size"
+					}
+					{
+						gradient = [
+							[
+								0.0533244680851064
+								[
+									238
+									255
+									110
+								]
+							]
+							[
+								0.261103723404255
+								[
+									0
+									255
+									0
+								]
+							]
+							[
+								0.488497340425532
+								[
+									0
+									0
+									255
+								]
+							]
+							[
+								0.683976063829787
+								[
+									255
+									31
+									192
+								]
+							]
+							[
+								0.841821808510638
+								[
+									238
+									54
+									54
+								]
+							]
+							[
+								0.998409845132743
+								[
+									255
+									96
+									0
+								]
+							]
+						]
+						opacity = [
+							[
+								0
+								1
+							]
+							[
+								1
+								1
+							]
+						]
+						type = "color"
+					}
+					{
+						dest = "pivot"
+						offset = 0
+						type = "write_float"
+						value = 0.1
+					}
+					{
+						dest = "pivot"
+						offset = 1
+						type = "write_float"
+						value = 0.5
+					}
+					{
+						dest = "position"
+						source = "position"
+						type = "copy_vector3"
+					}
+					{
+						dest = "rotation"
+						source = "rotation"
+						type = "copy_float"
+					}
+				]
+			}
+		]
+	}
+	{
+		capacity = 500
+		casts_shadows = false
+		disable_culling = false
+		float_channels = [
+			"age"
+			"life"
+			"size"
+			"rotation"
+			"spin"
+			"spiral_rotation"
+			"spiral_speed"
+		]
+		initializers = [
+			{
+				channel = "size"
+				range = [
+					0.05
+					0.14
+				]
+				type = "random_float"
+			}
+			{
+				type = "position_box"
+				x = [
+					-3
+					3
+				]
+				y = [
+					0
+					0
+				]
+				z = [
+					-3
+					3
+				]
+			}
+			{
+				channel = "spiral_rotation"
+				range = [
+					0.00174532925199433
+					0.0174532925199433
+				]
+				type = "random_float"
+			}
+			{
+				channel = "spiral_speed"
+				range = [
+					0
+					0
+				]
+				type = "random_float"
+			}
+			{
+				channel = "rotation"
+				range = [
+					0
+					6.28318530717959
+				]
+				type = "random_float"
+			}
+			{
+				channel = "spin"
+				range = [
+					-8.72664625997165
+					8.72664625997165
+				]
+				type = "random_float"
+			}
+			{
+				channel = "life"
+				range = [
+					1
+					10
+				]
+				type = "random_float"
+			}
+			{
+				type = "zero_velocity"
+			}
+			{
+				channel = "age"
+				type = "zero"
+			}
+			{
+				channel = "wind_velocity"
+				type = "zero"
+			}
+		]
+		max_radius = 0.07
+		offset = [
+			0
+			0
+			0
+			0
+			0
+		]
+		simulators = [
+			{
+				type = "age_age"
+			}
+			{
+				rate_max = 30
+				rate_min = 10
+				scale = [
+					[
+						0
+						1
+					]
+					[
+						1
+						1
+					]
+				]
+				type = "rate_emitter"
+			}
+			{
+				acceleration = [
+					0
+					0
+					-12.5
+				]
+				type = "velocity_accelerate"
+			}
+			{
+				amplitude = [
+					2
+					1
+					0.5
+					0.25
+				]
+				base_wind = [
+					0
+					0
+					0
+				]
+				frequency = [
+					0.1
+					0.5
+					1
+					2
+				]
+				particle_jitter_amplitude = 0.5
+				scale = [
+					[
+						0
+						1
+					]
+					[
+						1
+						1
+					]
+				]
+				type = "wind"
+				wind_coefficient = 1
+			}
+			{
+				over_system_lifetime = false
+				scale = [
+					[
+						0
+						1
+					]
+					[
+						1
+						1
+					]
+				]
+				type = "spiral"
+			}
+			{
+				position_channel = "rotation"
+				scale = [
+					[
+						0
+						1
+					]
+					[
+						1
+						1
+					]
+				]
+				type = "integrate_float_scaled"
+				velocity_channel = "spin"
+			}
+			{
+				output_channel = "wind_velocity"
+				type = "query_vector_field"
+				vector_field = "wind"
+			}
+			{
+				noise_amplitude = 2
+				type = "air_resistance"
+				wind_coefficient = 5
+				wind_velocity_channel = "wind_velocity"
+			}
+			{
+				type = "position_integrate"
+			}
+		]
+		vector3_channels = [
+			"position"
+			"velocity"
+			"wind_velocity"
+		]
+		visualizers = [
+			{
+				channels = [
+					{
+						component = "position"
+						name = "position"
+						set = 0
+						type = "float3"
+					}
+					{
+						component = "color"
+						name = "color"
+						set = 0
+						type = "ubyte4"
+					}
+					{
+						component = "texcoord"
+						name = "size"
+						set = 7
+						type = "float2"
+					}
+					{
+						component = "texcoord"
+						name = "rotation"
+						set = 1
+						type = "float1"
+					}
+					{
+						component = "texcoord"
+						name = "pivot"
+						set = 6
+						type = "float2"
+					}
+				]
+				material = "paper_c"
+				sort = false
+				type = "billboard"
+				vertex_writers = [
+					{
+						over_system_lifetime = false
+						scale = [
+							[
+								0
+								1
+							]
+							[
+								1
+								1
+							]
+						]
+						type = "size"
+					}
+					{
+						gradient = [
+							[
+								0.00166223404255319
+								[
+									255
+									36
+									36
+								]
+							]
+							[
+								0.437154314159292
+								[
+									41
+									92
+									255
+								]
+							]
+							[
+								0.813260508849557
+								[
+									24
+									255
+									0
+								]
+							]
+							[
+								0.998409845132743
+								[
+									238
+									255
+									110
+								]
+							]
+						]
+						opacity = [
+							[
+								0
+								1
+							]
+							[
+								1
+								1
+							]
+						]
+						type = "color"
+					}
+					{
+						dest = "pivot"
+						offset = 0
+						type = "write_float"
+						value = 0.1
+					}
+					{
+						dest = "pivot"
+						offset = 1
+						type = "write_float"
+						value = 0.5
+					}
+					{
+						dest = "position"
+						source = "position"
+						type = "copy_vector3"
+					}
+					{
+						dest = "rotation"
+						source = "rotation"
+						type = "copy_float"
+					}
+				]
+			}
+		]
+	}
+]
+life_time = 10000000000
+use_random_seed = true
+variables = [
+]
