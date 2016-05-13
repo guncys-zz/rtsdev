@@ -984,7 +984,7 @@ nodes = [
 		type = "numeric_times_numeric"
 		variable_values = {
 			a = null
-			b = -1
+			b = -5
 			value = null
 		}
 	}
@@ -2722,28 +2722,6 @@ nodes = [
 		}
 	}
 	{
-		id = "5b89b908-44e5-411f-a63f-7200b1994471"
-		in_variables = {
-			vector = {
-				node = "122d99b1-949d-4589-a7e6-9ecbfdfc1d04"
-				type = "vector3"
-				variable = "position"
-			}
-		}
-		out_variables = {
-			z = {
-				type = "float"
-			}
-		}
-		type = "vector_components"
-		variable_values = {
-			vector = null
-			x = null
-			y = null
-			z = null
-		}
-	}
-	{
 		id = "84a8a614-5794-4b28-8746-03c80e6502e9"
 		in_variables = {
 			a = {
@@ -2752,7 +2730,9 @@ nodes = [
 				variable = "z"
 			}
 			b = {
+				node = "cd82bc40-3e96-4554-9ff7-1dd8126cd512"
 				type = "float"
+				variable = "value"
 			}
 		}
 		out_variables = {
@@ -2763,7 +2743,7 @@ nodes = [
 		type = "numeric_less_than_numeric"
 		variable_values = {
 			a = null
-			b = -1
+			b = null
 			value = null
 		}
 	}
@@ -2853,6 +2833,52 @@ nodes = [
 				type = "string"
 			}
 		]
+	}
+	{
+		id = "5b89b908-44e5-411f-a63f-7200b1994471"
+		in_variables = {
+			vector = {
+				node = "122d99b1-949d-4589-a7e6-9ecbfdfc1d04"
+				type = "vector3"
+				variable = "position"
+			}
+		}
+		out_variables = {
+			z = {
+				type = "float"
+			}
+		}
+		type = "vector_components"
+		variable_values = {
+			vector = null
+			x = null
+			y = null
+			z = null
+		}
+	}
+	{
+		id = "cd82bc40-3e96-4554-9ff7-1dd8126cd512"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "get_unit_numeric_data"
+		variable_values = {
+			key = "HeightGameOver"
+			unit = null
+			value = null
+		}
 	}
 	{
 		id = "11111111-2222-3333-4444-555555555555"

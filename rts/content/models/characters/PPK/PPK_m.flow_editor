@@ -3492,6 +3492,15 @@ Connections = [
 		ToNode = "84a8a614-5794-4b28-8746-03c80e6502e9"
 		Type = "Float"
 	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "cd82bc40-3e96-4554-9ff7-1dd8126cd512"
+		Id = "ec8bb56f-e33b-4bd5-8a79-604fd371c980"
+		ToItem = "B"
+		ToNode = "84a8a614-5794-4b28-8746-03c80e6502e9"
+		Type = "Float"
+	}
 ]
 Groups = [
 	{
@@ -3732,6 +3741,7 @@ Groups = [
 			"5b89b908-44e5-411f-a63f-7200b1994471"
 			"84a8a614-5794-4b28-8746-03c80e6502e9"
 			"df502459-82b2-4806-bfa0-84fb95f2c134"
+			"cd82bc40-3e96-4554-9ff7-1dd8126cd512"
 		]
 		Title = "PPKのZ座標をチェックして指定値以下ならGameOverにする"
 	}
@@ -4537,7 +4547,7 @@ Nodes = [
 		A = {
 		}
 		B = {
-			Value = -1
+			Value = -5
 		}
 		Class = "Stingray.Flow.NumericTimesNumeric"
 		Id = "54477704-0fd9-4a3e-b095-97ee9ab9a0c2"
@@ -5957,27 +5967,9 @@ Nodes = [
 		Width = 160
 	}
 	{
-		Class = "Stingray.Flow.VectorComponents"
-		Id = "5b89b908-44e5-411f-a63f-7200b1994471"
-		NodeLocation = {
-			X = 420
-			Y = 560
-		}
-		Vector = {
-		}
-		Width = 160
-		X = {
-		}
-		Y = {
-		}
-		Z = {
-		}
-	}
-	{
 		A = {
 		}
 		B = {
-			Value = -1
 		}
 		Class = "Stingray.Flow.NumericLessThanNumeric"
 		Id = "84a8a614-5794-4b28-8746-03c80e6502e9"
@@ -6066,6 +6058,40 @@ Nodes = [
 		]
 		ReturnValues = [
 		]
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.VectorComponents"
+		Id = "5b89b908-44e5-411f-a63f-7200b1994471"
+		NodeLocation = {
+			X = 420
+			Y = 520
+		}
+		Vector = {
+		}
+		Width = 160
+		X = {
+		}
+		Y = {
+		}
+		Z = {
+		}
+	}
+	{
+		Class = "Stingray.Flow.GetUnitNumericData"
+		Id = "cd82bc40-3e96-4554-9ff7-1dd8126cd512"
+		Key = {
+			Value = "HeightGameOver"
+		}
+		NodeLocation = {
+			X = 420
+			Y = 660
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Value = {
+		}
 		Width = 160
 	}
 ]
