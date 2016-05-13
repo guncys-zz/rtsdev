@@ -1,0 +1,725 @@
+
+particle_system = {
+	CameraDistance = 5
+	clouds = [
+		{
+			controllers = [
+				{
+					AdditiveBlend = false
+					DepthFadeDistance = 0
+					DiffuseMap = "content/effect/fx_t_paper14"
+					DissolveUsingVertexAlpha = false
+					Glossiness = 0
+					LitParticles = true
+					MaterialMap = null
+					Name = "Material: Billboard"
+					NormalMap = null
+					OneBitAlpha = true
+					SpecularMask = 0
+					type = "billboard_material"
+					UVAnimationX = 1
+					UVAnimationY = 1
+				}
+				{
+					CustomHeight = false
+					InitialMax = 0.25
+					InitialMaxHeight = 0.1
+					InitialMin = 0.1
+					InitialMinHeight = 0.1
+					Name = "Size"
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					ScaleHeight = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "size"
+					UseSystemLifetime = false
+					UseSystemLifetimeHeight = false
+				}
+				{
+					Gradient = [
+						[
+							0.095811170212766
+							[
+								255
+								65
+								65
+							]
+						]
+						[
+							0.328401548672566
+							[
+								247
+								255
+								43
+							]
+						]
+						[
+							0.501451880530973
+							[
+								98
+								255
+								92
+							]
+						]
+						[
+							0.679188829787234
+							[
+								0
+								31
+								255
+							]
+						]
+						[
+							0.894856770833333
+							[
+								255
+								0
+								255
+							]
+						]
+					]
+					LuminanceMax = 1
+					LuminanceMin = 0.8
+					Name = "Color"
+					Opacity = [
+						[
+							0
+							0
+						]
+						[
+							0.0417
+							1
+						]
+						[
+							0.7024
+							1
+						]
+						[
+							1
+							0
+						]
+					]
+					type = "color_controller"
+				}
+				{
+					MaxX = 3
+					MaxY = 0
+					MaxZ = 3
+					MinX = -3
+					MinY = 0
+					MinZ = -3
+					Name = "Position: Box"
+					type = "position_box"
+				}
+				{
+					strength = [
+						0
+						0
+						-12.5
+					]
+					type = "acceleration_gravity"
+				}
+				{
+					Amplitude1 = 2
+					Amplitude2 = 1
+					Amplitude3 = 0.5
+					Amplitude4 = 0.25
+					BaseWindX = 0
+					BaseWindY = 0
+					BaseWindZ = 0
+					Name = "Wind"
+					ParticleJitterAmplitude = 1
+					Period1 = 10
+					Period2 = 2
+					Period3 = 1
+					Period4 = 0.5
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "wind"
+					WindCoefficient = 1
+				}
+				{
+					Name = "Spiral"
+					RotationMax = 1
+					RotationMin = 0.1
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					SpeedMax = 0.1
+					SpeedMin = 0
+					type = "spiral"
+					UseSystemLifetime = true
+				}
+				{
+					Name = "Pivot"
+					PivotX = 0.1
+					PivotY = 0.5
+					type = "pivot"
+				}
+				{
+					MaxDegrees = 360
+					MinDegrees = 0
+					type = "rotation_random"
+				}
+				{
+					MaxSpin = 500
+					MinSpin = -500
+					Name = "Rotation: Spin"
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "rotation_spin"
+				}
+				{
+					Name = "Emitter: Rate"
+					RateMax = 30
+					RateMin = 10
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "rate_emitter"
+				}
+				{
+					Name = "Wind: From Vector Field"
+					NoiseAmplitude = 2
+					type = "vector_field_wind"
+					VectorField = "wind"
+					WindCoefficient = 5
+				}
+			]
+			Id = "628395ee-3b1c-4403-bd30-7e26c10dae17"
+			max_particle_life = 10
+			min_particle_life = 1
+			Mute = false
+			name = "paper_A"
+			OffsetX = 0
+			OffsetY = 0
+			OffsetZ = 0
+			Spin = 10
+			Tilt = 0
+			total = 500
+		}
+		{
+			controllers = [
+				{
+					Name = "Emitter: Rate"
+					RateMax = 30
+					RateMin = 10
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "rate_emitter"
+				}
+				{
+					AdditiveBlend = false
+					DepthFadeDistance = 0
+					DiffuseMap = "content/effect/fx_t_paper07"
+					DissolveUsingVertexAlpha = false
+					Glossiness = 0
+					LitParticles = true
+					MaterialMap = null
+					Name = "Material: Billboard"
+					NormalMap = null
+					OneBitAlpha = true
+					SpecularMask = 0
+					type = "billboard_material"
+					UVAnimationX = 0.1
+					UVAnimationY = 0.1
+				}
+				{
+					CustomHeight = false
+					InitialMax = 0.2
+					InitialMaxHeight = 0.1
+					InitialMin = 0.1
+					InitialMinHeight = 0.1
+					Name = "Size"
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					ScaleHeight = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "size"
+					UseSystemLifetime = false
+					UseSystemLifetimeHeight = false
+				}
+				{
+					Gradient = [
+						[
+							0.0533244680851064
+							[
+								238
+								255
+								110
+							]
+						]
+						[
+							0.261103723404255
+							[
+								0
+								255
+								0
+							]
+						]
+						[
+							0.488497340425532
+							[
+								0
+								0
+								255
+							]
+						]
+						[
+							0.683976063829787
+							[
+								255
+								31
+								192
+							]
+						]
+						[
+							0.841821808510638
+							[
+								238
+								54
+								54
+							]
+						]
+						[
+							0.998409845132743
+							[
+								255
+								96
+								0
+							]
+						]
+					]
+					LuminanceMax = 1
+					LuminanceMin = 1
+					Name = "Color"
+					Opacity = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "color_controller"
+				}
+				{
+					MaxX = 3
+					MaxY = 0
+					MaxZ = 3
+					MinX = -3
+					MinY = 0
+					MinZ = -3
+					Name = "Position: Box"
+					type = "position_box"
+				}
+				{
+					strength = [
+						0
+						0
+						-12.5
+					]
+					type = "acceleration_gravity"
+				}
+				{
+					Amplitude1 = 2
+					Amplitude2 = 1
+					Amplitude3 = 0.5
+					Amplitude4 = 0.25
+					BaseWindX = 0
+					BaseWindY = 0
+					BaseWindZ = 0
+					Name = "Wind"
+					ParticleJitterAmplitude = 1
+					Period1 = 10
+					Period2 = 2
+					Period3 = 1
+					Period4 = 0.5
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "wind"
+					WindCoefficient = 1
+				}
+				{
+					Name = "Spiral"
+					RotationMax = 1
+					RotationMin = 0.1
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					SpeedMax = 0
+					SpeedMin = 0
+					type = "spiral"
+					UseSystemLifetime = false
+				}
+				{
+					Name = "Pivot"
+					PivotX = 0.1
+					PivotY = 0.5
+					type = "pivot"
+				}
+				{
+					MaxDegrees = 360
+					MinDegrees = 0
+					type = "rotation_random"
+				}
+				{
+					MaxSpin = -500
+					MinSpin = 500
+					Name = "Rotation: Spin"
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "rotation_spin"
+				}
+				{
+					Name = "Wind: From Vector Field"
+					NoiseAmplitude = 2
+					type = "vector_field_wind"
+					VectorField = "wind"
+					WindCoefficient = 5
+				}
+			]
+			Id = "41dc0fe3-494a-4072-bdc0-62bf6219aaff"
+			max_particle_life = 10
+			min_particle_life = 1
+			Mute = false
+			name = "paper_B"
+			OffsetX = 0
+			OffsetY = 0
+			OffsetZ = 0
+			Spin = 10
+			Tilt = 0
+			total = 500
+		}
+		{
+			controllers = [
+				{
+					Name = "Emitter: Rate"
+					RateMax = 30
+					RateMin = 10
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "rate_emitter"
+				}
+				{
+					AdditiveBlend = false
+					DepthFadeDistance = 0
+					DiffuseMap = "content/effect/fx_t_paper00"
+					DissolveUsingVertexAlpha = false
+					Glossiness = 0
+					LitParticles = true
+					MaterialMap = null
+					Name = "Material: Billboard"
+					NormalMap = null
+					OneBitAlpha = true
+					SpecularMask = 0
+					type = "billboard_material"
+					UVAnimationX = 0.1
+					UVAnimationY = 0.1
+				}
+				{
+					CustomHeight = false
+					InitialMax = 0.14
+					InitialMaxHeight = 0.1
+					InitialMin = 0.05
+					InitialMinHeight = 0.1
+					Name = "Size"
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					ScaleHeight = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "size"
+					UseSystemLifetime = false
+					UseSystemLifetimeHeight = false
+				}
+				{
+					Gradient = [
+						[
+							0.00166223404255319
+							[
+								255
+								36
+								36
+							]
+						]
+						[
+							0.437154314159292
+							[
+								41
+								92
+								255
+							]
+						]
+						[
+							0.813260508849557
+							[
+								24
+								255
+								0
+							]
+						]
+						[
+							0.998409845132743
+							[
+								238
+								255
+								110
+							]
+						]
+					]
+					LuminanceMax = 1
+					LuminanceMin = 1
+					Name = "Color"
+					Opacity = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "color_controller"
+				}
+				{
+					MaxX = 3
+					MaxY = 0
+					MaxZ = 3
+					MinX = -3
+					MinY = 0
+					MinZ = -3
+					Name = "Position: Box"
+					type = "position_box"
+				}
+				{
+					strength = [
+						0
+						0
+						-12.5
+					]
+					type = "acceleration_gravity"
+				}
+				{
+					Amplitude1 = 2
+					Amplitude2 = 1
+					Amplitude3 = 0.5
+					Amplitude4 = 0.25
+					BaseWindX = 0
+					BaseWindY = 0
+					BaseWindZ = 0
+					Name = "Wind"
+					ParticleJitterAmplitude = 0.5
+					Period1 = 10
+					Period2 = 2
+					Period3 = 1
+					Period4 = 0.5
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "wind"
+					WindCoefficient = 1
+				}
+				{
+					Name = "Spiral"
+					RotationMax = 1
+					RotationMin = 0.1
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					SpeedMax = 0
+					SpeedMin = 0
+					type = "spiral"
+					UseSystemLifetime = false
+				}
+				{
+					Name = "Pivot"
+					PivotX = 0.1
+					PivotY = 0.5
+					type = "pivot"
+				}
+				{
+					MaxDegrees = 360
+					MinDegrees = 0
+					type = "rotation_random"
+				}
+				{
+					MaxSpin = 500
+					MinSpin = -500
+					Name = "Rotation: Spin"
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "rotation_spin"
+				}
+				{
+					Name = "Wind: From Vector Field"
+					NoiseAmplitude = 2
+					type = "vector_field_wind"
+					VectorField = "wind"
+					WindCoefficient = 5
+				}
+			]
+			Id = "d48be377-1ac7-42e6-9648-e30fe7160d50"
+			max_particle_life = 10
+			min_particle_life = 1
+			Mute = false
+			name = "paper_c"
+			OffsetX = 0
+			OffsetY = 0
+			OffsetZ = 0
+			Spin = 0
+			Tilt = 0
+			total = 500
+		}
+	]
+	Level = "core/editor_slave/levels/animation_preview_level/animation_preview_level"
+	life_time = 10000000000
+	ShowRuler = true
+	SpawnHeight = 5
+	UseRandomSeed = true
+	Variables = {
+		Variables = [
+		]
+	}
+}
