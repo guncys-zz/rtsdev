@@ -651,6 +651,26 @@ nodes = [
 		}
 	}
 	{
+		id = "3a611a19-ca04-489c-9baa-1b79712253e6"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+			string = {
+				type = "string"
+			}
+		}
+		type = "set_string_variable"
+		variable_values = {
+			name = "status"
+			scope = "local"
+			string = "run"
+		}
+	}
+	{
 		id = "3ca14ad6-a519-4fb4-ae11-8f605c0694ed"
 		in_variables = {
 			name = {
