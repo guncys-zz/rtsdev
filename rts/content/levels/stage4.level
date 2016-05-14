@@ -422,7 +422,6 @@ editor_metadata = {
 	LevelReferences = [
 	]
 	LightBakeSettings = {
-		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
 		FilterGain = 20
@@ -440,7 +439,6 @@ editor_metadata = {
 			Z = 1
 		}
 		TexelScale = 10
-		TotalPasses = 256
 		Variance = 0.5
 	}
 	LuaPluginObjects = [
@@ -515,7 +513,6 @@ editor_metadata = {
 					Intensity = 4
 					Material = ""
 					MaterialResource = ""
-					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "directional"
@@ -12197,6 +12194,635 @@ editor_metadata = {
 			}
 			Type = "content/models/blockers/MoveBlockerCube/cube_blender"
 		}
+		{
+			Cameras = {
+			}
+			Id = "da6ea326-4482-4ee5-a041-3eab3c3d18e9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Jump1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 35
+				Z = -0.519
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "aa260e80-454f-448d-8d7e-09c0a9c732f2"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Jump3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 55
+				Z = -1.213
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "cb14ab98-8e4b-4ff2-ba88-7ebc6b67dfa9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Jump2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 80
+				Z = 0.216001
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "967dedcc-2ed3-4767-947c-ede4bed623bc"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Jump4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 90
+				Z = 0.216001
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f3bbdce0-86f5-4b78-af72-cf13aa5fbca1"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Jump5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 115
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "7754674a-8c44-46e6-9c13-e65e188d0c9d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Jump6"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 130
+				Z = 0.238
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6f008d4c-3c96-4aba-9ec4-0623557c4a0b"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Jump7"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 185
+				Z = -0.193
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f12a4a88-96aa-4206-b786-2135ffe76cce"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Jump8"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 210
+				Z = 0.561001
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "645df609-e64c-40e2-93e8-da46cf06f729"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Jump9"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 220
+				Z = 0.561001
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "0f95f1cb-ba7d-4a6e-a64b-ba8277ee8914"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Jump10"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 232
+				Z = -1.523001
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "5825630f-aed9-457b-85f3-c3057ee10a11"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Jump11"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 250
+				Z = -0.816
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4c29345d-0e81-42c5-98dd-031952cf8229"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Dive1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 45
+				Z = 0.481
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c8202aeb-c436-42fd-883d-fe3b15b96b91"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Dive2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 67
+				Z = 1.574
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a9355d26-ab74-4291-8447-c375b6840617"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Dive3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 100
+				Z = 1.572
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "5b8643c6-9d14-47b0-825f-b453a406ed96"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Dive4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 140
+				Z = 1.237
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "341cd1e3-f2c6-4549-a01f-02888680943e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Dive5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 215
+				Z = 1.561
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
+		{
+			Cameras = {
+			}
+			Id = "53abd4c3-9240-4661-81ec-74b997f9ec15"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "cube_primitive"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 238
+				Z = -0.523
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/primitives/cube_primitive"
+		}
 	]
 	Volumes = [
 	]
@@ -12496,7 +13122,6 @@ units = [
 				falloff_start = 0
 				intensity = 4
 				material = ""
-				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "directional"
@@ -21970,6 +22595,516 @@ units = [
 			1
 		]
 		type = "content/models/blockers/MoveBlockerCube/cube_blender"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "da6ea326-4482-4ee5-a041-3eab3c3d18e9"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Jump1"
+		pos = [
+			0
+			35
+			-0.519
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "aa260e80-454f-448d-8d7e-09c0a9c732f2"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Jump3"
+		pos = [
+			0
+			55
+			-1.213
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "cb14ab98-8e4b-4ff2-ba88-7ebc6b67dfa9"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Jump2"
+		pos = [
+			0
+			80
+			0.216001
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "967dedcc-2ed3-4767-947c-ede4bed623bc"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Jump4"
+		pos = [
+			0
+			90
+			0.216001
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f3bbdce0-86f5-4b78-af72-cf13aa5fbca1"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Jump5"
+		pos = [
+			0
+			115
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "7754674a-8c44-46e6-9c13-e65e188d0c9d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Jump6"
+		pos = [
+			0
+			130
+			0.238
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6f008d4c-3c96-4aba-9ec4-0623557c4a0b"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Jump7"
+		pos = [
+			0
+			185
+			-0.193
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f12a4a88-96aa-4206-b786-2135ffe76cce"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Jump8"
+		pos = [
+			0
+			210
+			0.561001
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "645df609-e64c-40e2-93e8-da46cf06f729"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Jump9"
+		pos = [
+			0
+			220
+			0.561001
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "0f95f1cb-ba7d-4a6e-a64b-ba8277ee8914"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Jump10"
+		pos = [
+			0
+			232
+			-1.523001
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "5825630f-aed9-457b-85f3-c3057ee10a11"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Jump11"
+		pos = [
+			0
+			250
+			-0.816
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "4c29345d-0e81-42c5-98dd-031952cf8229"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Dive1"
+		pos = [
+			0
+			45
+			0.481
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c8202aeb-c436-42fd-883d-fe3b15b96b91"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Dive2"
+		pos = [
+			0
+			67
+			1.574
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a9355d26-ab74-4291-8447-c375b6840617"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Dive3"
+		pos = [
+			0
+			100
+			1.572
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "5b8643c6-9d14-47b0-825f-b453a406ed96"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Dive4"
+		pos = [
+			0
+			140
+			1.237
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "341cd1e3-f2c6-4549-a01f-02888680943e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Dive5"
+		pos = [
+			0
+			215
+			1.561
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "core/units/primitives/cube_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "53abd4c3-9240-4661-81ec-74b997f9ec15"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "cube_primitive"
+		pos = [
+			0
+			238
+			-0.523
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "core/units/primitives/cube_primitive"
 	}
 ]
 volumes = [
