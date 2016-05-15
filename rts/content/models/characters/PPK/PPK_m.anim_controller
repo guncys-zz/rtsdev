@@ -1,5 +1,5 @@
 
-_data_root_version = 6
+_data_root_version = 7
 _id = "cfc4c940-9ff9-4576-afaf-e333d71a048e"
 _name = "content/models/characters/PPK/PPK_m"
 anim_event_root_folder_name = "events"
@@ -14,6 +14,8 @@ compiler_data = {
 	bones = "content/models/characters/PPK/PPK_m"
 	events = {
 		"Anim End" = {
+		}
+		AnimEvent_Cinematics_ED_Start = {
 		}
 		AnimEvent_Cinematics_Start = {
 		}
@@ -95,6 +97,13 @@ compiler_data = {
 					speed = "1"
 					state_type = "regular"
 					transitions = [
+						{
+							blend_time = 0.2
+							event = "AnimEvent_Cinematics_ED_Start"
+							mode = "direct"
+							on_beat = ""
+							to = "Cinematics_ED_State/Clip_c01"
+						}
 						{
 							blend_time = 0.2
 							event = "AnimEvent_Cinematics_Start"
@@ -616,6 +625,113 @@ compiler_data = {
 						"1.0"
 					]
 				}
+				{
+					animations = [
+						"content/models/characters/PPK/animations/ED/PPK_ed_c01"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Cinematics_ED_State/Clip_c01"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Cinematics_ED_State/Clip_c02"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/characters/PPK/animations/ED/PPK_ed_c02"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Cinematics_ED_State/Clip_c02"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Cinematics_ED_State/Clip_c03"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/characters/PPK/animations/ED/PPK_ed_c03"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Cinematics_ED_State/Clip_c03"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Cinematics_ED_State/Clip_c04"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/characters/PPK/animations/ED/PPK_ed_c04"
+					]
+					exit_event = "Anim End"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "Cinematics_ED_State/Clip_c04"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					timeline = [
+						{
+							name = "flowevent_cinematics_ed_effect_ctf"
+							time = 1.56167032580815
+							type = "trigger"
+						}
+					]
+					transitions = [
+						{
+							blend_time = 0
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Cinematics_ED_State/Clip_c01"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
 			]
 		}
 		{
@@ -745,6 +861,10 @@ events = {
 			_id = "9cfe4988-11ee-42ea-923d-b86d96895dd9"
 			_name = "AnimEvent_Cinematics_Start"
 		}
+		{
+			_id = "471e7d1e-1122-4946-8641-fa525f5bed70"
+			_name = "AnimEvent_Cinematics_ED_Start"
+		}
 	]
 	sub_folders = [
 	]
@@ -753,7 +873,14 @@ layers = [
 	{
 		_id = "ba362619-7576-4ca5-9ebd-e9450bf7d687"
 		_name = "Layer_Ragdoll"
+		anim_blend_set_ref = {
+			_id = "20faf9b5-8669-4c97-885f-a25497b809db"
+			ref_filename = null
+			ref_id = null
+		}
 		blend_states = [
+		]
+		constraints = [
 		]
 		default_state_ref = {
 			_id = "cfd0a150-06ab-48bb-83a9-5cd97ff27711"
@@ -786,6 +913,9 @@ layers = [
 				}
 				group_transitions = [
 				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
 				loop_animation = true
 				markers = [
 				]
@@ -854,6 +984,9 @@ layers = [
 				}
 				group_transitions = [
 				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
 				loop_animation = true
 				markers = [
 				]
@@ -914,7 +1047,14 @@ layers = [
 	{
 		_id = "8180431c-1656-4eed-833e-155121598f26"
 		_name = "Layer_Mouse"
+		anim_blend_set_ref = {
+			_id = "5c3113e6-5b3c-44e9-8d8b-1c9d115e0c83"
+			ref_filename = null
+			ref_id = null
+		}
 		blend_states = [
+		]
+		constraints = [
 		]
 		default_state_ref = {
 			_id = "566e8939-49db-431f-8929-0bc1e1748e65"
@@ -941,6 +1081,9 @@ layers = [
 				}
 				group_transitions = [
 				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
 				loop_animation = true
 				markers = [
 				]
@@ -975,7 +1118,14 @@ layers = [
 	{
 		_id = "b2d5c997-6833-46b9-acf8-56589f072f35"
 		_name = "Base"
+		anim_blend_set_ref = {
+			_id = "89000553-23ed-4682-b397-aa736a528286"
+			ref_filename = null
+			ref_id = null
+		}
 		blend_states = [
+		]
+		constraints = [
 		]
 		default_state_ref = {
 			_id = "19563901-7218-4bfc-a874-860e3638fe65"
@@ -988,13 +1138,27 @@ layers = [
 			{
 				_id = "a73c2225-5d12-4d1b-8358-715280db2842"
 				_name = "Running_State"
+				anim_blend_set_ref = {
+					_id = "914ea6e4-e52e-466d-a2b4-861ef9f84727"
+					ref_filename = null
+					ref_id = null
+				}
 				blend_states = [
+				]
+				constraints = [
 				]
 				empty_states = [
 				]
 				group_states = [
 				]
 				group_transitions = [
+				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
+				markers = [
+				]
+				muted_layers = [
 				]
 				notes = [
 				]
@@ -1059,6 +1223,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = true
 						markers = [
 							{
@@ -1189,6 +1356,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 							{
@@ -1346,6 +1516,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -1469,6 +1642,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -1592,6 +1768,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -1715,6 +1894,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = true
 						markers = [
 							{
@@ -1818,6 +2000,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 							{
@@ -1928,6 +2113,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 							{
@@ -2019,13 +2207,27 @@ layers = [
 			{
 				_id = "dad9652a-6859-40ba-bf10-28833c57076d"
 				_name = "Cinematics_State"
+				anim_blend_set_ref = {
+					_id = "68a331ff-2011-4b41-b4eb-4fb96dc9881f"
+					ref_filename = null
+					ref_id = null
+				}
 				blend_states = [
+				]
+				constraints = [
 				]
 				empty_states = [
 				]
 				group_states = [
 				]
 				group_transitions = [
+				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
+				markers = [
+				]
+				muted_layers = [
 				]
 				notes = [
 				]
@@ -2074,6 +2276,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -2143,6 +2348,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -2212,6 +2420,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -2281,6 +2492,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -2350,6 +2564,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -2392,6 +2609,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -2461,6 +2681,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -2512,8 +2735,360 @@ layers = [
 				transitions = [
 				]
 				width = 150
-				x = 80
-				y = -140
+				x = 60
+				y = -160
+			}
+			{
+				_id = "32f22119-5022-4bc0-8b93-27cb1b9ebc8a"
+				_name = "Cinematics_ED_State"
+				anim_blend_set_ref = {
+					_id = "61fc0b57-b547-4e2a-b374-2fab183a3273"
+					ref_filename = null
+					ref_id = null
+				}
+				blend_states = [
+				]
+				constraints = [
+				]
+				empty_states = [
+				]
+				group_states = [
+				]
+				group_transitions = [
+				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				notes = [
+				]
+				ragdoll_states = [
+				]
+				shortcut_states = [
+					{
+						_id = "687fb64e-004a-474b-95ff-952019839307"
+						_name = "(Cinematics_ED_State/Clip_c01)"
+						group_transitions = [
+						]
+						state_ref = {
+							_id = "8fb9a61b-59e3-456d-9634-34b4806e9d90"
+							ref_filename = null
+							ref_id = "aedbbc42-afd6-4125-b8bb-32808bc29683"
+						}
+						transitions = [
+						]
+						width = 150
+						x = 380
+						y = -100
+					}
+				]
+				states = [
+					{
+						_id = "aedbbc42-afd6-4125-b8bb-32808bc29683"
+						_name = "Clip_c01"
+						anim_blend_set_ref = {
+							_id = "36e599ca-ab86-4188-8b7c-00d40d12cdb6"
+							ref_filename = null
+							ref_id = null
+						}
+						animations = [
+							{
+								_id = "c41f731d-dcc6-47d2-aa98-7f98472a9cd8"
+								ref_filename = "content/models/characters/PPK/animations/ED/PPK_ed_c01.anim_clip"
+								ref_id = null
+							}
+						]
+						constraints = [
+						]
+						exit_event_ref = {
+							_id = "6ecd9184-b55f-44aa-8c2a-068bdf93db0b"
+							ref_filename = null
+							ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+						}
+						group_transitions = [
+						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
+						loop_animation = false
+						markers = [
+						]
+						muted_layers = [
+						]
+						offset_state = false
+						randomization_type = "every_loop"
+						root_driving = "ignore"
+						speed = "1"
+						transitions = [
+							{
+								_id = "45fddcd2-359b-44c9-9604-b62d5034e45d"
+								actual_target_ref = {
+									_id = "ea064ce3-453a-48d9-a42c-093249d54dd5"
+									ref_filename = null
+									ref_id = null
+								}
+								blend_time = 0
+								event_ref = {
+									_id = "a9001d45-d928-408d-b678-a9dd9578ba66"
+									ref_filename = null
+									ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+								}
+								has_nested_from = false
+								mode = "direct"
+								nested_from_ref = {
+									_id = "898c293d-ed0d-46b9-b665-7d2069ab8510"
+									ref_filename = null
+									ref_id = null
+								}
+								on_beat = ""
+								to_state_ref = {
+									_id = "86811402-8ec5-465d-a6bd-d9f51711878d"
+									ref_filename = null
+									ref_id = "b00772e6-2400-461a-a0e6-a07a94800a99"
+								}
+							}
+						]
+						weights = [
+							"1.0"
+						]
+						width = 150
+						x = -43
+						y = -89
+					}
+					{
+						_id = "b00772e6-2400-461a-a0e6-a07a94800a99"
+						_name = "Clip_c02"
+						anim_blend_set_ref = {
+							_id = "d4a5b658-a72f-40a4-aba1-ce58ab6937ce"
+							ref_filename = null
+							ref_id = null
+						}
+						animations = [
+							{
+								_id = "ce12d794-9b68-4b6a-bc87-b12ac866d914"
+								ref_filename = "content/models/characters/PPK/animations/ED/PPK_ed_c02.anim_clip"
+								ref_id = null
+							}
+						]
+						constraints = [
+						]
+						exit_event_ref = {
+							_id = "1a5b4f39-fda2-4e13-8188-b0be0152acdd"
+							ref_filename = null
+							ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+						}
+						group_transitions = [
+						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
+						loop_animation = false
+						markers = [
+						]
+						muted_layers = [
+						]
+						offset_state = false
+						randomization_type = "every_loop"
+						root_driving = "ignore"
+						speed = "1"
+						transitions = [
+							{
+								_id = "9685b361-a2c6-4b48-b032-f77ef516e04b"
+								actual_target_ref = {
+									_id = "07fcefe8-ef04-4b14-8dbe-6681665ab5c9"
+									ref_filename = null
+									ref_id = null
+								}
+								blend_time = 0
+								event_ref = {
+									_id = "e67c7b7f-ecab-4dcf-abe5-2d68b2126d52"
+									ref_filename = null
+									ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+								}
+								has_nested_from = false
+								mode = "direct"
+								nested_from_ref = {
+									_id = "d3372192-469f-4448-9802-a4c9acd62241"
+									ref_filename = null
+									ref_id = null
+								}
+								on_beat = ""
+								to_state_ref = {
+									_id = "e55573b0-a493-4b5b-bbbb-12f54a5292b3"
+									ref_filename = null
+									ref_id = "30748384-6eb8-4b47-832a-70198be78ea9"
+								}
+							}
+						]
+						weights = [
+							"1.0"
+						]
+						width = 150
+						x = 60
+						y = 100
+					}
+					{
+						_id = "30748384-6eb8-4b47-832a-70198be78ea9"
+						_name = "Clip_c03"
+						anim_blend_set_ref = {
+							_id = "1056c119-6684-460d-ab38-cbdc7d7de992"
+							ref_filename = null
+							ref_id = null
+						}
+						animations = [
+							{
+								_id = "55413d71-2ae9-439c-8710-733ffc398e53"
+								ref_filename = "content/models/characters/PPK/animations/ED/PPK_ed_c03.anim_clip"
+								ref_id = null
+							}
+						]
+						constraints = [
+						]
+						exit_event_ref = {
+							_id = "f95795c6-b575-4edd-b319-05b95a1cddcf"
+							ref_filename = null
+							ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+						}
+						group_transitions = [
+						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
+						loop_animation = false
+						markers = [
+						]
+						muted_layers = [
+						]
+						offset_state = false
+						randomization_type = "every_loop"
+						root_driving = "ignore"
+						speed = "1"
+						transitions = [
+							{
+								_id = "e1544bb1-80f4-4a68-bb2d-ccbae4143fae"
+								actual_target_ref = {
+									_id = "349bc807-8c75-4619-9043-1b634d7fb298"
+									ref_filename = null
+									ref_id = null
+								}
+								blend_time = 0
+								event_ref = {
+									_id = "9e759c09-f2a1-4138-95cb-dcd0e2ed3363"
+									ref_filename = null
+									ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+								}
+								has_nested_from = false
+								mode = "direct"
+								nested_from_ref = {
+									_id = "4510e172-2e5e-4300-8060-8bb5b799880b"
+									ref_filename = null
+									ref_id = null
+								}
+								on_beat = ""
+								to_state_ref = {
+									_id = "7b7c328c-9f72-4193-8530-158751ef238d"
+									ref_filename = null
+									ref_id = "7e5007bb-2689-4845-9e49-acb7168d63fa"
+								}
+							}
+						]
+						weights = [
+							"1.0"
+						]
+						width = 150
+						x = 300
+						y = 180
+					}
+					{
+						_id = "7e5007bb-2689-4845-9e49-acb7168d63fa"
+						_name = "Clip_c04"
+						anim_blend_set_ref = {
+							_id = "c82bea04-3221-400f-8db4-a9b0995c1bd0"
+							ref_filename = null
+							ref_id = null
+						}
+						animations = [
+							{
+								_id = "5a8179b2-689f-413b-8fe3-05fd687731ec"
+								ref_filename = "content/models/characters/PPK/animations/ED/PPK_ed_c04.anim_clip"
+								ref_id = null
+							}
+						]
+						constraints = [
+						]
+						exit_event_ref = {
+							_id = "25b98f5c-7647-4962-a828-3ec3bb5a1d14"
+							ref_filename = null
+							ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+						}
+						group_transitions = [
+						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
+						loop_animation = false
+						markers = [
+							{
+								_id = "a6f77b1b-c6fa-4c65-98a0-1ef39980572b"
+								_name = "flowevent_cinematics_ed_effect_ctf"
+								_time = 1.56167032580815
+								time = 1.56167032580815
+								type = "trigger"
+							}
+						]
+						muted_layers = [
+						]
+						offset_state = false
+						randomization_type = "every_loop"
+						root_driving = "ignore"
+						speed = "1"
+						transitions = [
+							{
+								_id = "a7d18dbf-a908-4383-8bb1-5a2781c98df8"
+								actual_target_ref = {
+									_id = "dee7696b-6d26-4a89-88e2-15e6300ab2a3"
+									ref_filename = null
+									ref_id = null
+								}
+								blend_time = 0
+								event_ref = {
+									_id = "7c17fe5f-7514-4784-a054-2ad4f2c12f84"
+									ref_filename = null
+									ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+								}
+								has_nested_from = false
+								mode = "direct"
+								nested_from_ref = {
+									_id = "50ba27f1-dcf0-48dc-a5b1-9c2a0969d115"
+									ref_filename = null
+									ref_id = null
+								}
+								on_beat = ""
+								to_state_ref = {
+									_id = "b29578bb-9c21-49dc-bc56-0a5047a255ea"
+									ref_filename = null
+									ref_id = "687fb64e-004a-474b-95ff-952019839307"
+								}
+							}
+						]
+						weights = [
+							"1.0"
+						]
+						width = 150
+						x = 560
+						y = 100
+					}
+				]
+				time_states = [
+				]
+				transitions = [
+				]
+				width = 150
+				x = 200
+				y = -60
 			}
 		]
 		notes = [
@@ -2547,6 +3122,9 @@ layers = [
 				}
 				group_transitions = [
 				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
 				loop_animation = true
 				markers = [
 				]
@@ -2611,6 +3189,33 @@ layers = [
 							ref_id = "dad9652a-6859-40ba-bf10-28833c57076d"
 						}
 					}
+					{
+						_id = "0911fe46-a957-45cb-90ad-3c650f0e239c"
+						actual_target_ref = {
+							_id = "08b32daa-ae03-4ee1-ad05-4544e75fe7f3"
+							ref_filename = null
+							ref_id = "aedbbc42-afd6-4125-b8bb-32808bc29683"
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "cb742356-510c-4c78-852a-c6006e4be36b"
+							ref_filename = null
+							ref_id = "471e7d1e-1122-4946-8641-fa525f5bed70"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "61b017dc-472a-4717-82dd-d72b1363dc00"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "1970bde8-7c93-44e3-bcc2-3befebccc97e"
+							ref_filename = null
+							ref_id = "32f22119-5022-4bc0-8b93-27cb1b9ebc8a"
+						}
+					}
 				]
 				weights = [
 					"1.0"
@@ -2626,7 +3231,14 @@ layers = [
 	{
 		_id = "1842b6f3-e2bc-4023-bfe5-ead94c6fd526"
 		_name = "Layer_Eye"
+		anim_blend_set_ref = {
+			_id = "d3d2e36a-9c2f-4796-aef4-67b05e4336ef"
+			ref_filename = null
+			ref_id = null
+		}
 		blend_states = [
+		]
+		constraints = [
 		]
 		default_state_ref = {
 			_id = "eed0a95e-7226-4f07-b356-e5e0e17969fd"
@@ -2653,6 +3265,9 @@ layers = [
 				}
 				group_transitions = [
 				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
 				loop_animation = true
 				markers = [
 				]
@@ -2687,7 +3302,14 @@ layers = [
 	{
 		_id = "3c973f6b-f78f-4ff9-a0d8-78f24552a795"
 		_name = "Layer_Face"
+		anim_blend_set_ref = {
+			_id = "8b921b9d-a87b-4446-9dea-f6690b854f1b"
+			ref_filename = null
+			ref_id = null
+		}
 		blend_states = [
+		]
+		constraints = [
 		]
 		default_state_ref = {
 			_id = "06e5c2b3-6fe7-49f4-a9e0-990271fc1805"
@@ -2714,6 +3336,9 @@ layers = [
 				}
 				group_transitions = [
 				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
 				loop_animation = true
 				markers = [
 				]

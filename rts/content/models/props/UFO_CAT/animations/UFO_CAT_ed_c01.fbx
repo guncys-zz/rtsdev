@@ -9,12 +9,12 @@ FBXHeaderExtension:  {
 	CreationTimeStamp:  {
 		Version: 1000
 		Year: 2016
-		Month: 4
-		Day: 13
-		Hour: 23
-		Minute: 56
-		Second: 5
-		Millisecond: 772
+		Month: 5
+		Day: 15
+		Hour: 21
+		Minute: 35
+		Second: 21
+		Millisecond: 246
 	}
 	Creator: "FBX SDK/FBX Plugins version 2016.0"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -30,19 +30,19 @@ FBXHeaderExtension:  {
 			Comment: ""
 		}
 		Properties70:  {
-			P: "DocumentUrl", "KString", "Url", "", "D:\Work\home\maya\projects\guncys_stingray\scenes\cameraTest\cam.fbx"
-			P: "SrcDocumentUrl", "KString", "Url", "", "D:\Work\home\maya\projects\guncys_stingray\scenes\cameraTest\cam.fbx"
+			P: "DocumentUrl", "KString", "Url", "", "D:\Work\GUNCYS\P4Workspace\projects\RoadToStingray\Shots\ED\c001\UFO_CAT_ed_c01.fbx"
+			P: "SrcDocumentUrl", "KString", "Url", "", "D:\Work\GUNCYS\P4Workspace\projects\RoadToStingray\Shots\ED\c001\UFO_CAT_ed_c01.fbx"
 			P: "Original", "Compound", "", ""
 			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "Original|ApplicationName", "KString", "", "", "Maya"
 			P: "Original|ApplicationVersion", "KString", "", "", "2016"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "13/04/2016 14:56:05.771"
-			P: "Original|FileName", "KString", "", "", "D:/Work/home/maya/projects/guncys_stingray/scenes/cameraTest/cam.fbx"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "15/05/2016 12:35:21.245"
+			P: "Original|FileName", "KString", "", "", "D:/Work/GUNCYS/P4Workspace/projects/RoadToStingray/Shots/ED/c001/UFO_CAT_ed_c01.fbx"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "LastSaved|ApplicationName", "KString", "", "", "Maya"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "2016"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "13/04/2016 14:56:05.771"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "15/05/2016 12:35:21.245"
 		}
 	}
 }
@@ -60,12 +60,12 @@ GlobalSettings:  {
 		P: "UnitScaleFactor", "double", "Number", "",1
 		P: "OriginalUnitScaleFactor", "double", "Number", "",1
 		P: "AmbientColor", "ColorRGB", "Color", "",0,0,0
-		P: "DefaultCamera", "KString", "", "", "camera1"
+		P: "DefaultCamera", "KString", "", "", "Producer Perspective"
 		P: "TimeMode", "enum", "", "",6
 		P: "TimeProtocol", "enum", "", "",2
 		P: "SnapOnFrameMode", "enum", "", "",0
-		P: "TimeSpanStart", "KTime", "Time", "",0
-		P: "TimeSpanStop", "KTime", "Time", "",461861580000
+		P: "TimeSpanStart", "KTime", "Time", "",1539538600
+		P: "TimeSpanStop", "KTime", "Time", "",30790772000
 		P: "CustomFrameRate", "double", "Number", "",-1
 		P: "TimeMarker", "Compound", "", ""
 		P: "CurrentTimeMarker", "int", "Integer", "",-1
@@ -77,7 +77,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 1533071152, "", "Scene" {
+	Document: 1296142736, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", "Take 001"
@@ -97,7 +97,7 @@ References:  {
 
 Definitions:  {
 	Version: 100
-	Count: 5
+	Count: 13
 	ObjectType: "GlobalSettings" {
 		Count: 1
 	}
@@ -131,114 +131,11 @@ Definitions:  {
 	}
 	ObjectType: "NodeAttribute" {
 		Count: 1
-		PropertyTemplate: "FbxCamera" {
+		PropertyTemplate: "FbxSkeleton" {
 			Properties70:  {
 				P: "Color", "ColorRGB", "Color", "",0.8,0.8,0.8
-				P: "Position", "Vector", "", "A",0,0,0
-				P: "UpVector", "Vector", "", "A",0,1,0
-				P: "InterestPosition", "Vector", "", "A",0,0,0
-				P: "Roll", "Roll", "", "A",0
-				P: "OpticalCenterX", "OpticalCenterX", "", "A",0
-				P: "OpticalCenterY", "OpticalCenterY", "", "A",0
-				P: "BackgroundColor", "Color", "", "A",0.63,0.63,0.63
-				P: "TurnTable", "Number", "", "A",0
-				P: "DisplayTurnTableIcon", "bool", "", "",0
-				P: "UseMotionBlur", "bool", "", "",0
-				P: "UseRealTimeMotionBlur", "bool", "", "",1
-				P: "Motion Blur Intensity", "Number", "", "A",1
-				P: "AspectRatioMode", "enum", "", "",0
-				P: "AspectWidth", "double", "Number", "",320
-				P: "AspectHeight", "double", "Number", "",200
-				P: "PixelAspectRatio", "double", "Number", "",1
-				P: "FilmOffsetX", "Number", "", "A",0
-				P: "FilmOffsetY", "Number", "", "A",0
-				P: "FilmWidth", "double", "Number", "",0.816
-				P: "FilmHeight", "double", "Number", "",0.612
-				P: "FilmAspectRatio", "double", "Number", "",1.33333333333333
-				P: "FilmSqueezeRatio", "double", "Number", "",1
-				P: "FilmFormatIndex", "enum", "", "",0
-				P: "PreScale", "Number", "", "A",1
-				P: "FilmTranslateX", "Number", "", "A",0
-				P: "FilmTranslateY", "Number", "", "A",0
-				P: "FilmRollPivotX", "Number", "", "A",0
-				P: "FilmRollPivotY", "Number", "", "A",0
-				P: "FilmRollValue", "Number", "", "A",0
-				P: "FilmRollOrder", "enum", "", "",0
-				P: "ApertureMode", "enum", "", "",2
-				P: "GateFit", "enum", "", "",0
-				P: "FieldOfView", "FieldOfView", "", "A",25.1149997711182
-				P: "FieldOfViewX", "FieldOfViewX", "", "A",40
-				P: "FieldOfViewY", "FieldOfViewY", "", "A",40
-				P: "FocalLength", "Number", "", "A",34.8932762167263
-				P: "CameraFormat", "enum", "", "",0
-				P: "UseFrameColor", "bool", "", "",0
-				P: "FrameColor", "ColorRGB", "Color", "",0.3,0.3,0.3
-				P: "ShowName", "bool", "", "",1
-				P: "ShowInfoOnMoving", "bool", "", "",1
-				P: "ShowGrid", "bool", "", "",1
-				P: "ShowOpticalCenter", "bool", "", "",0
-				P: "ShowAzimut", "bool", "", "",1
-				P: "ShowTimeCode", "bool", "", "",0
-				P: "ShowAudio", "bool", "", "",0
-				P: "AudioColor", "Vector3D", "Vector", "",0,1,0
-				P: "NearPlane", "double", "Number", "",10
-				P: "FarPlane", "double", "Number", "",4000
-				P: "AutoComputeClipPanes", "bool", "", "",0
-				P: "ViewCameraToLookAt", "bool", "", "",1
-				P: "ViewFrustumNearFarPlane", "bool", "", "",0
-				P: "ViewFrustumBackPlaneMode", "enum", "", "",2
-				P: "BackPlaneDistance", "Number", "", "A",4000
-				P: "BackPlaneDistanceMode", "enum", "", "",1
-				P: "ViewFrustumFrontPlaneMode", "enum", "", "",2
-				P: "FrontPlaneDistance", "Number", "", "A",10
-				P: "FrontPlaneDistanceMode", "enum", "", "",1
-				P: "LockMode", "bool", "", "",0
-				P: "LockInterestNavigation", "bool", "", "",0
-				P: "BackPlateFitImage", "bool", "", "",0
-				P: "BackPlateCrop", "bool", "", "",0
-				P: "BackPlateCenter", "bool", "", "",1
-				P: "BackPlateKeepRatio", "bool", "", "",1
-				P: "BackgroundAlphaTreshold", "double", "Number", "",0.5
-				P: "ShowBackplate", "bool", "", "",1
-				P: "BackPlaneOffsetX", "Number", "", "A",0
-				P: "BackPlaneOffsetY", "Number", "", "A",0
-				P: "BackPlaneRotation", "Number", "", "A",0
-				P: "BackPlaneScaleX", "Number", "", "A",1
-				P: "BackPlaneScaleY", "Number", "", "A",1
-				P: "Background Texture", "object", "", ""
-				P: "FrontPlateFitImage", "bool", "", "",1
-				P: "FrontPlateCrop", "bool", "", "",0
-				P: "FrontPlateCenter", "bool", "", "",1
-				P: "FrontPlateKeepRatio", "bool", "", "",1
-				P: "Foreground Opacity", "double", "Number", "",1
-				P: "ShowFrontplate", "bool", "", "",1
-				P: "FrontPlaneOffsetX", "Number", "", "A",0
-				P: "FrontPlaneOffsetY", "Number", "", "A",0
-				P: "FrontPlaneRotation", "Number", "", "A",0
-				P: "FrontPlaneScaleX", "Number", "", "A",1
-				P: "FrontPlaneScaleY", "Number", "", "A",1
-				P: "Foreground Texture", "object", "", ""
-				P: "DisplaySafeArea", "bool", "", "",0
-				P: "DisplaySafeAreaOnRender", "bool", "", "",0
-				P: "SafeAreaDisplayStyle", "enum", "", "",1
-				P: "SafeAreaAspectRatio", "double", "Number", "",1.33333333333333
-				P: "Use2DMagnifierZoom", "bool", "", "",0
-				P: "2D Magnifier Zoom", "Number", "", "A",100
-				P: "2D Magnifier X", "Number", "", "A",50
-				P: "2D Magnifier Y", "Number", "", "A",50
-				P: "CameraProjectionType", "enum", "", "",0
-				P: "OrthoZoom", "double", "Number", "",1
-				P: "UseRealTimeDOFAndAA", "bool", "", "",0
-				P: "UseDepthOfField", "bool", "", "",0
-				P: "FocusSource", "enum", "", "",0
-				P: "FocusAngle", "double", "Number", "",3.5
-				P: "FocusDistance", "double", "Number", "",200
-				P: "UseAntialiasing", "bool", "", "",0
-				P: "AntialiasingIntensity", "double", "Number", "",0.77777
-				P: "AntialiasingMethod", "enum", "", "",0
-				P: "UseAccumulationBuffer", "bool", "", "",0
-				P: "FrameSamplingCount", "int", "Integer", "",7
-				P: "FrameSamplingType", "enum", "", "",1
+				P: "Size", "double", "Number", "",100
+				P: "LimbLength", "double", "Number", "H",1
 			}
 		}
 	}
@@ -320,58 +217,145 @@ Definitions:  {
 			}
 		}
 	}
+	ObjectType: "AnimationCurveNode" {
+		Count: 5
+		PropertyTemplate: "FbxAnimCurveNode" {
+			Properties70:  {
+				P: "d", "Compound", "", ""
+			}
+		}
+	}
+	ObjectType: "AnimationCurve" {
+		Count: 3
+	}
 }
 
 ; Object properties
 ;------------------------------------------------------------------
 
 Objects:  {
-	NodeAttribute: 1541582176, "NodeAttribute::cam", "Camera" {
+	NodeAttribute: 1303579424, "NodeAttribute::", "LimbNode" {
 		Properties70:  {
-			P: "InterestPosition", "Vector", "", "A",0,0,-5
-			P: "BackgroundColor", "Color", "", "A",0,0,0
-			P: "AspectWidth", "double", "Number", "",1280
-			P: "AspectHeight", "double", "Number", "",720
-			P: "FilmWidth", "double", "Number", "",1.41732
-			P: "FilmHeight", "double", "Number", "",0.94488
-			P: "FilmAspectRatio", "double", "Number", "",1.5
-			P: "ApertureMode", "enum", "", "",3
-			P: "GateFit", "enum", "", "",3
-			P: "FocalLength", "Number", "", "A",35
-			P: "NearPlane", "double", "Number", "",0.1
-			P: "FarPlane", "double", "Number", "",10000
-			P: "AutoComputeClipPanes", "bool", "", "",1
-			P: "FocusDistance", "double", "Number", "",5
+			P: "Size", "double", "Number", "",1666.66666666667
 		}
-		TypeFlags: "Camera"
-		GeometryVersion: 124
-		Position: 0,0,0
-		Up: 0,1,0
-		LookAt: 0,0,-5
-		ShowInfoOnMoving: 1
-		ShowAudio: 0
-		AudioColor: 0,1,0
-		CameraOrthoZoom: 1
+		TypeFlags: "Skeleton"
 	}
-	Model: 1409459008, "Model::cam", "Camera" {
+	Model: 1299145520, "Model::UFO_CAT_Root", "LimbNode" {
 		Version: 232
 		Properties70:  {
-			P: "PostRotation", "Vector3D", "Vector", "",0,-90,0
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
 			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "lockInfluenceWeights", "Bool", "", "A+U",0
+			P: "filmboxTypeID", "Short", "", "A+UH",5,5,5
 		}
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	AnimationStack: 1416810880, "AnimStack::Take 001", "" {
+	AnimationStack: 524716624, "AnimStack::Take 001", "" {
 		Properties70:  {
-			P: "LocalStop", "KTime", "Time", "",461861580000
-			P: "ReferenceStop", "KTime", "Time", "",461861580000
+			P: "LocalStart", "KTime", "Time", "",1539538600
+			P: "LocalStop", "KTime", "Time", "",30790772000
+			P: "ReferenceStart", "KTime", "Time", "",1539538600
+			P: "ReferenceStop", "KTime", "Time", "",30790772000
 		}
 	}
-	AnimationLayer: 187517136, "AnimLayer::BaseLayer", "" {
+	AnimationLayer: 517461968, "AnimLayer::BaseLayer", "" {
+	}
+	AnimationCurveNode: 524721616, "AnimCurveNode::lockInfluenceWeights", "" {
+		Properties70:  {
+			P: "d|lockInfluenceWeights", "Bool", "", "A",0
+		}
+	}
+	AnimationCurveNode: 524721200, "AnimCurveNode::filmboxTypeID", "" {
+		Properties70:  {
+			P: "d|filmboxTypeID", "Short", "", "A",5
+		}
+	}
+	AnimationCurveNode: 524720992, "AnimCurveNode::T", "" {
+		Properties70:  {
+			P: "d|X", "Number", "", "A",0
+			P: "d|Y", "Number", "", "A",0
+			P: "d|Z", "Number", "", "A",0
+		}
+	}
+	AnimationCurveNode: 524720784, "AnimCurveNode::S", "" {
+		Properties70:  {
+			P: "d|X", "Number", "", "A",1
+			P: "d|Y", "Number", "", "A",1
+			P: "d|Z", "Number", "", "A",1
+		}
+	}
+	AnimationCurveNode: 524720576, "AnimCurveNode::R", "" {
+		Properties70:  {
+			P: "d|X", "Number", "", "A",0
+			P: "d|Y", "Number", "", "A",-0
+			P: "d|Z", "Number", "", "A",0
+		}
+	}
+	AnimationCurve: 1299614576, "AnimCurve::", "" {
+		Default: 0
+		KeyVer: 4008
+		KeyTime: *20 {
+			a: 1539538600,3079077200,4618615800,6158154400,7697693000,9237231600,10776770200,12316308800,13855847400,15395386000,16934924600,18474463200,20014001800,21553540400,23093079000,24632617600,26172156200,27711694800,29251233400,30790772000
+		} 
+		KeyValueFloat: *20 {
+			a: 0,0.007430749,0.02864216,0.06201297,0.1059219,0.1587478,0.2188693,0.2846653,0.3545143,0.4267952,0.4998868,0.5721677,0.6420167,0.7078126,0.7679341,0.82076,0.864669,0.8980398,0.9192512,0.9266819
+		} 
+		;KeyAttrFlags: Cubic|TangeantAuto|GenericTimeIndependent|GenericClampProgressive
+		KeyAttrFlags: *1 {
+			a: 24840
+		} 
+		;KeyAttrDataFloat: RightAuto:0, NextLeftAuto:0
+		KeyAttrDataFloat: *4 {
+			a: 0,0,218434821,0
+		} 
+		KeyAttrRefCount: *1 {
+			a: 20
+		} 
+	}
+	AnimationCurve: 1299597616, "AnimCurve::", "" {
+		Default: 0
+		KeyVer: 4008
+		KeyTime: *20 {
+			a: 1539538600,3079077200,4618615800,6158154400,7697693000,9237231600,10776770200,12316308800,13855847400,15395386000,16934924600,18474463200,20014001800,21553540400,23093079000,24632617600,26172156200,27711694800,29251233400,30790772000
+		} 
+		KeyValueFloat: *20 {
+			a: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+		} 
+		;KeyAttrFlags: Cubic|TangeantAuto|GenericTimeIndependent|GenericClampProgressive
+		KeyAttrFlags: *1 {
+			a: 24840
+		} 
+		;KeyAttrDataFloat: RightAuto:0, NextLeftAuto:0
+		KeyAttrDataFloat: *4 {
+			a: 0,0,218434821,0
+		} 
+		KeyAttrRefCount: *1 {
+			a: 20
+		} 
+	}
+	AnimationCurve: 1299605296, "AnimCurve::", "" {
+		Default: 0
+		KeyVer: 4008
+		KeyTime: *20 {
+			a: 1539538600,3079077200,4618615800,6158154400,7697693000,9237231600,10776770200,12316308800,13855847400,15395386000,16934924600,18474463200,20014001800,21553540400,23093079000,24632617600,26172156200,27711694800,29251233400,30790772000
+		} 
+		KeyValueFloat: *20 {
+			a: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+		} 
+		;KeyAttrFlags: Cubic|TangeantAuto|GenericTimeIndependent|GenericClampProgressive
+		KeyAttrFlags: *1 {
+			a: 24840
+		} 
+		;KeyAttrDataFloat: RightAuto:0, NextLeftAuto:0
+		KeyAttrDataFloat: *4 {
+			a: 0,0,218434821,0
+		} 
+		KeyAttrRefCount: *1 {
+			a: 20
+		} 
 	}
 }
 
@@ -380,14 +364,53 @@ Objects:  {
 
 Connections:  {
 	
-	;Model::cam, Model::RootNode
-	C: "OO",1409459008,0
+	;Model::UFO_CAT_Root, Model::RootNode
+	C: "OO",1299145520,0
 	
 	;AnimLayer::BaseLayer, AnimStack::Take 001
-	C: "OO",187517136,1416810880
+	C: "OO",517461968,524716624
 	
-	;NodeAttribute::cam, Model::cam
-	C: "OO",1541582176,1409459008
+	;AnimCurveNode::lockInfluenceWeights, AnimLayer::BaseLayer
+	C: "OO",524721616,517461968
+	
+	;AnimCurveNode::filmboxTypeID, AnimLayer::BaseLayer
+	C: "OO",524721200,517461968
+	
+	;AnimCurveNode::T, AnimLayer::BaseLayer
+	C: "OO",524720992,517461968
+	
+	;AnimCurveNode::S, AnimLayer::BaseLayer
+	C: "OO",524720784,517461968
+	
+	;AnimCurveNode::R, AnimLayer::BaseLayer
+	C: "OO",524720576,517461968
+	
+	;NodeAttribute::, Model::UFO_CAT_Root
+	C: "OO",1303579424,1299145520
+	
+	;AnimCurveNode::T, Model::UFO_CAT_Root
+	C: "OP",524720992,1299145520, "Lcl Translation"
+	
+	;AnimCurveNode::R, Model::UFO_CAT_Root
+	C: "OP",524720576,1299145520, "Lcl Rotation"
+	
+	;AnimCurveNode::S, Model::UFO_CAT_Root
+	C: "OP",524720784,1299145520, "Lcl Scaling"
+	
+	;AnimCurveNode::lockInfluenceWeights, Model::UFO_CAT_Root
+	C: "OP",524721616,1299145520, "lockInfluenceWeights"
+	
+	;AnimCurveNode::filmboxTypeID, Model::UFO_CAT_Root
+	C: "OP",524721200,1299145520, "filmboxTypeID"
+	
+	;AnimCurve::, AnimCurveNode::T
+	C: "OP",1299614576,524720992, "d|X"
+	
+	;AnimCurve::, AnimCurveNode::T
+	C: "OP",1299597616,524720992, "d|Y"
+	
+	;AnimCurve::, AnimCurveNode::T
+	C: "OP",1299605296,524720992, "d|Z"
 }
 ;Takes section
 ;----------------------------------------------------
@@ -396,7 +419,7 @@ Takes:  {
 	Current: "Take 001"
 	Take: "Take 001" {
 		FileName: "Take_001.tak"
-		LocalTime: 0,461861580000
-		ReferenceTime: 0,461861580000
+		LocalTime: 1539538600,30790772000
+		ReferenceTime: 1539538600,30790772000
 	}
 }
