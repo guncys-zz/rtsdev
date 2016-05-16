@@ -59,20 +59,23 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="bgm_2_1" ID="{DF7F5812-2A28-4403-B84D-24C3B638F5C6}" ShortID="746584124">
+										<MusicTrack Name="bgm_3_1" ID="{9B4AF790-E1BA-47D9-A10E-38AA526E2817}" ShortID="939518207">
 											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="bgm_2_1 " ID="{BB32FE68-CD2B-432F-8F9A-5A86E7AB0ECC}" ShortID="931110851">
+												<AudioFileSource Name="bgm_3_1" ID="{8A5A0D96-1E96-4A71-8417-5158A54ED049}" ShortID="407460578">
 													<Language>SFX</Language>
-													<AudioFile>bgm_2_1 .wav</AudioFile>
+													<AudioFile>bgm_3_1.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
-												<MusicTransition Name="Root" ID="{C04858F9-E443-4D19-8736-8064198E81E1}">
+												<MusicTransition Name="Root" ID="{620F7A67-E1D1-4E9E-BD81-8C8EDCE622F0}">
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
@@ -80,15 +83,15 @@
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{254F9638-2B63-4EAA-84AF-7046A49C794B}">
+												<MusicTrackSequence Name="" ID="{51553F83-62CE-41F7-8FCC-D3A2DEA330A5}">
 													<ClipList>
-														<MusicClip Name="bgm_2_1 " ID="{78BEF901-BF9B-47F1-A785-214C88C2E00F}">
+														<MusicClip Name="bgm_3_1" ID="{85445883-7359-4715-86C7-9475C17E23A5}">
 															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="85479.4583333333"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="78545.4583333333"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
-															<AudioSourceRef Name="bgm_2_1 " ID="{BB32FE68-CD2B-432F-8F9A-5A86E7AB0ECC}"/>
+															<AudioSourceRef Name="bgm_3_1" ID="{8A5A0D96-1E96-4A71-8417-5158A54ED049}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -144,7 +147,7 @@
 							<ChildrenList>
 								<MusicSegment Name="BGM_2" ID="{F023132E-768A-4091-BCFB-D705FE389367}" ShortID="479310179">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="56195.1041666667"/>
+										<Property Name="EndPosition" Type="Real64" Value="59586.2083333333"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -155,20 +158,23 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="bgm_2_2" ID="{7FB22CAC-8EA4-42ED-A594-C20C5C2E5C3C}" ShortID="145705915">
+										<MusicTrack Name="bgm_3_2" ID="{556B3ABB-203A-4B2A-9E16-6E47BDC7DF5A}" ShortID="1002350243">
 											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="bgm_2_2" ID="{60DDE473-B7FE-4725-99C4-3E7D5CCDC034}" ShortID="166489343">
+												<AudioFileSource Name="bgm_3_2" ID="{5A42D94C-00D7-4B96-878E-6EA592248DD3}" ShortID="1057127781">
 													<Language>SFX</Language>
-													<AudioFile>bgm_2_2.wav</AudioFile>
+													<AudioFile>bgm_3_2.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
-												<MusicTransition Name="Root" ID="{E604B5D5-90C0-491E-85CA-3089CA7C6CCB}">
+												<MusicTransition Name="Root" ID="{6561DC95-1935-46E4-82B4-646160186302}">
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
@@ -176,15 +182,15 @@
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{5A6EB63E-B131-4FF2-B9B1-B9A4EACE053F}">
+												<MusicTrackSequence Name="" ID="{FAD63C0E-1313-4167-AE5B-7D94B05F97B0}">
 													<ClipList>
-														<MusicClip Name="bgm_2_2" ID="{DA93B9FA-0A36-4472-B392-1B5D4944D665}">
+														<MusicClip Name="bgm_3_2" ID="{4D8E855D-C6DE-4D6F-8D05-324653B981A9}">
 															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="56195.1041666667"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="59586.2083333333"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
-															<AudioSourceRef Name="bgm_2_2" ID="{60DDE473-B7FE-4725-99C4-3E7D5CCDC034}"/>
+															<AudioSourceRef Name="bgm_3_2" ID="{5A42D94C-00D7-4B96-878E-6EA592248DD3}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -558,20 +564,26 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="bgm_3_1" ID="{9B4AF790-E1BA-47D9-A10E-38AA526E2817}" ShortID="939518207">
+										<MusicTrack Name="bgm_4_1" ID="{1680B7C7-AA29-4E72-A841-03025993A32C}" ShortID="648134938">
 											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="bgm_3_1" ID="{8A5A0D96-1E96-4A71-8417-5158A54ED049}" ShortID="407460578">
+												<AudioFileSource Name="bgm_4_1" ID="{3D3E87DE-BEE1-4A70-8B4B-EB6D003EBE93}" ShortID="986105739">
 													<Language>SFX</Language>
-													<AudioFile>bgm_3_1.wav</AudioFile>
+													<AudioFile>bgm_4_1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="193401151"/>
+													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
-												<MusicTransition Name="Root" ID="{620F7A67-E1D1-4E9E-BD81-8C8EDCE622F0}">
+												<MusicTransition Name="Root" ID="{AD74D8DF-C67D-46E7-A0DA-986699F925E2}">
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
@@ -579,15 +591,15 @@
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{51553F83-62CE-41F7-8FCC-D3A2DEA330A5}">
+												<MusicTrackSequence Name="" ID="{9F89E58D-6E32-46C1-813A-6EC8B26707EB}">
 													<ClipList>
-														<MusicClip Name="bgm_3_1" ID="{85445883-7359-4715-86C7-9475C17E23A5}">
+														<MusicClip Name="bgm_4_1" ID="{D784B324-3585-4C83-8C7F-C16E54E8199A}">
 															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="78545.4583333333"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="68717.9375"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
-															<AudioSourceRef Name="bgm_3_1" ID="{8A5A0D96-1E96-4A71-8417-5158A54ED049}"/>
+															<AudioSourceRef Name="bgm_4_1" ID="{3D3E87DE-BEE1-4A70-8B4B-EB6D003EBE93}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -654,20 +666,23 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="bgm_3_2" ID="{556B3ABB-203A-4B2A-9E16-6E47BDC7DF5A}" ShortID="1002350243">
+										<MusicTrack Name="bgm_4_2" ID="{40B570C2-5BE6-4B38-BABF-B0D56520C873}" ShortID="259027349">
 											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="bgm_3_2" ID="{5A42D94C-00D7-4B96-878E-6EA592248DD3}" ShortID="1057127781">
+												<AudioFileSource Name="bgm_4_2" ID="{7B584E78-8A2E-403F-96C6-520C93B787AE}" ShortID="8337968">
 													<Language>SFX</Language>
-													<AudioFile>bgm_3_2.wav</AudioFile>
+													<AudioFile>bgm_4_2.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
-												<MusicTransition Name="Root" ID="{6561DC95-1935-46E4-82B4-646160186302}">
+												<MusicTransition Name="Root" ID="{FEC0D8AA-85DE-43DC-9BAB-024942155966}">
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
@@ -675,15 +690,15 @@
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{FAD63C0E-1313-4167-AE5B-7D94B05F97B0}">
+												<MusicTrackSequence Name="" ID="{F56E9161-6BD8-4C0D-8545-CB8765BAD293}">
 													<ClipList>
-														<MusicClip Name="bgm_3_2" ID="{4D8E855D-C6DE-4D6F-8D05-324653B981A9}">
+														<MusicClip Name="bgm_4_2" ID="{2A4B7541-3908-487F-BB36-35EBB36DB0CA}">
 															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="59586.2083333333"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="38625"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
-															<AudioSourceRef Name="bgm_3_2" ID="{5A42D94C-00D7-4B96-878E-6EA592248DD3}"/>
+															<AudioSourceRef Name="bgm_4_2" ID="{7B584E78-8A2E-403F-96C6-520C93B787AE}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -803,23 +818,23 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="bgm_4_1" ID="{1680B7C7-AA29-4E72-A841-03025993A32C}" ShortID="648134938">
+										<MusicTrack Name="bgm_5_1" ID="{4C0B282D-1981-469E-9A21-EEEFB0545866}" ShortID="452877730">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="bgm_4_1" ID="{3D3E87DE-BEE1-4A70-8B4B-EB6D003EBE93}" ShortID="986105739">
+												<AudioFileSource Name="bgm_5_1" ID="{B341CB24-19C7-4A31-9EEB-A429ADC54DFB}" ShortID="1031087696">
 													<Language>SFX</Language>
-													<AudioFile>bgm_4_1.wav</AudioFile>
+													<AudioFile>bgm_5_1.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="193401151"/>
+														<File ID="967914306"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
-												<MusicTransition Name="Root" ID="{AD74D8DF-C67D-46E7-A0DA-986699F925E2}">
+												<MusicTransition Name="Root" ID="{9D1DD9C4-2232-4C77-9D57-E88341BAD97C}">
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
@@ -827,15 +842,15 @@
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{9F89E58D-6E32-46C1-813A-6EC8B26707EB}">
+												<MusicTrackSequence Name="" ID="{A44DE0DA-A08E-48EE-9900-32DAB3866019}">
 													<ClipList>
-														<MusicClip Name="bgm_4_1" ID="{D784B324-3585-4C83-8C7F-C16E54E8199A}">
+														<MusicClip Name="bgm_5_1" ID="{03DA2EE5-D4C4-4E93-AF5F-A7A573CBEDEB}">
 															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="68717.9375"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="68571.3541666667"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
-															<AudioSourceRef Name="bgm_4_1" ID="{3D3E87DE-BEE1-4A70-8B4B-EB6D003EBE93}"/>
+															<AudioSourceRef Name="bgm_5_1" ID="{B341CB24-19C7-4A31-9EEB-A429ADC54DFB}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -902,20 +917,23 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="bgm_4_2" ID="{40B570C2-5BE6-4B38-BABF-B0D56520C873}" ShortID="259027349">
+										<MusicTrack Name="bgm_5_2" ID="{EB0EDCC7-9ABD-48EA-BF94-F182BC8F831B}" ShortID="598907222">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="bgm_4_2" ID="{7B584E78-8A2E-403F-96C6-520C93B787AE}" ShortID="8337968">
+												<AudioFileSource Name="bgm_5_2" ID="{13903B31-11D5-499A-A270-C079F9D114A8}" ShortID="931733106">
 													<Language>SFX</Language>
-													<AudioFile>bgm_4_2.wav</AudioFile>
+													<AudioFile>bgm_5_2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="597989343"/>
+													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
-												<MusicTransition Name="Root" ID="{FEC0D8AA-85DE-43DC-9BAB-024942155966}">
+												<MusicTransition Name="Root" ID="{65F54D6C-DF2D-455F-AC65-D4663770024F}">
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
@@ -923,15 +941,15 @@
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{F56E9161-6BD8-4C0D-8545-CB8765BAD293}">
+												<MusicTrackSequence Name="" ID="{70BA1B3A-1154-448B-9B75-00735C7CDAE2}">
 													<ClipList>
-														<MusicClip Name="bgm_4_2" ID="{2A4B7541-3908-487F-BB36-35EBB36DB0CA}">
+														<MusicClip Name="bgm_5_2" ID="{D596CCDB-96B6-47B6-9DD3-AF3311880AEA}">
 															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="38625"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="47702.0833333333"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
-															<AudioSourceRef Name="bgm_4_2" ID="{7B584E78-8A2E-403F-96C6-520C93B787AE}"/>
+															<AudioSourceRef Name="bgm_5_2" ID="{13903B31-11D5-499A-A270-C079F9D114A8}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>

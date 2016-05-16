@@ -556,6 +556,7 @@ nodes = [
 	{
 		event_names = [
 			"ExitFlowEvent_PPK_jump"
+			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
 			"roll_exit"
 			"rolln_enter"
@@ -1125,6 +1126,11 @@ nodes = [
 					id = "ee4ff57b-bb01-4afa-9bc3-52497e79d04b:0"
 					node = "ee4ff57b-bb01-4afa-9bc3-52497e79d04b"
 				}
+				{
+					event = 0
+					id = "ae1ad32f-fae8-468d-acc9-b4329ce8f063:0"
+					node = "ae1ad32f-fae8-468d-acc9-b4329ce8f063"
+				}
 			]
 		}
 		type = "level_update"
@@ -1270,32 +1276,9 @@ nodes = [
 		}
 	}
 	{
-		id = "6f361b76-429e-458c-8bc7-b01a55fd2041"
-		in_variables = {
-			key = {
-				type = "string"
-			}
-			unit = {
-				node = "11111111-2222-3333-4444-555555555555"
-				type = "unit"
-				variable = "unit"
-			}
-		}
-		out_variables = {
-			value = {
-				type = "float"
-			}
-		}
-		type = "get_unit_numeric_data"
-		variable_values = {
-			key = "HP"
-			unit = null
-			value = null
-		}
-	}
-	{
 		event_names = [
 			"ExitFlowEvent_PPK_jump"
+			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
 			"roll_exit"
 			"rolln_enter"
@@ -1478,6 +1461,7 @@ nodes = [
 	{
 		event_names = [
 			"ExitFlowEvent_PPK_jump"
+			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
 			"roll_exit"
 			"rolln_enter"
@@ -1597,6 +1581,7 @@ nodes = [
 	{
 		event_names = [
 			"ExitFlowEvent_PPK_jump"
+			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
 			"roll_exit"
 			"rolln_enter"
@@ -2231,6 +2216,11 @@ nodes = [
 					id = "f0b4f2f1-f3fa-462f-8b1e-93ed3896e4be:0"
 					node = "f0b4f2f1-f3fa-462f-8b1e-93ed3896e4be"
 				}
+				{
+					event = 0
+					id = "46ff06d5-9a10-4f7a-9665-088bc2d66cbf:0"
+					node = "46ff06d5-9a10-4f7a-9665-088bc2d66cbf"
+				}
 			]
 			damage_exit = [
 				{
@@ -2250,6 +2240,7 @@ nodes = [
 	{
 		event_names = [
 			"ExitFlowEvent_PPK_jump"
+			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
 			"roll_exit"
 			"rolln_enter"
@@ -2389,6 +2380,7 @@ nodes = [
 	{
 		event_names = [
 			"ExitFlowEvent_PPK_jump"
+			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
 			"roll_exit"
 			"rolln_enter"
@@ -2409,26 +2401,6 @@ nodes = [
 		variable_values = {
 			animation_controller = "content/models/characters/PPK/PPK_m"
 		}
-	}
-	{
-		id = "ee4ff57b-bb01-4afa-9bc3-52497e79d04b"
-		out_events = {
-			out1 = [
-				{
-					event = 0
-					id = "c87c7756-7496-4c56-9d55-db5fc09bb57b:0"
-					node = "c87c7756-7496-4c56-9d55-db5fc09bb57b"
-				}
-			]
-			out2 = [
-				{
-					event = 0
-					id = "037b76ea-ecef-42c0-a556-60eb2957a2da:0"
-					node = "037b76ea-ecef-42c0-a556-60eb2957a2da"
-				}
-			]
-		}
-		type = "sequence"
 	}
 	{
 		id = "f114301c-c770-4081-bfbb-a4f91ec26d5e"
@@ -2894,6 +2866,250 @@ nodes = [
 		]
 		type = "custom_script_node"
 		variables = [
+		]
+	}
+	{
+		flow_nodes_resource = "core/wwise/wwise"
+		id = "46ff06d5-9a10-4f7a-9665-088bc2d66cbf"
+		in_variables = {
+			Existing_Source_Id = {
+				type = "float"
+			}
+			Name = {
+				type = "string"
+			}
+			Position = {
+				type = "vector3"
+			}
+			Unit = {
+				type = "unit"
+			}
+			Unit_Node = {
+				type = "string"
+			}
+		}
+		name = "Wwise Trigger Event"
+		query = false
+		return_values = [
+			{
+				name = "Playing_Id"
+				type = "float"
+			}
+			{
+				name = "Source_Id"
+				type = "float"
+			}
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Existing_Source_Id = null
+			Name = "SE_PPK_damage1"
+			Playing_Id = null
+			Position = null
+			Source_Id = null
+			Unit = null
+			Unit_Node = null
+		}
+		variables = [
+			{
+				name = "Unit"
+				type = "unit"
+			}
+			{
+				name = "Position"
+				type = "vector3"
+			}
+			{
+				name = "Name"
+				type = "string"
+			}
+			{
+				name = "Existing_Source_Id"
+				type = "float"
+			}
+			{
+				name = "Unit_Node"
+				type = "string"
+			}
+		]
+	}
+	{
+		id = "ee4ff57b-bb01-4afa-9bc3-52497e79d04b"
+		out_events = {
+			out1 = [
+				{
+					event = 0
+					id = "c87c7756-7496-4c56-9d55-db5fc09bb57b:0"
+					node = "c87c7756-7496-4c56-9d55-db5fc09bb57b"
+				}
+			]
+			out2 = [
+				{
+					event = 0
+					id = "037b76ea-ecef-42c0-a556-60eb2957a2da:0"
+					node = "037b76ea-ecef-42c0-a556-60eb2957a2da"
+				}
+			]
+		}
+		type = "sequence"
+	}
+	{
+		id = "6f361b76-429e-458c-8bc7-b01a55fd2041"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "get_unit_numeric_data"
+		variable_values = {
+			key = "HP"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "18cc37ed-1618-448d-8ca9-8b465a841726"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "get_unit_numeric_data"
+		variable_values = {
+			key = "HP"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "5f8af596-6f97-4731-9730-48300c134f72"
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_data"
+		variable_values = {
+			set = 1
+			value = null
+		}
+	}
+	{
+		id = "ae1ad32f-fae8-468d-acc9-b4329ce8f063"
+		in_variables = {
+			a = {
+				node = "18cc37ed-1618-448d-8ca9-8b465a841726"
+				type = "float"
+				variable = "value"
+			}
+			b = {
+				node = "5f8af596-6f97-4731-9730-48300c134f72"
+				type = "float"
+				variable = "value"
+			}
+		}
+		out_events = {
+			greater = [
+				{
+					event = 0
+					id = "95dad34a-9e56-4f20-b192-ed0d51ad58f4:0"
+					node = "95dad34a-9e56-4f20-b192-ed0d51ad58f4"
+				}
+			]
+			less_or_equal = [
+				{
+					event = 0
+					id = "3c12975a-ff3e-4239-9bb8-73758dda226f:0"
+					node = "3c12975a-ff3e-4239-9bb8-73758dda226f"
+				}
+			]
+		}
+		type = "compare_node"
+		variable_values = {
+			a = null
+			b = null
+		}
+	}
+	{
+		flow_nodes_resource = "core/wwise/wwise"
+		id = "3c12975a-ff3e-4239-9bb8-73758dda226f"
+		in_variables = {
+			Group = {
+				type = "string"
+			}
+			State = {
+				type = "string"
+			}
+		}
+		name = "Wwise Set State"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Group = "State_Player"
+			State = "State_Player_Hurry"
+		}
+		variables = [
+			{
+				name = "Group"
+				type = "string"
+			}
+			{
+				name = "State"
+				type = "string"
+			}
+		]
+	}
+	{
+		flow_nodes_resource = "core/wwise/wwise"
+		id = "95dad34a-9e56-4f20-b192-ed0d51ad58f4"
+		in_variables = {
+			Group = {
+				type = "string"
+			}
+			State = {
+				type = "string"
+			}
+		}
+		name = "Wwise Set State"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Group = "State_Player"
+			State = "State_Player_Normal"
+		}
+		variables = [
+			{
+				name = "Group"
+				type = "string"
+			}
+			{
+				name = "State"
+				type = "string"
+			}
 		]
 	}
 	{
