@@ -58,7 +58,7 @@
 					"DynamicProperties": {},
 					"Owner": {
 						"@meta": {
-							"@ref": 2075899428
+							"@ref": 240808242
 						}
 					},
 					"Name": "Animation",
@@ -69,7 +69,7 @@
 							"DynamicProperties": {},
 							"Owner": {
 								"@meta": {
-									"@ref": 1797630265
+									"@ref": 2377954763
 								}
 							},
 							"ChildLayers": [],
@@ -77,12 +77,13 @@
 							"Locked": false,
 							"ParentLayerId": "0",
 							"Expanded": true,
+							"Guide": false,
 							"pActor": {
 								"Id": "9014347335670047669",
 								"DynamicProperties": {},
 								"Owner": {
 									"@meta": {
-										"@ref": 3613505880
+										"@ref": 570512228
 									}
 								},
 								"Name": "background",
@@ -139,7 +140,7 @@
 										"DynamicProperties": {},
 										"Owner": {
 											"@meta": {
-												"@ref": 1241832062
+												"@ref": 3796044376
 											}
 										},
 										"Name": "Bitmap",
@@ -147,14 +148,15 @@
 										"Bitmap": "Sprites/loading_background.png",
 										"ResourcePersistent": false,
 										"@meta": {
-											"@id": 2512581095,
+											"@id": 2991377979,
 											"@typeid": 110556596
 										}
 									}
 								],
 								"Pivot": {
 									"x": 960.000000,
-									"y": 540.000000
+									"y": 540.000000,
+									"z": 0.000000
 								},
 								"BlendMode": 0,
 								"Scale9Enabled": false,
@@ -165,8 +167,9 @@
 									"y2": 0.000000
 								},
 								"Filters": [],
+								"Visible": true,
 								"@meta": {
-									"@id": 1241832062,
+									"@id": 3796044376,
 									"@typeid": 150545074
 								}
 							},
@@ -178,7 +181,7 @@
 									"DynamicProperties": {},
 									"Owner": {
 										"@meta": {
-											"@ref": 3613505880
+											"@ref": 570512228
 										}
 									},
 									"Transform": {
@@ -234,17 +237,18 @@
 									"TweenEasing": 0,
 									"Pivot": {
 										"x": 0.000000,
-										"y": 0.000000
+										"y": 0.000000,
+										"z": 0.000000
 									},
 									"HasTween": false,
 									"@meta": {
-										"@id": 2472444045,
+										"@id": 731689063,
 										"@typeid": 210448581
 									}
 								}
 							],
 							"@meta": {
-								"@id": 3613505880,
+								"@id": 570512228,
 								"@typeid": 199425826
 							}
 						},
@@ -253,7 +257,7 @@
 							"DynamicProperties": {},
 							"Owner": {
 								"@meta": {
-									"@ref": 1797630265
+									"@ref": 2377954763
 								}
 							},
 							"ChildLayers": [],
@@ -261,12 +265,13 @@
 							"Locked": false,
 							"ParentLayerId": "0",
 							"Expanded": true,
+							"Guide": false,
 							"pActor": {
 								"Id": "16326610902238608577",
 								"DynamicProperties": {},
 								"Owner": {
 									"@meta": {
-										"@ref": 1309901971
+										"@ref": 3545765283
 									}
 								},
 								"Name": "loading_anim",
@@ -323,7 +328,7 @@
 										"DynamicProperties": {},
 										"Owner": {
 											"@meta": {
-												"@ref": 4098517857
+												"@ref": 1828265040
 											}
 										},
 										"Name": "Animation",
@@ -334,7 +339,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 4101234174
+														"@ref": 1394065095
 													}
 												},
 												"ChildLayers": [],
@@ -342,12 +347,13 @@
 												"Locked": false,
 												"ParentLayerId": "0",
 												"Expanded": true,
+												"Guide": false,
 												"pActor": {
 													"Id": "5381553634814671049",
 													"DynamicProperties": {},
 													"Owner": {
 														"@meta": {
-															"@ref": 1957967066
+															"@ref": 1890226469
 														}
 													},
 													"Name": "load1",
@@ -404,7 +410,7 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 3114628189
+																	"@ref": 938711576
 																}
 															},
 															"Name": "Bitmap",
@@ -412,14 +418,15 @@
 															"Bitmap": "Sprites/Load1.png",
 															"ResourcePersistent": false,
 															"@meta": {
-																"@id": 4168119909,
+																"@id": 1059835579,
 																"@typeid": 110556596
 															}
 														}
 													],
 													"Pivot": {
 														"x": 442.000000,
-														"y": 448.000000
+														"y": 448.000000,
+														"z": 0.000000
 													},
 													"BlendMode": 0,
 													"Scale9Enabled": false,
@@ -430,8 +437,9 @@
 														"y2": 0.000000
 													},
 													"Filters": [],
+													"Visible": true,
 													"@meta": {
-														"@id": 3114628189,
+														"@id": 938711576,
 														"@typeid": 150545074
 													}
 												},
@@ -443,7 +451,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 1957967066
+																"@ref": 1890226469
 															}
 														},
 														"Transform": {
@@ -499,11 +507,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 50272876,
+															"@id": 2169323559,
 															"@typeid": 210448581
 														}
 													},
@@ -512,7 +521,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 1957967066
+																"@ref": 1890226469
 															}
 														},
 														"Transform": {
@@ -568,11 +577,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 1582890581,
+															"@id": 1185433891,
 															"@typeid": 210448581
 														}
 													},
@@ -581,7 +591,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 1957967066
+																"@ref": 1890226469
 															}
 														},
 														"Transform": {
@@ -637,11 +647,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 599000913,
+															"@id": 3872030475,
 															"@typeid": 210448581
 														}
 													},
@@ -650,7 +661,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 1957967066
+																"@ref": 1890226469
 															}
 														},
 														"Transform": {
@@ -706,11 +717,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 3910078541,
+															"@id": 2888140807,
 															"@typeid": 210448581
 														}
 													},
@@ -719,7 +731,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 1957967066
+																"@ref": 1890226469
 															}
 														},
 														"Transform": {
@@ -775,11 +787,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 2301707829,
+															"@id": 1904251139,
 															"@typeid": 210448581
 														}
 													},
@@ -788,7 +801,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 1957967066
+																"@ref": 1890226469
 															}
 														},
 														"Transform": {
@@ -844,17 +857,18 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 1317818161,
+															"@id": 2366890049,
 															"@typeid": 210448581
 														}
 													}
 												],
 												"@meta": {
-													"@id": 1957967066,
+													"@id": 1890226469,
 													"@typeid": 199425826
 												}
 											},
@@ -863,7 +877,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 4101234174
+														"@ref": 1394065095
 													}
 												},
 												"ChildLayers": [],
@@ -871,12 +885,13 @@
 												"Locked": false,
 												"ParentLayerId": "0",
 												"Expanded": true,
+												"Guide": false,
 												"pActor": {
 													"Id": "18339909659161362297",
 													"DynamicProperties": {},
 													"Owner": {
 														"@meta": {
-															"@ref": 3277681307
+															"@ref": 234687655
 														}
 													},
 													"Name": "load2",
@@ -933,7 +948,7 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 2414394138
+																	"@ref": 3463466026
 																}
 															},
 															"Name": "Bitmap",
@@ -941,14 +956,15 @@
 															"Bitmap": "Sprites/Load2.png",
 															"ResourcePersistent": false,
 															"@meta": {
-																"@id": 820805345,
+																"@id": 1671663738,
 																"@typeid": 110556596
 															}
 														}
 													],
 													"Pivot": {
 														"x": 442.000000,
-														"y": 448.000000
+														"y": 448.000000,
+														"z": 0.000000
 													},
 													"BlendMode": 0,
 													"Scale9Enabled": false,
@@ -959,8 +975,9 @@
 														"y2": 0.000000
 													},
 													"Filters": [],
+													"Visible": true,
 													"@meta": {
-														"@id": 2414394138,
+														"@id": 3463466026,
 														"@typeid": 150545074
 													}
 												},
@@ -972,7 +989,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 3277681307
+																"@ref": 234687655
 															}
 														},
 														"Transform": {
@@ -1028,11 +1045,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 864073333,
+															"@id": 399110713,
 															"@typeid": 210448581
 														}
 													},
@@ -1041,7 +1059,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 3277681307
+																"@ref": 234687655
 															}
 														},
 														"Transform": {
@@ -1097,11 +1115,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 4175150961,
+															"@id": 1648072801,
 															"@typeid": 210448581
 														}
 													},
@@ -1110,7 +1129,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 3277681307
+																"@ref": 234687655
 															}
 														},
 														"Transform": {
@@ -1166,11 +1185,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 3191261293,
+															"@id": 664183133,
 															"@typeid": 210448581
 														}
 													},
@@ -1179,7 +1199,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 3277681307
+																"@ref": 234687655
 															}
 														},
 														"Transform": {
@@ -1235,11 +1255,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 3020525077,
+															"@id": 3975260761,
 															"@typeid": 210448581
 														}
 													},
@@ -1248,7 +1269,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 3277681307
+																"@ref": 234687655
 															}
 														},
 														"Transform": {
@@ -1304,11 +1325,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 2036635409,
+															"@id": 929255553,
 															"@typeid": 210448581
 														}
 													},
@@ -1317,7 +1339,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 3277681307
+																"@ref": 234687655
 															}
 														},
 														"Transform": {
@@ -1373,17 +1395,18 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 1052745741,
+															"@id": 4240333181,
 															"@typeid": 210448581
 														}
 													}
 												],
 												"@meta": {
-													"@id": 3277681307,
+													"@id": 234687655,
 													"@typeid": 199425826
 												}
 											},
@@ -1392,7 +1415,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 4101234174
+														"@ref": 1394065095
 													}
 												},
 												"ChildLayers": [],
@@ -1400,12 +1423,13 @@
 												"Locked": false,
 												"ParentLayerId": "0",
 												"Expanded": true,
+												"Guide": false,
 												"pActor": {
 													"Id": "3623782784344060217",
 													"DynamicProperties": {},
 													"Owner": {
 														"@meta": {
-															"@ref": 302428252
+															"@ref": 162180871
 														}
 													},
 													"Name": "load3",
@@ -1462,7 +1486,7 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 1524840674
+																	"@ref": 1041941862
 																}
 															},
 															"Name": "Bitmap",
@@ -1470,14 +1494,15 @@
 															"Bitmap": "Sprites/Load3.png",
 															"ResourcePersistent": false,
 															"@meta": {
-																"@id": 208977186,
+																"@id": 4035088634,
 																"@typeid": 110556596
 															}
 														}
 													],
 													"Pivot": {
 														"x": 442.000000,
-														"y": 448.000000
+														"y": 448.000000,
+														"z": 0.000000
 													},
 													"BlendMode": 0,
 													"Scale9Enabled": false,
@@ -1488,8 +1513,9 @@
 														"y2": 0.000000
 													},
 													"Filters": [],
+													"Visible": true,
 													"@meta": {
-														"@id": 1524840674,
+														"@id": 1041941862,
 														"@typeid": 150545074
 													}
 												},
@@ -1501,7 +1527,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 302428252
+																"@ref": 162180871
 															}
 														},
 														"Transform": {
@@ -1557,11 +1583,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 2755452657,
+															"@id": 1212911170,
 															"@typeid": 210448581
 														}
 													},
@@ -1570,7 +1597,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 302428252
+																"@ref": 162180871
 															}
 														},
 														"Transform": {
@@ -1626,11 +1653,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 1771562989,
+															"@id": 229021502,
 															"@typeid": 210448581
 														}
 													},
@@ -1639,7 +1667,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 302428252
+																"@ref": 162180871
 															}
 														},
 														"Transform": {
@@ -1695,11 +1723,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 1147728950,
+															"@id": 3540099130,
 															"@typeid": 210448581
 														}
 													},
@@ -1708,7 +1737,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 302428252
+																"@ref": 162180871
 															}
 														},
 														"Transform": {
@@ -1764,11 +1793,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 163839282,
+															"@id": 3085707297,
 															"@typeid": 210448581
 														}
 													},
@@ -1777,7 +1807,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 302428252
+																"@ref": 162180871
 															}
 														},
 														"Transform": {
@@ -1833,11 +1863,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 3474916910,
+															"@id": 2101817629,
 															"@typeid": 210448581
 														}
 													},
@@ -1846,7 +1877,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 302428252
+																"@ref": 162180871
 															}
 														},
 														"Transform": {
@@ -1902,17 +1933,18 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 163192277,
+															"@id": 1117927961,
 															"@typeid": 210448581
 														}
 													}
 												],
 												"@meta": {
-													"@id": 302428252,
+													"@id": 162180871,
 													"@typeid": 199425826
 												}
 											},
@@ -1921,7 +1953,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 4101234174
+														"@ref": 1394065095
 													}
 												},
 												"ChildLayers": [],
@@ -1929,12 +1961,13 @@
 												"Locked": false,
 												"ParentLayerId": "0",
 												"Expanded": true,
+												"Guide": false,
 												"pActor": {
 													"Id": "3500711698535100313",
 													"DynamicProperties": {},
 													"Owner": {
 														"@meta": {
-															"@ref": 1622142493
+															"@ref": 3137433926
 														}
 													},
 													"Name": "load4",
@@ -1991,7 +2024,7 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 1259768254
+																	"@ref": 4012194063
 																}
 															},
 															"Name": "Bitmap",
@@ -1999,14 +2032,15 @@
 															"Bitmap": "Sprites/Load4.png",
 															"ResourcePersistent": false,
 															"@meta": {
-																"@id": 2140519586,
+																"@id": 351949497,
 																"@typeid": 110556596
 															}
 														}
 													],
 													"Pivot": {
 														"x": 442.000000,
-														"y": 448.000000
+														"y": 448.000000,
+														"z": 0.000000
 													},
 													"BlendMode": 0,
 													"Scale9Enabled": false,
@@ -2017,8 +2051,9 @@
 														"y2": 0.000000
 													},
 													"Filters": [],
+													"Visible": true,
 													"@meta": {
-														"@id": 1259768254,
+														"@id": 4012194063,
 														"@typeid": 150545074
 													}
 												},
@@ -2030,7 +2065,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 1622142493
+																"@ref": 3137433926
 															}
 														},
 														"Transform": {
@@ -2086,11 +2121,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 2490380237,
+															"@id": 947838750,
 															"@typeid": 210448581
 														}
 													},
@@ -2099,7 +2135,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 1622142493
+																"@ref": 3137433926
 															}
 														},
 														"Transform": {
@@ -2155,11 +2191,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 3304180694,
+															"@id": 4258916378,
 															"@typeid": 210448581
 														}
 													},
@@ -2168,7 +2205,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 1622142493
+																"@ref": 3137433926
 															}
 														},
 														"Transform": {
@@ -2224,11 +2261,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 2320291026,
+															"@id": 3804524545,
 															"@typeid": 210448581
 														}
 													},
@@ -2237,7 +2275,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 1622142493
+																"@ref": 3137433926
 															}
 														},
 														"Transform": {
@@ -2293,11 +2331,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 1336401358,
+															"@id": 2820634877,
 															"@typeid": 210448581
 														}
 													},
@@ -2306,7 +2345,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 1622142493
+																"@ref": 3137433926
 															}
 														},
 														"Transform": {
@@ -2362,11 +2401,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 4022997942,
+															"@id": 1836745209,
 															"@typeid": 210448581
 														}
 													},
@@ -2375,7 +2415,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 1622142493
+																"@ref": 3137433926
 															}
 														},
 														"Transform": {
@@ -2431,17 +2471,18 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 3039108274,
+															"@id": 228374497,
 															"@typeid": 210448581
 														}
 													}
 												],
 												"@meta": {
-													"@id": 1622142493,
+													"@id": 3137433926,
 													"@typeid": 199425826
 												}
 											},
@@ -2450,7 +2491,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 4101234174
+														"@ref": 1394065095
 													}
 												},
 												"ChildLayers": [],
@@ -2458,12 +2499,13 @@
 												"Locked": false,
 												"ParentLayerId": "0",
 												"Expanded": true,
+												"Guide": false,
 												"pActor": {
 													"Id": "7439033066460687957",
 													"DynamicProperties": {},
 													"Owner": {
 														"@meta": {
-															"@ref": 2941856734
+															"@ref": 1817719685
 														}
 													},
 													"Name": "load5",
@@ -2520,7 +2562,7 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 4135684251
+																	"@ref": 1324950474
 																}
 															},
 															"Name": "Bitmap",
@@ -2528,14 +2570,15 @@
 															"Bitmap": "Sprites/Load5.png",
 															"ResourcePersistent": false,
 															"@meta": {
-																"@id": 1528691427,
+																"@id": 2715374393,
 																"@typeid": 110556596
 															}
 														}
 													],
 													"Pivot": {
 														"x": 442.000000,
-														"y": 448.000000
+														"y": 448.000000,
+														"z": 0.000000
 													},
 													"BlendMode": 0,
 													"Scale9Enabled": false,
@@ -2546,8 +2589,9 @@
 														"y2": 0.000000
 													},
 													"Filters": [],
+													"Visible": true,
 													"@meta": {
-														"@id": 4135684251,
+														"@id": 1324950474,
 														"@typeid": 150545074
 													}
 												},
@@ -2559,7 +2603,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 2941856734
+																"@ref": 1817719685
 															}
 														},
 														"Transform": {
@@ -2615,11 +2659,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 2585363446,
+															"@id": 2555562457,
 															"@typeid": 210448581
 														}
 													},
@@ -2628,7 +2673,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 2941856734
+																"@ref": 1817719685
 															}
 														},
 														"Transform": {
@@ -2684,11 +2729,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 1601473778,
+															"@id": 3369362914,
 															"@typeid": 210448581
 														}
 													},
@@ -2697,7 +2743,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 2941856734
+																"@ref": 1817719685
 															}
 														},
 														"Transform": {
@@ -2753,11 +2799,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 617584110,
+															"@id": 2385473246,
 															"@typeid": 210448581
 														}
 													},
@@ -2766,7 +2813,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 2941856734
+																"@ref": 1817719685
 															}
 														},
 														"Transform": {
@@ -2822,11 +2869,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 1866546198,
+															"@id": 1401583578,
 															"@typeid": 210448581
 														}
 													},
@@ -2835,7 +2883,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 2941856734
+																"@ref": 1817719685
 															}
 														},
 														"Transform": {
@@ -2891,11 +2939,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 882656530,
+															"@id": 4088180162,
 															"@typeid": 210448581
 														}
 													},
@@ -2904,7 +2953,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 2941856734
+																"@ref": 1817719685
 															}
 														},
 														"Transform": {
@@ -2960,17 +3009,18 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 4193734158,
+															"@id": 3104290494,
 															"@typeid": 210448581
 														}
 													}
 												],
 												"@meta": {
-													"@id": 2941856734,
+													"@id": 1817719685,
 													"@typeid": 199425826
 												}
 											},
@@ -2979,7 +3029,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 4101234174
+														"@ref": 1394065095
 													}
 												},
 												"ChildLayers": [],
@@ -2987,12 +3037,13 @@
 												"Locked": false,
 												"ParentLayerId": "0",
 												"Expanded": true,
+												"Guide": false,
 												"pActor": {
 													"Id": "7409248321271033457",
 													"DynamicProperties": {},
 													"Owner": {
 														"@meta": {
-															"@ref": 398590460
+															"@ref": 498005444
 														}
 													},
 													"Name": "load6",
@@ -3049,7 +3100,7 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 3964948035
+																	"@ref": 4200866471
 																}
 															},
 															"Name": "Bitmap",
@@ -3057,14 +3108,15 @@
 															"Bitmap": "Sprites/Load6.png",
 															"ResourcePersistent": false,
 															"@meta": {
-																"@id": 3460233827,
+																"@id": 3327202552,
 																"@typeid": 110556596
 															}
 														}
 													],
 													"Pivot": {
 														"x": 442.000000,
-														"y": 448.000000
+														"y": 448.000000,
+														"z": 0.000000
 													},
 													"BlendMode": 0,
 													"Scale9Enabled": false,
@@ -3075,8 +3127,9 @@
 														"y2": 0.000000
 													},
 													"Filters": [],
+													"Visible": true,
 													"@meta": {
-														"@id": 3964948035,
+														"@id": 4200866471,
 														"@typeid": 150545074
 													}
 												},
@@ -3088,7 +3141,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 398590460
+																"@ref": 498005444
 															}
 														},
 														"Transform": {
@@ -3144,11 +3197,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 900592722,
+															"@id": 512030114,
 															"@typeid": 210448581
 														}
 													},
@@ -3157,7 +3211,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 398590460
+																"@ref": 498005444
 															}
 														},
 														"Transform": {
@@ -3213,11 +3267,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 4211670350,
+															"@id": 3823107742,
 															"@typeid": 210448581
 														}
 													},
@@ -3226,7 +3281,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 398590460
+																"@ref": 498005444
 															}
 														},
 														"Transform": {
@@ -3282,11 +3337,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 1165665142,
+															"@id": 2839218074,
 															"@typeid": 210448581
 														}
 													},
@@ -3295,7 +3351,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 398590460
+																"@ref": 498005444
 															}
 														},
 														"Transform": {
@@ -3351,11 +3407,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 181775474,
+															"@id": 2650545666,
 															"@typeid": 210448581
 														}
 													},
@@ -3364,7 +3421,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 398590460
+																"@ref": 498005444
 															}
 														},
 														"Transform": {
@@ -3420,11 +3477,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 3492853102,
+															"@id": 1666655998,
 															"@typeid": 210448581
 														}
 													},
@@ -3433,7 +3491,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 398590460
+																"@ref": 498005444
 															}
 														},
 														"Transform": {
@@ -3489,17 +3547,18 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 442.000000,
-															"y": 448.000000
+															"y": 448.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 730503511,
+															"@id": 682766330,
 															"@typeid": 210448581
 														}
 													}
 												],
 												"@meta": {
-													"@id": 398590460,
+													"@id": 498005444,
 													"@typeid": 199425826
 												}
 											}
@@ -3507,14 +3566,15 @@
 										"ActionData": [],
 										"CurrentFrame": 58,
 										"@meta": {
-											"@id": 4101234174,
+											"@id": 1394065095,
 											"@typeid": 18887732
 										}
 									}
 								],
 								"Pivot": {
 									"x": 960.000000,
-									"y": 540.000000
+									"y": 540.000000,
+									"z": 0.000000
 								},
 								"BlendMode": 0,
 								"Scale9Enabled": false,
@@ -3525,8 +3585,9 @@
 									"y2": 0.000000
 								},
 								"Filters": [],
+								"Visible": true,
 								"@meta": {
-									"@id": 4098517857,
+									"@id": 1828265040,
 									"@typeid": 150545074
 								}
 							},
@@ -3538,7 +3599,7 @@
 									"DynamicProperties": {},
 									"Owner": {
 										"@meta": {
-											"@ref": 1309901971
+											"@ref": 3545765283
 										}
 									},
 									"Transform": {
@@ -3594,17 +3655,18 @@
 									"TweenEasing": 0,
 									"Pivot": {
 										"x": 0.000000,
-										"y": 0.000000
+										"y": 0.000000,
+										"z": 0.000000
 									},
 									"HasTween": false,
 									"@meta": {
-										"@id": 4041581139,
+										"@id": 3653018531,
 										"@typeid": 210448581
 									}
 								}
 							],
 							"@meta": {
-								"@id": 1309901971,
+								"@id": 3545765283,
 								"@typeid": 199425826
 							}
 						}
@@ -3612,7 +3674,7 @@
 					"ActionData": [],
 					"CurrentFrame": 0,
 					"@meta": {
-						"@id": 1797630265,
+						"@id": 2377954763,
 						"@typeid": 18887732
 					}
 				},
@@ -3621,21 +3683,22 @@
 					"DynamicProperties": {},
 					"Owner": {
 						"@meta": {
-							"@ref": 2075899428
+							"@ref": 240808242
 						}
 					},
 					"Name": "Script",
 					"Enabled": true,
 					"Script": "",
 					"@meta": {
-						"@id": 2884064975,
+						"@id": 1431319459,
 						"@typeid": 13313492
 					}
 				}
 			],
 			"Pivot": {
 				"x": 0.000000,
-				"y": 0.000000
+				"y": 0.000000,
+				"z": 0.000000
 			},
 			"BlendMode": 0,
 			"Scale9Enabled": false,
@@ -3646,8 +3709,9 @@
 				"y2": 0.000000
 			},
 			"Filters": [],
+			"Visible": true,
 			"@meta": {
-				"@id": 2075899428,
+				"@id": 240808242,
 				"@typeid": 149361045
 			}
 		}
@@ -3664,7 +3728,7 @@
 			"Scaleform::VGx::Data::Actor": {
 				"@typename": "Scaleform::VGx::Data::Actor",
 				"@typeid": 150545074,
-				"@version": 6
+				"@version": 8
 			},
 			"Scaleform::VGx::Data::Scene": {
 				"@typename": "Scaleform::VGx::Data::Scene",
@@ -3709,7 +3773,7 @@
 			"Scaleform::VGx::Data::DisplayLayer": {
 				"@typename": "Scaleform::VGx::Data::DisplayLayer",
 				"@typeid": 127570786,
-				"@version": 2
+				"@version": 3
 			},
 			"Scaleform::VGx::Data::ActorLayer": {
 				"@typename": "Scaleform::VGx::Data::ActorLayer",
@@ -3726,11 +3790,6 @@
 				"@typeid": 110556596,
 				"@version": 3
 			},
-			"Scaleform::Render::Point<float>": {
-				"@typename": "Scaleform::Render::Point<float>",
-				"@typeid": 149327086,
-				"@version": 1
-			},
 			"Scaleform::Render::Rect<float>": {
 				"@typename": "Scaleform::Render::Rect<float>",
 				"@typeid": 226345230,
@@ -3739,7 +3798,7 @@
 			"Scaleform::VGx::Data::AnimationKeyFrame": {
 				"@typename": "Scaleform::VGx::Data::AnimationKeyFrame",
 				"@typeid": 210448581,
-				"@version": 3
+				"@version": 4
 			},
 			"Scaleform::VGx::Data::ScriptComponent": {
 				"@typename": "Scaleform::VGx::Data::ScriptComponent",

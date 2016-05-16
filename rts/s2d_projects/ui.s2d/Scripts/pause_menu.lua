@@ -12,10 +12,10 @@ scaleform.AnimationComponent.stop(pausemenuAnimation)
 
 --カスタムリスナーを作成
 local customListener = scaleform.EventListener.create(customListener, function(e)
-if e.name == "show_menu" then
+if e.name == "pause" then
     scaleform.AnimationComponent.goto_frame(pausemenuAnimation, e.data.value)--e.data.value)
     scaleform.AnimationComponent.play(pausemenuAnimation)
-elseif e.name == "hide_menu" then
+elseif e.name == "resume" then
     scaleform.AnimationComponent.goto_frame(pausemenuAnimation, e.data.value)--e.data.value)
     scaleform.AnimationComponent.play(pausemenuAnimation)
 end

@@ -58,7 +58,7 @@
 					"DynamicProperties": {},
 					"Owner": {
 						"@meta": {
-							"@ref": 438631218
+							"@ref": 1207524888
 						}
 					},
 					"Name": "Animation",
@@ -69,7 +69,7 @@
 							"DynamicProperties": {},
 							"Owner": {
 								"@meta": {
-									"@ref": 3142129375
+									"@ref": 3510406771
 								}
 							},
 							"ChildLayers": [],
@@ -77,12 +77,13 @@
 							"Locked": false,
 							"ParentLayerId": "0",
 							"Expanded": true,
+							"Guide": false,
 							"pActor": {
 								"Id": "16765993333885155765",
 								"DynamicProperties": {},
 								"Owner": {
 									"@meta": {
-										"@ref": 2772633929
+										"@ref": 1702964236
 									}
 								},
 								"Name": "hitpoint",
@@ -139,7 +140,7 @@
 										"DynamicProperties": {},
 										"Owner": {
 											"@meta": {
-												"@ref": 3899531148
+												"@ref": 3619753493
 											}
 										},
 										"Name": "Animation",
@@ -150,7 +151,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 502700893
+														"@ref": 3846231344
 													}
 												},
 												"ChildLayers": [],
@@ -158,12 +159,13 @@
 												"Locked": false,
 												"ParentLayerId": "0",
 												"Expanded": true,
+												"Guide": false,
 												"pActor": {
 													"Id": "9239634306734180957",
 													"DynamicProperties": {},
 													"Owner": {
 														"@meta": {
-															"@ref": 1452919688
+															"@ref": 3358503050
 														}
 													},
 													"Name": "hp1",
@@ -220,7 +222,7 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 2915641480
+																	"@ref": 2635863825
 																}
 															},
 															"Name": "Bitmap",
@@ -228,14 +230,15 @@
 															"Bitmap": "Sprites/hitpoint.png",
 															"ResourcePersistent": false,
 															"@meta": {
-																"@id": 3212785006,
+																"@id": 2009263038,
 																"@typeid": 110556596
 															}
 														}
 													],
 													"Pivot": {
 														"x": 105.000000,
-														"y": 110.500000
+														"y": 110.500000,
+														"z": 0.000000
 													},
 													"BlendMode": 0,
 													"Scale9Enabled": false,
@@ -246,8 +249,9 @@
 														"y2": 0.000000
 													},
 													"Filters": [],
+													"Visible": true,
 													"@meta": {
-														"@id": 2915641480,
+														"@id": 2635863825,
 														"@typeid": 150545074
 													}
 												},
@@ -259,7 +263,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 1452919688
+																"@ref": 3358503050
 															}
 														},
 														"Transform": {
@@ -315,11 +319,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 40.500000,
-															"y": 43.335022
+															"y": 43.335022,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 399367199,
+															"@id": 2976922344,
 															"@typeid": 210448581
 														}
 													},
@@ -328,7 +333,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 1452919688
+																"@ref": 3358503050
 															}
 														},
 														"Transform": {
@@ -384,11 +389,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 40.500000,
-															"y": 43.335022
+															"y": 43.335022,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 3710444827,
+															"@id": 1993032676,
 															"@typeid": 210448581
 														}
 													},
@@ -397,7 +403,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 1452919688
+																"@ref": 3358503050
 															}
 														},
 														"Transform": {
@@ -453,11 +459,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 40.500000,
-															"y": 43.335022
+															"y": 43.335022,
+															"z": 0.000000
 														},
 														"HasTween": true,
 														"@meta": {
-															"@id": 3539708611,
+															"@id": 1009143008,
 															"@typeid": 210448581
 														}
 													},
@@ -466,7 +473,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 1452919688
+																"@ref": 3358503050
 															}
 														},
 														"Transform": {
@@ -522,17 +529,18 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 40.500000,
-															"y": 43.335022
+															"y": 43.335022,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 2555818943,
+															"@id": 820470600,
 															"@typeid": 210448581
 														}
 													}
 												],
 												"@meta": {
-													"@id": 1452919688,
+													"@id": 3358503050,
 													"@typeid": 199425826
 												}
 											},
@@ -541,7 +549,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 502700893
+														"@ref": 3846231344
 													}
 												},
 												"ChildLayers": [],
@@ -549,12 +557,13 @@
 												"Locked": false,
 												"ParentLayerId": "0",
 												"Expanded": true,
+												"Guide": false,
 												"pActor": {
 													"Id": "9826036395781946857",
 													"DynamicProperties": {},
 													"Owner": {
 														"@meta": {
-															"@ref": 133205447
+															"@ref": 2038788809
 														}
 													},
 													"Name": "hp2",
@@ -611,7 +620,7 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 3463722512
+																	"@ref": 1651974157
 																}
 															},
 															"Name": "Bitmap",
@@ -619,14 +628,15 @@
 															"Bitmap": "Sprites/hitpoint.png",
 															"ResourcePersistent": false,
 															"@meta": {
-																"@id": 549772473,
+																"@id": 3940805438,
 																"@typeid": 110556596
 															}
 														}
 													],
 													"Pivot": {
 														"x": 105.000000,
-														"y": 110.500000
+														"y": 110.500000,
+														"z": 0.000000
 													},
 													"BlendMode": 0,
 													"Scale9Enabled": false,
@@ -637,8 +647,9 @@
 														"y2": 0.000000
 													},
 													"Filters": [],
+													"Visible": true,
 													"@meta": {
-														"@id": 3463722512,
+														"@id": 1651974157,
 														"@typeid": 150545074
 													}
 												},
@@ -650,7 +661,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 133205447
+																"@ref": 2038788809
 															}
 														},
 														"Transform": {
@@ -706,11 +717,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 40.499985,
-															"y": 43.334961
+															"y": 43.334961,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 1571929275,
+															"@id": 4131548228,
 															"@typeid": 210448581
 														}
 													},
@@ -719,7 +731,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 133205447
+																"@ref": 2038788809
 															}
 														},
 														"Transform": {
@@ -775,11 +787,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 40.499985,
-															"y": 43.334961
+															"y": 43.334961,
+															"z": 0.000000
 														},
 														"HasTween": true,
 														"@meta": {
-															"@id": 948095236,
+															"@id": 3147658560,
 															"@typeid": 210448581
 														}
 													},
@@ -788,7 +801,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 133205447
+																"@ref": 2038788809
 															}
 														},
 														"Transform": {
@@ -844,11 +857,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 40.499985,
-															"y": 43.334961
+															"y": 43.334961,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 4259172864,
+															"@id": 3695739592,
 															"@typeid": 210448581
 														}
 													},
@@ -857,7 +871,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 133205447
+																"@ref": 2038788809
 															}
 														},
 														"Transform": {
@@ -913,17 +927,18 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 40.499985,
-															"y": 43.334961
+															"y": 43.334961,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 3275283196,
+															"@id": 2711849924,
 															"@typeid": 210448581
 														}
 													}
 												],
 												"@meta": {
-													"@id": 133205447,
+													"@id": 2038788809,
 													"@typeid": 199425826
 												}
 											},
@@ -932,7 +947,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 502700893
+														"@ref": 3846231344
 													}
 												},
 												"ChildLayers": [],
@@ -940,12 +955,13 @@
 												"Locked": false,
 												"ParentLayerId": "0",
 												"Expanded": true,
+												"Guide": false,
 												"pActor": {
 													"Id": "2332698428283859317",
 													"DynamicProperties": {},
 													"Owner": {
 														"@meta": {
-															"@ref": 3108458502
+															"@ref": 3022678477
 														}
 													},
 													"Name": "hp3",
@@ -1002,7 +1018,7 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 171228081
+																	"@ref": 3808425901
 																}
 															},
 															"Name": "Bitmap",
@@ -1010,14 +1026,15 @@
 															"Bitmap": "Sprites/hitpoint.png",
 															"ResourcePersistent": false,
 															"@meta": {
-																"@id": 3189200955,
+																"@id": 3328977279,
 																"@typeid": 110556596
 															}
 														}
 													],
 													"Pivot": {
 														"x": 105.000000,
-														"y": 110.500000
+														"y": 110.500000,
+														"z": 0.000000
 													},
 													"BlendMode": 0,
 													"Scale9Enabled": false,
@@ -1028,8 +1045,9 @@
 														"y2": 0.000000
 													},
 													"Filters": [],
+													"Visible": true,
 													"@meta": {
-														"@id": 171228081,
+														"@id": 3808425901,
 														"@typeid": 150545074
 													}
 												},
@@ -1041,7 +1059,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 3108458502
+																"@ref": 3022678477
 															}
 														},
 														"Transform": {
@@ -1097,11 +1115,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 40.500000,
-															"y": 43.334900
+															"y": 43.334900,
+															"z": 0.000000
 														},
 														"HasTween": true,
 														"@meta": {
-															"@id": 1401840064,
+															"@id": 1557224040,
 															"@typeid": 210448581
 														}
 													},
@@ -1110,7 +1129,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 3108458502
+																"@ref": 3022678477
 															}
 														},
 														"Transform": {
@@ -1166,11 +1185,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 40.500000,
-															"y": 43.334900
+															"y": 43.334900,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 417950396,
+															"@id": 573334372,
 															"@typeid": 210448581
 														}
 													},
@@ -1179,7 +1199,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 3108458502
+																"@ref": 3022678477
 															}
 														},
 														"Transform": {
@@ -1235,11 +1255,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 40.500000,
-															"y": 43.334900
+															"y": 43.334900,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 229277988,
+															"@id": 3884412000,
 															"@typeid": 210448581
 														}
 													},
@@ -1248,7 +1269,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 3108458502
+																"@ref": 3022678477
 															}
 														},
 														"Transform": {
@@ -1304,17 +1325,18 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 40.500000,
-															"y": 43.334900
+															"y": 43.334900,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 3540355616,
+															"@id": 2541760713,
 															"@typeid": 210448581
 														}
 													}
 												],
 												"@meta": {
-													"@id": 3108458502,
+													"@id": 3022678477,
 													"@typeid": 199425826
 												}
 											}
@@ -1325,7 +1347,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 502700893
+														"@ref": 3846231344
 													}
 												},
 												"Frame": 11,
@@ -1337,7 +1359,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 974631366
+																"@ref": 3045950090
 															}
 														},
 														"PlayheadAction": 2,
@@ -1345,13 +1367,13 @@
 														"TargetFrameIndex": -1,
 														"TargetFramePath": "",
 														"@meta": {
-															"@id": 3597142209,
+															"@id": 3877023757,
 															"@typeid": 81700260
 														}
 													}
 												],
 												"@meta": {
-													"@id": 974631366,
+													"@id": 3045950090,
 													"@typeid": 184889937
 												}
 											},
@@ -1360,7 +1382,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 502700893
+														"@ref": 3846231344
 													}
 												},
 												"Frame": 23,
@@ -1372,7 +1394,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 3577822912
+																"@ref": 1314333901
 															}
 														},
 														"PlayheadAction": 2,
@@ -1380,13 +1402,13 @@
 														"TargetFrameIndex": -1,
 														"TargetFramePath": "",
 														"@meta": {
-															"@id": 2925493063,
+															"@id": 2557309516,
 															"@typeid": 81700260
 														}
 													}
 												],
 												"@meta": {
-													"@id": 3577822912,
+													"@id": 1314333901,
 													"@typeid": 184889937
 												}
 											},
@@ -1395,7 +1417,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 502700893
+														"@ref": 3846231344
 													}
 												},
 												"Frame": 35,
@@ -1407,7 +1429,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 2906173766
+																"@ref": 4289586956
 															}
 														},
 														"PlayheadAction": 2,
@@ -1415,20 +1437,20 @@
 														"TargetFrameIndex": -1,
 														"TargetFramePath": "",
 														"@meta": {
-															"@id": 1941603395,
+															"@id": 1237595275,
 															"@typeid": 81700260
 														}
 													}
 												],
 												"@meta": {
-													"@id": 2906173766,
+													"@id": 4289586956,
 													"@typeid": 184889937
 												}
 											}
 										],
 										"CurrentFrame": 0,
 										"@meta": {
-											"@id": 502700893,
+											"@id": 3846231344,
 											"@typeid": 18887732
 										}
 									},
@@ -1437,21 +1459,22 @@
 										"DynamicProperties": {},
 										"Owner": {
 											"@meta": {
-												"@ref": 3899531148
+												"@ref": 3619753493
 											}
 										},
 										"Name": "Script",
 										"Enabled": true,
 										"Script": "Scripts/hitpoint.lua",
 										"@meta": {
-											"@id": 3560684835,
+											"@id": 313306156,
 											"@typeid": 13313492
 										}
 									}
 								],
 								"Pivot": {
 									"x": 960.000000,
-									"y": 540.000000
+									"y": 540.000000,
+									"z": 0.000000
 								},
 								"BlendMode": 0,
 								"Scale9Enabled": false,
@@ -1462,8 +1485,9 @@
 									"y2": 0.000000
 								},
 								"Filters": [],
+								"Visible": true,
 								"@meta": {
-									"@id": 3899531148,
+									"@id": 3619753493,
 									"@typeid": 150545074
 								}
 							},
@@ -1475,7 +1499,7 @@
 									"DynamicProperties": {},
 									"Owner": {
 										"@meta": {
-											"@ref": 2772633929
+											"@ref": 1702964236
 										}
 									},
 									"Transform": {
@@ -1531,17 +1555,18 @@
 									"TweenEasing": 0,
 									"Pivot": {
 										"x": 960.000000,
-										"y": 540.000000
+										"y": 540.000000,
+										"z": 0.000000
 									},
 									"HasTween": false,
 									"@meta": {
-										"@id": 2556465948,
+										"@id": 1557871045,
 										"@typeid": 210448581
 									}
 								}
 							],
 							"@meta": {
-								"@id": 2772633929,
+								"@id": 1702964236,
 								"@typeid": 199425826
 							}
 						},
@@ -1550,7 +1575,7 @@
 							"DynamicProperties": {},
 							"Owner": {
 								"@meta": {
-									"@ref": 3142129375
+									"@ref": 3510406771
 								}
 							},
 							"ChildLayers": [],
@@ -1558,12 +1583,13 @@
 							"Locked": false,
 							"ParentLayerId": "0",
 							"Expanded": true,
+							"Guide": false,
 							"pActor": {
 								"Id": "13677489765905276957",
 								"DynamicProperties": {},
 								"Owner": {
 									"@meta": {
-										"@ref": 1788744261
+										"@ref": 1367139663
 									}
 								},
 								"Name": "gauge",
@@ -1620,7 +1646,7 @@
 										"DynamicProperties": {},
 										"Owner": {
 											"@meta": {
-												"@ref": 4182539760
+												"@ref": 2654447022
 											}
 										},
 										"Name": "Animation",
@@ -1631,7 +1657,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 3932011369
+														"@ref": 1854867957
 													}
 												},
 												"ChildLayers": [],
@@ -1639,12 +1665,13 @@
 												"Locked": false,
 												"ParentLayerId": "0",
 												"Expanded": true,
+												"Guide": false,
 												"pActor": {
 													"Id": "4476836823801183281",
 													"DynamicProperties": {},
 													"Owner": {
 														"@meta": {
-															"@ref": 3444283075
+															"@ref": 695490517
 														}
 													},
 													"Name": "gauge_bar",
@@ -1701,7 +1728,7 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 3198650092
+																	"@ref": 1046076310
 																}
 															},
 															"Name": "Bitmap",
@@ -1709,14 +1736,15 @@
 															"Bitmap": "Sprites/distance_empty.png",
 															"ResourcePersistent": false,
 															"@meta": {
-																"@id": 1593483128,
+																"@id": 889475008,
 																"@typeid": 110556596
 															}
 														}
 													],
 													"Pivot": {
 														"x": 598.000000,
-														"y": 26.500000
+														"y": 26.500000,
+														"z": 0.000000
 													},
 													"BlendMode": 0,
 													"Scale9Enabled": false,
@@ -1727,8 +1755,9 @@
 														"y2": 0.000000
 													},
 													"Filters": [],
+													"Visible": true,
 													"@meta": {
-														"@id": 3198650092,
+														"@id": 1046076310,
 														"@typeid": 150545074
 													}
 												},
@@ -1740,7 +1769,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 3444283075
+																"@ref": 695490517
 															}
 														},
 														"Transform": {
@@ -1796,11 +1825,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 598.000000,
-															"y": 26.500000
+															"y": 26.500000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 134294779,
+															"@id": 2276688293,
 															"@typeid": 210448581
 														}
 													},
@@ -1809,7 +1839,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 3444283075
+																"@ref": 695490517
 															}
 														},
 														"Transform": {
@@ -1865,17 +1895,18 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 598.000000,
-															"y": 26.500000
+															"y": 26.500000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 3104546980,
+															"@id": 1292798625,
 															"@typeid": 210448581
 														}
 													}
 												],
 												"@meta": {
-													"@id": 3444283075,
+													"@id": 695490517,
 													"@typeid": 199425826
 												}
 											},
@@ -1884,7 +1915,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 3932011369
+														"@ref": 1854867957
 													}
 												},
 												"ChildLayers": [],
@@ -1892,12 +1923,13 @@
 												"Locked": false,
 												"ParentLayerId": "0",
 												"Expanded": true,
+												"Guide": false,
 												"pActor": {
 													"Id": "153660361978294593",
 													"DynamicProperties": {},
 													"Owner": {
 														"@meta": {
-															"@ref": 2124568834
+															"@ref": 1031315090
 														}
 													},
 													"Name": "gauge",
@@ -1954,7 +1986,7 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 4201122957
+																	"@ref": 3202528054
 																}
 															},
 															"Name": "Bitmap",
@@ -1962,14 +1994,15 @@
 															"Bitmap": "Sprites/distance_fill.png",
 															"ResourcePersistent": false,
 															"@meta": {
-																"@id": 1869486714,
+																"@id": 3252899904,
 																"@typeid": 110556596
 															}
 														}
 													],
 													"Pivot": {
 														"x": 585.500000,
-														"y": 16.500000
+														"y": 16.500000,
+														"z": 0.000000
 													},
 													"BlendMode": 0,
 													"Scale9Enabled": false,
@@ -1980,8 +2013,9 @@
 														"y2": 0.000000
 													},
 													"Filters": [],
+													"Visible": true,
 													"@meta": {
-														"@id": 4201122957,
+														"@id": 3202528054,
 														"@typeid": 150545074
 													}
 												},
@@ -1993,7 +2027,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 2124568834
+																"@ref": 1031315090
 															}
 														},
 														"Transform": {
@@ -2049,11 +2083,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 0.000000,
-															"y": 39.000000
+															"y": 39.000000,
+															"z": 0.000000
 														},
 														"HasTween": true,
 														"@meta": {
-															"@id": 1136767644,
+															"@id": 138172741,
 															"@typeid": 210448581
 														}
 													},
@@ -2062,7 +2097,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 2124568834
+																"@ref": 1031315090
 															}
 														},
 														"Transform": {
@@ -2118,11 +2153,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 0.000000,
-															"y": 39.000000
+															"y": 39.000000,
+															"z": 0.000000
 														},
 														"HasTween": true,
 														"@meta": {
-															"@id": 1950568101,
+															"@id": 3449250369,
 															"@typeid": 210448581
 														}
 													},
@@ -2131,7 +2167,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 2124568834
+																"@ref": 1031315090
 															}
 														},
 														"Transform": {
@@ -2187,11 +2223,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 0.000000,
-															"y": 39.000000
+															"y": 39.000000,
+															"z": 0.000000
 														},
 														"HasTween": true,
 														"@meta": {
-															"@id": 966678433,
+															"@id": 1840879657,
 															"@typeid": 210448581
 														}
 													},
@@ -2200,7 +2237,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 2124568834
+																"@ref": 1031315090
 															}
 														},
 														"Transform": {
@@ -2256,11 +2293,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 0.000000,
-															"y": 39.000000
+															"y": 39.000000,
+															"z": 0.000000
 														},
 														"HasTween": true,
 														"@meta": {
-															"@id": 4277756061,
+															"@id": 856989989,
 															"@typeid": 210448581
 														}
 													},
@@ -2269,7 +2307,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 2124568834
+																"@ref": 1031315090
 															}
 														},
 														"Transform": {
@@ -2325,17 +2363,18 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 0.000000,
-															"y": 39.000000
+															"y": 39.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 3823364228,
+															"@id": 4168067617,
 															"@typeid": 210448581
 														}
 													}
 												],
 												"@meta": {
-													"@id": 2124568834,
+													"@id": 1031315090,
 													"@typeid": 199425826
 												}
 											},
@@ -2344,7 +2383,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 3932011369
+														"@ref": 1854867957
 													}
 												},
 												"ChildLayers": [],
@@ -2352,12 +2391,13 @@
 												"Locked": false,
 												"ParentLayerId": "0",
 												"Expanded": true,
+												"Guide": false,
 												"pActor": {
 													"Id": "8757259399435161553",
 													"DynamicProperties": {},
 													"Owner": {
 														"@meta": {
-															"@ref": 804854593
+															"@ref": 2351029331
 														}
 													},
 													"Name": "player",
@@ -2414,7 +2454,7 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 624972909
+																	"@ref": 2483710806
 																}
 															},
 															"Name": "Bitmap",
@@ -2422,14 +2462,15 @@
 															"Bitmap": "Sprites/old/character.png",
 															"ResourcePersistent": false,
 															"@meta": {
-																"@id": 2205311287,
+																"@id": 3864728063,
 																"@typeid": 110556596
 															}
 														}
 													],
 													"Pivot": {
 														"x": 53.000000,
-														"y": 57.500000
+														"y": 57.500000,
+														"z": 0.000000
 													},
 													"BlendMode": 0,
 													"Scale9Enabled": false,
@@ -2440,8 +2481,9 @@
 														"y2": 0.000000
 													},
 													"Filters": [],
+													"Visible": true,
 													"@meta": {
-														"@id": 624972909,
+														"@id": 2483710806,
 														"@typeid": 150545074
 													}
 												},
@@ -2453,7 +2495,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 804854593
+																"@ref": 2351029331
 															}
 														},
 														"Transform": {
@@ -2509,11 +2551,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 53.000000,
-															"y": 57.500000
+															"y": 57.500000,
+															"z": 0.000000
 														},
 														"HasTween": true,
 														"@meta": {
-															"@id": 1855584892,
+															"@id": 3714322789,
 															"@typeid": 210448581
 														}
 													},
@@ -2522,7 +2565,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 804854593
+																"@ref": 2351029331
 															}
 														},
 														"Transform": {
@@ -2578,17 +2621,18 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 53.000000,
-															"y": 57.500000
+															"y": 57.500000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 247214180,
+															"@id": 2730433121,
 															"@typeid": 210448581
 														}
 													}
 												],
 												"@meta": {
-													"@id": 804854593,
+													"@id": 2351029331,
 													"@typeid": 199425826
 												}
 											},
@@ -2597,7 +2641,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 3932011369
+														"@ref": 1854867957
 													}
 												},
 												"ChildLayers": [],
@@ -2605,12 +2649,13 @@
 												"Locked": false,
 												"ParentLayerId": "0",
 												"Expanded": true,
+												"Guide": false,
 												"pActor": {
 													"Id": "3875293576960457773",
 													"DynamicProperties": {},
 													"Owner": {
 														"@meta": {
-															"@ref": 3780107648
+															"@ref": 3670743572
 														}
 													},
 													"Name": "cat",
@@ -2667,7 +2712,7 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 1343790157
+																	"@ref": 1764893558
 																}
 															},
 															"Name": "Bitmap",
@@ -2675,14 +2720,15 @@
 															"Bitmap": "Sprites/old/cat.png",
 															"ResourcePersistent": false,
 															"@meta": {
-																"@id": 1533662141,
+																"@id": 1933185663,
 																"@typeid": 110556596
 															}
 														}
 													],
 													"Pivot": {
 														"x": 41.000000,
-														"y": 45.000000
+														"y": 45.000000,
+														"z": 0.000000
 													},
 													"BlendMode": 0,
 													"Scale9Enabled": false,
@@ -2693,8 +2739,9 @@
 														"y2": 0.000000
 													},
 													"Filters": [],
+													"Visible": true,
 													"@meta": {
-														"@id": 1343790157,
+														"@id": 1764893558,
 														"@typeid": 150545074
 													}
 												},
@@ -2706,7 +2753,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 3780107648
+																"@ref": 3670743572
 															}
 														},
 														"Transform": {
@@ -2762,11 +2809,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 41.000000,
-															"y": 45.000000
+															"y": 45.000000,
+															"z": 0.000000
 														},
 														"HasTween": true,
 														"@meta": {
-															"@id": 2574402140,
+															"@id": 2995505541,
 															"@typeid": 210448581
 														}
 													},
@@ -2775,7 +2823,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 3780107648
+																"@ref": 3670743572
 															}
 														},
 														"Transform": {
@@ -2831,17 +2879,18 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 41.000000,
-															"y": 45.000000
+															"y": 45.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 3388202597,
+															"@id": 2011615873,
 															"@typeid": 210448581
 														}
 													}
 												],
 												"@meta": {
-													"@id": 3780107648,
+													"@id": 3670743572,
 													"@typeid": 199425826
 												}
 											}
@@ -2849,7 +2898,7 @@
 										"ActionData": [],
 										"CurrentFrame": 0,
 										"@meta": {
-											"@id": 3932011369,
+											"@id": 1854867957,
 											"@typeid": 18887732
 										}
 									},
@@ -2858,21 +2907,22 @@
 										"DynamicProperties": {},
 										"Owner": {
 											"@meta": {
-												"@ref": 4182539760
+												"@ref": 2654447022
 											}
 										},
 										"Name": "Script",
 										"Enabled": true,
 										"Script": "Scripts/gauge.lua",
 										"@meta": {
-											"@id": 1293317862,
+											"@id": 2580673129,
 											"@typeid": 13313492
 										}
 									}
 								],
 								"Pivot": {
 									"x": 960.000000,
-									"y": 540.000000
+									"y": 540.000000,
+									"z": 0.000000
 								},
 								"BlendMode": 0,
 								"Scale9Enabled": false,
@@ -2883,8 +2933,9 @@
 									"y2": 0.000000
 								},
 								"Filters": [],
+								"Visible": true,
 								"@meta": {
-									"@id": 4182539760,
+									"@id": 2654447022,
 									"@typeid": 150545074
 								}
 							},
@@ -2896,7 +2947,7 @@
 									"DynamicProperties": {},
 									"Owner": {
 										"@meta": {
-											"@ref": 1788744261
+											"@ref": 1367139663
 										}
 									},
 									"Transform": {
@@ -2952,17 +3003,18 @@
 									"TweenEasing": 0,
 									"Pivot": {
 										"x": 960.000000,
-										"y": 540.000000
+										"y": 540.000000,
+										"z": 0.000000
 									},
 									"HasTween": false,
 									"@meta": {
-										"@id": 2404312929,
+										"@id": 2559696905,
 										"@typeid": 210448581
 									}
 								}
 							],
 							"@meta": {
-								"@id": 1788744261,
+								"@id": 1367139663,
 								"@typeid": 199425826
 							}
 						},
@@ -2971,7 +3023,7 @@
 							"DynamicProperties": {},
 							"Owner": {
 								"@meta": {
-									"@ref": 3142129375
+									"@ref": 3510406771
 								}
 							},
 							"ChildLayers": [],
@@ -2979,12 +3031,13 @@
 							"Locked": false,
 							"ParentLayerId": "0",
 							"Expanded": true,
+							"Guide": false,
 							"pActor": {
 								"Id": "11429270793035425053",
 								"DynamicProperties": {},
 								"Owner": {
 									"@meta": {
-										"@ref": 2460393407
+										"@ref": 2015204758
 									}
 								},
 								"Name": "pause",
@@ -3041,7 +3094,7 @@
 										"DynamicProperties": {},
 										"Owner": {
 											"@meta": {
-												"@ref": 3500888906
+												"@ref": 3656272882
 											}
 										},
 										"Name": "Animation",
@@ -3052,7 +3105,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 308693219
+														"@ref": 525474645
 													}
 												},
 												"ChildLayers": [],
@@ -3060,12 +3113,13 @@
 												"Locked": false,
 												"ParentLayerId": "0",
 												"Expanded": true,
+												"Guide": false,
 												"pActor": {
 													"Id": "16180377967251317177",
 													"DynamicProperties": {},
 													"Owner": {
 														"@meta": {
-															"@ref": 4115932221
+															"@ref": 37746351
 														}
 													},
 													"Name": "pause_btn",
@@ -3122,7 +3176,7 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 3046497073
+																	"@ref": 2672383214
 																}
 															},
 															"Name": "Animation",
@@ -3133,7 +3187,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 1964232033
+																			"@ref": 2181013459
 																		}
 																	},
 																	"ChildLayers": [],
@@ -3141,12 +3195,13 @@
 																	"Locked": false,
 																	"ParentLayerId": "0",
 																	"Expanded": true,
+																	"Guide": false,
 																	"pActor": {
 																		"Id": "11735055348720311133",
 																		"DynamicProperties": {},
 																		"Owner": {
 																			"@meta": {
-																				"@ref": 1476503739
+																				"@ref": 1693285165
 																			}
 																		},
 																		"Name": "background",
@@ -3203,7 +3258,7 @@
 																				"DynamicProperties": {},
 																				"Owner": {
 																					"@meta": {
-																						"@ref": 2062607405
+																						"@ref": 2048549175
 																					}
 																				},
 																				"Name": "Bitmap",
@@ -3211,14 +3266,15 @@
 																				"Bitmap": "Sprites/stop.png",
 																				"ResourcePersistent": true,
 																				"@meta": {
-																					"@id": 4232911610,
+																					"@id": 613471422,
 																					"@typeid": 110556596
 																				}
 																			}
 																		],
 																		"Pivot": {
 																			"x": 0.000000,
-																			"y": 0.000000
+																			"y": 0.000000,
+																			"z": 0.000000
 																		},
 																		"BlendMode": 0,
 																		"Scale9Enabled": false,
@@ -3229,8 +3285,9 @@
 																			"y2": 0.000000
 																		},
 																		"Filters": [],
+																		"Visible": true,
 																		"@meta": {
-																			"@id": 2062607405,
+																			"@id": 2048549175,
 																			"@typeid": 150545074
 																		}
 																	},
@@ -3242,7 +3299,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 1476503739
+																					"@ref": 1693285165
 																				}
 																			},
 																			"Transform": {
@@ -3298,11 +3355,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 4107019845,
+																				"@id": 2295271490,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -3311,7 +3369,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 1476503739
+																					"@ref": 1693285165
 																				}
 																			},
 																			"Transform": {
@@ -3367,11 +3425,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 3123130177,
+																				"@id": 686900778,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -3380,7 +3439,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 1476503739
+																					"@ref": 1693285165
 																				}
 																			},
 																			"Transform": {
@@ -3436,11 +3495,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 2139240509,
+																				"@id": 3997978406,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -3449,7 +3509,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 1476503739
+																					"@ref": 1693285165
 																				}
 																			},
 																			"Transform": {
@@ -3505,17 +3565,18 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 2687321541,
+																				"@id": 3014088738,
 																				"@typeid": 210448581
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 1476503739,
+																		"@id": 1693285165,
 																		"@typeid": 199425826
 																	}
 																},
@@ -3524,7 +3585,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 1964232033
+																			"@ref": 2181013459
 																		}
 																	},
 																	"ChildLayers": [],
@@ -3532,12 +3593,13 @@
 																	"Locked": false,
 																	"ParentLayerId": "0",
 																	"Expanded": true,
+																	"Guide": false,
 																	"pActor": {
 																		"Id": "2163967061898317281",
 																		"DynamicProperties": {},
 																		"Owner": {
 																			"@meta": {
-																				"@ref": 482612363
+																				"@ref": 373570924
 																			}
 																		},
 																		"Name": "button_pressed",
@@ -3594,7 +3656,7 @@
 																				"DynamicProperties": {},
 																				"Owner": {
 																					"@meta": {
-																						"@ref": 3783897518
+																						"@ref": 1064012502
 																					}
 																				},
 																				"Name": "Bitmap",
@@ -3602,14 +3664,15 @@
 																				"Bitmap": "Sprites/stop_pushed.png",
 																				"ResourcePersistent": false,
 																				"@meta": {
-																					"@id": 1407744350,
+																					"@id": 1225299581,
 																					"@typeid": 110556596
 																				}
 																			}
 																		],
 																		"Pivot": {
 																			"x": 55.500000,
-																			"y": 56.000000
+																			"y": 56.000000,
+																			"z": 0.000000
 																		},
 																		"BlendMode": 0,
 																		"Scale9Enabled": false,
@@ -3620,8 +3683,9 @@
 																			"y2": 0.000000
 																		},
 																		"Filters": [],
+																		"Visible": true,
 																		"@meta": {
-																			"@id": 3783897518,
+																			"@id": 1064012502,
 																			"@typeid": 150545074
 																		}
 																	},
@@ -3633,7 +3697,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 482612363
+																					"@ref": 373570924
 																				}
 																			},
 																			"Transform": {
@@ -3689,11 +3753,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 719542205,
+																				"@id": 2294624485,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -3702,7 +3767,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 482612363
+																					"@ref": 373570924
 																				}
 																			},
 																			"Transform": {
@@ -3758,11 +3823,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 3671858214,
+																				"@id": 1310734817,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -3771,7 +3837,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 482612363
+																					"@ref": 373570924
 																				}
 																			},
 																			"Transform": {
@@ -3827,11 +3893,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 2687968546,
+																				"@id": 2124535274,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -3840,7 +3907,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 482612363
+																					"@ref": 373570924
 																				}
 																			},
 																			"Transform": {
@@ -3896,17 +3963,18 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 1704078878,
+																				"@id": 1140645606,
 																				"@typeid": 210448581
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 482612363,
+																		"@id": 373570924,
 																		"@typeid": 199425826
 																	}
 																}
@@ -3917,7 +3985,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 1964232033
+																			"@ref": 2181013459
 																		}
 																	},
 																	"Frame": 0,
@@ -3925,7 +3993,7 @@
 																	"Trigger": "",
 																	"PlayheadCmds": [],
 																	"@meta": {
-																		"@id": 2072369893,
+																		"@id": 1985983047,
 																		"@typeid": 184889937
 																	}
 																},
@@ -3934,7 +4002,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 1964232033
+																			"@ref": 2181013459
 																		}
 																	},
 																	"Frame": 9,
@@ -3946,7 +4014,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 140827493
+																					"@ref": 2597811206
 																				}
 																			},
 																			"PlayheadAction": 2,
@@ -3954,13 +4022,13 @@
 																			"TargetFrameIndex": 1198,
 																			"TargetFramePath": "",
 																			"@meta": {
-																				"@id": 1383803108,
+																				"@id": 1297416262,
 																				"@typeid": 81700260
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 140827493,
+																		"@id": 2597811206,
 																		"@typeid": 184889937
 																	}
 																},
@@ -3969,7 +4037,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 1964232033
+																			"@ref": 2181013459
 																		}
 																	},
 																	"Frame": 10,
@@ -3977,7 +4045,7 @@
 																	"Trigger": "",
 																	"PlayheadCmds": [],
 																	"@meta": {
-																		"@id": 3116080548,
+																		"@id": 1278096965,
 																		"@typeid": 184889937
 																	}
 																},
@@ -3986,7 +4054,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 1964232033
+																			"@ref": 2181013459
 																		}
 																	},
 																	"Frame": 19,
@@ -3998,7 +4066,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 3727908707
+																					"@ref": 3641521861
 																				}
 																			},
 																			"PlayheadAction": 2,
@@ -4006,13 +4074,13 @@
 																			"TargetFrameIndex": -1082130432,
 																			"TargetFramePath": "",
 																			"@meta": {
-																				"@id": 2427513763,
+																				"@id": 589530180,
 																				"@typeid": 81700260
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 3727908707,
+																		"@id": 3641521861,
 																		"@typeid": 184889937
 																	}
 																},
@@ -4021,7 +4089,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 1964232033
+																			"@ref": 2181013459
 																		}
 																	},
 																	"Frame": 20,
@@ -4029,7 +4097,7 @@
 																	"Trigger": "",
 																	"PlayheadCmds": [],
 																	"@meta": {
-																		"@id": 2408194466,
+																		"@id": 2321807620,
 																		"@typeid": 184889937
 																	}
 																},
@@ -4038,7 +4106,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 1964232033
+																			"@ref": 2181013459
 																		}
 																	},
 																	"Frame": 29,
@@ -4050,7 +4118,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 476652066
+																					"@ref": 2933635779
 																				}
 																			},
 																			"PlayheadAction": 2,
@@ -4058,13 +4126,13 @@
 																			"TargetFrameIndex": 4,
 																			"TargetFramePath": "",
 																			"@meta": {
-																				"@id": 1719627681,
+																				"@id": 1633240835,
 																				"@typeid": 81700260
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 476652066,
+																		"@id": 2933635779,
 																		"@typeid": 184889937
 																	}
 																},
@@ -4073,7 +4141,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 1964232033
+																			"@ref": 2181013459
 																		}
 																	},
 																	"Frame": 30,
@@ -4081,7 +4149,7 @@
 																	"Trigger": "",
 																	"PlayheadCmds": [],
 																	"@meta": {
-																		"@id": 3451905121,
+																		"@id": 1613921538,
 																		"@typeid": 184889937
 																	}
 																},
@@ -4090,7 +4158,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 1964232033
+																			"@ref": 2181013459
 																		}
 																	},
 																	"Frame": 39,
@@ -4102,7 +4170,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 4063733280
+																					"@ref": 3977346434
 																				}
 																			},
 																			"PlayheadAction": 2,
@@ -4110,20 +4178,20 @@
 																			"TargetFrameIndex": 1,
 																			"TargetFramePath": "",
 																			"@meta": {
-																				"@id": 2763338336,
+																				"@id": 925354753,
 																				"@typeid": 81700260
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 4063733280,
+																		"@id": 3977346434,
 																		"@typeid": 184889937
 																	}
 																}
 															],
 															"CurrentFrame": 30,
 															"@meta": {
-																"@id": 1964232033,
+																"@id": 2181013459,
 																"@typeid": 18887732
 															}
 														},
@@ -4132,14 +4200,14 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 3046497073
+																	"@ref": 2672383214
 																}
 															},
 															"Name": "WidgetBase",
 															"Enabled": true,
 															"Script": "ButtonWidgets/button_widget.lua",
 															"@meta": {
-																"@id": 87452480,
+																"@id": 1065634,
 																"@typeid": 13313492
 															}
 														},
@@ -4148,21 +4216,22 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 3046497073
+																	"@ref": 2672383214
 																}
 															},
 															"Name": "WidgetHandler",
 															"Enabled": true,
 															"Script": "ButtonWidgets/pause_btn_handler.lua",
 															"@meta": {
-																"@id": 2450877376,
+																"@id": 612893793,
 																"@typeid": 13313492
 															}
 														}
 													],
 													"Pivot": {
 														"x": 0.000000,
-														"y": 0.000000
+														"y": 0.000000,
+														"z": 0.000000
 													},
 													"BlendMode": 0,
 													"Scale9Enabled": true,
@@ -4173,8 +4242,9 @@
 														"y2": 25.000000
 													},
 													"Filters": [],
+													"Visible": true,
 													"@meta": {
-														"@id": 3046497073,
+														"@id": 2672383214,
 														"@typeid": 150545074
 													}
 												},
@@ -4186,7 +4256,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 4115932221
+																"@ref": 37746351
 															}
 														},
 														"Transform": {
@@ -4242,17 +4312,18 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 55.000000,
-															"y": 56.000000
+															"y": 56.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 3293219388,
+															"@id": 156755938,
 															"@typeid": 210448581
 														}
 													}
 												],
 												"@meta": {
-													"@id": 4115932221,
+													"@id": 37746351,
 													"@typeid": 199425826
 												}
 											}
@@ -4260,14 +4331,15 @@
 										"ActionData": [],
 										"CurrentFrame": 0,
 										"@meta": {
-											"@id": 308693219,
+											"@id": 525474645,
 											"@typeid": 18887732
 										}
 									}
 								],
 								"Pivot": {
 									"x": 960.000000,
-									"y": 540.000000
+									"y": 540.000000,
+									"z": 0.000000
 								},
 								"BlendMode": 0,
 								"Scale9Enabled": false,
@@ -4278,8 +4350,9 @@
 									"y2": 0.000000
 								},
 								"Filters": [],
+								"Visible": true,
 								"@meta": {
-									"@id": 3500888906,
+									"@id": 3656272882,
 									"@typeid": 150545074
 								}
 							},
@@ -4291,7 +4364,7 @@
 									"DynamicProperties": {},
 									"Owner": {
 										"@meta": {
-											"@ref": 2460393407
+											"@ref": 2015204758
 										}
 									},
 									"Transform": {
@@ -4347,17 +4420,18 @@
 									"TweenEasing": 0,
 									"Pivot": {
 										"x": 960.000000,
-										"y": 540.000000
+										"y": 540.000000,
+										"z": 0.000000
 									},
 									"HasTween": false,
 									"@meta": {
-										"@id": 2252159910,
+										"@id": 3562169770,
 										"@typeid": 210448581
 									}
 								}
 							],
 							"@meta": {
-								"@id": 2460393407,
+								"@id": 2015204758,
 								"@typeid": 199425826
 							}
 						},
@@ -4366,7 +4440,7 @@
 							"DynamicProperties": {},
 							"Owner": {
 								"@meta": {
-									"@ref": 3142129375
+									"@ref": 3510406771
 								}
 							},
 							"ChildLayers": [],
@@ -4374,12 +4448,13 @@
 							"Locked": false,
 							"ParentLayerId": "0",
 							"Expanded": true,
+							"Guide": false,
 							"pActor": {
 								"Id": "16521429430106785417",
 								"DynamicProperties": {},
 								"Owner": {
 									"@meta": {
-										"@ref": 3457865418
+										"@ref": 3348823979
 									}
 								},
 								"Name": "menu",
@@ -4436,7 +4511,7 @@
 										"DynamicProperties": {},
 										"Owner": {
 											"@meta": {
-												"@ref": 3348735887
+												"@ref": 363778451
 											}
 										},
 										"Name": "Animation",
@@ -4447,7 +4522,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 1306165230
+														"@ref": 1197123791
 													}
 												},
 												"ChildLayers": [],
@@ -4455,12 +4530,13 @@
 												"Locked": false,
 												"ParentLayerId": "0",
 												"Expanded": true,
+												"Guide": false,
 												"pActor": {
 													"Id": "16062864593045747837",
 													"DynamicProperties": {},
 													"Owner": {
 														"@meta": {
-															"@ref": 818436936
+															"@ref": 709395497
 														}
 													},
 													"Name": "go_to_top_btn",
@@ -4517,7 +4593,7 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 2364846219
+																	"@ref": 3674856079
 																}
 															},
 															"Name": "Animation",
@@ -4528,7 +4604,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 2961704044
+																			"@ref": 2852662605
 																		}
 																	},
 																	"ChildLayers": [],
@@ -4536,12 +4612,13 @@
 																	"Locked": false,
 																	"ParentLayerId": "0",
 																	"Expanded": true,
+																	"Guide": false,
 																	"pActor": {
 																		"Id": "3206477071963050305",
 																		"DynamicProperties": {},
 																		"Owner": {
 																			"@meta": {
-																				"@ref": 2473975750
+																				"@ref": 2364934311
 																			}
 																		},
 																		"Name": "background",
@@ -4598,7 +4675,7 @@
 																				"DynamicProperties": {},
 																				"Owner": {
 																					"@meta": {
-																						"@ref": 2176173811
+																						"@ref": 2066485367
 																					}
 																				},
 																				"Name": "Bitmap",
@@ -4606,14 +4683,15 @@
 																				"Bitmap": "ButtonWidgets/widget_default_button_normal.png",
 																				"ResourcePersistent": true,
 																				"@meta": {
-																					"@id": 3362870801,
+																					"@id": 2940659382,
 																					"@typeid": 110556596
 																				}
 																			}
 																		],
 																		"Pivot": {
 																			"x": 0.000000,
-																			"y": 0.000000
+																			"y": 0.000000,
+																			"z": 0.000000
 																		},
 																		"BlendMode": 0,
 																		"Scale9Enabled": false,
@@ -4624,8 +4702,9 @@
 																			"y2": 0.000000
 																		},
 																		"Filters": [],
+																		"Visible": true,
 																		"@meta": {
-																			"@id": 2176173811,
+																			"@id": 2066485367,
 																			"@typeid": 150545074
 																		}
 																	},
@@ -4637,7 +4716,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 2473975750
+																					"@ref": 2364934311
 																				}
 																			},
 																			"Transform": {
@@ -4693,11 +4772,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 2422896126,
+																				"@id": 3297097350,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -4706,7 +4786,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 2473975750
+																					"@ref": 2364934311
 																				}
 																			},
 																			"Transform": {
@@ -4762,11 +4842,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 2970977158,
+																				"@id": 2313207682,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -4775,7 +4856,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 2473975750
+																					"@ref": 2364934311
 																				}
 																			},
 																			"Transform": {
@@ -4831,11 +4912,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 1987087490,
+																				"@id": 2408190891,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -4844,7 +4926,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 2473975750
+																					"@ref": 2364934311
 																				}
 																			},
 																			"Transform": {
@@ -4900,17 +4982,18 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 1003197822,
+																				"@id": 1424301223,
 																				"@typeid": 210448581
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 2473975750,
+																		"@id": 2364934311,
 																		"@typeid": 199425826
 																	}
 																},
@@ -4919,7 +5002,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 2961704044
+																			"@ref": 2852662605
 																		}
 																	},
 																	"ChildLayers": [],
@@ -4927,12 +5010,13 @@
 																	"Locked": false,
 																	"ParentLayerId": "0",
 																	"Expanded": true,
+																	"Guide": false,
 																	"pActor": {
 																		"Id": "13542961533353369177",
 																		"DynamicProperties": {},
 																		"Owner": {
 																			"@meta": {
-																				"@ref": 1154261509
+																				"@ref": 1045220070
 																			}
 																		},
 																		"Name": "label",
@@ -4989,13 +5073,13 @@
 																				"DynamicProperties": {},
 																				"Owner": {
 																					"@meta": {
-																						"@ref": 3613808307
+																						"@ref": 2520877200
 																					}
 																				},
 																				"Name": "Text",
 																				"Enabled": true,
 																				"Text": "Go to Top",
-																				"FontName": "Title",
+																				"Font": "Title",
 																				"SystemFont": false,
 																				"Html": false,
 																				"FontSize": 14.000000,
@@ -5020,18 +5104,19 @@
 																				"Selectable": false,
 																				"VAlign": 3,
 																				"ActiveSelectionTextColor": 4294967295,
-																				"ActiveSelectionBackgroundColor": 0,
+																				"ActiveSelectionBackgroundColor": 4278742484,
 																				"InactiveSelectionTextColor": 4294967295,
 																				"InactiveSelectionBackgroundColor": 0,
 																				"@meta": {
-																					"@id": 2663943030,
+																					"@id": 2554901591,
 																					"@typeid": 3283604
 																				}
 																			}
 																		],
 																		"Pivot": {
 																			"x": 0.000000,
-																			"y": 0.000000
+																			"y": 0.000000,
+																			"z": 0.000000
 																		},
 																		"BlendMode": 0,
 																		"Scale9Enabled": false,
@@ -5042,8 +5127,9 @@
 																			"y2": 0.000000
 																		},
 																		"Filters": [],
+																		"Visible": true,
 																		"@meta": {
-																			"@id": 3613808307,
+																			"@id": 2520877200,
 																			"@typeid": 150545074
 																		}
 																	},
@@ -5055,7 +5141,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 1154261509
+																					"@ref": 1045220070
 																				}
 																			},
 																			"Transform": {
@@ -5111,11 +5197,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 549452994,
+																				"@id": 704836970,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -5124,7 +5211,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 1154261509
+																					"@ref": 1045220070
 																				}
 																			},
 																			"Transform": {
@@ -5180,11 +5267,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 3860530622,
+																				"@id": 4015914598,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -5193,7 +5281,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 1154261509
+																					"@ref": 1045220070
 																				}
 																			},
 																			"Transform": {
@@ -5249,11 +5337,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 3689794406,
+																				"@id": 3032024930,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -5262,7 +5351,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 1154261509
+																					"@ref": 1045220070
 																				}
 																			},
 																			"Transform": {
@@ -5318,17 +5407,18 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 2705904738,
+																				"@id": 3845825387,
 																				"@typeid": 210448581
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 1154261509,
+																		"@id": 1045220070,
 																		"@typeid": 199425826
 																	}
 																}
@@ -5339,7 +5429,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 2961704044
+																			"@ref": 2852662605
 																		}
 																	},
 																	"Frame": 0,
@@ -5347,7 +5437,7 @@
 																	"Trigger": "",
 																	"PlayheadCmds": [],
 																	"@meta": {
-																		"@id": 3079843612,
+																		"@id": 1949746111,
 																		"@typeid": 184889937
 																	}
 																},
@@ -5356,7 +5446,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 2961704044
+																			"@ref": 2852662605
 																		}
 																	},
 																	"Frame": 9,
@@ -5368,7 +5458,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 2468015453
+																					"@ref": 18203711
 																				}
 																			},
 																			"PlayheadAction": 2,
@@ -5376,13 +5466,13 @@
 																			"TargetFrameIndex": 1,
 																			"TargetFramePath": "",
 																			"@meta": {
-																				"@id": 735738013,
+																				"@id": 1261179326,
 																				"@typeid": 81700260
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 2468015453,
+																		"@id": 18203711,
 																		"@typeid": 184889937
 																	}
 																},
@@ -5391,7 +5481,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 2961704044
+																			"@ref": 2852662605
 																		}
 																	},
 																	"Frame": 10,
@@ -5399,7 +5489,7 @@
 																	"Trigger": "",
 																	"PlayheadCmds": [],
 																	"@meta": {
-																		"@id": 3787729694,
+																		"@id": 1239510352,
 																		"@typeid": 184889937
 																	}
 																},
@@ -5408,7 +5498,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 2961704044
+																			"@ref": 2852662605
 																		}
 																	},
 																	"Frame": 19,
@@ -5420,7 +5510,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 1460541734
+																					"@ref": 3602935248
 																				}
 																			},
 																			"PlayheadAction": 2,
@@ -5428,13 +5518,13 @@
 																			"TargetFrameIndex": 570557392,
 																			"TargetFramePath": "",
 																			"@meta": {
-																				"@id": 4023231590,
+																				"@id": 550943567,
 																				"@typeid": 81700260
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 1460541734,
+																		"@id": 3602935248,
 																		"@typeid": 184889937
 																	}
 																},
@@ -5443,7 +5533,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 2961704044
+																			"@ref": 2852662605
 																		}
 																	},
 																	"Frame": 20,
@@ -5451,7 +5541,7 @@
 																	"Trigger": "",
 																	"PlayheadCmds": [],
 																	"@meta": {
-																		"@id": 2780255975,
+																		"@id": 2283221007,
 																		"@typeid": 184889937
 																	}
 																},
@@ -5460,7 +5550,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 2961704044
+																			"@ref": 2852662605
 																		}
 																	},
 																	"Frame": 29,
@@ -5472,7 +5562,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 416831079
+																					"@ref": 2895049166
 																				}
 																			},
 																			"PlayheadAction": 2,
@@ -5480,13 +5570,13 @@
 																			"TargetFrameIndex": 0,
 																			"TargetFramePath": "",
 																			"@meta": {
-																				"@id": 2367692776,
+																				"@id": 1594654222,
 																				"@typeid": 81700260
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 416831079,
+																		"@id": 2895049166,
 																		"@typeid": 184889937
 																	}
 																},
@@ -5495,7 +5585,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 2961704044
+																			"@ref": 2852662605
 																		}
 																	},
 																	"Frame": 30,
@@ -5503,7 +5593,7 @@
 																	"Trigger": "",
 																	"PlayheadCmds": [],
 																	"@meta": {
-																		"@id": 1124717161,
+																		"@id": 1575334925,
 																		"@typeid": 184889937
 																	}
 																},
@@ -5512,7 +5602,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 2961704044
+																			"@ref": 2852662605
 																		}
 																	},
 																	"Frame": 39,
@@ -5524,7 +5614,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 3056259561
+																					"@ref": 3938759821
 																				}
 																			},
 																			"PlayheadAction": 2,
@@ -5532,20 +5622,20 @@
 																			"TargetFrameIndex": 111,
 																			"TargetFramePath": "",
 																			"@meta": {
-																				"@id": 3075578858,
+																				"@id": 886768140,
 																				"@typeid": 81700260
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 3056259561,
+																		"@id": 3938759821,
 																		"@typeid": 184889937
 																	}
 																}
 															],
 															"CurrentFrame": 0,
 															"@meta": {
-																"@id": 2961704044,
+																"@id": 2852662605,
 																"@typeid": 18887732
 															}
 														},
@@ -5554,14 +5644,14 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 2364846219
+																	"@ref": 3674856079
 																}
 															},
 															"Name": "WidgetBase",
 															"Enabled": true,
 															"Script": "ButtonWidgets/button_widget.lua",
 															"@meta": {
-																"@id": 1719407243,
+																"@id": 4257446317,
 																"@typeid": 13313492
 															}
 														},
@@ -5570,21 +5660,22 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 2364846219
+																	"@ref": 3674856079
 																}
 															},
 															"Name": "WidgetHandler",
 															"Enabled": true,
 															"Script": "ButtonWidgets/gototop_btn_handler.lua",
 															"@meta": {
-																"@id": 3541235232,
+																"@id": 574307180,
 																"@typeid": 13313492
 															}
 														}
 													],
 													"Pivot": {
 														"x": 0.000000,
-														"y": 0.000000
+														"y": 0.000000,
+														"z": 0.000000
 													},
 													"BlendMode": 0,
 													"Scale9Enabled": true,
@@ -5595,8 +5686,9 @@
 														"y2": 25.000000
 													},
 													"Filters": [],
+													"Visible": true,
 													"@meta": {
-														"@id": 2364846219,
+														"@id": 3674856079,
 														"@typeid": 150545074
 													}
 												},
@@ -5608,7 +5700,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 818436936
+																"@ref": 709395497
 															}
 														},
 														"Transform": {
@@ -5664,11 +5756,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 0.000000,
-															"y": 0.000000
+															"y": 0.000000,
+															"z": 0.000000
 														},
 														"HasTween": true,
 														"@meta": {
-															"@id": 3406785794,
+															"@id": 2861935719,
 															"@typeid": 210448581
 														}
 													},
@@ -5677,7 +5770,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 818436936
+																"@ref": 709395497
 															}
 														},
 														"Transform": {
@@ -5733,11 +5826,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 0.000000,
-															"y": 0.000000
+															"y": 0.000000,
+															"z": 0.000000
 														},
 														"HasTween": true,
 														"@meta": {
-															"@id": 1722015070,
+															"@id": 1878046051,
 															"@typeid": 210448581
 														}
 													},
@@ -5746,7 +5840,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 818436936
+																"@ref": 709395497
 															}
 														},
 														"Transform": {
@@ -5802,11 +5896,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 0.000000,
-															"y": 0.000000
+															"y": 0.000000,
+															"z": 0.000000
 														},
 														"HasTween": true,
 														"@meta": {
-															"@id": 932999482,
+															"@id": 1689373643,
 															"@typeid": 210448581
 														}
 													},
@@ -5815,7 +5910,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 818436936
+																"@ref": 709395497
 															}
 														},
 														"Transform": {
@@ -5871,11 +5966,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 0.000000,
-															"y": 0.000000
+															"y": 0.000000,
+															"z": 0.000000
 														},
 														"HasTween": true,
 														"@meta": {
-															"@id": 4244077110,
+															"@id": 705483975,
 															"@typeid": 210448581
 														}
 													},
@@ -5884,7 +5980,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 818436936
+																"@ref": 709395497
 															}
 														},
 														"Transform": {
@@ -5940,17 +6036,18 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 0.000000,
-															"y": 0.000000
+															"y": 0.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 3260187442,
+															"@id": 4016561603,
 															"@typeid": 210448581
 														}
 													}
 												],
 												"@meta": {
-													"@id": 818436936,
+													"@id": 709395497,
 													"@typeid": 199425826
 												}
 											},
@@ -5959,7 +6056,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 1306165230
+														"@ref": 1197123791
 													}
 												},
 												"ChildLayers": [],
@@ -5967,12 +6064,13 @@
 												"Locked": false,
 												"ParentLayerId": "0",
 												"Expanded": true,
+												"Guide": false,
 												"pActor": {
 													"Id": "8729675856538787049",
 													"DynamicProperties": {},
 													"Owner": {
 														"@meta": {
-															"@ref": 2809800323
+															"@ref": 2700758884
 														}
 													},
 													"Name": "restart_btn",
@@ -6029,7 +6127,7 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 2294647879
+																	"@ref": 3068958232
 																}
 															},
 															"Name": "Animation",
@@ -6040,7 +6138,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 658100135
+																			"@ref": 549058696
 																		}
 																	},
 																	"ChildLayers": [],
@@ -6048,12 +6146,13 @@
 																	"Locked": false,
 																	"ParentLayerId": "0",
 																	"Expanded": true,
+																	"Guide": false,
 																	"pActor": {
 																		"Id": "10586400813730365193",
 																		"DynamicProperties": {},
 																		"Owner": {
 																			"@meta": {
-																				"@ref": 170371841
+																				"@ref": 61330402
 																			}
 																		},
 																		"Name": "background",
@@ -6110,7 +6209,7 @@
 																				"DynamicProperties": {},
 																				"Owner": {
 																					"@meta": {
-																						"@ref": 1310758211
+																						"@ref": 2085068564
 																					}
 																				},
 																				"Name": "Bitmap",
@@ -6118,14 +6217,15 @@
 																				"Bitmap": "ButtonWidgets/widget_default_button_normal.png",
 																				"ResourcePersistent": true,
 																				"@meta": {
-																					"@id": 590143857,
+																					"@id": 2902072769,
 																					"@typeid": 110556596
 																				}
 																			}
 																		],
 																		"Pivot": {
 																			"x": 0.000000,
-																			"y": 0.000000
+																			"y": 0.000000,
+																			"z": 0.000000
 																		},
 																		"BlendMode": 0,
 																		"Scale9Enabled": false,
@@ -6136,8 +6236,9 @@
 																			"y2": 0.000000
 																		},
 																		"Filters": [],
+																		"Visible": true,
 																		"@meta": {
-																			"@id": 1310758211,
+																			"@id": 2085068564,
 																			"@typeid": 150545074
 																		}
 																	},
@@ -6149,7 +6250,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 170371841
+																					"@ref": 61330402
 																				}
 																			},
 																			"Transform": {
@@ -6205,11 +6306,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 3071515034,
+																				"@id": 3315680547,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -6218,7 +6320,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 170371841
+																					"@ref": 61330402
 																				}
 																			},
 																			"Transform": {
@@ -6274,11 +6376,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 2087625366,
+																				"@id": 269675339,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -6287,7 +6390,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 170371841
+																					"@ref": 61330402
 																				}
 																			},
 																			"Transform": {
@@ -6343,11 +6446,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 1103735698,
+																				"@id": 3580752967,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -6356,7 +6460,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 170371841
+																					"@ref": 61330402
 																				}
 																			},
 																			"Transform": {
@@ -6412,17 +6516,18 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 3355170651,
+																				"@id": 2596863299,
 																				"@typeid": 210448581
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 170371841,
+																		"@id": 61330402,
 																		"@typeid": 199425826
 																	}
 																},
@@ -6431,7 +6536,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 658100135
+																			"@ref": 549058696
 																		}
 																	},
 																	"ChildLayers": [],
@@ -6439,12 +6544,13 @@
 																	"Locked": false,
 																	"ParentLayerId": "0",
 																	"Expanded": true,
+																	"Guide": false,
 																	"pActor": {
 																		"Id": "8279188187186305389",
 																		"DynamicProperties": {},
 																		"Owner": {
 																			"@meta": {
-																				"@ref": 3145624896
+																				"@ref": 3522181232
 																			}
 																		},
 																		"Name": "label",
@@ -6501,13 +6607,13 @@
 																				"DynamicProperties": {},
 																				"Owner": {
 																					"@meta": {
-																						"@ref": 156779332
+																						"@ref": 637119767
 																					}
 																				},
 																				"Name": "Text",
 																				"Enabled": true,
 																				"Text": "Restart",
-																				"FontName": "Title",
+																				"Font": "Title",
 																				"SystemFont": false,
 																				"Html": false,
 																				"FontSize": 14.000000,
@@ -6532,18 +6638,19 @@
 																				"Selectable": false,
 																				"VAlign": 3,
 																				"ActiveSelectionTextColor": 4294967295,
-																				"ActiveSelectionBackgroundColor": 0,
+																				"ActiveSelectionBackgroundColor": 4278742484,
 																				"InactiveSelectionTextColor": 4294967295,
 																				"InactiveSelectionBackgroundColor": 0,
 																				"@meta": {
-																					"@id": 360339121,
+																					"@id": 736895457,
 																					"@typeid": 3283604
 																				}
 																			}
 																		],
 																		"Pivot": {
 																			"x": 0.000000,
-																			"y": 0.000000
+																			"y": 0.000000,
+																			"z": 0.000000
 																		},
 																		"BlendMode": 0,
 																		"Scale9Enabled": false,
@@ -6554,8 +6661,9 @@
 																			"y2": 0.000000
 																		},
 																		"Filters": [],
+																		"Visible": true,
 																		"@meta": {
-																			"@id": 156779332,
+																			"@id": 637119767,
 																			"@typeid": 150545074
 																		}
 																	},
@@ -6567,7 +6675,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 3145624896
+																					"@ref": 3522181232
 																				}
 																			},
 																			"Transform": {
@@ -6623,11 +6731,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 1387391315,
+																				"@id": 1867731750,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -6636,7 +6745,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 3145624896
+																					"@ref": 3522181232
 																				}
 																			},
 																			"Transform": {
@@ -6692,11 +6801,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 1917536155,
+																				"@id": 883842082,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -6705,7 +6815,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 3145624896
+																					"@ref": 3522181232
 																				}
 																			},
 																			"Transform": {
@@ -6761,11 +6871,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 933646487,
+																				"@id": 4289255914,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -6774,7 +6885,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 3145624896
+																					"@ref": 3522181232
 																				}
 																			},
 																			"Transform": {
@@ -6830,17 +6941,18 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 4244724115,
+																				"@id": 3305366246,
 																				"@typeid": 210448581
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 3145624896,
+																		"@id": 3522181232,
 																		"@typeid": 199425826
 																	}
 																}
@@ -6851,7 +6963,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 658100135
+																			"@ref": 549058696
 																		}
 																	},
 																	"Frame": 0,
@@ -6859,7 +6971,7 @@
 																	"Trigger": "",
 																	"PlayheadCmds": [],
 																	"@meta": {
-																		"@id": 1590593973,
+																		"@id": 1911159498,
 																		"@typeid": 184889937
 																	}
 																},
@@ -6868,7 +6980,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 658100135
+																			"@ref": 549058696
 																		}
 																	},
 																	"Frame": 9,
@@ -6880,7 +6992,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 3954018869
+																					"@ref": 4274584394
 																				}
 																			},
 																			"PlayheadAction": 2,
@@ -6888,13 +7000,13 @@
 																			"TargetFrameIndex": 1,
 																			"TargetFramePath": "",
 																			"@meta": {
-																				"@id": 902027188,
+																				"@id": 1222592713,
 																				"@typeid": 81700260
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 3954018869,
+																		"@id": 4274584394,
 																		"@typeid": 184889937
 																	}
 																},
@@ -6903,7 +7015,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 658100135
+																			"@ref": 549058696
 																		}
 																	},
 																	"Frame": 10,
@@ -6911,7 +7023,7 @@
 																	"Trigger": "",
 																	"PlayheadCmds": [],
 																	"@meta": {
-																		"@id": 2634304628,
+																		"@id": 2954870153,
 																		"@typeid": 184889937
 																	}
 																},
@@ -6920,7 +7032,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 658100135
+																			"@ref": 549058696
 																		}
 																	},
 																	"Frame": 19,
@@ -6932,7 +7044,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 3246132787
+																					"@ref": 3566698312
 																				}
 																			},
 																			"PlayheadAction": 2,
@@ -6940,13 +7052,13 @@
 																			"TargetFrameIndex": 1,
 																			"TargetFramePath": "",
 																			"@meta": {
-																				"@id": 1945737843,
+																				"@id": 2266303368,
 																				"@typeid": 81700260
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 3246132787,
+																		"@id": 3566698312,
 																		"@typeid": 184889937
 																	}
 																},
@@ -6955,7 +7067,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 658100135
+																			"@ref": 549058696
 																		}
 																	},
 																	"Frame": 20,
@@ -6963,7 +7075,7 @@
 																	"Trigger": "",
 																	"PlayheadCmds": [],
 																	"@meta": {
-																		"@id": 1926418546,
+																		"@id": 2246984071,
 																		"@typeid": 184889937
 																	}
 																},
@@ -6972,7 +7084,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 658100135
+																			"@ref": 549058696
 																		}
 																	},
 																	"Frame": 29,
@@ -6984,7 +7096,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 4289843442
+																					"@ref": 315441671
 																				}
 																			},
 																			"PlayheadAction": 2,
@@ -6992,13 +7104,13 @@
 																			"TargetFrameIndex": -1224329283,
 																			"TargetFramePath": "",
 																			"@meta": {
-																				"@id": 1237851761,
+																				"@id": 1558417286,
 																				"@typeid": 81700260
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 4289843442,
+																		"@id": 315441671,
 																		"@typeid": 184889937
 																	}
 																},
@@ -7007,7 +7119,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 658100135
+																			"@ref": 549058696
 																		}
 																	},
 																	"Frame": 30,
@@ -7015,7 +7127,7 @@
 																	"Trigger": "",
 																	"PlayheadCmds": [],
 																	"@meta": {
-																		"@id": 2970129201,
+																		"@id": 3290694726,
 																		"@typeid": 184889937
 																	}
 																},
@@ -7024,7 +7136,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 658100135
+																			"@ref": 549058696
 																		}
 																	},
 																	"Frame": 39,
@@ -7036,7 +7148,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 3581957360
+																					"@ref": 3902522885
 																				}
 																			},
 																			"PlayheadAction": 2,
@@ -7044,20 +7156,20 @@
 																			"TargetFrameIndex": 1,
 																			"TargetFramePath": "",
 																			"@meta": {
-																				"@id": 1609913270,
+																				"@id": 2602127941,
 																				"@typeid": 81700260
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 3581957360,
+																		"@id": 3902522885,
 																		"@typeid": 184889937
 																	}
 																}
 															],
 															"CurrentFrame": 0,
 															"@meta": {
-																"@id": 658100135,
+																"@id": 549058696,
 																"@typeid": 18887732
 															}
 														},
@@ -7066,14 +7178,14 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 2294647879
+																	"@ref": 3068958232
 																}
 															},
 															"Name": "WidgetBase",
 															"Enabled": true,
 															"Script": "ButtonWidgets/button_widget.lua",
 															"@meta": {
-																"@id": 253741655,
+																"@id": 4221209381,
 																"@typeid": 13313492
 															}
 														},
@@ -7082,21 +7194,22 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 2294647879
+																	"@ref": 3068958232
 																}
 															},
 															"Name": "WidgetHandler",
 															"Enabled": true,
 															"Script": "ButtonWidgets/restart_btn_handler.lua",
 															"@meta": {
-																"@id": 3936880792,
+																"@id": 2289666981,
 																"@typeid": 13313492
 															}
 														}
 													],
 													"Pivot": {
 														"x": 0.000000,
-														"y": 0.000000
+														"y": 0.000000,
+														"z": 0.000000
 													},
 													"BlendMode": 0,
 													"Scale9Enabled": true,
@@ -7107,8 +7220,9 @@
 														"y2": 25.000000
 													},
 													"Filters": [],
+													"Visible": true,
 													"@meta": {
-														"@id": 2294647879,
+														"@id": 3068958232,
 														"@typeid": 150545074
 													}
 												},
@@ -7120,7 +7234,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 2809800323
+																"@ref": 2700758884
 															}
 														},
 														"Transform": {
@@ -7176,11 +7290,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 0.000000,
-															"y": 0.000000
+															"y": 0.000000,
+															"z": 0.000000
 														},
 														"HasTween": true,
 														"@meta": {
-															"@id": 2541370194,
+															"@id": 2321476578,
 															"@typeid": 210448581
 														}
 													},
@@ -7189,7 +7304,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 2809800323
+																"@ref": 2700758884
 															}
 														},
 														"Transform": {
@@ -7245,11 +7360,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 0.000000,
-															"y": 0.000000
+															"y": 0.000000,
+															"z": 0.000000
 														},
 														"HasTween": true,
 														"@meta": {
-															"@id": 497837851,
+															"@id": 1867084745,
 															"@typeid": 210448581
 														}
 													},
@@ -7258,7 +7374,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 2809800323
+																"@ref": 2700758884
 															}
 														},
 														"Transform": {
@@ -7314,11 +7430,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 0.000000,
-															"y": 0.000000
+															"y": 0.000000,
+															"z": 0.000000
 														},
 														"HasTween": true,
 														"@meta": {
-															"@id": 3808915479,
+															"@id": 883195077,
 															"@typeid": 210448581
 														}
 													},
@@ -7327,7 +7444,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 2809800323
+																"@ref": 2700758884
 															}
 														},
 														"Transform": {
@@ -7383,11 +7500,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 0.000000,
-															"y": 0.000000
+															"y": 0.000000,
+															"z": 0.000000
 														},
 														"HasTween": true,
 														"@meta": {
-															"@id": 2825025811,
+															"@id": 4194272705,
 															"@typeid": 210448581
 														}
 													},
@@ -7396,7 +7514,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 2809800323
+																"@ref": 2700758884
 															}
 														},
 														"Transform": {
@@ -7452,17 +7570,18 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 0.000000,
-															"y": 0.000000
+															"y": 0.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 2636353403,
+															"@id": 2150740362,
 															"@typeid": 210448581
 														}
 													}
 												],
 												"@meta": {
-													"@id": 2809800323,
+													"@id": 2700758884,
 													"@typeid": 199425826
 												}
 											},
@@ -7471,7 +7590,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 1306165230
+														"@ref": 1197123791
 													}
 												},
 												"ChildLayers": [],
@@ -7479,12 +7598,13 @@
 												"Locked": false,
 												"ParentLayerId": "0",
 												"Expanded": true,
+												"Guide": false,
 												"pActor": {
 													"Id": "10084999468079908725",
 													"DynamicProperties": {},
 													"Owner": {
 														"@meta": {
-															"@ref": 506196414
+															"@ref": 882752750
 														}
 													},
 													"Name": "resume_btn",
@@ -7541,7 +7661,7 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 3732929380
+																	"@ref": 3247316339
 																}
 															},
 															"Name": "Animation",
@@ -7552,7 +7672,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 2649463522
+																			"@ref": 3026019858
 																		}
 																	},
 																	"ChildLayers": [],
@@ -7560,12 +7680,13 @@
 																	"Locked": false,
 																	"ParentLayerId": "0",
 																	"Expanded": true,
+																	"Guide": false,
 																	"pActor": {
 																		"Id": "4840460780609241473",
 																		"DynamicProperties": {},
 																		"Owner": {
 																			"@meta": {
-																				"@ref": 2606032161
+																				"@ref": 2538291564
 																			}
 																		},
 																		"Name": "background",
@@ -7622,7 +7743,7 @@
 																				"DynamicProperties": {},
 																				"Owner": {
 																					"@meta": {
-																						"@ref": 2749039712
+																						"@ref": 2263426671
 																					}
 																				},
 																				"Name": "Bitmap",
@@ -7630,14 +7751,15 @@
 																				"Bitmap": "ButtonWidgets/widget_default_button_normal.png",
 																				"ResourcePersistent": true,
 																				"@meta": {
-																					"@id": 925968430,
+																					"@id": 2865835833,
 																					"@typeid": 110556596
 																				}
 																			}
 																		],
 																		"Pivot": {
 																			"x": 0.000000,
-																			"y": 0.000000
+																			"y": 0.000000,
+																			"z": 0.000000
 																		},
 																		"BlendMode": 0,
 																		"Scale9Enabled": false,
@@ -7648,8 +7770,9 @@
 																			"y2": 0.000000
 																		},
 																		"Filters": [],
+																		"Visible": true,
 																		"@meta": {
-																			"@id": 2749039712,
+																			"@id": 2263426671,
 																			"@typeid": 150545074
 																		}
 																	},
@@ -7661,7 +7784,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 2606032161
+																					"@ref": 2538291564
 																				}
 																			},
 																			"Transform": {
@@ -7717,11 +7840,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 2654936600,
+																				"@id": 1431923114,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -7730,7 +7854,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 2606032161
+																					"@ref": 2538291564
 																				}
 																			},
 																			"Transform": {
@@ -7786,11 +7910,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 1671046932,
+																				"@id": 448033446,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -7799,7 +7924,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 2606032161
+																					"@ref": 2538291564
 																				}
 																			},
 																			"Transform": {
@@ -7855,11 +7980,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 1216655099,
+																				"@id": 3759111074,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -7868,7 +7994,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 2606032161
+																					"@ref": 2538291564
 																				}
 																			},
 																			"Transform": {
@@ -7924,17 +8050,18 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 232765431,
+																				"@id": 2869557610,
 																				"@typeid": 210448581
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 2606032161,
+																		"@id": 2538291564,
 																		"@typeid": 199425826
 																	}
 																},
@@ -7943,7 +8070,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 2649463522
+																			"@ref": 3026019858
 																		}
 																	},
 																	"ChildLayers": [],
@@ -7951,12 +8078,13 @@
 																	"Locked": false,
 																	"ParentLayerId": "0",
 																	"Expanded": true,
+																	"Guide": false,
 																	"pActor": {
 																		"Id": "12077170207452500701",
 																		"DynamicProperties": {},
 																		"Owner": {
 																			"@meta": {
-																				"@ref": 1286317920
+																				"@ref": 1218577323
 																			}
 																		},
 																		"Name": "label",
@@ -8013,13 +8141,13 @@
 																				"DynamicProperties": {},
 																				"Owner": {
 																					"@meta": {
-																						"@ref": 1329341408
+																						"@ref": 3966133587
 																					}
 																				},
 																				"Name": "Text",
 																				"Enabled": true,
 																				"Text": "Resume",
-																				"FontName": "Title",
+																				"Font": "Title",
 																				"SystemFont": false,
 																				"Html": false,
 																				"FontSize": 14.000000,
@@ -8044,18 +8172,19 @@
 																				"Selectable": false,
 																				"VAlign": 3,
 																				"ActiveSelectionTextColor": 4294967295,
-																				"ActiveSelectionBackgroundColor": 0,
+																				"ActiveSelectionBackgroundColor": 4278742484,
 																				"InactiveSelectionTextColor": 4294967295,
 																				"InactiveSelectionBackgroundColor": 0,
 																				"@meta": {
-																					"@id": 2795999441,
+																					"@id": 2728258844,
 																					"@typeid": 3283604
 																				}
 																			}
 																		],
 																		"Pivot": {
 																			"x": 0.000000,
-																			"y": 0.000000
+																			"y": 0.000000,
+																			"z": 0.000000
 																		},
 																		"BlendMode": 0,
 																		"Scale9Enabled": false,
@@ -8066,8 +8195,9 @@
 																			"y2": 0.000000
 																		},
 																		"Filters": [],
+																		"Visible": true,
 																		"@meta": {
-																			"@id": 1329341408,
+																			"@id": 3966133587,
 																			"@typeid": 150545074
 																		}
 																	},
@@ -8079,7 +8209,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 1286317920
+																					"@ref": 1218577323
 																				}
 																			},
 																			"Transform": {
@@ -8135,11 +8265,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 62676220,
+																				"@id": 901778274,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -8148,7 +8279,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 1286317920
+																					"@ref": 1218577323
 																				}
 																			},
 																			"Transform": {
@@ -8204,11 +8335,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 3373753848,
+																				"@id": 713105866,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -8217,7 +8349,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 1286317920
+																					"@ref": 1218577323
 																				}
 																			},
 																			"Transform": {
@@ -8273,11 +8405,12 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 2389864180,
+																				"@id": 4024183494,
 																				"@typeid": 210448581
 																			}
 																		},
@@ -8286,7 +8419,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 1286317920
+																					"@ref": 1218577323
 																				}
 																			},
 																			"Transform": {
@@ -8342,17 +8475,18 @@
 																			"TweenEasing": 0,
 																			"Pivot": {
 																				"x": 0.000000,
-																				"y": 0.000000
+																				"y": 0.000000,
+																				"z": 0.000000
 																			},
 																			"HasTween": false,
 																			"@meta": {
-																				"@id": 781493468,
+																				"@id": 3040293826,
 																				"@typeid": 210448581
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 1286317920,
+																		"@id": 1218577323,
 																		"@typeid": 199425826
 																	}
 																}
@@ -8363,7 +8497,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 2649463522
+																			"@ref": 3026019858
 																		}
 																	},
 																	"Frame": 0,
@@ -8371,7 +8505,7 @@
 																	"Trigger": "",
 																	"PlayheadCmds": [],
 																	"@meta": {
-																		"@id": 642941241,
+																		"@id": 3626519299,
 																		"@typeid": 184889937
 																	}
 																},
@@ -8380,7 +8514,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 2649463522
+																			"@ref": 3026019858
 																		}
 																	},
 																	"Frame": 9,
@@ -8392,7 +8526,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 2574483641
+																					"@ref": 4238347458
 																				}
 																			},
 																			"PlayheadAction": 2,
@@ -8400,13 +8534,13 @@
 																			"TargetFrameIndex": 6,
 																			"TargetFramePath": "",
 																			"@meta": {
-																				"@id": 2593802938,
+																				"@id": 2937952514,
 																				"@typeid": 81700260
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 2574483641,
+																		"@id": 4238347458,
 																		"@typeid": 184889937
 																	}
 																},
@@ -8415,7 +8549,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 2649463522
+																			"@ref": 3026019858
 																		}
 																	},
 																	"Frame": 10,
@@ -8423,7 +8557,7 @@
 																	"Trigger": "",
 																	"PlayheadCmds": [],
 																	"@meta": {
-																		"@id": 918944827,
+																		"@id": 2918633217,
 																		"@typeid": 184889937
 																	}
 																},
@@ -8432,7 +8566,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 2649463522
+																			"@ref": 3026019858
 																		}
 																	},
 																	"Frame": 19,
@@ -8444,7 +8578,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 307116668
+																					"@ref": 1700877071
 																				}
 																			},
 																			"PlayheadAction": 2,
@@ -8452,13 +8586,13 @@
 																			"TargetFrameIndex": 635208600,
 																			"TargetFramePath": "",
 																			"@meta": {
-																				"@id": 2869806524,
+																				"@id": 400482127,
 																				"@typeid": 81700260
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 307116668,
+																		"@id": 1700877071,
 																		"@typeid": 184889937
 																	}
 																},
@@ -8467,7 +8601,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 2649463522
+																			"@ref": 3026019858
 																		}
 																	},
 																	"Frame": 20,
@@ -8475,7 +8609,7 @@
 																	"Trigger": "",
 																	"PlayheadCmds": [],
 																	"@meta": {
-																		"@id": 1626830909,
+																		"@id": 381162830,
 																		"@typeid": 184889937
 																	}
 																},
@@ -8484,7 +8618,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 2649463522
+																			"@ref": 3026019858
 																		}
 																	},
 																	"Frame": 29,
@@ -8496,7 +8630,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 3558373309
+																					"@ref": 2744587726
 																				}
 																			},
 																			"PlayheadAction": 2,
@@ -8504,13 +8638,13 @@
 																			"TargetFrameIndex": 1,
 																			"TargetFramePath": "",
 																			"@meta": {
-																				"@id": 3577692606,
+																				"@id": 3987563341,
 																				"@typeid": 81700260
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 3558373309,
+																		"@id": 2744587726,
 																		"@typeid": 184889937
 																	}
 																},
@@ -8519,7 +8653,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 2649463522
+																			"@ref": 3026019858
 																		}
 																	},
 																	"Frame": 30,
@@ -8527,7 +8661,7 @@
 																	"Trigger": "",
 																	"PlayheadCmds": [],
 																	"@meta": {
-																		"@id": 583120254,
+																		"@id": 1424873485,
 																		"@typeid": 184889937
 																	}
 																},
@@ -8536,7 +8670,7 @@
 																	"DynamicProperties": {},
 																	"Owner": {
 																		"@meta": {
-																			"@ref": 2649463522
+																			"@ref": 3026019858
 																		}
 																	},
 																	"Frame": 39,
@@ -8548,7 +8682,7 @@
 																			"DynamicProperties": {},
 																			"Owner": {
 																				"@meta": {
-																					"@ref": 1833908346
+																					"@ref": 2036701644
 																				}
 																			},
 																			"PlayheadAction": 2,
@@ -8556,20 +8690,20 @@
 																			"TargetFrameIndex": 12132,
 																			"TargetFramePath": "",
 																			"@meta": {
-																				"@id": 533513402,
+																				"@id": 736306700,
 																				"@typeid": 81700260
 																			}
 																		}
 																	],
 																	"@meta": {
-																		"@id": 1833908346,
+																		"@id": 2036701644,
 																		"@typeid": 184889937
 																	}
 																}
 															],
 															"CurrentFrame": 0,
 															"@meta": {
-																"@id": 2649463522,
+																"@id": 3026019858,
 																"@typeid": 18887732
 															}
 														},
@@ -8578,14 +8712,14 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 3732929380
+																	"@ref": 3247316339
 																}
 															},
 															"Name": "WidgetBase",
 															"Enabled": true,
 															"Script": "ButtonWidgets/button_widget.lua",
 															"@meta": {
-																"@id": 2152594842,
+																"@id": 2355388140,
 																"@typeid": 13313492
 															}
 														},
@@ -8594,21 +8728,22 @@
 															"DynamicProperties": {},
 															"Owner": {
 																"@meta": {
-																	"@ref": 3732929380
+																	"@ref": 3247316339
 																}
 															},
 															"Name": "WidgetHandler",
 															"Enabled": true,
 															"Script": "ButtonWidgets/resume_btn_handler.lua",
 															"@meta": {
-																"@id": 221052442,
+																"@id": 423845740,
 																"@typeid": 13313492
 															}
 														}
 													],
 													"Pivot": {
 														"x": 0.000000,
-														"y": 0.000000
+														"y": 0.000000,
+														"z": 0.000000
 													},
 													"BlendMode": 0,
 													"Scale9Enabled": true,
@@ -8619,8 +8754,9 @@
 														"y2": 25.000000
 													},
 													"Filters": [],
+													"Visible": true,
 													"@meta": {
-														"@id": 3732929380,
+														"@id": 3247316339,
 														"@typeid": 150545074
 													}
 												},
@@ -8632,7 +8768,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 506196414
+																"@ref": 882752750
 															}
 														},
 														"Transform": {
@@ -8688,11 +8824,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 0.000000,
-															"y": 0.000000
+															"y": 0.000000,
+															"z": 0.000000
 														},
 														"HasTween": true,
 														"@meta": {
-															"@id": 3638826268,
+															"@id": 996761483,
 															"@typeid": 210448581
 														}
 													},
@@ -8701,7 +8838,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 506196414
+																"@ref": 882752750
 															}
 														},
 														"Transform": {
@@ -8757,11 +8894,12 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 0.000000,
-															"y": 0.000000
+															"y": 0.000000,
+															"z": 0.000000
 														},
 														"HasTween": true,
 														"@meta": {
-															"@id": 4092571096,
+															"@id": 12871815,
 															"@typeid": 210448581
 														}
 													},
@@ -8770,7 +8908,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 506196414
+																"@ref": 882752750
 															}
 														},
 														"Transform": {
@@ -8826,63 +8964,29 @@
 														"TweenEasing": 0,
 														"Pivot": {
 															"x": 0.000000,
-															"y": 0.000000
+															"y": 0.000000,
+															"z": 0.000000
 														},
 														"HasTween": false,
 														"@meta": {
-															"@id": 3108681428,
+															"@id": 3323949443,
 															"@typeid": 210448581
 														}
 													}
 												],
 												"@meta": {
-													"@id": 506196414,
+													"@id": 882752750,
 													"@typeid": 199425826
 												}
 											}
 										],
 										"ActionData": [
 											{
-												"Id": "8113220733070042121",
-												"DynamicProperties": {},
-												"Owner": {
-													"@meta": {
-														"@ref": 1306165230
-													}
-												},
-												"Frame": 0,
-												"Label": "",
-												"Trigger": "",
-												"PlayheadCmds": [
-													{
-														"Id": "10158790947366060549",
-														"DynamicProperties": {},
-														"Owner": {
-															"@meta": {
-																"@ref": 850018678
-															}
-														},
-														"PlayheadAction": 2,
-														"TargetFrameLabel": "",
-														"TargetFrameIndex": -1,
-														"TargetFramePath": "",
-														"@meta": {
-															"@id": 3844591030,
-															"@typeid": 81700260
-														}
-													}
-												],
-												"@meta": {
-													"@id": 850018678,
-													"@typeid": 184889937
-												}
-											},
-											{
 												"Id": "13425708303240984657",
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 1306165230
+														"@ref": 1197123791
 													}
 												},
 												"Frame": 12,
@@ -8894,7 +8998,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 3825271733
+																"@ref": 2372526217
 															}
 														},
 														"PlayheadAction": 2,
@@ -8902,13 +9006,13 @@
 														"TargetFrameIndex": -1,
 														"TargetFramePath": "",
 														"@meta": {
-															"@id": 2524876789,
+															"@id": 1072131273,
 															"@typeid": 81700260
 														}
 													}
 												],
 												"@meta": {
-													"@id": 3825271733,
+													"@id": 2372526217,
 													"@typeid": 184889937
 												}
 											},
@@ -8917,7 +9021,7 @@
 												"DynamicProperties": {},
 												"Owner": {
 													"@meta": {
-														"@ref": 1306165230
+														"@ref": 1197123791
 													}
 												},
 												"Frame": 23,
@@ -8929,7 +9033,7 @@
 														"DynamicProperties": {},
 														"Owner": {
 															"@meta": {
-																"@ref": 2505557492
+																"@ref": 1052811976
 															}
 														},
 														"PlayheadAction": 2,
@@ -8937,20 +9041,20 @@
 														"TargetFrameIndex": -1,
 														"TargetFramePath": "",
 														"@meta": {
-															"@id": 1205162548,
+															"@id": 4047384328,
 															"@typeid": 81700260
 														}
 													}
 												],
 												"@meta": {
-													"@id": 2505557492,
+													"@id": 1052811976,
 													"@typeid": 184889937
 												}
 											}
 										],
-										"CurrentFrame": 0,
+										"CurrentFrame": 38,
 										"@meta": {
-											"@id": 1306165230,
+											"@id": 1197123791,
 											"@typeid": 18887732
 										}
 									},
@@ -8959,21 +9063,22 @@
 										"DynamicProperties": {},
 										"Owner": {
 											"@meta": {
-												"@ref": 3348735887
+												"@ref": 363778451
 											}
 										},
 										"Name": "Script",
 										"Enabled": true,
 										"Script": "Scripts/pause_menu.lua",
 										"@meta": {
-											"@id": 2824243988,
+											"@id": 1371498472,
 											"@typeid": 13313492
 										}
 									}
 								],
 								"Pivot": {
 									"x": 960.000000,
-									"y": 540.000000
+									"y": 540.000000,
+									"z": 0.000000
 								},
 								"BlendMode": 0,
 								"Scale9Enabled": false,
@@ -8984,8 +9089,9 @@
 									"y2": 0.000000
 								},
 								"Filters": [],
+								"Visible": true,
 								"@meta": {
-									"@id": 3348735887,
+									"@id": 363778451,
 									"@typeid": 150545074
 								}
 							},
@@ -8997,7 +9103,7 @@
 									"DynamicProperties": {},
 									"Owner": {
 										"@meta": {
-											"@ref": 3457865418
+											"@ref": 3348823979
 										}
 									},
 									"Transform": {
@@ -9053,17 +9159,18 @@
 									"TweenEasing": 0,
 									"Pivot": {
 										"x": 960.000000,
-										"y": 540.000000
+										"y": 540.000000,
+										"z": 0.000000
 									},
 									"HasTween": false,
 									"@meta": {
-										"@id": 2736869460,
+										"@id": 277944235,
 										"@typeid": 210448581
 									}
 								}
 							],
 							"@meta": {
-								"@id": 3457865418,
+								"@id": 3348823979,
 								"@typeid": 199425826
 							}
 						}
@@ -9071,14 +9178,15 @@
 					"ActionData": [],
 					"CurrentFrame": 0,
 					"@meta": {
-						"@id": 3142129375,
+						"@id": 3510406771,
 						"@typeid": 18887732
 					}
 				}
 			],
 			"Pivot": {
 				"x": 0.000000,
-				"y": 0.000000
+				"y": 0.000000,
+				"z": 0.000000
 			},
 			"BlendMode": 0,
 			"Scale9Enabled": false,
@@ -9089,8 +9197,9 @@
 				"y2": 0.000000
 			},
 			"Filters": [],
+			"Visible": true,
 			"@meta": {
-				"@id": 438631218,
+				"@id": 1207524888,
 				"@typeid": 149361045
 			}
 		}
@@ -9107,7 +9216,7 @@
 			"Scaleform::VGx::Data::Actor": {
 				"@typename": "Scaleform::VGx::Data::Actor",
 				"@typeid": 150545074,
-				"@version": 6
+				"@version": 8
 			},
 			"Scaleform::VGx::Data::Scene": {
 				"@typename": "Scaleform::VGx::Data::Scene",
@@ -9152,7 +9261,7 @@
 			"Scaleform::VGx::Data::DisplayLayer": {
 				"@typename": "Scaleform::VGx::Data::DisplayLayer",
 				"@typeid": 127570786,
-				"@version": 2
+				"@version": 3
 			},
 			"Scaleform::VGx::Data::ActorLayer": {
 				"@typename": "Scaleform::VGx::Data::ActorLayer",
@@ -9169,11 +9278,6 @@
 				"@typeid": 110556596,
 				"@version": 3
 			},
-			"Scaleform::Render::Point<float>": {
-				"@typename": "Scaleform::Render::Point<float>",
-				"@typeid": 149327086,
-				"@version": 1
-			},
 			"Scaleform::Render::Rect<float>": {
 				"@typename": "Scaleform::Render::Rect<float>",
 				"@typeid": 226345230,
@@ -9182,7 +9286,7 @@
 			"Scaleform::VGx::Data::AnimationKeyFrame": {
 				"@typename": "Scaleform::VGx::Data::AnimationKeyFrame",
 				"@typeid": 210448581,
-				"@version": 3
+				"@version": 4
 			},
 			"Scaleform::VGx::Data::AnimationActionData": {
 				"@typename": "Scaleform::VGx::Data::AnimationActionData",
@@ -9202,7 +9306,7 @@
 			"Scaleform::VGx::Data::TextComponent": {
 				"@typename": "Scaleform::VGx::Data::TextComponent",
 				"@typeid": 3283604,
-				"@version": 7
+				"@version": 8
 			}
 		}
 	}

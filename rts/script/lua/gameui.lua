@@ -68,11 +68,13 @@ GameUI.action = nil
 function GameUI.on_custom_event(evt)
 	if evt.name == "pause" then
 		--ゲームをポーズするためにactionの文字列を変更
-	--	GameUI.action = "pause"
+		GameUI.action = "pause"
     elseif evt.name == "restart" then
         GameUI.action = "restart"
     elseif evt.name == "go_to_top" then
         GameUI.action = "go_to_top"
+    elseif evt.name == "resume" then
+        GameUI.action = "resume"
     end
 end
 
@@ -87,13 +89,14 @@ local function perform_action()
 		--ゲームのタイムを止める処理を記述予定
 		--今はメインメニューに戻る処理とする
 		--GameUI.shutdown()
+		print("ポーズ状態に入っている")
 		--SimpleProject.change_level(Project.level_names.mainmenu)    --testmapに遷移
-		local UI = require 'script/lua/ui'
-		UI.show_pause_menu()
 	elseif GameUI.action == "restart" then
 	    SimpleProject.change_level(SimpleProject.level_name)  
     elseif GameUI.action == "go_to_top" then
         SimpleProject.change_level(Project.level_names.mainmenu)
+    elseif GameUI.action == "resume" then
+        --ゲームを再開するスクリプト
     end
     
 	GameUI.action = nil

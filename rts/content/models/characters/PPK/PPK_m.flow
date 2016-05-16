@@ -556,6 +556,7 @@ nodes = [
 	{
 		event_names = [
 			"ExitFlowEvent_PPK_jump"
+			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
 			"roll_exit"
 			"rolln_enter"
@@ -1296,6 +1297,7 @@ nodes = [
 	{
 		event_names = [
 			"ExitFlowEvent_PPK_jump"
+			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
 			"roll_exit"
 			"rolln_enter"
@@ -1478,6 +1480,7 @@ nodes = [
 	{
 		event_names = [
 			"ExitFlowEvent_PPK_jump"
+			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
 			"roll_exit"
 			"rolln_enter"
@@ -1597,6 +1600,7 @@ nodes = [
 	{
 		event_names = [
 			"ExitFlowEvent_PPK_jump"
+			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
 			"roll_exit"
 			"rolln_enter"
@@ -2250,6 +2254,7 @@ nodes = [
 	{
 		event_names = [
 			"ExitFlowEvent_PPK_jump"
+			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
 			"roll_exit"
 			"rolln_enter"
@@ -2389,6 +2394,7 @@ nodes = [
 	{
 		event_names = [
 			"ExitFlowEvent_PPK_jump"
+			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
 			"roll_exit"
 			"rolln_enter"
@@ -2875,8 +2881,8 @@ nodes = [
 				}
 				{
 					event = 0
-					id = "aee3ed3d-d425-41cd-a117-c2c71c8acc79:0"
-					node = "aee3ed3d-d425-41cd-a117-c2c71c8acc79"
+					id = "17f2b8f5-b056-4d43-89a4-e5c918dbdf6a:0"
+					node = "17f2b8f5-b056-4d43-89a4-e5c918dbdf6a"
 				}
 			]
 		}
@@ -2886,9 +2892,9 @@ nodes = [
 		}
 	}
 	{
-		flow_nodes_resource = "script/custom_nodes/go_to_top"
-		id = "aee3ed3d-d425-41cd-a117-c2c71c8acc79"
-		name = "Go To Top"
+		flow_nodes_resource = "script/custom_nodes/pause"
+		id = "17f2b8f5-b056-4d43-89a4-e5c918dbdf6a"
+		name = "Puase"
 		query = false
 		return_values = [
 		]

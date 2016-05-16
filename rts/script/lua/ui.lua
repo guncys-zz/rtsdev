@@ -109,27 +109,10 @@ function UI.gauge_update(pos)  --positionにはプレイヤーのY方向の位�
     end
 end
 
-function UI.show_pouse_menu()
-    local event = { --eventは関数内localではなく、このファイル内でアクセスできるようにする
-    		eventId = scaleform.EventTypes.Custom,
-    		name = nil,
-    		data = nil
-    	}
-    	--ダメージアニメーションの呼び出しイベント名登録
-    event.name = "pause_menu"
-    
-    local i = 0
-    while i <= 13 do
-        i = i + 1
-        event.data = {value = i}
-        scaleform.Stage.dispatch_event(event)
-    end
-end
-
-function UI.go_to_top()
+function UI.pause()
     local evt = { eventId = scaleform.EventTypes.Custom,
-                      name = "go_to_top",
-                      data = {} }
+                      name = "pause",
+                      data = { value = 1 }}
     scaleform.Stage.dispatch_event(evt)
 end
 

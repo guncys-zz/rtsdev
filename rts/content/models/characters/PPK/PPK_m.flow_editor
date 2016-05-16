@@ -2467,6 +2467,15 @@ Connections = [
 		ToNode = "abca08fb-e4c2-464a-9ab8-423f7e128ee7"
 	}
 	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "True"
+		FromNode = "68533231-935a-4e4d-9480-6df5eddb1eb4"
+		Id = "1ccea433-3852-4d95-981f-903f106cbe89"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "aee3ed3d-d425-41cd-a117-c2c71c8acc79"
+	}
+	{
 		Class = "Stingray.Flow.VariableConnection"
 		FromItem = "Value"
 		FromNode = "6f361b76-429e-458c-8bc7-b01a55fd2041"
@@ -3505,10 +3514,10 @@ Connections = [
 		Class = "Stingray.Flow.EventConnection"
 		FromItem = "True"
 		FromNode = "68533231-935a-4e4d-9480-6df5eddb1eb4"
-		Id = "1ccea433-3852-4d95-981f-903f106cbe89"
+		Id = "94296fbf-2526-4910-a9eb-d08b6fe73212"
 		Priority = 0
 		ToItem = "In"
-		ToNode = "aee3ed3d-d425-41cd-a117-c2c71c8acc79"
+		ToNode = "17f2b8f5-b056-4d43-89a4-e5c918dbdf6a"
 	}
 ]
 Groups = [
@@ -3737,7 +3746,7 @@ Groups = [
 		Id = "fb2a3a0d-6f17-4597-b682-bf4f150b5b9c"
 		Nodes = [
 			"12e3fba0-a865-452b-adee-3ea1da3f77fc"
-			"aee3ed3d-d425-41cd-a117-c2c71c8acc79"
+			"17f2b8f5-b056-4d43-89a4-e5c918dbdf6a"
 		]
 		Title = "Game Over"
 	}
@@ -3918,6 +3927,8 @@ Nodes = [
 		}
 		Numeric = {
 			Value = 0
+		}
+		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -4217,6 +4228,7 @@ Nodes = [
 		}
 		OutEvents = [
 			"ExitFlowEvent_PPK_jump"
+			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
 			"roll_exit"
 			"rolln_enter"
@@ -4293,6 +4305,8 @@ Nodes = [
 			X = 280
 			Y = -40
 		}
+		Out = {
+		}
 		Scope = {
 			Value = "local"
 		}
@@ -4312,6 +4326,8 @@ Nodes = [
 		NodeLocation = {
 			X = 2780
 			Y = 740
+		}
+		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -4816,6 +4832,7 @@ Nodes = [
 		}
 		OutEvents = [
 			"ExitFlowEvent_PPK_jump"
+			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
 			"roll_exit"
 			"rolln_enter"
@@ -4963,6 +4980,7 @@ Nodes = [
 		}
 		OutEvents = [
 			"ExitFlowEvent_PPK_jump"
+			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
 			"roll_exit"
 			"rolln_enter"
@@ -5037,6 +5055,8 @@ Nodes = [
 			X = 60
 			Y = -160
 		}
+		Out = {
+		}
 		Scope = {
 			Value = "local"
 		}
@@ -5056,6 +5076,7 @@ Nodes = [
 		}
 		OutEvents = [
 			"ExitFlowEvent_PPK_jump"
+			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
 			"roll_exit"
 			"rolln_enter"
@@ -5073,6 +5094,8 @@ Nodes = [
 		NodeLocation = {
 			X = 2240
 			Y = -200
+		}
+		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -5257,6 +5280,8 @@ Nodes = [
 		NodeLocation = {
 			X = -140
 			Y = 1460
+		}
+		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -5592,6 +5617,7 @@ Nodes = [
 		}
 		OutEvents = [
 			"ExitFlowEvent_PPK_jump"
+			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
 			"roll_exit"
 			"rolln_enter"
@@ -5611,6 +5637,8 @@ Nodes = [
 			Y = 940
 		}
 		Numeric = {
+		}
+		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -5686,6 +5714,7 @@ Nodes = [
 		}
 		OutEvents = [
 			"ExitFlowEvent_PPK_jump"
+			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
 			"roll_exit"
 			"rolln_enter"
@@ -5731,6 +5760,8 @@ Nodes = [
 			X = -140
 			Y = 700
 		}
+		Out = {
+		}
 		Scope = {
 			Value = "local"
 		}
@@ -5752,6 +5783,8 @@ Nodes = [
 			Y = 340
 		}
 		Numeric = {
+		}
+		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -5887,6 +5920,8 @@ Nodes = [
 		NodeLocation = {
 			X = 280
 			Y = -40
+		}
+		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -6108,16 +6143,16 @@ Nodes = [
 		Arguments = [
 		]
 		Class = "Stingray.Flow.CustomScriptNode"
-		FlowNodesResource = "script/custom_nodes/go_to_top"
+		FlowNodesResource = "script/custom_nodes/pause"
 		FlowNodesResourceKey = "flow_nodes_resource"
-		Id = "aee3ed3d-d425-41cd-a117-c2c71c8acc79"
+		Id = "17f2b8f5-b056-4d43-89a4-e5c918dbdf6a"
 		InEvents = [
 			"In"
 		]
 		IsQuery = false
-		Name = "Go To Top"
+		Name = "Puase"
 		NodeLocation = {
-			X = -60
+			X = -40
 			Y = 1040
 		}
 		OutEvents = [
