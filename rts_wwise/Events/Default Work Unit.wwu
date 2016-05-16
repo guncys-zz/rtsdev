@@ -38,6 +38,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="SE_PPK_roll" ID="{CD02C8D4-1D6E-4DFC-A438-9408A1EBC4A8}">
+							<ChildrenList>
+								<Action Name="Play" ID="{C8020B6E-CF17-4ECF-AC5A-41848DB6DC16}" ShortID="240472155" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{56BB011D-9C1D-4DB2-B7F2-BE09032203BC}" Global="false">
+											<ObjectRef Name="SE_PPK_roll" ID="{DCBE8706-9B56-4F1A-913B-93953769C2D1}" WorkUnitID="{82C69708-36C2-4538-9933-8E6B87A3A396}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="VO" ID="{B83884E8-4D1A-4BC6-AA1E-7F006C86ADF8}" ShortID="449022605"/>

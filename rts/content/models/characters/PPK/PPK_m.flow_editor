@@ -425,6 +425,24 @@ Connections = [
 	}
 	{
 		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out5"
+		FromNode = "b33f1e63-83bb-4089-b122-851b9ffcd7ca"
+		Id = "29c10fce-9756-430f-8660-76fa10ace9f8"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "abca08fb-e4c2-464a-9ab8-423f7e128ee7"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "LessOrEqual"
+		FromNode = "ae1ad32f-fae8-468d-acc9-b4329ce8f063"
+		Id = "29eb0439-e7b8-43e9-97bc-923bf95fe21f"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "a0b30465-79b3-4ec3-bf40-2dda1bdf5efe"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
 		FromItem = "Out"
 		FromNode = "19c51cf9-c70b-4281-a201-3193ff721f2d"
 		Id = "29f622f6-2c45-4e7c-96f7-c723937f83db"
@@ -478,6 +496,15 @@ Connections = [
 		ToNode = "753f4c3b-2a8e-48d4-b1ad-5ccf61a6527d"
 	}
 	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Z"
+		FromNode = "5b89b908-44e5-411f-a63f-7200b1994471"
+		Id = "2f2c1529-8b6f-49a4-a28b-0a4067000307"
+		ToItem = "Numeric"
+		ToNode = "e4f28e79-b6a9-4569-8c7e-7e5853804741"
+		Type = "Float"
+	}
+	{
 		Class = "Stingray.Flow.EventConnection"
 		FromItem = "Touched"
 		FromNode = "3183c3ab-88df-4fe8-b099-edc1e244ead6"
@@ -512,6 +539,15 @@ Connections = [
 		ToItem = "Unit"
 		ToNode = "c2f11acc-6759-4a05-9c76-7980ab42b2c1"
 		Type = "Unit"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "e4f28e79-b6a9-4569-8c7e-7e5853804741"
+		Id = "3326ad08-cb95-4b0c-afdb-075d426495a8"
+		ToItem = "Text"
+		ToNode = "abca08fb-e4c2-464a-9ab8-423f7e128ee7"
+		Type = "String"
 	}
 	{
 		Class = "Stingray.Flow.VariableConnection"
@@ -1439,6 +1475,15 @@ Connections = [
 		Priority = 0
 		ToItem = "Set"
 		ToNode = "cbdcdb6c-ad78-4ddc-b49c-181ace384d1d"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "a724d015-9c23-44dd-b1b0-e8cace8d04c4"
+		Id = "97875e26-3256-4403-a484-fb2e74beff92"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "b79ced4b-eaf0-4160-8e5f-14d7ccfe00e8"
 	}
 	{
 		Class = "Stingray.Flow.VariableConnection"
@@ -2431,51 +2476,6 @@ Connections = [
 		Type = "Float"
 	}
 	{
-		Class = "Stingray.Flow.EventConnection"
-		FromItem = "Out"
-		FromNode = "a724d015-9c23-44dd-b1b0-e8cace8d04c4"
-		Id = "97875e26-3256-4403-a484-fb2e74beff92"
-		Priority = 0
-		ToItem = "In"
-		ToNode = "b79ced4b-eaf0-4160-8e5f-14d7ccfe00e8"
-	}
-	{
-		Class = "Stingray.Flow.VariableConnection"
-		FromItem = "Value"
-		FromNode = "e4f28e79-b6a9-4569-8c7e-7e5853804741"
-		Id = "3326ad08-cb95-4b0c-afdb-075d426495a8"
-		ToItem = "Text"
-		ToNode = "abca08fb-e4c2-464a-9ab8-423f7e128ee7"
-		Type = "String"
-	}
-	{
-		Class = "Stingray.Flow.VariableConnection"
-		FromItem = "Z"
-		FromNode = "5b89b908-44e5-411f-a63f-7200b1994471"
-		Id = "2f2c1529-8b6f-49a4-a28b-0a4067000307"
-		ToItem = "Numeric"
-		ToNode = "e4f28e79-b6a9-4569-8c7e-7e5853804741"
-		Type = "Float"
-	}
-	{
-		Class = "Stingray.Flow.EventConnection"
-		FromItem = "Out5"
-		FromNode = "b33f1e63-83bb-4089-b122-851b9ffcd7ca"
-		Id = "29c10fce-9756-430f-8660-76fa10ace9f8"
-		Priority = 0
-		ToItem = "In"
-		ToNode = "abca08fb-e4c2-464a-9ab8-423f7e128ee7"
-	}
-	{
-		Class = "Stingray.Flow.EventConnection"
-		FromItem = "LessOrEqual"
-		FromNode = "ae1ad32f-fae8-468d-acc9-b4329ce8f063"
-		Id = "29eb0439-e7b8-43e9-97bc-923bf95fe21f"
-		Priority = 0
-		ToItem = "In"
-		ToNode = "a0b30465-79b3-4ec3-bf40-2dda1bdf5efe"
-	}
-	{
 		Class = "Stingray.Flow.VariableConnection"
 		FromItem = "Value"
 		FromNode = "6f361b76-429e-458c-8bc7-b01a55fd2041"
@@ -2483,6 +2483,15 @@ Connections = [
 		ToItem = "Numeric"
 		ToNode = "273bbd3f-9356-4225-a36d-d8b440fda8a3"
 		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out5"
+		FromNode = "b33f1e63-83bb-4089-b122-851b9ffcd7ca"
+		Id = "0855af25-2e69-4a14-ba57-5c3d22a76c62"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "df502459-82b2-4806-bfa0-84fb95f2c134"
 	}
 	{
 		Class = "Stingray.Flow.EventConnection"
@@ -2513,12 +2522,39 @@ Connections = [
 	}
 	{
 		Class = "Stingray.Flow.EventConnection"
+		FromItem = "LessOrEqual"
+		FromNode = "ae1ad32f-fae8-468d-acc9-b4329ce8f063"
+		Id = "0b8aaf13-b519-42d9-bc07-6764e6e92f34"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "3c12975a-ff3e-4239-9bb8-73758dda226f"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "5a27f2e5-241d-4e08-bd7b-abcc1e9c5f98"
+		Id = "0e95af48-44ca-49c7-b2b4-01eb8948a34d"
+		ToItem = "A"
+		ToNode = "8b1d36fa-4818-4c7c-90d8-df67b6f60533"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
 		FromItem = "True"
 		FromNode = "60e35027-6868-4474-b7ad-1cce8ba8f5cf"
 		Id = "0ef07b4e-e1cd-429b-9979-6f14168fab84"
 		Priority = 0
 		ToItem = "Create"
 		ToNode = "2b961d4b-6e3d-47d3-8298-8f7f92cac9df"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "True"
+		FromNode = "df502459-82b2-4806-bfa0-84fb95f2c134"
+		Id = "1208602b-b3ac-4caa-ac2a-eab72180700e"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "12e3fba0-a865-452b-adee-3ea1da3f77fc"
 	}
 	{
 		Class = "Stingray.Flow.EventConnection"
@@ -2567,6 +2603,15 @@ Connections = [
 	}
 	{
 		Class = "Stingray.Flow.EventConnection"
+		FromItem = "True"
+		FromNode = "68533231-935a-4e4d-9480-6df5eddb1eb4"
+		Id = "1ccea433-3852-4d95-981f-903f106cbe89"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "aee3ed3d-d425-41cd-a117-c2c71c8acc79"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
 		FromItem = "TriggerSetMoverHeight"
 		FromNode = "026c47e2-e715-462d-b34e-210b62e1f756"
 		Id = "26377090-581a-4da4-8dfd-01905c109ebe"
@@ -2600,6 +2645,15 @@ Connections = [
 		ToItem = "DeltaY"
 		ToNode = "a25faa58-41ec-452d-8fa8-9a14bd9fdd8f"
 		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "71c8a25f-219e-4075-aba0-f105322cda09"
+		Id = "2cac3f3b-27f7-4664-a035-31019ae79e48"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "68533231-935a-4e4d-9480-6df5eddb1eb4"
 	}
 	{
 		Class = "Stingray.Flow.VariableConnection"
@@ -2801,6 +2855,15 @@ Connections = [
 	}
 	{
 		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Position"
+		FromNode = "122d99b1-949d-4589-a7e6-9ecbfdfc1d04"
+		Id = "6a19bb25-54e2-4b2e-b76d-3a10a1f6b8f3"
+		ToItem = "Vector"
+		ToNode = "5b89b908-44e5-411f-a63f-7200b1994471"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
 		FromItem = "Value"
 		FromNode = "1bfdf467-57f3-4601-91c3-52e06e0471ee"
 		Id = "6ae0d56c-19b0-4029-822a-6be1d2507a26"
@@ -2872,6 +2935,15 @@ Connections = [
 		Type = "String"
 	}
 	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "18cc37ed-1618-448d-8ca9-8b465a841726"
+		Id = "7cb5283f-11cb-4da4-8a85-a0d71760ded2"
+		ToItem = "A"
+		ToNode = "ae1ad32f-fae8-468d-acc9-b4329ce8f063"
+		Type = "Float"
+	}
+	{
 		Class = "Stingray.Flow.EventConnection"
 		FromItem = "flowevent_damage_exit"
 		FromNode = "8daf3f9b-e244-48e5-af99-32d026e86791"
@@ -2926,6 +2998,33 @@ Connections = [
 		ToNode = "026c47e2-e715-462d-b34e-210b62e1f756"
 	}
 	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "5f8af596-6f97-4731-9730-48300c134f72"
+		Id = "8be923f5-95d3-49d1-bae3-690322d31ad2"
+		ToItem = "B"
+		ToNode = "ae1ad32f-fae8-468d-acc9-b4329ce8f063"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Z"
+		FromNode = "5b89b908-44e5-411f-a63f-7200b1994471"
+		Id = "8e24f968-43e1-4ec5-b6d1-ae922fc225f5"
+		ToItem = "A"
+		ToNode = "84a8a614-5794-4b28-8746-03c80e6502e9"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "True"
+		FromNode = "68533231-935a-4e4d-9480-6df5eddb1eb4"
+		Id = "906df417-cedd-48b7-8f68-d03d9ec29e9b"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "12e3fba0-a865-452b-adee-3ea1da3f77fc"
+	}
+	{
 		Class = "Stingray.Flow.EventConnection"
 		FromItem = "True"
 		FromNode = "43b01176-ff39-4642-aba3-057d5091f349"
@@ -2969,6 +3068,24 @@ Connections = [
 		Priority = 0
 		ToItem = "DamageIn"
 		ToNode = "49bee8ee-15f7-4147-930a-15d7aa37df84"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "84a8a614-5794-4b28-8746-03c80e6502e9"
+		Id = "a3dea1e3-bfe4-4493-b525-b9df3956adb1"
+		ToItem = "Condition"
+		ToNode = "df502459-82b2-4806-bfa0-84fb95f2c134"
+		Type = "Bool"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Damage"
+		FromNode = "da507579-c407-41d2-9f61-5fc76c7510a5"
+		Id = "a4af7557-14e5-4f4b-bb42-fa81523f9004"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "46ff06d5-9a10-4f7a-9665-088bc2d66cbf"
 	}
 	{
 		Class = "Stingray.Flow.EventConnection"
@@ -3187,6 +3304,15 @@ Connections = [
 		Type = "Float"
 	}
 	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "8b1d36fa-4818-4c7c-90d8-df67b6f60533"
+		Id = "d32ce752-b902-4db4-bcac-ca887d3a7767"
+		ToItem = "Condition"
+		ToNode = "68533231-935a-4e4d-9480-6df5eddb1eb4"
+		Type = "Bool"
+	}
+	{
 		Class = "Stingray.Flow.EventConnection"
 		FromItem = "set_state_roll"
 		FromNode = "b0d7f7d9-b51d-4a37-a9f1-e182e5f39663"
@@ -3251,12 +3377,30 @@ Connections = [
 	}
 	{
 		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Greater"
+		FromNode = "ae1ad32f-fae8-468d-acc9-b4329ce8f063"
+		Id = "e2659a5c-00dd-4204-b7e4-59241aebc066"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "95dad34a-9e56-4f20-b192-ed0d51ad58f4"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
 		FromItem = "Out"
 		FromNode = "e90f9a95-ef50-48c3-98ee-ff34dcd8ce80"
 		Id = "e5b772f8-cdc1-45b7-888b-5d704405c47e"
 		Priority = 0
 		ToItem = "Set"
 		ToNode = "3a611a19-ca04-489c-9baa-1b79712253e6"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "e90f9a95-ef50-48c3-98ee-ff34dcd8ce80"
+		Id = "e8198c2c-07de-43aa-9ad5-121e9f831126"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "5c9277b0-ad69-450f-96d6-9e63cf9386a6"
 	}
 	{
 		Class = "Stingray.Flow.VariableConnection"
@@ -3274,6 +3418,15 @@ Connections = [
 		Id = "ea6674d8-d1ef-4bd2-916b-22355c8b21a0"
 		ToItem = "A"
 		ToNode = "cec06339-f036-49ea-9230-3f9787a7a23e"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "cd82bc40-3e96-4554-9ff7-1dd8126cd512"
+		Id = "ec8bb56f-e33b-4bd5-8a79-604fd371c980"
+		ToItem = "B"
+		ToNode = "84a8a614-5794-4b28-8746-03c80e6502e9"
 		Type = "Float"
 	}
 	{
@@ -3302,6 +3455,24 @@ Connections = [
 		Priority = 0
 		ToItem = "rolln exit"
 		ToNode = "b0d7f7d9-b51d-4a37-a9f1-e182e5f39663"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Damage"
+		FromNode = "da507579-c407-41d2-9f61-5fc76c7510a5"
+		Id = "f055b366-b35b-4f21-a84b-4a1f9f4114b0"
+		Priority = 0
+		ToItem = "Create"
+		ToNode = "f0b4f2f1-f3fa-462f-8b1e-93ed3896e4be"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "caea7e85-cca1-4fe5-b413-29af7070f57e"
+		Id = "f0f490a8-242a-483e-b846-270312fa445b"
+		ToItem = "Value"
+		ToNode = "5c9277b0-ad69-450f-96d6-9e63cf9386a6"
+		Type = "Float"
 	}
 	{
 		Class = "Stingray.Flow.EventConnection"
@@ -3395,183 +3566,21 @@ Connections = [
 	}
 	{
 		Class = "Stingray.Flow.EventConnection"
-		FromItem = "Damage"
-		FromNode = "da507579-c407-41d2-9f61-5fc76c7510a5"
-		Id = "f055b366-b35b-4f21-a84b-4a1f9f4114b0"
-		Priority = 0
-		ToItem = "Create"
-		ToNode = "f0b4f2f1-f3fa-462f-8b1e-93ed3896e4be"
-	}
-	{
-		Class = "Stingray.Flow.VariableConnection"
-		FromItem = "Value"
-		FromNode = "caea7e85-cca1-4fe5-b413-29af7070f57e"
-		Id = "f0f490a8-242a-483e-b846-270312fa445b"
-		ToItem = "Value"
-		ToNode = "5c9277b0-ad69-450f-96d6-9e63cf9386a6"
-		Type = "Float"
-	}
-	{
-		Class = "Stingray.Flow.EventConnection"
-		FromItem = "Out"
-		FromNode = "e90f9a95-ef50-48c3-98ee-ff34dcd8ce80"
-		Id = "e8198c2c-07de-43aa-9ad5-121e9f831126"
-		Priority = 0
-		ToItem = "In"
-		ToNode = "5c9277b0-ad69-450f-96d6-9e63cf9386a6"
-	}
-	{
-		Class = "Stingray.Flow.VariableConnection"
-		FromItem = "Value"
-		FromNode = "5a27f2e5-241d-4e08-bd7b-abcc1e9c5f98"
-		Id = "0e95af48-44ca-49c7-b2b4-01eb8948a34d"
-		ToItem = "A"
-		ToNode = "8b1d36fa-4818-4c7c-90d8-df67b6f60533"
-		Type = "Float"
-	}
-	{
-		Class = "Stingray.Flow.VariableConnection"
-		FromItem = "Value"
-		FromNode = "8b1d36fa-4818-4c7c-90d8-df67b6f60533"
-		Id = "d32ce752-b902-4db4-bcac-ca887d3a7767"
-		ToItem = "Condition"
-		ToNode = "68533231-935a-4e4d-9480-6df5eddb1eb4"
-		Type = "Bool"
-	}
-	{
-		Class = "Stingray.Flow.EventConnection"
-		FromItem = "Out"
-		FromNode = "71c8a25f-219e-4075-aba0-f105322cda09"
-		Id = "2cac3f3b-27f7-4664-a035-31019ae79e48"
-		Priority = 0
-		ToItem = "In"
-		ToNode = "68533231-935a-4e4d-9480-6df5eddb1eb4"
-	}
-	{
-		Class = "Stingray.Flow.EventConnection"
-		FromItem = "True"
-		FromNode = "68533231-935a-4e4d-9480-6df5eddb1eb4"
-		Id = "906df417-cedd-48b7-8f68-d03d9ec29e9b"
-		Priority = 0
-		ToItem = "In"
-		ToNode = "12e3fba0-a865-452b-adee-3ea1da3f77fc"
-	}
-	{
-		Class = "Stingray.Flow.VariableConnection"
-		FromItem = "Position"
-		FromNode = "122d99b1-949d-4589-a7e6-9ecbfdfc1d04"
-		Id = "6a19bb25-54e2-4b2e-b76d-3a10a1f6b8f3"
-		ToItem = "Vector"
-		ToNode = "5b89b908-44e5-411f-a63f-7200b1994471"
-		Type = "Vector3"
-	}
-	{
-		Class = "Stingray.Flow.VariableConnection"
-		FromItem = "Value"
-		FromNode = "84a8a614-5794-4b28-8746-03c80e6502e9"
-		Id = "a3dea1e3-bfe4-4493-b525-b9df3956adb1"
-		ToItem = "Condition"
-		ToNode = "df502459-82b2-4806-bfa0-84fb95f2c134"
-		Type = "Bool"
-	}
-	{
-		Class = "Stingray.Flow.EventConnection"
-		FromItem = "Out5"
+		FromItem = "Out6"
 		FromNode = "b33f1e63-83bb-4089-b122-851b9ffcd7ca"
-		Id = "0855af25-2e69-4a14-ba57-5c3d22a76c62"
-		Priority = 0
-		ToItem = "In"
-		ToNode = "df502459-82b2-4806-bfa0-84fb95f2c134"
-	}
-	{
-		Class = "Stingray.Flow.EventConnection"
-		FromItem = "True"
-		FromNode = "df502459-82b2-4806-bfa0-84fb95f2c134"
-		Id = "1208602b-b3ac-4caa-ac2a-eab72180700e"
-		Priority = 0
-		ToItem = "In"
-		ToNode = "12e3fba0-a865-452b-adee-3ea1da3f77fc"
-	}
-	{
-		Class = "Stingray.Flow.VariableConnection"
-		FromItem = "Z"
-		FromNode = "5b89b908-44e5-411f-a63f-7200b1994471"
-		Id = "8e24f968-43e1-4ec5-b6d1-ae922fc225f5"
-		ToItem = "A"
-		ToNode = "84a8a614-5794-4b28-8746-03c80e6502e9"
-		Type = "Float"
-	}
-	{
-		Class = "Stingray.Flow.VariableConnection"
-		FromItem = "Value"
-		FromNode = "cd82bc40-3e96-4554-9ff7-1dd8126cd512"
-		Id = "ec8bb56f-e33b-4bd5-8a79-604fd371c980"
-		ToItem = "B"
-		ToNode = "84a8a614-5794-4b28-8746-03c80e6502e9"
-		Type = "Float"
-	}
-	{
-		Class = "Stingray.Flow.EventConnection"
-		FromItem = "True"
-		FromNode = "68533231-935a-4e4d-9480-6df5eddb1eb4"
-		Id = "1ccea433-3852-4d95-981f-903f106cbe89"
-		Priority = 0
-		ToItem = "In"
-		ToNode = "aee3ed3d-d425-41cd-a117-c2c71c8acc79"
-	}
-	{
-		Class = "Stingray.Flow.EventConnection"
-		FromItem = "Damage"
-		FromNode = "da507579-c407-41d2-9f61-5fc76c7510a5"
-		Id = "a4af7557-14e5-4f4b-bb42-fa81523f9004"
-		Priority = 0
-		ToItem = "In"
-		ToNode = "46ff06d5-9a10-4f7a-9665-088bc2d66cbf"
-	}
-	{
-		Class = "Stingray.Flow.VariableConnection"
-		FromItem = "Value"
-		FromNode = "18cc37ed-1618-448d-8ca9-8b465a841726"
-		Id = "7cb5283f-11cb-4da4-8a85-a0d71760ded2"
-		ToItem = "A"
-		ToNode = "ae1ad32f-fae8-468d-acc9-b4329ce8f063"
-		Type = "Float"
-	}
-	{
-		Class = "Stingray.Flow.EventConnection"
-		FromItem = "Out"
-		FromNode = "5f8cecb8-6417-4bdc-acf3-2e829b171ac5"
-		Id = "c104caa7-c0e7-44f4-b867-5f28ef66ac8b"
+		Id = "cbadf2a4-d3be-43df-8b0c-ee1f42c2f101"
 		Priority = 0
 		ToItem = "Compare"
 		ToNode = "ae1ad32f-fae8-468d-acc9-b4329ce8f063"
 	}
 	{
-		Class = "Stingray.Flow.VariableConnection"
-		FromItem = "Value"
-		FromNode = "5f8af596-6f97-4731-9730-48300c134f72"
-		Id = "8be923f5-95d3-49d1-bae3-690322d31ad2"
-		ToItem = "B"
-		ToNode = "ae1ad32f-fae8-468d-acc9-b4329ce8f063"
-		Type = "Float"
-	}
-	{
 		Class = "Stingray.Flow.EventConnection"
-		FromItem = "LessOrEqual"
-		FromNode = "ae1ad32f-fae8-468d-acc9-b4329ce8f063"
-		Id = "0b8aaf13-b519-42d9-bc07-6764e6e92f34"
+		FromItem = "Out"
+		FromNode = "389ff40a-b561-4344-bd9a-69d243d06a31"
+		Id = "0e108928-5fe0-4289-908a-b88c05460909"
 		Priority = 0
 		ToItem = "In"
-		ToNode = "3c12975a-ff3e-4239-9bb8-73758dda226f"
-	}
-	{
-		Class = "Stingray.Flow.EventConnection"
-		FromItem = "Greater"
-		FromNode = "ae1ad32f-fae8-468d-acc9-b4329ce8f063"
-		Id = "e2659a5c-00dd-4204-b7e4-59241aebc066"
-		Priority = 0
-		ToItem = "In"
-		ToNode = "95dad34a-9e56-4f20-b192-ed0d51ad58f4"
+		ToNode = "66f62233-8740-4a0c-ab84-f976ce8581e0"
 	}
 ]
 Groups = [
@@ -3705,6 +3714,20 @@ Groups = [
 		Collapsed = false
 		Groups = [
 		]
+		Id = "aef8b6a2-1262-4a06-96ed-5d2fe802e379"
+		Nodes = [
+			"5f8af596-6f97-4731-9730-48300c134f72"
+			"18cc37ed-1618-448d-8ca9-8b465a841726"
+			"ae1ad32f-fae8-468d-acc9-b4329ce8f063"
+			"3c12975a-ff3e-4239-9bb8-73758dda226f"
+			"95dad34a-9e56-4f20-b192-ed0d51ad58f4"
+		]
+		Title = "Player State for Wwise"
+	}
+	{
+		Collapsed = false
+		Groups = [
+		]
 		Id = "affe1f1a-d1a7-43c1-9488-6b2e513da659"
 		Nodes = [
 			"71c8a25f-219e-4075-aba0-f105322cda09"
@@ -3730,6 +3753,20 @@ Groups = [
 			"6d608129-f341-46cc-99d6-1d9053e823a3"
 		]
 		Title = "Roll"
+	}
+	{
+		Collapsed = false
+		Groups = [
+		]
+		Id = "cba18ecd-aafd-466e-b290-a2845d0f5e75"
+		Nodes = [
+			"122d99b1-949d-4589-a7e6-9ecbfdfc1d04"
+			"5b89b908-44e5-411f-a63f-7200b1994471"
+			"84a8a614-5794-4b28-8746-03c80e6502e9"
+			"df502459-82b2-4806-bfa0-84fb95f2c134"
+			"cd82bc40-3e96-4554-9ff7-1dd8126cd512"
+		]
+		Title = "PPKのZ座標をチェックして指定値以下ならGameOverにする"
 	}
 	{
 		Collapsed = false
@@ -3786,17 +3823,6 @@ Groups = [
 		Collapsed = false
 		Groups = [
 		]
-		Id = "fbd59cdd-c34b-496f-9afb-868295e7ebdf"
-		Nodes = [
-			"f114301c-c770-4081-bfbb-a4f91ec26d5e"
-			"377bd1e8-cd70-43d8-9b6f-c38ff27fb869"
-		]
-		Title = "Runのモーションの再生が始まったらstateをrunに変更"
-	}
-	{
-		Collapsed = false
-		Groups = [
-		]
 		Id = "fb2a3a0d-6f17-4597-b682-bf4f150b5b9c"
 		Nodes = [
 			"12e3fba0-a865-452b-adee-3ea1da3f77fc"
@@ -3808,15 +3834,22 @@ Groups = [
 		Collapsed = false
 		Groups = [
 		]
-		Id = "cba18ecd-aafd-466e-b290-a2845d0f5e75"
+		Id = "fbd59cdd-c34b-496f-9afb-868295e7ebdf"
 		Nodes = [
-			"122d99b1-949d-4589-a7e6-9ecbfdfc1d04"
-			"5b89b908-44e5-411f-a63f-7200b1994471"
-			"84a8a614-5794-4b28-8746-03c80e6502e9"
-			"df502459-82b2-4806-bfa0-84fb95f2c134"
-			"cd82bc40-3e96-4554-9ff7-1dd8126cd512"
+			"f114301c-c770-4081-bfbb-a4f91ec26d5e"
+			"377bd1e8-cd70-43d8-9b6f-c38ff27fb869"
 		]
-		Title = "PPKのZ座標をチェックして指定値以下ならGameOverにする"
+		Title = "Runのモーションの再生が始まったらstateをrunに変更"
+	}
+	{
+		Collapsed = false
+		Groups = [
+		]
+		Id = "b500c920-7311-47f3-be76-9f3879171c36"
+		Nodes = [
+			"66f62233-8740-4a0c-ab84-f976ce8581e0"
+		]
+		Title = "Sound"
 	}
 ]
 Nodes = [
@@ -4050,6 +4083,68 @@ Nodes = [
 		Width = 160
 	}
 	{
+		Class = "Stingray.Flow.GetUnitWorldPosition"
+		Id = "122d99b1-949d-4589-a7e6-9ecbfdfc1d04"
+		NodeLocation = {
+			X = 160
+			Y = 540
+		}
+		Object = {
+		}
+		Position = {
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Width = 160
+	}
+	{
+		Arguments = [
+			{
+				RawName = "Label"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.InVariableString"
+				}
+			}
+			{
+				RawName = "Color"
+				Type = "vector3"
+				Variable = {
+					Class = "Stingray.Flow.InVariableVector3"
+					Value = "255 0 0"
+				}
+			}
+			{
+				RawName = "Text"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.InVariableString"
+					Value = "GameOver"
+				}
+			}
+		]
+		Class = "Stingray.Flow.CustomScriptNode"
+		FlowNodesResource = "core/appkit/appkit"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "12e3fba0-a865-452b-adee-3ea1da3f77fc"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "Print To Screen"
+		NodeLocation = {
+			X = -40
+			Y = 1180
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = [
+		]
+		Width = 160
+	}
+	{
 		Class = "Stingray.Flow.GetUnitBoolData"
 		Id = "14cd23e1-d12a-44f8-8ac4-1edcb14784bf"
 		Key = {
@@ -4058,6 +4153,23 @@ Nodes = [
 		NodeLocation = {
 			X = 380
 			Y = 380
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.GetUnitNumericData"
+		Id = "18cc37ed-1618-448d-8ca9-8b465a841726"
+		Key = {
+			Value = "HP"
+		}
+		NodeLocation = {
+			X = 440
+			Y = -500
 		}
 		Unit = {
 			UseMyUnit = true
@@ -4090,7 +4202,7 @@ Nodes = [
 		}
 		NodeLocation = {
 			X = -380
-			Y = 2040
+			Y = 2540
 		}
 		Out1 = {
 		}
@@ -4204,7 +4316,7 @@ Nodes = [
 		Name = "Print To Screen"
 		NodeLocation = {
 			X = -120
-			Y = 2100
+			Y = 2600
 		}
 		OutEvents = [
 			"Out"
@@ -4369,6 +4481,65 @@ Nodes = [
 	}
 	{
 		Class = "Stingray.Flow.SetStringVariable"
+		Id = "3a611a19-ca04-489c-9baa-1b79712253e6"
+		Name = {
+			Value = "status"
+		}
+		NodeLocation = {
+			X = 280
+			Y = -40
+		}
+		Scope = {
+			Value = "local"
+		}
+		Set = {
+		}
+		String = {
+			Value = "run"
+		}
+		Width = 160
+	}
+	{
+		Arguments = [
+			{
+				RawName = "Group"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.InVariableString"
+					Value = "State_Player"
+				}
+			}
+			{
+				RawName = "State"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.InVariableString"
+					Value = "State_Player_Hurry"
+				}
+			}
+		]
+		Class = "Stingray.Flow.CustomScriptNode"
+		FlowNodesResource = "core/wwise/wwise"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "3c12975a-ff3e-4239-9bb8-73758dda226f"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "Wwise Set State"
+		NodeLocation = {
+			X = 900
+			Y = -540
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = [
+		]
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.SetStringVariable"
 		Id = "3ca14ad6-a519-4fb4-ae11-8f605c0694ed"
 		Name = {
 			Value = "status"
@@ -4471,6 +4642,80 @@ Nodes = [
 		}
 		Unequal = {
 		}
+		Width = 160
+	}
+	{
+		Arguments = [
+			{
+				RawName = "Unit"
+				Type = "unit"
+				Variable = {
+					Class = "Stingray.Flow.InVariableUnit"
+					UseMyUnit = false
+				}
+			}
+			{
+				RawName = "Position"
+				Type = "vector3"
+				Variable = {
+					Class = "Stingray.Flow.InVariableVector3"
+				}
+			}
+			{
+				RawName = "Name"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.InVariableString"
+					Value = "SE_PPK_damage1"
+				}
+			}
+			{
+				RawName = "Existing_Source_Id"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Flow.InVariableFloat"
+				}
+			}
+			{
+				RawName = "Unit_Node"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.InVariableString"
+				}
+			}
+		]
+		Class = "Stingray.Flow.CustomScriptNode"
+		FlowNodesResource = "core/wwise/wwise"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "46ff06d5-9a10-4f7a-9665-088bc2d66cbf"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "Wwise Trigger Event"
+		NodeLocation = {
+			X = -660
+			Y = 1820
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = [
+			{
+				RawName = "Playing_Id"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Flow.OutVariableFloat"
+				}
+			}
+			{
+				RawName = "Source_Id"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Flow.OutVariableFloat"
+				}
+			}
+		]
 		Width = 160
 	}
 	{
@@ -4703,6 +4948,44 @@ Nodes = [
 		Width = 140
 	}
 	{
+		Class = "Stingray.Flow.VectorComponents"
+		Id = "5b89b908-44e5-411f-a63f-7200b1994471"
+		NodeLocation = {
+			X = 420
+			Y = 520
+		}
+		Vector = {
+		}
+		Width = 160
+		X = {
+		}
+		Y = {
+		}
+		Z = {
+		}
+	}
+	{
+		Class = "Stingray.Flow.SetUnitNumericData"
+		Id = "5c9277b0-ad69-450f-96d6-9e63cf9386a6"
+		In = {
+		}
+		Key = {
+			Value = "Speed"
+		}
+		NodeLocation = {
+			X = 460
+			Y = -160
+		}
+		Out = {
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
 		Class = "Stingray.Flow.SetUnitMover"
 		Id = "5ca42444-019a-4feb-84c9-53e50736fec2"
 		In = {
@@ -4739,11 +5022,25 @@ Nodes = [
 		Width = 160
 	}
 	{
+		Class = "Stingray.Flow.NumericData"
+		Id = "5f8af596-6f97-4731-9730-48300c134f72"
+		NodeLocation = {
+			X = 440
+			Y = -420
+		}
+		Set = {
+			Value = 1
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
 		Class = "Stingray.Flow.LevelUpdate"
 		Id = "5f8cecb8-6417-4bdc-acf3-2e829b171ac5"
 		NodeLocation = {
-			X = -980
-			Y = 180
+			X = -1320
+			Y = 220
 		}
 		Out = {
 		}
@@ -4789,12 +5086,29 @@ Nodes = [
 		}
 		False = {
 		}
+		Id = "68533231-935a-4e4d-9480-6df5eddb1eb4"
+		In = {
+		}
+		NodeLocation = {
+			X = -380
+			Y = 1140
+		}
+		True = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.Branch"
+		Condition = {
+		}
+		False = {
+		}
 		Id = "692a30de-4159-47a9-bb88-656fe1624efb"
 		In = {
 		}
 		NodeLocation = {
 			X = -580
-			Y = 2060
+			Y = 2560
 		}
 		True = {
 		}
@@ -4843,6 +5157,23 @@ Nodes = [
 		NodeLocation = {
 			X = 1620
 			Y = 400
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.GetUnitNumericData"
+		Id = "6f361b76-429e-458c-8bc7-b01a55fd2041"
+		Key = {
+			Value = "HP"
+		}
+		NodeLocation = {
+			X = -1020
+			Y = 1060
 		}
 		Unit = {
 			UseMyUnit = true
@@ -4908,6 +5239,51 @@ Nodes = [
 		}
 		Value = {
 		}
+		Width = 160
+	}
+	{
+		Arguments = [
+			{
+				RawName = "Label"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.InVariableString"
+					Value = "HP: "
+				}
+			}
+			{
+				RawName = "Color"
+				Type = "vector3"
+				Variable = {
+					Class = "Stingray.Flow.InVariableVector3"
+				}
+			}
+			{
+				RawName = "Text"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.InVariableString"
+				}
+			}
+		]
+		Class = "Stingray.Flow.CustomScriptNode"
+		FlowNodesResource = "core/appkit/appkit"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "74eb63c1-b379-43cb-8279-ae3608db3497"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "Print To Screen"
+		NodeLocation = {
+			X = -340
+			Y = 940
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = [
+		]
 		Width = 160
 	}
 	{
@@ -4981,6 +5357,21 @@ Nodes = [
 		Value = {
 		}
 		Width = 160
+	}
+	{
+		A = {
+		}
+		B = {
+		}
+		Class = "Stingray.Flow.NumericLessThanNumeric"
+		Id = "84a8a614-5794-4b28-8746-03c80e6502e9"
+		NodeLocation = {
+			X = 620
+			Y = 600
+		}
+		Value = {
+		}
+		Width = 140
 	}
 	{
 		Class = "Stingray.Flow.GetUnitNumericData"
@@ -5061,6 +5452,22 @@ Nodes = [
 		Width = 160
 	}
 	{
+		A = {
+		}
+		B = {
+			Value = 0
+		}
+		Class = "Stingray.Flow.NumericLessThanNumeric"
+		Id = "8b1d36fa-4818-4c7c-90d8-df67b6f60533"
+		NodeLocation = {
+			X = -600
+			Y = 1200
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
 		Class = "Stingray.Flow.NumericToString"
 		Id = "8bfbcd09-4df2-4e40-a2d6-acdf008c6012"
 		NodeLocation = {
@@ -5131,6 +5538,45 @@ Nodes = [
 		}
 		String = {
 		}
+		Width = 160
+	}
+	{
+		Arguments = [
+			{
+				RawName = "Group"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.InVariableString"
+					Value = "State_Player"
+				}
+			}
+			{
+				RawName = "State"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.InVariableString"
+					Value = "State_Player_Normal"
+				}
+			}
+		]
+		Class = "Stingray.Flow.CustomScriptNode"
+		FlowNodesResource = "core/wwise/wwise"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "95dad34a-9e56-4f20-b192-ed0d51ad58f4"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "Wwise Set State"
+		NodeLocation = {
+			X = 900
+			Y = -420
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = [
+		]
 		Width = 160
 	}
 	{
@@ -5238,6 +5684,31 @@ Nodes = [
 		Width = 160
 	}
 	{
+		Class = "Stingray.Flow.MoverActorCollision"
+		Id = "a724d015-9c23-44dd-b1b0-e8cace8d04c4"
+		MotionDirection = {
+		}
+		MotionLength = {
+		}
+		NodeLocation = {
+			X = -1680
+			Y = 1320
+		}
+		Normal = {
+		}
+		Out = {
+		}
+		Position = {
+		}
+		TouchedMover = {
+		}
+		TouchingActor = {
+		}
+		TouchingUnit = {
+		}
+		Width = 160
+	}
+	{
 		Class = "Stingray.Flow.GetUnitNumericData"
 		Id = "a831ce3f-15cb-47ae-a059-a1d40010c779"
 		Key = {
@@ -5272,6 +5743,31 @@ Nodes = [
 		Width = 160
 	}
 	{
+		A = {
+		}
+		B = {
+		}
+		Class = "Stingray.Flow.CompareNode"
+		Compare = {
+		}
+		Equal = {
+		}
+		Greater = {
+		}
+		GreaterOrEqual = {
+		}
+		Id = "ae1ad32f-fae8-468d-acc9-b4329ce8f063"
+		Less = {
+		}
+		LessOrEqual = {
+		}
+		NodeLocation = {
+			X = 680
+			Y = -540
+		}
+		Width = 160
+	}
+	{
 		Class = "Stingray.Flow.Sequence"
 		Id = "ae48ccca-ba9c-4530-9285-34d582999f4c"
 		In = {
@@ -5296,6 +5792,29 @@ Nodes = [
 		}
 		Out8 = {
 		}
+		Width = 160
+	}
+	{
+		Arguments = [
+		]
+		Class = "Stingray.Flow.CustomScriptNode"
+		FlowNodesResource = "script/custom_nodes/go_to_top"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "aee3ed3d-d425-41cd-a117-c2c71c8acc79"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "Go To Top"
+		NodeLocation = {
+			X = -60
+			Y = 1040
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = [
+		]
 		Width = 160
 	}
 	{
@@ -5538,6 +6057,40 @@ Nodes = [
 		Width = 160
 	}
 	{
+		Class = "Stingray.Flow.GetUnitNumericData"
+		Id = "caea7e85-cca1-4fe5-b413-29af7070f57e"
+		Key = {
+			Value = "RunSpeed"
+		}
+		NodeLocation = {
+			X = 260
+			Y = -200
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.GetUnitNumericData"
+		Id = "cd82bc40-3e96-4554-9ff7-1dd8126cd512"
+		Key = {
+			Value = "HeightGameOver"
+		}
+		NodeLocation = {
+			X = 420
+			Y = 660
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
 		A = {
 		}
 		B = {
@@ -5579,7 +6132,7 @@ Nodes = [
 		}
 		NodeLocation = {
 			X = -780
-			Y = 2060
+			Y = 2560
 		}
 		Unit = {
 			UseMyUnit = true
@@ -5629,6 +6182,23 @@ Nodes = [
 		OutVariables = [
 		]
 		Width = 340
+	}
+	{
+		Class = "Stingray.Flow.Branch"
+		Condition = {
+		}
+		False = {
+		}
+		Id = "df502459-82b2-4806-bfa0-84fb95f2c134"
+		In = {
+		}
+		NodeLocation = {
+			X = 800
+			Y = 640
+		}
+		True = {
+		}
+		Width = 160
 	}
 	{
 		AnimationController = {
@@ -5747,6 +6317,67 @@ Nodes = [
 		Width = 380
 	}
 	{
+		Class = "Stingray.Flow.Sequence"
+		Id = "ee4ff57b-bb01-4afa-9bc3-52497e79d04b"
+		In = {
+		}
+		NodeLocation = {
+			X = -780
+			Y = 20
+		}
+		Out1 = {
+		}
+		Out2 = {
+		}
+		Out3 = {
+		}
+		Out4 = {
+		}
+		Out5 = {
+		}
+		Out6 = {
+		}
+		Out7 = {
+		}
+		Out8 = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ParticleEffect"
+		Create = {
+		}
+		Destroy = {
+		}
+		Effect = {
+			Value = "content/effect/fx_e_dmg00_00"
+		}
+		EffectId = {
+		}
+		Id = "f0b4f2f1-f3fa-462f-8b1e-93ed3896e4be"
+		Kill = {
+		}
+		Linked = {
+			Value = false
+		}
+		NodeLocation = {
+			X = -900
+			Y = 1880
+		}
+		Object = {
+		}
+		Offset = {
+		}
+		OrphanedPolicy = {
+		}
+		RotationOffset = {
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Width = 160
+	}
+	{
 		Class = "Stingray.Flow.SetStringVariable"
 		Id = "f114301c-c770-4081-bfbb-a4f91ec26d5e"
 		Name = {
@@ -5807,352 +6438,6 @@ Nodes = [
 		Width = 160
 	}
 	{
-		Class = "Stingray.Flow.ParticleEffect"
-		Create = {
-		}
-		Destroy = {
-		}
-		Effect = {
-			Value = "content/effect/fx_e_dmg00_00"
-		}
-		EffectId = {
-		}
-		Id = "f0b4f2f1-f3fa-462f-8b1e-93ed3896e4be"
-		Kill = {
-		}
-		Linked = {
-			Value = false
-		}
-		NodeLocation = {
-			X = -900
-			Y = 1880
-		}
-		Object = {
-		}
-		Offset = {
-		}
-		OrphanedPolicy = {
-		}
-		RotationOffset = {
-		}
-		Unit = {
-			UseMyUnit = true
-		}
-		Width = 160
-	}
-	{
-		Class = "Stingray.Flow.MoverActorCollision"
-		Id = "a724d015-9c23-44dd-b1b0-e8cace8d04c4"
-		MotionDirection = {
-		}
-		MotionLength = {
-		}
-		NodeLocation = {
-			X = -1680
-			Y = 1320
-		}
-		Normal = {
-		}
-		Out = {
-		}
-		Position = {
-		}
-		TouchedMover = {
-		}
-		TouchingActor = {
-		}
-		TouchingUnit = {
-		}
-		Width = 160
-	}
-	{
-		Class = "Stingray.Flow.SetUnitNumericData"
-		Id = "5c9277b0-ad69-450f-96d6-9e63cf9386a6"
-		In = {
-		}
-		Key = {
-			Value = "Speed"
-		}
-		NodeLocation = {
-			X = 460
-			Y = -160
-		}
-		Out = {
-		}
-		Unit = {
-			UseMyUnit = true
-		}
-		Value = {
-		}
-		Width = 160
-	}
-	{
-		Class = "Stingray.Flow.GetUnitNumericData"
-		Id = "caea7e85-cca1-4fe5-b413-29af7070f57e"
-		Key = {
-			Value = "RunSpeed"
-		}
-		NodeLocation = {
-			X = 260
-			Y = -200
-		}
-		Unit = {
-			UseMyUnit = true
-		}
-		Value = {
-		}
-		Width = 160
-	}
-	{
-		Class = "Stingray.Flow.SetStringVariable"
-		Id = "3a611a19-ca04-489c-9baa-1b79712253e6"
-		Name = {
-			Value = "status"
-		}
-		NodeLocation = {
-			X = 280
-			Y = -40
-		}
-		Scope = {
-			Value = "local"
-		}
-		Set = {
-		}
-		String = {
-			Value = "run"
-		}
-		Width = 160
-	}
-	{
-		A = {
-		}
-		B = {
-			Value = 0
-		}
-		Class = "Stingray.Flow.NumericLessThanNumeric"
-		Id = "8b1d36fa-4818-4c7c-90d8-df67b6f60533"
-		NodeLocation = {
-			X = -600
-			Y = 1200
-		}
-		Value = {
-		}
-		Width = 160
-	}
-	{
-		Arguments = [
-			{
-				RawName = "Label"
-				Type = "string"
-				Variable = {
-					Class = "Stingray.Flow.InVariableString"
-				}
-			}
-			{
-				RawName = "Color"
-				Type = "vector3"
-				Variable = {
-					Class = "Stingray.Flow.InVariableVector3"
-					Value = "255 0 0"
-				}
-			}
-			{
-				RawName = "Text"
-				Type = "string"
-				Variable = {
-					Class = "Stingray.Flow.InVariableString"
-					Value = "GameOver"
-				}
-			}
-		]
-		Class = "Stingray.Flow.CustomScriptNode"
-		FlowNodesResource = "core/appkit/appkit"
-		FlowNodesResourceKey = "flow_nodes_resource"
-		Id = "12e3fba0-a865-452b-adee-3ea1da3f77fc"
-		InEvents = [
-			"In"
-		]
-		IsQuery = false
-		Name = "Print To Screen"
-		NodeLocation = {
-			X = -40
-			Y = 1180
-		}
-		OutEvents = [
-			"Out"
-		]
-		ReturnValues = [
-		]
-		Width = 160
-	}
-	{
-		Class = "Stingray.Flow.GetUnitWorldPosition"
-		Id = "122d99b1-949d-4589-a7e6-9ecbfdfc1d04"
-		NodeLocation = {
-			X = 160
-			Y = 540
-		}
-		Object = {
-		}
-		Position = {
-		}
-		Unit = {
-			UseMyUnit = true
-		}
-		Width = 160
-	}
-	{
-		A = {
-		}
-		B = {
-		}
-		Class = "Stingray.Flow.NumericLessThanNumeric"
-		Id = "84a8a614-5794-4b28-8746-03c80e6502e9"
-		NodeLocation = {
-			X = 620
-			Y = 600
-		}
-		Value = {
-		}
-		Width = 140
-	}
-	{
-		Class = "Stingray.Flow.Branch"
-		Condition = {
-		}
-		False = {
-		}
-		Id = "df502459-82b2-4806-bfa0-84fb95f2c134"
-		In = {
-		}
-		NodeLocation = {
-			X = 800
-			Y = 640
-		}
-		True = {
-		}
-		Width = 160
-	}
-	{
-		Arguments = [
-			{
-				RawName = "Label"
-				Type = "string"
-				Variable = {
-					Class = "Stingray.Flow.InVariableString"
-					Value = "HP: "
-				}
-			}
-			{
-				RawName = "Color"
-				Type = "vector3"
-				Variable = {
-					Class = "Stingray.Flow.InVariableVector3"
-				}
-			}
-			{
-				RawName = "Text"
-				Type = "string"
-				Variable = {
-					Class = "Stingray.Flow.InVariableString"
-				}
-			}
-		]
-		Class = "Stingray.Flow.CustomScriptNode"
-		FlowNodesResource = "core/appkit/appkit"
-		FlowNodesResourceKey = "flow_nodes_resource"
-		Id = "74eb63c1-b379-43cb-8279-ae3608db3497"
-		InEvents = [
-			"In"
-		]
-		IsQuery = false
-		Name = "Print To Screen"
-		NodeLocation = {
-			X = -340
-			Y = 940
-		}
-		OutEvents = [
-			"Out"
-		]
-		ReturnValues = [
-		]
-		Width = 160
-	}
-	{
-		Class = "Stingray.Flow.VectorComponents"
-		Id = "5b89b908-44e5-411f-a63f-7200b1994471"
-		NodeLocation = {
-			X = 420
-			Y = 520
-		}
-		Vector = {
-		}
-		Width = 160
-		X = {
-		}
-		Y = {
-		}
-		Z = {
-		}
-	}
-	{
-		Class = "Stingray.Flow.GetUnitNumericData"
-		Id = "cd82bc40-3e96-4554-9ff7-1dd8126cd512"
-		Key = {
-			Value = "HeightGameOver"
-		}
-		NodeLocation = {
-			X = 420
-			Y = 660
-		}
-		Unit = {
-			UseMyUnit = true
-		}
-		Value = {
-		}
-		Width = 160
-	}
-	{
-		Class = "Stingray.Flow.Branch"
-		Condition = {
-		}
-		False = {
-		}
-		Id = "68533231-935a-4e4d-9480-6df5eddb1eb4"
-		In = {
-		}
-		NodeLocation = {
-			X = -380
-			Y = 1140
-		}
-		True = {
-		}
-		Width = 160
-	}
-	{
-		Arguments = [
-		]
-		Class = "Stingray.Flow.CustomScriptNode"
-		FlowNodesResource = "script/custom_nodes/go_to_top"
-		FlowNodesResourceKey = "flow_nodes_resource"
-		Id = "aee3ed3d-d425-41cd-a117-c2c71c8acc79"
-		InEvents = [
-			"In"
-		]
-		IsQuery = false
-		Name = "Go To Top"
-		NodeLocation = {
-			X = -60
-			Y = 1040
-		}
-		OutEvents = [
-			"Out"
-		]
-		ReturnValues = [
-		]
-		Width = 160
-	}
-	{
 		Arguments = [
 			{
 				RawName = "Unit"
@@ -6174,7 +6459,7 @@ Nodes = [
 				Type = "string"
 				Variable = {
 					Class = "Stingray.Flow.InVariableString"
-					Value = "SE_PPK_damage1"
+					Value = "SE_PPK_roll"
 				}
 			}
 			{
@@ -6195,15 +6480,15 @@ Nodes = [
 		Class = "Stingray.Flow.CustomScriptNode"
 		FlowNodesResource = "core/wwise/wwise"
 		FlowNodesResourceKey = "flow_nodes_resource"
-		Id = "46ff06d5-9a10-4f7a-9665-088bc2d66cbf"
+		Id = "66f62233-8740-4a0c-ab84-f976ce8581e0"
 		InEvents = [
 			"In"
 		]
 		IsQuery = false
 		Name = "Wwise Trigger Event"
 		NodeLocation = {
-			X = -680
-			Y = 1800
+			X = 2760
+			Y = -220
 		}
 		OutEvents = [
 			"Out"
@@ -6223,184 +6508,6 @@ Nodes = [
 					Class = "Stingray.Flow.OutVariableFloat"
 				}
 			}
-		]
-		Width = 160
-	}
-	{
-		Class = "Stingray.Flow.Sequence"
-		Id = "ee4ff57b-bb01-4afa-9bc3-52497e79d04b"
-		In = {
-		}
-		NodeLocation = {
-			X = -780
-			Y = 20
-		}
-		Out1 = {
-		}
-		Out2 = {
-		}
-		Out3 = {
-		}
-		Out4 = {
-		}
-		Out5 = {
-		}
-		Out6 = {
-		}
-		Out7 = {
-		}
-		Out8 = {
-		}
-		Width = 160
-	}
-	{
-		Class = "Stingray.Flow.GetUnitNumericData"
-		Id = "6f361b76-429e-458c-8bc7-b01a55fd2041"
-		Key = {
-			Value = "HP"
-		}
-		NodeLocation = {
-			X = -1020
-			Y = 1060
-		}
-		Unit = {
-			UseMyUnit = true
-		}
-		Value = {
-		}
-		Width = 160
-	}
-	{
-		Class = "Stingray.Flow.GetUnitNumericData"
-		Id = "18cc37ed-1618-448d-8ca9-8b465a841726"
-		Key = {
-			Value = "HP"
-		}
-		NodeLocation = {
-			X = -1340
-			Y = -160
-		}
-		Unit = {
-			UseMyUnit = true
-		}
-		Value = {
-		}
-		Width = 160
-	}
-	{
-		Class = "Stingray.Flow.NumericData"
-		Id = "5f8af596-6f97-4731-9730-48300c134f72"
-		NodeLocation = {
-			X = -1340
-			Y = -80
-		}
-		Set = {
-			Value = 1
-		}
-		Value = {
-		}
-		Width = 160
-	}
-	{
-		A = {
-		}
-		B = {
-		}
-		Class = "Stingray.Flow.CompareNode"
-		Compare = {
-		}
-		Equal = {
-		}
-		Greater = {
-		}
-		GreaterOrEqual = {
-		}
-		Id = "ae1ad32f-fae8-468d-acc9-b4329ce8f063"
-		Less = {
-		}
-		LessOrEqual = {
-		}
-		NodeLocation = {
-			X = -1120
-			Y = -80
-		}
-		Width = 160
-	}
-	{
-		Arguments = [
-			{
-				RawName = "Group"
-				Type = "string"
-				Variable = {
-					Class = "Stingray.Flow.InVariableString"
-					Value = "State_Player"
-				}
-			}
-			{
-				RawName = "State"
-				Type = "string"
-				Variable = {
-					Class = "Stingray.Flow.InVariableString"
-					Value = "State_Player_Hurry"
-				}
-			}
-		]
-		Class = "Stingray.Flow.CustomScriptNode"
-		FlowNodesResource = "core/wwise/wwise"
-		FlowNodesResourceKey = "flow_nodes_resource"
-		Id = "3c12975a-ff3e-4239-9bb8-73758dda226f"
-		InEvents = [
-			"In"
-		]
-		IsQuery = false
-		Name = "Wwise Set State"
-		NodeLocation = {
-			X = -880
-			Y = -200
-		}
-		OutEvents = [
-			"Out"
-		]
-		ReturnValues = [
-		]
-		Width = 160
-	}
-	{
-		Arguments = [
-			{
-				RawName = "Group"
-				Type = "string"
-				Variable = {
-					Class = "Stingray.Flow.InVariableString"
-					Value = "State_Player"
-				}
-			}
-			{
-				RawName = "State"
-				Type = "string"
-				Variable = {
-					Class = "Stingray.Flow.InVariableString"
-					Value = "State_Player_Normal"
-				}
-			}
-		]
-		Class = "Stingray.Flow.CustomScriptNode"
-		FlowNodesResource = "core/wwise/wwise"
-		FlowNodesResourceKey = "flow_nodes_resource"
-		Id = "95dad34a-9e56-4f20-b192-ed0d51ad58f4"
-		InEvents = [
-			"In"
-		]
-		IsQuery = false
-		Name = "Wwise Set State"
-		NodeLocation = {
-			X = -880
-			Y = -80
-		}
-		OutEvents = [
-			"Out"
-		]
-		ReturnValues = [
 		]
 		Width = 160
 	}
