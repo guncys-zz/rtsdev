@@ -2476,6 +2476,15 @@ Connections = [
 		Type = "Float"
 	}
 	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "True"
+		FromNode = "68533231-935a-4e4d-9480-6df5eddb1eb4"
+		Id = "1ccea433-3852-4d95-981f-903f106cbe89"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "aee3ed3d-d425-41cd-a117-c2c71c8acc79"
+	}
+	{
 		Class = "Stingray.Flow.VariableConnection"
 		FromItem = "Value"
 		FromNode = "6f361b76-429e-458c-8bc7-b01a55fd2041"
@@ -2600,15 +2609,6 @@ Connections = [
 		ToItem = "Condition"
 		ToNode = "037b76ea-ecef-42c0-a556-60eb2957a2da"
 		Type = "Bool"
-	}
-	{
-		Class = "Stingray.Flow.EventConnection"
-		FromItem = "True"
-		FromNode = "68533231-935a-4e4d-9480-6df5eddb1eb4"
-		Id = "1ccea433-3852-4d95-981f-903f106cbe89"
-		Priority = 0
-		ToItem = "In"
-		ToNode = "aee3ed3d-d425-41cd-a117-c2c71c8acc79"
 	}
 	{
 		Class = "Stingray.Flow.EventConnection"
@@ -3591,6 +3591,15 @@ Connections = [
 		ToNode = "da507579-c407-41d2-9f61-5fc76c7510a5"
 		Type = "Float"
 	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "True"
+		FromNode = "68533231-935a-4e4d-9480-6df5eddb1eb4"
+		Id = "3e73ad19-e9e2-4351-85e2-182af733721c"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "f1ec2bd5-b82c-4012-bd57-9ccd9a63106a"
+	}
 ]
 Groups = [
 	{
@@ -3835,7 +3844,7 @@ Groups = [
 		Id = "fb2a3a0d-6f17-4597-b682-bf4f150b5b9c"
 		Nodes = [
 			"12e3fba0-a865-452b-adee-3ea1da3f77fc"
-			"aee3ed3d-d425-41cd-a117-c2c71c8acc79"
+			"f1ec2bd5-b82c-4012-bd57-9ccd9a63106a"
 		]
 		Title = "Game Over"
 	}
@@ -5816,29 +5825,6 @@ Nodes = [
 		Width = 160
 	}
 	{
-		Arguments = [
-		]
-		Class = "Stingray.Flow.CustomScriptNode"
-		FlowNodesResource = "script/custom_nodes/go_to_top"
-		FlowNodesResourceKey = "flow_nodes_resource"
-		Id = "aee3ed3d-d425-41cd-a117-c2c71c8acc79"
-		InEvents = [
-			"In"
-		]
-		IsQuery = false
-		Name = "Go To Top"
-		NodeLocation = {
-			X = -60
-			Y = 1040
-		}
-		OutEvents = [
-			"Out"
-		]
-		ReturnValues = [
-		]
-		Width = 160
-	}
-	{
 		Class = "Stingray.Flow.SetStringVariable"
 		Id = "b0014a5d-dc97-492a-aaa4-814e9e459420"
 		Name = {
@@ -6559,6 +6545,29 @@ Nodes = [
 		}
 		Value = {
 		}
+		Width = 160
+	}
+	{
+		Arguments = [
+		]
+		Class = "Stingray.Flow.CustomScriptNode"
+		FlowNodesResource = "script/custom_nodes/pause"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "f1ec2bd5-b82c-4012-bd57-9ccd9a63106a"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "Puase"
+		NodeLocation = {
+			X = 80
+			Y = 1040
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = [
+		]
 		Width = 160
 	}
 ]

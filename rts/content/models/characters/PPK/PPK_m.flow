@@ -1465,13 +1465,13 @@ nodes = [
 			true = [
 				{
 					event = 0
-					id = "aee3ed3d-d425-41cd-a117-c2c71c8acc79:0"
-					node = "aee3ed3d-d425-41cd-a117-c2c71c8acc79"
+					id = "12e3fba0-a865-452b-adee-3ea1da3f77fc:0"
+					node = "12e3fba0-a865-452b-adee-3ea1da3f77fc"
 				}
 				{
 					event = 0
-					id = "12e3fba0-a865-452b-adee-3ea1da3f77fc:0"
-					node = "12e3fba0-a865-452b-adee-3ea1da3f77fc"
+					id = "f1ec2bd5-b82c-4012-bd57-9ccd9a63106a:0"
+					node = "f1ec2bd5-b82c-4012-bd57-9ccd9a63106a"
 				}
 			]
 		}
@@ -2306,17 +2306,6 @@ nodes = [
 			]
 		}
 		type = "sequence"
-	}
-	{
-		flow_nodes_resource = "script/custom_nodes/go_to_top"
-		id = "aee3ed3d-d425-41cd-a117-c2c71c8acc79"
-		name = "Go To Top"
-		query = false
-		return_values = [
-		]
-		type = "custom_script_node"
-		variables = [
-		]
 	}
 	{
 		id = "b0014a5d-dc97-492a-aaa4-814e9e459420"
@@ -3217,6 +3206,17 @@ nodes = [
 			unit = null
 			value = null
 		}
+	}
+	{
+		flow_nodes_resource = "script/custom_nodes/pause"
+		id = "f1ec2bd5-b82c-4012-bd57-9ccd9a63106a"
+		name = "Puase"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variables = [
+		]
 	}
 	{
 		id = "11111111-2222-3333-4444-555555555555"
