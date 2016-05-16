@@ -20,7 +20,8 @@
 				<Event Id="605006726" Name="Play_BGM_Stage_4" DurationType="Infinite"/>
 				<Event Id="605006727" Name="Play_BGM_Stage_5" DurationType="Infinite"/>
 				<Event Id="1464838723" Name="Play_BGM_test" DurationType="OneShot" DurationMin="85.479462" DurationMax="85.479462"/>
-				<Event Id="4209880378" Name="SE_PPK_jump" DurationType="OneShot" DurationMin="1.266000" DurationMax="1.266000"/>
+				<Event Id="481900818" Name="SE_PPK_damage1" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
+				<Event Id="4209880378" Name="SE_PPK_jump" DurationType="OneShot" DurationMin="2.000000" DurationMax="2.000000"/>
 				<Event Id="3933739290" Name="Set_State_Hurry" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2630068541" Name="Set_State_Normal" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4052737657" Name="Set_Switch_S1" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -41,17 +42,21 @@
 					<ShortName>bgm_4_1.wav</ShortName>
 					<Path>SFX\bgm_4_1_6BBC2BAA.wem</Path>
 				</File>
-				<File Id="273197453" Language="SFX">
-					<ShortName>Robot_Servo_006.wav</ShortName>
-					<Path>SFX\Robot_Servo_006_6BBC2BAA.wem</Path>
-				</File>
 				<File Id="407460578" Language="SFX">
 					<ShortName>bgm_3_1.wav</ShortName>
 					<Path>SFX\bgm_3_1_6BBC2BAA.wem</Path>
 				</File>
+				<File Id="559175138" Language="SFX">
+					<ShortName>se_1.wav</ShortName>
+					<Path>SFX\se_1_DB50BAB0.wem</Path>
+				</File>
 				<File Id="597989343" Language="SFX">
 					<ShortName>bgm_5_2.wav</ShortName>
 					<Path>SFX\bgm_5_2_6BBC2BAA.wem</Path>
+				</File>
+				<File Id="635793677" Language="SFX">
+					<ShortName>se_2_1.wav</ShortName>
+					<Path>SFX\se_2_1_DB50BAB0.wem</Path>
 				</File>
 				<File Id="704244969" Language="SFX">
 					<ShortName>sfx_spawn_sound.wav</ShortName>

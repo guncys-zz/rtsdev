@@ -21,7 +21,18 @@
 								<Action Name="Play" ID="{C5C15978-C1F5-4E76-B866-9413EC3EC930}" ShortID="348849638" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{17781C04-FEBB-4ED9-960E-07410B9EE3AF}" Global="false">
-											<ObjectRef Name="SE_PPK_jump" ID="{4385FEF5-712E-40E0-85D7-CD8160CD06EF}" WorkUnitID="{82C69708-36C2-4538-9933-8E6B87A3A396}"/>
+											<ObjectRef Name="se_1" ID="{30080A84-4CDC-48B8-93E8-29BCD05BBFFB}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SE_PPK_damage1" ID="{06BCEFC1-4778-406A-BC3A-965A31E46279}">
+							<ChildrenList>
+								<Action Name="Play" ID="{6C1F0D64-688F-41B0-B507-4C6FFA31A2D3}" ShortID="471211449" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{8F895345-BB37-4E38-A1C1-7C2D7091157A}" Global="false">
+											<ObjectRef Name="se_2_1" ID="{1E183CD3-0350-456B-9F76-A8383A96C215}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
 										</Element>
 									</ElementList>
 								</Action>

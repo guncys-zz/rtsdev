@@ -1743,27 +1743,20 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicTrack Name="Robot_Servo_006" ID="{0CC9DDD9-75AF-4A66-8988-D403649A9B92}" ShortID="915409606">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-96</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
+						<MusicTrack Name="se_1" ID="{D7367D98-6FCE-426D-993C-E4CC0FDFDAD0}" ShortID="861668731">
 							<ReferenceList>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Robot_Servo_006" ID="{E691AF61-1737-4034-9EFD-F28EC069B708}" ShortID="273197453">
+								<AudioFileSource Name="se_1" ID="{DD9CAA8D-B621-455A-8787-36FC97A03570}" ShortID="1065899691">
 									<Language>SFX</Language>
-									<AudioFile>Robot_Servo_006.wav</AudioFile>
+									<AudioFile>se_1.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<TransitionList>
-								<MusicTransition Name="Root" ID="{3902AD2F-857E-402A-B8E6-B5B113241BA1}">
+								<MusicTransition Name="Root" ID="{1DEE8DD5-6A6C-4BB3-9AE0-C13F9702682A}">
 									<PropertyList>
 										<Property Name="IsFolder" Type="bool" Value="True"/>
 									</PropertyList>
@@ -1771,15 +1764,15 @@
 								</MusicTransition>
 							</TransitionList>
 							<SequenceList>
-								<MusicTrackSequence Name="" ID="{6875157D-0EDE-4DA5-9C89-2A4BDA017702}">
+								<MusicTrackSequence Name="" ID="{2C64B672-FED0-4A3D-ABEA-34EE7AE3C3E0}">
 									<ClipList>
-										<MusicClip Name="Robot_Servo_006" ID="{8FEBAA18-A466-4EE2-829E-636823F39718}">
+										<MusicClip Name="se_1" ID="{B242C8AF-3183-407C-8639-0A077FD2164A}">
 											<PropertyList>
-												<Property Name="EndTrimOffset" Type="Real64" Value="1266"/>
+												<Property Name="EndTrimOffset" Type="Real64" Value="2000"/>
 												<Property Name="FadeInMode" Type="int16" Value="0"/>
 												<Property Name="FadeOutMode" Type="int16" Value="0"/>
 											</PropertyList>
-											<AudioSourceRef Name="Robot_Servo_006" ID="{E691AF61-1737-4034-9EFD-F28EC069B708}"/>
+											<AudioSourceRef Name="se_1" ID="{DD9CAA8D-B621-455A-8787-36FC97A03570}"/>
 										</MusicClip>
 									</ClipList>
 								</MusicTrackSequence>
