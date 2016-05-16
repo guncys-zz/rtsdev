@@ -155,6 +155,24 @@ Connections = [
 	}
 	{
 		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "2f831034-afbf-48c5-979b-5ab61618fb98"
+		Id = "c5bd5acb-caf1-4eb5-a5eb-237642501378"
+		Priority = 0
+		ToItem = "Set"
+		ToNode = "4bb4c91a-c31a-458b-a23e-40e841a7d57f"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Numeric"
+		FromNode = "1158b82b-bcf4-428e-b5f8-e4c7421d3f22"
+		Id = "991efdb6-5d07-425d-8593-d5eb5575efcc"
+		ToItem = "Numeric"
+		ToNode = "4bb4c91a-c31a-458b-a23e-40e841a7d57f"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
 		FromItem = "True"
 		FromNode = "40e040b2-978f-4c09-8969-5f240abdf7a4"
 		Id = "2663fe87-ba9c-483f-8444-279497c84799"
@@ -342,6 +360,15 @@ Connections = [
 		ToItem = "Set"
 		ToNode = "f5c24756-c0fe-483a-8fcb-2936c83d0fcb"
 	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Numeric"
+		FromNode = "1158b82b-bcf4-428e-b5f8-e4c7421d3f22"
+		Id = "1dfed74a-82e6-48b2-830f-b717ac8e6d91"
+		ToItem = "Numeric"
+		ToNode = "a06b0c3c-db70-4270-8d0c-fcfbd894b9fd"
+		Type = "Float"
+	}
 ]
 Groups = [
 	{
@@ -469,6 +496,7 @@ Nodes = [
 		}
 		OutEvents = [
 			"ExitFlowEvent_PPK_jump"
+			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
 			"roll_exit"
 			"rolln_enter"
@@ -673,6 +701,25 @@ Nodes = [
 	}
 	{
 		Class = "Stingray.Flow.SetNumericVariable"
+		Id = "a06b0c3c-db70-4270-8d0c-fcfbd894b9fd"
+		Name = {
+			Value = "unrivaled_time"
+		}
+		NodeLocation = {
+			X = 1540
+			Y = -120
+		}
+		Numeric = {
+		}
+		Scope = {
+			Value = "local"
+		}
+		Set = {
+		}
+		Width = 240
+	}
+	{
+		Class = "Stingray.Flow.SetNumericVariable"
 		Id = "f5c24756-c0fe-483a-8fcb-2936c83d0fcb"
 		Name = {
 			Value = "unrivaled_time"
@@ -691,23 +738,17 @@ Nodes = [
 		Width = 240
 	}
 	{
-		Class = "Stingray.Flow.SetNumericVariable"
-		Id = "a06b0c3c-db70-4270-8d0c-fcfbd894b9fd"
+		Class = "Stingray.Flow.ExternalInputNumeric"
+		Id = "1158b82b-bcf4-428e-b5f8-e4c7421d3f22"
 		Name = {
 			Value = "unrivaled_time"
 		}
 		NodeLocation = {
-			X = 1540
-			Y = -120
+			X = 1320
+			Y = -200
 		}
 		Numeric = {
-			Value = 2
 		}
-		Scope = {
-			Value = "local"
-		}
-		Set = {
-		}
-		Width = 240
+		Width = 180
 	}
 ]

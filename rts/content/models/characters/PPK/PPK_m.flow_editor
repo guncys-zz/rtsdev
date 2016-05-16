@@ -3582,6 +3582,15 @@ Connections = [
 		ToItem = "In"
 		ToNode = "66f62233-8740-4a0c-ab84-f976ce8581e0"
 	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "65794d91-1fd7-438c-98b6-665dc7f96e55"
+		Id = "83ada9b8-8c73-487e-93c2-4f561a5adfa0"
+		ToItem = "unrivaled_time"
+		ToNode = "da507579-c407-41d2-9f61-5fc76c7510a5"
+		Type = "Float"
+	}
 ]
 Groups = [
 	{
@@ -4014,6 +4023,8 @@ Nodes = [
 		}
 		Numeric = {
 			Value = 0
+		}
+		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -4469,6 +4480,8 @@ Nodes = [
 			X = 280
 			Y = -40
 		}
+		Out = {
+		}
 		Scope = {
 			Value = "local"
 		}
@@ -4488,6 +4501,8 @@ Nodes = [
 		NodeLocation = {
 			X = 280
 			Y = -40
+		}
+		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -4547,6 +4562,8 @@ Nodes = [
 		NodeLocation = {
 			X = 2780
 			Y = 740
+		}
+		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -5493,6 +5510,8 @@ Nodes = [
 			X = 60
 			Y = -160
 		}
+		Out = {
+		}
 		Scope = {
 			Value = "local"
 		}
@@ -5530,6 +5549,8 @@ Nodes = [
 		NodeLocation = {
 			X = 2240
 			Y = -200
+		}
+		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -5826,6 +5847,8 @@ Nodes = [
 		NodeLocation = {
 			X = -140
 			Y = 1460
+		}
+		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -6157,6 +6180,7 @@ Nodes = [
 		InVariableNames = [
 			"Me"
 			"TouchingUnit"
+			"unrivaled_time"
 		]
 		InVariables = [
 			{
@@ -6166,6 +6190,9 @@ Nodes = [
 			{
 				Class = "Stingray.Flow.InVariableUnit"
 				UseMyUnit = false
+			}
+			{
+				Class = "Stingray.Flow.InVariableFloat"
 			}
 		]
 		NodeLocation = {
@@ -6233,6 +6260,8 @@ Nodes = [
 		}
 		Numeric = {
 		}
+		Out = {
+		}
 		Scope = {
 			Value = "local"
 		}
@@ -6258,23 +6287,6 @@ Nodes = [
 			UseMyUnit = true
 		}
 		Width = 300
-	}
-	{
-		Class = "Stingray.Flow.GetUnitNumericData"
-		Id = "e8e9acaa-b676-400e-acb9-87a8810acc00"
-		Key = {
-			Value = "RunSpeed"
-		}
-		NodeLocation = {
-			X = -900
-			Y = 1560
-		}
-		Unit = {
-			UseMyUnit = true
-		}
-		Value = {
-		}
-		Width = 160
 	}
 	{
 		Class = "Stingray.Flow.AnimationEvent"
@@ -6387,6 +6399,8 @@ Nodes = [
 			X = -140
 			Y = 700
 		}
+		Out = {
+		}
 		Scope = {
 			Value = "local"
 		}
@@ -6408,6 +6422,8 @@ Nodes = [
 			Y = 340
 		}
 		Numeric = {
+		}
+		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -6509,6 +6525,40 @@ Nodes = [
 				}
 			}
 		]
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.GetUnitNumericData"
+		Id = "e8e9acaa-b676-400e-acb9-87a8810acc00"
+		Key = {
+			Value = "RunSpeed"
+		}
+		NodeLocation = {
+			X = -900
+			Y = 1560
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.GetUnitNumericData"
+		Id = "65794d91-1fd7-438c-98b6-665dc7f96e55"
+		Key = {
+			Value = "UnrivaledTime"
+		}
+		NodeLocation = {
+			X = -1680
+			Y = 1580
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Value = {
+		}
 		Width = 160
 	}
 ]

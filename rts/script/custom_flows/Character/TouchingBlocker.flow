@@ -77,6 +77,7 @@ nodes = [
 	{
 		event_names = [
 			"ExitFlowEvent_PPK_jump"
+			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
 			"roll_exit"
 			"rolln_enter"
@@ -385,6 +386,28 @@ nodes = [
 		}
 	}
 	{
+		id = "a06b0c3c-db70-4270-8d0c-fcfbd894b9fd"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			numeric = {
+				node = "1158b82b-bcf4-428e-b5f8-e4c7421d3f22"
+				type = "float"
+				variable = "numeric"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_numeric_variable"
+		variable_values = {
+			name = "unrivaled_time"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
 		id = "f5c24756-c0fe-483a-8fcb-2936c83d0fcb"
 		in_variables = {
 			name = {
@@ -407,23 +430,16 @@ nodes = [
 		}
 	}
 	{
-		id = "a06b0c3c-db70-4270-8d0c-fcfbd894b9fd"
-		in_variables = {
-			name = {
-				type = "string"
-			}
+		id = "1158b82b-bcf4-428e-b5f8-e4c7421d3f22"
+		out_variables = {
 			numeric = {
 				type = "float"
 			}
-			scope = {
-				type = "string"
-			}
 		}
-		type = "set_numeric_variable"
+		type = "external_input_numeric"
 		variable_values = {
 			name = "unrivaled_time"
-			numeric = 2
-			scope = "local"
+			numeric = null
 		}
 	}
 	{
