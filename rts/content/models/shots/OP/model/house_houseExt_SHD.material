@@ -318,15 +318,6 @@ shader = {
 		}
 		{
 			destination = {
-				connector_id = "db6bac1d-3931-42bd-bd08-829bfbcbad47"
-				instance_id = "58c2932d-de3f-45e2-bbdc-ccd5458d40ba"
-			}
-			source = {
-				instance_id = "68d6619a-3ea8-4039-9048-f3083a24a1e0"
-			}
-		}
-		{
-			destination = {
 				connector_id = "34259752-b962-4b65-92c3-903a57338519"
 				instance_id = "f8bf5438-b06f-4d56-ae0c-e4abd31c1dc1"
 			}
@@ -410,6 +401,33 @@ shader = {
 			}
 			source = {
 				instance_id = "64580c40-12be-4f68-8b6e-d7f456cccf31"
+			}
+		}
+		{
+			destination = {
+				connector_id = "c5823c75-4ae5-4c71-b070-315fa4d03e8e"
+				instance_id = "72f748bc-5350-45a9-83b5-f4d588718b60"
+			}
+			source = {
+				instance_id = "68d6619a-3ea8-4039-9048-f3083a24a1e0"
+			}
+		}
+		{
+			destination = {
+				connector_id = "242d1648-a626-445b-9534-bccec094112f"
+				instance_id = "72f748bc-5350-45a9-83b5-f4d588718b60"
+			}
+			source = {
+				instance_id = "5014cf10-b2e3-4a2f-b579-07f87e7d2281"
+			}
+		}
+		{
+			destination = {
+				connector_id = "db6bac1d-3931-42bd-bd08-829bfbcbad47"
+				instance_id = "58c2932d-de3f-45e2-bbdc-ccd5458d40ba"
+			}
+			source = {
+				instance_id = "72f748bc-5350-45a9-83b5-f4d588718b60"
 			}
 		}
 	]
@@ -526,8 +544,8 @@ shader = {
 				"9a84282b-f1a2-46d4-9fc4-5a76fc9b30dd"
 			]
 			position = [
-				1020
-				-340
+				1000
+				-740
 			]
 			samplers = {
 			}
@@ -546,8 +564,8 @@ shader = {
 				"9a84282b-f1a2-46d4-9fc4-5a76fc9b30dd"
 			]
 			position = [
-				1020
-				-60
+				1160
+				-380
 			]
 			samplers = {
 			}
@@ -732,8 +750,8 @@ shader = {
 			options = [
 			]
 			position = [
-				700
-				-400
+				680
+				-800
 			]
 			samplers = {
 			}
@@ -754,8 +772,8 @@ shader = {
 				"fb3f709b-a54a-4e93-ac9f-e9fc76fb8bcd"
 			]
 			position = [
-				700
-				-340
+				680
+				-740
 			]
 			samplers = {
 				texture_map = {
@@ -809,8 +827,8 @@ shader = {
 			options = [
 			]
 			position = [
-				700
-				-240
+				680
+				-640
 			]
 			samplers = {
 			}
@@ -841,8 +859,8 @@ shader = {
 			options = [
 			]
 			position = [
-				700
-				-120
+				840
+				-440
 			]
 			samplers = {
 			}
@@ -860,8 +878,8 @@ shader = {
 			options = [
 			]
 			position = [
-				680
-				60
+				820
+				-260
 			]
 			samplers = {
 			}
@@ -878,8 +896,8 @@ shader = {
 			options = [
 			]
 			position = [
-				740
-				-60
+				880
+				-380
 			]
 			samplers = {
 			}
@@ -899,8 +917,8 @@ shader = {
 				"90e20826-8689-42fa-8e24-f484ec64c5c3"
 			]
 			position = [
-				440
-				-60
+				580
+				-380
 			]
 			samplers = {
 				texture_map = {
@@ -1255,8 +1273,8 @@ shader = {
 				"1e067464-12d8-4826-9b72-cfd5765003e3"
 			]
 			position = [
-				640
-				140
+				600
+				-120
 			]
 			samplers = {
 				texture_map = {
@@ -1281,7 +1299,7 @@ shader = {
 			]
 			position = [
 				860
-				180
+				-100
 			]
 			samplers = {
 			}
@@ -1298,8 +1316,8 @@ shader = {
 			options = [
 			]
 			position = [
-				1080
-				240
+				1320
+				-40
 			]
 			samplers = {
 			}
@@ -1465,6 +1483,55 @@ shader = {
 			}
 			type = "core/shader_nodes/material_variable"
 		}
+		{
+			content_size = [
+				160
+				0
+			]
+			export = {
+				material_variable = {
+					display_name = "Window Opacity"
+					name = "material_variable_7e7d2281"
+					type = "float"
+					ui = {
+						max = 1
+						min = 0
+						step = 0.001
+						ui_type = "NumberSlider"
+					}
+					value = 0
+				}
+			}
+			id = "5014cf10-b2e3-4a2f-b579-07f87e7d2281"
+			options = [
+			]
+			position = [
+				840
+				60
+			]
+			samplers = {
+			}
+			title = "window opacity"
+			type = "core/shader_nodes/material_variable"
+		}
+		{
+			content_size = [
+				160
+				0
+			]
+			export = {
+			}
+			id = "72f748bc-5350-45a9-83b5-f4d588718b60"
+			options = [
+			]
+			position = [
+				1080
+				-20
+			]
+			samplers = {
+			}
+			type = "core/shader_nodes/mul"
+		}
 	]
 	version = 3
 }
@@ -1501,6 +1568,10 @@ variables = {
 	material_variable = {
 		type = "scalar"
 		value = 1.754
+	}
+	material_variable_7e7d2281 = {
+		type = "scalar"
+		value = 0.266
 	}
 	material_variable_b6b4f922 = {
 		type = "scalar"
