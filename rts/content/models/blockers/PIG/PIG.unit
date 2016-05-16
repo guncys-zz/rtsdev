@@ -1,0 +1,45 @@
+
+data = {
+	IsBlocker = true
+}
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 2.218766
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			-1.379903
+			1.517523
+			1.281429
+		]
+		projection_type = "perspective"
+		rotation = [
+			0.073779
+			-0.188928
+			0.912132
+			-0.356199
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
+materials = {
+	lambert2 = "content/models/blockers/PIG/materials/lambert2"
+}
+renderables = {
+	polySurface9 = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

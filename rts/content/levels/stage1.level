@@ -889,6 +889,7 @@ editor_metadata = {
 	LevelReferences = [
 	]
 	LightBakeSettings = {
+		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
 		FilterGain = 20
@@ -906,6 +907,7 @@ editor_metadata = {
 			Z = 1
 		}
 		TexelScale = 10
+		TotalPasses = 256
 		Variance = 0.5
 	}
 	LuaPluginObjects = [
@@ -979,6 +981,7 @@ editor_metadata = {
 					Intensity = 4
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "directional"
@@ -1126,672 +1129,6 @@ editor_metadata = {
 				IsRun = true
 			}
 			Type = "content/models/characters/PPK/PPK_m"
-		}
-		{
-			Cameras = {
-			}
-			Id = "f06a9610-6b4d-4955-8323-bc53adfef83f"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Jump1"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 20
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "1be4f641-461c-4da7-9c32-d7bf007bd3c1"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "HighJump1"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 35
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 2
-				Y = 1
-				Z = 2
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "b74544df-53b9-444d-8f93-3d64d58bd667"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Dive1"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 50
-				Z = 1
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 3
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "2292ebd0-6f48-454b-9b19-4c526098b12d"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Jump2"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 70
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "0fba457f-f606-4a22-bbb7-c3166c5e9b7c"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "HighJump2"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 80
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 2
-				Y = 1
-				Z = 2
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "1b277bed-3743-4df0-a673-12d67a4e1a51"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Jump3"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 95
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "545395a0-7c9a-4bc6-9029-4a737d40653c"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Dive2"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 105
-				Z = 1
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 3
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "7eb5bfd4-9fe8-4f77-8e8a-31265afed006"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "HighJump3"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 120
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 2
-				Y = 1
-				Z = 2
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "7188316b-3f92-4286-884b-dfb3f9131d46"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Dive3"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 130
-				Z = 1
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 3
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "0e1c9c21-dd04-4daa-a37c-0e01df52a063"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Dive4"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 145
-				Z = 1
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 3
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "635399a2-3d96-431f-b8da-f9ca0c986711"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Jump4"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 155
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "a5b1594f-0bf1-4ad2-930c-04b4a5a1f5f2"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Jump5"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 165
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "23cd2ef0-6fbe-4b26-81ea-185bb848e2ac"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Jump6"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 180
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "93cfec7b-34b8-48e6-a45d-4dd2661a8e13"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Jump7"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 190
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "4334e895-f9d4-42f0-a2cf-0049a129bb1b"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "HighJump4"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 200
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 2
-				Y = 1
-				Z = 2
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "a64f0a8d-f94d-4a42-a92a-898081dfec12"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Jump8"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 215
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "5e5e96bc-978a-46f0-8a34-3a6d773f627d"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Dive5"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 225
-				Z = 1
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 3
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
-		}
-		{
-			Cameras = {
-			}
-			Id = "269af530-c2e0-49ee-8acc-e50582a0b9dd"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "HighJump5"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 235
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 2
-				Y = 1
-				Z = 2
-			}
-			ScriptData = {
-			}
-			Type = "core/units/primitives/cube_primitive"
 		}
 		{
 			Cameras = {
@@ -4716,6 +4053,672 @@ editor_metadata = {
 			}
 			Type = "content/models/stage1/background/background"
 		}
+		{
+			Cameras = {
+			}
+			Id = "f0f743e0-85c4-4606-b68c-bdc0ad6556aa"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STN_A"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 20.055922
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/STN/STN_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "d29f4c12-a3c1-4f20-9237-20a7101a2ce9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STM_B"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 34.999367
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/STM/STM_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4b993b12-4a6c-4b90-afa6-809138740313"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STN_B"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 50.091114
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/STN/STN_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f79f7333-07c3-489d-9bd3-6a187aa45e65"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "PUM"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 70.035461
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/PUM/PUM"
+		}
+		{
+			Cameras = {
+			}
+			Id = "0c93b4cd-0b26-41cc-972f-e050a9702166"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STM_B1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 80.076782
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/STM/STM_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "25357848-8816-4d6f-a001-da8a38f54b79"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STM_A"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 95.141075
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/STM/STM_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "2e6bb879-9794-409a-8e61-89d0fb02c1cc"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STN_B1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 105.008957
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/STN/STN_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "96059aed-cb56-432d-b253-ff2173879cb2"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STN_B2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 130.147263
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/STN/STN_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "b1766171-1343-4b22-993b-2a8e7f04404b"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STN_B3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 144.983276
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/STN/STN_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f4c10e20-4965-496d-9754-2a5a9ae79e44"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STN_B4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 225.065094
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/STN/STN_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4d7b0551-0aed-42cf-8d4f-698437e4b888"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "CHI"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 154.886353
+				Z = 0
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/CHI/CHI"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4d1be3f1-e1fa-4a39-b17a-592fa37dd5db"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "PUM1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 165.016388
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/PUM/PUM"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f08a8043-3d77-4433-bba7-8e5fe6595240"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "FNC"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 180.038345
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/FNC/FNC"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ef1c39b3-82b5-499f-8848-ee07de750696"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "FNC1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 190.114517
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/FNC/FNC"
+		}
+		{
+			Cameras = {
+			}
+			Id = "54d33821-28c9-4f6e-8200-ded2245d2ade"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STM_B2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 200.048279
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/STM/STM_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "0c91afbf-6321-41b9-95b7-40eed3acf653"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STM_B3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 235.082733
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/STM/STM_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a93acab2-0eff-41c3-a86b-2fc2a5424d9a"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "PIG"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 215.092194
+				Z = 0
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/PIG/PIG"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e8d36965-2348-4e18-8c0d-3ed488a780bc"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STM_B4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 120.039474
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/STM/STM_B"
+		}
 	]
 	Volumes = [
 	]
@@ -5376,6 +5379,7 @@ units = [
 				falloff_start = 0
 				intensity = 4
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "directional"
@@ -5493,546 +5497,6 @@ units = [
 			1
 		]
 		type = "content/models/characters/PPK/PPK_m"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "f06a9610-6b4d-4955-8323-bc53adfef83f"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Jump1"
-		pos = [
-			0
-			20
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "1be4f641-461c-4da7-9c32-d7bf007bd3c1"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "HighJump1"
-		pos = [
-			0
-			35
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			2
-			1
-			2
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "b74544df-53b9-444d-8f93-3d64d58bd667"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Dive1"
-		pos = [
-			0
-			50
-			1
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			3
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "2292ebd0-6f48-454b-9b19-4c526098b12d"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Jump2"
-		pos = [
-			0
-			70
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "0fba457f-f606-4a22-bbb7-c3166c5e9b7c"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "HighJump2"
-		pos = [
-			0
-			80
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			2
-			1
-			2
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "1b277bed-3743-4df0-a673-12d67a4e1a51"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Jump3"
-		pos = [
-			0
-			95
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "545395a0-7c9a-4bc6-9029-4a737d40653c"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Dive2"
-		pos = [
-			0
-			105
-			1
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			3
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "7eb5bfd4-9fe8-4f77-8e8a-31265afed006"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "HighJump3"
-		pos = [
-			0
-			120
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			2
-			1
-			2
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "7188316b-3f92-4286-884b-dfb3f9131d46"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Dive3"
-		pos = [
-			0
-			130
-			1
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			3
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "0e1c9c21-dd04-4daa-a37c-0e01df52a063"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Dive4"
-		pos = [
-			0
-			145
-			1
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			3
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "635399a2-3d96-431f-b8da-f9ca0c986711"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Jump4"
-		pos = [
-			0
-			155
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "a5b1594f-0bf1-4ad2-930c-04b4a5a1f5f2"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Jump5"
-		pos = [
-			0
-			165
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "23cd2ef0-6fbe-4b26-81ea-185bb848e2ac"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Jump6"
-		pos = [
-			0
-			180
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "93cfec7b-34b8-48e6-a45d-4dd2661a8e13"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Jump7"
-		pos = [
-			0
-			190
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "4334e895-f9d4-42f0-a2cf-0049a129bb1b"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "HighJump4"
-		pos = [
-			0
-			200
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			2
-			1
-			2
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "a64f0a8d-f94d-4a42-a92a-898081dfec12"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Jump8"
-		pos = [
-			0
-			215
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "5e5e96bc-978a-46f0-8a34-3a6d773f627d"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Dive5"
-		pos = [
-			0
-			225
-			1
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			3
-			1
-			1
-		]
-		type = "core/units/primitives/cube_primitive"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "269af530-c2e0-49ee-8acc-e50582a0b9dd"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "HighJump5"
-		pos = [
-			0
-			235
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			2
-			1
-			2
-		]
-		type = "core/units/primitives/cube_primitive"
 	}
 	{
 		cameras = {
@@ -8403,6 +7867,546 @@ units = [
 			1.5
 		]
 		type = "content/models/stage1/background/background"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f0f743e0-85c4-4606-b68c-bdc0ad6556aa"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STN_A"
+		pos = [
+			0
+			20.055922
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/STN/STN_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "d29f4c12-a3c1-4f20-9237-20a7101a2ce9"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STM_B"
+		pos = [
+			0
+			34.999367
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/STM/STM_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "4b993b12-4a6c-4b90-afa6-809138740313"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STN_B"
+		pos = [
+			0
+			50.091114
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/STN/STN_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f79f7333-07c3-489d-9bd3-6a187aa45e65"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "PUM"
+		pos = [
+			0
+			70.035461
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/PUM/PUM"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "0c93b4cd-0b26-41cc-972f-e050a9702166"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STM_B1"
+		pos = [
+			0
+			80.076782
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/STM/STM_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "25357848-8816-4d6f-a001-da8a38f54b79"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STM_A"
+		pos = [
+			0
+			95.141075
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/STM/STM_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "2e6bb879-9794-409a-8e61-89d0fb02c1cc"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STN_B1"
+		pos = [
+			0
+			105.008957
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/STN/STN_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "96059aed-cb56-432d-b253-ff2173879cb2"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STN_B2"
+		pos = [
+			0
+			130.147263
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/STN/STN_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "b1766171-1343-4b22-993b-2a8e7f04404b"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STN_B3"
+		pos = [
+			0
+			144.983276
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/STN/STN_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f4c10e20-4965-496d-9754-2a5a9ae79e44"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STN_B4"
+		pos = [
+			0
+			225.065094
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/STN/STN_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "4d7b0551-0aed-42cf-8d4f-698437e4b888"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "CHI"
+		pos = [
+			0
+			154.886353
+			0
+		]
+		rot = [
+			0
+			0
+			1
+			0
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/CHI/CHI"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "4d1be3f1-e1fa-4a39-b17a-592fa37dd5db"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "PUM1"
+		pos = [
+			0
+			165.016388
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/PUM/PUM"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f08a8043-3d77-4433-bba7-8e5fe6595240"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "FNC"
+		pos = [
+			0
+			180.038345
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/FNC/FNC"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "ef1c39b3-82b5-499f-8848-ee07de750696"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "FNC1"
+		pos = [
+			0
+			190.114517
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/FNC/FNC"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "54d33821-28c9-4f6e-8200-ded2245d2ade"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STM_B2"
+		pos = [
+			0
+			200.048279
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/STM/STM_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "0c91afbf-6321-41b9-95b7-40eed3acf653"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STM_B3"
+		pos = [
+			0
+			235.082733
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/STM/STM_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a93acab2-0eff-41c3-a86b-2fc2a5424d9a"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "PIG"
+		pos = [
+			0
+			215.092194
+			0
+		]
+		rot = [
+			0
+			0
+			1
+			0
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/PIG/PIG"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e8d36965-2348-4e18-8c0d-3ed488a780bc"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STM_B4"
+		pos = [
+			0
+			120.039474
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/STM/STM_B"
 	}
 ]
 volumes = [

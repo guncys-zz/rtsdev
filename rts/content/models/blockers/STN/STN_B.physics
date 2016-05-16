@@ -1,0 +1,33 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "stoneB"
+		node = "stoneB"
+		shapes = [
+			{
+				material = "default"
+				shape = "stoneB"
+				template = "default"
+				type = "box"
+			}
+		]
+		template = "static"
+	}
+	{
+		enabled = true
+		mass = 0
+		name = "pCube1"
+		node = "pCube1"
+		shapes = [
+			{
+				material = "default"
+				shape = "pCube1"
+				template = "blocker"
+				type = "box"
+			}
+		]
+		template = "static"
+	}
+]
