@@ -1,8 +1,31 @@
 
-circle = {
-	shader = "billboard:BLEND_ADDITIVE:DIFFUSE_MAP:ROTATION:VERTEX_COLOR"
+paper_A = {
+	shader = "billboard:DIFFUSE_MAP:LIT_PARTICLES:ONE_BIT_ALPHA:PIVOT:ROTATION:VERTEX_COLOR"
 	textures = {
-		diffuse_map = "content/effect/fx_t_sw00"
+		diffuse_map = "content/effect/fx_t_paper14"
+	}
+	variables = {
+		animation_frame_size = {
+			type = "vector2"
+			value = [
+				1
+				1
+			]
+		}
+		glossiness = {
+			type = "scalar"
+			value = 0
+		}
+		specular = {
+			type = "scalar"
+			value = 0
+		}
+	}
+}
+paper_B = {
+	shader = "billboard:DIFFUSE_MAP:LIT_PARTICLES:ONE_BIT_ALPHA:PIVOT:ROTATION:VERTEX_COLOR"
+	textures = {
+		diffuse_map = "content/effect/fx_t_paper07"
 	}
 	variables = {
 		animation_frame_size = {
@@ -22,79 +45,10 @@ circle = {
 		}
 	}
 }
-Flash = {
-	shader = "billboard:BLEND_ADDITIVE:DIFFUSE_MAP:VERTEX_COLOR"
+paper_c = {
+	shader = "billboard:DIFFUSE_MAP:LIT_PARTICLES:ONE_BIT_ALPHA:PIVOT:ROTATION:VERTEX_COLOR"
 	textures = {
-		diffuse_map = "content/effect/fx_t_flash00"
-	}
-	variables = {
-		animation_frame_size = {
-			type = "vector2"
-			value = [
-				0.1
-				0.1
-			]
-		}
-		glossiness = {
-			type = "scalar"
-			value = 0
-		}
-		specular = {
-			type = "scalar"
-			value = 0
-		}
-	}
-}
-particle01 = {
-	shader = "billboard:DIFFUSE_MAP:VERTEX_COLOR"
-	textures = {
-		diffuse_map = "content/effect/fx_t_circle00"
-	}
-	variables = {
-		animation_frame_size = {
-			type = "vector2"
-			value = [
-				0.1
-				0.1
-			]
-		}
-		glossiness = {
-			type = "scalar"
-			value = 0
-		}
-		specular = {
-			type = "scalar"
-			value = 0
-		}
-	}
-}
-shock = {
-	shader = "billboard:DIFFUSE_MAP:ROTATION:VERTEX_COLOR"
-	textures = {
-		diffuse_map = "content/effect/fx_t_hitmark00"
-	}
-	variables = {
-		animation_frame_size = {
-			type = "vector2"
-			value = [
-				0.5
-				0.1
-			]
-		}
-		glossiness = {
-			type = "scalar"
-			value = 1
-		}
-		specular = {
-			type = "scalar"
-			value = 0
-		}
-	}
-}
-star = {
-	shader = "billboard:DIFFUSE_MAP:ROTATION:VERTEX_COLOR"
-	textures = {
-		diffuse_map = "content/effect/fx_t_star00"
+		diffuse_map = "content/effect/fx_t_paper00"
 	}
 	variables = {
 		animation_frame_size = {
