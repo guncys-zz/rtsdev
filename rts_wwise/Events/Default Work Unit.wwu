@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{615A2D2C-A6C1-47BB-8FEF-D9295BB3A614}" SchemaVersion="69">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{615A2D2C-A6C1-47BB-8FEF-D9295BB3A614}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="SFX" ID="{8DFFF14C-E1AA-4862-8E34-9A40692C685C}" ShortID="40317816">
+					<ChildrenList>
+						<Event Name="sfx_spawn_sound" ID="{C6F92617-2B25-4C94-849B-43D42943F6F9}">
+							<ChildrenList>
+								<Action Name="Play" ID="{1E478F0B-45B2-433D-B0F1-0C61F56889F4}" ShortID="852931717" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{CC0A21C5-7239-4755-A864-5CEFB0513712}" Global="false">
+											<ObjectRef Name="sfx_spawn_sound" ID="{5A1708C3-1052-4559-9762-929E700D47D6}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SE_PPK_jump" ID="{269E7B08-F530-4B0E-810E-357C69692B01}">
+							<ChildrenList>
+								<Action Name="Play" ID="{C5C15978-C1F5-4E76-B866-9413EC3EC930}" ShortID="348849638" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{17781C04-FEBB-4ED9-960E-07410B9EE3AF}" Global="false">
+											<ObjectRef Name="SE_PPK_jump" ID="{4385FEF5-712E-40E0-85D7-CD8160CD06EF}" WorkUnitID="{82C69708-36C2-4538-9933-8E6B87A3A396}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SE_PPK_damage1" ID="{06BCEFC1-4778-406A-BC3A-965A31E46279}">
+							<ChildrenList>
+								<Action Name="Play" ID="{6C1F0D64-688F-41B0-B507-4C6FFA31A2D3}" ShortID="471211449" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{8F895345-BB37-4E38-A1C1-7C2D7091157A}" Global="false">
+											<ObjectRef Name="se_2_1" ID="{1E183CD3-0350-456B-9F76-A8383A96C215}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SE_PPK_roll" ID="{CD02C8D4-1D6E-4DFC-A438-9408A1EBC4A8}">
+							<ChildrenList>
+								<Action Name="Play" ID="{C8020B6E-CF17-4ECF-AC5A-41848DB6DC16}" ShortID="240472155" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{56BB011D-9C1D-4DB2-B7F2-BE09032203BC}" Global="false">
+											<ObjectRef Name="SE_PPK_roll" ID="{DCBE8706-9B56-4F1A-913B-93953769C2D1}" WorkUnitID="{82C69708-36C2-4538-9933-8E6B87A3A396}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="VO" ID="{B83884E8-4D1A-4BC6-AA1E-7F006C86ADF8}" ShortID="449022605"/>
+				<Folder Name="MUSIC" ID="{79D39842-2F27-4F5C-9E19-B167662AD176}" ShortID="746143139">
+					<ChildrenList>
+						<Event Name="bgm_switch_stage_1" ID="{AAFEB55D-688C-4780-A45B-D21C90879409}">
+							<ChildrenList>
+								<Action Name="Set Switch" ID="{AD344E37-375F-40C0-9383-25F16F1A11C5}" ShortID="959752976" Type="SetSwitch" Scope="All" Global="false">
+									<SetItemParam>
+										<Group Name="bgm_group_stage" ID="{077D0D73-25E4-4B05-B04E-B7AF6E8E6733}"/>
+										<GroupItem Name="s_1" ID="{2F7FCF0D-EAD6-499D-B8A0-7EACC3F01EEF}"/>
+									</SetItemParam>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_State_Normal" ID="{A588A558-5DCC-43E0-A94F-E63CAFA601FA}">
+							<ChildrenList>
+								<Action Name="Set State" ID="{AC2692EC-5F7F-43CA-946A-3BFF6C2A3CED}" ShortID="950760708" Type="SetState" Scope="All" Global="true">
+									<SetItemParam>
+										<Group Name="State_Player" ID="{ACD2A636-DA5F-4F03-A747-50ACC5C01CCD}"/>
+										<GroupItem Name="State_Player_Normal" ID="{91480B7A-5855-4F6C-9F5F-D62EEBA1713B}"/>
+									</SetItemParam>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_State_Hurry" ID="{E9D4CC62-4E16-4D39-B7D4-18E687A91856}">
+							<ChildrenList>
+								<Action Name="Set State" ID="{9030B35D-BFB1-4F81-94B3-B1A3F8A8EC90}" ShortID="241735824" Type="SetState" Scope="All" Global="true">
+									<SetItemParam>
+										<Group Name="State_Player" ID="{ACD2A636-DA5F-4F03-A747-50ACC5C01CCD}"/>
+										<GroupItem Name="State_Player_Hurry" ID="{7E68C3AC-850F-425C-AC86-B1BE106C02D1}"/>
+									</SetItemParam>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_BGM" ID="{47049208-43DD-4A96-9378-2571628C5D32}">
+							<ChildrenList>
+								<Action Name="Set State" ID="{47D9C5AD-E748-48E3-80CE-79FBB1C852BA}" ShortID="912930952" Type="SetState" Scope="All" Global="true">
+									<SetItemParam>
+										<Group Name="State_Player" ID="{ACD2A636-DA5F-4F03-A747-50ACC5C01CCD}"/>
+										<GroupItem Name="State_Player_Normal" ID="{91480B7A-5855-4F6C-9F5F-D62EEBA1713B}"/>
+									</SetItemParam>
+								</Action>
+								<Action Name="Play" ID="{B95C6A10-DF37-46EA-B040-796276DEE8CD}" ShortID="576973080" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{3450EE54-C5B6-44F2-A8BA-F127C31B23D6}" Global="false">
+											<ObjectRef Name="Music_Switch_stage_1" ID="{BC325174-1FAD-4FFF-BE20-2DCF8C1B94A3}" WorkUnitID="{82C69708-36C2-4538-9933-8E6B87A3A396}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Switch_S1" ID="{B4559FFA-1DA1-4707-A2BE-F6CAA2D4F004}">
+							<ChildrenList>
+								<Action Name="Set Game Parameter" ID="{0C68C555-9E03-48F3-BFC3-CC661FF9508F}" ShortID="361035963" Type="SetGameParameter" Scope="One" Global="true">
+									<ElementList>
+										<Element ID="{E3C1F17B-244E-4BFD-8431-26288BD76372}" Global="true">
+											<ObjectRef Name="CODE_Player_Status" ID="{211B4766-8747-4E50-8FD8-6B2609B31D77}" WorkUnitID="{A78821E9-30D6-41D4-9DAC-8301586FCC4B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_BGM_test" ID="{B4A9F5DB-409C-4139-B74A-B8E7F4BD80D0}">
+							<ChildrenList>
+								<Action Name="Play" ID="{72EC2E06-C195-4DAB-8C1D-C5B1D9380CD8}" ShortID="373452046" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{00A00F52-48BB-400C-B910-620698FEB341}" Global="false">
+											<ObjectRef Name="BGM_1" ID="{E090940A-2BCD-4F12-8CFA-4BFEA27A937F}" WorkUnitID="{82C69708-36C2-4538-9933-8E6B87A3A396}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{02E2BFA1-45C9-4275-9488-747B6A60ADD1}" ShortID="496445911" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{FA1CF085-9CDE-4FB1-9C51-46482004C5AA}" Global="false">
+											<ObjectRef Name="BGM_2" ID="{F023132E-768A-4091-BCFB-D705FE389367}" WorkUnitID="{82C69708-36C2-4538-9933-8E6B87A3A396}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Switch_S3" ID="{6BCAE850-9D94-48C5-B974-FE7CFB679F16}">
+							<ChildrenList>
+								<Action Name="Set Game Parameter" ID="{AF61C016-F1B3-4B6F-A001-314D8C09F075}" ShortID="589373821" Type="SetGameParameter" Scope="One" Global="true">
+									<PropertyList>
+										<Property Name="GameParameterValue" Type="Real64" Value="30"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{3F14E2F7-A9A7-45E1-9463-8C8CC121FB8E}" Global="true">
+											<ObjectRef Name="CODE_Player_Status" ID="{211B4766-8747-4E50-8FD8-6B2609B31D77}" WorkUnitID="{A78821E9-30D6-41D4-9DAC-8301586FCC4B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_BGM_Stage_1" ID="{AC73251E-BA62-493C-A2C5-EB9046F9E993}">
+							<ChildrenList>
+								<Action Name="Set State" ID="{6A6FC730-123A-4FC9-853C-6CE601503F9B}" ShortID="962404470" Type="SetState" Scope="All" Global="true">
+									<SetItemParam>
+										<Group Name="State_Player" ID="{ACD2A636-DA5F-4F03-A747-50ACC5C01CCD}"/>
+										<GroupItem Name="State_Player_Normal" ID="{91480B7A-5855-4F6C-9F5F-D62EEBA1713B}"/>
+									</SetItemParam>
+								</Action>
+								<Action Name="Play" ID="{36D8FA82-9854-4B84-AD01-5DE6641EC2CC}" ShortID="384828964" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{F0A1907B-C86B-4CFF-81CE-5B1B47D6F22D}" Global="false">
+											<ObjectRef Name="Music_Switch_stage_1" ID="{BC325174-1FAD-4FFF-BE20-2DCF8C1B94A3}" WorkUnitID="{82C69708-36C2-4538-9933-8E6B87A3A396}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_BGM_Stage_2" ID="{DC7BABD1-EE78-42EE-A92D-65312FE5D19A}">
+							<ChildrenList>
+								<Action Name="Set State" ID="{A971B02D-9EC2-4468-B357-3A9CB5E5AE97}" ShortID="163683927" Type="SetState" Scope="All" Global="true">
+									<SetItemParam>
+										<Group Name="State_Player" ID="{ACD2A636-DA5F-4F03-A747-50ACC5C01CCD}"/>
+										<GroupItem Name="State_Player_Normal" ID="{91480B7A-5855-4F6C-9F5F-D62EEBA1713B}"/>
+									</SetItemParam>
+								</Action>
+								<Action Name="Play" ID="{1797FB3F-502B-43E5-ABFD-7387343DB0C0}" ShortID="1058107649" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{09AE6A74-C3AB-4A4A-83D1-6A45DC7779AD}" Global="false">
+											<ObjectRef Name="Music_Switch_stage_2" ID="{01FF675F-01F6-40DB-A9BE-7E74ABAA9F00}" WorkUnitID="{82C69708-36C2-4538-9933-8E6B87A3A396}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_BGM_Stage_3" ID="{2519EFE5-33D9-44FD-942C-8E8F2C6D7264}">
+							<ChildrenList>
+								<Action Name="Set State" ID="{7A7C1819-8363-420C-8992-2842274A19AE}" ShortID="392463572" Type="SetState" Scope="All" Global="true">
+									<SetItemParam>
+										<Group Name="State_Player" ID="{ACD2A636-DA5F-4F03-A747-50ACC5C01CCD}"/>
+										<GroupItem Name="State_Player_Normal" ID="{91480B7A-5855-4F6C-9F5F-D62EEBA1713B}"/>
+									</SetItemParam>
+								</Action>
+								<Action Name="Play" ID="{0487F83E-6845-4781-B63D-66C9D91F2A41}" ShortID="986018484" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{5E6F8A3D-6B0C-4158-97A5-2C1EB2B95C63}" Global="false">
+											<ObjectRef Name="Music_Switch_stage_3" ID="{428F40B6-1038-49CD-B995-9ECB8BF8AF96}" WorkUnitID="{82C69708-36C2-4538-9933-8E6B87A3A396}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_BGM_Stage_4" ID="{B18653FD-FD46-43C5-AC1E-2A6B4E240AC5}">
+							<ChildrenList>
+								<Action Name="Set State" ID="{468ECB4E-B73A-4052-BC46-CB933261FFEE}" ShortID="751388615" Type="SetState" Scope="All" Global="true">
+									<SetItemParam>
+										<Group Name="State_Player" ID="{ACD2A636-DA5F-4F03-A747-50ACC5C01CCD}"/>
+										<GroupItem Name="State_Player_Normal" ID="{91480B7A-5855-4F6C-9F5F-D62EEBA1713B}"/>
+									</SetItemParam>
+								</Action>
+								<Action Name="Play" ID="{0E89FA5C-DBB8-4E3E-AB86-202B0307CED6}" ShortID="143310471" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{CDBD071D-EE26-4509-879D-C10A1674F7B4}" Global="false">
+											<ObjectRef Name="Music_Switch_stage_4" ID="{B39FB5DC-1E12-4868-824E-30E29C581082}" WorkUnitID="{82C69708-36C2-4538-9933-8E6B87A3A396}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_BGM_Stage_5" ID="{3EA7F2F1-8327-4FA5-96D9-FF829DFFF922}">
+							<ChildrenList>
+								<Action Name="Set State" ID="{26AF5741-BB44-42AA-BC35-291F0FEE67EB}" ShortID="261974639" Type="SetState" Scope="All" Global="true">
+									<SetItemParam>
+										<Group Name="State_Player" ID="{ACD2A636-DA5F-4F03-A747-50ACC5C01CCD}"/>
+										<GroupItem Name="State_Player_Normal" ID="{91480B7A-5855-4F6C-9F5F-D62EEBA1713B}"/>
+									</SetItemParam>
+								</Action>
+								<Action Name="Play" ID="{15FC5A03-71F0-45E5-A885-7AB432E79BA1}" ShortID="314987408" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{370362F1-939F-467E-9F56-D4BEE2121D5F}" Global="false">
+											<ObjectRef Name="Music_Switch_stage_5" ID="{3EAB8042-301C-4CEE-B209-DE8047B47776}" WorkUnitID="{82C69708-36C2-4538-9933-8E6B87A3A396}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_All" ID="{E406785E-2CBD-4076-B93B-A6051854FC11}">
+							<ChildrenList>
+								<Action Name="Stop All" ID="{23B375E4-7F46-4FE6-8EEC-BE0B69C8CD18}" ShortID="1063287888" Type="Stop" Scope="All" Global="false"/>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

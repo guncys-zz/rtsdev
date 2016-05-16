@@ -12,7 +12,9 @@ banks = {
 			"Play_BGM_Stage_4"
 			"Play_BGM_Stage_5"
 			"Play_BGM_test"
+			"SE_PPK_damage1"
 			"SE_PPK_jump"
+			"SE_PPK_roll"
 			"Set_State_Hurry"
 			"Set_State_Normal"
 			"Set_Switch_S1"
@@ -22,6 +24,10 @@ banks = {
 		]
 	}
 	Init = {
+		events = [
+		]
+	}
+	Stage1 = {
 		events = [
 		]
 	}
@@ -85,15 +91,29 @@ events = {
 	}
 	Play_BGM_test = {
 		attenuation_max = 0
-		duration_max = 85.47946
-		duration_min = 85.47946
+		duration_max = 78.54546
+		duration_min = 78.54546
+		duration_type = "OneShot"
+		positioning = "2D"
+	}
+	SE_PPK_damage1 = {
+		attenuation_max = 0
+		duration_max = 1
+		duration_min = 1
 		duration_type = "OneShot"
 		positioning = "2D"
 	}
 	SE_PPK_jump = {
 		attenuation_max = 0
-		duration_max = 1.266
-		duration_min = 1.266
+		duration_max = 2
+		duration_min = 2
+		duration_type = "OneShot"
+		positioning = "2D"
+	}
+	SE_PPK_roll = {
+		attenuation_max = 0
+		duration_max = 1.25
+		duration_min = 1.25
 		duration_type = "OneShot"
 		positioning = "2D"
 	}

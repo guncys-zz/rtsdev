@@ -124,6 +124,46 @@ editor_metadata = {
 				ToItem = "In"
 				ToNode = "d83c57bd-e16a-41e9-bbe2-2d2c574285fa"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "29beef00-a9a2-4383-9095-daa70a7066ac"
+				ToItem = "Unit"
+				ToNode = "023fcabe-1dd6-4b27-9f8b-b6505c5318e0"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "023fcabe-1dd6-4b27-9f8b-b6505c5318e0"
+				ToItem = "A"
+				ToNode = "41618625-fa05-44e9-b259-d20de438b10a"
+				Type = "Float"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "True"
+				FromNode = "97f511cc-c05e-496c-a8ea-1caa89062322"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "dba8d47d-c0f7-4fbf-9c80-7fec766674da"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "41618625-fa05-44e9-b259-d20de438b10a"
+				ToItem = "Condition"
+				ToNode = "97f511cc-c05e-496c-a8ea-1caa89062322"
+				Type = "Bool"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "9c7b5dd9-2e42-40da-801d-de561afb533e"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "97f511cc-c05e-496c-a8ea-1caa89062322"
+			}
 		]
 		Groups = [
 			{
@@ -453,7 +493,7 @@ editor_metadata = {
 						Variable = {
 							Class = "Stingray.Foundation.Flow.InVariableElement"
 							Type = "wwise_event"
-							Value = "Play_BGM_Stage_5"
+							Value = "Play_BGM_Stage_1"
 						}
 					}
 					{
@@ -519,7 +559,7 @@ editor_metadata = {
 						}
 					}
 				]
-				Width = 160
+				Width = 220
 			}
 			{
 				Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
@@ -772,6 +812,62 @@ editor_metadata = {
 				]
 				ReturnValues = [
 				]
+				Width = 160
+			}
+			{
+				Brief = "Returns the current numeric value of the specified unit script data."
+				Class = "Stingray.Foundation.Flow.GetUnitNumericData"
+				Id = "023fcabe-1dd6-4b27-9f8b-b6505c5318e0"
+				Key = {
+					Value = "Distance"
+				}
+				NodeLocation = {
+					X = -520
+					Y = 420
+				}
+				Title = "Get Unit Numeric Data"
+				Unit = {
+					UseMyUnit = false
+				}
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				A = {
+				}
+				B = {
+					Value = 250
+				}
+				Brief = "Returns a boolean based on whether A is greater than B."
+				Class = "Stingray.Foundation.Flow.NumericGreaterThanNumeric"
+				Id = "41618625-fa05-44e9-b259-d20de438b10a"
+				NodeLocation = {
+					X = -300
+					Y = 420
+				}
+				Title = "Greater Than"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Creates a decision based data flow from a single boolean condition."
+				Class = "Stingray.Foundation.Flow.Branch"
+				Condition = {
+				}
+				False = {
+				}
+				Id = "97f511cc-c05e-496c-a8ea-1caa89062322"
+				In = {
+				}
+				NodeLocation = {
+					X = -100
+					Y = 420
+				}
+				Title = "Branch"
+				True = {
+				}
 				Width = 160
 			}
 		]
@@ -4727,6 +4823,11 @@ flow = {
 						id = "4ecdeb84-04d4-4622-a07f-963c9438a8e3:0"
 						node = "4ecdeb84-04d4-4622-a07f-963c9438a8e3"
 					}
+					{
+						event = 0
+						id = "97f511cc-c05e-496c-a8ea-1caa89062322:0"
+						node = "97f511cc-c05e-496c-a8ea-1caa89062322"
+					}
 				]
 			}
 			type = "level_update"
@@ -4905,7 +5006,7 @@ flow = {
 			type = "custom_script_node"
 			variable_values = {
 				Existing_Source_Id = null
-				Name = "Play_BGM_Stage_5"
+				Name = "Play_BGM_Stage_1"
 				Playing_Id = null
 				Position = null
 				Source_Id = null
@@ -5145,6 +5246,77 @@ flow = {
 			type = "custom_script_node"
 			variables = [
 			]
+		}
+		{
+			id = "023fcabe-1dd6-4b27-9f8b-b6505c5318e0"
+			in_variables = {
+				key = {
+					type = "string"
+				}
+				unit = {
+					node = "29beef00-a9a2-4383-9095-daa70a7066ac"
+					type = "unit"
+					variable = "unit"
+				}
+			}
+			out_variables = {
+				value = {
+					type = "float"
+				}
+			}
+			type = "get_unit_numeric_data"
+			variable_values = {
+				key = "Distance"
+				unit = null
+				value = null
+			}
+		}
+		{
+			id = "41618625-fa05-44e9-b259-d20de438b10a"
+			in_variables = {
+				a = {
+					node = "023fcabe-1dd6-4b27-9f8b-b6505c5318e0"
+					type = "float"
+					variable = "value"
+				}
+				b = {
+					type = "float"
+				}
+			}
+			out_variables = {
+				value = {
+					type = "bool"
+				}
+			}
+			type = "numeric_greater_than_numeric"
+			variable_values = {
+				a = null
+				b = 250
+				value = null
+			}
+		}
+		{
+			id = "97f511cc-c05e-496c-a8ea-1caa89062322"
+			in_variables = {
+				condition = {
+					node = "41618625-fa05-44e9-b259-d20de438b10a"
+					type = "bool"
+					variable = "value"
+				}
+			}
+			out_events = {
+				true = [
+					{
+						event = 0
+						id = "dba8d47d-c0f7-4fbf-9c80-7fec766674da:0"
+						node = "dba8d47d-c0f7-4fbf-9c80-7fec766674da"
+					}
+				]
+			}
+			type = "branch"
+			variable_values = {
+				condition = null
+			}
 		}
 	]
 }
