@@ -184,8 +184,23 @@ function MainMenu.on_custom_event(evt)
 	if evt.name == "start_game" then
 			MainMenu.action = "start"
 	end
-		if evt.name == "quit_game" then
+	if evt.name == "quit_game" then
 			MainMenu.action = "exit"
+	end
+	if evt.name == "stage1" then
+			MainMenu.action = "to_stage1"
+	end
+	if evt.name == "stage2" then
+			MainMenu.action = "to_stage2"
+	end
+	if evt.name == "stage3" then
+			MainMenu.action = "to_stage3"
+	end
+	if evt.name == "stage4" then
+			MainMenu.action = "to_stage4"
+	end
+	if evt.name == "ending" then
+			MainMenu.action = "to_ending"
 	end
 end
 
@@ -194,8 +209,23 @@ local function perform_action()
 	-- Load empty level
 	if MainMenu.action == "start" then
 		MainMenu.shutdown()
-		SimpleProject.change_level(Project.level_names.stage1)    --stage1に遷移
+		SimpleProject.change_level(Project.level_names.test_cinematics)    --stage1に遷移
 	-- Exit the program
+	elseif MainMenu.action == "to_stage1" then
+		MainMenu.shutdown()
+		SimpleProject.change_level(Project.level_names.stage1)
+	elseif MainMenu.action == "to_stage2" then
+	    MainMenu.shutdown()
+		SimpleProject.change_level(Project.level_names.stage2)
+	elseif MainMenu.action == "to_stage3" then
+	    MainMenu.shutdown()
+		SimpleProject.change_level(Project.level_names.stage3)
+	elseif MainMenu.action == "to_stage4" then
+	    MainMenu.shutdown()
+		SimpleProject.change_level(Project.level_names.stage4)
+	elseif MainMenu.action == "to_ending" then
+	  --  MainMenu.shutdown()
+	--	SimpleProject.change_level(Project.level_names.stage1)
 	elseif MainMenu.action == "exit" then
 		stingray.Application.quit()
 	end
