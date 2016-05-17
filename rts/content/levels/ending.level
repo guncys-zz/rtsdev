@@ -107,6 +107,14 @@ editor_metadata = {
 				ToItem = "In"
 				ToNode = "d0934dec-9a11-4703-9990-90e1f833fb06"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "517f9bfd-3048-42e3-878d-9fa6d5850e20"
+				ToItem = "Unit"
+				ToNode = "13a1ed9f-c7a4-4591-ac17-30d4b7de2bef"
+				Type = "Unit"
+			}
 		]
 		Groups = [
 		]
@@ -448,6 +456,47 @@ editor_metadata = {
 				Z = {
 					Value = 5
 				}
+			}
+			{
+				Angle = {
+				}
+				Brief = "Sets the camera’s vertical FOV."
+				Camera = {
+				}
+				Class = "Stingray.Foundation.Flow.SetCameraVerticalFov"
+				Id = "13a1ed9f-c7a4-4591-ac17-30d4b7de2bef"
+				In = {
+				}
+				NodeLocation = {
+					X = 80
+					Y = -380
+				}
+				Out = {
+				}
+				Title = "Set Camera Vertical FOV"
+				Unit = {
+					UseMyUnit = false
+				}
+				Width = 160
+			}
+			{
+				A = {
+					Value = 65
+				}
+				B = {
+					Value = 0.0174533
+				}
+				Brief = "Returns a numeric value that represents the product of A and B."
+				Class = "Stingray.Foundation.Flow.NumericTimesNumeric"
+				Id = "78ba24a6-ee63-42f7-a927-57ea6024062c"
+				NodeLocation = {
+					X = -340
+					Y = -360
+				}
+				Title = "Multiplication"
+				Value = {
+				}
+				Width = 160
 			}
 		]
 	}
@@ -1144,6 +1193,45 @@ flow = {
 				x = 0
 				y = 0
 				z = 5
+			}
+		}
+		{
+			id = "13a1ed9f-c7a4-4591-ac17-30d4b7de2bef"
+			in_variables = {
+				angle = {
+					type = "float"
+				}
+				camera = {
+					type = "camera"
+				}
+				unit = {
+					node = "517f9bfd-3048-42e3-878d-9fa6d5850e20"
+					type = "unit"
+					variable = "unit"
+				}
+			}
+			type = "set_camera_vertical_fov"
+			variable_values = {
+				angle = null
+				camera = null
+				unit = null
+			}
+		}
+		{
+			id = "78ba24a6-ee63-42f7-a927-57ea6024062c"
+			in_variables = {
+				a = {
+					type = "float"
+				}
+				b = {
+					type = "float"
+				}
+			}
+			type = "numeric_times_numeric"
+			variable_values = {
+				a = 65
+				b = 0.0174533
+				value = null
 			}
 		}
 	]
