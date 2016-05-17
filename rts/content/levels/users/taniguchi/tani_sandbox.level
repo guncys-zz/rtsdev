@@ -437,6 +437,7 @@ editor_metadata = {
 	LevelReferences = [
 	]
 	LightBakeSettings = {
+		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
 		FilterGain = 20
@@ -454,6 +455,7 @@ editor_metadata = {
 			Z = 1
 		}
 		TexelScale = 10
+		TotalPasses = 256
 		Variance = 0.5
 	}
 	LuaPluginObjects = [
@@ -527,6 +529,7 @@ editor_metadata = {
 					Intensity = 4
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "directional"
@@ -751,13 +754,13 @@ editor_metadata = {
 		{
 			Cameras = {
 			}
-			Id = "870726eb-89d4-4247-afb4-87197bca6279"
+			Id = "0341b6be-e6da-4187-9b28-563d16b1092c"
 			Layer = "Default"
 			Lights = {
 			}
 			Materials = {
 			}
-			Name = "BNN"
+			Name = "tutorial_actor_cube"
 			OverridePoses = {
 			}
 			Pivot = {
@@ -766,9 +769,9 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = -0.102451
-				Y = -3.491422
-				Z = 0
+				X = 0.073147
+				Y = -2.10464
+				Z = -0.951421
 			}
 			Rot = {
 				W = -1
@@ -783,7 +786,7 @@ editor_metadata = {
 			}
 			ScriptData = {
 			}
-			Type = "content/models/blockers/BNN/BNN"
+			Type = "content/models/TutorialActor/tutorial_actor_cube"
 		}
 	]
 	Volumes = [
@@ -1134,6 +1137,7 @@ units = [
 				falloff_start = 0
 				intensity = 4
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "directional"
@@ -1316,17 +1320,17 @@ units = [
 		}
 		data = {
 		}
-		id = "870726eb-89d4-4247-afb4-87197bca6279"
+		id = "0341b6be-e6da-4187-9b28-563d16b1092c"
 		lights = {
 		}
 		material = ""
 		materials = {
 		}
-		name = "BNN"
+		name = "tutorial_actor_cube"
 		pos = [
-			-0.102451
-			-3.491422
-			0
+			0.073147
+			-2.10464
+			-0.951421
 		]
 		rot = [
 			0
@@ -1339,7 +1343,7 @@ units = [
 			1
 			1
 		]
-		type = "content/models/blockers/BNN/BNN"
+		type = "content/models/TutorialActor/tutorial_actor_cube"
 	}
 ]
 volumes = [

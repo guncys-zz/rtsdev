@@ -13,22 +13,8 @@ import_options = {
 	skip_extract_root_motion = true
 	skip_lights = true
 	skip_lods = true
-	skip_materials = true
+	skip_materials = false
 	skip_mesh = false
 	skip_textures = true
 	test_want_failure = false
-}
-materials = {
-	lambert51 = "content/models/stage2/mushroom/materials/mushroomB"
-}
-mesh = "content/models/blockers/MSH/MSH_A"
-renderables = {
-	mushroomA = {
-		shadow_caster = true
-		viewport_visible = true
-	}
-	pCube1 = {
-		shadow_caster = true
-		viewport_visible = true
-	}
 }

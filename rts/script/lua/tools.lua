@@ -9,6 +9,9 @@ Tools = Tools or {}
 -- spawnしたオブジェクトをテーブル格納
 unit_objects = {}
 
+-- ヒットしたチュートリアル用のActorの名前を保存
+tutorial_names = {}
+
 function Tools.Load_csv(t)
     
     print("csv path: "..t.Path)
@@ -58,6 +61,32 @@ function Tools.IsBlocker(t)
     
     -- IsBlockerがTrueか判定
     if stingray.Unit.get_data(t.Unit, "IsBlocker") then
+        r["Bool"] = true
+        
+    end
+    
+    return r
+    
+end
+
+function Tools.IsTutorial(t)
+    
+    r = {}
+    
+    -- 返り値のテーブル
+    r["Bool"] = false
+    
+    tutorual_name = stingray.Unit.get_data(t.Unit, "TutorialName")
+    
+    -- IsBlockerがTrueか判定
+    if stingray.Unit.get_data(t.Unit, "IsTutorial") then
+        for key, name in ipairs(tutorial_names) do
+            if name == tutorual_name then
+                 r["Bool"] = false
+                 return r
+            end
+        end
+        
         r["Bool"] = true
         
     end

@@ -26,4 +26,15 @@ nodes = [
 			Bool = "bool"
 		}
 	}
+	{
+		name = "IsTutorial"
+		args = {
+			Unit = "unit"
+		}
+		function = "Tools.IsTutorial"
+		category = "Tools"
+		returns = {
+			Bool = "bool"
+		}
+	}
 ]
