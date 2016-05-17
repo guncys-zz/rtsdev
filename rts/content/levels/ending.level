@@ -36,36 +36,12 @@ editor_metadata = {
 				Type = "Unit"
 			}
 			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Pressed"
-				FromNode = "33d91777-7145-4854-b974-08ef0332177a"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "44b69da8-e630-454e-a843-5cd2204244ed"
-			}
-			{
 				Class = "Stingray.Foundation.Flow.VariableConnection"
 				FromItem = "Unit"
 				FromNode = "5d99ecc7-9f15-4cb4-a6b0-61a36bc64e6c"
 				ToItem = "Unit"
 				ToNode = "44b69da8-e630-454e-a843-5cd2204244ed"
 				Type = "Unit"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Pressed"
-				FromNode = "33d91777-7145-4854-b974-08ef0332177a"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "6c86e487-8b53-4752-85d2-4ccd1c008f74"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Pressed"
-				FromNode = "33d91777-7145-4854-b974-08ef0332177a"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "7c1b6c1c-a341-4c73-ac8f-ab24c15802d3"
 			}
 			{
 				Class = "Stingray.Foundation.Flow.VariableConnection"
@@ -93,14 +69,6 @@ editor_metadata = {
 			}
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Pressed"
-				FromNode = "33d91777-7145-4854-b974-08ef0332177a"
-				Priority = 0
-				ToItem = "Create"
-				ToNode = "46f0e19d-4dc3-4094-81d4-68bf3bfb8027"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
 				FromItem = "Out"
 				FromNode = "984cf171-2eeb-4f5e-a847-35b1c3a597dd"
 				Priority = 0
@@ -114,6 +82,54 @@ editor_metadata = {
 				ToItem = "Unit"
 				ToNode = "13a1ed9f-c7a4-4591-ac17-30d4b7de2bef"
 				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "984cf171-2eeb-4f5e-a847-35b1c3a597dd"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "6e7a47e9-535d-43d9-8f3c-40b014af893f"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "6e7a47e9-535d-43d9-8f3c-40b014af893f"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "6bd20353-aad6-4212-a45a-0c1f41c93bf1"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out1"
+				FromNode = "6bd20353-aad6-4212-a45a-0c1f41c93bf1"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "6c86e487-8b53-4752-85d2-4ccd1c008f74"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out2"
+				FromNode = "6bd20353-aad6-4212-a45a-0c1f41c93bf1"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "44b69da8-e630-454e-a843-5cd2204244ed"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out3"
+				FromNode = "6bd20353-aad6-4212-a45a-0c1f41c93bf1"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "7c1b6c1c-a341-4c73-ac8f-ab24c15802d3"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out4"
+				FromNode = "6bd20353-aad6-4212-a45a-0c1f41c93bf1"
+				Priority = 0
+				ToItem = "Create"
+				ToNode = "46f0e19d-4dc3-4094-81d4-68bf3bfb8027"
 			}
 		]
 		Groups = [
@@ -192,40 +208,12 @@ editor_metadata = {
 				Class = "Stingray.Foundation.Flow.LevelLoaded"
 				Id = "984cf171-2eeb-4f5e-a847-35b1c3a597dd"
 				NodeLocation = {
-					X = -360
-					Y = -240
+					X = -500
+					Y = -260
 				}
 				Out = {
 				}
 				Title = "Level Loaded"
-				Width = 160
-			}
-			{
-				Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
-				ButtonName = {
-					Value = "r"
-				}
-				Class = "Stingray.Foundation.Flow.KeyboardButton"
-				Device = {
-					Value = "keyboard"
-				}
-				DeviceNumber = {
-					Value = 0
-				}
-				Held = {
-				}
-				Id = "33d91777-7145-4854-b974-08ef0332177a"
-				NodeLocation = {
-					X = -260
-					Y = 40
-				}
-				Pressed = {
-				}
-				Released = {
-				}
-				Title = "Keyboard Button"
-				Value = {
-				}
 				Width = 160
 			}
 			{
@@ -496,6 +484,53 @@ editor_metadata = {
 				Title = "Multiplication"
 				Value = {
 				}
+				Width = 160
+			}
+			{
+				Brief = "Allows for a single event pin to execute multiple event pins in order."
+				Class = "Stingray.Foundation.Flow.Sequence"
+				Id = "6bd20353-aad6-4212-a45a-0c1f41c93bf1"
+				In = {
+				}
+				NodeLocation = {
+					X = -460
+					Y = 80
+				}
+				Out1 = {
+				}
+				Out2 = {
+				}
+				Out3 = {
+				}
+				Out4 = {
+				}
+				Out5 = {
+				}
+				Out6 = {
+				}
+				Out7 = {
+				}
+				Out8 = {
+				}
+				Title = "Sequence"
+				Width = 160
+			}
+			{
+				Brief = "Inserts a delay in evaluation by the specified numeric value."
+				Class = "Stingray.Foundation.Flow.Delay"
+				Id = "6e7a47e9-535d-43d9-8f3c-40b014af893f"
+				In = {
+				}
+				NodeLocation = {
+					X = -660
+					Y = 20
+				}
+				Out = {
+				}
+				Time = {
+					Value = 3
+				}
+				Title = "Delay"
 				Width = 160
 			}
 		]
@@ -959,54 +994,14 @@ flow = {
 						id = "d0934dec-9a11-4703-9990-90e1f833fb06:0"
 						node = "d0934dec-9a11-4703-9990-90e1f833fb06"
 					}
+					{
+						event = 0
+						id = "6e7a47e9-535d-43d9-8f3c-40b014af893f:0"
+						node = "6e7a47e9-535d-43d9-8f3c-40b014af893f"
+					}
 				]
 			}
 			type = "level_loaded"
-		}
-		{
-			id = "33d91777-7145-4854-b974-08ef0332177a"
-			in_variables = {
-				button_name = {
-					type = "string"
-				}
-				device = {
-					type = "string"
-				}
-				device_number = {
-					type = "float"
-				}
-			}
-			out_events = {
-				pressed = [
-					{
-						event = 0
-						id = "44b69da8-e630-454e-a843-5cd2204244ed:0"
-						node = "44b69da8-e630-454e-a843-5cd2204244ed"
-					}
-					{
-						event = 0
-						id = "6c86e487-8b53-4752-85d2-4ccd1c008f74:0"
-						node = "6c86e487-8b53-4752-85d2-4ccd1c008f74"
-					}
-					{
-						event = 0
-						id = "7c1b6c1c-a341-4c73-ac8f-ab24c15802d3:0"
-						node = "7c1b6c1c-a341-4c73-ac8f-ab24c15802d3"
-					}
-					{
-						event = 0
-						id = "46f0e19d-4dc3-4094-81d4-68bf3bfb8027:0"
-						node = "46f0e19d-4dc3-4094-81d4-68bf3bfb8027"
-					}
-				]
-			}
-			type = "keyboard_button"
-			variable_values = {
-				button_name = "r"
-				device = "keyboard"
-				device_number = 0
-				value = null
-			}
 		}
 		{
 			id = "6c86e487-8b53-4752-85d2-4ccd1c008f74"
@@ -1232,6 +1227,61 @@ flow = {
 				a = 65
 				b = 0.0174533
 				value = null
+			}
+		}
+		{
+			id = "6bd20353-aad6-4212-a45a-0c1f41c93bf1"
+			out_events = {
+				out1 = [
+					{
+						event = 0
+						id = "6c86e487-8b53-4752-85d2-4ccd1c008f74:0"
+						node = "6c86e487-8b53-4752-85d2-4ccd1c008f74"
+					}
+				]
+				out2 = [
+					{
+						event = 0
+						id = "44b69da8-e630-454e-a843-5cd2204244ed:0"
+						node = "44b69da8-e630-454e-a843-5cd2204244ed"
+					}
+				]
+				out3 = [
+					{
+						event = 0
+						id = "7c1b6c1c-a341-4c73-ac8f-ab24c15802d3:0"
+						node = "7c1b6c1c-a341-4c73-ac8f-ab24c15802d3"
+					}
+				]
+				out4 = [
+					{
+						event = 0
+						id = "46f0e19d-4dc3-4094-81d4-68bf3bfb8027:0"
+						node = "46f0e19d-4dc3-4094-81d4-68bf3bfb8027"
+					}
+				]
+			}
+			type = "sequence"
+		}
+		{
+			id = "6e7a47e9-535d-43d9-8f3c-40b014af893f"
+			in_variables = {
+				time = {
+					type = "float"
+				}
+			}
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "6bd20353-aad6-4212-a45a-0c1f41c93bf1:0"
+						node = "6bd20353-aad6-4212-a45a-0c1f41c93bf1"
+					}
+				]
+			}
+			type = "delay"
+			variable_values = {
+				time = 3
 			}
 		}
 	]
