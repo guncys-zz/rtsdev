@@ -1,0 +1,15 @@
+
+materials = {
+	blinn2 = "content/models/shots/OP/OP_ground/blinn2"
+}
+renderables = {
+	"house:pPlane1" = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

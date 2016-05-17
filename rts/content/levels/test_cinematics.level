@@ -862,6 +862,7 @@ editor_metadata = {
 	LevelReferences = [
 	]
 	LightBakeSettings = {
+		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
 		FilterGain = 20
@@ -879,6 +880,7 @@ editor_metadata = {
 			Z = 1
 		}
 		TexelScale = 10
+		TotalPasses = 256
 		Variance = 0.5
 	}
 	LuaPluginObjects = [
@@ -952,6 +954,7 @@ editor_metadata = {
 					Intensity = 1.9
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "directional"
@@ -1095,43 +1098,6 @@ editor_metadata = {
 		{
 			Cameras = {
 			}
-			Id = "edd7d89c-461f-4e63-b3e5-fa905d2ecd76"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "house"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 0
-				Z = -15.96169
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/shots/OP/house"
-		}
-		{
-			Cameras = {
-			}
 			Id = "418084ed-b9ef-414c-a7a3-18bd61a3e555"
 			Layer = "Default"
 			Lights = {
@@ -1170,7 +1136,7 @@ editor_metadata = {
 			Cameras = {
 				cam = {
 					CameraInfo = {
-						FarRange = 100
+						FarRange = 1000
 						NearRange = 0.1
 						ProjectionType = "Perspective"
 						VerticalFov = 22.6198209271818
@@ -1412,6 +1378,7 @@ editor_metadata = {
 					Intensity = 4
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -1446,43 +1413,6 @@ editor_metadata = {
 			ScriptData = {
 			}
 			Type = "core/units/light_source"
-		}
-		{
-			Cameras = {
-			}
-			Id = "8ec660a0-0970-4920-ab1d-16ffe3f17322"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "ground"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = -11.65258
-				Z = 0.603826
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/stage1/ground"
 		}
 		{
 			Cameras = {
@@ -1552,6 +1482,7 @@ editor_metadata = {
 					Intensity = 10
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -1618,6 +1549,7 @@ editor_metadata = {
 					Intensity = 5
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -1652,6 +1584,5297 @@ editor_metadata = {
 			ScriptData = {
 			}
 			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ea2937c7-0352-4420-97b6-bd468cf7624c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_H"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 6.90519
+				Y = 59.470856
+				Z = -5.585786
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3.877085
+				Y = 3.877085
+				Z = 3.877085
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_H"
+		}
+		{
+			Cameras = {
+			}
+			Id = "05f74863-1ed3-40e7-af27-76b01046614e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_L"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 7.44491
+				Y = 32.100166
+				Z = -0.937006
+			}
+			Rot = {
+				W = -0.278834
+				X = 0
+				Y = 0
+				Z = 0.960339
+			}
+			Scl = {
+				X = 2.628322
+				Y = 2.628322
+				Z = 2.628322
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_L"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4cb3c42e-34e9-473a-a6d5-9cc80ae31b78"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_K"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -2.098944
+				Y = 28.498253
+				Z = -1.249405
+			}
+			Rot = {
+				W = -0.781567
+				X = 0
+				Y = 0
+				Z = 0.623822
+			}
+			Scl = {
+				X = 2.44781
+				Y = 2.44781
+				Z = 2.44781
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_K"
+		}
+		{
+			Cameras = {
+			}
+			Id = "831f7c74-5e99-4c61-aa71-2e9d99590715"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_G"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.448954
+				Y = 52.051807
+				Z = -3.820043
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 2.275018
+				Y = 2.275018
+				Z = 2.275018
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_G"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a010b970-11db-4eff-9a91-9dd6b051c457"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_D"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -21.318459
+				Y = 6.808807
+				Z = -0.494153
+			}
+			Rot = {
+				W = -0.405272
+				X = 0
+				Y = 0
+				Z = 0.914196
+			}
+			Scl = {
+				X = 5.673944
+				Y = 5.673944
+				Z = 5.673944
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_D"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6f83b267-ff7c-4d5f-9d4b-3379ba9e0809"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_B"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -6.327844
+				Y = 32.896984
+				Z = -1.606075
+			}
+			Rot = {
+				W = -0.996687
+				X = 0
+				Y = 0
+				Z = -0.081331
+			}
+			Scl = {
+				X = 3.266543
+				Y = 3.266543
+				Z = 3.266543
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "94607ec8-e2f3-47ef-afbd-67d15c538fd9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_E"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -26.187271
+				Y = 16.178059
+				Z = -1.176783
+			}
+			Rot = {
+				W = -0.994093
+				X = 0
+				Y = 0
+				Z = -0.10853
+			}
+			Scl = {
+				X = 2.960393
+				Y = 2.960393
+				Z = 2.960393
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_E"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a65dd760-708e-447b-a2c8-cd5817bf3fd3"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_A"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -22.79805
+				Y = 24.617367
+				Z = -1.711232
+			}
+			Rot = {
+				W = -0.998969
+				X = 0
+				Y = 0
+				Z = -0.045387
+			}
+			Scl = {
+				X = 2.876501
+				Y = 2.876501
+				Z = 2.876501
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "579df3a6-32b6-49d7-9941-75c268c08abf"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_C"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -31.6283
+				Y = 24.6409
+				Z = -2.48532
+			}
+			Rot = {
+				W = -0.959034
+				X = 0
+				Y = 0
+				Z = -0.283292
+			}
+			Scl = {
+				X = 4.731617
+				Y = 4.731617
+				Z = 4.731617
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_C"
+		}
+		{
+			Cameras = {
+			}
+			Id = "89645039-9e8e-4ac7-bb41-8cb88f6cc1e6"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -6.817898
+				Y = 30.240757
+				Z = -0.545352
+			}
+			Rot = {
+				W = -0.93186
+				X = 0
+				Y = 0
+				Z = -0.362819
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "0c7ab7e5-8329-40a4-887e-25e42d667afc"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -6.489093
+				Y = 29.17449
+				Z = -0.474751
+			}
+			Rot = {
+				W = -0.922542
+				X = 0
+				Y = 0
+				Z = -0.385896
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "42fcd4ba-1430-44fa-9db2-e3c1e78e4b5f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -8.050827
+				Y = 29.949026
+				Z = -0.558027
+			}
+			Rot = {
+				W = -0.910776
+				X = 0
+				Y = 0
+				Z = -0.4129
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a7c297be-e268-4f1d-a250-3a22d2267f6f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -7.534723
+				Y = 30.799854
+				Z = -0.677375
+			}
+			Rot = {
+				W = -0.910776
+				X = 0
+				Y = 0
+				Z = -0.4129
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e7acde69-9c55-4fb3-9a77-fec2b3e6227e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -8.262899
+				Y = 31.885679
+				Z = -0.799763
+			}
+			Rot = {
+				W = -0.910776
+				X = 0
+				Y = 0
+				Z = -0.4129
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "62d49814-1e79-4155-aa4d-c774e0945828"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -7.516891
+				Y = 29.694427
+				Z = -1.177207
+			}
+			Rot = {
+				W = -0.910776
+				X = 0
+				Y = 0
+				Z = -0.4129
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "5a0870c8-9dc0-41fb-a62f-cffad66d2229"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_A"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -9.217249
+				Y = 33.065292
+				Z = -0.98263
+			}
+			Rot = {
+				W = -0.904206
+				X = 0
+				Y = 0
+				Z = -0.427098
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c1242f2f-d2b1-44ea-8299-196abe5bc378"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_C"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -8.474131
+				Y = 32.889671
+				Z = -0.885403
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_C"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a3e4679d-91ca-49fc-8011-dda1ba027036"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_B"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -8.71302
+				Y = 33.343216
+				Z = -0.935393
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "02c7b02d-5f3c-4fc1-8956-12f0cded2796"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A6"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -9.903685
+				Y = 34.454281
+				Z = -1.118094
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "48c17ce3-cafb-4861-8105-e6d42d2ea49b"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A7"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -9.497689
+				Y = 34.76239
+				Z = -1.065745
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "28018736-0351-40c2-ab1b-c0518d830666"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "stone_A"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -9.058956
+				Y = 33.810505
+				Z = -1.036878
+			}
+			Rot = {
+				W = -0.929722
+				X = 0
+				Y = 0
+				Z = -0.368262
+			}
+			Scl = {
+				X = 0.554018
+				Y = 0.554018
+				Z = 0.554018
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/stone/stone_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "96149ff7-e5d3-499e-8d39-348d8c5abae2"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A8"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -19.450066
+				Y = 17.618275
+				Z = -0.448212
+			}
+			Rot = {
+				W = -0.910776
+				X = 0
+				Y = 0
+				Z = -0.4129
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6d9407cb-c7f2-40b2-8841-1a3baf618e32"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_C1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -18.588499
+				Y = 17.18128
+				Z = -0.709387
+			}
+			Rot = {
+				W = -0.924104
+				X = 0
+				Y = 0
+				Z = -0.382141
+			}
+			Scl = {
+				X = 1.624578
+				Y = 1.624578
+				Z = 1.624578
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_C"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6250d683-d505-40b6-8a0d-5dff56138198"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_B1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -19.382402
+				Y = 16.665295
+				Z = -0.504124
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1.537472
+				Y = 1.537472
+				Z = 1.537472
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "38807a7e-6c50-4849-b647-aa8ba2b42073"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_B2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -20.340694
+				Y = 17.395769
+				Z = -0.528063
+			}
+			Rot = {
+				W = -0.510094
+				X = 0
+				Y = 0
+				Z = 0.860119
+			}
+			Scl = {
+				X = 1.57232
+				Y = 1.57232
+				Z = 1.57232
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "7214f244-2b85-4aed-a288-9e321f081220"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_A1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -19.996609
+				Y = 16.882658
+				Z = -0.687285
+			}
+			Rot = {
+				W = 0.254621
+				X = 0
+				Y = 0
+				Z = 0.967041
+			}
+			Scl = {
+				X = 1.544733
+				Y = 1.544733
+				Z = 1.544733
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e0d50fc2-074e-495d-83c8-3f7e778458c2"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_F"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -19.657721
+				Y = 16.635351
+				Z = -0.507671
+			}
+			Rot = {
+				W = -0.931352
+				X = 0
+				Y = 0
+				Z = -0.364121
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_F"
+		}
+		{
+			Cameras = {
+			}
+			Id = "96da1322-d77a-44ba-a456-0216da1cc5ec"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_F1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -25.864862
+				Y = 15.993244
+				Z = -1.061861
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_F"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3d826f62-5308-46d9-badb-b83aaa13d0d7"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A9"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -26.942097
+				Y = 15.264474
+				Z = -1.080324
+			}
+			Rot = {
+				W = -0.963251
+				X = 0
+				Y = 0
+				Z = -0.268605
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a89486f8-75d7-469a-9ee6-b8384955abbd"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A10"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -19.896015
+				Y = 21.004501
+				Z = -0.703946
+			}
+			Rot = {
+				W = -0.982617
+				X = 0
+				Y = 0
+				Z = -0.185643
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "8d0d269d-8a9b-4d4a-9e8a-3049eac1f3cf"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A11"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -19.381672
+				Y = 22.030872
+				Z = -0.744064
+			}
+			Rot = {
+				W = -0.963251
+				X = 0
+				Y = 0
+				Z = -0.268605
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c41d90ea-d26b-4fa6-be85-c2c213dd9cf2"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A12"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -19.938221
+				Y = 23.036098
+				Z = -0.780902
+			}
+			Rot = {
+				W = -0.987957
+				X = 0
+				Y = 0
+				Z = -0.154729
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3cd368ac-3541-48c7-900f-11cf6a1fbeb1"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A13"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -21.058266
+				Y = 23.248497
+				Z = -0.941669
+			}
+			Rot = {
+				W = -0.963251
+				X = 0
+				Y = 0
+				Z = -0.268605
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e69eb42b-b1ed-4ecc-a5eb-064851ca9c3f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A14"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -21.563148
+				Y = 24.391228
+				Z = -1.027095
+			}
+			Rot = {
+				W = -0.999059
+				X = 0
+				Y = 0
+				Z = 0.043381
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "69016ab1-3a55-4a73-8729-7392b494bdd6"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A15"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -23.016266
+				Y = 26.134361
+				Z = -1.214124
+			}
+			Rot = {
+				W = -0.986259
+				X = 0
+				Y = 0
+				Z = -0.165207
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "7a8f101a-e52e-4f5e-8d38-817f5fc5d508"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A16"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -22.873352
+				Y = 27.13541
+				Z = -1.299057
+			}
+			Rot = {
+				W = -0.975741
+				X = 0
+				Y = 0
+				Z = -0.218929
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4676d7c7-9c4c-4a9a-aa21-4fd3dfcdf796"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A17"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -23.696056
+				Y = 26.944851
+				Z = -1.410436
+			}
+			Rot = {
+				W = -0.986259
+				X = 0
+				Y = 0
+				Z = -0.165207
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e68f1d07-f3b3-40be-8736-34b0749022f8"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_E1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -35.043159
+				Y = 34.223171
+				Z = -3.15916
+			}
+			Rot = {
+				W = -0.822478
+				X = 0
+				Y = 0
+				Z = -0.568797
+			}
+			Scl = {
+				X = 2.960393
+				Y = 2.960393
+				Z = 2.960393
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_E"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f49afcf4-f7d6-4bf1-a491-468cdf6811c0"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A18"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -23.685101
+				Y = 27.916767
+				Z = -1.402139
+			}
+			Rot = {
+				W = -0.928536
+				X = 0
+				Y = 0
+				Z = -0.371243
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e5262606-fd55-4290-894e-4c71ecbbf6f2"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_A2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -20.89941
+				Y = 23.52206
+				Z = -1.384784
+			}
+			Rot = {
+				W = -0.976444
+				X = 0
+				Y = 0
+				Z = -0.215769
+			}
+			Scl = {
+				X = 1.544733
+				Y = 1.544733
+				Z = 1.544733
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "d56cf18d-4815-4210-93e2-8240129909c9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_B3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -23.397446
+				Y = 22.406239
+				Z = -1.277435
+			}
+			Rot = {
+				W = -0.848522
+				X = 0
+				Y = 0
+				Z = -0.52916
+			}
+			Scl = {
+				X = 2.585016
+				Y = 2.585016
+				Z = 2.585016
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "9189f270-9bb2-48b9-91aa-daf7f8368a73"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_C2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -23.053455
+				Y = 23.760181
+				Z = -1.371941
+			}
+			Rot = {
+				W = -0.750716
+				X = 0
+				Y = 0
+				Z = -0.660626
+			}
+			Scl = {
+				X = 1.624578
+				Y = 1.624578
+				Z = 1.624578
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_C"
+		}
+		{
+			Cameras = {
+			}
+			Id = "1cbb5ad3-a2dd-4a83-8d50-784f98f31e79"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A19"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -24.081947
+				Y = 28.784595
+				Z = -1.544842
+			}
+			Rot = {
+				W = -0.928536
+				X = 0
+				Y = 0
+				Z = -0.371243
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f10c5048-a813-454c-95e8-216534e25601"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A20"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -23.481537
+				Y = 28.745159
+				Z = -1.465376
+			}
+			Rot = {
+				W = -0.928536
+				X = 0
+				Y = 0
+				Z = -0.371243
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "8b184423-0836-4818-8e74-2204f76a8bb9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A21"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -25.130489
+				Y = 29.242363
+				Z = -1.655493
+			}
+			Rot = {
+				W = -0.928536
+				X = 0
+				Y = 0
+				Z = -0.371243
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "578931f6-6d1b-40f1-a06e-fedc610424f2"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A22"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -25.213333
+				Y = 30.1292
+				Z = -1.759437
+			}
+			Rot = {
+				W = -0.928536
+				X = 0
+				Y = 0
+				Z = -0.371243
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "8c563583-d7b0-450b-997f-dbd0282b82b5"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A23"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -26.029339
+				Y = 30.661427
+				Z = -1.840551
+			}
+			Rot = {
+				W = -0.928536
+				X = 0
+				Y = 0
+				Z = -0.371243
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "becc06ca-4c14-40c7-87a0-a24b5f319512"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_B4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -25.99754
+				Y = 30.746124
+				Z = -1.956507
+			}
+			Rot = {
+				W = -0.848522
+				X = 0
+				Y = 0
+				Z = -0.52916
+			}
+			Scl = {
+				X = 2.033121
+				Y = 2.033121
+				Z = 2.033121
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e137a8cb-410f-4232-a91e-75b9a874f506"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_A3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -25.691799
+				Y = 31.438057
+				Z = -1.996485
+			}
+			Rot = {
+				W = 0.21359
+				X = 0
+				Y = 0
+				Z = 0.976923
+			}
+			Scl = {
+				X = 1.080817
+				Y = 1.080817
+				Z = 1.080817
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3142056c-8a43-471e-a59e-f2e4ff937dfc"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "stone_A1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -26.627018
+				Y = 31.638706
+				Z = -2.112455
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 0.687983
+				Y = 0.687983
+				Z = 0.687983
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/stone/stone_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f3eee041-dabe-4373-8b41-3289bbf70e3a"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "stone_A2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -28.115171
+				Y = 32.665554
+				Z = -2.432873
+			}
+			Rot = {
+				W = -0.901932
+				X = 0
+				Y = 0
+				Z = 0.431877
+			}
+			Scl = {
+				X = 0.94224
+				Y = 0.94224
+				Z = 0.94224
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/stone/stone_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "983557e2-89e2-4589-a744-4ee3eec2771f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_C3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -25.462437
+				Y = 31.217331
+				Z = -1.861632
+			}
+			Rot = {
+				W = -0.99748
+				X = 0
+				Y = 0
+				Z = -0.070944
+			}
+			Scl = {
+				X = 1.301391
+				Y = 1.301391
+				Z = 1.301391
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_C"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3c8f1575-ad7c-4be7-bda2-d342167aed9a"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_C4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -27.388115
+				Y = 33.783157
+				Z = -2.633328
+			}
+			Rot = {
+				W = -0.82793
+				X = 0
+				Y = 0
+				Z = 0.560831
+			}
+			Scl = {
+				X = 1.030849
+				Y = 1.030849
+				Z = 1.030849
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_C"
+		}
+		{
+			Cameras = {
+			}
+			Id = "02ee4d07-70a4-420d-8df9-e120bbd6f154"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_B5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -27.935623
+				Y = 33.889484
+				Z = -2.686194
+			}
+			Rot = {
+				W = -0.847597
+				X = 0
+				Y = 0
+				Z = -0.53064
+			}
+			Scl = {
+				X = 1.196687
+				Y = 1.196687
+				Z = 1.196687
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "61bdf2a1-59d8-4b8f-9cf9-571ad9e3695a"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_A4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -29.327354
+				Y = 33.375671
+				Z = -2.705006
+			}
+			Rot = {
+				W = -0.930273
+				X = 0
+				Y = 0
+				Z = -0.366867
+			}
+			Scl = {
+				X = 1.080817
+				Y = 1.080817
+				Z = 1.080817
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "b62ed61b-dfa2-4afe-bf5e-2dec9767d167"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_A5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -29.59745
+				Y = 33.927311
+				Z = -2.659405
+			}
+			Rot = {
+				W = -0.996537
+				X = 0
+				Y = 0
+				Z = 0.083154
+			}
+			Scl = {
+				X = 0.901641
+				Y = 0.901641
+				Z = 0.901641
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a7d10f6a-fe04-4852-8ad1-861ae11951f8"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_B6"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -29.299149
+				Y = 33.974449
+				Z = -2.686194
+			}
+			Rot = {
+				W = -0.57429
+				X = 0
+				Y = 0
+				Z = 0.818652
+			}
+			Scl = {
+				X = 1.161179
+				Y = 1.161179
+				Z = 1.161178
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e7884825-37d3-4d9c-88a5-72a4141d38b4"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -28.5242
+				Y = 34.088463
+				Z = -2.477046
+			}
+			Rot = {
+				W = -0.943068
+				X = 0
+				Y = 0
+				Z = -0.332601
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f76ce974-267b-48c4-aeec-93d6d8b4ec46"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -29.020905
+				Y = 34.24984
+				Z = -2.554763
+			}
+			Rot = {
+				W = -0.976238
+				X = 0
+				Y = 0
+				Z = -0.2167
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "74fc7bd9-1bcd-4c37-9b8b-be782b32378c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -29.486763
+				Y = 34.492496
+				Z = -2.584888
+			}
+			Rot = {
+				W = -0.976238
+				X = 0
+				Y = 0
+				Z = -0.2167
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "956e3f81-eeaf-45d6-b5e9-72729dd81086"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -28.846924
+				Y = 35.035564
+				Z = -2.598352
+			}
+			Rot = {
+				W = -0.976238
+				X = 0
+				Y = 0
+				Z = -0.2167
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "7263a443-3643-443c-94c1-ff18e21c7755"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -29.492149
+				Y = 35.308765
+				Z = -2.644371
+			}
+			Rot = {
+				W = -0.955379
+				X = 0
+				Y = 0
+				Z = -0.295381
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "73cbaf5f-9d74-4a7c-813c-69d326bdbaa3"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -30.04084
+				Y = 35.627834
+				Z = -2.717019
+			}
+			Rot = {
+				W = -0.984697
+				X = 0
+				Y = 0
+				Z = -0.174275
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "11fd1293-4c17-4c92-bffa-d1c201b40041"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B6"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -30.222595
+				Y = 35.272282
+				Z = -2.702863
+			}
+			Rot = {
+				W = -0.984697
+				X = 0
+				Y = 0
+				Z = -0.174275
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "d70dfc67-01eb-4a9f-983b-93893d14793a"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_C2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -14.430501
+				Y = 43.940418
+				Z = -3.261219
+			}
+			Rot = {
+				W = -0.340277
+				X = 0
+				Y = 0
+				Z = 0.940325
+			}
+			Scl = {
+				X = 4.731617
+				Y = 4.731617
+				Z = 4.731617
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_C"
+		}
+		{
+			Cameras = {
+			}
+			Id = "1dcbb575-9eb3-41d4-85d0-5691552389ca"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B7"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.681164
+				Y = 40.674122
+				Z = -1.92457
+			}
+			Rot = {
+				W = 0.042782
+				X = 0
+				Y = 0
+				Z = 0.999084
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a33bcd1a-4dbf-4fda-afd0-7ec13272c5f8"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B8"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.242492
+				Y = 41.618294
+				Z = -2.05081
+			}
+			Rot = {
+				W = -0.192443
+				X = 0
+				Y = 0
+				Z = 0.981308
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "2c50fbf3-403a-433c-b0eb-f6f82d63ef12"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B9"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.928804
+				Y = 42.310646
+				Z = -2.170489
+			}
+			Rot = {
+				W = -0.278377
+				X = 0
+				Y = 0
+				Z = 0.960472
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "9417c934-77ff-488d-9323-95c3042c6324"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A24"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -11.785375
+				Y = 38.460518
+				Z = -1.527028
+			}
+			Rot = {
+				W = -0.98156
+				X = 0
+				Y = 0
+				Z = -0.191154
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c770a1d9-3cad-4097-9bc3-b5b2f089a865"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A25"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -11.893242
+				Y = 37.567043
+				Z = -1.406525
+			}
+			Rot = {
+				W = -0.902075
+				X = 0
+				Y = 0
+				Z = -0.43158
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f970bb88-45de-47ae-8aad-84f4c3037548"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B10"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -34.920017
+				Y = 29.800034
+				Z = -2.794885
+			}
+			Rot = {
+				W = -0.984697
+				X = 0
+				Y = 0
+				Z = -0.174275
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "703036b7-e799-455e-8c48-9e7fea975a9a"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B11"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -38.092304
+				Y = 30.341122
+				Z = -2.984767
+			}
+			Rot = {
+				W = -0.984697
+				X = 0
+				Y = 0
+				Z = -0.174275
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "482c7ae7-0189-4953-8634-4b01651b9e3b"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A26"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -38.287888
+				Y = 29.298317
+				Z = -2.918727
+			}
+			Rot = {
+				W = -0.928536
+				X = 0
+				Y = 0
+				Z = -0.371243
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "5f7037ce-959c-4a6b-a280-3c0ba739a4de"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A27"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -38.945728
+				Y = 30.556923
+				Z = -2.918727
+			}
+			Rot = {
+				W = 0.999148007985566
+				X = 0
+				Y = 0
+				Z = 0.0412705480757796
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e4c246cd-5ca6-4b26-9943-90574dd61ed5"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A28"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -38.566338
+				Y = 30.793257
+				Z = -2.918727
+			}
+			Rot = {
+				W = -0.999148
+				X = 0
+				Y = 0
+				Z = -0.041271
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e1bd03f5-eace-4f1c-a965-60e6974bff9c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B12"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -14.053307
+				Y = 39.892708
+				Z = -1.882215
+			}
+			Rot = {
+				W = 0.078833
+				X = 0
+				Y = 0
+				Z = 0.996888
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "2c4d7fe3-c927-48f8-9efa-970da9395270"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B13"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -14.908999
+				Y = 43.506721
+				Z = -2.356782
+			}
+			Rot = {
+				W = -0.278377
+				X = 0
+				Y = 0
+				Z = 0.960472
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6a6ccf76-7c6a-454b-a999-22b6df4e3289"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B14"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -15.748767
+				Y = 43.935947
+				Z = -2.489676
+			}
+			Rot = {
+				W = -0.278377
+				X = 0
+				Y = 0
+				Z = 0.960472
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e70f08fd-8e6d-44e9-b476-77a84012d19b"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B15"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -16.410267
+				Y = 44.140846
+				Z = -2.535574
+			}
+			Rot = {
+				W = -0.278377
+				X = 0
+				Y = 0
+				Z = 0.960472
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "8618a9a2-cfe2-4177-b032-c90ddf00e71f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B16"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -16.920094
+				Y = 44.946484
+				Z = -2.658453
+			}
+			Rot = {
+				W = -0.278377
+				X = 0
+				Y = 0
+				Z = 0.960472
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "1c1b680a-6d5e-47a5-9e9f-f0048a572875"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B17"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -17.080744
+				Y = 44.340408
+				Z = -2.579043
+			}
+			Rot = {
+				W = -0.278377
+				X = 0
+				Y = 0
+				Z = 0.960472
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "afa40fa6-0571-4d06-b7fd-6d58a729f7fc"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B18"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -17.015978
+				Y = 46.169266
+				Z = -2.859334
+			}
+			Rot = {
+				W = -0.278377
+				X = 0
+				Y = 0
+				Z = 0.960472
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "1423927d-6ee6-4ce4-89ba-0eb63aabf8fe"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B19"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -17.499687
+				Y = 46.391468
+				Z = -2.902853
+			}
+			Rot = {
+				W = -0.278377
+				X = 0
+				Y = 0
+				Z = 0.960472
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "78d45479-9f09-487b-a0eb-2932ac430d1d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B20"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -17.587568
+				Y = 47.228325
+				Z = -3.046267
+			}
+			Rot = {
+				W = -0.278377
+				X = 0
+				Y = 0
+				Z = 0.960472
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "bdcc7af4-f803-4326-bfda-cb88064e122b"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B21"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -18.120274
+				Y = 47.16048
+				Z = -3.028371
+			}
+			Rot = {
+				W = -0.278377
+				X = 0
+				Y = 0
+				Z = 0.960472
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "0de8163a-2790-4afe-aef5-2ceb7cccbc7f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_K1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 10.525147
+				Y = 42.124935
+				Z = -2.506717
+			}
+			Rot = {
+				W = -0.781567
+				X = 0
+				Y = 0
+				Z = 0.623822
+			}
+			Scl = {
+				X = 2.44781
+				Y = 2.44781
+				Z = 2.44781
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_K"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c663039e-9d8b-44ba-ab17-51132023cc47"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_D1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 18.581085
+				Y = 13.169957
+				Z = -0.400886
+			}
+			Rot = {
+				W = 0.272001
+				X = 0
+				Y = 0
+				Z = 0.962297
+			}
+			Scl = {
+				X = 7.255087
+				Y = 7.255087
+				Z = 7.255087
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_D"
+		}
+		{
+			Cameras = {
+			}
+			Id = "0b1788d6-6a5a-4101-8aac-e7a79f3f715f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_C3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 13.813496
+				Y = 30.947552
+				Z = -1.777225
+			}
+			Rot = {
+				W = 0.215390703116141
+				X = 0
+				Y = 0
+				Z = 0.976527954034668
+			}
+			Scl = {
+				X = 5.061017
+				Y = 5.061017
+				Z = 5.061017
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_C"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4b73d420-ee74-4b7f-bb55-e02e53026ccf"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_A1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 2.406369
+				Y = 40.528336
+				Z = -1.77919
+			}
+			Rot = {
+				W = 0.24791
+				X = 0
+				Y = 0
+				Z = 0.968783
+			}
+			Scl = {
+				X = 3.169211
+				Y = 3.169211
+				Z = 3.169211
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "9d4a1565-c9b9-435e-87ed-c37ae28b3bd7"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_I"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 6.236202
+				Y = 49.404762
+				Z = -3.265655
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 2.513096
+				Y = 2.513096
+				Z = 2.513096
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_I"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3e331a6c-267d-4a0e-82d5-f18036c50075"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_E2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 14.367121
+				Y = -11.468276
+				Z = -0.487028
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 7.897597
+				Y = 7.897597
+				Z = 7.897597
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_E"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e886e968-1749-444b-b385-1878f66aa370"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_F"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 22.612942
+				Y = 2.969347
+				Z = -1.012645
+			}
+			Rot = {
+				W = -0.704735
+				X = 0
+				Y = 0
+				Z = -0.709471
+			}
+			Scl = {
+				X = 4.946241
+				Y = 4.946241
+				Z = 4.946241
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_F"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6d1d8926-733a-44b3-9f81-f92deab5112d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_F1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 21.552477
+				Y = -4.67607
+				Z = -1.367072
+			}
+			Rot = {
+				W = -0.899918
+				X = 0
+				Y = 0
+				Z = 0.436058
+			}
+			Scl = {
+				X = 7.486661
+				Y = 7.486661
+				Z = 7.486661
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_F"
+		}
+		{
+			Cameras = {
+			}
+			Id = "54ded76e-7703-4dd3-9648-b0eb8295a613"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A29"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -1.94193
+				Y = 29.036207
+				Z = -0.377634
+			}
+			Rot = {
+				W = -0.826151
+				X = 0
+				Y = 0
+				Z = -0.563448
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "fabbb47a-7d33-4fc5-8033-a88e0021b4e2"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A30"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -2.865925
+				Y = 28.774687
+				Z = -0.377634
+			}
+			Rot = {
+				W = -0.502078
+				X = 0
+				Y = 0
+				Z = -0.864823
+			}
+			Scl = {
+				X = 1.241489
+				Y = 1.241489
+				Z = 1.241489
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "98cc1de7-bb7e-4863-aab8-58c14b8c27ae"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_F2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -1.710933
+				Y = 28.187265
+				Z = -0.322587
+			}
+			Rot = {
+				W = -0.61943
+				X = 0
+				Y = 0
+				Z = -0.785052
+			}
+			Scl = {
+				X = 1.714268
+				Y = 1.714268
+				Z = 1.714268
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_F"
+		}
+		{
+			Cameras = {
+			}
+			Id = "fb18d408-4b11-41a5-8f60-82f7f05f8e99"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B22"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 8.032224
+				Y = 33.609459
+				Z = -0.829544
+			}
+			Rot = {
+				W = -0.557098
+				X = 0
+				Y = 0
+				Z = -0.830447
+			}
+			Scl = {
+				X = 1.32625
+				Y = 1.32625
+				Z = 1.32625
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e402ff9d-1670-4f30-86b2-39300bac0952"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_F3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 7.421892
+				Y = 33.541393
+				Z = -1.573962
+			}
+			Rot = {
+				W = -0.60205
+				X = 0
+				Y = 0
+				Z = -0.798459
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_F"
+		}
+		{
+			Cameras = {
+			}
+			Id = "dd056eed-4497-4655-b1f4-7ead2e6493ef"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_F4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 7.783774
+				Y = 33.837051
+				Z = -0.865133
+			}
+			Rot = {
+				W = -0.60205
+				X = 0
+				Y = 0
+				Z = -0.798459
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_F"
+		}
+		{
+			Cameras = {
+			}
+			Id = "7d59783e-b38b-453f-a7bc-805086dd907d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B23"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 7.296987
+				Y = 33.262074
+				Z = -0.829544
+			}
+			Rot = {
+				W = -0.829454
+				X = 0
+				Y = 0
+				Z = -0.558575
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "8db22736-c8fa-43f3-8344-5f9f8112135e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_F5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 8.394494
+				Y = 32.782726
+				Z = -0.838153
+			}
+			Rot = {
+				W = 0.282571
+				X = 0
+				Y = 0
+				Z = 0.959246
+			}
+			Scl = {
+				X = 1.604319
+				Y = 1.604319
+				Z = 1.604319
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_F"
+		}
+		{
+			Cameras = {
+			}
+			Id = "9c912b33-6b68-4bfb-bbd8-178577974adb"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B24"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 8.760303
+				Y = 33.314804
+				Z = -0.904171
+			}
+			Rot = {
+				W = -0.677435
+				X = 0
+				Y = 0
+				Z = -0.735582
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "33c7e201-26e4-4ce6-a810-cbb55ae34a0c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B25"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 13.00711
+				Y = 31.067625
+				Z = -0.898757
+			}
+			Rot = {
+				W = 0.394893
+				X = 0
+				Y = 0
+				Z = 0.918727
+			}
+			Scl = {
+				X = 1.625829
+				Y = 1.625829
+				Z = 1.625829
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "82762c51-9cd3-4bc6-a81a-3478758b233c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_B26"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 13.587615
+				Y = 31.960857
+				Z = -0.898757
+			}
+			Rot = {
+				W = -0.566842
+				X = 0
+				Y = 0
+				Z = -0.823827
+			}
+			Scl = {
+				X = 1.305745
+				Y = 1.305745
+				Z = 1.305745
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c975d6db-e798-4e9e-a990-248f2c7ef128"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_F6"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 12.88878
+				Y = 31.197416
+				Z = -0.808537
+			}
+			Rot = {
+				W = 0.430933
+				X = 0
+				Y = 0
+				Z = 0.902384
+			}
+			Scl = {
+				X = 1.488238
+				Y = 1.488238
+				Z = 1.488238
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_F"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3831f850-709e-4cf9-9e36-f3e08824039e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_F7"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 12.148438
+				Y = 31.22353
+				Z = -0.804183
+			}
+			Rot = {
+				W = -0.627083
+				X = 0
+				Y = 0
+				Z = -0.778952
+			}
+			Scl = {
+				X = 1.488238
+				Y = 1.488238
+				Z = 1.488238
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_F"
+		}
+		{
+			Cameras = {
+			}
+			Id = "66a4a00b-6096-4063-a8a1-f39c510ae026"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A31"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -5.843019
+				Y = 34.680027
+				Z = -0.982067
+			}
+			Rot = {
+				W = -0.820264
+				X = 0
+				Y = 0
+				Z = -0.571985
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1.227019
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "40f4c598-2090-4747-afa8-2190981d3a0c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_A6"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 1.492865
+				Y = 41.398129
+				Z = -1.716147
+			}
+			Rot = {
+				W = -0.801987
+				X = 0
+				Y = 0
+				Z = 0.597341
+			}
+			Scl = {
+				X = 1.295674
+				Y = 1.295674
+				Z = 1.295674
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e5668636-714a-4e34-9ef2-823c62a2354d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_B7"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 1.13701
+				Y = 41.873081
+				Z = -1.740811
+			}
+			Rot = {
+				W = -0.64899
+				X = 0
+				Y = 0
+				Z = -0.760797
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e573bc5f-4bbc-480d-bb03-540750651fbb"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_C5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 1.658184
+				Y = 41.741623
+				Z = -1.711026
+			}
+			Rot = {
+				W = 0.007141
+				X = 0
+				Y = 0
+				Z = 0.999974
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_C"
+		}
+		{
+			Cameras = {
+			}
+			Id = "2b829721-3405-48fb-acc8-6b80e3910424"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_F8"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 2.016086
+				Y = 42.081417
+				Z = -2.25484
+			}
+			Rot = {
+				W = -0.566257
+				X = 0
+				Y = 0
+				Z = -0.824229
+			}
+			Scl = {
+				X = 1.307478
+				Y = 1.307478
+				Z = 1.307478
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_F"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a213a2d3-d589-416b-8a63-4e71737ab3f1"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_F9"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 1.159757
+				Y = 40.97818
+				Z = -2.136817
+			}
+			Rot = {
+				W = 0.698036079707385
+				X = 0
+				Y = 0
+				Z = 0.716062589042847
+			}
+			Scl = {
+				X = 1.307478
+				Y = 1.307478
+				Z = 1.307478
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_F"
+		}
+		{
+			Cameras = {
+			}
+			Id = "870a9d8d-f724-4d91-9f4e-e53a17f409a7"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_F10"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 1.398293
+				Y = 41.844009
+				Z = -2.215693
+			}
+			Rot = {
+				W = -0.566257
+				X = 0
+				Y = 0
+				Z = -0.824229
+			}
+			Scl = {
+				X = 1.307478
+				Y = 1.307478
+				Z = 1.307478
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_F"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c140f60d-3c4d-4615-8cb9-3224ec0fa447"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "stone_A3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 6.845315
+				Y = 31.843145
+				Z = -0.713392
+			}
+			Rot = {
+				W = 0.373944
+				X = 0
+				Y = 0
+				Z = 0.927451
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/stone/stone_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f350c11f-9409-4d54-a3b1-f1ff83902a52"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_C6"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 5.762101
+				Y = 31.827917
+				Z = -0.650425
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_C"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c519f3bc-ce4a-4e11-89ff-9d186421612c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_A7"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 5.999232
+				Y = 31.160622
+				Z = -0.619525
+			}
+			Rot = {
+				W = -0.795704
+				X = 0
+				Y = 0
+				Z = 0.605686
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "5f491add-c688-4d54-b7ff-a391a8049311"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_B1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -14.659969
+				Y = -13.744428
+				Z = -2.510008
+			}
+			Rot = {
+				W = 0.214558
+				X = 0
+				Y = 0
+				Z = 0.976711
+			}
+			Scl = {
+				X = 5.396047
+				Y = 5.396047
+				Z = 5.396047
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "5b0d8498-9651-4d29-b259-7ce402d93680"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "stone_A4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -17.548941
+				Y = -4.029458
+				Z = -0.425848
+			}
+			Rot = {
+				W = -0.771305
+				X = 0
+				Y = 0
+				Z = -0.636466
+			}
+			Scl = {
+				X = 1.479708
+				Y = 1.479708
+				Z = 1.479708
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/stone/stone_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f5527b78-46db-41f5-9986-ff0cc97e76f7"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_C4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -17.148632
+				Y = -9.326465
+				Z = -0.881198
+			}
+			Rot = {
+				W = -0.995226
+				X = 0
+				Y = 0
+				Z = -0.097594
+			}
+			Scl = {
+				X = 5.061017
+				Y = 5.061017
+				Z = 5.061017
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_C"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f99a7ca6-d5b7-4168-939a-cd1c83c85276"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_A2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -21.3894
+				Y = -4.937475
+				Z = -1.017974
+			}
+			Rot = {
+				W = -0.930101
+				X = 0
+				Y = 0
+				Z = 0.367304
+			}
+			Scl = {
+				X = 5.155719
+				Y = 5.155719
+				Z = 5.155719
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "5e278a62-b9e6-4f5c-b97b-90c7b6ea7cc8"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A32"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 2.21951
+				Y = 6.898751
+				Z = 0.689271
+			}
+			Rot = {
+				W = -0.789294
+				X = 0
+				Y = 0
+				Z = -0.614016
+			}
+			Scl = {
+				X = 1.291656
+				Y = 1.291656
+				Z = 1.291656
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "66b53f94-2591-4882-a42a-7aa4864238db"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A33"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 3.318014
+				Y = 6.990147
+				Z = 0.671427
+			}
+			Rot = {
+				W = -0.789294
+				X = 0
+				Y = 0
+				Z = -0.614016
+			}
+			Scl = {
+				X = 1.291656
+				Y = 1.291656
+				Z = 1.291656
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "093bd5b8-96c2-45f1-9013-256626d1c583"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A34"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 3.972366
+				Y = 6.105087
+				Z = 0.633517
+			}
+			Rot = {
+				W = -0.619693
+				X = 0
+				Y = 0
+				Z = -0.784845
+			}
+			Scl = {
+				X = 1.502946
+				Y = 1.502946
+				Z = 1.502946
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "fcc499c0-2a7f-4f18-b57f-26999868141b"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A35"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -2.158867
+				Y = 6.783782
+				Z = 0.639839
+			}
+			Rot = {
+				W = -0.566257
+				X = 0
+				Y = 0
+				Z = -0.824229
+			}
+			Scl = {
+				X = 1.1939
+				Y = 1.1939
+				Z = 1.1939
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6573e9a6-7f39-42a5-a196-5f5f83d5b2f7"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A36"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.114937
+				Y = 6.220235
+				Z = 0.639839
+			}
+			Rot = {
+				W = -0.566257
+				X = 0
+				Y = 0
+				Z = -0.824229
+			}
+			Scl = {
+				X = 1.261902
+				Y = 1.261902
+				Z = 1.261902
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e56b0903-7c8c-4c9e-994a-d811a7457dfc"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A37"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.775851
+				Y = 6.503081
+				Z = 0.639839
+			}
+			Rot = {
+				W = -0.566257
+				X = 0
+				Y = 0
+				Z = -0.824229
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "54cad766-2448-458f-8fdc-d1a9cd9c7e77"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_A38"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.290648
+				Y = 5.850589
+				Z = 0.639839
+			}
+			Rot = {
+				W = -0.566257
+				X = 0
+				Y = 0
+				Z = -0.824229
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f57ac1e4-c11d-4fff-bead-9ba61a6d35bd"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_F11"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 22.009981
+				Y = 2.888941
+				Z = -0.373865
+			}
+			Rot = {
+				W = 0.494259
+				X = 0
+				Y = 0
+				Z = 0.869315
+			}
+			Scl = {
+				X = 2.153496
+				Y = 2.153496
+				Z = 2.153496
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_F"
+		}
+		{
+			Cameras = {
+			}
+			Id = "18d67f2e-c98b-4865-be61-9ebaf97184a2"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_F12"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 22.563501
+				Y = 3.517691
+				Z = -0.439132
+			}
+			Rot = {
+				W = 0.494259
+				X = 0
+				Y = 0
+				Z = 0.869315
+			}
+			Scl = {
+				X = 2.153496
+				Y = 2.153496
+				Z = 2.153496
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_F"
+		}
+		{
+			Cameras = {
+			}
+			Id = "8f37d9cc-571e-44cc-ab28-d26f0707f0da"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_F13"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 4.84616
+				Y = 5.618385
+				Z = 0.606195
+			}
+			Rot = {
+				W = -0.812462
+				X = 0
+				Y = 0
+				Z = -0.583015
+			}
+			Scl = {
+				X = 2.153496
+				Y = 2.153496
+				Z = 2.153496
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_F"
+		}
+		{
+			Cameras = {
+			}
+			Id = "73de5028-487e-4405-89eb-63cef3af6504"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_H1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 21.028963
+				Y = -30.345438
+				Z = -4.373893
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 2.70178
+				Y = 2.70178
+				Z = 2.70178
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_H"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e7ad2cd3-9568-494b-84bd-76f5aa9cecc4"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_G1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 32.373055
+				Y = -17.333681
+				Z = -3.560473
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3.232359
+				Y = 3.232359
+				Z = 3.232359
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_G"
+		}
+		{
+			Cameras = {
+			}
+			Id = "7cbc971b-adc2-42c1-bcef-1b24b00bfc05"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_G2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -24.176119
+				Y = -13.286016
+				Z = -1.552445
+			}
+			Rot = {
+				W = 0.304218
+				X = 0
+				Y = 0
+				Z = 0.952602
+			}
+			Scl = {
+				X = 1.249073
+				Y = 1.249073
+				Z = 1.249073
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_G"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4201422b-d2c7-428b-b879-c74731d9aba2"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_E3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -35.884441
+				Y = -12.677674
+				Z = -2.61951
+			}
+			Rot = {
+				W = 0.221028
+				X = 0
+				Y = 0
+				Z = 0.975268
+			}
+			Scl = {
+				X = 7.239414
+				Y = 7.239414
+				Z = 7.239414
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_E"
+		}
+		{
+			Cameras = {
+			}
+			Id = "11d2879f-592f-409e-a21f-6e47d6210ed5"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_H2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -26.406578
+				Y = -32.140694
+				Z = -4.314647
+			}
+			Rot = {
+				W = -0.752305
+				X = 0
+				Y = 0
+				Z = -0.658815
+			}
+			Scl = {
+				X = 2.252929
+				Y = 2.252929
+				Z = 2.252929
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_H"
+		}
+		{
+			Cameras = {
+			}
+			Id = "491503a5-95f2-438d-8e2d-8cf115cd9c07"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_H3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -15.815276
+				Y = -26.663597
+				Z = -2.94193
+			}
+			Rot = {
+				W = -0.690109
+				X = 0
+				Y = 0
+				Z = 0.723706
+			}
+			Scl = {
+				X = 3.128621
+				Y = 3.128621
+				Z = 3.128621
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_H"
+		}
+		{
+			Cameras = {
+			}
+			Id = "9c9e2d53-4620-4db3-95fc-a9b67139a8f9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tree_G3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 28.436981
+				Y = -24.750603
+				Z = -3.985064
+			}
+			Rot = {
+				W = 0.304218
+				X = 0
+				Y = 0
+				Z = 0.952602
+			}
+			Scl = {
+				X = 2.673664
+				Y = 2.673664
+				Z = 2.673664
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/tree/tree_G"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4134c05d-d647-4107-8a95-f520a9e5f16d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_F14"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 21.587738
+				Y = -3.942771
+				Z = -0.580456
+			}
+			Rot = {
+				W = 0.293285
+				X = 0
+				Y = 0
+				Z = 0.956025
+			}
+			Scl = {
+				X = 1.276042
+				Y = 1.276042
+				Z = 1.276042
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_F"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ba87e161-3826-44ce-b601-26564bc6ca3c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "flower_F15"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 21.039801
+				Y = -4.210521
+				Z = -0.541947
+			}
+			Rot = {
+				W = -0.529135
+				X = 0
+				Y = 0
+				Z = -0.848538
+			}
+			Scl = {
+				X = 1.466376
+				Y = 1.466376
+				Z = 1.466376
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/flower/flower_F"
+		}
+		{
+			Cameras = {
+			}
+			Id = "0d584522-310f-4fc0-af49-7506e65767f0"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "OP_ground"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = -0.20535
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/OP_ground/OP_ground"
+		}
+		{
+			Cameras = {
+			}
+			Id = "32f556e3-3887-45ce-8ca6-c2c1dcc17db8"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_A8"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -19.269779
+				Y = -3.800846
+				Z = -0.488745
+			}
+			Rot = {
+				W = -0.837618
+				X = 0
+				Y = 0
+				Z = -0.546257
+			}
+			Scl = {
+				X = 1.969431
+				Y = 1.969431
+				Z = 1.969431
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "af1e9862-d6af-48af-96c8-5887a1541aef"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_B8"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -18.586319
+				Y = -2.484651
+				Z = -0.315
+			}
+			Rot = {
+				W = 0.817282202905458
+				X = 0
+				Y = 0
+				Z = -0.576237625302272
+			}
+			Scl = {
+				X = 1.87181
+				Y = 1.87181
+				Z = 1.87181
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "298c8a2e-1a44-4e1e-8c72-e93667935dbd"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "pool_C7"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -16.23914
+				Y = -5.016362
+				Z = -0.214203
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 2.240856
+				Y = 2.240856
+				Z = 2.240856
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/pool/pool_C"
 		}
 	]
 	Volumes = [
@@ -2312,6 +7535,7 @@ units = [
 				falloff_start = 0
 				intensity = 1.9
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "directional"
@@ -2431,36 +7655,6 @@ units = [
 		}
 		data = {
 		}
-		id = "edd7d89c-461f-4e63-b3e5-fa905d2ecd76"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "house"
-		pos = [
-			0
-			0
-			-15.96169
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/shots/OP/house"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
 		id = "418084ed-b9ef-414c-a7a3-18bd61a3e555"
 		lights = {
 		}
@@ -2489,7 +7683,7 @@ units = [
 	{
 		cameras = {
 			cam = {
-				far_range = 100
+				far_range = 1000
 				interest_point_distance = 10
 				near_range = 0.1
 				orthographic_plane = [
@@ -2693,6 +7887,7 @@ units = [
 				falloff_start = 0
 				intensity = 4
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"
@@ -2719,36 +7914,6 @@ units = [
 			0.421885
 		]
 		type = "core/units/light_source"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "8ec660a0-0970-4920-ab1d-16ffe3f17322"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "ground"
-		pos = [
-			0
-			-11.65258
-			0.603826
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/stage1/ground"
 	}
 	{
 		cameras = {
@@ -2810,6 +7975,7 @@ units = [
 				falloff_start = 0
 				intensity = 10
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"
@@ -2867,6 +8033,7 @@ units = [
 				falloff_start = 0
 				intensity = 5
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"
@@ -2893,6 +8060,4296 @@ units = [
 			1
 		]
 		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "ea2937c7-0352-4420-97b6-bd468cf7624c"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_H"
+		pos = [
+			6.90519
+			59.470856
+			-5.585786
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3.877085
+			3.877085
+			3.877085
+		]
+		type = "content/models/shots/OP/tree/tree_H"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "05f74863-1ed3-40e7-af27-76b01046614e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_L"
+		pos = [
+			7.44491
+			32.100166
+			-0.937006
+		]
+		rot = [
+			0
+			0
+			0.960339
+			-0.278834
+		]
+		scl = [
+			2.628322
+			2.628322
+			2.628322
+		]
+		type = "content/models/shots/OP/tree/tree_L"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "4cb3c42e-34e9-473a-a6d5-9cc80ae31b78"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_K"
+		pos = [
+			-2.098944
+			28.498253
+			-1.249405
+		]
+		rot = [
+			0
+			0
+			0.623822
+			-0.781567
+		]
+		scl = [
+			2.44781
+			2.44781
+			2.44781
+		]
+		type = "content/models/shots/OP/tree/tree_K"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "831f7c74-5e99-4c61-aa71-2e9d99590715"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_G"
+		pos = [
+			-4.448954
+			52.051807
+			-3.820043
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			2.275018
+			2.275018
+			2.275018
+		]
+		type = "content/models/shots/OP/tree/tree_G"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a010b970-11db-4eff-9a91-9dd6b051c457"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_D"
+		pos = [
+			-21.318459
+			6.808807
+			-0.494153
+		]
+		rot = [
+			0
+			0
+			0.914196
+			-0.405272
+		]
+		scl = [
+			5.673944
+			5.673944
+			5.673944
+		]
+		type = "content/models/shots/OP/tree/tree_D"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6f83b267-ff7c-4d5f-9d4b-3379ba9e0809"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_B"
+		pos = [
+			-6.327844
+			32.896984
+			-1.606075
+		]
+		rot = [
+			0
+			0
+			-0.081331
+			-0.996687
+		]
+		scl = [
+			3.266543
+			3.266543
+			3.266543
+		]
+		type = "content/models/shots/OP/tree/tree_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "94607ec8-e2f3-47ef-afbd-67d15c538fd9"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_E"
+		pos = [
+			-26.187271
+			16.178059
+			-1.176783
+		]
+		rot = [
+			0
+			0
+			-0.10853
+			-0.994093
+		]
+		scl = [
+			2.960393
+			2.960393
+			2.960393
+		]
+		type = "content/models/shots/OP/tree/tree_E"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a65dd760-708e-447b-a2c8-cd5817bf3fd3"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_A"
+		pos = [
+			-22.79805
+			24.617367
+			-1.711232
+		]
+		rot = [
+			0
+			0
+			-0.045387
+			-0.998969
+		]
+		scl = [
+			2.876501
+			2.876501
+			2.876501
+		]
+		type = "content/models/shots/OP/tree/tree_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "579df3a6-32b6-49d7-9941-75c268c08abf"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_C"
+		pos = [
+			-31.6283
+			24.6409
+			-2.48532
+		]
+		rot = [
+			0
+			0
+			-0.283292
+			-0.959034
+		]
+		scl = [
+			4.731617
+			4.731617
+			4.731617
+		]
+		type = "content/models/shots/OP/tree/tree_C"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "89645039-9e8e-4ac7-bb41-8cb88f6cc1e6"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A"
+		pos = [
+			-6.817898
+			30.240757
+			-0.545352
+		]
+		rot = [
+			0
+			0
+			-0.362819
+			-0.93186
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "0c7ab7e5-8329-40a4-887e-25e42d667afc"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A1"
+		pos = [
+			-6.489093
+			29.17449
+			-0.474751
+		]
+		rot = [
+			0
+			0
+			-0.385896
+			-0.922542
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "42fcd4ba-1430-44fa-9db2-e3c1e78e4b5f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A2"
+		pos = [
+			-8.050827
+			29.949026
+			-0.558027
+		]
+		rot = [
+			0
+			0
+			-0.4129
+			-0.910776
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a7c297be-e268-4f1d-a250-3a22d2267f6f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A3"
+		pos = [
+			-7.534723
+			30.799854
+			-0.677375
+		]
+		rot = [
+			0
+			0
+			-0.4129
+			-0.910776
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e7acde69-9c55-4fb3-9a77-fec2b3e6227e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A4"
+		pos = [
+			-8.262899
+			31.885679
+			-0.799763
+		]
+		rot = [
+			0
+			0
+			-0.4129
+			-0.910776
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "62d49814-1e79-4155-aa4d-c774e0945828"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A5"
+		pos = [
+			-7.516891
+			29.694427
+			-1.177207
+		]
+		rot = [
+			0
+			0
+			-0.4129
+			-0.910776
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "5a0870c8-9dc0-41fb-a62f-cffad66d2229"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_A"
+		pos = [
+			-9.217249
+			33.065292
+			-0.98263
+		]
+		rot = [
+			0
+			0
+			-0.427098
+			-0.904206
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/pool/pool_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c1242f2f-d2b1-44ea-8299-196abe5bc378"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_C"
+		pos = [
+			-8.474131
+			32.889671
+			-0.885403
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/pool/pool_C"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a3e4679d-91ca-49fc-8011-dda1ba027036"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_B"
+		pos = [
+			-8.71302
+			33.343216
+			-0.935393
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/pool/pool_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "02c7b02d-5f3c-4fc1-8956-12f0cded2796"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A6"
+		pos = [
+			-9.903685
+			34.454281
+			-1.118094
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "48c17ce3-cafb-4861-8105-e6d42d2ea49b"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A7"
+		pos = [
+			-9.497689
+			34.76239
+			-1.065745
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "28018736-0351-40c2-ab1b-c0518d830666"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "stone_A"
+		pos = [
+			-9.058956
+			33.810505
+			-1.036878
+		]
+		rot = [
+			0
+			0
+			-0.368262
+			-0.929722
+		]
+		scl = [
+			0.554018
+			0.554018
+			0.554018
+		]
+		type = "content/models/shots/OP/stone/stone_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "96149ff7-e5d3-499e-8d39-348d8c5abae2"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A8"
+		pos = [
+			-19.450066
+			17.618275
+			-0.448212
+		]
+		rot = [
+			0
+			0
+			-0.4129
+			-0.910776
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6d9407cb-c7f2-40b2-8841-1a3baf618e32"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_C1"
+		pos = [
+			-18.588499
+			17.18128
+			-0.709387
+		]
+		rot = [
+			0
+			0
+			-0.382141
+			-0.924104
+		]
+		scl = [
+			1.624578
+			1.624578
+			1.624578
+		]
+		type = "content/models/shots/OP/pool/pool_C"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6250d683-d505-40b6-8a0d-5dff56138198"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_B1"
+		pos = [
+			-19.382402
+			16.665295
+			-0.504124
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1.537472
+			1.537472
+			1.537472
+		]
+		type = "content/models/shots/OP/pool/pool_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "38807a7e-6c50-4849-b647-aa8ba2b42073"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_B2"
+		pos = [
+			-20.340694
+			17.395769
+			-0.528063
+		]
+		rot = [
+			0
+			0
+			0.860119
+			-0.510094
+		]
+		scl = [
+			1.57232
+			1.57232
+			1.57232
+		]
+		type = "content/models/shots/OP/pool/pool_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "7214f244-2b85-4aed-a288-9e321f081220"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_A1"
+		pos = [
+			-19.996609
+			16.882658
+			-0.687285
+		]
+		rot = [
+			0
+			0
+			0.967041
+			0.254621
+		]
+		scl = [
+			1.544733
+			1.544733
+			1.544733
+		]
+		type = "content/models/shots/OP/pool/pool_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e0d50fc2-074e-495d-83c8-3f7e778458c2"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_F"
+		pos = [
+			-19.657721
+			16.635351
+			-0.507671
+		]
+		rot = [
+			0
+			0
+			-0.364121
+			-0.931352
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_F"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "96da1322-d77a-44ba-a456-0216da1cc5ec"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_F1"
+		pos = [
+			-25.864862
+			15.993244
+			-1.061861
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_F"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3d826f62-5308-46d9-badb-b83aaa13d0d7"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A9"
+		pos = [
+			-26.942097
+			15.264474
+			-1.080324
+		]
+		rot = [
+			0
+			0
+			-0.268605
+			-0.963251
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a89486f8-75d7-469a-9ee6-b8384955abbd"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A10"
+		pos = [
+			-19.896015
+			21.004501
+			-0.703946
+		]
+		rot = [
+			0
+			0
+			-0.185643
+			-0.982617
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "8d0d269d-8a9b-4d4a-9e8a-3049eac1f3cf"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A11"
+		pos = [
+			-19.381672
+			22.030872
+			-0.744064
+		]
+		rot = [
+			0
+			0
+			-0.268605
+			-0.963251
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c41d90ea-d26b-4fa6-be85-c2c213dd9cf2"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A12"
+		pos = [
+			-19.938221
+			23.036098
+			-0.780902
+		]
+		rot = [
+			0
+			0
+			-0.154729
+			-0.987957
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3cd368ac-3541-48c7-900f-11cf6a1fbeb1"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A13"
+		pos = [
+			-21.058266
+			23.248497
+			-0.941669
+		]
+		rot = [
+			0
+			0
+			-0.268605
+			-0.963251
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e69eb42b-b1ed-4ecc-a5eb-064851ca9c3f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A14"
+		pos = [
+			-21.563148
+			24.391228
+			-1.027095
+		]
+		rot = [
+			0
+			0
+			0.043381
+			-0.999059
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "69016ab1-3a55-4a73-8729-7392b494bdd6"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A15"
+		pos = [
+			-23.016266
+			26.134361
+			-1.214124
+		]
+		rot = [
+			0
+			0
+			-0.165207
+			-0.986259
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "7a8f101a-e52e-4f5e-8d38-817f5fc5d508"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A16"
+		pos = [
+			-22.873352
+			27.13541
+			-1.299057
+		]
+		rot = [
+			0
+			0
+			-0.218929
+			-0.975741
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "4676d7c7-9c4c-4a9a-aa21-4fd3dfcdf796"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A17"
+		pos = [
+			-23.696056
+			26.944851
+			-1.410436
+		]
+		rot = [
+			0
+			0
+			-0.165207
+			-0.986259
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e68f1d07-f3b3-40be-8736-34b0749022f8"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_E1"
+		pos = [
+			-35.043159
+			34.223171
+			-3.15916
+		]
+		rot = [
+			0
+			0
+			-0.568797
+			-0.822478
+		]
+		scl = [
+			2.960393
+			2.960393
+			2.960393
+		]
+		type = "content/models/shots/OP/tree/tree_E"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f49afcf4-f7d6-4bf1-a491-468cdf6811c0"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A18"
+		pos = [
+			-23.685101
+			27.916767
+			-1.402139
+		]
+		rot = [
+			0
+			0
+			-0.371243
+			-0.928536
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e5262606-fd55-4290-894e-4c71ecbbf6f2"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_A2"
+		pos = [
+			-20.89941
+			23.52206
+			-1.384784
+		]
+		rot = [
+			0
+			0
+			-0.215769
+			-0.976444
+		]
+		scl = [
+			1.544733
+			1.544733
+			1.544733
+		]
+		type = "content/models/shots/OP/pool/pool_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "d56cf18d-4815-4210-93e2-8240129909c9"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_B3"
+		pos = [
+			-23.397446
+			22.406239
+			-1.277435
+		]
+		rot = [
+			0
+			0
+			-0.52916
+			-0.848522
+		]
+		scl = [
+			2.585016
+			2.585016
+			2.585016
+		]
+		type = "content/models/shots/OP/pool/pool_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "9189f270-9bb2-48b9-91aa-daf7f8368a73"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_C2"
+		pos = [
+			-23.053455
+			23.760181
+			-1.371941
+		]
+		rot = [
+			0
+			0
+			-0.660626
+			-0.750716
+		]
+		scl = [
+			1.624578
+			1.624578
+			1.624578
+		]
+		type = "content/models/shots/OP/pool/pool_C"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "1cbb5ad3-a2dd-4a83-8d50-784f98f31e79"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A19"
+		pos = [
+			-24.081947
+			28.784595
+			-1.544842
+		]
+		rot = [
+			0
+			0
+			-0.371243
+			-0.928536
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f10c5048-a813-454c-95e8-216534e25601"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A20"
+		pos = [
+			-23.481537
+			28.745159
+			-1.465376
+		]
+		rot = [
+			0
+			0
+			-0.371243
+			-0.928536
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "8b184423-0836-4818-8e74-2204f76a8bb9"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A21"
+		pos = [
+			-25.130489
+			29.242363
+			-1.655493
+		]
+		rot = [
+			0
+			0
+			-0.371243
+			-0.928536
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "578931f6-6d1b-40f1-a06e-fedc610424f2"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A22"
+		pos = [
+			-25.213333
+			30.1292
+			-1.759437
+		]
+		rot = [
+			0
+			0
+			-0.371243
+			-0.928536
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "8c563583-d7b0-450b-997f-dbd0282b82b5"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A23"
+		pos = [
+			-26.029339
+			30.661427
+			-1.840551
+		]
+		rot = [
+			0
+			0
+			-0.371243
+			-0.928536
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "becc06ca-4c14-40c7-87a0-a24b5f319512"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_B4"
+		pos = [
+			-25.99754
+			30.746124
+			-1.956507
+		]
+		rot = [
+			0
+			0
+			-0.52916
+			-0.848522
+		]
+		scl = [
+			2.033121
+			2.033121
+			2.033121
+		]
+		type = "content/models/shots/OP/pool/pool_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e137a8cb-410f-4232-a91e-75b9a874f506"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_A3"
+		pos = [
+			-25.691799
+			31.438057
+			-1.996485
+		]
+		rot = [
+			0
+			0
+			0.976923
+			0.21359
+		]
+		scl = [
+			1.080817
+			1.080817
+			1.080817
+		]
+		type = "content/models/shots/OP/pool/pool_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3142056c-8a43-471e-a59e-f2e4ff937dfc"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "stone_A1"
+		pos = [
+			-26.627018
+			31.638706
+			-2.112455
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			0.687983
+			0.687983
+			0.687983
+		]
+		type = "content/models/shots/OP/stone/stone_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f3eee041-dabe-4373-8b41-3289bbf70e3a"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "stone_A2"
+		pos = [
+			-28.115171
+			32.665554
+			-2.432873
+		]
+		rot = [
+			0
+			0
+			0.431877
+			-0.901932
+		]
+		scl = [
+			0.94224
+			0.94224
+			0.94224
+		]
+		type = "content/models/shots/OP/stone/stone_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "983557e2-89e2-4589-a744-4ee3eec2771f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_C3"
+		pos = [
+			-25.462437
+			31.217331
+			-1.861632
+		]
+		rot = [
+			0
+			0
+			-0.070944
+			-0.99748
+		]
+		scl = [
+			1.301391
+			1.301391
+			1.301391
+		]
+		type = "content/models/shots/OP/pool/pool_C"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3c8f1575-ad7c-4be7-bda2-d342167aed9a"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_C4"
+		pos = [
+			-27.388115
+			33.783157
+			-2.633328
+		]
+		rot = [
+			0
+			0
+			0.560831
+			-0.82793
+		]
+		scl = [
+			1.030849
+			1.030849
+			1.030849
+		]
+		type = "content/models/shots/OP/pool/pool_C"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "02ee4d07-70a4-420d-8df9-e120bbd6f154"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_B5"
+		pos = [
+			-27.935623
+			33.889484
+			-2.686194
+		]
+		rot = [
+			0
+			0
+			-0.53064
+			-0.847597
+		]
+		scl = [
+			1.196687
+			1.196687
+			1.196687
+		]
+		type = "content/models/shots/OP/pool/pool_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "61bdf2a1-59d8-4b8f-9cf9-571ad9e3695a"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_A4"
+		pos = [
+			-29.327354
+			33.375671
+			-2.705006
+		]
+		rot = [
+			0
+			0
+			-0.366867
+			-0.930273
+		]
+		scl = [
+			1.080817
+			1.080817
+			1.080817
+		]
+		type = "content/models/shots/OP/pool/pool_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "b62ed61b-dfa2-4afe-bf5e-2dec9767d167"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_A5"
+		pos = [
+			-29.59745
+			33.927311
+			-2.659405
+		]
+		rot = [
+			0
+			0
+			0.083154
+			-0.996537
+		]
+		scl = [
+			0.901641
+			0.901641
+			0.901641
+		]
+		type = "content/models/shots/OP/pool/pool_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a7d10f6a-fe04-4852-8ad1-861ae11951f8"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_B6"
+		pos = [
+			-29.299149
+			33.974449
+			-2.686194
+		]
+		rot = [
+			0
+			0
+			0.818652
+			-0.57429
+		]
+		scl = [
+			1.161179
+			1.161179
+			1.161178
+		]
+		type = "content/models/shots/OP/pool/pool_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e7884825-37d3-4d9c-88a5-72a4141d38b4"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B"
+		pos = [
+			-28.5242
+			34.088463
+			-2.477046
+		]
+		rot = [
+			0
+			0
+			-0.332601
+			-0.943068
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f76ce974-267b-48c4-aeec-93d6d8b4ec46"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B1"
+		pos = [
+			-29.020905
+			34.24984
+			-2.554763
+		]
+		rot = [
+			0
+			0
+			-0.2167
+			-0.976238
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "74fc7bd9-1bcd-4c37-9b8b-be782b32378c"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B2"
+		pos = [
+			-29.486763
+			34.492496
+			-2.584888
+		]
+		rot = [
+			0
+			0
+			-0.2167
+			-0.976238
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "956e3f81-eeaf-45d6-b5e9-72729dd81086"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B3"
+		pos = [
+			-28.846924
+			35.035564
+			-2.598352
+		]
+		rot = [
+			0
+			0
+			-0.2167
+			-0.976238
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "7263a443-3643-443c-94c1-ff18e21c7755"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B4"
+		pos = [
+			-29.492149
+			35.308765
+			-2.644371
+		]
+		rot = [
+			0
+			0
+			-0.295381
+			-0.955379
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "73cbaf5f-9d74-4a7c-813c-69d326bdbaa3"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B5"
+		pos = [
+			-30.04084
+			35.627834
+			-2.717019
+		]
+		rot = [
+			0
+			0
+			-0.174275
+			-0.984697
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "11fd1293-4c17-4c92-bffa-d1c201b40041"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B6"
+		pos = [
+			-30.222595
+			35.272282
+			-2.702863
+		]
+		rot = [
+			0
+			0
+			-0.174275
+			-0.984697
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "d70dfc67-01eb-4a9f-983b-93893d14793a"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_C2"
+		pos = [
+			-14.430501
+			43.940418
+			-3.261219
+		]
+		rot = [
+			0
+			0
+			0.940325
+			-0.340277
+		]
+		scl = [
+			4.731617
+			4.731617
+			4.731617
+		]
+		type = "content/models/shots/OP/tree/tree_C"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "1dcbb575-9eb3-41d4-85d0-5691552389ca"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B7"
+		pos = [
+			-13.681164
+			40.674122
+			-1.92457
+		]
+		rot = [
+			0
+			0
+			0.999084
+			0.042782
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a33bcd1a-4dbf-4fda-afd0-7ec13272c5f8"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B8"
+		pos = [
+			-13.242492
+			41.618294
+			-2.05081
+		]
+		rot = [
+			0
+			0
+			0.981308
+			-0.192443
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "2c50fbf3-403a-433c-b0eb-f6f82d63ef12"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B9"
+		pos = [
+			-13.928804
+			42.310646
+			-2.170489
+		]
+		rot = [
+			0
+			0
+			0.960472
+			-0.278377
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "9417c934-77ff-488d-9323-95c3042c6324"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A24"
+		pos = [
+			-11.785375
+			38.460518
+			-1.527028
+		]
+		rot = [
+			0
+			0
+			-0.191154
+			-0.98156
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c770a1d9-3cad-4097-9bc3-b5b2f089a865"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A25"
+		pos = [
+			-11.893242
+			37.567043
+			-1.406525
+		]
+		rot = [
+			0
+			0
+			-0.43158
+			-0.902075
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f970bb88-45de-47ae-8aad-84f4c3037548"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B10"
+		pos = [
+			-34.920017
+			29.800034
+			-2.794885
+		]
+		rot = [
+			0
+			0
+			-0.174275
+			-0.984697
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "703036b7-e799-455e-8c48-9e7fea975a9a"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B11"
+		pos = [
+			-38.092304
+			30.341122
+			-2.984767
+		]
+		rot = [
+			0
+			0
+			-0.174275
+			-0.984697
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "482c7ae7-0189-4953-8634-4b01651b9e3b"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A26"
+		pos = [
+			-38.287888
+			29.298317
+			-2.918727
+		]
+		rot = [
+			0
+			0
+			-0.371243
+			-0.928536
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "5f7037ce-959c-4a6b-a280-3c0ba739a4de"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A27"
+		pos = [
+			-38.945728
+			30.556923
+			-2.918727
+		]
+		rot = [
+			0
+			0
+			0.0412705480757796
+			0.999148007985566
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e4c246cd-5ca6-4b26-9943-90574dd61ed5"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A28"
+		pos = [
+			-38.566338
+			30.793257
+			-2.918727
+		]
+		rot = [
+			0
+			0
+			-0.041271
+			-0.999148
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e1bd03f5-eace-4f1c-a965-60e6974bff9c"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B12"
+		pos = [
+			-14.053307
+			39.892708
+			-1.882215
+		]
+		rot = [
+			0
+			0
+			0.996888
+			0.078833
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "2c4d7fe3-c927-48f8-9efa-970da9395270"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B13"
+		pos = [
+			-14.908999
+			43.506721
+			-2.356782
+		]
+		rot = [
+			0
+			0
+			0.960472
+			-0.278377
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6a6ccf76-7c6a-454b-a999-22b6df4e3289"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B14"
+		pos = [
+			-15.748767
+			43.935947
+			-2.489676
+		]
+		rot = [
+			0
+			0
+			0.960472
+			-0.278377
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e70f08fd-8e6d-44e9-b476-77a84012d19b"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B15"
+		pos = [
+			-16.410267
+			44.140846
+			-2.535574
+		]
+		rot = [
+			0
+			0
+			0.960472
+			-0.278377
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "8618a9a2-cfe2-4177-b032-c90ddf00e71f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B16"
+		pos = [
+			-16.920094
+			44.946484
+			-2.658453
+		]
+		rot = [
+			0
+			0
+			0.960472
+			-0.278377
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "1c1b680a-6d5e-47a5-9e9f-f0048a572875"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B17"
+		pos = [
+			-17.080744
+			44.340408
+			-2.579043
+		]
+		rot = [
+			0
+			0
+			0.960472
+			-0.278377
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "afa40fa6-0571-4d06-b7fd-6d58a729f7fc"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B18"
+		pos = [
+			-17.015978
+			46.169266
+			-2.859334
+		]
+		rot = [
+			0
+			0
+			0.960472
+			-0.278377
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "1423927d-6ee6-4ce4-89ba-0eb63aabf8fe"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B19"
+		pos = [
+			-17.499687
+			46.391468
+			-2.902853
+		]
+		rot = [
+			0
+			0
+			0.960472
+			-0.278377
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "78d45479-9f09-487b-a0eb-2932ac430d1d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B20"
+		pos = [
+			-17.587568
+			47.228325
+			-3.046267
+		]
+		rot = [
+			0
+			0
+			0.960472
+			-0.278377
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "bdcc7af4-f803-4326-bfda-cb88064e122b"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B21"
+		pos = [
+			-18.120274
+			47.16048
+			-3.028371
+		]
+		rot = [
+			0
+			0
+			0.960472
+			-0.278377
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "0de8163a-2790-4afe-aef5-2ceb7cccbc7f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_K1"
+		pos = [
+			10.525147
+			42.124935
+			-2.506717
+		]
+		rot = [
+			0
+			0
+			0.623822
+			-0.781567
+		]
+		scl = [
+			2.44781
+			2.44781
+			2.44781
+		]
+		type = "content/models/shots/OP/tree/tree_K"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c663039e-9d8b-44ba-ab17-51132023cc47"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_D1"
+		pos = [
+			18.581085
+			13.169957
+			-0.400886
+		]
+		rot = [
+			0
+			0
+			0.962297
+			0.272001
+		]
+		scl = [
+			7.255087
+			7.255087
+			7.255087
+		]
+		type = "content/models/shots/OP/tree/tree_D"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "0b1788d6-6a5a-4101-8aac-e7a79f3f715f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_C3"
+		pos = [
+			13.813496
+			30.947552
+			-1.777225
+		]
+		rot = [
+			0
+			0
+			0.976527954034668
+			0.215390703116141
+		]
+		scl = [
+			5.061017
+			5.061017
+			5.061017
+		]
+		type = "content/models/shots/OP/tree/tree_C"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "4b73d420-ee74-4b7f-bb55-e02e53026ccf"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_A1"
+		pos = [
+			2.406369
+			40.528336
+			-1.77919
+		]
+		rot = [
+			0
+			0
+			0.968783
+			0.24791
+		]
+		scl = [
+			3.169211
+			3.169211
+			3.169211
+		]
+		type = "content/models/shots/OP/tree/tree_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "9d4a1565-c9b9-435e-87ed-c37ae28b3bd7"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_I"
+		pos = [
+			6.236202
+			49.404762
+			-3.265655
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			2.513096
+			2.513096
+			2.513096
+		]
+		type = "content/models/shots/OP/tree/tree_I"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3e331a6c-267d-4a0e-82d5-f18036c50075"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_E2"
+		pos = [
+			14.367121
+			-11.468276
+			-0.487028
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			7.897597
+			7.897597
+			7.897597
+		]
+		type = "content/models/shots/OP/tree/tree_E"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e886e968-1749-444b-b385-1878f66aa370"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_F"
+		pos = [
+			22.612942
+			2.969347
+			-1.012645
+		]
+		rot = [
+			0
+			0
+			-0.709471
+			-0.704735
+		]
+		scl = [
+			4.946241
+			4.946241
+			4.946241
+		]
+		type = "content/models/shots/OP/tree/tree_F"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6d1d8926-733a-44b3-9f81-f92deab5112d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_F1"
+		pos = [
+			21.552477
+			-4.67607
+			-1.367072
+		]
+		rot = [
+			0
+			0
+			0.436058
+			-0.899918
+		]
+		scl = [
+			7.486661
+			7.486661
+			7.486661
+		]
+		type = "content/models/shots/OP/tree/tree_F"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "54ded76e-7703-4dd3-9648-b0eb8295a613"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A29"
+		pos = [
+			-1.94193
+			29.036207
+			-0.377634
+		]
+		rot = [
+			0
+			0
+			-0.563448
+			-0.826151
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "fabbb47a-7d33-4fc5-8033-a88e0021b4e2"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A30"
+		pos = [
+			-2.865925
+			28.774687
+			-0.377634
+		]
+		rot = [
+			0
+			0
+			-0.864823
+			-0.502078
+		]
+		scl = [
+			1.241489
+			1.241489
+			1.241489
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "98cc1de7-bb7e-4863-aab8-58c14b8c27ae"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_F2"
+		pos = [
+			-1.710933
+			28.187265
+			-0.322587
+		]
+		rot = [
+			0
+			0
+			-0.785052
+			-0.61943
+		]
+		scl = [
+			1.714268
+			1.714268
+			1.714268
+		]
+		type = "content/models/shots/OP/flower/flower_F"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "fb18d408-4b11-41a5-8f60-82f7f05f8e99"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B22"
+		pos = [
+			8.032224
+			33.609459
+			-0.829544
+		]
+		rot = [
+			0
+			0
+			-0.830447
+			-0.557098
+		]
+		scl = [
+			1.32625
+			1.32625
+			1.32625
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e402ff9d-1670-4f30-86b2-39300bac0952"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_F3"
+		pos = [
+			7.421892
+			33.541393
+			-1.573962
+		]
+		rot = [
+			0
+			0
+			-0.798459
+			-0.60205
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_F"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "dd056eed-4497-4655-b1f4-7ead2e6493ef"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_F4"
+		pos = [
+			7.783774
+			33.837051
+			-0.865133
+		]
+		rot = [
+			0
+			0
+			-0.798459
+			-0.60205
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_F"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "7d59783e-b38b-453f-a7bc-805086dd907d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B23"
+		pos = [
+			7.296987
+			33.262074
+			-0.829544
+		]
+		rot = [
+			0
+			0
+			-0.558575
+			-0.829454
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "8db22736-c8fa-43f3-8344-5f9f8112135e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_F5"
+		pos = [
+			8.394494
+			32.782726
+			-0.838153
+		]
+		rot = [
+			0
+			0
+			0.959246
+			0.282571
+		]
+		scl = [
+			1.604319
+			1.604319
+			1.604319
+		]
+		type = "content/models/shots/OP/flower/flower_F"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "9c912b33-6b68-4bfb-bbd8-178577974adb"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B24"
+		pos = [
+			8.760303
+			33.314804
+			-0.904171
+		]
+		rot = [
+			0
+			0
+			-0.735582
+			-0.677435
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "33c7e201-26e4-4ce6-a810-cbb55ae34a0c"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B25"
+		pos = [
+			13.00711
+			31.067625
+			-0.898757
+		]
+		rot = [
+			0
+			0
+			0.918727
+			0.394893
+		]
+		scl = [
+			1.625829
+			1.625829
+			1.625829
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "82762c51-9cd3-4bc6-a81a-3478758b233c"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_B26"
+		pos = [
+			13.587615
+			31.960857
+			-0.898757
+		]
+		rot = [
+			0
+			0
+			-0.823827
+			-0.566842
+		]
+		scl = [
+			1.305745
+			1.305745
+			1.305745
+		]
+		type = "content/models/shots/OP/flower/flower_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c975d6db-e798-4e9e-a990-248f2c7ef128"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_F6"
+		pos = [
+			12.88878
+			31.197416
+			-0.808537
+		]
+		rot = [
+			0
+			0
+			0.902384
+			0.430933
+		]
+		scl = [
+			1.488238
+			1.488238
+			1.488238
+		]
+		type = "content/models/shots/OP/flower/flower_F"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3831f850-709e-4cf9-9e36-f3e08824039e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_F7"
+		pos = [
+			12.148438
+			31.22353
+			-0.804183
+		]
+		rot = [
+			0
+			0
+			-0.778952
+			-0.627083
+		]
+		scl = [
+			1.488238
+			1.488238
+			1.488238
+		]
+		type = "content/models/shots/OP/flower/flower_F"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "66a4a00b-6096-4063-a8a1-f39c510ae026"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A31"
+		pos = [
+			-5.843019
+			34.680027
+			-0.982067
+		]
+		rot = [
+			0
+			0
+			-0.571985
+			-0.820264
+		]
+		scl = [
+			1
+			1
+			1.227019
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "40f4c598-2090-4747-afa8-2190981d3a0c"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_A6"
+		pos = [
+			1.492865
+			41.398129
+			-1.716147
+		]
+		rot = [
+			0
+			0
+			0.597341
+			-0.801987
+		]
+		scl = [
+			1.295674
+			1.295674
+			1.295674
+		]
+		type = "content/models/shots/OP/pool/pool_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e5668636-714a-4e34-9ef2-823c62a2354d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_B7"
+		pos = [
+			1.13701
+			41.873081
+			-1.740811
+		]
+		rot = [
+			0
+			0
+			-0.760797
+			-0.64899
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/pool/pool_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e573bc5f-4bbc-480d-bb03-540750651fbb"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_C5"
+		pos = [
+			1.658184
+			41.741623
+			-1.711026
+		]
+		rot = [
+			0
+			0
+			0.999974
+			0.007141
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/pool/pool_C"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "2b829721-3405-48fb-acc8-6b80e3910424"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_F8"
+		pos = [
+			2.016086
+			42.081417
+			-2.25484
+		]
+		rot = [
+			0
+			0
+			-0.824229
+			-0.566257
+		]
+		scl = [
+			1.307478
+			1.307478
+			1.307478
+		]
+		type = "content/models/shots/OP/flower/flower_F"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a213a2d3-d589-416b-8a63-4e71737ab3f1"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_F9"
+		pos = [
+			1.159757
+			40.97818
+			-2.136817
+		]
+		rot = [
+			0
+			0
+			0.716062589042847
+			0.698036079707385
+		]
+		scl = [
+			1.307478
+			1.307478
+			1.307478
+		]
+		type = "content/models/shots/OP/flower/flower_F"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "870a9d8d-f724-4d91-9f4e-e53a17f409a7"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_F10"
+		pos = [
+			1.398293
+			41.844009
+			-2.215693
+		]
+		rot = [
+			0
+			0
+			-0.824229
+			-0.566257
+		]
+		scl = [
+			1.307478
+			1.307478
+			1.307478
+		]
+		type = "content/models/shots/OP/flower/flower_F"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c140f60d-3c4d-4615-8cb9-3224ec0fa447"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "stone_A3"
+		pos = [
+			6.845315
+			31.843145
+			-0.713392
+		]
+		rot = [
+			0
+			0
+			0.927451
+			0.373944
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/stone/stone_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f350c11f-9409-4d54-a3b1-f1ff83902a52"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_C6"
+		pos = [
+			5.762101
+			31.827917
+			-0.650425
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/pool/pool_C"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c519f3bc-ce4a-4e11-89ff-9d186421612c"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_A7"
+		pos = [
+			5.999232
+			31.160622
+			-0.619525
+		]
+		rot = [
+			0
+			0
+			0.605686
+			-0.795704
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/pool/pool_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "5f491add-c688-4d54-b7ff-a391a8049311"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_B1"
+		pos = [
+			-14.659969
+			-13.744428
+			-2.510008
+		]
+		rot = [
+			0
+			0
+			0.976711
+			0.214558
+		]
+		scl = [
+			5.396047
+			5.396047
+			5.396047
+		]
+		type = "content/models/shots/OP/tree/tree_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "5b0d8498-9651-4d29-b259-7ce402d93680"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "stone_A4"
+		pos = [
+			-17.548941
+			-4.029458
+			-0.425848
+		]
+		rot = [
+			0
+			0
+			-0.636466
+			-0.771305
+		]
+		scl = [
+			1.479708
+			1.479708
+			1.479708
+		]
+		type = "content/models/shots/OP/stone/stone_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f5527b78-46db-41f5-9986-ff0cc97e76f7"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_C4"
+		pos = [
+			-17.148632
+			-9.326465
+			-0.881198
+		]
+		rot = [
+			0
+			0
+			-0.097594
+			-0.995226
+		]
+		scl = [
+			5.061017
+			5.061017
+			5.061017
+		]
+		type = "content/models/shots/OP/tree/tree_C"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f99a7ca6-d5b7-4168-939a-cd1c83c85276"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_A2"
+		pos = [
+			-21.3894
+			-4.937475
+			-1.017974
+		]
+		rot = [
+			0
+			0
+			0.367304
+			-0.930101
+		]
+		scl = [
+			5.155719
+			5.155719
+			5.155719
+		]
+		type = "content/models/shots/OP/tree/tree_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "5e278a62-b9e6-4f5c-b97b-90c7b6ea7cc8"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A32"
+		pos = [
+			2.21951
+			6.898751
+			0.689271
+		]
+		rot = [
+			0
+			0
+			-0.614016
+			-0.789294
+		]
+		scl = [
+			1.291656
+			1.291656
+			1.291656
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "66b53f94-2591-4882-a42a-7aa4864238db"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A33"
+		pos = [
+			3.318014
+			6.990147
+			0.671427
+		]
+		rot = [
+			0
+			0
+			-0.614016
+			-0.789294
+		]
+		scl = [
+			1.291656
+			1.291656
+			1.291656
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "093bd5b8-96c2-45f1-9013-256626d1c583"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A34"
+		pos = [
+			3.972366
+			6.105087
+			0.633517
+		]
+		rot = [
+			0
+			0
+			-0.784845
+			-0.619693
+		]
+		scl = [
+			1.502946
+			1.502946
+			1.502946
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "fcc499c0-2a7f-4f18-b57f-26999868141b"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A35"
+		pos = [
+			-2.158867
+			6.783782
+			0.639839
+		]
+		rot = [
+			0
+			0
+			-0.824229
+			-0.566257
+		]
+		scl = [
+			1.1939
+			1.1939
+			1.1939
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6573e9a6-7f39-42a5-a196-5f5f83d5b2f7"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A36"
+		pos = [
+			-3.114937
+			6.220235
+			0.639839
+		]
+		rot = [
+			0
+			0
+			-0.824229
+			-0.566257
+		]
+		scl = [
+			1.261902
+			1.261902
+			1.261902
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e56b0903-7c8c-4c9e-994a-d811a7457dfc"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A37"
+		pos = [
+			-3.775851
+			6.503081
+			0.639839
+		]
+		rot = [
+			0
+			0
+			-0.824229
+			-0.566257
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "54cad766-2448-458f-8fdc-d1a9cd9c7e77"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_A38"
+		pos = [
+			-4.290648
+			5.850589
+			0.639839
+		]
+		rot = [
+			0
+			0
+			-0.824229
+			-0.566257
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/flower/flower_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f57ac1e4-c11d-4fff-bead-9ba61a6d35bd"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_F11"
+		pos = [
+			22.009981
+			2.888941
+			-0.373865
+		]
+		rot = [
+			0
+			0
+			0.869315
+			0.494259
+		]
+		scl = [
+			2.153496
+			2.153496
+			2.153496
+		]
+		type = "content/models/shots/OP/flower/flower_F"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "18d67f2e-c98b-4865-be61-9ebaf97184a2"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_F12"
+		pos = [
+			22.563501
+			3.517691
+			-0.439132
+		]
+		rot = [
+			0
+			0
+			0.869315
+			0.494259
+		]
+		scl = [
+			2.153496
+			2.153496
+			2.153496
+		]
+		type = "content/models/shots/OP/flower/flower_F"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "8f37d9cc-571e-44cc-ab28-d26f0707f0da"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_F13"
+		pos = [
+			4.84616
+			5.618385
+			0.606195
+		]
+		rot = [
+			0
+			0
+			-0.583015
+			-0.812462
+		]
+		scl = [
+			2.153496
+			2.153496
+			2.153496
+		]
+		type = "content/models/shots/OP/flower/flower_F"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "73de5028-487e-4405-89eb-63cef3af6504"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_H1"
+		pos = [
+			21.028963
+			-30.345438
+			-4.373893
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			2.70178
+			2.70178
+			2.70178
+		]
+		type = "content/models/shots/OP/tree/tree_H"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e7ad2cd3-9568-494b-84bd-76f5aa9cecc4"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_G1"
+		pos = [
+			32.373055
+			-17.333681
+			-3.560473
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3.232359
+			3.232359
+			3.232359
+		]
+		type = "content/models/shots/OP/tree/tree_G"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "7cbc971b-adc2-42c1-bcef-1b24b00bfc05"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_G2"
+		pos = [
+			-24.176119
+			-13.286016
+			-1.552445
+		]
+		rot = [
+			0
+			0
+			0.952602
+			0.304218
+		]
+		scl = [
+			1.249073
+			1.249073
+			1.249073
+		]
+		type = "content/models/shots/OP/tree/tree_G"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "4201422b-d2c7-428b-b879-c74731d9aba2"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_E3"
+		pos = [
+			-35.884441
+			-12.677674
+			-2.61951
+		]
+		rot = [
+			0
+			0
+			0.975268
+			0.221028
+		]
+		scl = [
+			7.239414
+			7.239414
+			7.239414
+		]
+		type = "content/models/shots/OP/tree/tree_E"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "11d2879f-592f-409e-a21f-6e47d6210ed5"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_H2"
+		pos = [
+			-26.406578
+			-32.140694
+			-4.314647
+		]
+		rot = [
+			0
+			0
+			-0.658815
+			-0.752305
+		]
+		scl = [
+			2.252929
+			2.252929
+			2.252929
+		]
+		type = "content/models/shots/OP/tree/tree_H"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "491503a5-95f2-438d-8e2d-8cf115cd9c07"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_H3"
+		pos = [
+			-15.815276
+			-26.663597
+			-2.94193
+		]
+		rot = [
+			0
+			0
+			0.723706
+			-0.690109
+		]
+		scl = [
+			3.128621
+			3.128621
+			3.128621
+		]
+		type = "content/models/shots/OP/tree/tree_H"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "9c9e2d53-4620-4db3-95fc-a9b67139a8f9"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tree_G3"
+		pos = [
+			28.436981
+			-24.750603
+			-3.985064
+		]
+		rot = [
+			0
+			0
+			0.952602
+			0.304218
+		]
+		scl = [
+			2.673664
+			2.673664
+			2.673664
+		]
+		type = "content/models/shots/OP/tree/tree_G"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "4134c05d-d647-4107-8a95-f520a9e5f16d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_F14"
+		pos = [
+			21.587738
+			-3.942771
+			-0.580456
+		]
+		rot = [
+			0
+			0
+			0.956025
+			0.293285
+		]
+		scl = [
+			1.276042
+			1.276042
+			1.276042
+		]
+		type = "content/models/shots/OP/flower/flower_F"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "ba87e161-3826-44ce-b601-26564bc6ca3c"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "flower_F15"
+		pos = [
+			21.039801
+			-4.210521
+			-0.541947
+		]
+		rot = [
+			0
+			0
+			-0.848538
+			-0.529135
+		]
+		scl = [
+			1.466376
+			1.466376
+			1.466376
+		]
+		type = "content/models/shots/OP/flower/flower_F"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "0d584522-310f-4fc0-af49-7506e65767f0"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "OP_ground"
+		pos = [
+			0
+			0
+			-0.20535
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/OP_ground/OP_ground"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "32f556e3-3887-45ce-8ca6-c2c1dcc17db8"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_A8"
+		pos = [
+			-19.269779
+			-3.800846
+			-0.488745
+		]
+		rot = [
+			0
+			0
+			-0.546257
+			-0.837618
+		]
+		scl = [
+			1.969431
+			1.969431
+			1.969431
+		]
+		type = "content/models/shots/OP/pool/pool_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "af1e9862-d6af-48af-96c8-5887a1541aef"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_B8"
+		pos = [
+			-18.586319
+			-2.484651
+			-0.315
+		]
+		rot = [
+			0
+			0
+			-0.576237625302272
+			0.817282202905458
+		]
+		scl = [
+			1.87181
+			1.87181
+			1.87181
+		]
+		type = "content/models/shots/OP/pool/pool_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "298c8a2e-1a44-4e1e-8c72-e93667935dbd"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "pool_C7"
+		pos = [
+			-16.23914
+			-5.016362
+			-0.214203
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			2.240856
+			2.240856
+			2.240856
+		]
+		type = "content/models/shots/OP/pool/pool_C"
 	}
 ]
 volumes = [
