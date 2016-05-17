@@ -615,6 +615,13 @@ compiler_data = {
 					root_driving = "ignore"
 					speed = "1"
 					state_type = "regular"
+					timeline = [
+						{
+							name = "AnimEvent_PhysX_All_Enable"
+							time = 0.827979698426208
+							type = "event"
+						}
+					]
 					transitions = [
 						{
 							blend_time = 0
@@ -640,6 +647,13 @@ compiler_data = {
 					root_driving = "ignore"
 					speed = "1"
 					state_type = "regular"
+					timeline = [
+						{
+							name = "AnimEvent_PhysX_All_Disable"
+							time = 1.44468193135884
+							type = "event"
+						}
+					]
 					transitions = [
 						{
 							blend_time = 0
@@ -2750,6 +2764,13 @@ layers = [
 						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
+							{
+								_id = "91ecf3f3-27a4-4dc3-9dbc-be95c16fa1b1"
+								_name = "AnimEvent_PhysX_All_Enable"
+								_time = 0.827979698426208
+								time = 0.827979698426208
+								type = "event"
+							}
 						]
 						muted_layers = [
 						]
@@ -2822,6 +2843,13 @@ layers = [
 						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
+							{
+								_id = "859cd987-b263-4ed5-bac2-67ad2f96d815"
+								_name = "AnimEvent_PhysX_All_Disable"
+								_time = 1.44468193135884
+								time = 1.44468193135884
+								type = "event"
+							}
 						]
 						muted_layers = [
 						]
