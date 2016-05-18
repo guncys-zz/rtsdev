@@ -27,33 +27,31 @@ editor_metadata = {
 	}
 }
 materials = {
-	lambert2 = "content/models/characters/CAT/lambert2"
-	lambert4 = "content/models/characters/CAT/lambert4"
-	lambert5 = "content/models/characters/CAT/lambert5"
+	CAT_SHD = "content/models/characters/CAT/CAT_SHD"
 }
 renderables = {
-	"CAT:body" = {
+	"CAT:C_body_GEO" = {
 		always_keep = false
 		culling = "disabled"
-		generate_uv_unwrap = false
+		light_baking = "none"
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
 		viewport_visible = true
 	}
-	"CAT:left_eye" = {
+	"CAT:L_eye_GEO" = {
 		always_keep = false
 		culling = "disabled"
-		generate_uv_unwrap = false
+		light_baking = "none"
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
 		viewport_visible = true
 	}
-	"CAT:right_eye" = {
+	"CAT:R_eye_GEO" = {
 		always_keep = false
 		culling = "disabled"
-		generate_uv_unwrap = false
+		light_baking = "none"
 		occluder = false
 		shadow_caster = true
 		surface_queries = false

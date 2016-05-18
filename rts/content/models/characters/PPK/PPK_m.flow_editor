@@ -2485,6 +2485,33 @@ Connections = [
 		ToNode = "aee3ed3d-d425-41cd-a117-c2c71c8acc79"
 	}
 	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "True"
+		FromNode = "68533231-935a-4e4d-9480-6df5eddb1eb4"
+		Id = "906df417-cedd-48b7-8f68-d03d9ec29e9b"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "12e3fba0-a865-452b-adee-3ea1da3f77fc"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "273bbd3f-9356-4225-a36d-d8b440fda8a3"
+		Id = "9bcbe862-474e-4d9e-8c95-26ad15fab65d"
+		ToItem = "Text"
+		ToNode = "74eb63c1-b379-43cb-8279-ae3608db3497"
+		Type = "String"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "71c8a25f-219e-4075-aba0-f105322cda09"
+		Id = "b0b5698f-2ba4-491e-8ddc-7e2f2fe7a650"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "74eb63c1-b379-43cb-8279-ae3608db3497"
+	}
+	{
 		Class = "Stingray.Flow.VariableConnection"
 		FromItem = "Value"
 		FromNode = "3fafb7a5-7961-4ff4-982e-e024c9e93df3"
@@ -2618,15 +2645,6 @@ Connections = [
 		Priority = 0
 		ToItem = "Create"
 		ToNode = "2b961d4b-6e3d-47d3-8298-8f7f92cac9df"
-	}
-	{
-		Class = "Stingray.Flow.EventConnection"
-		FromItem = "True"
-		FromNode = "df502459-82b2-4806-bfa0-84fb95f2c134"
-		Id = "1208602b-b3ac-4caa-ac2a-eab72180700e"
-		Priority = 0
-		ToItem = "In"
-		ToNode = "12e3fba0-a865-452b-adee-3ea1da3f77fc"
 	}
 	{
 		Class = "Stingray.Flow.EventConnection"
@@ -3081,15 +3099,6 @@ Connections = [
 	{
 		Class = "Stingray.Flow.EventConnection"
 		FromItem = "True"
-		FromNode = "68533231-935a-4e4d-9480-6df5eddb1eb4"
-		Id = "906df417-cedd-48b7-8f68-d03d9ec29e9b"
-		Priority = 0
-		ToItem = "In"
-		ToNode = "12e3fba0-a865-452b-adee-3ea1da3f77fc"
-	}
-	{
-		Class = "Stingray.Flow.EventConnection"
-		FromItem = "True"
 		FromNode = "43b01176-ff39-4642-aba3-057d5091f349"
 		Id = "93960d57-b937-4c05-bf12-238ea4abdff9"
 		Priority = 0
@@ -3104,15 +3113,6 @@ Connections = [
 		Priority = 0
 		ToItem = "In"
 		ToNode = "78d3b34d-327d-4901-bc1e-8ca66c8edcb3"
-	}
-	{
-		Class = "Stingray.Flow.VariableConnection"
-		FromItem = "Value"
-		FromNode = "273bbd3f-9356-4225-a36d-d8b440fda8a3"
-		Id = "9bcbe862-474e-4d9e-8c95-26ad15fab65d"
-		ToItem = "Text"
-		ToNode = "74eb63c1-b379-43cb-8279-ae3608db3497"
-		Type = "String"
 	}
 	{
 		Class = "Stingray.Flow.VariableConnection"
@@ -3239,15 +3239,6 @@ Connections = [
 		Priority = 0
 		ToItem = "Set"
 		ToNode = "05d66e5c-17c7-4408-ac16-6200180389c7"
-	}
-	{
-		Class = "Stingray.Flow.EventConnection"
-		FromItem = "Out"
-		FromNode = "71c8a25f-219e-4075-aba0-f105322cda09"
-		Id = "b0b5698f-2ba4-491e-8ddc-7e2f2fe7a650"
-		Priority = 0
-		ToItem = "In"
-		ToNode = "74eb63c1-b379-43cb-8279-ae3608db3497"
 	}
 	{
 		Class = "Stingray.Flow.VariableConnection"
@@ -3658,7 +3649,25 @@ Connections = [
 		Class = "Stingray.Flow.EventConnection"
 		FromItem = "True"
 		FromNode = "68533231-935a-4e4d-9480-6df5eddb1eb4"
-		Id = "3e73ad19-e9e2-4351-85e2-182af733721c"
+		Id = "4a29de4a-e593-4476-9dc6-87cfef09de03"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "620858a5-3507-4686-bf35-deccc5992e47"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "True"
+		FromNode = "df502459-82b2-4806-bfa0-84fb95f2c134"
+		Id = "25e85e89-2fa8-4b91-b672-95bb1029c6da"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "620858a5-3507-4686-bf35-deccc5992e47"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "False"
+		FromNode = "620858a5-3507-4686-bf35-deccc5992e47"
+		Id = "b3070542-3fc3-498d-bfe7-30aabe034387"
 		Priority = 0
 		ToItem = "In"
 		ToNode = "f1ec2bd5-b82c-4012-bd57-9ccd9a63106a"
@@ -3951,8 +3960,9 @@ Groups = [
 		]
 		Id = "fb2a3a0d-6f17-4597-b682-bf4f150b5b9c"
 		Nodes = [
-			"12e3fba0-a865-452b-adee-3ea1da3f77fc"
 			"f1ec2bd5-b82c-4012-bd57-9ccd9a63106a"
+			"620858a5-3507-4686-bf35-deccc5992e47"
+			"c6c02652-61c4-403e-965f-4a239fc9965a"
 		]
 		Title = "Game Over"
 	}
@@ -4116,7 +4126,7 @@ Nodes = [
 	}
 	{
 		ButtonName = {
-			Value = "left shift"
+			Value = "b"
 		}
 		Class = "Stingray.Flow.KeyboardButton"
 		Device = {
@@ -4152,8 +4162,6 @@ Nodes = [
 		}
 		Numeric = {
 			Value = 0
-		}
-		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -4236,52 +4244,6 @@ Nodes = [
 		Unit = {
 			UseMyUnit = true
 		}
-		Width = 160
-	}
-	{
-		Arguments = [
-			{
-				RawName = "Label"
-				Type = "string"
-				Variable = {
-					Class = "Stingray.Flow.InVariableString"
-				}
-			}
-			{
-				RawName = "Color"
-				Type = "vector3"
-				Variable = {
-					Class = "Stingray.Flow.InVariableVector3"
-					Value = "255 0 0"
-				}
-			}
-			{
-				RawName = "Text"
-				Type = "string"
-				Variable = {
-					Class = "Stingray.Flow.InVariableString"
-					Value = "GameOver"
-				}
-			}
-		]
-		Class = "Stingray.Flow.CustomScriptNode"
-		FlowNodesResource = "core/appkit/appkit"
-		FlowNodesResourceKey = "flow_nodes_resource"
-		Id = "12e3fba0-a865-452b-adee-3ea1da3f77fc"
-		InEvents = [
-			"In"
-		]
-		IsQuery = false
-		Name = "Print To Screen"
-		NodeLocation = {
-			X = -40
-			Y = 1180
-		}
-		OutEvents = [
-			"Out"
-		]
-		ReturnValues = [
-		]
 		Width = 160
 	}
 	{
@@ -4393,19 +4355,6 @@ Nodes = [
 			Y = 1300
 		}
 		True = {
-		}
-		Width = 160
-	}
-	{
-		Class = "Stingray.Flow.NumericToString"
-		Id = "273bbd3f-9356-4225-a36d-d8b440fda8a3"
-		NodeLocation = {
-			X = -780
-			Y = 840
-		}
-		Numeric = {
-		}
-		Value = {
 		}
 		Width = 160
 	}
@@ -4609,8 +4558,6 @@ Nodes = [
 			X = 280
 			Y = -40
 		}
-		Out = {
-		}
 		Scope = {
 			Value = "local"
 		}
@@ -4630,8 +4577,6 @@ Nodes = [
 		NodeLocation = {
 			X = 280
 			Y = -40
-		}
-		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -4691,8 +4636,6 @@ Nodes = [
 		NodeLocation = {
 			X = 2780
 			Y = 740
-		}
-		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -5012,7 +4955,7 @@ Nodes = [
 		A = {
 		}
 		B = {
-			Value = -5
+			Value = -1
 		}
 		Class = "Stingray.Flow.NumericTimesNumeric"
 		Id = "54477704-0fd9-4a3e-b095-97ee9ab9a0c2"
@@ -5388,51 +5331,6 @@ Nodes = [
 		Width = 160
 	}
 	{
-		Arguments = [
-			{
-				RawName = "Label"
-				Type = "string"
-				Variable = {
-					Class = "Stingray.Flow.InVariableString"
-					Value = "HP: "
-				}
-			}
-			{
-				RawName = "Color"
-				Type = "vector3"
-				Variable = {
-					Class = "Stingray.Flow.InVariableVector3"
-				}
-			}
-			{
-				RawName = "Text"
-				Type = "string"
-				Variable = {
-					Class = "Stingray.Flow.InVariableString"
-				}
-			}
-		]
-		Class = "Stingray.Flow.CustomScriptNode"
-		FlowNodesResource = "core/appkit/appkit"
-		FlowNodesResourceKey = "flow_nodes_resource"
-		Id = "74eb63c1-b379-43cb-8279-ae3608db3497"
-		InEvents = [
-			"In"
-		]
-		IsQuery = false
-		Name = "Print To Screen"
-		NodeLocation = {
-			X = -340
-			Y = 940
-		}
-		OutEvents = [
-			"Out"
-		]
-		ReturnValues = [
-		]
-		Width = 160
-	}
-	{
 		Class = "Stingray.Flow.FlowSubroutine"
 		Disable = {
 		}
@@ -5639,8 +5537,6 @@ Nodes = [
 			X = 60
 			Y = -160
 		}
-		Out = {
-		}
 		Scope = {
 			Value = "local"
 		}
@@ -5678,8 +5574,6 @@ Nodes = [
 		NodeLocation = {
 			X = 2240
 			Y = -200
-		}
-		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -5953,8 +5847,6 @@ Nodes = [
 		NodeLocation = {
 			X = -140
 			Y = 1460
-		}
-		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -6366,8 +6258,6 @@ Nodes = [
 		}
 		Numeric = {
 		}
-		Out = {
-		}
 		Scope = {
 			Value = "local"
 		}
@@ -6505,8 +6395,6 @@ Nodes = [
 			X = -140
 			Y = 700
 		}
-		Out = {
-		}
 		Scope = {
 			Value = "local"
 		}
@@ -6528,8 +6416,6 @@ Nodes = [
 			Y = 340
 		}
 		Numeric = {
-		}
-		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -6668,6 +6554,23 @@ Nodes = [
 		Width = 160
 	}
 	{
+		Class = "Stingray.Flow.GetUnitBoolData"
+		Id = "c6c02652-61c4-403e-965f-4a239fc9965a"
+		Key = {
+			Value = "Debug"
+		}
+		NodeLocation = {
+			X = -200
+			Y = 940
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
 		Arguments = [
 		]
 		Class = "Stingray.Flow.CustomScriptNode"
@@ -6680,8 +6583,8 @@ Nodes = [
 		IsQuery = false
 		Name = "Puase"
 		NodeLocation = {
-			X = 80
-			Y = 1040
+			X = 140
+			Y = 980
 		}
 		OutEvents = [
 			"Out"

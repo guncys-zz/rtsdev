@@ -242,10 +242,10 @@ compiler_data = {
 						}
 						{
 							blend_time = 0.1
-							event = "AnimEvent_OnGround"
+							event = "AnimEvent_PassThrough"
 							mode = "direct"
 							on_beat = ""
-							to = "Running_State/Clip_JumpEnd"
+							to = "Running_State/Clip_RollIn"
 						}
 						{
 							blend_time = 0.1
@@ -253,6 +253,13 @@ compiler_data = {
 							mode = "direct"
 							on_beat = ""
 							to = "Running_State/Clip_DoubleJump"
+						}
+						{
+							blend_time = 0.1
+							event = "AnimEvent_OnGround"
+							mode = "direct"
+							on_beat = ""
+							to = "Running_State/Clip_JumpEnd"
 						}
 					]
 					weights = [
@@ -280,11 +287,11 @@ compiler_data = {
 							to = "Running_State/Clip_Damage"
 						}
 						{
-							blend_time = 0.2
-							event = "AnimEvent_Jump"
+							blend_time = 0.1
+							event = "AnimEvent_PassThrough"
 							mode = "direct"
 							on_beat = ""
-							to = "Running_State/Clip_Jump"
+							to = "Running_State/Clip_RollIn"
 						}
 						{
 							blend_time = 0.2
@@ -292,6 +299,13 @@ compiler_data = {
 							mode = "direct"
 							on_beat = ""
 							to = "Running_State/Clip_Run"
+						}
+						{
+							blend_time = 0.2
+							event = "AnimEvent_Jump"
+							mode = "direct"
+							on_beat = ""
+							to = "Running_State/Clip_Jump"
 						}
 					]
 					weights = [
@@ -319,11 +333,11 @@ compiler_data = {
 							to = "Running_State/Clip_Damage"
 						}
 						{
-							blend_time = 0.2
-							event = "Anim End"
+							blend_time = 0.1
+							event = "AnimEvent_PassThrough"
 							mode = "direct"
 							on_beat = ""
-							to = "Running_State/Clip_Jumpping"
+							to = "Running_State/Clip_RollIn"
 						}
 						{
 							blend_time = 0.1
@@ -331,6 +345,13 @@ compiler_data = {
 							mode = "direct"
 							on_beat = ""
 							to = "Running_State/Clip_JumpEnd"
+						}
+						{
+							blend_time = 0.2
+							event = "Anim End"
+							mode = "direct"
+							on_beat = ""
+							to = "Running_State/Clip_Jumpping"
 						}
 					]
 					weights = [
@@ -356,6 +377,13 @@ compiler_data = {
 					]
 					transitions = [
 						{
+							blend_time = 0.1
+							event = "AnimEvent_Jump"
+							mode = "direct"
+							on_beat = ""
+							to = "Running_State/Clip_Jump"
+						}
+						{
 							blend_time = 0.2
 							event = "AnimEvent_Damage"
 							mode = "direct"
@@ -363,7 +391,7 @@ compiler_data = {
 							to = "Running_State/Clip_Damage"
 						}
 						{
-							blend_time = 0.2
+							blend_time = 0
 							event = "AnimEvent_PassThrough_Exit"
 							mode = "wait"
 							on_beat = ""
@@ -384,7 +412,7 @@ compiler_data = {
 					name = "Running_State/Clip_RollIn"
 					randomization_type = "every_loop"
 					root_driving = "ignore"
-					speed = "1"
+					speed = "2.3"
 					state_type = "regular"
 					timeline = [
 						{
@@ -407,7 +435,7 @@ compiler_data = {
 							to = "Running_State/Clip_Damage"
 						}
 						{
-							blend_time = 0.2
+							blend_time = 0
 							event = "Anim End"
 							mode = "direct"
 							on_beat = ""
@@ -587,6 +615,13 @@ compiler_data = {
 					root_driving = "ignore"
 					speed = "1"
 					state_type = "regular"
+					timeline = [
+						{
+							name = "AnimEvent_PhysX_All_Enable"
+							time = 0.827979698426208
+							type = "event"
+						}
+					]
 					transitions = [
 						{
 							blend_time = 0
@@ -612,6 +647,13 @@ compiler_data = {
 					root_driving = "ignore"
 					speed = "1"
 					state_type = "regular"
+					timeline = [
+						{
+							name = "AnimEvent_PhysX_All_Disable"
+							time = 1.44468193135884
+							type = "event"
+						}
+					]
 					transitions = [
 						{
 							blend_time = 0
@@ -1610,6 +1652,33 @@ layers = [
 									ref_id = "285f797a-46c3-42a1-bc23-3bee39db931c"
 								}
 							}
+							{
+								_id = "5fe89a22-49df-45e8-a65c-e3df444a6a7d"
+								actual_target_ref = {
+									_id = "7a9dfcaa-e0f7-4dc9-81f5-4bfb7f22beb2"
+									ref_filename = null
+									ref_id = "ceb23d76-69e9-43c0-886b-2b7fb372b2e2"
+								}
+								blend_time = 0.1
+								event_ref = {
+									_id = "312a7212-537a-4dbc-ad25-28da31f5ca79"
+									ref_filename = null
+									ref_id = "5d2f3106-1da7-4bc0-be16-9e9ee2df386c"
+								}
+								has_nested_from = false
+								mode = "direct"
+								nested_from_ref = {
+									_id = "b8bac42e-7321-4b78-aaa7-e7d846b0e912"
+									ref_filename = null
+									ref_id = null
+								}
+								on_beat = ""
+								to_state_ref = {
+									_id = "54bd5936-80f7-4dfb-8cc8-21049e6792d8"
+									ref_filename = null
+									ref_id = "ac2c6e9f-070e-4558-8506-8ca05f8e2e8a"
+								}
+							}
 						]
 						weights = [
 							"1.0"
@@ -1734,6 +1803,33 @@ layers = [
 									_id = "f9557617-ad29-472e-b6e8-7b51abce6e90"
 									ref_filename = null
 									ref_id = "285f797a-46c3-42a1-bc23-3bee39db931c"
+								}
+							}
+							{
+								_id = "0b726d29-614d-4c1d-bc10-98c34705bc53"
+								actual_target_ref = {
+									_id = "ce948a92-ba48-40ed-a78a-2fde5df84336"
+									ref_filename = null
+									ref_id = "ceb23d76-69e9-43c0-886b-2b7fb372b2e2"
+								}
+								blend_time = 0.1
+								event_ref = {
+									_id = "217c7837-3d70-43ad-94d4-f1d7a044be51"
+									ref_filename = null
+									ref_id = "5d2f3106-1da7-4bc0-be16-9e9ee2df386c"
+								}
+								has_nested_from = false
+								mode = "direct"
+								nested_from_ref = {
+									_id = "e9ad1dbd-aec8-4cd1-9f9d-4639fcb2229f"
+									ref_filename = null
+									ref_id = null
+								}
+								on_beat = ""
+								to_state_ref = {
+									_id = "8efbbb1a-59cc-45ec-9f42-74afe257d453"
+									ref_filename = null
+									ref_id = "ac2c6e9f-070e-4558-8506-8ca05f8e2e8a"
 								}
 							}
 						]
@@ -1862,6 +1958,33 @@ layers = [
 									ref_id = "285f797a-46c3-42a1-bc23-3bee39db931c"
 								}
 							}
+							{
+								_id = "a8b00859-eecc-4d4c-8e98-31e3e27d553d"
+								actual_target_ref = {
+									_id = "5a22c225-d907-44e9-b6b8-6400421ecc8a"
+									ref_filename = null
+									ref_id = "ceb23d76-69e9-43c0-886b-2b7fb372b2e2"
+								}
+								blend_time = 0.1
+								event_ref = {
+									_id = "15a6c20e-df00-4c81-b848-f7a7d40b1b6d"
+									ref_filename = null
+									ref_id = "5d2f3106-1da7-4bc0-be16-9e9ee2df386c"
+								}
+								has_nested_from = false
+								mode = "direct"
+								nested_from_ref = {
+									_id = "a46a4276-e10d-4204-8874-2f67c5d8f196"
+									ref_filename = null
+									ref_id = null
+								}
+								on_beat = ""
+								to_state_ref = {
+									_id = "c500e0a3-4d96-4edb-aa7f-7d4be0489d11"
+									ref_filename = null
+									ref_id = "ac2c6e9f-070e-4558-8506-8ca05f8e2e8a"
+								}
+							}
 						]
 						weights = [
 							"1.0"
@@ -1921,7 +2044,7 @@ layers = [
 									ref_filename = null
 									ref_id = "3b14e0bf-17c7-4c7c-9b92-edf54748531f"
 								}
-								blend_time = 0.2
+								blend_time = 0
 								event_ref = {
 									_id = "28db1e8c-0fd7-43ee-894e-f0a2c91e1ea3"
 									ref_filename = null
@@ -1966,6 +2089,33 @@ layers = [
 									_id = "5f18469c-45b5-48fe-9cdc-dca9dd850cc7"
 									ref_filename = null
 									ref_id = "285f797a-46c3-42a1-bc23-3bee39db931c"
+								}
+							}
+							{
+								_id = "79c32beb-fd1c-4ffb-8bae-0eb1a627dfa7"
+								actual_target_ref = {
+									_id = "5339e9e9-7962-4551-a2d0-0668fa62e4f8"
+									ref_filename = null
+									ref_id = null
+								}
+								blend_time = 0.1
+								event_ref = {
+									_id = "13a5dfa2-3a86-4bf0-a1b4-46ca2cf13f0e"
+									ref_filename = null
+									ref_id = "5b121e59-6d14-40f6-9963-2bf0f129c0ff"
+								}
+								has_nested_from = false
+								mode = "direct"
+								nested_from_ref = {
+									_id = "86913d7b-c57b-4e43-8047-94331070a304"
+									ref_filename = null
+									ref_id = null
+								}
+								on_beat = ""
+								to_state_ref = {
+									_id = "abfeb50f-83ce-45e5-8b2e-406fb70061aa"
+									ref_filename = null
+									ref_id = "44c4d5a1-03d3-47e2-8fd9-e33d085dec45"
 								}
 							}
 						]
@@ -2025,7 +2175,7 @@ layers = [
 						offset_state = false
 						randomization_type = "every_loop"
 						root_driving = "ignore"
-						speed = "1"
+						speed = "2.3"
 						transitions = [
 							{
 								_id = "68cb45c7-c3d6-4720-ad61-b67e4d0da104"
@@ -2034,7 +2184,7 @@ layers = [
 									ref_filename = null
 									ref_id = null
 								}
-								blend_time = 0.2
+								blend_time = 0
 								event_ref = {
 									_id = "654b805b-b12b-469e-b25a-a17d0e790790"
 									ref_filename = null
@@ -2614,6 +2764,13 @@ layers = [
 						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
+							{
+								_id = "91ecf3f3-27a4-4dc3-9dbc-be95c16fa1b1"
+								_name = "AnimEvent_PhysX_All_Enable"
+								_time = 0.827979698426208
+								time = 0.827979698426208
+								type = "event"
+							}
 						]
 						muted_layers = [
 						]
@@ -2686,6 +2843,13 @@ layers = [
 						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
+							{
+								_id = "859cd987-b263-4ed5-bac2-67ad2f96d815"
+								_name = "AnimEvent_PhysX_All_Disable"
+								_time = 1.44468193135884
+								time = 1.44468193135884
+								type = "event"
+							}
 						]
 						muted_layers = [
 						]

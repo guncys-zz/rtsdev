@@ -10,11 +10,11 @@ FBXHeaderExtension:  {
 		Version: 1000
 		Year: 2016
 		Month: 5
-		Day: 10
-		Hour: 23
-		Minute: 49
-		Second: 8
-		Millisecond: 849
+		Day: 17
+		Hour: 22
+		Minute: 41
+		Second: 34
+		Millisecond: 667
 	}
 	Creator: "FBX SDK/FBX Plugins version 2016.0"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -36,13 +36,13 @@ FBXHeaderExtension:  {
 			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "Original|ApplicationName", "KString", "", "", "Maya"
 			P: "Original|ApplicationVersion", "KString", "", "", "2016"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "10/05/2016 14:49:08.847"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "17/05/2016 13:41:34.666"
 			P: "Original|FileName", "KString", "", "", "D:/Work/GUNCYS/P4Workspace/projects/RoadToStingray/Shots/Op/c002/GCR_op_c02.fbx"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "LastSaved|ApplicationName", "KString", "", "", "Maya"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "2016"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "10/05/2016 14:49:08.847"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "17/05/2016 13:41:34.666"
 		}
 	}
 }
@@ -60,7 +60,7 @@ GlobalSettings:  {
 		P: "UnitScaleFactor", "double", "Number", "",1
 		P: "OriginalUnitScaleFactor", "double", "Number", "",1
 		P: "AmbientColor", "ColorRGB", "Color", "",0,0,0
-		P: "DefaultCamera", "KString", "", "", "persp1"
+		P: "DefaultCamera", "KString", "", "", "Producer Perspective"
 		P: "TimeMode", "enum", "", "",6
 		P: "TimeProtocol", "enum", "", "",2
 		P: "SnapOnFrameMode", "enum", "", "",0
@@ -77,7 +77,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 1435791520, "", "Scene" {
+	Document: 1637179632, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", "Take 001"
@@ -234,28 +234,28 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	NodeAttribute: 213966528, "NodeAttribute::", "LimbNode" {
+	NodeAttribute: 157108112, "NodeAttribute::", "LimbNode" {
 		Properties70:  {
 			P: "Size", "double", "Number", "",16.6666666666667
 		}
 		TypeFlags: "Skeleton"
 	}
-	Model: 210588528, "Model::GCR:GUR_joint", "LimbNode" {
+	Model: 2283297648, "Model::GCR:GUR_joint", "LimbNode" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",2
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
 			P: "DefaultAttributeIndex", "int", "Integer", "",0
-			P: "Lcl Translation", "Lcl Translation", "", "A+",384.896425031491,143.136014079741,93.5885429510008
-			P: "Lcl Rotation", "Lcl Rotation", "", "A+",13.4300393056717,71.040765663498,0.559071462824895
+			P: "Lcl Translation", "Lcl Translation", "", "A+",375.154701595231,133.276,73.0759348548864
+			P: "Lcl Rotation", "Lcl Rotation", "", "A+",6.42243470880682,59.3711960426021,6.9369797880512
 			P: "lockInfluenceWeights", "Bool", "", "A+U",0
 			P: "blendParent1", "Number", "", "A+U",1,0,1
 		}
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	AnimationStack: 1841129456, "AnimStack::Take 001", "" {
+	AnimationStack: 2034886800, "AnimStack::Take 001", "" {
 		Properties70:  {
 			P: "LocalStart", "KTime", "Time", "",1539538600
 			P: "LocalStop", "KTime", "Time", "",221693558400
@@ -263,45 +263,45 @@ Objects:  {
 			P: "ReferenceStop", "KTime", "Time", "",221693558400
 		}
 	}
-	AnimationLayer: 1745663856, "AnimLayer::BaseLayer", "" {
+	AnimationLayer: 970510912, "AnimLayer::BaseLayer", "" {
 	}
-	AnimationCurveNode: 1841128832, "AnimCurveNode::lockInfluenceWeights", "" {
+	AnimationCurveNode: 2034882640, "AnimCurveNode::lockInfluenceWeights", "" {
 		Properties70:  {
 			P: "d|lockInfluenceWeights", "Bool", "", "A",0
 		}
 	}
-	AnimationCurveNode: 1841130912, "AnimCurveNode::blendParent1", "" {
+	AnimationCurveNode: 2034882848, "AnimCurveNode::blendParent1", "" {
 		Properties70:  {
 			P: "d|blendParent1", "Number", "", "A",1
 		}
 	}
-	AnimationCurveNode: 1841131952, "AnimCurveNode::Visibility", "" {
+	AnimationCurveNode: 2034883056, "AnimCurveNode::Visibility", "" {
 		Properties70:  {
 			P: "d|Visibility", "Visibility", "", "A",1
 		}
 	}
-	AnimationCurveNode: 1841128000, "AnimCurveNode::T", "" {
+	AnimationCurveNode: 2034883264, "AnimCurveNode::T", "" {
 		Properties70:  {
-			P: "d|X", "Number", "", "A",384.896425031491
-			P: "d|Y", "Number", "", "A",143.136014079741
-			P: "d|Z", "Number", "", "A",93.5885429510008
+			P: "d|X", "Number", "", "A",375.154701595231
+			P: "d|Y", "Number", "", "A",133.276
+			P: "d|Z", "Number", "", "A",73.0759348548864
 		}
 	}
-	AnimationCurveNode: 215400032, "AnimCurveNode::S", "" {
+	AnimationCurveNode: 2034884304, "AnimCurveNode::S", "" {
 		Properties70:  {
 			P: "d|X", "Number", "", "A",1
 			P: "d|Y", "Number", "", "A",1
 			P: "d|Z", "Number", "", "A",1
 		}
 	}
-	AnimationCurveNode: 215401072, "AnimCurveNode::R", "" {
+	AnimationCurveNode: 2034884096, "AnimCurveNode::R", "" {
 		Properties70:  {
-			P: "d|X", "Number", "", "A",13.4300393056717
-			P: "d|Y", "Number", "", "A",71.040765663498
-			P: "d|Z", "Number", "", "A",0.559071462824895
+			P: "d|X", "Number", "", "A",6.42243470880682
+			P: "d|Y", "Number", "", "A",59.3711960426021
+			P: "d|Z", "Number", "", "A",6.9369797880512
 		}
 	}
-	AnimationCurve: 1841300368, "AnimCurve::", "" {
+	AnimationCurve: 2058775248, "AnimCurve::", "" {
 		Default: 0
 		KeyVer: 4008
 		KeyTime: *145 {
@@ -322,7 +322,7 @@ Objects:  {
 			a: 76,69
 		} 
 	}
-	AnimationCurve: 1841312208, "AnimCurve::", "" {
+	AnimationCurve: 2058774288, "AnimCurve::", "" {
 		Default: 0
 		KeyVer: 4008
 		KeyTime: *145 {
@@ -343,7 +343,7 @@ Objects:  {
 			a: 76,69
 		} 
 	}
-	AnimationCurve: 1841297008, "AnimCurve::", "" {
+	AnimationCurve: 2058787088, "AnimCurve::", "" {
 		Default: 0
 		KeyVer: 4008
 		KeyTime: *145 {
@@ -364,7 +364,7 @@ Objects:  {
 			a: 75,1,1,1,3,1,1,1,1,60
 		} 
 	}
-	AnimationCurve: 1841311248, "AnimCurve::", "" {
+	AnimationCurve: 2058773648, "AnimCurve::", "" {
 		Default: 0
 		KeyVer: 4008
 		KeyTime: *145 {
@@ -385,7 +385,7 @@ Objects:  {
 			a: 77,1,1,8,1,1,56
 		} 
 	}
-	AnimationCurve: 1841290928, "AnimCurve::", "" {
+	AnimationCurve: 2058773488, "AnimCurve::", "" {
 		Default: 0
 		KeyVer: 4008
 		KeyTime: *145 {
@@ -406,7 +406,7 @@ Objects:  {
 			a: 75,1,1,1,1,1,1,64
 		} 
 	}
-	AnimationCurve: 1841298768, "AnimCurve::", "" {
+	AnimationCurve: 2058766928, "AnimCurve::", "" {
 		Default: 0
 		KeyVer: 4008
 		KeyTime: *145 {
@@ -427,7 +427,7 @@ Objects:  {
 			a: 76,69
 		} 
 	}
-	AnimationCurve: 1841292048, "AnimCurve::", "" {
+	AnimationCurve: 2058774768, "AnimCurve::", "" {
 		Default: 0
 		KeyVer: 4008
 		KeyTime: *145 {
@@ -448,7 +448,7 @@ Objects:  {
 			a: 76,69
 		} 
 	}
-	AnimationCurve: 1841311408, "AnimCurve::", "" {
+	AnimationCurve: 2058767248, "AnimCurve::", "" {
 		Default: 0
 		KeyVer: 4008
 		KeyTime: *145 {
@@ -469,7 +469,7 @@ Objects:  {
 			a: 76,69
 		} 
 	}
-	AnimationCurve: 1841299728, "AnimCurve::", "" {
+	AnimationCurve: 2058770128, "AnimCurve::", "" {
 		Default: 0
 		KeyVer: 4008
 		KeyTime: *145 {
@@ -490,7 +490,7 @@ Objects:  {
 			a: 76,69
 		} 
 	}
-	AnimationCurve: 1841294448, "AnimCurve::", "" {
+	AnimationCurve: 2058769808, "AnimCurve::", "" {
 		Default: 0
 		KeyVer: 4008
 		KeyTime: *145 {
@@ -511,7 +511,7 @@ Objects:  {
 			a: 76,69
 		} 
 	}
-	AnimationCurve: 1841286768, "AnimCurve::", "" {
+	AnimationCurve: 2058776848, "AnimCurve::", "" {
 		Default: 0
 		KeyVer: 4008
 		KeyTime: *145 {
@@ -540,82 +540,82 @@ Objects:  {
 Connections:  {
 	
 	;Model::GCR:GUR_joint, Model::RootNode
-	C: "OO",210588528,0
+	C: "OO",2283297648,0
 	
 	;AnimLayer::BaseLayer, AnimStack::Take 001
-	C: "OO",1745663856,1841129456
+	C: "OO",970510912,2034886800
 	
 	;AnimCurveNode::lockInfluenceWeights, AnimLayer::BaseLayer
-	C: "OO",1841128832,1745663856
+	C: "OO",2034882640,970510912
 	
 	;AnimCurveNode::blendParent1, AnimLayer::BaseLayer
-	C: "OO",1841130912,1745663856
+	C: "OO",2034882848,970510912
 	
 	;AnimCurveNode::Visibility, AnimLayer::BaseLayer
-	C: "OO",1841131952,1745663856
+	C: "OO",2034883056,970510912
 	
 	;AnimCurveNode::T, AnimLayer::BaseLayer
-	C: "OO",1841128000,1745663856
+	C: "OO",2034883264,970510912
 	
 	;AnimCurveNode::S, AnimLayer::BaseLayer
-	C: "OO",215400032,1745663856
+	C: "OO",2034884304,970510912
 	
 	;AnimCurveNode::R, AnimLayer::BaseLayer
-	C: "OO",215401072,1745663856
+	C: "OO",2034884096,970510912
 	
 	;NodeAttribute::, Model::GCR:GUR_joint
-	C: "OO",213966528,210588528
+	C: "OO",157108112,2283297648
 	
 	;AnimCurveNode::T, Model::GCR:GUR_joint
-	C: "OP",1841128000,210588528, "Lcl Translation"
+	C: "OP",2034883264,2283297648, "Lcl Translation"
 	
 	;AnimCurveNode::R, Model::GCR:GUR_joint
-	C: "OP",215401072,210588528, "Lcl Rotation"
+	C: "OP",2034884096,2283297648, "Lcl Rotation"
 	
 	;AnimCurveNode::S, Model::GCR:GUR_joint
-	C: "OP",215400032,210588528, "Lcl Scaling"
+	C: "OP",2034884304,2283297648, "Lcl Scaling"
 	
 	;AnimCurveNode::Visibility, Model::GCR:GUR_joint
-	C: "OP",1841131952,210588528, "Visibility"
+	C: "OP",2034883056,2283297648, "Visibility"
 	
 	;AnimCurveNode::lockInfluenceWeights, Model::GCR:GUR_joint
-	C: "OP",1841128832,210588528, "lockInfluenceWeights"
+	C: "OP",2034882640,2283297648, "lockInfluenceWeights"
 	
 	;AnimCurveNode::blendParent1, Model::GCR:GUR_joint
-	C: "OP",1841130912,210588528, "blendParent1"
+	C: "OP",2034882848,2283297648, "blendParent1"
 	
 	;AnimCurve::, AnimCurveNode::blendParent1
-	C: "OP",1841300368,1841130912, "d|blendParent1"
+	C: "OP",2058775248,2034882848, "d|blendParent1"
 	
 	;AnimCurve::, AnimCurveNode::Visibility
-	C: "OP",1841312208,1841131952, "d|Visibility"
+	C: "OP",2058774288,2034883056, "d|Visibility"
 	
 	;AnimCurve::, AnimCurveNode::T
-	C: "OP",1841297008,1841128000, "d|X"
+	C: "OP",2058787088,2034883264, "d|X"
 	
 	;AnimCurve::, AnimCurveNode::T
-	C: "OP",1841311248,1841128000, "d|Y"
+	C: "OP",2058773648,2034883264, "d|Y"
 	
 	;AnimCurve::, AnimCurveNode::T
-	C: "OP",1841290928,1841128000, "d|Z"
+	C: "OP",2058773488,2034883264, "d|Z"
 	
 	;AnimCurve::, AnimCurveNode::S
-	C: "OP",1841298768,215400032, "d|X"
+	C: "OP",2058766928,2034884304, "d|X"
 	
 	;AnimCurve::, AnimCurveNode::S
-	C: "OP",1841292048,215400032, "d|Y"
+	C: "OP",2058774768,2034884304, "d|Y"
 	
 	;AnimCurve::, AnimCurveNode::S
-	C: "OP",1841311408,215400032, "d|Z"
+	C: "OP",2058767248,2034884304, "d|Z"
 	
 	;AnimCurve::, AnimCurveNode::R
-	C: "OP",1841299728,215401072, "d|X"
+	C: "OP",2058770128,2034884096, "d|X"
 	
 	;AnimCurve::, AnimCurveNode::R
-	C: "OP",1841294448,215401072, "d|Y"
+	C: "OP",2058769808,2034884096, "d|Y"
 	
 	;AnimCurve::, AnimCurveNode::R
-	C: "OP",1841286768,215401072, "d|Z"
+	C: "OP",2058776848,2034884096, "d|Z"
 }
 ;Takes section
 ;----------------------------------------------------
