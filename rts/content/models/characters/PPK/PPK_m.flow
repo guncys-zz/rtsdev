@@ -2187,8 +2187,8 @@ nodes = [
 				}
 				{
 					event = 0
-					id = "9c44984c-0258-493d-9a36-da1fbe9a6163:0"
-					node = "9c44984c-0258-493d-9a36-da1fbe9a6163"
+					id = "399a65ed-de92-4482-a436-e0397cc1a056:0"
+					node = "399a65ed-de92-4482-a436-e0397cc1a056"
 				}
 			]
 		}
@@ -3234,6 +3234,15 @@ nodes = [
 			}
 		}
 		name = "IsTutorial"
+		out_events = {
+			Out = [
+				{
+					event = 0
+					id = "a0dbf163-678a-4f4d-a9d2-50b2b7791913:0"
+					node = "a0dbf163-678a-4f4d-a9d2-50b2b7791913"
+				}
+			]
+		}
 		out_variables = {
 			Bool = {
 				type = "bool"
@@ -3259,65 +3268,43 @@ nodes = [
 		]
 	}
 	{
-		id = "3fafb7a5-7961-4ff4-982e-e024c9e93df3"
+		id = "a0dbf163-678a-4f4d-a9d2-50b2b7791913"
 		in_variables = {
-			bool = {
+			condition = {
 				node = "399a65ed-de92-4482-a436-e0397cc1a056"
 				type = "bool"
 				variable = "Bool"
 			}
 		}
-		out_variables = {
-			value = {
-				type = "string"
-			}
+		out_events = {
+			true = [
+				{
+					event = 0
+					id = "f18db717-9ab1-4bf1-a181-c3694c5634e1:0"
+					node = "f18db717-9ab1-4bf1-a181-c3694c5634e1"
+				}
+			]
 		}
-		type = "bool_to_string"
+		type = "branch"
 		variable_values = {
-			bool = null
-			value = null
+			condition = null
 		}
 	}
 	{
-		flow_nodes_resource = "core/appkit/appkit"
-		id = "9c44984c-0258-493d-9a36-da1fbe9a6163"
+		id = "f18db717-9ab1-4bf1-a181-c3694c5634e1"
 		in_variables = {
-			Color = {
-				type = "vector3"
-			}
-			Label = {
+			label = {
 				type = "string"
 			}
-			Text = {
-				node = "3fafb7a5-7961-4ff4-982e-e024c9e93df3"
+			text = {
 				type = "string"
-				variable = "value"
 			}
 		}
-		name = "Print To Screen"
-		query = false
-		return_values = [
-		]
-		type = "custom_script_node"
+		type = "debug_print"
 		variable_values = {
-			Color = null
-			Label = "Tutorial"
-			Text = null
+			label = "tutorial:"
+			text = null
 		}
-		variables = [
-			{
-				name = "Label"
-				type = "string"
-			}
-			{
-				name = "Color"
-				type = "vector3"
-			}
-			{
-				name = "Text"
-				type = "string"
-			}
-		]
 	}
 	{
 		id = "11111111-2222-3333-4444-555555555555"

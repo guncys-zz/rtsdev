@@ -4719,6 +4719,43 @@ editor_metadata = {
 			}
 			Type = "content/models/blockers/STM/STM_B"
 		}
+		{
+			Cameras = {
+			}
+			Id = "ae1c1bac-67a1-4a78-8379-6adc29f4d870"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tutorial_actor_cube"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.128907
+				Y = 9.701083
+				Z = 0.092766
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/TutorialActor/tutorial_actor_cube"
+		}
 	]
 	Volumes = [
 	]
@@ -8407,6 +8444,36 @@ units = [
 			1
 		]
 		type = "content/models/blockers/STM/STM_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "ae1c1bac-67a1-4a78-8379-6adc29f4d870"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tutorial_actor_cube"
+		pos = [
+			0.128907
+			9.701083
+			0.092766
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/TutorialActor/tutorial_actor_cube"
 	}
 ]
 volumes = [

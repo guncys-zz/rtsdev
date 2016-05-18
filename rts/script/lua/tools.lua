@@ -11,6 +11,7 @@ unit_objects = {}
 
 -- ヒットしたチュートリアル用のActorの名前を保存
 tutorial_names = {}
+tutorial_name_count = 0
 
 function Tools.Load_csv(t)
     
@@ -76,10 +77,17 @@ function Tools.IsTutorial(t)
     -- 返り値のテーブル
     r["Bool"] = false
     
-    tutorual_name = stingray.Unit.get_data(t.Unit, "TutorialName")
+    
     
     -- IsBlockerがTrueか判定
     if stingray.Unit.get_data(t.Unit, "IsTutorial") then
+        tutorual_name = stingray.Unit.get_data(t.Unit, "TutorialName")
+        --print("tutorual_name")
+        --print(tutorual_name)
+
+        --print("tutorial_names")
+        --print(tutorial_names)
+        
         for key, name in ipairs(tutorial_names) do
             if name == tutorual_name then
                  r["Bool"] = false
@@ -88,11 +96,16 @@ function Tools.IsTutorial(t)
         end
         
         r["Bool"] = true
+        table.insert(tutorial_names,tutorual_name)
+        tutorial_name_count = tutorial_name_count + 1
         
+        local evt = { eventId = scaleform.EventTypes.Custom,
+                      name = "tutorial",
+                      data = { value = tutorual_name }}
+        scaleform.Stage.dispatch_event(evt)
+
     end
     
     return r
     
 end
-
-
