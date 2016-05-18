@@ -15,10 +15,14 @@ variables = {
 	emissive = {
 		type = "vector3"
 		value = [
-			0
-			0
-			0
+			0.313
+			0.313
+			0.313
 		]
+	}
+	emissive_intensity = {
+		type = "scalar"
+		value = 0
 	}
 	roughness = {
 		type = "scalar"
