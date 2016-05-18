@@ -260,30 +260,6 @@ nodes = [
 		}
 	}
 	{
-		id = "0ec60575-58cc-442a-bc46-3ef43e70ce7a"
-		in_variables = {
-			key = {
-				type = "string"
-			}
-			unit = {
-				node = "11111111-2222-3333-4444-555555555555"
-				type = "unit"
-				variable = "unit"
-			}
-		}
-		out_variables = {
-			value = {
-				type = "float"
-			}
-		}
-		type = "get_unit_numeric_data"
-		variable_values = {
-			key = "Distance"
-			unit = null
-			value = null
-		}
-	}
-	{
 		id = "1202037b-f32b-42a3-9fd6-92eed23f6df4"
 		in_variables = {
 			button_name = {
@@ -1257,6 +1233,11 @@ nodes = [
 					id = "43b01176-ff39-4642-aba3-057d5091f349:0"
 					node = "43b01176-ff39-4642-aba3-057d5091f349"
 				}
+				{
+					event = 0
+					id = "74e1613a-cda4-44f7-a76e-19dc64c18e84:0"
+					node = "74e1613a-cda4-44f7-a76e-19dc64c18e84"
+				}
 			]
 		}
 		type = "delay"
@@ -1983,9 +1964,7 @@ nodes = [
 				type = "string"
 			}
 			string = {
-				node = "b0d7f7d9-b51d-4a37-a9f1-e182e5f39663"
 				type = "string"
-				variable = "output_state"
 			}
 		}
 		type = "set_string_variable"
@@ -2355,16 +2334,10 @@ nodes = [
 				}
 			]
 		}
-		out_variables = {
-			output_state = {
-				type = "string"
-			}
-		}
 		type = "flow_subroutine"
 		variable_values = {
 			character = null
 			flow = "script/custom_flows/Character/CharacterRoll"
-			output_state = null
 			state = null
 		}
 	}
@@ -2392,13 +2365,6 @@ nodes = [
 					node = "5954ab64-7170-450a-8a94-75b1a1ede301"
 				}
 			]
-			out4 = [
-				{
-					event = 0
-					id = "b4933379-ecc3-4cb9-9be9-f4395eb6e246:0"
-					node = "b4933379-ecc3-4cb9-9be9-f4395eb6e246"
-				}
-			]
 			out5 = [
 				{
 					event = 0
@@ -2413,41 +2379,15 @@ nodes = [
 					node = "ae1ad32f-fae8-468d-acc9-b4329ce8f063"
 				}
 			]
-		}
-		type = "sequence"
-	}
-	{
-		id = "b4933379-ecc3-4cb9-9be9-f4395eb6e246"
-		in_variables = {
-			key = {
-				type = "string"
-			}
-			unit = {
-				node = "11111111-2222-3333-4444-555555555555"
-				type = "unit"
-				variable = "unit"
-			}
-			value = {
-				node = "cec06339-f036-49ea-9230-3f9787a7a23e"
-				type = "float"
-				variable = "value"
-			}
-		}
-		out_events = {
-			out = [
+			out7 = [
 				{
 					event = 0
-					id = "753f4c3b-2a8e-48d4-b1ad-5ccf61a6527d:0"
-					node = "753f4c3b-2a8e-48d4-b1ad-5ccf61a6527d"
+					id = "ae78f537-f8ac-40eb-aa1d-bab7180954b8:0"
+					node = "ae78f537-f8ac-40eb-aa1d-bab7180954b8"
 				}
 			]
 		}
-		type = "set_unit_numeric_data"
-		variable_values = {
-			key = "Distance"
-			unit = null
-			value = null
-		}
+		type = "sequence"
 	}
 	{
 		id = "b5e27b65-93b4-49e2-add8-ac5c975a9b15"
@@ -2651,32 +2591,6 @@ nodes = [
 		variable_values = {
 			key = "HeightGameOver"
 			unit = null
-			value = null
-		}
-	}
-	{
-		id = "cec06339-f036-49ea-9230-3f9787a7a23e"
-		in_variables = {
-			a = {
-				node = "0ec60575-58cc-442a-bc46-3ef43e70ce7a"
-				type = "float"
-				variable = "value"
-			}
-			b = {
-				node = "4ed017e0-6d39-4c2b-9acf-30a955600d1c"
-				type = "float"
-				variable = "value"
-			}
-		}
-		out_variables = {
-			value = {
-				type = "float"
-			}
-		}
-		type = "numeric_plus_numeric"
-		variable_values = {
-			a = null
-			b = null
 			value = null
 		}
 	}
@@ -3157,6 +3071,308 @@ nodes = [
 		type = "on_animation_controller_flow_events"
 		variable_values = {
 			animation_controller = "content/models/characters/PPK/PPK_m"
+		}
+	}
+	{
+		id = "a4874f45-3c9b-4d6e-832f-374abde7e3cf"
+		in_variables = {
+			a = {
+				node = "a107018b-d964-4b4d-9eb3-7358eb309c16"
+				type = "float"
+				variable = "y"
+			}
+			b = {
+				node = "eecac5c2-493e-4445-8f03-2d4b59dbc736"
+				type = "float"
+				variable = "numeric"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_minus_numeric"
+		variable_values = {
+			a = null
+			b = null
+			value = null
+		}
+	}
+	{
+		id = "b4933379-ecc3-4cb9-9be9-f4395eb6e246"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+			value = {
+				node = "cec06339-f036-49ea-9230-3f9787a7a23e"
+				type = "float"
+				variable = "value"
+			}
+		}
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "753f4c3b-2a8e-48d4-b1ad-5ccf61a6527d:0"
+					node = "753f4c3b-2a8e-48d4-b1ad-5ccf61a6527d"
+				}
+			]
+		}
+		type = "set_unit_numeric_data"
+		variable_values = {
+			key = "Distance"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "eecac5c2-493e-4445-8f03-2d4b59dbc736"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "get_numeric_variable"
+		variable_values = {
+			name = "before_position_y"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "84b744a0-d7ef-4dcd-a504-fa8c40abc2b1"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			numeric = {
+				node = "a107018b-d964-4b4d-9eb3-7358eb309c16"
+				type = "float"
+				variable = "y"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_numeric_variable"
+		variable_values = {
+			name = "before_position_y"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "def639ed-c5a5-46cf-b253-4232684a4a5c"
+		in_variables = {
+			vector = {
+				node = "0bfa6495-d3de-4c85-9e44-ad1268942469"
+				type = "vector3"
+				variable = "position"
+			}
+		}
+		out_variables = {
+			y = {
+				type = "float"
+			}
+		}
+		type = "vector_components"
+		variable_values = {
+			vector = null
+			x = null
+			y = null
+			z = null
+		}
+	}
+	{
+		id = "0bfa6495-d3de-4c85-9e44-ad1268942469"
+		in_variables = {
+			object = {
+				type = "id"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			position = {
+				type = "vector3"
+			}
+		}
+		type = "get_unit_world_position"
+		variable_values = {
+			object = null
+			position = null
+			unit = null
+		}
+	}
+	{
+		id = "74e1613a-cda4-44f7-a76e-19dc64c18e84"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			numeric = {
+				node = "def639ed-c5a5-46cf-b253-4232684a4a5c"
+				type = "float"
+				variable = "y"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_numeric_variable"
+		variable_values = {
+			name = "before_position_y"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "ae78f537-f8ac-40eb-aa1d-bab7180954b8"
+		out_events = {
+			out1 = [
+				{
+					event = 0
+					id = "b4933379-ecc3-4cb9-9be9-f4395eb6e246:0"
+					node = "b4933379-ecc3-4cb9-9be9-f4395eb6e246"
+				}
+			]
+			out2 = [
+				{
+					event = 0
+					id = "84b744a0-d7ef-4dcd-a504-fa8c40abc2b1:0"
+					node = "84b744a0-d7ef-4dcd-a504-fa8c40abc2b1"
+				}
+			]
+		}
+		type = "sequence"
+	}
+	{
+		id = "a107018b-d964-4b4d-9eb3-7358eb309c16"
+		in_variables = {
+			vector = {
+				node = "b4a92f42-0652-4079-9758-cc4d03f1d7e7"
+				type = "vector3"
+				variable = "position"
+			}
+		}
+		out_variables = {
+			y = {
+				type = "float"
+			}
+		}
+		type = "vector_components"
+		variable_values = {
+			vector = null
+			x = null
+			y = null
+			z = null
+		}
+	}
+	{
+		id = "b4a92f42-0652-4079-9758-cc4d03f1d7e7"
+		in_variables = {
+			object = {
+				type = "id"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			position = {
+				type = "vector3"
+			}
+		}
+		type = "get_unit_world_position"
+		variable_values = {
+			object = null
+			position = null
+			unit = null
+		}
+	}
+	{
+		id = "2cd48625-5332-407d-881d-d2dbf6b3d4b5"
+		in_variables = {
+			numeric = {
+				node = "0ec60575-58cc-442a-bc46-3ef43e70ce7a"
+				type = "float"
+				variable = "value"
+			}
+		}
+		type = "numeric_to_string"
+		variable_values = {
+			numeric = null
+			value = null
+		}
+	}
+	{
+		id = "0ec60575-58cc-442a-bc46-3ef43e70ce7a"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "get_unit_numeric_data"
+		variable_values = {
+			key = "Distance"
+			unit = null
+			value = null
+		}
+	}
+	{
+		id = "cec06339-f036-49ea-9230-3f9787a7a23e"
+		in_variables = {
+			a = {
+				node = "0ec60575-58cc-442a-bc46-3ef43e70ce7a"
+				type = "float"
+				variable = "value"
+			}
+			b = {
+				node = "a4874f45-3c9b-4d6e-832f-374abde7e3cf"
+				type = "float"
+				variable = "value"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_plus_numeric"
+		variable_values = {
+			a = null
+			b = null
+			value = null
 		}
 	}
 	{
