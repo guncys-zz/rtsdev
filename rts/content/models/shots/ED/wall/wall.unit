@@ -1,0 +1,15 @@
+
+materials = {
+	ED_wall_lambert2 = "content/models/shots/ED/wall/ED_wall_lambert2"
+}
+renderables = {
+	ED_wall = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}
