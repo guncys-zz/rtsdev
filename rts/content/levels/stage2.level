@@ -111,22 +111,6 @@ editor_metadata = {
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
 				FromItem = "Out"
-				FromNode = "f5b80e33-f7ab-4eff-ae5f-304ed7f45c2b"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "121ab2e8-e899-4bc0-939f-15535a49f17b"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.VariableConnection"
-				FromItem = "Unit"
-				FromNode = "29beef00-a9a2-4383-9095-daa70a7066ac"
-				ToItem = "Unit"
-				ToNode = "121ab2e8-e899-4bc0-939f-15535a49f17b"
-				Type = "Unit"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
 				FromNode = "f4946a4f-4dd9-4028-8e1c-09d32a380aa8"
 				Priority = 0
 				ToItem = "In"
@@ -183,16 +167,6 @@ editor_metadata = {
 					"ecdba273-9834-48b2-b43f-3d9baafa51e8"
 				]
 				Title = "Sound"
-			}
-			{
-				Collapsed = false
-				Groups = [
-				]
-				Id = "488070c7-96fb-4e9b-91ca-fbcf92ab2ed7"
-				Nodes = [
-					"121ab2e8-e899-4bc0-939f-15535a49f17b"
-				]
-				Title = "PPKの移動距離を250に初期化"
 			}
 		]
 		Nodes = [
@@ -769,30 +743,6 @@ editor_metadata = {
 				Width = 160
 			}
 			{
-				Brief = "Sets the unit script data property to the specified numeric value."
-				Class = "Stingray.Foundation.Flow.SetUnitNumericData"
-				Id = "121ab2e8-e899-4bc0-939f-15535a49f17b"
-				In = {
-				}
-				Key = {
-					Value = "Distance"
-				}
-				NodeLocation = {
-					X = 80
-					Y = -360
-				}
-				Out = {
-				}
-				Title = "Set Unit Numeric Data"
-				Unit = {
-					UseMyUnit = false
-				}
-				Value = {
-					Value = 250
-				}
-				Width = 360
-			}
-			{
 				Arguments = [
 				]
 				Brief = "This node clears the currently loaded project. It should be used before switching projects or before shutting down."
@@ -835,7 +785,6 @@ editor_metadata = {
 	LevelReferences = [
 	]
 	LightBakeSettings = {
-		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
 		FilterGain = 20
@@ -853,7 +802,6 @@ editor_metadata = {
 			Z = 1
 		}
 		TexelScale = 10
-		TotalPasses = 256
 		Variance = 0.5
 	}
 	LuaPluginObjects = [
@@ -927,7 +875,6 @@ editor_metadata = {
 					Intensity = 4
 					Material = ""
 					MaterialResource = ""
-					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "directional"
@@ -1072,6 +1019,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				Distance = 250
 				IsRun = true
 			}
 			Type = "content/models/characters/PPK/PPK_m"
@@ -7108,7 +7056,24 @@ editor_metadata = {
 			Type = "content/models/stage2/background/background"
 		}
 		{
+<<<<<<< HEAD
 			Cameras = {
+=======
+			id = "f5b80e33-f7ab-4eff-ae5f-304ed7f45c2b"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "e1ebe0cb-7c5a-4f11-8575-8d1eed73a7c1:0"
+						node = "e1ebe0cb-7c5a-4f11-8575-8d1eed73a7c1"
+					}
+					{
+						event = 0
+						id = "b6771c36-964d-4e20-b68b-e14fb17a94ad:0"
+						node = "b6771c36-964d-4e20-b68b-e14fb17a94ad"
+					}
+				]
+>>>>>>> dc702118177f0a51edc6eabca374f6bca6dc7649
 			}
 			Id = "e735ce96-4ee7-45a7-8bf7-0fde56f6a592"
 			Layer = "Default"
@@ -7441,6 +7406,7 @@ editor_metadata = {
 			Type = "content/models/shots/OP/tree/tree_H"
 		}
 		{
+<<<<<<< HEAD
 			Cameras = {
 			}
 			Id = "b0b7b286-f9e6-4e76-89c5-469de7c21835"
@@ -7513,6 +7479,17 @@ editor_metadata = {
 			ScriptData = {
 			}
 			Type = "content/models/shots/OP/tree/tree_H"
+=======
+			flow_nodes_resource = "core/scaleform_studio/scaleform_studio"
+			id = "da8dbc8d-aa8f-40f5-bdc3-a10731b6d1b9"
+			name = "Scaleform Unload Project"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variables = [
+			]
+>>>>>>> dc702118177f0a51edc6eabca374f6bca6dc7649
 		}
 		{
 			Cameras = {
@@ -12644,6 +12621,36 @@ units = [
 		}
 		id = "73720284-1e22-4b26-bde3-614179ac7ea7"
 		lights = {
+<<<<<<< HEAD
+=======
+			light = {
+				baked = false
+				box_max = [
+					10
+					10
+					10
+				]
+				box_min = [
+					-10
+					0
+					-10
+				]
+				cast_shadows = true
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 4
+				material = ""
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "directional"
+			}
+>>>>>>> dc702118177f0a51edc6eabca374f6bca6dc7649
 		}
 		material = ""
 		materials = {
@@ -12761,6 +12768,11 @@ units = [
 		cameras = {
 		}
 		data = {
+<<<<<<< HEAD
+=======
+			Distance = 250
+			IsRun = true
+>>>>>>> dc702118177f0a51edc6eabca374f6bca6dc7649
 		}
 		id = "2b9161fe-4ec5-4efb-893d-fe42e9ccec08"
 		lights = {
