@@ -1,25 +1,36 @@
 
 nodes = [
 	{
-		id = "0d8f4a61-5c2c-4931-a0f1-5000722ed279"
+		id = "0545be7e-081a-4203-ac85-bb8e7f05e574"
 		in_variables = {
-			name = {
-				type = "string"
+			increment = {
+				node = "5a25328d-dfe4-4999-9531-7389eb78b55a"
+				type = "float"
+				variable = "time"
 			}
-			scope = {
-				type = "string"
+			start_value = {
+				type = "float"
 			}
+		}
+		out_events = {
+			changed = [
+				{
+					event = 0
+					id = "73d0a215-9eb5-4598-9b3a-89a316b05b31:0"
+					node = "73d0a215-9eb5-4598-9b3a-89a316b05b31"
+				}
+			]
 		}
 		out_variables = {
-			bool = {
-				type = "bool"
+			value = {
+				type = "float"
 			}
 		}
-		type = "get_bool_variable"
+		type = "counter"
 		variable_values = {
-			bool = null
-			name = "roll_enter"
-			scope = "local"
+			increment = null
+			start_value = 0
+			value = null
 		}
 	}
 	{
@@ -35,6 +46,11 @@ nodes = [
 					event = 0
 					id = "f108035c-5851-4e24-ab32-1fd3f58943dc:0"
 					node = "f108035c-5851-4e24-ab32-1fd3f58943dc"
+				}
+				{
+					event = 2
+					id = "0545be7e-081a-4203-ac85-bb8e7f05e574:2"
+					node = "0545be7e-081a-4203-ac85-bb8e7f05e574"
 				}
 			]
 		}
@@ -78,17 +94,17 @@ nodes = [
 		}
 	}
 	{
-		id = "4c1e2af6-9290-4355-9d1f-7cc67e6cc913"
-		out_events = {
-			out2 = [
-				{
-					event = 0
-					id = "73d0a215-9eb5-4598-9b3a-89a316b05b31:0"
-					node = "73d0a215-9eb5-4598-9b3a-89a316b05b31"
-				}
-			]
+		id = "67008c60-7b80-41c0-a953-4ba28a614be1"
+		out_variables = {
+			string = {
+				type = "string"
+			}
 		}
-		type = "sequence"
+		type = "external_input_string"
+		variable_values = {
+			name = "state"
+			string = null
+		}
 	}
 	{
 		id = "6dd4780e-372c-480a-9e94-9ecde23cdf20"
@@ -164,26 +180,18 @@ nodes = [
 		}
 	}
 	{
-		id = "73d0a215-9eb5-4598-9b3a-89a316b05b31"
+		id = "822c57db-93f7-42e0-b974-39a86b40c11f"
 		in_variables = {
-			condition = {
-				node = "ceb1ecd3-e262-44cd-bf10-a67357fd5125"
-				type = "bool"
+			numeric = {
+				node = "0545be7e-081a-4203-ac85-bb8e7f05e574"
+				type = "float"
 				variable = "value"
 			}
 		}
-		out_events = {
-			true = [
-				{
-					event = 0
-					id = "93213379-2ea3-4ed5-b75c-6f08d0e814e6:0"
-					node = "93213379-2ea3-4ed5-b75c-6f08d0e814e6"
-				}
-			]
-		}
-		type = "branch"
+		type = "numeric_to_string"
 		variable_values = {
-			condition = null
+			numeric = null
+			value = null
 		}
 	}
 	{
@@ -194,10 +202,26 @@ nodes = [
 		}
 	}
 	{
-		id = "93213379-2ea3-4ed5-b75c-6f08d0e814e6"
-		type = "level_flow_event"
+		id = "993767ae-b77f-4202-aa0d-c74b58d9a333"
+		in_variables = {
+			condition = {
+				node = "0d8f4a61-5c2c-4931-a0f1-5000722ed279"
+				type = "bool"
+				variable = "bool"
+			}
+		}
+		out_events = {
+			true = [
+				{
+					event = 0
+					id = "0545be7e-081a-4203-ac85-bb8e7f05e574:0"
+					node = "0545be7e-081a-4203-ac85-bb8e7f05e574"
+				}
+			]
+		}
+		type = "branch"
 		variable_values = {
-			event = "AnimEvent_PassThrough_Exit"
+			condition = null
 		}
 	}
 	{
@@ -214,28 +238,6 @@ nodes = [
 		type = "external_event"
 		variable_values = {
 			event_name = "key released"
-		}
-	}
-	{
-		id = "b6e6fec0-d93b-4b2e-a904-13a594bf90f2"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		out_variables = {
-			bool = {
-				type = "bool"
-			}
-		}
-		type = "get_bool_variable"
-		variable_values = {
-			bool = null
-			name = "roll_key_released"
-			scope = "local"
 		}
 	}
 	{
@@ -272,32 +274,6 @@ nodes = [
 		}
 	}
 	{
-		id = "ceb1ecd3-e262-44cd-bf10-a67357fd5125"
-		in_variables = {
-			a = {
-				node = "b6e6fec0-d93b-4b2e-a904-13a594bf90f2"
-				type = "bool"
-				variable = "bool"
-			}
-			b = {
-				node = "0d8f4a61-5c2c-4931-a0f1-5000722ed279"
-				type = "bool"
-				variable = "bool"
-			}
-		}
-		out_variables = {
-			value = {
-				type = "bool"
-			}
-		}
-		type = "boolean_and"
-		variable_values = {
-			a = null
-			b = null
-			value = null
-		}
-	}
-	{
 		id = "d95a76d5-baed-4f09-9f13-cbe088272abd"
 		out_events = {
 			out = [
@@ -324,13 +300,13 @@ nodes = [
 			out = [
 				{
 					event = 0
-					id = "6ebbc1c8-4ca0-4400-96e3-d36267f8527f:0"
-					node = "6ebbc1c8-4ca0-4400-96e3-d36267f8527f"
+					id = "f27592f8-13ed-4552-95c5-49a7fc92f05c:0"
+					node = "f27592f8-13ed-4552-95c5-49a7fc92f05c"
 				}
 				{
 					event = 0
-					id = "f27592f8-13ed-4552-95c5-49a7fc92f05c:0"
-					node = "f27592f8-13ed-4552-95c5-49a7fc92f05c"
+					id = "6ebbc1c8-4ca0-4400-96e3-d36267f8527f:0"
+					node = "6ebbc1c8-4ca0-4400-96e3-d36267f8527f"
 				}
 			]
 		}
@@ -345,34 +321,14 @@ nodes = [
 			out = [
 				{
 					event = 0
-					id = "4c1e2af6-9290-4355-9d1f-7cc67e6cc913:0"
-					node = "4c1e2af6-9290-4355-9d1f-7cc67e6cc913"
+					id = "993767ae-b77f-4202-aa0d-c74b58d9a333:0"
+					node = "993767ae-b77f-4202-aa0d-c74b58d9a333"
 				}
 			]
 		}
 		type = "external_event"
 		variable_values = {
 			event_name = "start"
-		}
-	}
-	{
-		id = "f108035c-5851-4e24-ab32-1fd3f58943dc"
-		in_variables = {
-			bool = {
-				type = "bool"
-			}
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		type = "set_bool_variable"
-		variable_values = {
-			bool = true
-			name = "roll_enter"
-			scope = "local"
 		}
 	}
 	{
@@ -400,16 +356,23 @@ nodes = [
 		}
 	}
 	{
-		id = "67008c60-7b80-41c0-a953-4ba28a614be1"
-		out_variables = {
-			string = {
+		id = "f108035c-5851-4e24-ab32-1fd3f58943dc"
+		in_variables = {
+			bool = {
+				type = "bool"
+			}
+			name = {
+				type = "string"
+			}
+			scope = {
 				type = "string"
 			}
 		}
-		type = "external_input_string"
+		type = "set_bool_variable"
 		variable_values = {
-			name = "state"
-			string = null
+			bool = true
+			name = "roll_enter"
+			scope = "local"
 		}
 	}
 	{
@@ -430,6 +393,181 @@ nodes = [
 			bool = false
 			name = "roll_enter"
 			scope = "local"
+		}
+	}
+	{
+		id = "f83c05ff-9863-4394-b077-1229c131cb84"
+		in_variables = {
+			a = {
+				node = "71aab6d0-2898-40a3-8f7b-3ecf7d4bb243"
+				type = "float"
+				variable = "numeric"
+			}
+			b = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_times_numeric"
+		variable_values = {
+			a = null
+			b = 0.46
+			value = null
+		}
+	}
+	{
+		id = "b26dee85-df7b-493f-bf3f-c463cc6ac8cb"
+		in_variables = {
+			a = {
+				node = "0545be7e-081a-4203-ac85-bb8e7f05e574"
+				type = "float"
+				variable = "value"
+			}
+			b = {
+				node = "f83c05ff-9863-4394-b077-1229c131cb84"
+				type = "float"
+				variable = "value"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "bool"
+			}
+		}
+		type = "numeric_greater_than_numeric"
+		variable_values = {
+			a = null
+			b = null
+			value = null
+		}
+	}
+	{
+		id = "b6e6fec0-d93b-4b2e-a904-13a594bf90f2"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			bool = {
+				type = "bool"
+			}
+		}
+		type = "get_bool_variable"
+		variable_values = {
+			bool = null
+			name = "roll_key_released"
+			scope = "local"
+		}
+	}
+	{
+		id = "b7d5e248-fe6a-4439-807b-ab0c862feb1c"
+		in_variables = {
+			a = {
+				node = "b6e6fec0-d93b-4b2e-a904-13a594bf90f2"
+				type = "bool"
+				variable = "bool"
+			}
+			b = {
+				node = "b26dee85-df7b-493f-bf3f-c463cc6ac8cb"
+				type = "bool"
+				variable = "value"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "bool"
+			}
+		}
+		type = "boolean_or"
+		variable_values = {
+			a = null
+			b = null
+			value = null
+		}
+	}
+	{
+		id = "5a25328d-dfe4-4999-9531-7389eb78b55a"
+		out_variables = {
+			time = {
+				type = "float"
+			}
+		}
+		type = "get_last_delta_time"
+		variable_values = {
+			time = null
+		}
+	}
+	{
+		id = "0d8f4a61-5c2c-4931-a0f1-5000722ed279"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			bool = {
+				type = "bool"
+			}
+		}
+		type = "get_bool_variable"
+		variable_values = {
+			bool = null
+			name = "roll_enter"
+			scope = "local"
+		}
+	}
+	{
+		id = "71aab6d0-2898-40a3-8f7b-3ecf7d4bb243"
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "external_input_numeric"
+		variable_values = {
+			name = "max_roll_count"
+			numeric = null
+		}
+	}
+	{
+		id = "73d0a215-9eb5-4598-9b3a-89a316b05b31"
+		in_variables = {
+			condition = {
+				node = "b7d5e248-fe6a-4439-807b-ab0c862feb1c"
+				type = "bool"
+				variable = "value"
+			}
+		}
+		out_events = {
+			true = [
+				{
+					event = 0
+					id = "93213379-2ea3-4ed5-b75c-6f08d0e814e6:0"
+					node = "93213379-2ea3-4ed5-b75c-6f08d0e814e6"
+				}
+			]
+		}
+		type = "branch"
+		variable_values = {
+			condition = null
+		}
+	}
+	{
+		id = "93213379-2ea3-4ed5-b75c-6f08d0e814e6"
+		type = "level_flow_event"
+		variable_values = {
+			event = "AnimEvent_PassThrough_Exit"
 		}
 	}
 	{

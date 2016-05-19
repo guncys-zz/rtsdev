@@ -2300,6 +2300,11 @@ nodes = [
 				type = "unit"
 				variable = "unit"
 			}
+			max_roll_count = {
+				node = "10fd546a-7c98-469e-99c8-47c5dee5691d"
+				type = "float"
+				variable = "value"
+			}
 			state = {
 				node = "6d608129-f341-46cc-99d6-1d9053e823a3"
 				type = "string"
@@ -2338,6 +2343,7 @@ nodes = [
 		variable_values = {
 			character = null
 			flow = "script/custom_flows/Character/CharacterRoll"
+			max_roll_count = null
 			state = null
 		}
 	}
@@ -3372,6 +3378,30 @@ nodes = [
 		variable_values = {
 			a = null
 			b = null
+			value = null
+		}
+	}
+	{
+		id = "10fd546a-7c98-469e-99c8-47c5dee5691d"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "get_unit_numeric_data"
+		variable_values = {
+			key = "MaxRollCount"
+			unit = null
 			value = null
 		}
 	}

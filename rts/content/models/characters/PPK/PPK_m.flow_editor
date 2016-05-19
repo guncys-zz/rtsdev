@@ -3861,6 +3861,15 @@ Connections = [
 		ToNode = "2cd48625-5332-407d-881d-d2dbf6b3d4b5"
 		Type = "Float"
 	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "10fd546a-7c98-469e-99c8-47c5dee5691d"
+		Id = "873b4c22-9d97-4796-abe1-b50166c6f3df"
+		ToItem = "max_roll_count"
+		ToNode = "b0d7f7d9-b51d-4a37-a9f1-e182e5f39663"
+		Type = "Float"
+	}
 ]
 Groups = [
 	{
@@ -6127,12 +6136,16 @@ Nodes = [
 		]
 		InVariableNames = [
 			"character"
+			"max_roll_count"
 			"state"
 		]
 		InVariables = [
 			{
 				Class = "Stingray.Flow.InVariableUnit"
 				UseMyUnit = true
+			}
+			{
+				Class = "Stingray.Flow.InVariableFloat"
 			}
 			{
 				Class = "Stingray.Flow.InVariableString"
@@ -6955,6 +6968,23 @@ Nodes = [
 		NodeLocation = {
 			X = 1240
 			Y = 1640
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.GetUnitNumericData"
+		Id = "10fd546a-7c98-469e-99c8-47c5dee5691d"
+		Key = {
+			Value = "MaxRollCount"
+		}
+		NodeLocation = {
+			X = 1620
+			Y = -420
+		}
+		Unit = {
+			UseMyUnit = true
 		}
 		Value = {
 		}
