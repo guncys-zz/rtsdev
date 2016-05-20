@@ -6970,80 +6970,6 @@ editor_metadata = {
 		{
 			Cameras = {
 			}
-			Id = "c82cd5fa-0948-4de6-9e37-2e1f4189230b"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "background"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = -54
-				Y = 252
-				Z = -32.6214
-			}
-			Rot = {
-				W = 0
-				X = 0
-				Y = 0
-				Z = 1
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/stage2/background/background"
-		}
-		{
-			Cameras = {
-			}
-			Id = "e3296c8d-348d-45f5-8aa5-3bcc9d4d535a"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "background1"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = -54
-				Y = 701
-				Z = -32.6214
-			}
-			Rot = {
-				W = 0
-				X = 0
-				Y = 0
-				Z = 1
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/stage2/background/background"
-		}
-		{
-			Cameras = {
-			}
 			Id = "e735ce96-4ee7-45a7-8bf7-0fde56f6a592"
 			Layer = "Default"
 			Lights = {
@@ -11961,6 +11887,43 @@ editor_metadata = {
 			ScriptData = {
 			}
 			Type = "content/models/shots/OP/tree/tree_I"
+		}
+		{
+			Cameras = {
+			}
+			Id = "8b25817c-22eb-4275-8231-bfab49ef454c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ST2_BG"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -60.999214
+				Y = 186.530518
+				Z = -31.351358
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1.5
+				Z = 1.5
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/background/ST2_BG"
 		}
 	]
 	Volumes = [
@@ -17464,66 +17427,6 @@ units = [
 		}
 		data = {
 		}
-		id = "c82cd5fa-0948-4de6-9e37-2e1f4189230b"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "background"
-		pos = [
-			-54
-			252
-			-32.6214
-		]
-		rot = [
-			0
-			0
-			1
-			0
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/stage2/background/background"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "e3296c8d-348d-45f5-8aa5-3bcc9d4d535a"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "background1"
-		pos = [
-			-54
-			701
-			-32.6214
-		]
-		rot = [
-			0
-			0
-			1
-			0
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/stage2/background/background"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
 		id = "e735ce96-4ee7-45a7-8bf7-0fde56f6a592"
 		lights = {
 		}
@@ -21508,6 +21411,36 @@ units = [
 			0.889667
 		]
 		type = "content/models/shots/OP/tree/tree_I"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "8b25817c-22eb-4275-8231-bfab49ef454c"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ST2_BG"
+		pos = [
+			-60.999214
+			186.530518
+			-31.351358
+		]
+		rot = [
+			0
+			0
+			1
+			0
+		]
+		scl = [
+			1
+			1.5
+			1.5
+		]
+		type = "content/models/stage2/background/ST2_BG"
 	}
 ]
 volumes = [
