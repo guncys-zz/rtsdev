@@ -164,6 +164,14 @@ editor_metadata = {
 				ToItem = "In"
 				ToNode = "97f511cc-c05e-496c-a8ea-1caa89062322"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "1b6d09e5-61e2-4181-b035-ad656fc2531e"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "f7d69ecc-961d-45d1-899e-a10c87a710b4"
+			}
 		]
 		Groups = [
 			{
@@ -889,7 +897,6 @@ editor_metadata = {
 	LevelReferences = [
 	]
 	LightBakeSettings = {
-		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
 		FilterGain = 20
@@ -907,7 +914,6 @@ editor_metadata = {
 			Z = 1
 		}
 		TexelScale = 10
-		TotalPasses = 256
 		Variance = 0.5
 	}
 	LuaPluginObjects = [
@@ -981,7 +987,6 @@ editor_metadata = {
 					Intensity = 4
 					Material = ""
 					MaterialResource = ""
-					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "directional"
@@ -5272,6 +5277,11 @@ flow = {
 						id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7:0"
 						node = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
 					}
+					{
+						event = 0
+						id = "f7d69ecc-961d-45d1-899e-a10c87a710b4:0"
+						node = "f7d69ecc-961d-45d1-899e-a10c87a710b4"
+					}
 				]
 			}
 			type = "level_shutdown"
@@ -5416,7 +5426,6 @@ units = [
 				falloff_start = 0
 				intensity = 4
 				material = ""
-				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "directional"

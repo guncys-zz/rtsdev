@@ -779,6 +779,13 @@ nodes = [
 					node = "01b6c4cd-3531-48d7-a65a-053cc3b946e6"
 				}
 			]
+			out6 = [
+				{
+					event = 0
+					id = "9d2f2990-ea6a-49cc-95f5-0cf82fb3ad78:0"
+					node = "9d2f2990-ea6a-49cc-95f5-0cf82fb3ad78"
+				}
+			]
 		}
 		type = "sequence"
 	}
@@ -1783,6 +1790,192 @@ nodes = [
 			exp = 2
 			value = null
 		}
+	}
+	{
+		id = "9d2f2990-ea6a-49cc-95f5-0cf82fb3ad78"
+		in_variables = {
+			a = {
+				node = "4780ec65-e2d9-4320-a9d7-b1f831296626"
+				type = "float"
+				variable = "numeric"
+			}
+			b = {
+				type = "float"
+			}
+		}
+		out_events = {
+			equal = [
+				{
+					event = 0
+					id = "7143ecf9-36c8-4032-b69f-a3f009099dc2:0"
+					node = "7143ecf9-36c8-4032-b69f-a3f009099dc2"
+				}
+			]
+			less = [
+				{
+					event = 0
+					id = "cb638ea4-f315-4f69-8ee8-c7cca43a2739:0"
+					node = "cb638ea4-f315-4f69-8ee8-c7cca43a2739"
+				}
+			]
+		}
+		type = "compare_node"
+		variable_values = {
+			a = null
+			b = 2
+		}
+	}
+	{
+		id = "4780ec65-e2d9-4320-a9d7-b1f831296626"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "get_numeric_variable"
+		variable_values = {
+			name = "jumpCount"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		flow_nodes_resource = "core/wwise/wwise"
+		id = "cb638ea4-f315-4f69-8ee8-c7cca43a2739"
+		in_variables = {
+			Existing_Source_Id = {
+				type = "float"
+			}
+			Name = {
+				type = "string"
+			}
+			Position = {
+				type = "vector3"
+			}
+			Unit = {
+				type = "unit"
+			}
+			Unit_Node = {
+				type = "string"
+			}
+		}
+		name = "Wwise Trigger Event"
+		query = false
+		return_values = [
+			{
+				name = "Playing_Id"
+				type = "float"
+			}
+			{
+				name = "Source_Id"
+				type = "float"
+			}
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Existing_Source_Id = null
+			Name = "SE_PPK_jump"
+			Playing_Id = null
+			Position = null
+			Source_Id = null
+			Unit = null
+			Unit_Node = null
+		}
+		variables = [
+			{
+				name = "Unit"
+				type = "unit"
+			}
+			{
+				name = "Position"
+				type = "vector3"
+			}
+			{
+				name = "Name"
+				type = "string"
+			}
+			{
+				name = "Existing_Source_Id"
+				type = "float"
+			}
+			{
+				name = "Unit_Node"
+				type = "string"
+			}
+		]
+	}
+	{
+		flow_nodes_resource = "core/wwise/wwise"
+		id = "7143ecf9-36c8-4032-b69f-a3f009099dc2"
+		in_variables = {
+			Existing_Source_Id = {
+				type = "float"
+			}
+			Name = {
+				type = "string"
+			}
+			Position = {
+				type = "vector3"
+			}
+			Unit = {
+				type = "unit"
+			}
+			Unit_Node = {
+				type = "string"
+			}
+		}
+		name = "Wwise Trigger Event"
+		query = false
+		return_values = [
+			{
+				name = "Playing_Id"
+				type = "float"
+			}
+			{
+				name = "Source_Id"
+				type = "float"
+			}
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Existing_Source_Id = null
+			Name = "SE_PPK_jump2"
+			Playing_Id = null
+			Position = null
+			Source_Id = null
+			Unit = null
+			Unit_Node = null
+		}
+		variables = [
+			{
+				name = "Unit"
+				type = "unit"
+			}
+			{
+				name = "Position"
+				type = "vector3"
+			}
+			{
+				name = "Name"
+				type = "string"
+			}
+			{
+				name = "Existing_Source_Id"
+				type = "float"
+			}
+			{
+				name = "Unit_Node"
+				type = "string"
+			}
+		]
 	}
 	{
 		id = "11111111-2222-3333-4444-555555555555"

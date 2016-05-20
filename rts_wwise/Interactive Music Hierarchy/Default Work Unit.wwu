@@ -1863,6 +1863,62 @@
 						</MusicCue>
 					</CueList>
 				</MusicSegment>
+				<MusicSegment Name="SE_PPK_jump2" ID="{C2110CA3-5E00-4F73-9740-11175D324BBE}" ShortID="908903823">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="se_9" ID="{582C551D-791C-44EA-BD17-3E3B6F2B567F}" ShortID="648537996">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="se_9" ID="{BCBDC264-8F6E-446C-AE15-AE68DA2815D2}" ShortID="895760528">
+									<Language>SFX</Language>
+									<AudioFile>se_9.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{20468DD3-956F-460F-B16A-A5870F20B4E6}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<SequenceList>
+								<MusicTrackSequence Name="" ID="{C0773045-5EFA-41F2-989F-5AA859757CF4}">
+									<ClipList>
+										<MusicClip Name="se_9" ID="{173DD871-A400-4D29-A479-3661515EE3C2}">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="1250"/>
+												<Property Name="FadeInMode" Type="int16" Value="0"/>
+												<Property Name="FadeOutMode" Type="int16" Value="0"/>
+											</PropertyList>
+											<AudioSourceRef Name="se_9" ID="{BCBDC264-8F6E-446C-AE15-AE68DA2815D2}"/>
+										</MusicClip>
+									</ClipList>
+								</MusicTrackSequence>
+							</SequenceList>
+						</MusicTrack>
+					</ChildrenList>
+					<CueList>
+						<MusicCue Name="Entry Cue" ID="{1A1D11A8-1862-4B64-863B-2E7222CD6167}"/>
+						<MusicCue Name="Exit Cue" ID="{D2A8134A-60F7-444A-B76A-0FBEA6A399AC}">
+							<PropertyList>
+								<Property Name="CueType" Type="int16" Value="1"/>
+								<Property Name="TimeMs" Type="Real64" Value="1000"/>
+							</PropertyList>
+						</MusicCue>
+					</CueList>
+				</MusicSegment>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>

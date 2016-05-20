@@ -70,14 +70,6 @@ editor_metadata = {
 			}
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
-				FromNode = "1a0cac56-884e-4b37-92d5-e650aed65bb7"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "e33042e0-5008-47e1-bb3b-699614f30835"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
 				FromItem = "Pressed"
 				FromNode = "abb3ba29-2a11-4732-82c4-d091e15d0cb9"
 				Priority = 0
@@ -187,6 +179,22 @@ editor_metadata = {
 				Priority = 0
 				ToItem = "start_load_csv"
 				ToNode = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "f5b80e33-f7ab-4eff-ae5f-304ed7f45c2b"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "e33042e0-5008-47e1-bb3b-699614f30835"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "1a0cac56-884e-4b37-92d5-e650aed65bb7"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "de2d4a2c-361d-4aed-9584-b8d4fb3d1540"
 			}
 		]
 		Groups = [
@@ -576,8 +584,8 @@ editor_metadata = {
 				IsQuery = false
 				Name = "Wwise Trigger Event"
 				NodeLocation = {
-					X = 541
-					Y = -367
+					X = 400
+					Y = -340
 				}
 				OutEvents = [
 					"Out"
@@ -857,6 +865,82 @@ editor_metadata = {
 					Value = "local"
 				}
 				Title = "Get Numeric Variable"
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Name"
+						Type = "element"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableElement"
+							Type = "wwise_event"
+							Value = "Stop_All"
+						}
+					}
+					{
+						RawName = "Unit"
+						Type = "unit"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableUnit"
+							UseMyUnit = false
+						}
+					}
+					{
+						RawName = "Unit_Node"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+						}
+					}
+					{
+						RawName = "Position"
+						Type = "vector3"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableVector3"
+						}
+					}
+					{
+						RawName = "Existing_Source_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableFloat"
+						}
+					}
+				]
+				Brief = "Posts the given event to the Wwise engine, creating a source if none is provided."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/wwise/wwise"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "de2d4a2c-361d-4aed-9584-b8d4fb3d1540"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Wwise Trigger Event"
+				NodeLocation = {
+					X = 400
+					Y = -560
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+					{
+						RawName = "Playing_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableFloat"
+						}
+					}
+					{
+						RawName = "Source_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableFloat"
+						}
+					}
+				]
 				Width = 160
 			}
 		]
@@ -13312,6 +13396,11 @@ flow = {
 						id = "e1ebe0cb-7c5a-4f11-8575-8d1eed73a7c1:0"
 						node = "e1ebe0cb-7c5a-4f11-8575-8d1eed73a7c1"
 					}
+					{
+						event = 0
+						id = "e33042e0-5008-47e1-bb3b-699614f30835:0"
+						node = "e33042e0-5008-47e1-bb3b-699614f30835"
+					}
 				]
 			}
 			type = "level_loaded"
@@ -13520,14 +13609,14 @@ flow = {
 						node = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
 					}
 					{
-						event = 0
-						id = "e33042e0-5008-47e1-bb3b-699614f30835:0"
-						node = "e33042e0-5008-47e1-bb3b-699614f30835"
-					}
-					{
 						event = 1
 						id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7:1"
 						node = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
+					}
+					{
+						event = 0
+						id = "de2d4a2c-361d-4aed-9584-b8d4fb3d1540:0"
+						node = "de2d4a2c-361d-4aed-9584-b8d4fb3d1540"
 					}
 				]
 			}
@@ -13872,6 +13961,71 @@ flow = {
 				numeric = null
 				scope = "local"
 			}
+		}
+		{
+			flow_nodes_resource = "core/wwise/wwise"
+			id = "de2d4a2c-361d-4aed-9584-b8d4fb3d1540"
+			in_variables = {
+				Existing_Source_Id = {
+					type = "float"
+				}
+				Name = {
+					type = "string"
+				}
+				Position = {
+					type = "vector3"
+				}
+				Unit = {
+					type = "unit"
+				}
+				Unit_Node = {
+					type = "string"
+				}
+			}
+			name = "Wwise Trigger Event"
+			query = false
+			return_values = [
+				{
+					name = "Playing_Id"
+					type = "float"
+				}
+				{
+					name = "Source_Id"
+					type = "float"
+				}
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Existing_Source_Id = null
+				Name = "Stop_All"
+				Playing_Id = null
+				Position = null
+				Source_Id = null
+				Unit = null
+				Unit_Node = null
+			}
+			variables = [
+				{
+					name = "Name"
+					type = "string"
+				}
+				{
+					name = "Unit"
+					type = "unit"
+				}
+				{
+					name = "Unit_Node"
+					type = "string"
+				}
+				{
+					name = "Position"
+					type = "vector3"
+				}
+				{
+					name = "Existing_Source_Id"
+					type = "float"
+				}
+			]
 		}
 	]
 }

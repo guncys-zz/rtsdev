@@ -1179,6 +1179,42 @@ Connections = [
 		ToNode = "f7eda563-a75a-4351-966e-f92f8810e930"
 		Type = "Float"
 	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Equal"
+		FromNode = "9d2f2990-ea6a-49cc-95f5-0cf82fb3ad78"
+		Id = "1dd824bc-fb1c-435c-954a-877ef5484751"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "7143ecf9-36c8-4032-b69f-a3f009099dc2"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Less"
+		FromNode = "9d2f2990-ea6a-49cc-95f5-0cf82fb3ad78"
+		Id = "da843fc1-0d98-44cd-8f0e-8c7423e3c8ca"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "cb638ea4-f315-4f69-8ee8-c7cca43a2739"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out6"
+		FromNode = "765f5f4a-5f85-4e19-b082-705d38f96e8e"
+		Id = "eea2b590-d9be-4bcf-98eb-cf654cfaae6d"
+		Priority = 0
+		ToItem = "Compare"
+		ToNode = "9d2f2990-ea6a-49cc-95f5-0cf82fb3ad78"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Numeric"
+		FromNode = "4780ec65-e2d9-4320-a9d7-b1f831296626"
+		Id = "25b7a191-e706-4afd-9d64-9af2179eebc1"
+		ToItem = "A"
+		ToNode = "9d2f2990-ea6a-49cc-95f5-0cf82fb3ad78"
+		Type = "Float"
+	}
 ]
 Groups = [
 	{
@@ -1359,6 +1395,7 @@ Groups = [
 			"7a7b7962-66f3-40d8-88e2-0f5a22261982"
 			"b9ca14bf-9096-4f6e-b753-c983b4753ae5"
 			"c606e3c5-f719-4428-bc09-1f51778cd369"
+			"7db46120-f7cd-4437-8f26-29ab637e07bf"
 		]
 		Id = "ac15606c-3cd5-4fb6-98c4-f87d80e3e230"
 		Nodes = [
@@ -1419,6 +1456,19 @@ Groups = [
 			"f2e25f16-5725-4c0a-ab34-03494207a2f7"
 		]
 		Title = "ジャンプボタンが速く2回押されたとき"
+	}
+	{
+		Collapsed = false
+		Groups = [
+		]
+		Id = "7db46120-f7cd-4437-8f26-29ab637e07bf"
+		Nodes = [
+			"7143ecf9-36c8-4032-b69f-a3f009099dc2"
+			"9d2f2990-ea6a-49cc-95f5-0cf82fb3ad78"
+			"4780ec65-e2d9-4320-a9d7-b1f831296626"
+			"cb638ea4-f315-4f69-8ee8-c7cca43a2739"
+		]
+		Title = "2段ジャンプサウンド"
 	}
 ]
 Nodes = [
@@ -2939,6 +2989,197 @@ Nodes = [
 		}
 		Value = {
 		}
+		Width = 160
+	}
+	{
+		A = {
+		}
+		B = {
+			Value = 2
+		}
+		Class = "Stingray.Flow.CompareNode"
+		Compare = {
+		}
+		Equal = {
+		}
+		Greater = {
+		}
+		GreaterOrEqual = {
+		}
+		Id = "9d2f2990-ea6a-49cc-95f5-0cf82fb3ad78"
+		Less = {
+		}
+		LessOrEqual = {
+		}
+		NodeLocation = {
+			X = 3160
+			Y = 3480
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.GetNumericVariable"
+		Id = "4780ec65-e2d9-4320-a9d7-b1f831296626"
+		Name = {
+			Value = "jumpCount"
+		}
+		NodeLocation = {
+			X = 2940
+			Y = 3560
+		}
+		Numeric = {
+		}
+		Scope = {
+			Value = "local"
+		}
+		Width = 160
+	}
+	{
+		Arguments = [
+			{
+				RawName = "Unit"
+				Type = "unit"
+				Variable = {
+					Class = "Stingray.Flow.InVariableUnit"
+					UseMyUnit = false
+				}
+			}
+			{
+				RawName = "Position"
+				Type = "vector3"
+				Variable = {
+					Class = "Stingray.Flow.InVariableVector3"
+				}
+			}
+			{
+				RawName = "Name"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.InVariableString"
+					Value = "SE_PPK_jump"
+				}
+			}
+			{
+				RawName = "Existing_Source_Id"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Flow.InVariableFloat"
+				}
+			}
+			{
+				RawName = "Unit_Node"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.InVariableString"
+				}
+			}
+		]
+		Class = "Stingray.Flow.CustomScriptNode"
+		FlowNodesResource = "core/wwise/wwise"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "cb638ea4-f315-4f69-8ee8-c7cca43a2739"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "Wwise Trigger Event"
+		NodeLocation = {
+			X = 3560
+			Y = 3480
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = [
+			{
+				RawName = "Playing_Id"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Flow.OutVariableFloat"
+				}
+			}
+			{
+				RawName = "Source_Id"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Flow.OutVariableFloat"
+				}
+			}
+		]
+		Width = 160
+	}
+	{
+		Arguments = [
+			{
+				RawName = "Unit"
+				Type = "unit"
+				Variable = {
+					Class = "Stingray.Flow.InVariableUnit"
+					UseMyUnit = false
+				}
+			}
+			{
+				RawName = "Position"
+				Type = "vector3"
+				Variable = {
+					Class = "Stingray.Flow.InVariableVector3"
+				}
+			}
+			{
+				RawName = "Name"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.InVariableString"
+					Value = "SE_PPK_jump2"
+				}
+			}
+			{
+				RawName = "Existing_Source_Id"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Flow.InVariableFloat"
+				}
+			}
+			{
+				RawName = "Unit_Node"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.InVariableString"
+				}
+			}
+		]
+		Class = "Stingray.Flow.CustomScriptNode"
+		FlowNodesResource = "core/wwise/wwise"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "7143ecf9-36c8-4032-b69f-a3f009099dc2"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "Wwise Trigger Event"
+		NodeLocation = {
+			X = 3560
+			Y = 3700
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = [
+			{
+				RawName = "Playing_Id"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Flow.OutVariableFloat"
+				}
+			}
+			{
+				RawName = "Source_Id"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Flow.OutVariableFloat"
+				}
+			}
+		]
 		Width = 160
 	}
 ]

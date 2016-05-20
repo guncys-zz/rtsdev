@@ -157,6 +157,14 @@ editor_metadata = {
 				ToItem = "destroy units CSV file"
 				ToNode = "90165171-fc61-4beb-80e4-01572a1e7628"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "7b4da74e-f9e8-45b9-867b-87c4533ddefa"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "56124abf-0c14-4df3-8ca6-32f17ddde406"
+			}
 		]
 		Groups = [
 			{
@@ -17280,6 +17288,11 @@ flow = {
 						event = 0
 						id = "90165171-fc61-4beb-80e4-01572a1e7628:0"
 						node = "90165171-fc61-4beb-80e4-01572a1e7628"
+					}
+					{
+						event = 0
+						id = "56124abf-0c14-4df3-8ca6-32f17ddde406:0"
+						node = "56124abf-0c14-4df3-8ca6-32f17ddde406"
 					}
 				]
 			}

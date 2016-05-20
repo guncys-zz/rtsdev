@@ -49,6 +49,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="SE_PPK_jump2" ID="{533EB566-203B-405A-9272-5A97E5E4F5F6}">
+							<ChildrenList>
+								<Action Name="Play" ID="{2C98C6AB-F1DF-4B3D-A9E0-E2152CE5E0A0}" ShortID="141662796" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{76E84BA7-A775-4413-932B-01FFA0B43F24}" Global="false">
+											<ObjectRef Name="SE_PPK_jump2" ID="{C2110CA3-5E00-4F73-9740-11175D324BBE}" WorkUnitID="{82C69708-36C2-4538-9933-8E6B87A3A396}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="VO" ID="{B83884E8-4D1A-4BC6-AA1E-7F006C86ADF8}" ShortID="449022605"/>
