@@ -24,10 +24,12 @@
 				<Event Id="4209880378" Name="SE_PPK_jump" DurationType="OneShot" DurationMin="2.000000" DurationMax="2.000000"/>
 				<Event Id="1042788988" Name="SE_PPK_jump2" DurationType="OneShot" DurationMin="1.250000" DurationMax="1.250000"/>
 				<Event Id="1592542803" Name="SE_PPK_roll" DurationType="OneShot" DurationMin="1.250000" DurationMax="1.250000"/>
+				<Event Id="1610742463" Name="SE_UI_OK" DurationType="OneShot" DurationMin="2.125000" DurationMax="2.125000"/>
 				<Event Id="3933739290" Name="Set_State_Hurry" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2630068541" Name="Set_State_Normal" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4052737657" Name="Set_Switch_S1" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4052737659" Name="Set_Switch_S3" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2549073309" Name="Set_Voice_Volume" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1577926306" Name="sfx_spawn_sound" DurationType="OneShot" DurationMin="2.767347" DurationMax="2.767347"/>
 				<Event Id="452547817" Name="Stop_All" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
@@ -47,6 +49,10 @@
 				<File Id="407460578" Language="SFX">
 					<ShortName>bgm_3_1.wav</ShortName>
 					<Path>SFX\bgm_3_1_6BBC2BAA.wem</Path>
+				</File>
+				<File Id="434750973" Language="SFX">
+					<ShortName>se_7.wav</ShortName>
+					<Path>SFX\se_7_DB50BAB0.wem</Path>
 				</File>
 				<File Id="570067830" Language="SFX">
 					<ShortName>se_3.wav</ShortName>

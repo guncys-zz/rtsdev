@@ -65,6 +65,15 @@ local function toggle_audio_off()
 end
 ]]--
 
+-- 決定音鳴らす
+local function play_se_ok()
+	if stingray.Wwise then
+		stingray.Wwise.load_bank("content/audio/default")
+		local wwise_world = stingray.Wwise.wwise_world(SimpleProject.world)
+		stingray.WwiseWorld.trigger_event(wwise_world, "SE_UI_OK")
+	end
+end
+
 --project.luaでlevel名がmainmenuの時に呼ばれる
 --Mainmenuの呼び出し
 function MainMenu.start()
@@ -208,6 +217,7 @@ end
 local function perform_action()
 	-- Load empty level
 	if MainMenu.action == "start" then
+	    play_se_ok() -- 決定音
 		MainMenu.shutdown()
 		SimpleProject.change_level(Project.level_names.test_cinematics)    --stage1に遷移
 	-- Exit the program

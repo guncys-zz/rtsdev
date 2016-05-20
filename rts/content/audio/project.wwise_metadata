@@ -16,10 +16,12 @@ banks = {
 			"SE_PPK_jump"
 			"SE_PPK_jump2"
 			"SE_PPK_roll"
+			"SE_UI_OK"
 			"Set_State_Hurry"
 			"Set_State_Normal"
 			"Set_Switch_S1"
 			"Set_Switch_S3"
+			"Set_Voice_Volume"
 			"sfx_spawn_sound"
 			"Stop_All"
 		]
@@ -125,6 +127,13 @@ events = {
 		duration_type = "OneShot"
 		positioning = "2D"
 	}
+	SE_UI_OK = {
+		attenuation_max = 0
+		duration_max = 2.125
+		duration_min = 2.125
+		duration_type = "OneShot"
+		positioning = "2D"
+	}
 	Set_State_Hurry = {
 		attenuation_max = 0
 		duration_max = 0
@@ -147,6 +156,13 @@ events = {
 		positioning = "3D"
 	}
 	Set_Switch_S3 = {
+		attenuation_max = 0
+		duration_max = 0
+		duration_min = 0
+		duration_type = "OneShot"
+		positioning = "3D"
+	}
+	Set_Voice_Volume = {
 		attenuation_max = 0
 		duration_max = 0
 		duration_min = 0

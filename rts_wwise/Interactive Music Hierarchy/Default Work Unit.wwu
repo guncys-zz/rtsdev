@@ -310,14 +310,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="bgm_2_1" ID="{B9BD191E-D0A8-41BB-BCED-B619142C9F44}" ShortID="173347402">
+										<MusicTrack Name="bgm_2_1" ID="{D378CDF5-2742-40D3-BBE4-3238FAED3D4F}" ShortID="70790562">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="bgm_2_1" ID="{85D83C98-ACF8-4FC9-9484-B265D933EF67}" ShortID="627141123">
+												<AudioFileSource Name="bgm_2_1" ID="{1D74C85E-156A-49FC-B1B8-22B0667C15A8}" ShortID="260678896">
 													<Language>SFX</Language>
 													<AudioFile>bgm_2_1 .wav</AudioFile>
 													<ConvertedFileIDList>
@@ -326,7 +326,7 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
-												<MusicTransition Name="Root" ID="{1E1CA04D-9AD0-477E-AA23-CB43A7F2B8C3}">
+												<MusicTransition Name="Root" ID="{B6F4C0C4-CB99-4928-83E4-E2EF7E1EA926}">
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
@@ -334,15 +334,15 @@
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{A5B8B194-1400-4A77-885D-BE2D975A5369}">
+												<MusicTrackSequence Name="" ID="{0EA38FE8-2550-4EA5-A77A-838F9FE6509C}">
 													<ClipList>
-														<MusicClip Name="bgm_2_1" ID="{2B1C628A-E437-4104-B913-6B985454271D}">
+														<MusicClip Name="bgm_2_1" ID="{37851628-F3A1-413F-8715-0C5E235D94AD}">
 															<PropertyList>
 																<Property Name="EndTrimOffset" Type="Real64" Value="85479.4583333333"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
-															<AudioSourceRef Name="bgm_2_1" ID="{85D83C98-ACF8-4FC9-9484-B265D933EF67}"/>
+															<AudioSourceRef Name="bgm_2_1" ID="{1D74C85E-156A-49FC-B1B8-22B0667C15A8}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -375,6 +375,10 @@
 							</TransitionList>
 							<Playlist>
 								<MusicPlaylistItem Name="" ID="{F6E1AB4E-636B-488A-A5C7-BAAEE7A23AA5}" ShortID="585465184">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlayMode" Type="int16" Value="1"/>
+									</PropertyList>
 									<ChildrenList>
 										<MusicPlaylistItem Name="" ID="{3A31943A-BF90-4F43-8142-83A94834A5EA}" ShortID="784758792">
 											<PropertyList>

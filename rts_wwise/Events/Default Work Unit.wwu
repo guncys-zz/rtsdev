@@ -60,6 +60,18 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="SE_UI_OK" ID="{C98F28A9-613B-40EE-9280-0587E0C5A5C7}"/>
+						<Event Name="Set_Voice_Volume" ID="{3DFEC3E5-7D65-4725-92FE-FA25D6422362}">
+							<ChildrenList>
+								<Action Name="Mute" ID="{D747F496-2154-46FC-A565-4F0B008E5EDC}" ShortID="930061942" Type="Mute" Scope="One" Global="true">
+									<ElementList>
+										<Element ID="{6B4EA345-4A9C-41B3-BF4A-7BF41B2C2142}" Global="true">
+											<ObjectRef Name="MUSIC" ID="{C587D4AB-926A-442A-89DF-D35843B37FD0}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="VO" ID="{B83884E8-4D1A-4BC6-AA1E-7F006C86ADF8}" ShortID="449022605"/>

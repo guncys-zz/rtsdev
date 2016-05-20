@@ -362,68 +362,25 @@
 								<ActiveSource Name="bgm_5_2" ID="{7E997D3A-566A-44F9-848F-35E96A136713}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<SwitchContainer Name="bgm_ctnr_1" ID="{0F4939D0-C219-4F1B-BC1A-1A8D1E81C6EA}" ShortID="667744811">
+						<Sound Name="bgm_2_2" ID="{18CAF2B3-E34B-4980-BE5D-8F50B7329A25}" ShortID="277737155" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+									<ObjectRef Name="MUSIC" ID="{FD57498F-FB4D-4C36-B47F-573B05BF493A}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="bgm_2_1" ID="{4E053C92-5E24-4655-97A0-C1934E78D96C}" ShortID="375146092" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="MUSIC" ID="{FD57498F-FB4D-4C36-B47F-573B05BF493A}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="bgm_2_1" ID="{A95BBD14-6980-421E-A061-6EE89B2D5A68}" ShortID="327324663">
-											<Language>SFX</Language>
-											<AudioFile>bgm_2_1 .wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="bgm_2_1" ID="{A95BBD14-6980-421E-A061-6EE89B2D5A68}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="bgm_2_2" ID="{18CAF2B3-E34B-4980-BE5D-8F50B7329A25}" ShortID="277737155" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="MUSIC" ID="{FD57498F-FB4D-4C36-B47F-573B05BF493A}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="bgm_2_2" ID="{09FF3AAE-64BE-4288-ACCB-800C1D0CDC3B}" ShortID="204878764">
-											<Language>SFX</Language>
-											<AudioFile>bgm_2_2.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="bgm_2_2" ID="{09FF3AAE-64BE-4288-ACCB-800C1D0CDC3B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								<AudioFileSource Name="bgm_2_2" ID="{09FF3AAE-64BE-4288-ACCB-800C1D0CDC3B}" ShortID="204878764">
+									<Language>SFX</Language>
+									<AudioFile>bgm_2_2.wav</AudioFile>
+								</AudioFileSource>
 							</ChildrenList>
-							<GroupingInfo>
-								<GroupRef Name="bgm_group_stage" ID="{077D0D73-25E4-4B05-B04E-B7AF6E8E6733}"/>
-								<DefaultSwitchRef Name="s_1" ID="{2F7FCF0D-EAD6-499D-B8A0-7EACC3F01EEF}"/>
-								<GroupingBehaviorList>
-									<GroupingBehavior>
-										<ItemRef Name="bgm_2_1" ID="{4E053C92-5E24-4655-97A0-C1934E78D96C}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="bgm_2_2" ID="{18CAF2B3-E34B-4980-BE5D-8F50B7329A25}"/>
-									</GroupingBehavior>
-								</GroupingBehaviorList>
-							</GroupingInfo>
-						</SwitchContainer>
+							<ActiveSourceList>
+								<ActiveSource Name="bgm_2_2" ID="{09FF3AAE-64BE-4288-ACCB-800C1D0CDC3B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
