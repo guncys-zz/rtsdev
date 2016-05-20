@@ -77,54 +77,6 @@ editor_metadata = {
 				ToNode = "a4fbfe5e-c964-4e18-91e3-8db9933c04a5"
 			}
 			{
-				Class = "Stingray.Foundation.Flow.VariableConnection"
-				FromItem = "Unit"
-				FromNode = "29beef00-a9a2-4383-9095-daa70a7066ac"
-				ToItem = "Unit"
-				ToNode = "7fa54a92-f760-43a5-aec3-88d10cd97239"
-				Type = "Unit"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.VariableConnection"
-				FromItem = "Value"
-				FromNode = "7fa54a92-f760-43a5-aec3-88d10cd97239"
-				ToItem = "A"
-				ToNode = "e796aadc-6c49-4d6c-a4cc-d8a83fa5ea1f"
-				Type = "Float"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.VariableConnection"
-				FromItem = "Value"
-				FromNode = "e796aadc-6c49-4d6c-a4cc-d8a83fa5ea1f"
-				ToItem = "A"
-				ToNode = "8f41650c-5877-41b2-9191-19fd0d12b4cc"
-				Type = "Bool"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.VariableConnection"
-				FromItem = "Value"
-				FromNode = "7fa54a92-f760-43a5-aec3-88d10cd97239"
-				ToItem = "A"
-				ToNode = "c525bfe8-39a8-4d30-b3d3-f988b79c5c52"
-				Type = "Float"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.VariableConnection"
-				FromItem = "Value"
-				FromNode = "c525bfe8-39a8-4d30-b3d3-f988b79c5c52"
-				ToItem = "B"
-				ToNode = "8f41650c-5877-41b2-9191-19fd0d12b4cc"
-				Type = "Bool"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.VariableConnection"
-				FromItem = "Value"
-				FromNode = "8f41650c-5877-41b2-9191-19fd0d12b4cc"
-				ToItem = "Condition"
-				ToNode = "8efe974e-49fc-4cf6-8197-c9cd57e10e4f"
-				Type = "Bool"
-			}
-			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
 				FromItem = "True"
 				FromNode = "8efe974e-49fc-4cf6-8197-c9cd57e10e4f"
@@ -157,14 +109,6 @@ editor_metadata = {
 				ToNode = "4ecdeb84-04d4-4622-a07f-963c9438a8e3"
 			}
 			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out1"
-				FromNode = "0dd4fdf4-4a16-41de-98a3-99dbe3cc1340"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "8efe974e-49fc-4cf6-8197-c9cd57e10e4f"
-			}
-			{
 				Class = "Stingray.Foundation.Flow.VariableConnection"
 				FromItem = "Numeric"
 				FromNode = "f0f16c25-707a-4477-b6b9-64e87d8105f5"
@@ -195,6 +139,78 @@ editor_metadata = {
 				Priority = 0
 				ToItem = "In"
 				ToNode = "de2d4a2c-361d-4aed-9584-b8d4fb3d1540"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "29beef00-a9a2-4383-9095-daa70a7066ac"
+				ToItem = "Unit"
+				ToNode = "86aa8051-68f8-40e8-b81f-3790487406b3"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Actor"
+				FromNode = "86aa8051-68f8-40e8-b81f-3790487406b3"
+				ToItem = "Actor"
+				ToNode = "1e9bd6de-ae79-4e71-8b90-442a20c1280a"
+				Type = "Actor"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "1e9bd6de-ae79-4e71-8b90-442a20c1280a"
+				ToItem = "Unit"
+				ToNode = "e8e33851-a843-441f-9917-172555e79fad"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "e8e33851-a843-441f-9917-172555e79fad"
+				ToItem = "Condition"
+				ToNode = "ebe571fd-227e-40b5-941a-65fd3077e865"
+				Type = "Bool"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "1e9bd6de-ae79-4e71-8b90-442a20c1280a"
+				ToItem = "Unit"
+				ToNode = "c486be60-2999-431b-8819-486a434c27ff"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "c486be60-2999-431b-8819-486a434c27ff"
+				ToItem = "Condition"
+				ToNode = "8efe974e-49fc-4cf6-8197-c9cd57e10e4f"
+				Type = "Bool"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "True"
+				FromNode = "ebe571fd-227e-40b5-941a-65fd3077e865"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "8efe974e-49fc-4cf6-8197-c9cd57e10e4f"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out1"
+				FromNode = "0dd4fdf4-4a16-41de-98a3-99dbe3cc1340"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "ebe571fd-227e-40b5-941a-65fd3077e865"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "False"
+				FromNode = "ebe571fd-227e-40b5-941a-65fd3077e865"
+				Priority = 0
+				ToItem = "Set"
+				ToNode = "0094de48-504b-4c41-9176-5ef4b49398d9"
 			}
 		]
 		Groups = [
@@ -240,15 +256,16 @@ editor_metadata = {
 				]
 				Id = "303aad72-23af-45c1-bd41-f1e5c7ef5d2f"
 				Nodes = [
-					"e796aadc-6c49-4d6c-a4cc-d8a83fa5ea1f"
 					"0094de48-504b-4c41-9176-5ef4b49398d9"
 					"8efe974e-49fc-4cf6-8197-c9cd57e10e4f"
 					"d863440b-e7ea-4be0-ac6f-8b0195f9c657"
-					"8f41650c-5877-41b2-9191-19fd0d12b4cc"
-					"c525bfe8-39a8-4d30-b3d3-f988b79c5c52"
-					"7fa54a92-f760-43a5-aec3-88d10cd97239"
+					"c486be60-2999-431b-8819-486a434c27ff"
+					"ebe571fd-227e-40b5-941a-65fd3077e865"
+					"e8e33851-a843-441f-9917-172555e79fad"
+					"1e9bd6de-ae79-4e71-8b90-442a20c1280a"
+					"86aa8051-68f8-40e8-b81f-3790487406b3"
 				]
-				Title = "特定の地点でCameraの挙動を変化させる"
+				Title = "特定のモデルにコリジョンしたらカメラの挙動を変える"
 			}
 		]
 		Nodes = [
@@ -685,78 +702,6 @@ editor_metadata = {
 				Width = 340
 			}
 			{
-				Brief = "Returns the current numeric value of the specified unit script data."
-				Class = "Stingray.Foundation.Flow.GetUnitNumericData"
-				Id = "7fa54a92-f760-43a5-aec3-88d10cd97239"
-				Key = {
-					Value = "Distance"
-				}
-				NodeLocation = {
-					X = 40
-					Y = 560
-				}
-				Title = "Get Unit Numeric Data"
-				Unit = {
-					UseMyUnit = false
-				}
-				Value = {
-				}
-				Width = 160
-			}
-			{
-				A = {
-				}
-				B = {
-					Value = 910
-				}
-				Brief = "Returns a boolean based on whether A is greater than B."
-				Class = "Stingray.Foundation.Flow.NumericGreaterThanNumeric"
-				Id = "e796aadc-6c49-4d6c-a4cc-d8a83fa5ea1f"
-				NodeLocation = {
-					X = 280
-					Y = 500
-				}
-				Title = "Greater Than"
-				Value = {
-				}
-				Width = 160
-			}
-			{
-				A = {
-				}
-				B = {
-				}
-				Brief = "Logical operation that outputs true if both inputs match. Returns false if they differ."
-				Class = "Stingray.Foundation.Flow.BooleanAnd"
-				Id = "8f41650c-5877-41b2-9191-19fd0d12b4cc"
-				NodeLocation = {
-					X = 480
-					Y = 560
-				}
-				Title = "And"
-				Value = {
-				}
-				Width = 160
-			}
-			{
-				A = {
-				}
-				B = {
-					Value = 935
-				}
-				Brief = "Returns a boolean based on whether A is less than B."
-				Class = "Stingray.Foundation.Flow.NumericLessThanNumeric"
-				Id = "c525bfe8-39a8-4d30-b3d3-f988b79c5c52"
-				NodeLocation = {
-					X = 280
-					Y = 600
-				}
-				Title = "Less Than"
-				Value = {
-				}
-				Width = 160
-			}
-			{
 				Brief = "Sets a variable to the specified numeric value."
 				Class = "Stingray.Foundation.Flow.SetNumericVariable"
 				Id = "d863440b-e7ea-4be0-ac6f-8b0195f9c657"
@@ -764,8 +709,8 @@ editor_metadata = {
 					Value = "height_scale"
 				}
 				NodeLocation = {
-					X = 920
-					Y = 560
+					X = 1540
+					Y = 580
 				}
 				Numeric = {
 					Value = 1
@@ -789,8 +734,8 @@ editor_metadata = {
 				In = {
 				}
 				NodeLocation = {
-					X = 620
-					Y = 700
+					X = 1100
+					Y = 620
 				}
 				Title = "Branch"
 				True = {
@@ -805,8 +750,8 @@ editor_metadata = {
 					Value = "height_scale"
 				}
 				NodeLocation = {
-					X = 920
-					Y = 680
+					X = 1540
+					Y = 720
 				}
 				Numeric = {
 					Value = 0
@@ -941,6 +886,96 @@ editor_metadata = {
 						}
 					}
 				]
+				Width = 160
+			}
+			{
+				Actor = {
+				}
+				Brief = "Returns the actor, if any, that the mover is standing upon."
+				Class = "Stingray.Foundation.Flow.GetActorCollidingBelowMover"
+				Id = "86aa8051-68f8-40e8-b81f-3790487406b3"
+				Mover = {
+				}
+				NodeLocation = {
+					X = 260
+					Y = 500
+				}
+				Title = "Get Actor Colliding Below Mover"
+				Unit = {
+					UseMyUnit = false
+				}
+				Width = 160
+			}
+			{
+				Actor = {
+				}
+				Brief = "Returns the unit that owns the specified actor."
+				Class = "Stingray.Foundation.Flow.GetActorUnit"
+				Id = "1e9bd6de-ae79-4e71-8b90-442a20c1280a"
+				NodeLocation = {
+					X = 480
+					Y = 600
+				}
+				Title = "Get Actor Unit"
+				Unit = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Indicates whether or not the unit is a resource of the specified type."
+				Class = "Stingray.Foundation.Flow.UnitIsOfType"
+				Id = "e8e33851-a843-441f-9917-172555e79fad"
+				NodeLocation = {
+					X = 620
+					Y = 740
+				}
+				Title = "Unit Is Of Type"
+				Type = {
+					Value = "content/models/stage4/ConstructionSite"
+				}
+				Unit = {
+					UseMyUnit = false
+				}
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Creates a decision based data flow from a single boolean condition."
+				Class = "Stingray.Foundation.Flow.Branch"
+				Condition = {
+				}
+				False = {
+				}
+				Id = "ebe571fd-227e-40b5-941a-65fd3077e865"
+				In = {
+				}
+				NodeLocation = {
+					X = 880
+					Y = 800
+				}
+				Title = "Branch"
+				True = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Returns the current boolean value of the specified unit script data."
+				Class = "Stingray.Foundation.Flow.GetUnitBoolData"
+				Id = "c486be60-2999-431b-8819-486a434c27ff"
+				Key = {
+					Value = "IsSlope"
+				}
+				NodeLocation = {
+					X = 880
+					Y = 680
+				}
+				Title = "Get Unit Bool Data"
+				Unit = {
+					UseMyUnit = false
+				}
+				Value = {
+				}
 				Width = 160
 			}
 		]
@@ -1680,6 +1715,7 @@ editor_metadata = {
 				Z = 1.223148
 			}
 			ScriptData = {
+				IsSlope = true
 			}
 			Type = "content/models/stage4/ConstructionSite"
 		}
@@ -13753,104 +13789,6 @@ flow = {
 			]
 		}
 		{
-			id = "7fa54a92-f760-43a5-aec3-88d10cd97239"
-			in_variables = {
-				key = {
-					type = "string"
-				}
-				unit = {
-					node = "29beef00-a9a2-4383-9095-daa70a7066ac"
-					type = "unit"
-					variable = "unit"
-				}
-			}
-			out_variables = {
-				value = {
-					type = "float"
-				}
-			}
-			type = "get_unit_numeric_data"
-			variable_values = {
-				key = "Distance"
-				unit = null
-				value = null
-			}
-		}
-		{
-			id = "e796aadc-6c49-4d6c-a4cc-d8a83fa5ea1f"
-			in_variables = {
-				a = {
-					node = "7fa54a92-f760-43a5-aec3-88d10cd97239"
-					type = "float"
-					variable = "value"
-				}
-				b = {
-					type = "float"
-				}
-			}
-			out_variables = {
-				value = {
-					type = "bool"
-				}
-			}
-			type = "numeric_greater_than_numeric"
-			variable_values = {
-				a = null
-				b = 910
-				value = null
-			}
-		}
-		{
-			id = "8f41650c-5877-41b2-9191-19fd0d12b4cc"
-			in_variables = {
-				a = {
-					node = "e796aadc-6c49-4d6c-a4cc-d8a83fa5ea1f"
-					type = "bool"
-					variable = "value"
-				}
-				b = {
-					node = "c525bfe8-39a8-4d30-b3d3-f988b79c5c52"
-					type = "bool"
-					variable = "value"
-				}
-			}
-			out_variables = {
-				value = {
-					type = "bool"
-				}
-			}
-			type = "boolean_and"
-			variable_values = {
-				a = null
-				b = null
-				value = null
-			}
-		}
-		{
-			id = "c525bfe8-39a8-4d30-b3d3-f988b79c5c52"
-			in_variables = {
-				a = {
-					node = "7fa54a92-f760-43a5-aec3-88d10cd97239"
-					type = "float"
-					variable = "value"
-				}
-				b = {
-					type = "float"
-				}
-			}
-			out_variables = {
-				value = {
-					type = "bool"
-				}
-			}
-			type = "numeric_less_than_numeric"
-			variable_values = {
-				a = null
-				b = 935
-				value = null
-			}
-		}
-		{
 			id = "d863440b-e7ea-4be0-ac6f-8b0195f9c657"
 			in_variables = {
 				name = {
@@ -13874,7 +13812,7 @@ flow = {
 			id = "8efe974e-49fc-4cf6-8197-c9cd57e10e4f"
 			in_variables = {
 				condition = {
-					node = "8f41650c-5877-41b2-9191-19fd0d12b4cc"
+					node = "c486be60-2999-431b-8819-486a434c27ff"
 					type = "bool"
 					variable = "value"
 				}
@@ -13926,8 +13864,8 @@ flow = {
 				out1 = [
 					{
 						event = 0
-						id = "8efe974e-49fc-4cf6-8197-c9cd57e10e4f:0"
-						node = "8efe974e-49fc-4cf6-8197-c9cd57e10e4f"
+						id = "ebe571fd-227e-40b5-941a-65fd3077e865:0"
+						node = "ebe571fd-227e-40b5-941a-65fd3077e865"
 					}
 				]
 				out2 = [
@@ -14026,6 +13964,128 @@ flow = {
 					type = "float"
 				}
 			]
+		}
+		{
+			id = "86aa8051-68f8-40e8-b81f-3790487406b3"
+			in_variables = {
+				mover = {
+					type = "mover"
+				}
+				unit = {
+					node = "29beef00-a9a2-4383-9095-daa70a7066ac"
+					type = "unit"
+					variable = "unit"
+				}
+			}
+			out_variables = {
+				actor = {
+					type = "actor"
+				}
+			}
+			type = "get_actor_colliding_below_mover"
+			variable_values = {
+				actor = null
+				mover = null
+				unit = null
+			}
+		}
+		{
+			id = "1e9bd6de-ae79-4e71-8b90-442a20c1280a"
+			in_variables = {
+				actor = {
+					node = "86aa8051-68f8-40e8-b81f-3790487406b3"
+					type = "actor"
+					variable = "actor"
+				}
+			}
+			out_variables = {
+				unit = {
+					type = "unit"
+				}
+			}
+			type = "get_actor_unit"
+			variable_values = {
+				actor = null
+				unit = null
+			}
+		}
+		{
+			id = "e8e33851-a843-441f-9917-172555e79fad"
+			in_variables = {
+				type = {
+					type = "string"
+				}
+				unit = {
+					node = "1e9bd6de-ae79-4e71-8b90-442a20c1280a"
+					type = "unit"
+					variable = "unit"
+				}
+			}
+			out_variables = {
+				value = {
+					type = "bool"
+				}
+			}
+			type = "unit_is_of_type"
+			variable_values = {
+				type = "content/models/stage4/ConstructionSite"
+				unit = null
+				value = null
+			}
+		}
+		{
+			id = "ebe571fd-227e-40b5-941a-65fd3077e865"
+			in_variables = {
+				condition = {
+					node = "e8e33851-a843-441f-9917-172555e79fad"
+					type = "bool"
+					variable = "value"
+				}
+			}
+			out_events = {
+				false = [
+					{
+						event = 0
+						id = "0094de48-504b-4c41-9176-5ef4b49398d9:0"
+						node = "0094de48-504b-4c41-9176-5ef4b49398d9"
+					}
+				]
+				true = [
+					{
+						event = 0
+						id = "8efe974e-49fc-4cf6-8197-c9cd57e10e4f:0"
+						node = "8efe974e-49fc-4cf6-8197-c9cd57e10e4f"
+					}
+				]
+			}
+			type = "branch"
+			variable_values = {
+				condition = null
+			}
+		}
+		{
+			id = "c486be60-2999-431b-8819-486a434c27ff"
+			in_variables = {
+				key = {
+					type = "string"
+				}
+				unit = {
+					node = "1e9bd6de-ae79-4e71-8b90-442a20c1280a"
+					type = "unit"
+					variable = "unit"
+				}
+			}
+			out_variables = {
+				value = {
+					type = "bool"
+				}
+			}
+			type = "get_unit_bool_data"
+			variable_values = {
+				key = "IsSlope"
+				unit = null
+				value = null
+			}
 		}
 	]
 }
@@ -14568,6 +14628,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			IsSlope = true
 		}
 		id = "e789274c-c700-4e1e-a3ed-696a3246e090"
 		lights = {
