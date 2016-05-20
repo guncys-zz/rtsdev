@@ -256,6 +256,14 @@ editor_metadata = {
 				ToItem = "In"
 				ToNode = "29a09db9-9d86-4dd9-a531-21326d3bdfb9"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "1126617d-0d9d-46f7-80d3-dbf53e70e23f"
+				ToItem = "Time"
+				ToNode = "f70dedde-f04a-4165-8001-08944cec4190"
+				Type = "Float"
+			}
 		]
 		Groups = [
 			{
@@ -1015,6 +1023,53 @@ editor_metadata = {
 					Value = 3
 				}
 				Title = "Delay"
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Time"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableFloat"
+						}
+					}
+				]
+				Brief = ""
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "script/custom_nodes/environment"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "f70dedde-f04a-4165-8001-08944cec4190"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Close Vignett"
+				NodeLocation = {
+					X = 480
+					Y = -580
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
+			{
+				Brief = "Creates a numeric constant."
+				Class = "Stingray.Foundation.Flow.NumericData"
+				Id = "1126617d-0d9d-46f7-80d3-dbf53e70e23f"
+				NodeLocation = {
+					X = 260
+					Y = -780
+				}
+				Set = {
+					Value = 1
+				}
+				Title = "Numeric Data"
+				Value = {
+				}
 				Width = 160
 			}
 		]
@@ -7794,6 +7849,44 @@ flow = {
 			type = "delay"
 			variable_values = {
 				time = 3
+			}
+		}
+		{
+			flow_nodes_resource = "script/custom_nodes/environment"
+			id = "f70dedde-f04a-4165-8001-08944cec4190"
+			in_variables = {
+				Time = {
+					node = "1126617d-0d9d-46f7-80d3-dbf53e70e23f"
+					type = "float"
+					variable = "value"
+				}
+			}
+			name = "Close Vignett"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Time = null
+			}
+			variables = [
+				{
+					name = "Time"
+					type = "float"
+				}
+			]
+		}
+		{
+			id = "1126617d-0d9d-46f7-80d3-dbf53e70e23f"
+			out_variables = {
+				value = {
+					type = "float"
+				}
+			}
+			type = "numeric_data"
+			variable_values = {
+				set = 1
+				value = null
 			}
 		}
 	]

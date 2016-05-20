@@ -1,0 +1,42 @@
+require 'core/appkit/lua/class'
+require 'core/appkit/lua/app'
+
+Environment = Environment or{}
+
+function Environment.close_vignett(time)
+
+    local data_component_manager = stingray.EntityManager.data_component(SimpleProject.world)
+    local all_entity_handles = stingray.World.entities(SimpleProject.world)
+
+    -- iterate through all entities in the world.
+    for _, entity_handle in ipairs(all_entity_handles) do
+
+        -- the shading environment is a data component, so we retrieve all data components
+        -- owned by this entity and iterate through them.
+        -- instances() returns the values on the stack, so we wrap the call in {} to get an array.
+        local all_data_component_handles = {stingray.DataComponent.instances(data_component_manager, entity_handle)}
+        for _, data_component_handle in ipairs(all_data_component_handles) do
+
+            -- Test whether or not this data component is the shading environment component
+            -- that we want to modify.
+            -- Missing properties return nil, so this is "safe".
+            local shading_environment_mapping_resource_name = stingray.DataComponent.get_property(data_component_manager, entity_handle, data_component_handle, {"shading_environment_mapping"})
+            if shading_environment_mapping_resource_name == "core/stingray_renderer/shading_environment_components/exposure" then
+                if (shading_env_entity == nil) then
+                    -- remember the shading environment entity.
+                    shading_env_entity = entity_handle
+                end
+                exposure_component = data_component_handle;
+                -- now we have the shading environment entity and the component, we can set the
+                -- value we want for the property.
+                exposure_val = 3.0
+                stingray.DataComponent.set_property(data_component_manager, shading_env_entity, exposure_component, {"exposure"}, exposure_val)
+            end
+    end
+end
+
+    print(time)
+end
+
+
+-- return Environment
