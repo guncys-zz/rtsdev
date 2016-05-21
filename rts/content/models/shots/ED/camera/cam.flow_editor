@@ -1,0 +1,218 @@
+
+Connections = [
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "X"
+		FromNode = "370402bf-d379-47b8-97af-72aa6b952b7e"
+		Id = "0357966c-20b0-4508-862a-c34fa4489bb7"
+		ToItem = "A"
+		ToNode = "08eaa66c-809f-4ad2-81ef-a7687277d23d"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "2efdf6e8-9f78-4edf-b9f6-a2bfe1de6f76"
+		Id = "c88a89e5-66b5-416c-9d50-deeb6d3b04ae"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "cb33ba26-6df0-495e-8458-b90f8d19d9a3"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Position"
+		FromNode = "08abfac6-0904-4c52-9c14-dabf9ebd9bc8"
+		Id = "667c0f17-7b11-4cd5-97bc-145b5aefb42d"
+		ToItem = "Vector"
+		ToNode = "370402bf-d379-47b8-97af-72aa6b952b7e"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Camera"
+		FromNode = "abd52ceb-01f8-4406-b964-d22dfb1cf9ca"
+		Id = "974dfdd7-be6f-4c33-a7f8-045501d2e313"
+		ToItem = "Camera"
+		ToNode = "cb33ba26-6df0-495e-8458-b90f8d19d9a3"
+		Type = "Camera"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "X"
+		FromNode = "370402bf-d379-47b8-97af-72aa6b952b7e"
+		Id = "c0ab3002-3a34-4231-8b56-5bf9c6d531ac"
+		ToItem = "Numeric"
+		ToNode = "2fe644ff-aba9-4ea5-9849-d11f8cda4413"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "2fe644ff-aba9-4ea5-9849-d11f8cda4413"
+		Id = "d4513947-c05f-49f5-8d67-370d037a6da5"
+		ToItem = "Text"
+		ToNode = "24e310f8-1527-4e83-8363-eaa62c8e109b"
+		Type = "String"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "2efdf6e8-9f78-4edf-b9f6-a2bfe1de6f76"
+		Id = "9425d368-0ba5-482c-8934-fcb24db5bdff"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "24e310f8-1527-4e83-8363-eaa62c8e109b"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "X"
+		FromNode = "370402bf-d379-47b8-97af-72aa6b952b7e"
+		Id = "8a774d09-3b22-4a91-b543-1c9c57ea68da"
+		ToItem = "Angle"
+		ToNode = "cb33ba26-6df0-495e-8458-b90f8d19d9a3"
+		Type = "Float"
+	}
+]
+Groups = [
+]
+Nodes = [
+	{
+		Class = "Stingray.Flow.LevelUpdate"
+		Id = "2efdf6e8-9f78-4edf-b9f6-a2bfe1de6f76"
+		NodeLocation = {
+			X = 340
+			Y = 80
+		}
+		Out = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.VectorComponents"
+		Id = "370402bf-d379-47b8-97af-72aa6b952b7e"
+		NodeLocation = {
+			X = 460
+			Y = 460
+		}
+		Vector = {
+		}
+		Width = 160
+		X = {
+		}
+		Y = {
+		}
+		Z = {
+		}
+	}
+	{
+		Angle = {
+		}
+		Camera = {
+		}
+		Class = "Stingray.Flow.SetCameraVerticalFov"
+		Id = "cb33ba26-6df0-495e-8458-b90f8d19d9a3"
+		In = {
+		}
+		NodeLocation = {
+			X = 800
+			Y = 300
+		}
+		Out = {
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.GetUnitLocalPosition"
+		Id = "08abfac6-0904-4c52-9c14-dabf9ebd9bc8"
+		NodeLocation = {
+			X = 240
+			Y = 480
+		}
+		Object = {
+			Value = "meta"
+		}
+		Position = {
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Width = 180
+	}
+	{
+		Camera = {
+		}
+		CameraName = {
+			Value = "cam"
+		}
+		Class = "Stingray.Flow.GetUnitCamera"
+		Id = "abd52ceb-01f8-4406-b964-d22dfb1cf9ca"
+		NodeLocation = {
+			X = 460
+			Y = 240
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.NumericToString"
+		Id = "2fe644ff-aba9-4ea5-9849-d11f8cda4413"
+		NodeLocation = {
+			X = 460
+			Y = 600
+		}
+		Numeric = {
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Arguments = [
+			{
+				RawName = "Label"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.InVariableString"
+				}
+			}
+			{
+				RawName = "Color"
+				Type = "vector3"
+				Variable = {
+					Class = "Stingray.Flow.InVariableVector3"
+				}
+			}
+			{
+				RawName = "Text"
+				Type = "string"
+				Variable = {
+					Class = "Stingray.Flow.InVariableString"
+				}
+			}
+		]
+		Class = "Stingray.Flow.CustomScriptNode"
+		FlowNodesResource = "core/appkit/appkit"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "24e310f8-1527-4e83-8363-eaa62c8e109b"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "Print To Screen"
+		NodeLocation = {
+			X = 720
+			Y = 720
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = [
+		]
+		Width = 160
+	}
+]

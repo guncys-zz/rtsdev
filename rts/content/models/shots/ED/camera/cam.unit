@@ -4,7 +4,41 @@ cameras = {
 		far_range = 100
 		near_range = 0.00100000004749745
 		node = "cam"
-		projection_type = "perspective"
+		projection = "perspective"
 		vertical_fov = 0.660593509674072
 	}
+}
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 1.850534
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			1.068406
+			0.636637
+			1.298658
+		]
+		projection_type = "perspective"
+		rotation = [
+			-0.115917
+			-0.279848
+			0.880476
+			0.364705
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+	flow_framing = {
+		scale = 1
+		x = -1.16666666666663
+		y = 89.1666666666667
+	}
+}
+materials = {
 }
