@@ -715,6 +715,8 @@ editor_metadata = {
 				Numeric = {
 					Value = 1
 				}
+				Out = {
+				}
 				Scope = {
 					Value = "local"
 				}
@@ -755,6 +757,8 @@ editor_metadata = {
 				}
 				Numeric = {
 					Value = 0
+				}
+				Out = {
 				}
 				Scope = {
 					Value = "local"
@@ -997,6 +1001,7 @@ editor_metadata = {
 	LevelReferences = [
 	]
 	LightBakeSettings = {
+		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
 		FilterGain = 20
@@ -1014,6 +1019,7 @@ editor_metadata = {
 			Z = 1
 		}
 		TexelScale = 10
+		TotalPasses = 256
 		Variance = 0.5
 	}
 	LuaPluginObjects = [
@@ -1088,6 +1094,7 @@ editor_metadata = {
 					Intensity = 4
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "directional"
@@ -13400,6 +13407,80 @@ editor_metadata = {
 			}
 			Type = "content/models/blockers/STN/STN_B"
 		}
+		{
+			Cameras = {
+			}
+			Id = "aab48e0d-d9b8-4b0e-9477-4d6d4577bcee"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ST4_BG"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -160.034805
+				Y = 115.147545
+				Z = 17.13126
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1.5
+				Z = 1.7
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/background/ST4_BG"
+		}
+		{
+			Cameras = {
+			}
+			Id = "7bc8daf0-5649-4e04-85da-91696a641348"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "ST4_BG1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -160.034805
+				Y = 563.943665
+				Z = 17.13126
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1.5
+				Z = 1.7
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/background/ST4_BG"
+		}
 	]
 	Volumes = [
 	]
@@ -14145,6 +14226,7 @@ units = [
 				falloff_start = 0
 				intensity = 4
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "directional"
@@ -24130,6 +24212,66 @@ units = [
 			1
 		]
 		type = "content/models/blockers/STN/STN_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "aab48e0d-d9b8-4b0e-9477-4d6d4577bcee"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ST4_BG"
+		pos = [
+			-160.034805
+			115.147545
+			17.13126
+		]
+		rot = [
+			0
+			0
+			1
+			0
+		]
+		scl = [
+			1
+			1.5
+			1.7
+		]
+		type = "content/models/stage4/background/ST4_BG"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "7bc8daf0-5649-4e04-85da-91696a641348"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "ST4_BG1"
+		pos = [
+			-160.034805
+			563.943665
+			17.13126
+		]
+		rot = [
+			0
+			0
+			1
+			0
+		]
+		scl = [
+			1
+			1.5
+			1.7
+		]
+		type = "content/models/stage4/background/ST4_BG"
 	}
 ]
 volumes = [
