@@ -8212,6 +8212,80 @@ editor_metadata = {
 			}
 			Type = "content/models/shots/OP/tree/tree_B"
 		}
+		{
+			Cameras = {
+			}
+			Id = "87bc1d35-e564-4ef1-890c-2c7af791d14e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "OP_BG"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 63.882584
+				Y = -251.544235
+				Z = 55.059792
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = 0.707107
+			}
+			Scl = {
+				X = 2.994051
+				Y = 2.994051
+				Z = 2.994051
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/background/OP_BG"
+		}
+		{
+			Cameras = {
+			}
+			Id = "5685893c-2c64-4e74-ae27-e638e8ac49e7"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "OP_BG1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 63.882584
+				Y = -251.544235
+				Z = 248.7239
+			}
+			Rot = {
+				W = 0
+				X = -0.707107
+				Y = 0.707107
+				Z = 0
+			}
+			Scl = {
+				X = 2.994051
+				Y = 2.994051
+				Z = 2.994051
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/background/OP_BG"
+		}
 	]
 	Volumes = [
 	]
@@ -14732,6 +14806,66 @@ units = [
 			6.850381
 		]
 		type = "content/models/shots/OP/tree/tree_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "87bc1d35-e564-4ef1-890c-2c7af791d14e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "OP_BG"
+		pos = [
+			63.882584
+			-251.544235
+			55.059792
+		]
+		rot = [
+			0
+			0
+			0.707107
+			-0.707107
+		]
+		scl = [
+			2.994051
+			2.994051
+			2.994051
+		]
+		type = "content/models/shots/OP/background/OP_BG"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "5685893c-2c64-4e74-ae27-e638e8ac49e7"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "OP_BG1"
+		pos = [
+			63.882584
+			-251.544235
+			248.7239
+		]
+		rot = [
+			-0.707107
+			0.707107
+			0
+			0
+		]
+		scl = [
+			2.994051
+			2.994051
+			2.994051
+		]
+		type = "content/models/shots/OP/background/OP_BG"
 	}
 ]
 volumes = [
