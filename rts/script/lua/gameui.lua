@@ -75,6 +75,8 @@ function GameUI.on_custom_event(evt)
         GameUI.action = "go_to_top"
     elseif evt.name == "resume" then
         GameUI.action = "resume"
+    elseif evt.name == "change_level" then
+        GameUI.action = "change_level"
     end
 end
 
@@ -97,6 +99,11 @@ local function perform_action()
         SimpleProject.change_level(Project.level_names.mainmenu)
     elseif GameUI.action == "resume" then
         --ゲームを再開するスクリプト
+    end
+    
+    if GameUI.action == "change_level" then
+        SimpleProject.change_level(Project.level_names.stage2)
+        print("レベル遷移")
     end
     
 	GameUI.action = nil

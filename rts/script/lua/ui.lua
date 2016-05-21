@@ -3,8 +3,11 @@ require 'core/appkit/lua/app'
 
 local damage_anim = 1   --ダメージのアニメーション
 local gauge_anim = 1    --ゲージのアニメーション   
+local loding_flag = false   --1ステージごとにローディングされたかどうかを確認
 
 UI = UI or{}
+
+
 
 --UIのリセット
 function UI.reset()
@@ -114,6 +117,19 @@ function UI.pause()
                       name = "pause",
                       data = { value = 1 }}
     scaleform.Stage.dispatch_event(evt)
+end
+
+function UI.loading()
+    if loding_flag ~= true then
+        local loading = scaleform.Actor.load("Loading.s2dscene")	--Loding用のシーンをロード
+    	print("ローディングシーンに切り替え")
+        -- Remove the main menu scene
+        scaleform.Stage.remove_scene_by_index(1)
+        -- Add the loading scene
+        scaleform.Stage.add_scene(loading)
+        loding_flag = true
+    end
+
 end
 
 return UI

@@ -141,14 +141,6 @@ editor_metadata = {
 				Type = "Float"
 			}
 			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "True"
-				FromNode = "97f511cc-c05e-496c-a8ea-1caa89062322"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "dba8d47d-c0f7-4fbf-9c80-7fec766674da"
-			}
-			{
 				Class = "Stingray.Foundation.Flow.VariableConnection"
 				FromItem = "Value"
 				FromNode = "41618625-fa05-44e9-b259-d20de438b10a"
@@ -171,6 +163,14 @@ editor_metadata = {
 				Priority = 0
 				ToItem = "In"
 				ToNode = "f7d69ecc-961d-45d1-899e-a10c87a710b4"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "True"
+				FromNode = "97f511cc-c05e-496c-a8ea-1caa89062322"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "da3f5d09-2c8d-4835-aa18-b86dc6258876"
 			}
 		]
 		Groups = [
@@ -878,6 +878,30 @@ editor_metadata = {
 				}
 				Width = 160
 			}
+			{
+				Arguments = [
+				]
+				Brief = ""
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "script/custom_nodes/loading"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "da3f5d09-2c8d-4835-aa18-b86dc6258876"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Loading"
+				NodeLocation = {
+					X = 117
+					Y = 464
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
 		]
 	}
 	Groups = [
@@ -897,6 +921,7 @@ editor_metadata = {
 	LevelReferences = [
 	]
 	LightBakeSettings = {
+		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
 		FilterGain = 20
@@ -914,6 +939,7 @@ editor_metadata = {
 			Z = 1
 		}
 		TexelScale = 10
+		TotalPasses = 256
 		Variance = 0.5
 	}
 	LuaPluginObjects = [
@@ -987,6 +1013,7 @@ editor_metadata = {
 					Intensity = 4
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "directional"
@@ -5358,8 +5385,8 @@ flow = {
 				true = [
 					{
 						event = 0
-						id = "dba8d47d-c0f7-4fbf-9c80-7fec766674da:0"
-						node = "dba8d47d-c0f7-4fbf-9c80-7fec766674da"
+						id = "da3f5d09-2c8d-4835-aa18-b86dc6258876:0"
+						node = "da3f5d09-2c8d-4835-aa18-b86dc6258876"
 					}
 				]
 			}
@@ -5367,6 +5394,17 @@ flow = {
 			variable_values = {
 				condition = null
 			}
+		}
+		{
+			flow_nodes_resource = "script/custom_nodes/loading"
+			id = "da3f5d09-2c8d-4835-aa18-b86dc6258876"
+			name = "Loading"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variables = [
+			]
 		}
 	]
 }
@@ -5426,6 +5464,7 @@ units = [
 				falloff_start = 0
 				intensity = 4
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "directional"
