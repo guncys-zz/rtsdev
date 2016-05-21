@@ -140,6 +140,46 @@ editor_metadata = {
 				ToItem = "In"
 				ToNode = "84ff3b8b-f38b-4be5-81a0-79736e9dbbc6"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "29beef00-a9a2-4383-9095-daa70a7066ac"
+				ToItem = "Unit"
+				ToNode = "9c37400f-1f48-4cf5-9bad-1329291b291b"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "9c37400f-1f48-4cf5-9bad-1329291b291b"
+				ToItem = "A"
+				ToNode = "0d36a195-1809-491c-a75b-9e9580f3b4ae"
+				Type = "Float"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "0d36a195-1809-491c-a75b-9e9580f3b4ae"
+				ToItem = "Condition"
+				ToNode = "410e2d0c-cb7d-4105-bd0f-c8da385e6353"
+				Type = "Bool"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "True"
+				FromNode = "410e2d0c-cb7d-4105-bd0f-c8da385e6353"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "a1679209-2222-460c-bde6-450c7a2ca434"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "9c7b5dd9-2e42-40da-801d-de561afb533e"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "410e2d0c-cb7d-4105-bd0f-c8da385e6353"
+			}
 		]
 		Groups = [
 			{
@@ -824,6 +864,86 @@ editor_metadata = {
 				]
 				Width = 160
 			}
+			{
+				Brief = "Returns the current numeric value of the specified unit script data."
+				Class = "Stingray.Foundation.Flow.GetUnitNumericData"
+				Id = "9c37400f-1f48-4cf5-9bad-1329291b291b"
+				Key = {
+					Value = "Distance"
+				}
+				NodeLocation = {
+					X = -520
+					Y = 440
+				}
+				Title = "Get Unit Numeric Data"
+				Unit = {
+					UseMyUnit = false
+				}
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				A = {
+				}
+				B = {
+					Value = 500
+				}
+				Brief = "Returns a boolean based on whether A is greater than B."
+				Class = "Stingray.Foundation.Flow.NumericGreaterThanNumeric"
+				Id = "0d36a195-1809-491c-a75b-9e9580f3b4ae"
+				NodeLocation = {
+					X = -300
+					Y = 460
+				}
+				Title = "Greater Than"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Creates a decision based data flow from a single boolean condition."
+				Class = "Stingray.Foundation.Flow.Branch"
+				Condition = {
+				}
+				False = {
+				}
+				Id = "410e2d0c-cb7d-4105-bd0f-c8da385e6353"
+				In = {
+				}
+				NodeLocation = {
+					X = -100
+					Y = 460
+				}
+				Title = "Branch"
+				True = {
+				}
+				Width = 160
+			}
+			{
+				Arguments = [
+				]
+				Brief = ""
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "script/custom_nodes/loading"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "a1679209-2222-460c-bde6-450c7a2ca434"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Loading"
+				NodeLocation = {
+					X = 120
+					Y = 480
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
 		]
 	}
 	Groups = [
@@ -1080,6 +1200,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				Distance = 250
 				IsRun = true
 			}
 			Type = "content/models/characters/PPK/PPK_m"
@@ -12029,6 +12150,11 @@ flow = {
 						id = "4ecdeb84-04d4-4622-a07f-963c9438a8e3:0"
 						node = "4ecdeb84-04d4-4622-a07f-963c9438a8e3"
 					}
+					{
+						event = 0
+						id = "410e2d0c-cb7d-4105-bd0f-c8da385e6353:0"
+						node = "410e2d0c-cb7d-4105-bd0f-c8da385e6353"
+					}
 				]
 			}
 			type = "level_update"
@@ -12475,6 +12601,88 @@ flow = {
 			variables = [
 			]
 		}
+		{
+			id = "9c37400f-1f48-4cf5-9bad-1329291b291b"
+			in_variables = {
+				key = {
+					type = "string"
+				}
+				unit = {
+					node = "29beef00-a9a2-4383-9095-daa70a7066ac"
+					type = "unit"
+					variable = "unit"
+				}
+			}
+			out_variables = {
+				value = {
+					type = "float"
+				}
+			}
+			type = "get_unit_numeric_data"
+			variable_values = {
+				key = "Distance"
+				unit = null
+				value = null
+			}
+		}
+		{
+			id = "0d36a195-1809-491c-a75b-9e9580f3b4ae"
+			in_variables = {
+				a = {
+					node = "9c37400f-1f48-4cf5-9bad-1329291b291b"
+					type = "float"
+					variable = "value"
+				}
+				b = {
+					type = "float"
+				}
+			}
+			out_variables = {
+				value = {
+					type = "bool"
+				}
+			}
+			type = "numeric_greater_than_numeric"
+			variable_values = {
+				a = null
+				b = 500
+				value = null
+			}
+		}
+		{
+			id = "410e2d0c-cb7d-4105-bd0f-c8da385e6353"
+			in_variables = {
+				condition = {
+					node = "0d36a195-1809-491c-a75b-9e9580f3b4ae"
+					type = "bool"
+					variable = "value"
+				}
+			}
+			out_events = {
+				true = [
+					{
+						event = 0
+						id = "a1679209-2222-460c-bde6-450c7a2ca434:0"
+						node = "a1679209-2222-460c-bde6-450c7a2ca434"
+					}
+				]
+			}
+			type = "branch"
+			variable_values = {
+				condition = null
+			}
+		}
+		{
+			flow_nodes_resource = "script/custom_nodes/loading"
+			id = "a1679209-2222-460c-bde6-450c7a2ca434"
+			name = "Loading"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variables = [
+			]
+		}
 	]
 }
 level_references = [
@@ -12625,6 +12833,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			Distance = 250
 			IsRun = true
 		}
 		id = "2fe3bace-091e-488b-9117-6ad90b1ff01c"

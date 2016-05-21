@@ -4,6 +4,7 @@ local thisActor = ...
 --local loadingAnimation = scaleform.Actor.component_by_name(thisActor, "Animation")
 local totalTime = 0.0;
 local dispatched = false;
+local onloadflag = false;
 --local hitpoint = scaleform.ContainerComponent.actor_by_name(rootAnimation, "hitpoint")
 --local hitpointAnimation = scaleform.Actor.component_by_name(hitpoint, "animation")
 
@@ -13,10 +14,16 @@ local dispatched = false;
 
 --カスタムリスナーを作成
 local enterFrameEventListener = scaleform.EventListener.create(enterFrameEventListener, function(e, thisListener)
+    if onloadflag ~= true then  --1回目の呼び出しで初期化
+        totalTime = 0.0
+        dispatched = false
+        onloadflag = true
+    end
+    
     local frameTime = scaleform.Stage.frame_time()
     totalTime = totalTime + frameTime
     print(totalTime)
-    if totalTime > 3 then   --totaltimeが4秒を過ぎたら
+    if totalTime > 2 then   --totaltimeが4秒を過ぎたら
         if dispatched ~= true then  --まだイベントをコールしていなかったら
             local evt = { eventId = scaleform.EventTypes.Custom, 
                         name = "change_level",
@@ -26,8 +33,8 @@ local enterFrameEventListener = scaleform.EventListener.create(enterFrameEventLi
             --change_levelってイベントをコールする
             print("change_levelをコールする")
             dispatched = true;
+            onloadflag = false
         end
-
         scaleform.EventListener.disconnect(thisListener)
     end
 end )

@@ -2,7 +2,8 @@ nodes = [
 	{
 		name = "Reset UI"
 		args = {
-			
+			HP = "float",
+			Position = "float"
 		}
 		function = "UI.reset"
 		category = "UI"

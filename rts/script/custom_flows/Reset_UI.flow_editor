@@ -18,24 +18,28 @@ Connections = [
 		ToItem = "In"
 		ToNode = "ffae6896-c959-4cbe-9120-c9599eb91337"
 	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Numeric"
+		FromNode = "48f0bc55-0635-4a21-a882-8267b58b1183"
+		Id = "18259f78-7684-4005-a7f2-6559b3523f09"
+		ToItem = "HP"
+		ToNode = "aa438561-79a2-4537-904f-18862b337399"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Numeric"
+		FromNode = "530b9f97-b4fe-4b58-af02-a03df36a4494"
+		Id = "1fa944ee-0e36-4114-aec4-01ef519933d8"
+		ToItem = "Position"
+		ToNode = "aa438561-79a2-4537-904f-18862b337399"
+		Type = "Float"
+	}
 ]
 Groups = [
 ]
 Nodes = [
-	{
-		Class = "Stingray.Flow.ExternalEvent"
-		EventName = {
-			Value = "Reset UI Start"
-		}
-		Id = "6b188794-0f63-4fb6-9d99-3026e22391a3"
-		NodeLocation = {
-			X = 100
-			Y = 220
-		}
-		Out = {
-		}
-		Width = 160
-	}
 	{
 		Class = "Stingray.Flow.LevelFlowEvent"
 		Event = {
@@ -52,6 +56,20 @@ Nodes = [
 	}
 	{
 		Arguments = [
+			{
+				RawName = "Position"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Flow.InVariableFloat"
+				}
+			}
+			{
+				RawName = "HP"
+				Type = "float"
+				Variable = {
+					Class = "Stingray.Flow.InVariableFloat"
+				}
+			}
 		]
 		Class = "Stingray.Flow.CustomScriptNode"
 		FlowNodesResource = "script/custom_nodes/reset_ui"
@@ -63,14 +81,56 @@ Nodes = [
 		IsQuery = false
 		Name = "Reset UI"
 		NodeLocation = {
-			X = 300
-			Y = 160
+			X = 320
+			Y = 140
 		}
 		OutEvents = [
 			"Out"
 		]
 		ReturnValues = [
 		]
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ExternalEvent"
+		EventName = {
+			Value = "Reset UI Start"
+		}
+		Id = "6b188794-0f63-4fb6-9d99-3026e22391a3"
+		NodeLocation = {
+			X = -40
+			Y = 220
+		}
+		Out = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ExternalInputNumeric"
+		Id = "48f0bc55-0635-4a21-a882-8267b58b1183"
+		Name = {
+			Value = "HP"
+		}
+		NodeLocation = {
+			X = -20
+			Y = 20
+		}
+		Numeric = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ExternalInputNumeric"
+		Id = "530b9f97-b4fe-4b58-af02-a03df36a4494"
+		Name = {
+			Value = "Position"
+		}
+		NodeLocation = {
+			X = -20
+			Y = 100
+		}
+		Numeric = {
+		}
 		Width = 160
 	}
 ]

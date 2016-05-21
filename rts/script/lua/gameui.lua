@@ -102,7 +102,22 @@ local function perform_action()
     end
     
     if GameUI.action == "change_level" then
-        SimpleProject.change_level(Project.level_names.stage2)
+        if SimpleProject.level_name == Project.level_names.stage1 then
+            SimpleProject.change_level(Project.level_names.stage2)
+            print("stage1->stage2")
+        end
+        if SimpleProject.level_name == Project.level_names.stage2 then
+            SimpleProject.change_level(Project.level_names.stage3)
+            print("stage2->stage3")
+        end
+        if SimpleProject.level_name == Project.level_names.stage3 then
+            SimpleProject.change_level(Project.level_names.stage4)
+            print("stage3->stage4")
+        end
+        if SimpleProject.level_name == Project.level_names.stage4 then
+            --SimpleProject.change_level(Project.level_names.stage2)
+            --endシーンを呼ぶ
+        end
         print("レベル遷移")
     end
     

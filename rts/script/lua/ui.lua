@@ -1,16 +1,15 @@
 require 'core/appkit/lua/class'
 require 'core/appkit/lua/app'
 
-local damage_anim = 1   --ダメージのアニメーション
+local SimpleProject = require 'core/appkit/lua/simple_project'
+local damage_anim = 3   --ダメージのアニメーション
 local gauge_anim = 1    --ゲージのアニメーション   
 local loding_flag = false   --1ステージごとにローディングされたかどうかを確認
 
 UI = UI or{}
 
-
-
 --UIのリセット
-function UI.reset()
+function UI.reset(hp, pos)
      local event = { --eventは関数内localではなく、このファイル内でアクセスできるようにする
 		eventId = scaleform.EventTypes.Custom,
 		name = nil,
@@ -19,15 +18,44 @@ function UI.reset()
 	--ダメージアニメーションの呼び出しイベント名登録
 	event.name = "damage_reset"
 
-    event.data =  {value = damage_anim}
+    if hp == 2 then 
+        damage_anim = 1
+    elseif hp == 1 then 
+        damage_anim = 12
+    elseif hp == 0 then
+        damage_anim = 24
+    else
+        damage_anim = 36
+    end
+    --ダメージ受けるのをUIアニメーションに伝達
+    if damage_anim < 36 then
+        event.data =  {value = damage_anim}
+    	scaleform.Stage.dispatch_event(event)
+	end
+    
+    --ゲージの呼び出しイベント名登録
+	event.name = "update_gauge"
+    --アニメーション処理
+    --positionは1-1000の値を受け取る
+    local gauge_pos = math.ceil(pos)   --切り上げ
+    gauge_pos = gauge_pos / 1000    --1~1000を0.0~1.0で表現   
+    --1-100に変換
+    
+    if gauge_pos * 100 >= 1 then
+        gauge_pos = gauge_pos * 100
+    else
+        gauge_pos = 1      
+    end
+    --gauge_animが少数型になっているのが、メモリリークの元になっているっぽい
+	--gauge_anim = gauge_anim + 1
+	
+	--レベルまたぐ用にpos情報を保管
+	
+--	print(gauge_pos)
+    event.data =  {value = gauge_anim}
     scaleform.Stage.dispatch_event(event)
     
-    --ダメージアニメーションの呼び出しイベント名登録
-	event.name = "update_gauge"
-    
-    --アニメーション処理
-    event.data =  {value = gauge_anim}
-	scaleform.Stage.dispatch_event(event)
+	loding_flag = false
 end
 
 --ダメージアニメーションの制御
@@ -101,7 +129,7 @@ function UI.gauge_update(pos)  --positionにはプレイヤーのY方向の位�
 	
 	--レベルまたぐ用にpos情報を保管
 	
---	print(gauge_pos)
+	--print(gauge_pos)
 	while gauge_anim < gauge_pos do
         if gauge_anim >= 100 then   
 	        break

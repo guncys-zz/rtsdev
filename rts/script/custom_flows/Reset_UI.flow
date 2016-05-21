@@ -1,6 +1,57 @@
 
 nodes = [
 	{
+		id = "ffae6896-c959-4cbe-9120-c9599eb91337"
+		type = "level_flow_event"
+		variable_values = {
+			event = "Reset UI Done"
+		}
+	}
+	{
+		flow_nodes_resource = "script/custom_nodes/reset_ui"
+		id = "aa438561-79a2-4537-904f-18862b337399"
+		in_variables = {
+			HP = {
+				node = "48f0bc55-0635-4a21-a882-8267b58b1183"
+				type = "float"
+				variable = "numeric"
+			}
+			Position = {
+				node = "530b9f97-b4fe-4b58-af02-a03df36a4494"
+				type = "float"
+				variable = "numeric"
+			}
+		}
+		name = "Reset UI"
+		out_events = {
+			Out = [
+				{
+					event = 0
+					id = "ffae6896-c959-4cbe-9120-c9599eb91337:0"
+					node = "ffae6896-c959-4cbe-9120-c9599eb91337"
+				}
+			]
+		}
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			HP = null
+			Position = null
+		}
+		variables = [
+			{
+				name = "Position"
+				type = "float"
+			}
+			{
+				name = "HP"
+				type = "float"
+			}
+		]
+	}
+	{
 		id = "6b188794-0f63-4fb6-9d99-3026e22391a3"
 		out_events = {
 			out = [
@@ -17,31 +68,30 @@ nodes = [
 		}
 	}
 	{
-		id = "ffae6896-c959-4cbe-9120-c9599eb91337"
-		type = "level_flow_event"
+		id = "48f0bc55-0635-4a21-a882-8267b58b1183"
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "external_input_numeric"
 		variable_values = {
-			event = "Reset UI Done"
+			name = "HP"
+			numeric = null
 		}
 	}
 	{
-		flow_nodes_resource = "script/custom_nodes/reset_ui"
-		id = "aa438561-79a2-4537-904f-18862b337399"
-		name = "Reset UI"
-		out_events = {
-			Out = [
-				{
-					event = 0
-					id = "ffae6896-c959-4cbe-9120-c9599eb91337:0"
-					node = "ffae6896-c959-4cbe-9120-c9599eb91337"
-				}
-			]
+		id = "530b9f97-b4fe-4b58-af02-a03df36a4494"
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
 		}
-		query = false
-		return_values = [
-		]
-		type = "custom_script_node"
-		variables = [
-		]
+		type = "external_input_numeric"
+		variable_values = {
+			name = "Position"
+			numeric = null
+		}
 	}
 	{
 		id = "11111111-2222-3333-4444-555555555555"
