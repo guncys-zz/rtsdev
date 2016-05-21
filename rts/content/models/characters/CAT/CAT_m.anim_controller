@@ -300,13 +300,6 @@ compiler_data = {
 					speed = "1"
 					state_type = "regular"
 					transitions = [
-						{
-							blend_time = 0
-							event = "Anim End"
-							mode = "direct"
-							on_beat = ""
-							to = "Cinematics_ED_State/Clip_c01"
-						}
 					]
 					weights = [
 						"1.0"
@@ -769,33 +762,6 @@ layers = [
 						root_driving = "ignore"
 						speed = "1"
 						transitions = [
-							{
-								_id = "f19801f6-776e-44ce-a9a6-64cc11bf46c2"
-								actual_target_ref = {
-									_id = "0d27e731-0355-4227-b46a-0265cc72bd9e"
-									ref_filename = null
-									ref_id = null
-								}
-								blend_time = 0
-								event_ref = {
-									_id = "13117d43-2d7a-4da2-87c3-457fdf5da0a9"
-									ref_filename = null
-									ref_id = "bc16ed7e-55d4-4259-809d-9a7909a92375"
-								}
-								has_nested_from = false
-								mode = "direct"
-								nested_from_ref = {
-									_id = "f8fc8ac8-5f49-4418-8391-688c3bdc36ea"
-									ref_filename = null
-									ref_id = null
-								}
-								on_beat = ""
-								to_state_ref = {
-									_id = "2d9cc3bb-1d4a-4645-be2a-dd8c064c82b1"
-									ref_filename = null
-									ref_id = "25a8b5e1-4f52-4148-ae5d-2ab87415841c"
-								}
-							}
 						]
 						weights = [
 							"1.0"

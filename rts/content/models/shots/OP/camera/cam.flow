@@ -1,0 +1,119 @@
+
+nodes = [
+	{
+		id = "57285aec-2061-4d06-9bf3-e5f686f29826"
+		in_variables = {
+			object = {
+				type = "id"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			position = {
+				type = "vector3"
+			}
+		}
+		type = "get_unit_local_position"
+		variable_values = {
+			object = "meta"
+			position = null
+			unit = null
+		}
+	}
+	{
+		id = "1c85162a-5102-488f-b732-1afdb96d52ec"
+		in_variables = {
+			vector = {
+				node = "57285aec-2061-4d06-9bf3-e5f686f29826"
+				type = "vector3"
+				variable = "position"
+			}
+		}
+		out_variables = {
+			x = {
+				type = "float"
+			}
+		}
+		type = "vector_components"
+		variable_values = {
+			vector = null
+			x = null
+			y = null
+			z = null
+		}
+	}
+	{
+		id = "c42da679-156f-4e79-afba-79082283252f"
+		in_variables = {
+			camera_name = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			camera = {
+				type = "camera"
+			}
+		}
+		type = "get_unit_camera"
+		variable_values = {
+			camera = null
+			camera_name = "cam"
+			unit = null
+		}
+	}
+	{
+		id = "17fe7e8b-aaf2-4321-acb4-de71d97b0686"
+		in_variables = {
+			angle = {
+				node = "1c85162a-5102-488f-b732-1afdb96d52ec"
+				type = "float"
+				variable = "x"
+			}
+			camera = {
+				node = "c42da679-156f-4e79-afba-79082283252f"
+				type = "camera"
+				variable = "camera"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		type = "set_camera_vertical_fov"
+		variable_values = {
+			angle = null
+			camera = null
+			unit = null
+		}
+	}
+	{
+		id = "983382c0-6b9c-497c-b219-c0c4082377bf"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "17fe7e8b-aaf2-4321-acb4-de71d97b0686:0"
+					node = "17fe7e8b-aaf2-4321-acb4-de71d97b0686"
+				}
+			]
+		}
+		type = "level_update"
+	}
+	{
+		id = "11111111-2222-3333-4444-555555555555"
+		type = "unit_spawned"
+		variable_values = {
+			unit = null
+		}
+	}
+]

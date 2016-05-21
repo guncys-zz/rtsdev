@@ -1,5 +1,5 @@
 
-_data_root_version = 6
+_data_root_version = 7
 _id = "cfc4c940-9ff9-4576-afaf-e333d71a048e"
 _name = "content/models/characters/PPK/PPK_m"
 anim_event_root_folder_name = "events"
@@ -767,13 +767,6 @@ compiler_data = {
 						}
 					]
 					transitions = [
-						{
-							blend_time = 0
-							event = "Anim End"
-							mode = "direct"
-							on_beat = ""
-							to = "Cinematics_ED_State/Clip_c01"
-						}
 					]
 					weights = [
 						"1.0"
@@ -920,7 +913,14 @@ layers = [
 	{
 		_id = "ba362619-7576-4ca5-9ebd-e9450bf7d687"
 		_name = "Layer_Ragdoll"
+		anim_blend_set_ref = {
+			_id = "b8fe0516-e8d2-49b2-a40f-00118949664c"
+			ref_filename = null
+			ref_id = null
+		}
 		blend_states = [
+		]
+		constraints = [
 		]
 		default_state_ref = {
 			_id = "cfd0a150-06ab-48bb-83a9-5cd97ff27711"
@@ -953,6 +953,9 @@ layers = [
 				}
 				group_transitions = [
 				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
 				loop_animation = true
 				markers = [
 				]
@@ -1021,6 +1024,9 @@ layers = [
 				}
 				group_transitions = [
 				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
 				loop_animation = true
 				markers = [
 				]
@@ -1081,7 +1087,14 @@ layers = [
 	{
 		_id = "8180431c-1656-4eed-833e-155121598f26"
 		_name = "Layer_Mouse"
+		anim_blend_set_ref = {
+			_id = "00330e2e-141d-4886-bbb9-eb352738ad22"
+			ref_filename = null
+			ref_id = null
+		}
 		blend_states = [
+		]
+		constraints = [
 		]
 		default_state_ref = {
 			_id = "566e8939-49db-431f-8929-0bc1e1748e65"
@@ -1108,6 +1121,9 @@ layers = [
 				}
 				group_transitions = [
 				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
 				loop_animation = true
 				markers = [
 				]
@@ -1142,7 +1158,14 @@ layers = [
 	{
 		_id = "b2d5c997-6833-46b9-acf8-56589f072f35"
 		_name = "Base"
+		anim_blend_set_ref = {
+			_id = "fd3eefdf-48b3-43e4-83d3-f280f2a0d40b"
+			ref_filename = null
+			ref_id = null
+		}
 		blend_states = [
+		]
+		constraints = [
 		]
 		default_state_ref = {
 			_id = "19563901-7218-4bfc-a874-860e3638fe65"
@@ -1155,13 +1178,27 @@ layers = [
 			{
 				_id = "a73c2225-5d12-4d1b-8358-715280db2842"
 				_name = "Running_State"
+				anim_blend_set_ref = {
+					_id = "69469ff4-e0b6-4b37-a880-0f5c72191413"
+					ref_filename = null
+					ref_id = null
+				}
 				blend_states = [
+				]
+				constraints = [
 				]
 				empty_states = [
 				]
 				group_states = [
 				]
 				group_transitions = [
+				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
+				markers = [
+				]
+				muted_layers = [
 				]
 				notes = [
 				]
@@ -1226,6 +1263,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = true
 						markers = [
 							{
@@ -1356,6 +1396,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 							{
@@ -1513,6 +1556,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -1663,6 +1709,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -1813,6 +1862,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -1963,6 +2015,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = true
 						markers = [
 							{
@@ -2100,6 +2155,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 							{
@@ -2210,6 +2268,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 							{
@@ -2301,13 +2362,27 @@ layers = [
 			{
 				_id = "dad9652a-6859-40ba-bf10-28833c57076d"
 				_name = "Cinematics_State"
+				anim_blend_set_ref = {
+					_id = "b2430d82-d362-44be-92b1-24cae40abf10"
+					ref_filename = null
+					ref_id = null
+				}
 				blend_states = [
+				]
+				constraints = [
 				]
 				empty_states = [
 				]
 				group_states = [
 				]
 				group_transitions = [
+				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
+				markers = [
+				]
+				muted_layers = [
 				]
 				notes = [
 				]
@@ -2356,6 +2431,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -2425,6 +2503,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -2494,6 +2575,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -2563,6 +2647,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -2632,6 +2719,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -2674,6 +2764,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 							{
@@ -2750,6 +2843,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 							{
@@ -2814,13 +2910,27 @@ layers = [
 			{
 				_id = "32f22119-5022-4bc0-8b93-27cb1b9ebc8a"
 				_name = "Cinematics_ED_State"
+				anim_blend_set_ref = {
+					_id = "ab7397c4-04f5-4030-9e05-13fda52f6477"
+					ref_filename = null
+					ref_id = null
+				}
 				blend_states = [
+				]
+				constraints = [
 				]
 				empty_states = [
 				]
 				group_states = [
 				]
 				group_transitions = [
+				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
+				markers = [
+				]
+				muted_layers = [
 				]
 				notes = [
 				]
@@ -2869,6 +2979,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -2938,6 +3051,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -3007,6 +3123,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 						]
@@ -3076,6 +3195,9 @@ layers = [
 						}
 						group_transitions = [
 						]
+						inherit_anim_blend_set = true
+						inherit_constraints = true
+						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
 							{
@@ -3093,33 +3215,6 @@ layers = [
 						root_driving = "ignore"
 						speed = "1"
 						transitions = [
-							{
-								_id = "a7d18dbf-a908-4383-8bb1-5a2781c98df8"
-								actual_target_ref = {
-									_id = "dee7696b-6d26-4a89-88e2-15e6300ab2a3"
-									ref_filename = null
-									ref_id = null
-								}
-								blend_time = 0
-								event_ref = {
-									_id = "7c17fe5f-7514-4784-a054-2ad4f2c12f84"
-									ref_filename = null
-									ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
-								}
-								has_nested_from = false
-								mode = "direct"
-								nested_from_ref = {
-									_id = "50ba27f1-dcf0-48dc-a5b1-9c2a0969d115"
-									ref_filename = null
-									ref_id = null
-								}
-								on_beat = ""
-								to_state_ref = {
-									_id = "b29578bb-9c21-49dc-bc56-0a5047a255ea"
-									ref_filename = null
-									ref_id = "687fb64e-004a-474b-95ff-952019839307"
-								}
-							}
 						]
 						weights = [
 							"1.0"
@@ -3169,6 +3264,9 @@ layers = [
 				}
 				group_transitions = [
 				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
 				loop_animation = true
 				markers = [
 				]
@@ -3275,7 +3373,14 @@ layers = [
 	{
 		_id = "1842b6f3-e2bc-4023-bfe5-ead94c6fd526"
 		_name = "Layer_Eye"
+		anim_blend_set_ref = {
+			_id = "98062e6c-2188-4110-8b02-10d2684e9f94"
+			ref_filename = null
+			ref_id = null
+		}
 		blend_states = [
+		]
+		constraints = [
 		]
 		default_state_ref = {
 			_id = "eed0a95e-7226-4f07-b356-e5e0e17969fd"
@@ -3302,6 +3407,9 @@ layers = [
 				}
 				group_transitions = [
 				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
 				loop_animation = true
 				markers = [
 				]
@@ -3336,7 +3444,14 @@ layers = [
 	{
 		_id = "3c973f6b-f78f-4ff9-a0d8-78f24552a795"
 		_name = "Layer_Face"
+		anim_blend_set_ref = {
+			_id = "8631bec3-aa1a-486e-904d-e6cd277913b8"
+			ref_filename = null
+			ref_id = null
+		}
 		blend_states = [
+		]
+		constraints = [
 		]
 		default_state_ref = {
 			_id = "06e5c2b3-6fe7-49f4-a9e0-990271fc1805"
@@ -3363,6 +3478,9 @@ layers = [
 				}
 				group_transitions = [
 				]
+				inherit_anim_blend_set = true
+				inherit_constraints = true
+				inherit_muted_layers = true
 				loop_animation = true
 				markers = [
 				]

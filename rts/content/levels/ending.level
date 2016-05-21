@@ -85,22 +85,6 @@ editor_metadata = {
 			}
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
-				FromNode = "984cf171-2eeb-4f5e-a847-35b1c3a597dd"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "6e7a47e9-535d-43d9-8f3c-40b014af893f"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
-				FromNode = "6e7a47e9-535d-43d9-8f3c-40b014af893f"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "6bd20353-aad6-4212-a45a-0c1f41c93bf1"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
 				FromItem = "Out1"
 				FromNode = "6bd20353-aad6-4212-a45a-0c1f41c93bf1"
 				Priority = 0
@@ -130,6 +114,14 @@ editor_metadata = {
 				Priority = 0
 				ToItem = "Create"
 				ToNode = "46f0e19d-4dc3-4094-81d4-68bf3bfb8027"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "984cf171-2eeb-4f5e-a847-35b1c3a597dd"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "6bd20353-aad6-4212-a45a-0c1f41c93bf1"
 			}
 		]
 		Groups = [
@@ -513,24 +505,6 @@ editor_metadata = {
 				Out8 = {
 				}
 				Title = "Sequence"
-				Width = 160
-			}
-			{
-				Brief = "Inserts a delay in evaluation by the specified numeric value."
-				Class = "Stingray.Foundation.Flow.Delay"
-				Id = "6e7a47e9-535d-43d9-8f3c-40b014af893f"
-				In = {
-				}
-				NodeLocation = {
-					X = -660
-					Y = 20
-				}
-				Out = {
-				}
-				Time = {
-					Value = 3
-				}
-				Title = "Delay"
 				Width = 160
 			}
 		]
@@ -5392,8 +5366,8 @@ flow = {
 					}
 					{
 						event = 0
-						id = "6e7a47e9-535d-43d9-8f3c-40b014af893f:0"
-						node = "6e7a47e9-535d-43d9-8f3c-40b014af893f"
+						id = "6bd20353-aad6-4212-a45a-0c1f41c93bf1:0"
+						node = "6bd20353-aad6-4212-a45a-0c1f41c93bf1"
 					}
 				]
 			}
@@ -5658,27 +5632,6 @@ flow = {
 				]
 			}
 			type = "sequence"
-		}
-		{
-			id = "6e7a47e9-535d-43d9-8f3c-40b014af893f"
-			in_variables = {
-				time = {
-					type = "float"
-				}
-			}
-			out_events = {
-				out = [
-					{
-						event = 0
-						id = "6bd20353-aad6-4212-a45a-0c1f41c93bf1:0"
-						node = "6bd20353-aad6-4212-a45a-0c1f41c93bf1"
-					}
-				]
-			}
-			type = "delay"
-			variable_values = {
-				time = 3
-			}
 		}
 	]
 }
