@@ -315,15 +315,6 @@ shader = {
 		}
 		{
 			destination = {
-				connector_id = "1ee9af1f-65f2-4739-ad28-5ea6a0e68fc3"
-				instance_id = "a9973586-fbcc-4ba8-ab22-1ce79f66ea25"
-			}
-			source = {
-				instance_id = "7f04ac58-cf53-4e7e-9a48-1275a549ee34"
-			}
-		}
-		{
-			destination = {
 				connector_id = "c4d6bc08-c489-430f-a836-ed490e59c3f9"
 				instance_id = "fd76940a-0623-4588-9f59-1edb5522b9f8"
 			}
@@ -371,6 +362,15 @@ shader = {
 			}
 			source = {
 				instance_id = "7f41b279-2d5a-4aae-8bc3-d1bdc3ff6b79"
+			}
+		}
+		{
+			destination = {
+				connector_id = "1ee9af1f-65f2-4739-ad28-5ea6a0e68fc3"
+				instance_id = "a9973586-fbcc-4ba8-ab22-1ce79f66ea25"
+			}
+			source = {
+				instance_id = "7f04ac58-cf53-4e7e-9a48-1275a549ee34"
 			}
 		}
 	]
@@ -586,8 +586,8 @@ shader = {
 			options = [
 			]
 			position = [
-				-400
-				420
+				-440
+				600
 			]
 			samplers = {
 			}
@@ -1243,8 +1243,8 @@ shader = {
 			options = [
 			]
 			position = [
-				-400
-				560
+				-420
+				740
 			]
 			samplers = {
 			}
@@ -1289,8 +1289,8 @@ shader = {
 			options = [
 			]
 			position = [
-				160
-				1220
+				440
+				1360
 			]
 			samplers = {
 			}
