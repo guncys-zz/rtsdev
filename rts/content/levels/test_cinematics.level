@@ -1091,7 +1091,6 @@ editor_metadata = {
 	LevelReferences = [
 	]
 	LightBakeSettings = {
-		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
 		FilterGain = 20
@@ -1109,7 +1108,6 @@ editor_metadata = {
 			Z = 1
 		}
 		TexelScale = 10
-		TotalPasses = 256
 		Variance = 0.5
 	}
 	LuaPluginObjects = [
@@ -1216,7 +1214,6 @@ editor_metadata = {
 					Intensity = 1.9
 					Material = ""
 					MaterialResource = ""
-					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "directional"
@@ -1641,7 +1638,6 @@ editor_metadata = {
 					Intensity = 4
 					Material = ""
 					MaterialResource = ""
-					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -1745,7 +1741,6 @@ editor_metadata = {
 					Intensity = 10
 					Material = ""
 					MaterialResource = ""
-					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -1812,7 +1807,6 @@ editor_metadata = {
 					Intensity = 5
 					Material = ""
 					MaterialResource = ""
-					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -8286,6 +8280,43 @@ editor_metadata = {
 			}
 			Type = "content/models/shots/OP/background/OP_BG"
 		}
+		{
+			Cameras = {
+			}
+			Id = "bf220865-766b-44ca-b10d-d8a567054556"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "treeFlag"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 6.950924
+				Y = 9.595713
+				Z = 0.584
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/model/treeFlag"
+		}
 	]
 	Volumes = [
 	]
@@ -9120,7 +9151,6 @@ units = [
 				falloff_start = 0
 				intensity = 1.9
 				material = ""
-				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "directional"
@@ -9473,7 +9503,6 @@ units = [
 				falloff_start = 0
 				intensity = 4
 				material = ""
-				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"
@@ -9561,7 +9590,6 @@ units = [
 				falloff_start = 0
 				intensity = 10
 				material = ""
-				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"
@@ -9619,7 +9647,6 @@ units = [
 				falloff_start = 0
 				intensity = 5
 				material = ""
-				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"
@@ -14866,6 +14893,36 @@ units = [
 			2.994051
 		]
 		type = "content/models/shots/OP/background/OP_BG"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "bf220865-766b-44ca-b10d-d8a567054556"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "treeFlag"
+		pos = [
+			6.950924
+			9.595713
+			0.584
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/model/treeFlag"
 	}
 ]
 volumes = [

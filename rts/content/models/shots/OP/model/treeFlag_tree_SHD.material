@@ -1,0 +1,51 @@
+
+parent_material = "core/stingray_renderer/shader_import/standard"
+textures = {
+	ao_map = "content/models/shots/OP/texture/treeFlag/treeFlag_tree_ambientocclusion"
+	color_map = "content/models/shots/OP/texture/treeFlag/treeFlag_tree_basecolor"
+	metallic_map = "content/models/shots/OP/texture/treeFlag/treeFlag_tree_metallic"
+	normal_map = "content/models/shots/OP/texture/treeFlag/treeFlag_tree_normal"
+	roughness_map = "content/models/shots/OP/texture/treeFlag/treeFlag_tree_roughness"
+}
+variables = {
+	base_color = {
+		type = "vector3"
+		value = [
+			0
+			0
+			1
+		]
+	}
+	emissive = {
+		type = "vector3"
+		value = [
+			0
+			0
+			0
+		]
+	}
+	roughness = {
+		type = "scalar"
+		value = 0.9368821
+	}
+	use_ao_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_color_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_metallic_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_normal_map = {
+		type = "scalar"
+		value = 1
+	}
+	use_roughness_map = {
+		type = "scalar"
+		value = 1
+	}
+}

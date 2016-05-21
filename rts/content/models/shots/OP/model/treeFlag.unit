@@ -1,0 +1,25 @@
+
+materials = {
+	treeFlag_flag_SHD = "content/models/shots/OP/model/treeFlag_flag_SHD"
+	treeFlag_tree_SHD = "content/models/shots/OP/model/treeFlag_tree_SHD"
+}
+renderables = {
+	treeFlag_flag_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	treeFlag_tree_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}
