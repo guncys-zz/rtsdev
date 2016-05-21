@@ -110,13 +110,6 @@ compiler_data = {
 					speed = "1"
 					state_type = "regular"
 					transitions = [
-						{
-							blend_time = 0
-							event = "Anim End"
-							mode = "direct"
-							on_beat = ""
-							to = "Clip_c01"
-						}
 					]
 					weights = [
 						"1.0"
@@ -537,33 +530,6 @@ layers = [
 				root_driving = "ignore"
 				speed = "1"
 				transitions = [
-					{
-						_id = "fe2d7de2-ed61-44da-b9e4-8783eeba9e81"
-						actual_target_ref = {
-							_id = "25bfda31-a570-458c-8210-5b3e17f5c0f8"
-							ref_filename = null
-							ref_id = null
-						}
-						blend_time = 0
-						event_ref = {
-							_id = "3896c2d5-2816-420d-b0a0-1d731947b379"
-							ref_filename = null
-							ref_id = "e22eed68-29bf-48ce-8993-d1aa114abacf"
-						}
-						has_nested_from = false
-						mode = "direct"
-						nested_from_ref = {
-							_id = "7a97baae-5fa8-48d7-acd3-418a08082ff0"
-							ref_filename = null
-							ref_id = null
-						}
-						on_beat = ""
-						to_state_ref = {
-							_id = "1f973045-6f50-498e-b407-571110de888f"
-							ref_filename = null
-							ref_id = "4deabe62-1638-4256-9386-b23a9332dbe7"
-						}
-					}
 				]
 				weights = [
 					"1.0"
