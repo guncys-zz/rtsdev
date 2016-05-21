@@ -1,0 +1,161 @@
+
+Connections = [
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Angle"
+		FromNode = "1ecc0837-15fd-4465-af2d-fdc7a783c752"
+		Id = "2b1547a7-b69b-47da-8c81-641fbf66c06d"
+		ToItem = "Numeric"
+		ToNode = "1891027d-c88f-40b8-a5de-5e185ef8eed0"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "1891027d-c88f-40b8-a5de-5e185ef8eed0"
+		Id = "08000fcf-9f16-4992-9bb1-d3a40e358267"
+		ToItem = "Text"
+		ToNode = "40aaa94e-6435-48b5-ae8c-3e1e799cb7b8"
+		Type = "String"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "17fe7e8b-aaf2-4321-acb4-de71d97b0686"
+		Id = "39ab91c9-eacb-4026-8103-f5d90f30ae6e"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "40aaa94e-6435-48b5-ae8c-3e1e799cb7b8"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Camera"
+		FromNode = "c42da679-156f-4e79-afba-79082283252f"
+		Id = "1ea6b8aa-3f3a-4776-8ddf-3a100e2d174c"
+		ToItem = "Camera"
+		ToNode = "1ecc0837-15fd-4465-af2d-fdc7a783c752"
+		Type = "Camera"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Position"
+		FromNode = "57285aec-2061-4d06-9bf3-e5f686f29826"
+		Id = "c57ad7b3-5593-482f-b06b-9d374f312b15"
+		ToItem = "Vector"
+		ToNode = "1c85162a-5102-488f-b732-1afdb96d52ec"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "X"
+		FromNode = "1c85162a-5102-488f-b732-1afdb96d52ec"
+		Id = "abe67d79-61d9-4b26-80df-6f363d985770"
+		ToItem = "Angle"
+		ToNode = "17fe7e8b-aaf2-4321-acb4-de71d97b0686"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "983382c0-6b9c-497c-b219-c0c4082377bf"
+		Id = "f7a22138-41b8-4da3-ab32-4577dc766653"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "17fe7e8b-aaf2-4321-acb4-de71d97b0686"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Camera"
+		FromNode = "c42da679-156f-4e79-afba-79082283252f"
+		Id = "20fbe3ad-48bd-43a2-be6a-2d2496d7e846"
+		ToItem = "Camera"
+		ToNode = "17fe7e8b-aaf2-4321-acb4-de71d97b0686"
+		Type = "Camera"
+	}
+]
+Groups = [
+]
+Nodes = [
+	{
+		Class = "Stingray.Flow.GetUnitLocalPosition"
+		Id = "57285aec-2061-4d06-9bf3-e5f686f29826"
+		NodeLocation = {
+			X = 220
+			Y = 400
+		}
+		Object = {
+			Value = "meta"
+		}
+		Position = {
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.VectorComponents"
+		Id = "1c85162a-5102-488f-b732-1afdb96d52ec"
+		NodeLocation = {
+			X = 420
+			Y = 380
+		}
+		Vector = {
+		}
+		Width = 160
+		X = {
+		}
+		Y = {
+		}
+		Z = {
+		}
+	}
+	{
+		Camera = {
+		}
+		CameraName = {
+			Value = "cam"
+		}
+		Class = "Stingray.Flow.GetUnitCamera"
+		Id = "c42da679-156f-4e79-afba-79082283252f"
+		NodeLocation = {
+			X = 220
+			Y = 280
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Width = 160
+	}
+	{
+		Angle = {
+		}
+		Camera = {
+		}
+		Class = "Stingray.Flow.SetCameraVerticalFov"
+		Id = "17fe7e8b-aaf2-4321-acb4-de71d97b0686"
+		In = {
+		}
+		NodeLocation = {
+			X = 660
+			Y = 320
+		}
+		Out = {
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.LevelUpdate"
+		Id = "983382c0-6b9c-497c-b219-c0c4082377bf"
+		NodeLocation = {
+			X = 200
+			Y = 140
+		}
+		Out = {
+		}
+		Width = 160
+	}
+]

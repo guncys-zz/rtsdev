@@ -1,9 +1,10 @@
 
-_data_root_version = 2
+_data_root_version = 3
 _id = "bf0a3f55-24c9-44d1-8371-71ac0ca99ed5"
 _name = "content/models/shots/OP/camera/cam_op_c04"
+additive_offset_computation_mode = "First Frame"
 anim_skeleton_ref = {
-	_id = "e4664e19-95b3-42b3-8147-6916073bc4a9"
+	_id = "18363ef9-a6cd-44c9-b2ec-c7416eee23a5"
 	ref_filename = "content/models/shots/OP/camera/cam.anim_skeleton"
 	ref_id = null
 }
@@ -23,7 +24,7 @@ beats = [
 custom_compression_settings = [
 ]
 dcc_asset_ref = {
-	_id = "29f7325a-c8c2-4732-8fdd-cab0c3e717fc"
+	_id = "42b923c8-0b28-4d98-ade4-db02f5e3cbdb"
 	ref_filename = "content/models/shots/OP/camera/cam_op_c04.dcc_asset"
 	ref_id = null
 }
@@ -39,5 +40,9 @@ global_compression_settings = {
 	scale_tolerance = 0.001
 }
 offset_animation = false
+offset_pose_animation_clip_ref = {
+	_id = "203080a2-22a2-4871-addd-e88d6276b039"
+	ref_filename = null
+	ref_id = null
+}
 take_name = "Take 001"
-use_skeleton_base_pose = false
