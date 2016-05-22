@@ -103,6 +103,11 @@ function MainMenu.start()
         ----Scales the view so that the content bounds fits inside the viewport which maintaining the viewport aspect ratio.  
         --END:Enumeration values(scaleform.Stage.set_view_scale_mode)
         
+        local loading = scaleform.Actor.load("GuncysLogo.s2dscene")
+	    -- Remove the main menu scene
+        scaleform.Stage.remove_scene_by_index(1)
+        -- Add the loading scene
+        scaleform.Stage.add_scene(loading)
         
 		--Register menu button mouse listener
         --メニュ―画面のボタンが押されたのを拾うリスナーを登録
@@ -211,6 +216,9 @@ function MainMenu.on_custom_event(evt)
 	if evt.name == "ending" then
 			MainMenu.action = "to_ending"
 	end
+	if evt.data == "start_title" then
+	        MainMenu.action = "start_title"
+    end
 end
 
 --MainMenu.updateで呼ばれる。mainmenuレベル時に実行したいことを記述しておく
@@ -238,6 +246,13 @@ local function perform_action()
 	--	SimpleProject.change_level(Project.level_names.stage1)
 	elseif MainMenu.action == "exit" then
 		stingray.Application.quit()
+	elseif MainMenu.action == "start_title" then
+	    print("スタートタイトルのアクションが走ってる")
+	    local loading = scaleform.Actor.load("Mainmenu.s2dscene")
+	    -- Remove the main menu scene
+        scaleform.Stage.remove_scene_by_index(1)
+        -- Add the loading scene
+        scaleform.Stage.add_scene(loading)
 	end
 	MainMenu.action = nil
 end
