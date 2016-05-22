@@ -18,6 +18,7 @@ local enterFrameEventListener = scaleform.EventListener.create(enterFrameEventLi
         totalTime = 0.0
         dispatched = false
         onloadflag = true
+        print("オンロードフラグbefore：")
     end
     
     local frameTime = scaleform.Stage.frame_time()
@@ -31,9 +32,10 @@ local enterFrameEventListener = scaleform.EventListener.create(enterFrameEventLi
                     }
             scaleform.Stage.dispatch_event(evt)
             --change_levelってイベントをコールする
-            print("change_levelをコールする")
-            dispatched = true;
+            --print("change_levelをコールする")
+            dispatched = true
             onloadflag = false
+            print("オンロードフラグafter：")
         end
         scaleform.EventListener.disconnect(thisListener)
     end
