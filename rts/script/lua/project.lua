@@ -66,7 +66,11 @@ function Project.on_level_load_pre_flow()
         elseif level_name == Project.level_names.stage2 then
             UIanim.reset(2,750)
         end
+    elseif level_name == Project.level_names.test_cinematics then
+        local Opening = require 'script/lua/opening'
+        Opening.start()
     end
+
 end
 
 -- Optional function by SimpleProject after loading of level, world and player and

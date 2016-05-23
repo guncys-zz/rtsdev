@@ -170,14 +170,6 @@ editor_metadata = {
 			}
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
-				FromNode = "8c43497c-2b0c-447e-b460-d652c7308a0b"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "c8e0f50d-b65e-41ae-8a81-94b5b91113f6"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
 				FromItem = "Out1"
 				FromNode = "29a09db9-9d86-4dd9-a531-21326d3bdfb9"
 				Priority = 0
@@ -264,6 +256,14 @@ editor_metadata = {
 				ToNode = "f70dedde-f04a-4165-8001-08944cec4190"
 				Type = "Float"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "8c43497c-2b0c-447e-b460-d652c7308a0b"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "d7a3566b-ace0-47bf-a611-419c46a73dd9"
+			}
 		]
 		Groups = [
 			{
@@ -285,6 +285,7 @@ editor_metadata = {
 					"63cbf754-a4eb-43bf-85de-f7b23350c20d"
 					"8c43497c-2b0c-447e-b460-d652c7308a0b"
 					"c8e0f50d-b65e-41ae-8a81-94b5b91113f6"
+					"d7a3566b-ace0-47bf-a611-419c46a73dd9"
 				]
 				Title = "stage1へ移動（苦肉の策）"
 			}
@@ -908,7 +909,7 @@ editor_metadata = {
 				In = {
 				}
 				NodeLocation = {
-					X = 260
+					X = 240
 					Y = 1040
 				}
 				Out = {
@@ -939,7 +940,7 @@ editor_metadata = {
 				IsQuery = false
 				Name = "Change Level"
 				NodeLocation = {
-					X = 460
+					X = 680
 					Y = 1080
 				}
 				OutEvents = [
@@ -1072,6 +1073,30 @@ editor_metadata = {
 				}
 				Width = 160
 			}
+			{
+				Arguments = [
+				]
+				Brief = ""
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "script/custom_nodes/loading"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "d7a3566b-ace0-47bf-a611-419c46a73dd9"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Loading"
+				NodeLocation = {
+					X = 481
+					Y = 983
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
 		]
 	}
 	Groups = [
@@ -1091,6 +1116,7 @@ editor_metadata = {
 	LevelReferences = [
 	]
 	LightBakeSettings = {
+		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
 		FilterGain = 20
@@ -1108,6 +1134,7 @@ editor_metadata = {
 			Z = 1
 		}
 		TexelScale = 10
+		TotalPasses = 256
 		Variance = 0.5
 	}
 	LuaPluginObjects = [
@@ -1214,6 +1241,7 @@ editor_metadata = {
 					Intensity = 1.9
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "directional"
@@ -1638,6 +1666,7 @@ editor_metadata = {
 					Intensity = 4
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -1741,6 +1770,7 @@ editor_metadata = {
 					Intensity = 10
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -1807,6 +1837,7 @@ editor_metadata = {
 					Intensity = 5
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -8912,8 +8943,8 @@ flow = {
 				out = [
 					{
 						event = 0
-						id = "c8e0f50d-b65e-41ae-8a81-94b5b91113f6:0"
-						node = "c8e0f50d-b65e-41ae-8a81-94b5b91113f6"
+						id = "d7a3566b-ace0-47bf-a611-419c46a73dd9:0"
+						node = "d7a3566b-ace0-47bf-a611-419c46a73dd9"
 					}
 				]
 			}
@@ -9067,6 +9098,17 @@ flow = {
 				value = null
 			}
 		}
+		{
+			flow_nodes_resource = "script/custom_nodes/loading"
+			id = "d7a3566b-ace0-47bf-a611-419c46a73dd9"
+			name = "Loading"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variables = [
+			]
+		}
 	]
 }
 level_references = [
@@ -9151,6 +9193,7 @@ units = [
 				falloff_start = 0
 				intensity = 1.9
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "directional"
@@ -9503,6 +9546,7 @@ units = [
 				falloff_start = 0
 				intensity = 4
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"
@@ -9590,6 +9634,7 @@ units = [
 				falloff_start = 0
 				intensity = 10
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"
@@ -9647,6 +9692,7 @@ units = [
 				falloff_start = 0
 				intensity = 5
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"

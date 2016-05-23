@@ -108,6 +108,7 @@ function MainMenu.start()
         scaleform.Stage.remove_scene_by_index(1)
         -- Add the loading scene
         scaleform.Stage.add_scene(loading)
+        --Guncys Logo BGM
         
 		--Register menu button mouse listener
         --メニュ―画面のボタンが押されたのを拾うリスナーを登録
@@ -226,6 +227,7 @@ local function perform_action()
 	-- Load empty level
 	if MainMenu.action == "start" then
 	    play_se_ok() -- 決定音
+	    --wait
 		MainMenu.shutdown()
 		SimpleProject.change_level(Project.level_names.test_cinematics)    --stage1に遷移
 	-- Exit the program
@@ -253,6 +255,7 @@ local function perform_action()
         scaleform.Stage.remove_scene_by_index(1)
         -- Add the loading scene
         scaleform.Stage.add_scene(loading)
+        --title BGM
 	end
 	MainMenu.action = nil
 end
