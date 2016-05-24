@@ -33,9 +33,9 @@ renderables = {
 	groundB = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = true
 		occluder = false
-		shadow_caster = true
+		shadow_caster = false
 		surface_queries = false
 		viewport_visible = true
 	}

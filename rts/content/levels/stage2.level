@@ -5,6 +5,37 @@ editor_metadata = {
 			id = "437628ab-f75d-4bbc-bdec-2e65126b15be"
 			layer = "Default"
 			modified_components = {
+				"06c78e06-c921-4208-8069-d377b6415d30" = {
+					data = {
+						fog_color = {
+							rgb = [
+								0.0771152208751598
+								0.358087028996874
+								1
+							]
+						}
+						fog_depth_range = [
+							10
+							500
+						]
+						fog_sun_strength = 2
+					}
+				}
+				"597d400f-c916-454b-9912-b9bb35e6e689" = {
+					data = {
+						shadow_max_distance = 30
+					}
+				}
+				"68333c83-9659-4d2e-b664-35790e366f08" = {
+					data = {
+						exposure = 1.1
+					}
+				}
+				"a9f83eb8-b54a-4c45-bf62-4fe7e02a8ce4" = {
+					data = {
+						ao_enabled = false
+					}
+				}
 				"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
 					data = {
 						motion_blur_enabled = false
@@ -139,46 +170,6 @@ editor_metadata = {
 				Priority = 0
 				ToItem = "In"
 				ToNode = "84ff3b8b-f38b-4be5-81a0-79736e9dbbc6"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.VariableConnection"
-				FromItem = "Unit"
-				FromNode = "29beef00-a9a2-4383-9095-daa70a7066ac"
-				ToItem = "Unit"
-				ToNode = "9c37400f-1f48-4cf5-9bad-1329291b291b"
-				Type = "Unit"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.VariableConnection"
-				FromItem = "Value"
-				FromNode = "9c37400f-1f48-4cf5-9bad-1329291b291b"
-				ToItem = "A"
-				ToNode = "0d36a195-1809-491c-a75b-9e9580f3b4ae"
-				Type = "Float"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.VariableConnection"
-				FromItem = "Value"
-				FromNode = "0d36a195-1809-491c-a75b-9e9580f3b4ae"
-				ToItem = "Condition"
-				ToNode = "410e2d0c-cb7d-4105-bd0f-c8da385e6353"
-				Type = "Bool"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "True"
-				FromNode = "410e2d0c-cb7d-4105-bd0f-c8da385e6353"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "a1679209-2222-460c-bde6-450c7a2ca434"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
-				FromNode = "9c7b5dd9-2e42-40da-801d-de561afb533e"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "410e2d0c-cb7d-4105-bd0f-c8da385e6353"
 			}
 		]
 		Groups = [
@@ -864,86 +855,6 @@ editor_metadata = {
 				]
 				Width = 160
 			}
-			{
-				Brief = "Returns the current numeric value of the specified unit script data."
-				Class = "Stingray.Foundation.Flow.GetUnitNumericData"
-				Id = "9c37400f-1f48-4cf5-9bad-1329291b291b"
-				Key = {
-					Value = "Distance"
-				}
-				NodeLocation = {
-					X = -520
-					Y = 440
-				}
-				Title = "Get Unit Numeric Data"
-				Unit = {
-					UseMyUnit = false
-				}
-				Value = {
-				}
-				Width = 160
-			}
-			{
-				A = {
-				}
-				B = {
-					Value = 500
-				}
-				Brief = "Returns a boolean based on whether A is greater than B."
-				Class = "Stingray.Foundation.Flow.NumericGreaterThanNumeric"
-				Id = "0d36a195-1809-491c-a75b-9e9580f3b4ae"
-				NodeLocation = {
-					X = -300
-					Y = 460
-				}
-				Title = "Greater Than"
-				Value = {
-				}
-				Width = 160
-			}
-			{
-				Brief = "Creates a decision based data flow from a single boolean condition."
-				Class = "Stingray.Foundation.Flow.Branch"
-				Condition = {
-				}
-				False = {
-				}
-				Id = "410e2d0c-cb7d-4105-bd0f-c8da385e6353"
-				In = {
-				}
-				NodeLocation = {
-					X = -100
-					Y = 460
-				}
-				Title = "Branch"
-				True = {
-				}
-				Width = 160
-			}
-			{
-				Arguments = [
-				]
-				Brief = ""
-				Class = "Stingray.Foundation.Flow.CustomScriptNode"
-				FlowNodesResource = "script/custom_nodes/loading"
-				FlowNodesResourceKey = "flow_nodes_resource"
-				Id = "a1679209-2222-460c-bde6-450c7a2ca434"
-				InEvents = [
-					"In"
-				]
-				IsQuery = false
-				Name = "Loading"
-				NodeLocation = {
-					X = 120
-					Y = 480
-				}
-				OutEvents = [
-					"Out"
-				]
-				ReturnValues = [
-				]
-				Width = 160
-			}
 		]
 	}
 	Groups = [
@@ -967,20 +878,20 @@ editor_metadata = {
 		ExcludedObjectSets = [
 		]
 		FilterGain = 20
-		FilterType = "Both"
-		IlluminationType = "Both"
+		FilterType = "Indirect"
+		IlluminationType = "Indirect"
 		Layers = [
 		]
 		LightmapType = "Standard"
-		MaxSamples = 96
-		MinSamples = 32
-		QualityPreset = "Low"
+		MaxSamples = 12000
+		MinSamples = 4000
+		QualityPreset = "Custom"
 		SkylightIntensityRGB = {
 			X = 1
 			Y = 1
 			Z = 1
 		}
-		TexelScale = 10
+		TexelScale = 5
 		TotalPasses = 256
 		Variance = 0.5
 	}
@@ -1045,14 +956,14 @@ editor_metadata = {
 					CastShadows = true
 					Color = {
 						A = 255
-						B = 255
-						G = 255
+						B = 247
+						G = 250
 						R = 255
 					}
 					Enabled = true
 					FalloffEnd = 8
 					FalloffStart = 0
-					Intensity = 4
+					Intensity = 3.5
 					Material = ""
 					MaterialResource = ""
 					ShadowDepthBias = 0.4
@@ -1078,10 +989,10 @@ editor_metadata = {
 				Z = 5
 			}
 			Rot = {
-				W = 0.5
-				X = -0.707106781186547
-				Y = -2.77555756156289E-17
-				Z = 0.5
+				W = -0.058806
+				X = -0.532529
+				Y = -0.498103
+				Z = 0.681798
 			}
 			Scl = {
 				X = 1
@@ -1200,7 +1111,6 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
-				Distance = 250
 				IsRun = true
 			}
 			Type = "content/models/characters/PPK/PPK_m"
@@ -1276,6 +1186,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.mushroomA.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomA"
 		}
@@ -1313,6 +1224,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.mushroomB.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomB"
 		}
@@ -1350,6 +1262,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.mushroomC.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomC"
 		}
@@ -1387,6 +1300,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.mushroomD.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomD"
 		}
@@ -1905,6 +1819,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.stoneD.bake_target" = false
 			}
 			Type = "content/models/stage2/stone/stoneD"
 		}
@@ -1942,6 +1857,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.stoneE.bake_target" = false
 			}
 			Type = "content/models/stage2/stone/stoneE"
 		}
@@ -2460,6 +2376,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.stoneD.bake_target" = false
 			}
 			Type = "content/models/stage2/stone/stoneD"
 		}
@@ -2497,6 +2414,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.stoneE.bake_target" = false
 			}
 			Type = "content/models/stage2/stone/stoneE"
 		}
@@ -3385,6 +3303,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.stoneD.bake_target" = false
 			}
 			Type = "content/models/stage2/stone/stoneD"
 		}
@@ -3422,6 +3341,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.stoneE.bake_target" = false
 			}
 			Type = "content/models/stage2/stone/stoneE"
 		}
@@ -4310,6 +4230,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.stoneD.bake_target" = false
 			}
 			Type = "content/models/stage2/stone/stoneD"
 		}
@@ -4347,6 +4268,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.stoneE.bake_target" = false
 			}
 			Type = "content/models/stage2/stone/stoneE"
 		}
@@ -5272,6 +5194,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.stoneE.bake_target" = false
 			}
 			Type = "content/models/stage2/stone/stoneE"
 		}
@@ -6012,6 +5935,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.mushroomA.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomA"
 		}
@@ -6049,6 +5973,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.mushroomB.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomB"
 		}
@@ -6086,6 +6011,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.mushroomC.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomC"
 		}
@@ -6123,6 +6049,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.mushroomD.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomD"
 		}
@@ -6160,6 +6087,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.mushroomA.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomA"
 		}
@@ -6197,6 +6125,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.mushroomB.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomB"
 		}
@@ -6234,6 +6163,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.mushroomC.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomC"
 		}
@@ -6271,6 +6201,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.mushroomD.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomD"
 		}
@@ -6308,6 +6239,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.mushroomA.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomA"
 		}
@@ -6345,6 +6277,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.mushroomB.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomB"
 		}
@@ -6382,6 +6315,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.mushroomC.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomC"
 		}
@@ -6419,6 +6353,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.mushroomD.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomD"
 		}
@@ -6456,6 +6391,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.mushroomA.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomA"
 		}
@@ -6493,6 +6429,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.mushroomB.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomB"
 		}
@@ -6530,6 +6467,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.mushroomC.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomC"
 		}
@@ -6567,6 +6505,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.mushroomD.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomD"
 		}
@@ -12043,8 +11982,150 @@ editor_metadata = {
 				Z = 1.5
 			}
 			ScriptData = {
+				"light_baking.ST2_BG1.bake_target" = false
+				"light_baking.ST2_BG1.contributes" = false
 			}
 			Type = "content/models/stage2/background/ST2_BG"
+		}
+		{
+			Cameras = {
+			}
+			Id = "855c8884-345d-4436-be8f-ef9b05ca1efe"
+			Layer = "Default"
+			Lights = {
+				probe = {
+					Baked = false
+					BoxMax = {
+						X = 20
+						Y = 200
+						Z = 20
+					}
+					BoxMin = {
+						X = -5
+						Y = -100
+						Z = -5
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1
+					Material = ""
+					MaterialResource = "content/levels/stage2-cubemaps/reflection_probe1_bake"
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "box"
+				}
+			}
+			Materials = {
+			}
+			Name = "reflection_probe1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.791784
+				Y = 70.220528
+				Z = 0.971759
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"probe.trace_box_max[0]" = 20
+				"probe.trace_box_max[1]" = 20
+				"probe.trace_box_max[2]" = 20
+			}
+			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a35ef2d7-1c1f-4537-b36e-ad249ba05534"
+			Layer = "Default"
+			Lights = {
+				probe = {
+					Baked = false
+					BoxMax = {
+						X = 10
+						Y = 200
+						Z = 20
+					}
+					BoxMin = {
+						X = -10
+						Y = -100
+						Z = -5
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1
+					Material = ""
+					MaterialResource = "content/levels/stage2-cubemaps/reflection_probe_bake"
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "box"
+				}
+			}
+			Materials = {
+			}
+			Name = "reflection_probe"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -10.934006
+				Y = 70.220528
+				Z = 0.971759
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"probe.trace_box_max[0]" = 20
+				"probe.trace_box_max[1]" = 20
+				"probe.trace_box_max[2]" = 20
+			}
+			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
 		}
 	]
 	Volumes = [
@@ -12054,6 +12135,37 @@ entities = [
 	{
 		id = "437628ab-f75d-4bbc-bdec-2e65126b15be"
 		modified_components = {
+			"06c78e06-c921-4208-8069-d377b6415d30" = {
+				data = {
+					fog_color = {
+						rgb = [
+							0.0771152208751598
+							0.358087028996874
+							1
+						]
+					}
+					fog_depth_range = [
+						10
+						500
+					]
+					fog_sun_strength = 2
+				}
+			}
+			"597d400f-c916-454b-9912-b9bb35e6e689" = {
+				data = {
+					shadow_max_distance = 30
+				}
+			}
+			"68333c83-9659-4d2e-b664-35790e366f08" = {
+				data = {
+					exposure = 1.1
+				}
+			}
+			"a9f83eb8-b54a-4c45-bf62-4fe7e02a8ce4" = {
+				data = {
+					ao_enabled = false
+				}
+			}
 			"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
 				data = {
 					motion_blur_enabled = false
@@ -12149,11 +12261,6 @@ flow = {
 						event = 0
 						id = "4ecdeb84-04d4-4622-a07f-963c9438a8e3:0"
 						node = "4ecdeb84-04d4-4622-a07f-963c9438a8e3"
-					}
-					{
-						event = 0
-						id = "410e2d0c-cb7d-4105-bd0f-c8da385e6353:0"
-						node = "410e2d0c-cb7d-4105-bd0f-c8da385e6353"
 					}
 				]
 			}
@@ -12601,88 +12708,6 @@ flow = {
 			variables = [
 			]
 		}
-		{
-			id = "9c37400f-1f48-4cf5-9bad-1329291b291b"
-			in_variables = {
-				key = {
-					type = "string"
-				}
-				unit = {
-					node = "29beef00-a9a2-4383-9095-daa70a7066ac"
-					type = "unit"
-					variable = "unit"
-				}
-			}
-			out_variables = {
-				value = {
-					type = "float"
-				}
-			}
-			type = "get_unit_numeric_data"
-			variable_values = {
-				key = "Distance"
-				unit = null
-				value = null
-			}
-		}
-		{
-			id = "0d36a195-1809-491c-a75b-9e9580f3b4ae"
-			in_variables = {
-				a = {
-					node = "9c37400f-1f48-4cf5-9bad-1329291b291b"
-					type = "float"
-					variable = "value"
-				}
-				b = {
-					type = "float"
-				}
-			}
-			out_variables = {
-				value = {
-					type = "bool"
-				}
-			}
-			type = "numeric_greater_than_numeric"
-			variable_values = {
-				a = null
-				b = 500
-				value = null
-			}
-		}
-		{
-			id = "410e2d0c-cb7d-4105-bd0f-c8da385e6353"
-			in_variables = {
-				condition = {
-					node = "0d36a195-1809-491c-a75b-9e9580f3b4ae"
-					type = "bool"
-					variable = "value"
-				}
-			}
-			out_events = {
-				true = [
-					{
-						event = 0
-						id = "a1679209-2222-460c-bde6-450c7a2ca434:0"
-						node = "a1679209-2222-460c-bde6-450c7a2ca434"
-					}
-				]
-			}
-			type = "branch"
-			variable_values = {
-				condition = null
-			}
-		}
-		{
-			flow_nodes_resource = "script/custom_nodes/loading"
-			id = "a1679209-2222-460c-bde6-450c7a2ca434"
-			name = "Loading"
-			query = false
-			return_values = [
-			]
-			type = "custom_script_node"
-			variables = [
-			]
-		}
 	]
 }
 level_references = [
@@ -12733,13 +12758,13 @@ units = [
 				cast_shadows = true
 				color = [
 					1
-					1
-					1
+					0.980392156862745
+					0.968627450980392
 				]
 				enabled = true
 				falloff_end = 8
 				falloff_start = 0
-				intensity = 4
+				intensity = 3.5
 				material = ""
 				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
@@ -12757,10 +12782,10 @@ units = [
 			5
 		]
 		rot = [
-			-0.707106781186547
-			-2.77555756156289E-17
-			0.5
-			0.5
+			-0.532529
+			-0.498103
+			0.681798
+			-0.058806
 		]
 		scl = [
 			1
@@ -12833,7 +12858,6 @@ units = [
 		cameras = {
 		}
 		data = {
-			Distance = 250
 			IsRun = true
 		}
 		id = "2fe3bace-091e-488b-9117-6ad90b1ff01c"
@@ -12895,6 +12919,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.mushroomA.bake_target" = false
 		}
 		id = "ba5c0878-a79f-461c-ab82-804b52a23e44"
 		lights = {
@@ -12925,6 +12950,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.mushroomB.bake_target" = false
 		}
 		id = "b55ae181-58d9-4891-befe-92fc500d63ce"
 		lights = {
@@ -12955,6 +12981,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.mushroomC.bake_target" = false
 		}
 		id = "ed0a1257-6eab-4507-bcd3-ff980cd2f435"
 		lights = {
@@ -12985,6 +13012,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.mushroomD.bake_target" = false
 		}
 		id = "de2329e0-3a2e-4b0a-b2b8-8abd56fdd25a"
 		lights = {
@@ -13405,6 +13433,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.stoneD.bake_target" = false
 		}
 		id = "6e938e86-fa4c-445d-a106-1e549602ec90"
 		lights = {
@@ -13435,6 +13464,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.stoneE.bake_target" = false
 		}
 		id = "36b66b3d-5e42-499e-a20b-b674091645df"
 		lights = {
@@ -13855,6 +13885,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.stoneD.bake_target" = false
 		}
 		id = "13bf1674-401c-402c-a47b-abefc20c67bb"
 		lights = {
@@ -13885,6 +13916,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.stoneE.bake_target" = false
 		}
 		id = "e94753d3-9703-459e-bd70-99d6b6b2e7e0"
 		lights = {
@@ -14605,6 +14637,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.stoneD.bake_target" = false
 		}
 		id = "798d0123-a950-4414-9d18-3beb7f6148b8"
 		lights = {
@@ -14635,6 +14668,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.stoneE.bake_target" = false
 		}
 		id = "dcc257ae-0653-464d-9564-1fec314cf591"
 		lights = {
@@ -15355,6 +15389,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.stoneD.bake_target" = false
 		}
 		id = "1b8594a2-dfba-468b-bd3b-a4d8777ae143"
 		lights = {
@@ -15385,6 +15420,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.stoneE.bake_target" = false
 		}
 		id = "c51e7bf8-55ba-4c8f-b4af-06f018b29ee5"
 		lights = {
@@ -16135,6 +16171,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.stoneE.bake_target" = false
 		}
 		id = "09be7d86-3e0c-4f81-b0cd-2fdfe7bff975"
 		lights = {
@@ -16735,6 +16772,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.mushroomA.bake_target" = false
 		}
 		id = "46f1eaf2-4c5f-4db2-8bfc-cca077145a14"
 		lights = {
@@ -16765,6 +16803,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.mushroomB.bake_target" = false
 		}
 		id = "54ab33f2-198f-426c-935c-438f1cdc0cfc"
 		lights = {
@@ -16795,6 +16834,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.mushroomC.bake_target" = false
 		}
 		id = "93639c33-07bf-463d-a506-5a420f8e362f"
 		lights = {
@@ -16825,6 +16865,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.mushroomD.bake_target" = false
 		}
 		id = "461e822b-8805-4ce7-aeb9-665c6523bb61"
 		lights = {
@@ -16855,6 +16896,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.mushroomA.bake_target" = false
 		}
 		id = "2044253b-4f75-4ddd-b13a-85325b5d74b8"
 		lights = {
@@ -16885,6 +16927,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.mushroomB.bake_target" = false
 		}
 		id = "48c239c3-36e5-4d85-991b-09bcaa6cbf66"
 		lights = {
@@ -16915,6 +16958,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.mushroomC.bake_target" = false
 		}
 		id = "31df625a-d30b-48d7-b535-b71ae09e996c"
 		lights = {
@@ -16945,6 +16989,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.mushroomD.bake_target" = false
 		}
 		id = "88f8b0af-d49e-4489-a3b8-4794a2a8fd36"
 		lights = {
@@ -16975,6 +17020,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.mushroomA.bake_target" = false
 		}
 		id = "e4ab1029-1c83-40db-8220-01089e87f49e"
 		lights = {
@@ -17005,6 +17051,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.mushroomB.bake_target" = false
 		}
 		id = "a2c2078a-46f1-4f9d-b634-cbcbb8202fa6"
 		lights = {
@@ -17035,6 +17082,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.mushroomC.bake_target" = false
 		}
 		id = "07d3dad6-bf37-4e97-910d-be0180ab1b2a"
 		lights = {
@@ -17065,6 +17113,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.mushroomD.bake_target" = false
 		}
 		id = "42703938-5e41-4674-905a-fa0c4a9ac37e"
 		lights = {
@@ -17095,6 +17144,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.mushroomA.bake_target" = false
 		}
 		id = "c394ac49-b64f-4a10-b34a-0fe94fcd99bf"
 		lights = {
@@ -17125,6 +17175,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.mushroomB.bake_target" = false
 		}
 		id = "9a348a99-d51a-4c1b-a95d-2a6560e255df"
 		lights = {
@@ -17155,6 +17206,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.mushroomC.bake_target" = false
 		}
 		id = "1bd75f7d-1a8b-4ea7-bef2-43f178db83f5"
 		lights = {
@@ -17185,6 +17237,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.mushroomD.bake_target" = false
 		}
 		id = "c554f337-ecb1-45c8-b26d-93fbccf0f765"
 		lights = {
@@ -21625,6 +21678,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.ST2_BG1.bake_target" = false
+			"light_baking.ST2_BG1.contributes" = false
 		}
 		id = "8b25817c-22eb-4275-8231-bfab49ef454c"
 		lights = {
@@ -21650,6 +21705,128 @@ units = [
 			1.5
 		]
 		type = "content/models/stage2/background/ST2_BG"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"probe.trace_box_max[0]" = 20
+			"probe.trace_box_max[1]" = 20
+			"probe.trace_box_max[2]" = 20
+		}
+		id = "855c8884-345d-4436-be8f-ef9b05ca1efe"
+		lights = {
+			probe = {
+				baked = false
+				box_max = [
+					20
+					200
+					20
+				]
+				box_min = [
+					-5
+					-100
+					-5
+				]
+				cast_shadows = false
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1
+				material = "content/levels/stage2-cubemaps/reflection_probe1_bake"
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "box"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "reflection_probe1"
+		pos = [
+			0.791784
+			70.220528
+			0.971759
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"probe.trace_box_max[0]" = 20
+			"probe.trace_box_max[1]" = 20
+			"probe.trace_box_max[2]" = 20
+		}
+		id = "a35ef2d7-1c1f-4537-b36e-ad249ba05534"
+		lights = {
+			probe = {
+				baked = false
+				box_max = [
+					10
+					200
+					20
+				]
+				box_min = [
+					-10
+					-100
+					-5
+				]
+				cast_shadows = false
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1
+				material = "content/levels/stage2-cubemaps/reflection_probe_bake"
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "box"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "reflection_probe"
+		pos = [
+			-10.934006
+			70.220528
+			0.971759
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
 	}
 ]
 volumes = [

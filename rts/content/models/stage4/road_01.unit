@@ -1,4 +1,31 @@
 
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 33.626427
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			19.414227
+			19.414234
+			19.597979
+		]
+		projection_type = "perspective"
+		rotation = [
+			-0.115917
+			-0.279848
+			0.880476
+			0.364705
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
 materials = {
 	road_01_mt = "content/models/stage4/materials/road_01_mt"
 }
@@ -6,7 +33,7 @@ renderables = {
 	road_01 = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = true
 		occluder = false
 		shadow_caster = true
 		surface_queries = false

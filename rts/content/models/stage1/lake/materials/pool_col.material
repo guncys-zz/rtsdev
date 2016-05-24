@@ -1164,16 +1164,16 @@ textures = {
 	color_map = "content/models/stage1/lake/textures/pool_col"
 	emissive_map = null
 	metallic_map = null
-	normal_map = null
-	roughness_map = null
+	normal_map = "content/models/stage1/lake/textures/pool_col_normal"
+	roughness_map = "content/models/stage1/lake/textures/pool_col_roughness"
 }
 variables = {
 	base_color = {
 		type = "vector3"
 		value = [
-			1
-			1
-			1
+			0.95
+			0.95
+			0.95
 		]
 	}
 	emissive = {
@@ -1190,11 +1190,11 @@ variables = {
 	}
 	metallic = {
 		type = "scalar"
-		value = 0.211
+		value = 1
 	}
 	roughness = {
 		type = "scalar"
-		value = 0.444
+		value = 0.01
 	}
 	use_ao_map = {
 		type = "scalar"
@@ -1214,10 +1214,10 @@ variables = {
 	}
 	use_normal_map = {
 		type = "scalar"
-		value = 0
+		value = 1
 	}
 	use_roughness_map = {
 		type = "scalar"
-		value = 0
+		value = 1
 	}
 }

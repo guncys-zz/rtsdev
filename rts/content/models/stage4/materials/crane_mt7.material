@@ -6,9 +6,9 @@ variables = {
 	base_color = {
 		type = "vector3"
 		value = [
-			0.8941
-			0.8392
-			0.6
+			0.82
+			0.7
+			0.547
 		]
 	}
 	emissive = {
@@ -21,14 +21,14 @@ variables = {
 	}
 	metallic = {
 		type = "scalar"
-		value = 1
+		value = 0
 	}
 	roughness = {
 		type = "scalar"
-		value = 1
+		value = 0.5
 	}
 	use_roughness_map = {
 		type = "scalar"
-		value = 1
+		value = 0
 	}
 }

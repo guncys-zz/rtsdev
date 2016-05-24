@@ -14,9 +14,9 @@ variables = {
 	emissive = {
 		type = "vector3"
 		value = [
-			1
-			1
-			1
+			0
+			0
+			0
 		]
 	}
 	emissive_intensity = {
@@ -25,11 +25,11 @@ variables = {
 	}
 	metallic = {
 		type = "scalar"
-		value = 0.75
+		value = 0
 	}
 	roughness = {
 		type = "scalar"
-		value = 0.5
+		value = 0.2
 	}
 	use_ao_map = {
 		type = "scalar"
@@ -53,6 +53,6 @@ variables = {
 	}
 	use_roughness_map = {
 		type = "scalar"
-		value = 1
+		value = 0
 	}
 }

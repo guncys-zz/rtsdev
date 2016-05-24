@@ -5,9 +5,70 @@ editor_metadata = {
 			id = "41982f64-a77c-4720-9714-80fb7e806528"
 			layer = "Default"
 			modified_components = {
+				"06c78e06-c921-4208-8069-d377b6415d30" = {
+					data = {
+						fog_color = {
+							rgb = [
+								0.0473661427034499
+								0.146214546291062
+								0.355578945903531
+							]
+						}
+						fog_depth_range = [
+							0
+							300
+						]
+						fog_sun_blend = 1
+						fog_sun_exponent = 4
+					}
+				}
+				"3eb1ba63-3a53-4846-970b-57e3d4d75d2b" = {
+					data = {
+						baked_diffuse_tint = {
+							rgb = [
+								0.325036962521076
+								0.612065599865624
+								1
+							]
+						}
+						reflections_tint = {
+							rgb = [
+								0.45626345839647
+								0.699393572164293
+								1
+							]
+						}
+					}
+				}
+				"597d400f-c916-454b-9912-b9bb35e6e689" = {
+					data = {
+						shadow_max_distance = 50
+					}
+				}
+				"68333c83-9659-4d2e-b664-35790e366f08" = {
+					data = {
+						exposure = 1.35
+					}
+				}
+				"a9f83eb8-b54a-4c45-bf62-4fe7e02a8ce4" = {
+					data = {
+						ao_enabled = false
+					}
+				}
 				"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
 					data = {
 						motion_blur_enabled = false
+					}
+				}
+				"dd1dccf2-6f2f-4b8c-9199-290c069ab62b" = {
+					data = {
+						vignette_enabled = false
+					}
+				}
+				"fd909d00-3e4d-4339-b1a9-784c7d6a60ad" = {
+					data = {
+						bloom_falloff = 0.5
+						bloom_threshold = 1.6
 					}
 				}
 			}
@@ -1005,20 +1066,20 @@ editor_metadata = {
 		ExcludedObjectSets = [
 		]
 		FilterGain = 20
-		FilterType = "Both"
-		IlluminationType = "Both"
+		FilterType = "Indirect"
+		IlluminationType = "Indirect"
 		Layers = [
 		]
 		LightmapType = "Standard"
-		MaxSamples = 96
-		MinSamples = 32
-		QualityPreset = "Low"
+		MaxSamples = 20000
+		MinSamples = 6000
+		QualityPreset = "Custom"
 		SkylightIntensityRGB = {
 			X = 1
 			Y = 1
 			Z = 1
 		}
-		TexelScale = 10
+		TexelScale = 2
 		TotalPasses = 256
 		Variance = 0.5
 	}
@@ -1048,6 +1109,16 @@ editor_metadata = {
 		]
 		HiddenObjects = [
 			"91ab1808-0f2d-44b7-a234-652e3db51857"
+			"5c9834ae-8aa4-49e3-8c5e-6f0eead80b95"
+			"d9bae062-49d6-45f4-a8a9-38bb859a2203"
+			"cb4da18f-bf7f-4988-90eb-0598f218b1f9"
+			"6a071fec-3213-4de0-b6b6-f9fe12153096"
+			"6e364ed1-bdec-4875-935c-2c3c02c32f32"
+			"1a8deaae-ffc6-432d-b9a5-8e6dc78459af"
+			"35e1e25e-4dc2-4240-bb76-f6b3884e3e89"
+			"ca337371-7d79-49a0-a590-ab264bb0a2fd"
+			"20453860-70f7-4e64-8b04-77244898d6dd"
+			"7bc8daf0-5649-4e04-85da-91696a641348"
 		]
 		LastHiddenObjects = [
 		]
@@ -1084,14 +1155,14 @@ editor_metadata = {
 					CastShadows = true
 					Color = {
 						A = 255
-						B = 255
-						G = 255
+						B = 13
+						G = 64
 						R = 255
 					}
 					Enabled = true
 					FalloffEnd = 8
 					FalloffStart = 0
-					Intensity = 4
+					Intensity = 3.5
 					Material = ""
 					MaterialResource = ""
 					ShadowDepthBias = 0.4
@@ -1117,10 +1188,10 @@ editor_metadata = {
 				Z = 5
 			}
 			Rot = {
-				W = 0.5
-				X = -0.707106781186547
-				Y = -2.77555756156289E-17
-				Z = 0.5
+				W = 0.255871
+				X = -0.634805
+				Y = 0.036878
+				Z = 0.728143
 			}
 			Scl = {
 				X = 1
@@ -1278,6 +1349,8 @@ editor_metadata = {
 				Z = 0.985009
 			}
 			ScriptData = {
+				"light_baking.Building01_window.bake_target" = false
+				"light_baking.Building01_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_01_Blue"
 		}
@@ -1315,6 +1388,8 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Building01_window.bake_target" = false
+				"light_baking.Building01_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_01_Red"
 		}
@@ -1352,6 +1427,8 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Building01_window.bake_target" = false
+				"light_baking.Building01_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_01_Skyblue"
 		}
@@ -1389,6 +1466,8 @@ editor_metadata = {
 				Z = 1.108745
 			}
 			ScriptData = {
+				"light_baking.Building01_window.bake_target" = false
+				"light_baking.Building01_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_01_Yellow"
 		}
@@ -1426,6 +1505,10 @@ editor_metadata = {
 				Z = 1.518026
 			}
 			ScriptData = {
+				"light_baking.Building03_out.texel_scale" = 0.5
+				"light_baking.Building03_top.texel_scale" = 0.5
+				"light_baking.Building03_window.bake_target" = false
+				"light_baking.Building03_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_03_Blue"
 		}
@@ -1463,6 +1546,8 @@ editor_metadata = {
 				Z = 0.682541
 			}
 			ScriptData = {
+				"light_baking.Building03_window.bake_target" = false
+				"light_baking.Building03_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_03_Yellow"
 		}
@@ -1574,6 +1659,7 @@ editor_metadata = {
 				Z = 1.752421
 			}
 			ScriptData = {
+				"light_baking.Building02_Skyblue.texel_scale" = 0.5
 			}
 			Type = "content/models/stage4/Building_02_Skyblue"
 		}
@@ -1685,6 +1771,8 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.road_06_A.bake_target" = false
+				"light_baking.road_06_A.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/road_06_A"
 		}
@@ -2463,6 +2551,8 @@ editor_metadata = {
 				Z = 0.776809
 			}
 			ScriptData = {
+				"light_baking.Building03_window.bake_target" = false
+				"light_baking.Building03_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_03_Yellow"
 		}
@@ -2500,6 +2590,8 @@ editor_metadata = {
 				Z = 0.927357
 			}
 			ScriptData = {
+				"light_baking.Building01_window.bake_target" = false
+				"light_baking.Building01_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_01_Yellow"
 		}
@@ -2537,6 +2629,8 @@ editor_metadata = {
 				Z = 0.766006
 			}
 			ScriptData = {
+				"light_baking.Building01_window.bake_target" = false
+				"light_baking.Building01_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_01_Yellow"
 		}
@@ -2611,6 +2705,7 @@ editor_metadata = {
 				Z = 1.217616
 			}
 			ScriptData = {
+				"light_baking.Building02_Blue.texel_scale" = 0.5
 			}
 			Type = "content/models/stage4/Building_02_Blue"
 		}
@@ -2648,6 +2743,7 @@ editor_metadata = {
 				Z = 1.96784
 			}
 			ScriptData = {
+				"light_baking.Building02_Green.texel_scale" = 0.5
 			}
 			Type = "content/models/stage4/Building_02_Green"
 		}
@@ -2685,6 +2781,7 @@ editor_metadata = {
 				Z = 1.20067
 			}
 			ScriptData = {
+				"light_baking.Building02_Green.texel_scale" = 0.5
 			}
 			Type = "content/models/stage4/Building_02_Green"
 		}
@@ -2759,6 +2856,7 @@ editor_metadata = {
 				Z = 1.090777
 			}
 			ScriptData = {
+				"light_baking.Building02_Red.texel_scale" = 0.5
 			}
 			Type = "content/models/stage4/Building_02_Red"
 		}
@@ -2796,6 +2894,7 @@ editor_metadata = {
 				Z = 1.366168
 			}
 			ScriptData = {
+				"light_baking.Building02_Skyblue.texel_scale" = 0.5
 			}
 			Type = "content/models/stage4/Building_02_Skyblue"
 		}
@@ -2833,6 +2932,7 @@ editor_metadata = {
 				Z = 1.96784
 			}
 			ScriptData = {
+				"light_baking.Building02_Yellow.texel_scale" = 0.5
 			}
 			Type = "content/models/stage4/Building_02_Yellow"
 		}
@@ -2870,6 +2970,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Plane1.texel_scale" = 0.2
 			}
 			Type = "content/models/stage4/Ground"
 		}
@@ -2907,6 +3008,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Plane1.texel_scale" = 0.2
 			}
 			Type = "content/models/stage4/Ground"
 		}
@@ -2944,6 +3046,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Plane1.texel_scale" = 0.2
 			}
 			Type = "content/models/stage4/Ground"
 		}
@@ -2981,6 +3084,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Plane1.texel_scale" = 0.2
 			}
 			Type = "content/models/stage4/Ground"
 		}
@@ -3018,6 +3122,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Plane1.texel_scale" = 0.2
 			}
 			Type = "content/models/stage4/Ground"
 		}
@@ -3055,6 +3160,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Plane1.texel_scale" = 0.2
 			}
 			Type = "content/models/stage4/Ground"
 		}
@@ -3092,6 +3198,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Plane1.texel_scale" = 0.2
 			}
 			Type = "content/models/stage4/Ground"
 		}
@@ -3129,6 +3236,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Plane1.texel_scale" = 0.2
 			}
 			Type = "content/models/stage4/Ground"
 		}
@@ -3166,6 +3274,8 @@ editor_metadata = {
 				Z = 0.863643
 			}
 			ScriptData = {
+				"light_baking.Building01_window.bake_target" = false
+				"light_baking.Building01_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_01_Red"
 		}
@@ -3277,6 +3387,8 @@ editor_metadata = {
 				Z = 1.02356
 			}
 			ScriptData = {
+				"light_baking.Building01_window.bake_target" = false
+				"light_baking.Building01_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_01_Blue"
 		}
@@ -3314,6 +3426,8 @@ editor_metadata = {
 				Z = 0.714249
 			}
 			ScriptData = {
+				"light_baking.Building03_window.bake_target" = false
+				"light_baking.Building03_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_03_Blue"
 		}
@@ -3351,6 +3465,8 @@ editor_metadata = {
 				Z = 1.43684
 			}
 			ScriptData = {
+				"light_baking.road_06_B.bake_target" = false
+				"light_baking.road_06_B.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/road_06_B"
 		}
@@ -3425,6 +3541,8 @@ editor_metadata = {
 				Z = 1.031213
 			}
 			ScriptData = {
+				"light_baking.Building03_window.bake_target" = false
+				"light_baking.Building03_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_03_Yellow"
 		}
@@ -3462,6 +3580,8 @@ editor_metadata = {
 				Z = 1.766571
 			}
 			ScriptData = {
+				"light_baking.Building01_window.bake_target" = false
+				"light_baking.Building01_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_01_Red"
 		}
@@ -3499,6 +3619,9 @@ editor_metadata = {
 				Z = 2.274359
 			}
 			ScriptData = {
+				"light_baking.Building01_out.texel_scale" = 0.5
+				"light_baking.Building01_window.bake_target" = false
+				"light_baking.Building01_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_01_Skyblue"
 		}
@@ -3573,6 +3696,8 @@ editor_metadata = {
 				Z = 1.042721
 			}
 			ScriptData = {
+				"light_baking.road_06_B.bake_target" = false
+				"light_baking.road_06_B.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/road_06_B"
 		}
@@ -3610,6 +3735,8 @@ editor_metadata = {
 				Z = 1.187572
 			}
 			ScriptData = {
+				"light_baking.Building01_window.bake_target" = false
+				"light_baking.Building01_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_01_Skyblue"
 		}
@@ -3647,6 +3774,8 @@ editor_metadata = {
 				Z = 1.037064
 			}
 			ScriptData = {
+				"light_baking.Building01_window.bake_target" = false
+				"light_baking.Building01_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_01_Green"
 		}
@@ -3684,6 +3813,8 @@ editor_metadata = {
 				Z = 1.355723
 			}
 			ScriptData = {
+				"light_baking.window.bake_target" = false
+				"light_baking.window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_far_01"
 		}
@@ -3721,6 +3852,8 @@ editor_metadata = {
 				Z = 1.355723
 			}
 			ScriptData = {
+				"light_baking.window.bake_target" = false
+				"light_baking.window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_far_01"
 		}
@@ -3758,6 +3891,8 @@ editor_metadata = {
 				Z = 1.135023
 			}
 			ScriptData = {
+				"light_baking.window.bake_target" = false
+				"light_baking.window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_far_01"
 		}
@@ -3795,6 +3930,8 @@ editor_metadata = {
 				Z = 1.777357
 			}
 			ScriptData = {
+				"light_baking.window.bake_target" = false
+				"light_baking.window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_far_01"
 		}
@@ -3906,6 +4043,8 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Cube_01_Green.bake_target" = false
+				"light_baking.Cube_01_Green.contributes" = false
 			}
 			Type = "content/models/stage4/cube_01_green"
 		}
@@ -3943,6 +4082,8 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Cube_01_Skyblue.bake_target" = false
+				"light_baking.Cube_01_Skyblue.contributes" = false
 			}
 			Type = "content/models/stage4/cube_01_skyblue"
 		}
@@ -3980,6 +4121,8 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Cube_01_Skyblue.bake_target" = false
+				"light_baking.Cube_01_Skyblue.contributes" = false
 			}
 			Type = "content/models/stage4/cube_01_skyblue"
 		}
@@ -4017,6 +4160,8 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Cube_01_Green.bake_target" = false
+				"light_baking.Cube_01_Green.contributes" = false
 			}
 			Type = "content/models/stage4/cube_01_green"
 		}
@@ -4054,6 +4199,8 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Cube_01_Green.bake_target" = false
+				"light_baking.Cube_01_Green.contributes" = false
 			}
 			Type = "content/models/stage4/cube_01_green"
 		}
@@ -4091,6 +4238,8 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Cube_01_Skyblue.bake_target" = false
+				"light_baking.Cube_01_Skyblue.contributes" = false
 			}
 			Type = "content/models/stage4/cube_01_skyblue"
 		}
@@ -4128,6 +4277,8 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Cube_01_Green.bake_target" = false
+				"light_baking.Cube_01_Green.contributes" = false
 			}
 			Type = "content/models/stage4/cube_01_green"
 		}
@@ -4165,6 +4316,8 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Cube_01_Green.bake_target" = false
+				"light_baking.Cube_01_Green.contributes" = false
 			}
 			Type = "content/models/stage4/cube_01_green"
 		}
@@ -4202,6 +4355,8 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Cube_01_Skyblue.bake_target" = false
+				"light_baking.Cube_01_Skyblue.contributes" = false
 			}
 			Type = "content/models/stage4/cube_01_skyblue"
 		}
@@ -4239,6 +4394,8 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Cube_01_Green.bake_target" = false
+				"light_baking.Cube_01_Green.contributes" = false
 			}
 			Type = "content/models/stage4/cube_01_green"
 		}
@@ -4276,6 +4433,8 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.Cube_01_Skyblue.bake_target" = false
+				"light_baking.Cube_01_Skyblue.contributes" = false
 			}
 			Type = "content/models/stage4/cube_01_skyblue"
 		}
@@ -4313,6 +4472,7 @@ editor_metadata = {
 				Z = 1.461827
 			}
 			ScriptData = {
+				"light_baking.Building02_Yellow.texel_scale" = 0.5
 			}
 			Type = "content/models/stage4/Building_02_Yellow"
 		}
@@ -6205,6 +6365,8 @@ editor_metadata = {
 				Z = 0.976403
 			}
 			ScriptData = {
+				"light_baking.Building01_window.bake_target" = false
+				"light_baking.Building01_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_01_Green"
 		}
@@ -8399,43 +8561,6 @@ editor_metadata = {
 		{
 			Cameras = {
 			}
-			Id = "4feb1a68-6cf6-47fd-b73e-b1b71d15c4a5"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "car_chb"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = -23.688343
-				Y = 14.797625
-				Z = -4.651848
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1.3
-				Y = 1.3
-				Z = 1.3
-			}
-			ScriptData = {
-			}
-			Type = "content/models/stage4/car_chb"
-		}
-		{
-			Cameras = {
-			}
 			Id = "d7e7e4e9-8277-4e8b-9d78-cc4189d78b0f"
 			Layer = "Default"
 			Lights = {
@@ -9541,6 +9666,8 @@ editor_metadata = {
 				Z = 0.985009
 			}
 			ScriptData = {
+				"light_baking.Building01_window.bake_target" = false
+				"light_baking.Building01_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_01_Blue"
 		}
@@ -10728,6 +10855,8 @@ editor_metadata = {
 				Z = 0.927357
 			}
 			ScriptData = {
+				"light_baking.Building01_window.bake_target" = false
+				"light_baking.Building01_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_01_Yellow"
 		}
@@ -11061,6 +11190,8 @@ editor_metadata = {
 				Z = 0.766006
 			}
 			ScriptData = {
+				"light_baking.Building01_window.bake_target" = false
+				"light_baking.Building01_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_01_Yellow"
 		}
@@ -11359,6 +11490,8 @@ editor_metadata = {
 				Z = 1.514448
 			}
 			ScriptData = {
+				"light_baking.Building01_window.bake_target" = false
+				"light_baking.Building01_window.texel_scale" = 0.01
 			}
 			Type = "content/models/stage4/Building_01_Blue"
 		}
@@ -12510,6 +12643,7 @@ editor_metadata = {
 				Z = 700
 			}
 			ScriptData = {
+				"light_baking.pPlane1.texel_scale" = 0.4
 			}
 			Type = "content/models/stage4/grass"
 		}
@@ -12548,6 +12682,7 @@ editor_metadata = {
 				Z = 700
 			}
 			ScriptData = {
+				"light_baking.pPlane1.texel_scale" = 0.4
 			}
 			Type = "content/models/stage4/grass"
 		}
@@ -12586,6 +12721,7 @@ editor_metadata = {
 				Z = 700
 			}
 			ScriptData = {
+				"light_baking.pPlane1.texel_scale" = 0.4
 			}
 			Type = "content/models/stage4/grass"
 		}
@@ -12624,6 +12760,7 @@ editor_metadata = {
 				Z = 700
 			}
 			ScriptData = {
+				"light_baking.pPlane1.texel_scale" = 0.4
 			}
 			Type = "content/models/stage4/grass"
 		}
@@ -12662,6 +12799,7 @@ editor_metadata = {
 				Z = 700
 			}
 			ScriptData = {
+				"light_baking.pPlane1.texel_scale" = 0.4
 			}
 			Type = "content/models/stage4/grass"
 		}
@@ -12700,6 +12838,7 @@ editor_metadata = {
 				Z = 700
 			}
 			ScriptData = {
+				"light_baking.pPlane1.texel_scale" = 0.4
 			}
 			Type = "content/models/stage4/grass"
 		}
@@ -12812,6 +12951,7 @@ editor_metadata = {
 				Z = 5
 			}
 			ScriptData = {
+				"light_baking.enabled" = false
 			}
 			Type = "content/models/blockers/BNN/BNN"
 		}
@@ -12849,6 +12989,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.enabled" = false
 			}
 			Type = "content/models/blockers/TrashCan/TrashCan"
 		}
@@ -12886,6 +13027,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.enabled" = false
 			}
 			Type = "content/models/blockers/FNC/FNC"
 		}
@@ -12923,6 +13065,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.enabled" = false
 			}
 			Type = "content/models/blockers/FNC/FNC"
 		}
@@ -12960,6 +13103,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.enabled" = false
 			}
 			Type = "content/models/blockers/TrashCan/TrashCan"
 		}
@@ -12997,6 +13141,7 @@ editor_metadata = {
 				Z = 5
 			}
 			ScriptData = {
+				"light_baking.enabled" = false
 			}
 			Type = "content/models/blockers/BNN/BNN"
 		}
@@ -13034,6 +13179,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.enabled" = false
 			}
 			Type = "content/models/blockers/TrashCan/TrashCan"
 		}
@@ -13071,6 +13217,7 @@ editor_metadata = {
 				Z = 5
 			}
 			ScriptData = {
+				"light_baking.enabled" = false
 			}
 			Type = "content/models/blockers/BNN/BNN"
 		}
@@ -13108,6 +13255,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.enabled" = false
 			}
 			Type = "content/models/blockers/PUM/PUM"
 		}
@@ -13145,6 +13293,7 @@ editor_metadata = {
 				Z = 5
 			}
 			ScriptData = {
+				"light_baking.enabled" = false
 			}
 			Type = "content/models/blockers/BNN/BNN"
 		}
@@ -13182,6 +13331,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.enabled" = false
 			}
 			Type = "content/models/blockers/TrashCan/TrashCan"
 		}
@@ -13441,6 +13591,8 @@ editor_metadata = {
 				Z = 1.7
 			}
 			ScriptData = {
+				"light_baking.ST4_BG1.bake_target" = false
+				"light_baking.ST4_BG1.contributes" = false
 			}
 			Type = "content/models/stage4/background/ST4_BG"
 		}
@@ -13478,8 +13630,265 @@ editor_metadata = {
 				Z = 1.7
 			}
 			ScriptData = {
+				"light_baking.ST4_BG1.bake_target" = false
 			}
 			Type = "content/models/stage4/background/ST4_BG"
+		}
+		{
+			Cameras = {
+			}
+			Id = "22a9dd08-395f-4e75-a13e-d241e0f2e4f1"
+			Layer = "Default"
+			Lights = {
+				probe = {
+					Baked = false
+					BoxMax = {
+						X = 50
+						Y = 60
+						Z = 50
+					}
+					BoxMin = {
+						X = -50
+						Y = -60
+						Z = -20
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1
+					Material = ""
+					MaterialResource = "content/levels/stage4-cubemaps/reflection_probe1_bake"
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "box"
+				}
+			}
+			Materials = {
+			}
+			Name = "reflection_probe1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -26.407768
+				Y = 32.984634
+				Z = 5.667432
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"probe.trace_box_max[0]" = 50
+				"probe.trace_box_max[1]" = 60
+				"probe.trace_box_max[2]" = 50
+				"probe.trace_box_min[0]" = -50
+				"probe.trace_box_min[1]" = -60
+				"probe.trace_box_min[2]" = -20
+			}
+			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+		}
+		{
+			Cameras = {
+			}
+			Id = "bf5362cc-09d2-4e08-b9c0-2e06252002a3"
+			Layer = "Default"
+			Lights = {
+				probe = {
+					Baked = false
+					BoxMax = {
+						X = 50
+						Y = 60
+						Z = 50
+					}
+					BoxMin = {
+						X = -50
+						Y = -60
+						Z = -15
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1
+					Material = ""
+					MaterialResource = "content/levels/stage4-cubemaps/reflection_probe_bake"
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "box"
+				}
+			}
+			Materials = {
+			}
+			Name = "reflection_probe"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -26.407768
+				Y = 145.238831
+				Z = 6.052218
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"probe.trace_box_max[0]" = 50
+				"probe.trace_box_max[1]" = 60
+				"probe.trace_box_max[2]" = 50
+				"probe.trace_box_min[0]" = -50
+				"probe.trace_box_min[1]" = -60
+				"probe.trace_box_min[2]" = -15
+			}
+			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f7fc3e79-4355-4cba-b204-c10816f3d637"
+			Layer = "Default"
+			Lights = {
+				probe = {
+					Baked = false
+					BoxMax = {
+						X = 50
+						Y = 60
+						Z = 50
+					}
+					BoxMin = {
+						X = -50
+						Y = -60
+						Z = -15
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1
+					Material = ""
+					MaterialResource = "content/levels/stage4-cubemaps/reflection_probe2_bake"
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "box"
+				}
+			}
+			Materials = {
+			}
+			Name = "reflection_probe2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -26.407768
+				Y = 241.177155
+				Z = 6.052218
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"probe.trace_box_max[0]" = 50
+				"probe.trace_box_max[1]" = 60
+				"probe.trace_box_max[2]" = 50
+				"probe.trace_box_min[0]" = -50
+				"probe.trace_box_min[1]" = -60
+				"probe.trace_box_min[2]" = -15
+			}
+			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4feb1a68-6cf6-47fd-b73e-b1b71d15c4a5"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "car_chb"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -23.688343
+				Y = 14.797625
+				Z = -4.651848
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1.3
+				Y = 1.3
+				Z = 1.3
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/car_chb"
 		}
 	]
 	Volumes = [
@@ -13489,9 +13898,70 @@ entities = [
 	{
 		id = "41982f64-a77c-4720-9714-80fb7e806528"
 		modified_components = {
+			"06c78e06-c921-4208-8069-d377b6415d30" = {
+				data = {
+					fog_color = {
+						rgb = [
+							0.0473661427034499
+							0.146214546291062
+							0.355578945903531
+						]
+					}
+					fog_depth_range = [
+						0
+						300
+					]
+					fog_sun_blend = 1
+					fog_sun_exponent = 4
+				}
+			}
+			"3eb1ba63-3a53-4846-970b-57e3d4d75d2b" = {
+				data = {
+					baked_diffuse_tint = {
+						rgb = [
+							0.325036962521076
+							0.612065599865624
+							1
+						]
+					}
+					reflections_tint = {
+						rgb = [
+							0.45626345839647
+							0.699393572164293
+							1
+						]
+					}
+				}
+			}
+			"597d400f-c916-454b-9912-b9bb35e6e689" = {
+				data = {
+					shadow_max_distance = 50
+				}
+			}
+			"68333c83-9659-4d2e-b664-35790e366f08" = {
+				data = {
+					exposure = 1.35
+				}
+			}
+			"a9f83eb8-b54a-4c45-bf62-4fe7e02a8ce4" = {
+				data = {
+					ao_enabled = false
+				}
+			}
 			"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
 				data = {
 					motion_blur_enabled = false
+				}
+			}
+			"dd1dccf2-6f2f-4b8c-9199-290c069ab62b" = {
+				data = {
+					vignette_enabled = false
+				}
+			}
+			"fd909d00-3e4d-4339-b1a9-784c7d6a60ad" = {
+				data = {
+					bloom_falloff = 0.5
+					bloom_threshold = 1.6
 				}
 			}
 		}
@@ -14218,13 +14688,13 @@ units = [
 				cast_shadows = true
 				color = [
 					1
-					1
-					1
+					0.250980392156863
+					0.0509803921568627
 				]
 				enabled = true
 				falloff_end = 8
 				falloff_start = 0
-				intensity = 4
+				intensity = 3.5
 				material = ""
 				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
@@ -14242,10 +14712,10 @@ units = [
 			5
 		]
 		rot = [
-			-0.707106781186547
-			-2.77555756156289E-17
-			0.5
-			0.5
+			-0.634805
+			0.036878
+			0.728143
+			0.255871
 		]
 		scl = [
 			1
@@ -14350,6 +14820,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building01_window.bake_target" = false
+			"light_baking.Building01_window.texel_scale" = 0.01
 		}
 		id = "d1c865bd-ad9b-45bc-a58f-9bedccf4f401"
 		lights = {
@@ -14380,6 +14852,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building01_window.bake_target" = false
+			"light_baking.Building01_window.texel_scale" = 0.01
 		}
 		id = "57465a36-c113-4368-8b5f-132c4284fb35"
 		lights = {
@@ -14410,6 +14884,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building01_window.bake_target" = false
+			"light_baking.Building01_window.texel_scale" = 0.01
 		}
 		id = "3e8fb276-9dd3-4f02-bed9-10f991aca00b"
 		lights = {
@@ -14440,6 +14916,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building01_window.bake_target" = false
+			"light_baking.Building01_window.texel_scale" = 0.01
 		}
 		id = "a9270c12-920d-4beb-8834-36101a1b9239"
 		lights = {
@@ -14470,6 +14948,10 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building03_out.texel_scale" = 0.5
+			"light_baking.Building03_top.texel_scale" = 0.5
+			"light_baking.Building03_window.bake_target" = false
+			"light_baking.Building03_window.texel_scale" = 0.01
 		}
 		id = "dcd1ff3c-cb57-42ee-9d84-84e2b22867d1"
 		lights = {
@@ -14500,6 +14982,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building03_window.bake_target" = false
+			"light_baking.Building03_window.texel_scale" = 0.01
 		}
 		id = "a766f653-dc31-492e-82a4-58ac5ababd0d"
 		lights = {
@@ -14590,6 +15074,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building02_Skyblue.texel_scale" = 0.5
 		}
 		id = "615af3e9-d6b2-4ed0-925a-6d2ac1caf1e2"
 		lights = {
@@ -14680,6 +15165,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.road_06_A.bake_target" = false
+			"light_baking.road_06_A.texel_scale" = 0.01
 		}
 		id = "62b64bbf-6af5-45de-9b75-ae63e2f7d617"
 		lights = {
@@ -15311,6 +15798,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building03_window.bake_target" = false
+			"light_baking.Building03_window.texel_scale" = 0.01
 		}
 		id = "2dc49b44-1a94-4416-b80f-91163d337a06"
 		lights = {
@@ -15341,6 +15830,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building01_window.bake_target" = false
+			"light_baking.Building01_window.texel_scale" = 0.01
 		}
 		id = "d932dff9-daaa-4c12-885b-218057f9ec9c"
 		lights = {
@@ -15371,6 +15862,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building01_window.bake_target" = false
+			"light_baking.Building01_window.texel_scale" = 0.01
 		}
 		id = "2451a2a8-ed1b-4a8b-961f-9c18122e5c06"
 		lights = {
@@ -15431,6 +15924,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building02_Blue.texel_scale" = 0.5
 		}
 		id = "e41c8ade-547c-46e3-8fa4-e05c665a4979"
 		lights = {
@@ -15461,6 +15955,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building02_Green.texel_scale" = 0.5
 		}
 		id = "cae723c6-7089-4721-8b80-a9dc5f52cafb"
 		lights = {
@@ -15491,6 +15986,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building02_Green.texel_scale" = 0.5
 		}
 		id = "6cc4f456-6b49-4970-b574-95df0c304585"
 		lights = {
@@ -15551,6 +16047,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building02_Red.texel_scale" = 0.5
 		}
 		id = "c41221b3-76cd-4ae3-83f7-0e8f540bcc3a"
 		lights = {
@@ -15581,6 +16078,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building02_Skyblue.texel_scale" = 0.5
 		}
 		id = "2fe2c06f-c0b7-46e8-a56b-e8c69cfd98b6"
 		lights = {
@@ -15611,6 +16109,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building02_Yellow.texel_scale" = 0.5
 		}
 		id = "41895722-61cc-4b03-8b2e-bd12a903858f"
 		lights = {
@@ -15641,6 +16140,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Plane1.texel_scale" = 0.2
 		}
 		id = "15f72756-0e70-4ded-8520-74ca7612c978"
 		lights = {
@@ -15671,6 +16171,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Plane1.texel_scale" = 0.2
 		}
 		id = "3f056493-ba1a-46b7-9fc1-ffbe4f2fec76"
 		lights = {
@@ -15701,6 +16202,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Plane1.texel_scale" = 0.2
 		}
 		id = "6012f43f-ce0c-4f35-bf24-8bb70828a263"
 		lights = {
@@ -15731,6 +16233,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Plane1.texel_scale" = 0.2
 		}
 		id = "79e93590-3a93-4e3f-8f8b-3a1073d747a4"
 		lights = {
@@ -15761,6 +16264,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Plane1.texel_scale" = 0.2
 		}
 		id = "e6af3b2c-04d4-4a1a-9d1d-5962fca906df"
 		lights = {
@@ -15791,6 +16295,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Plane1.texel_scale" = 0.2
 		}
 		id = "230e2efc-2614-4604-b913-180a6d49edae"
 		lights = {
@@ -15821,6 +16326,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Plane1.texel_scale" = 0.2
 		}
 		id = "e0fe0c28-cce6-4c50-ba55-e8cc5d31439f"
 		lights = {
@@ -15851,6 +16357,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Plane1.texel_scale" = 0.2
 		}
 		id = "9db7d202-dbc5-476f-a435-7a00cfd90287"
 		lights = {
@@ -15881,6 +16388,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building01_window.bake_target" = false
+			"light_baking.Building01_window.texel_scale" = 0.01
 		}
 		id = "989dc9fa-fd8b-41d9-a7e5-8a5afc8eb1d8"
 		lights = {
@@ -15971,6 +16480,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building01_window.bake_target" = false
+			"light_baking.Building01_window.texel_scale" = 0.01
 		}
 		id = "c111ce9f-16df-4235-86cf-1e346a1979ce"
 		lights = {
@@ -16001,6 +16512,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building03_window.bake_target" = false
+			"light_baking.Building03_window.texel_scale" = 0.01
 		}
 		id = "f1d3b595-6398-4396-9972-ed93a4a5e175"
 		lights = {
@@ -16031,6 +16544,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.road_06_B.bake_target" = false
+			"light_baking.road_06_B.texel_scale" = 0.01
 		}
 		id = "3caf388a-8c9e-450a-9015-4897db2cdaba"
 		lights = {
@@ -16091,6 +16606,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building03_window.bake_target" = false
+			"light_baking.Building03_window.texel_scale" = 0.01
 		}
 		id = "7da77809-7ed5-4e3b-97ae-5bdb0bd8fd94"
 		lights = {
@@ -16121,6 +16638,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building01_window.bake_target" = false
+			"light_baking.Building01_window.texel_scale" = 0.01
 		}
 		id = "6e5bddb0-08d1-470d-8334-0ec6a2cd9d46"
 		lights = {
@@ -16151,6 +16670,9 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building01_out.texel_scale" = 0.5
+			"light_baking.Building01_window.bake_target" = false
+			"light_baking.Building01_window.texel_scale" = 0.01
 		}
 		id = "24fa5998-29ad-468e-8514-7f977d8cc970"
 		lights = {
@@ -16211,6 +16733,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.road_06_B.bake_target" = false
+			"light_baking.road_06_B.texel_scale" = 0.01
 		}
 		id = "58624351-d668-447a-a821-c74c1eef7b80"
 		lights = {
@@ -16241,6 +16765,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building01_window.bake_target" = false
+			"light_baking.Building01_window.texel_scale" = 0.01
 		}
 		id = "320f0f1c-b0a7-4012-a1ed-1ec230be2690"
 		lights = {
@@ -16271,6 +16797,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building01_window.bake_target" = false
+			"light_baking.Building01_window.texel_scale" = 0.01
 		}
 		id = "d20fcf02-4ce6-46a4-9e96-88ec85de5399"
 		lights = {
@@ -16301,6 +16829,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.window.bake_target" = false
+			"light_baking.window.texel_scale" = 0.01
 		}
 		id = "11d92f2a-661f-460a-a859-3a76c26c90ee"
 		lights = {
@@ -16331,6 +16861,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.window.bake_target" = false
+			"light_baking.window.texel_scale" = 0.01
 		}
 		id = "a12c60ca-80e8-4b74-97e4-9c872db0b11c"
 		lights = {
@@ -16361,6 +16893,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.window.bake_target" = false
+			"light_baking.window.texel_scale" = 0.01
 		}
 		id = "0595a2c6-ca2a-44e7-b173-aa67b2fcd52a"
 		lights = {
@@ -16391,6 +16925,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.window.bake_target" = false
+			"light_baking.window.texel_scale" = 0.01
 		}
 		id = "49c0330c-361d-4b8c-853b-fdff05c35d2c"
 		lights = {
@@ -16481,6 +17017,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Cube_01_Green.bake_target" = false
+			"light_baking.Cube_01_Green.contributes" = false
 		}
 		id = "51e5ef18-2c71-439e-9874-0d7ca810c2d8"
 		lights = {
@@ -16511,6 +17049,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Cube_01_Skyblue.bake_target" = false
+			"light_baking.Cube_01_Skyblue.contributes" = false
 		}
 		id = "50323ef5-daf0-402a-9223-731a05658ffd"
 		lights = {
@@ -16541,6 +17081,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Cube_01_Skyblue.bake_target" = false
+			"light_baking.Cube_01_Skyblue.contributes" = false
 		}
 		id = "9b279233-465d-410e-bc88-dabf062d5ea5"
 		lights = {
@@ -16571,6 +17113,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Cube_01_Green.bake_target" = false
+			"light_baking.Cube_01_Green.contributes" = false
 		}
 		id = "0ca36fc3-07f2-4b26-9d65-ac2973d7af46"
 		lights = {
@@ -16601,6 +17145,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Cube_01_Green.bake_target" = false
+			"light_baking.Cube_01_Green.contributes" = false
 		}
 		id = "725b02cf-df42-48d9-b4ba-9fdf29c35a67"
 		lights = {
@@ -16631,6 +17177,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Cube_01_Skyblue.bake_target" = false
+			"light_baking.Cube_01_Skyblue.contributes" = false
 		}
 		id = "b16b2711-2002-47c7-adaf-29794f6d1d1d"
 		lights = {
@@ -16661,6 +17209,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Cube_01_Green.bake_target" = false
+			"light_baking.Cube_01_Green.contributes" = false
 		}
 		id = "8cd23181-32fe-4f94-a8b5-9370eea4a4a2"
 		lights = {
@@ -16691,6 +17241,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Cube_01_Green.bake_target" = false
+			"light_baking.Cube_01_Green.contributes" = false
 		}
 		id = "649ac4a9-7f99-4d57-9e11-91d8e2be3c08"
 		lights = {
@@ -16721,6 +17273,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Cube_01_Skyblue.bake_target" = false
+			"light_baking.Cube_01_Skyblue.contributes" = false
 		}
 		id = "c3f2ae40-a1bc-4267-8b02-5cc095dd4730"
 		lights = {
@@ -16751,6 +17305,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Cube_01_Green.bake_target" = false
+			"light_baking.Cube_01_Green.contributes" = false
 		}
 		id = "09635690-05f6-4c3e-9e05-44cfacaa0b36"
 		lights = {
@@ -16781,6 +17337,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Cube_01_Skyblue.bake_target" = false
+			"light_baking.Cube_01_Skyblue.contributes" = false
 		}
 		id = "540a4e57-8d8a-4797-aa04-1f44527085cd"
 		lights = {
@@ -16811,6 +17369,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building02_Yellow.texel_scale" = 0.5
 		}
 		id = "74cebf37-05bf-4ec2-b27a-905a4f4b42f1"
 		lights = {
@@ -18346,6 +18905,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building01_window.bake_target" = false
+			"light_baking.Building01_window.texel_scale" = 0.01
 		}
 		id = "6bef445e-389a-4b98-858d-344ec6cc01d4"
 		lights = {
@@ -20152,36 +20713,6 @@ units = [
 		}
 		data = {
 		}
-		id = "4feb1a68-6cf6-47fd-b73e-b1b71d15c4a5"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "car_chb"
-		pos = [
-			-23.688343
-			14.797625
-			-4.651848
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1.3
-			1.3
-			1.3
-		]
-		type = "content/models/stage4/car_chb"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
 		id = "d7e7e4e9-8277-4e8b-9d78-cc4189d78b0f"
 		lights = {
 		}
@@ -21052,6 +21583,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building01_window.bake_target" = false
+			"light_baking.Building01_window.texel_scale" = 0.01
 		}
 		id = "b3a71fe0-159f-4f69-a568-69c0c79ee437"
 		lights = {
@@ -22015,6 +22548,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building01_window.bake_target" = false
+			"light_baking.Building01_window.texel_scale" = 0.01
 		}
 		id = "f67f5e69-9986-4060-9134-dd9d2eeea6a7"
 		lights = {
@@ -22285,6 +22820,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building01_window.bake_target" = false
+			"light_baking.Building01_window.texel_scale" = 0.01
 		}
 		id = "1b58ed95-2fac-459a-977c-6bc5a522c268"
 		lights = {
@@ -22526,6 +23063,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.Building01_window.bake_target" = false
+			"light_baking.Building01_window.texel_scale" = 0.01
 		}
 		id = "4abc3d0b-c9e7-452f-8c06-e872fcbcae68"
 		lights = {
@@ -23460,6 +23999,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pPlane1.texel_scale" = 0.4
 		}
 		id = "5c81a1bc-4c38-4c6b-8d3a-ac0f3fdd8a87"
 		lights = {
@@ -23491,6 +24031,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pPlane1.texel_scale" = 0.4
 		}
 		id = "95d998d2-998e-4bd9-ba26-27c1354616f0"
 		lights = {
@@ -23522,6 +24063,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pPlane1.texel_scale" = 0.4
 		}
 		id = "37cb3c63-652a-4937-a689-7fccb60d3819"
 		lights = {
@@ -23553,6 +24095,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pPlane1.texel_scale" = 0.4
 		}
 		id = "b7287193-0996-4c97-aff7-e49c0e9c6f58"
 		lights = {
@@ -23584,6 +24127,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pPlane1.texel_scale" = 0.4
 		}
 		id = "473e97e3-cb96-4cf5-aa1a-e5e1d7621d8f"
 		lights = {
@@ -23615,6 +24159,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pPlane1.texel_scale" = 0.4
 		}
 		id = "ab1226ed-0fd9-4fa2-b6b6-3fe57af3c075"
 		lights = {
@@ -23707,6 +24252,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.enabled" = false
 		}
 		id = "d1ca4676-0af2-441b-8342-7f81e452e71f"
 		lights = {
@@ -23737,6 +24283,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.enabled" = false
 		}
 		id = "5db2037c-c02e-4168-9ddc-1bc967495624"
 		lights = {
@@ -23767,6 +24314,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.enabled" = false
 		}
 		id = "cf48851a-417e-4016-a04a-a9a430d581c9"
 		lights = {
@@ -23797,6 +24345,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.enabled" = false
 		}
 		id = "ec2d878b-f09c-42a1-b434-e8cd09642971"
 		lights = {
@@ -23827,6 +24376,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.enabled" = false
 		}
 		id = "c2f76619-13cc-428d-84bf-9f1883e3d7d9"
 		lights = {
@@ -23857,6 +24407,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.enabled" = false
 		}
 		id = "19e776c7-709c-45b8-b085-9becd9b488d7"
 		lights = {
@@ -23887,6 +24438,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.enabled" = false
 		}
 		id = "f66517d5-38f2-4b41-9bfd-bf01e6070e00"
 		lights = {
@@ -23917,6 +24469,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.enabled" = false
 		}
 		id = "a0d3e70f-05db-43d2-9589-3e0a403198c9"
 		lights = {
@@ -23947,6 +24500,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.enabled" = false
 		}
 		id = "e0d48c86-6a1e-4849-b9bd-646ba19d424d"
 		lights = {
@@ -23977,6 +24531,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.enabled" = false
 		}
 		id = "08421896-f616-47c8-ab63-e6a810e581e8"
 		lights = {
@@ -24007,6 +24562,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.enabled" = false
 		}
 		id = "282afb24-85d1-4de9-9536-77214734ce1e"
 		lights = {
@@ -24217,6 +24773,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.ST4_BG1.bake_target" = false
+			"light_baking.ST4_BG1.contributes" = false
 		}
 		id = "aab48e0d-d9b8-4b0e-9477-4d6d4577bcee"
 		lights = {
@@ -24247,6 +24805,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.ST4_BG1.bake_target" = false
 		}
 		id = "7bc8daf0-5649-4e04-85da-91696a641348"
 		lights = {
@@ -24272,6 +24831,228 @@ units = [
 			1.7
 		]
 		type = "content/models/stage4/background/ST4_BG"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"probe.trace_box_max[0]" = 50
+			"probe.trace_box_max[1]" = 60
+			"probe.trace_box_max[2]" = 50
+			"probe.trace_box_min[0]" = -50
+			"probe.trace_box_min[1]" = -60
+			"probe.trace_box_min[2]" = -20
+		}
+		id = "22a9dd08-395f-4e75-a13e-d241e0f2e4f1"
+		lights = {
+			probe = {
+				baked = false
+				box_max = [
+					50
+					60
+					50
+				]
+				box_min = [
+					-50
+					-60
+					-20
+				]
+				cast_shadows = false
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1
+				material = "content/levels/stage4-cubemaps/reflection_probe1_bake"
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "box"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "reflection_probe1"
+		pos = [
+			-26.407768
+			32.984634
+			5.667432
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"probe.trace_box_max[0]" = 50
+			"probe.trace_box_max[1]" = 60
+			"probe.trace_box_max[2]" = 50
+			"probe.trace_box_min[0]" = -50
+			"probe.trace_box_min[1]" = -60
+			"probe.trace_box_min[2]" = -15
+		}
+		id = "bf5362cc-09d2-4e08-b9c0-2e06252002a3"
+		lights = {
+			probe = {
+				baked = false
+				box_max = [
+					50
+					60
+					50
+				]
+				box_min = [
+					-50
+					-60
+					-15
+				]
+				cast_shadows = false
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1
+				material = "content/levels/stage4-cubemaps/reflection_probe_bake"
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "box"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "reflection_probe"
+		pos = [
+			-26.407768
+			145.238831
+			6.052218
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"probe.trace_box_max[0]" = 50
+			"probe.trace_box_max[1]" = 60
+			"probe.trace_box_max[2]" = 50
+			"probe.trace_box_min[0]" = -50
+			"probe.trace_box_min[1]" = -60
+			"probe.trace_box_min[2]" = -15
+		}
+		id = "f7fc3e79-4355-4cba-b204-c10816f3d637"
+		lights = {
+			probe = {
+				baked = false
+				box_max = [
+					50
+					60
+					50
+				]
+				box_min = [
+					-50
+					-60
+					-15
+				]
+				cast_shadows = false
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1
+				material = "content/levels/stage4-cubemaps/reflection_probe2_bake"
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "box"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "reflection_probe2"
+		pos = [
+			-26.407768
+			241.177155
+			6.052218
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "4feb1a68-6cf6-47fd-b73e-b1b71d15c4a5"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "car_chb"
+		pos = [
+			-23.688343
+			14.797625
+			-4.651848
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1.3
+			1.3
+			1.3
+		]
+		type = "content/models/stage4/car_chb"
 	}
 ]
 volumes = [

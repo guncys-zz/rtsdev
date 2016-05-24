@@ -1,4 +1,31 @@
 
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 170.710281
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			98.559624
+			98.559669
+			98.559639
+		]
+		projection_type = "perspective"
+		rotation = [
+			-0.115917
+			-0.279848
+			0.880476
+			0.364705
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
 materials = {
 	Ground_mt = "content/models/stage4/materials/Ground_mt"
 }
@@ -6,9 +33,9 @@ renderables = {
 	Plane1 = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = true
 		occluder = false
-		shadow_caster = true
+		shadow_caster = false
 		surface_queries = false
 		viewport_visible = true
 	}
