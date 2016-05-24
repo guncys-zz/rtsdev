@@ -68,11 +68,13 @@ end
 -- 決定音鳴らす
 local function play_se_ok()
 	if stingray.Wwise then
-		stingray.Wwise.load_bank("content/audio/default")
+		--stingray.Wwise.load_bank("content/audio/default")
+		--stingray.Wwise.unload_bank("content/audio/default")
 		local wwise_world = stingray.Wwise.wwise_world(SimpleProject.world)
 		stingray.WwiseWorld.trigger_event(wwise_world, "SE_UI_OK")
 	end
 end
+
 
 --project.luaでlevel名がmainmenuの時に呼ばれる
 --Mainmenuの呼び出し
@@ -83,6 +85,9 @@ function MainMenu.start()
     print("MainMenu.startを通った")
 	if scaleform then
 	    scaleform.Stingray.load_project_and_scene("s2d_projects/ui.s2d/ui") --Loads a Scaleform Studio project. 
+		
+		-- タイトルで使うsoundbankのロード
+		stingray.Wwise.load_bank("content/audio/default")
 		
 		 --画面レンダの振る舞いの設定
         --http://help.autodesk.com/view/ScaleformStudio/ENU/?guid=__scaleform_studio_help_getting_started_interface_overview_project_panel_html
@@ -109,7 +114,9 @@ function MainMenu.start()
         -- Add the loading scene
         scaleform.Stage.add_scene(loading)
         --Guncys Logo BGM
-        
+    	local wwise_world = stingray.Wwise.wwise_world(SimpleProject.world)
+		stingray.WwiseWorld.trigger_event(wwise_world, "Play_SE_logo_guncys")
+
 		--Register menu button mouse listener
         --メニュ―画面のボタンが押されたのを拾うリスナーを登録
         --MainMenu.on_custom_eventをリスナー関数として、ローカルなリスナーオブジェクトを作成
@@ -181,6 +188,10 @@ end
 
 --Mainmenuのリリース（シャットダウン）
 function MainMenu.shutdown(object)
+    
+	-- タイトルで使うsoundbankのアンロード
+	stingray.Wwise.load_bank("content/audio/default")
+
 	if scaleform then
 		scaleform.EventListener.disconnect(MainMenu.custom_listener)--Disconnects all connections to the event listener. 
 		scaleform.Stingray.unload_project()--Unloads a Scaleform Studio project. 

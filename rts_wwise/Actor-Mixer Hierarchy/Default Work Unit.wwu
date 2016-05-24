@@ -219,6 +219,32 @@
 								<ActiveSource Name="se_10" ID="{3CCFB6C8-CAAB-4F19-A37B-1178E9559727}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="GUNCY'S_CI_gingle" ID="{7D4A03EA-8DC0-4DA6-A8E3-99F829E09640}" ShortID="983288070" Type="SoundFX">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GUNCY'S_CI_gingle" ID="{BE92777B-D5BE-4AAF-AC35-23AAC5E65747}" ShortID="999557827">
+									<Language>SFX</Language>
+									<AudioFile>GUNCY'S_CI_gingle.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GUNCY'S_CI_gingle" ID="{BE92777B-D5BE-4AAF-AC35-23AAC5E65747}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="VO" ID="{AA6B8535-5BE3-4069-BD3D-6BABD5395281}" ShortID="540076728">

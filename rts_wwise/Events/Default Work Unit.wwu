@@ -60,7 +60,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="SE_UI_OK" ID="{C98F28A9-613B-40EE-9280-0587E0C5A5C7}"/>
+						<Event Name="SE_UI_OK" ID="{C98F28A9-613B-40EE-9280-0587E0C5A5C7}">
+							<ChildrenList>
+								<Action Name="Play" ID="{BE70A540-9FFA-4CA3-8DC5-57BBEB227C0E}" ShortID="239196019" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{2689956F-36A1-4968-A3BB-3EF571996980}" Global="false">
+											<ObjectRef Name="se_7" ID="{B77F0387-F676-4468-AB7A-C298031BB89F}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="Set_Voice_Volume" ID="{3DFEC3E5-7D65-4725-92FE-FA25D6422362}">
 							<ChildrenList>
 								<Action Name="Mute" ID="{D747F496-2154-46FC-A565-4F0B008E5EDC}" ShortID="930061942" Type="Mute" Scope="One" Global="true">
@@ -255,6 +265,28 @@
 						<Event Name="Stop_All" ID="{E406785E-2CBD-4076-B93B-A6051854FC11}">
 							<ChildrenList>
 								<Action Name="Stop All" ID="{23B375E4-7F46-4FE6-8EEC-BE0B69C8CD18}" ShortID="1063287888" Type="Stop" Scope="All" Global="false"/>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_ttt" ID="{90E2907B-B35B-45E3-BC56-F1DEA7C0E9C7}">
+							<ChildrenList>
+								<Action Name="Play" ID="{A44D1016-0E26-48AD-9D6F-21254CE4A429}" ShortID="391195867" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{91EB3ED8-314D-434B-ABBC-68093E81C64E}" Global="false">
+											<ObjectRef Name="music_ttt" ID="{ECBF60C5-8493-44C1-91BC-0A7F82B7B060}" WorkUnitID="{82C69708-36C2-4538-9933-8E6B87A3A396}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SE_logo_guncys" ID="{18ABB311-471F-4250-8231-714BD510E9BE}">
+							<ChildrenList>
+								<Action Name="Play" ID="{755F0D71-E8C1-47A6-9F5C-C92B7A9B417E}" ShortID="443721266" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{2CD86DF6-A7D9-4810-AAC0-089A76100ED1}" Global="false">
+											<ObjectRef Name="GUNCY'S_CI_gingle" ID="{7D4A03EA-8DC0-4DA6-A8E3-99F829E09640}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>

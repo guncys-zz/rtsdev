@@ -12,6 +12,8 @@ banks = {
 			"Play_BGM_Stage_4"
 			"Play_BGM_Stage_5"
 			"Play_BGM_test"
+			"Play_SE_logo_guncys"
+			"Play_ttt"
 			"SE_PPK_damage1"
 			"SE_PPK_jump"
 			"SE_PPK_jump2"
@@ -96,6 +98,20 @@ events = {
 		attenuation_max = 0
 		duration_max = 78.54546
 		duration_min = 78.54546
+		duration_type = "OneShot"
+		positioning = "2D"
+	}
+	Play_SE_logo_guncys = {
+		attenuation_max = 0
+		duration_max = 6.12875
+		duration_min = 6.12875
+		duration_type = "OneShot"
+		positioning = "2D"
+	}
+	Play_ttt = {
+		attenuation_max = 0
+		duration_max = 2.125
+		duration_min = 2.125
 		duration_type = "OneShot"
 		positioning = "2D"
 	}
