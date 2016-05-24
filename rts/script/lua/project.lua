@@ -27,7 +27,8 @@ Project.level_names = {
 -- ベーシックプロジェクトのコンフィグ設定を提供
 local SimpleProject = require 'core/appkit/lua/simple_project'
 SimpleProject.config = {
-	standalone_init_level_name = Project.level_names.testmap,
+	--standalone_init_level_name = Project.level_names.testmap,
+	standalone_init_level_name = Project.level_names.mainmenu,
 	camera_unit = "core/appkit/units/camera/camera",
 	camera_index = 1,
 	shading_environment = nil, -- Will override levels that have env set in editor.
