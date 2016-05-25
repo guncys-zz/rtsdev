@@ -11,29 +11,29 @@ editor_metadata = {
 		]
 		orthographic_zoom = 10
 		position = [
-			0.602142
-			0.636205
-			0.857715
+			0.008759
+			1.076944
+			0.262331
 		]
 		projection_type = "perspective"
 		rotation = [
-			-0.115917
-			-0.279848
-			0.880476
-			0.364705
+			-1.4E-05
+			-0.00324
+			0.999986
+			0.004199
 		]
 		rotation_speed = 0.003
 		translation_speed = 0.05
 	}
 }
 materials = {
-	CAT_SHD = "content/models/characters/CAT/CAT_SHD"
+	CAT_SHD = "content/models/characters/CAT/materials/lambert5"
 }
 renderables = {
 	"CAT:C_body_GEO" = {
 		always_keep = false
 		culling = "disabled"
-		light_baking = "none"
+		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
@@ -42,7 +42,7 @@ renderables = {
 	"CAT:L_eye_GEO" = {
 		always_keep = false
 		culling = "disabled"
-		light_baking = "none"
+		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
@@ -51,7 +51,7 @@ renderables = {
 	"CAT:R_eye_GEO" = {
 		always_keep = false
 		culling = "disabled"
-		light_baking = "none"
+		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
