@@ -1,0 +1,114 @@
+
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 4.775214
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			-2.548025
+			4.074455
+			4.023234
+		]
+		projection_type = "perspective"
+		rotation = [
+			-0.044627
+			-0.145971
+			0.9451
+			0.288939
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
+materials = {
+	house_brick_SHD = "content/models/shots/OP/model/house_brick_SHD"
+	house_brickExt_SHD = "content/models/shots/OP/model/house_brickExt_SHD"
+	house_ceilingLampA_SHD = "content/models/shots/OP/model/house_ceilingLampA_SHD"
+	house_ceilingLampA_SHD1 = "content/models/shots/OP/model/house_ceilingLampA_SHD"
+	house_coffeeTable_SHD = "content/models/shots/OP/model/house_coffeeTable_SHD"
+	house_couch_SHD = "content/models/shots/OP/model/house_couch_SHD"
+	house_drawerA_SHD = "content/models/shots/OP/model/house_drawerA_SHD"
+	house_houseExt_SHD = "content/models/shots/OP/model/house_houseExt_SHD"
+	house_houseInt_SHD = "content/models/shots/OP/model/house_houseInt_SHD"
+	house_TV_SHD = "content/models/shots/OP/model/house_TV_SHD"
+}
+renderables = {
+	ceilingLampA_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	ceilingLampB_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	couch_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	drawerA_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	exterior_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	hosue_TV_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	house_coffeeTable_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	interior_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

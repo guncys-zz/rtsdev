@@ -138,15 +138,6 @@ shader = {
 		}
 		{
 			destination = {
-				connector_id = "1ee9af1f-65f2-4739-ad28-5ea6a0e68fc3"
-				instance_id = "06e20b35-09bf-4f22-84dd-db8f9e5588da"
-			}
-			source = {
-				instance_id = "a464c282-44a3-40ee-a808-8d9541b6ad70"
-			}
-		}
-		{
-			destination = {
 				connector_id = "f2f74e58-402d-472b-87dd-331e00db416c"
 				instance_id = "1c9a0cc2-86b3-471d-933d-ccc4fa94baf3"
 			}
@@ -323,6 +314,33 @@ shader = {
 			}
 			source = {
 				instance_id = "3b936f2e-931d-482d-8b53-8391ac500813"
+			}
+		}
+		{
+			destination = {
+				connector_id = "c5823c75-4ae5-4c71-b070-315fa4d03e8e"
+				instance_id = "785da6fe-144b-46ba-9bdd-eeb259962085"
+			}
+			source = {
+				instance_id = "8f1997ed-4b1a-4f15-8524-a1f30bff3169"
+			}
+		}
+		{
+			destination = {
+				connector_id = "242d1648-a626-445b-9534-bccec094112f"
+				instance_id = "785da6fe-144b-46ba-9bdd-eeb259962085"
+			}
+			source = {
+				instance_id = "3085ab95-c293-4c4a-a2bd-874b4801e591"
+			}
+		}
+		{
+			destination = {
+				connector_id = "1ee9af1f-65f2-4739-ad28-5ea6a0e68fc3"
+				instance_id = "06e20b35-09bf-4f22-84dd-db8f9e5588da"
+			}
+			source = {
+				instance_id = "785da6fe-144b-46ba-9bdd-eeb259962085"
 			}
 		}
 	]
@@ -1220,6 +1238,72 @@ shader = {
 			}
 			type = "core/shader_nodes/material_variable"
 		}
+		{
+			content_size = [
+				160
+				0
+			]
+			export = {
+			}
+			id = "8f1997ed-4b1a-4f15-8524-a1f30bff3169"
+			options = [
+			]
+			position = [
+				0
+				720
+			]
+			samplers = {
+			}
+			type = "core/shader_nodes/texture_coordinate0"
+		}
+		{
+			content_size = [
+				160
+				0
+			]
+			export = {
+			}
+			id = "785da6fe-144b-46ba-9bdd-eeb259962085"
+			options = [
+			]
+			position = [
+				160
+				780
+			]
+			samplers = {
+			}
+			type = "core/shader_nodes/mul"
+		}
+		{
+			content_size = [
+				160
+				0
+			]
+			export = {
+				material_variable = {
+					display_name = "material_variable"
+					name = "material_variable_4801e591"
+					type = "float"
+					ui = {
+						max = 10
+						min = 0
+						step = 0.001
+						ui_type = "NumberSlider"
+					}
+					value = 0
+				}
+			}
+			id = "3085ab95-c293-4c4a-a2bd-874b4801e591"
+			options = [
+			]
+			position = [
+				0
+				880
+			]
+			samplers = {
+			}
+			type = "core/shader_nodes/material_variable"
+		}
 	]
 	version = 3
 }
@@ -1253,6 +1337,10 @@ variables = {
 		value = 2
 	}
 	material_variable = {
+		type = "scalar"
+		value = 3.695
+	}
+	material_variable_4801e591 = {
 		type = "scalar"
 		value = 3.695
 	}

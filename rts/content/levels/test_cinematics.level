@@ -1705,43 +1705,6 @@ editor_metadata = {
 		{
 			Cameras = {
 			}
-			Id = "f0d2658c-f767-41b6-bf7f-8455ed67e216"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "house_layout"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/shots/OP/model/house_layout"
-		}
-		{
-			Cameras = {
-			}
 			Id = "0f145c7b-f306-41d9-81c4-e388f5761942"
 			Layer = "Default"
 			Lights = {
@@ -8240,43 +8203,6 @@ editor_metadata = {
 		{
 			Cameras = {
 			}
-			Id = "87bc1d35-e564-4ef1-890c-2c7af791d14e"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "OP_BG"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = -90.481628
-				Y = -97.408905
-				Z = 44.71669
-			}
-			Rot = {
-				W = -0.707107
-				X = 0
-				Y = 0
-				Z = 0.707107
-			}
-			Scl = {
-				X = 2.104032
-				Y = 2.104032
-				Z = 2.104032
-			}
-			ScriptData = {
-			}
-			Type = "content/models/shots/OP/background/OP_BG"
-		}
-		{
-			Cameras = {
-			}
 			Id = "bf220865-766b-44ca-b10d-d8a567054556"
 			Layer = "Default"
 			Lights = {
@@ -8310,6 +8236,80 @@ editor_metadata = {
 			ScriptData = {
 			}
 			Type = "content/models/shots/OP/model/treeFlag"
+		}
+		{
+			Cameras = {
+			}
+			Id = "2c9ae5e7-7b6a-4d49-8e90-81bf135436fb"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "house_layout_01"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/model/house_layout_01"
+		}
+		{
+			Cameras = {
+			}
+			Id = "24aa9fa9-d14a-4043-a7b2-7abd3f8a0355"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "OP_BG_01"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -90.4816
+				Y = -97.4089
+				Z = 44.7167
+			}
+			Rot = {
+				W = 0.707106781186548
+				X = 0
+				Y = 0
+				Z = -0.707106781186547
+			}
+			Scl = {
+				X = 2.104
+				Y = 2.104
+				Z = 2.104
+			}
+			ScriptData = {
+			}
+			Type = "content/models/shots/OP/background/OP_BG_01"
 		}
 	]
 	Volumes = [
@@ -9536,36 +9536,6 @@ units = [
 			0.421885
 		]
 		type = "core/units/light_source"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "f0d2658c-f767-41b6-bf7f-8455ed67e216"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "house_layout"
-		pos = [
-			0
-			0
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/shots/OP/model/house_layout"
 	}
 	{
 		cameras = {
@@ -14848,36 +14818,6 @@ units = [
 		}
 		data = {
 		}
-		id = "87bc1d35-e564-4ef1-890c-2c7af791d14e"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "OP_BG"
-		pos = [
-			-90.481628
-			-97.408905
-			44.71669
-		]
-		rot = [
-			0
-			0
-			0.707107
-			-0.707107
-		]
-		scl = [
-			2.104032
-			2.104032
-			2.104032
-		]
-		type = "content/models/shots/OP/background/OP_BG"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
 		id = "bf220865-766b-44ca-b10d-d8a567054556"
 		lights = {
 		}
@@ -14902,6 +14842,66 @@ units = [
 			1
 		]
 		type = "content/models/shots/OP/model/treeFlag"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "2c9ae5e7-7b6a-4d49-8e90-81bf135436fb"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "house_layout_01"
+		pos = [
+			0
+			0
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/shots/OP/model/house_layout_01"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "24aa9fa9-d14a-4043-a7b2-7abd3f8a0355"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "OP_BG_01"
+		pos = [
+			-90.4816
+			-97.4089
+			44.7167
+		]
+		rot = [
+			0
+			0
+			-0.707106781186547
+			0.707106781186548
+		]
+		scl = [
+			2.104
+			2.104
+			2.104
+		]
+		type = "content/models/shots/OP/background/OP_BG_01"
 	}
 ]
 volumes = [
