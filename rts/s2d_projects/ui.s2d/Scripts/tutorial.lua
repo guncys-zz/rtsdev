@@ -14,13 +14,13 @@ local customListener = scaleform.EventListener.create(customListener, function(e
 if e.name == "tutorial" then
     if e.data.value == "Jump_00" then
         local container = scaleform.Actor.container(thisActor);
-        scaleform.AnimationComponent.play_label(container, "b_btn");
+        scaleform.AnimationComponent.play_label(container, "jump00_btn");
     elseif e.data.value == "Jump_01" then
         local container = scaleform.Actor.container(thisActor);
-        scaleform.AnimationComponent.play_label(container, "b_d_btn");
+        scaleform.AnimationComponent.play_label(container, "jump01_btn");
     elseif e.data.value == "Roll_00" then
         local container = scaleform.Actor.container(thisActor);
-        scaleform.AnimationComponent.play_label(container, "space_btn");
+        scaleform.AnimationComponent.play_label(container, "roll_btn");
         --scaleform.AnimationComponent.goto_frame(gaugeAnimation, e.data.value)
     end
 

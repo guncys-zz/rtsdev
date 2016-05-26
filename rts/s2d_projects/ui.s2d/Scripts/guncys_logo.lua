@@ -11,7 +11,7 @@ local logoAnimation = scaleform.Actor.component_by_name(thisActor, "Animation")
 -- http://help.autodesk.com/view/ScaleformStudio/ENU/?guid=__lua_ref_obj_scaleform_AnimationComponent_html
 --animetionを止める
 --scaleform.AnimationComponent.stop(hitpointAnimation)
-print("ロゴのファイルにアクセスしている")
+--print("ロゴのファイルにアクセスしている")
 
 local enterFrameEventListener = scaleform.EventListener.create(enterFrameEventListener, function(e, thisListener)
 local current_frame = scaleform.AnimationComponent.current_frame(logoAnimation)
@@ -23,7 +23,7 @@ if current_frame == 119 then
                       data = { } 
                      }
         --scaleform.Stage.dispatch_event(evt)
-        print("タイトルを呼ぶイベントを走らせる")
+       -- print("タイトルを呼ぶイベントを走らせる")
         local loading = scaleform.Actor.load("Mainmenu.s2dscene")
 	    -- Remove the main menu scene
         scaleform.Stage.remove_scene_by_index(1)
