@@ -1,0 +1,18 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "traffic_sign"
+		node = "StingrayEntityRoot"
+		shapes = [
+			{
+				material = "default"
+				shape = "traffic_sign"
+				template = "blocker"
+				type = "mesh"
+			}
+		]
+		template = "static"
+	}
+]

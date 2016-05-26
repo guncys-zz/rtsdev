@@ -1,0 +1,45 @@
+
+data = {
+	IsBlocker = true
+}
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 1.058879
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			-0.595058
+			0.802369
+			0.580455
+		]
+		projection_type = "perspective"
+		rotation = [
+			0.055214
+			-0.165889
+			0.934211
+			-0.310937
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
+materials = {
+	lambert2 = "content/models/blockers/SIN/Sign_MT"
+}
+renderables = {
+	traffic_sign = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

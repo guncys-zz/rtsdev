@@ -1,0 +1,18 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "AirconditioningA_geo"
+		node = "StingrayEntityRoot"
+		shapes = [
+			{
+				material = "default"
+				shape = "AirconditioningA_geo"
+				template = "blocker"
+				type = "box"
+			}
+		]
+		template = "static"
+	}
+]
