@@ -21,19 +21,19 @@ function Environment.close_vignett(time)
             -- that we want to modify.
             -- Missing properties return nil, so this is "safe".
             local shading_environment_mapping_resource_name = stingray.DataComponent.get_property(data_component_manager, entity_handle, data_component_handle, {"shading_environment_mapping"})
-            if shading_environment_mapping_resource_name == "core/stingray_renderer/shading_environment_components/exposure" then
+            if shading_environment_mapping_resource_name == "core/stingray_renderer/shading_environment_components/vignette" then
                 if (shading_env_entity == nil) then
                     -- remember the shading environment entity.
                     shading_env_entity = entity_handle
                 end
-                exposure_component = data_component_handle;
+                vignette_component = data_component_handle;
                 -- now we have the shading environment entity and the component, we can set the
                 -- value we want for the property.
-                exposure_val = 3.0
-                stingray.DataComponent.set_property(data_component_manager, shading_env_entity, exposure_component, {"exposure"}, exposure_val)
+                radius_val = 0.2
+                stingray.DataComponent.set_property(data_component_manager, shading_env_entity, vignette_component, {"vignette_radius"}, radius_val)
             end
+        end
     end
-end
 
     print(time)
 end
