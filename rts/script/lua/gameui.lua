@@ -91,7 +91,7 @@ local function perform_action()
 		--ゲームのタイムを止める処理を記述予定
 		--今はメインメニューに戻る処理とする
 		--GameUI.shutdown()
-		print("ポーズ状態に入っている")
+		--print("ポーズ状態に入っている")
 		--SimpleProject.change_level(Project.level_names.mainmenu)    --testmapに遷移
 	elseif GameUI.action == "restart" then
 	    SimpleProject.change_level(SimpleProject.level_name)  
@@ -104,13 +104,13 @@ local function perform_action()
     if GameUI.action == "change_level" then
         if SimpleProject.level_name == Project.level_names.stage1 then
             SimpleProject.change_level(Project.level_names.stage2)
-            print("stage1->stage2")
+            --print("stage1->stage2")
         elseif SimpleProject.level_name == Project.level_names.stage2 then
             SimpleProject.change_level(Project.level_names.stage3)
-            print("stage2->stage3")
+            --print("stage2->stage3")
         elseif SimpleProject.level_name == Project.level_names.stage3 then
             SimpleProject.change_level(Project.level_names.stage4)
-            print("stage3->stage4")
+            --print("stage3->stage4")
         elseif SimpleProject.level_name == Project.level_names.stage4 then
             --SimpleProject.change_level(Project.level_names.stage2)
             --endシーンを呼ぶ

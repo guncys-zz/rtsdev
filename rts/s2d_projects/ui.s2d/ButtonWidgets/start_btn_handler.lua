@@ -20,7 +20,7 @@ local handler = {
 
     -- Invoked when the button is clicked
     clicked = function()
-        print(actorName .. " button clicked")
+     --   print(actorName .. " button clicked")
 
         -- The code below gives an example of how to dispatch a custom event from this event handler function.
         --[[

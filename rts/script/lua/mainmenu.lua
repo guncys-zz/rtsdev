@@ -83,7 +83,7 @@ function MainMenu.start()
 	if stingray.Window then
 		stingray.Window.set_show_cursor(true)
 	end
-    print("MainMenu.startを通った")
+   -- print("MainMenu.startを通った")
 	if scaleform then
 	    scaleform.Stingray.load_project_and_scene("s2d_projects/ui.s2d/ui") --Loads a Scaleform Studio project. 
 		

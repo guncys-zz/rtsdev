@@ -150,7 +150,7 @@ end
 function UI.loading()
     if loding_flag ~= true then
         local loading = scaleform.Actor.load("Loading.s2dscene")	--Loding用のシーンをロード
-    	print("ローディングシーンに切り替え")
+    	--print("ローディングシーンに切り替え")
         -- Remove the main menu scene
         scaleform.Stage.remove_scene_by_index(1)
         -- Add the loading scene

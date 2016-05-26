@@ -20,7 +20,7 @@ local handler = {
 
     -- Invoked when the button is clicked
     clicked = function()
-        print(actorName .. " button clicked")
+       -- print(actorName .. " button clicked")
         local evt = { eventId = scaleform.EventTypes.Custom,
                       name = "restart",
                       data = {} }
