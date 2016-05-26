@@ -18,6 +18,7 @@ MainMenu.custom_listener = MainMenu.custom_listener or nil
 
 
 local start_time = 0
+local isFirstLoad = true
 
 --[[
 Mainmenuで鳴らすオーディオ用の関数群
@@ -107,12 +108,14 @@ function MainMenu.start()
         --ShowAll
         ----Scales the view so that the content bounds fits inside the viewport which maintaining the viewport aspect ratio.  
         --END:Enumeration values(scaleform.Stage.set_view_scale_mode)
-        
-        local loading = scaleform.Actor.load("GuncysLogo.s2dscene")
-	    -- Remove the main menu scene
-        scaleform.Stage.remove_scene_by_index(1)
-        -- Add the loading scene
-        scaleform.Stage.add_scene(loading)
+        if isFirstLoad == true then
+            local loading = scaleform.Actor.load("GuncysLogo.s2dscene")
+    	    -- Remove the main menu scene
+            scaleform.Stage.remove_scene_by_index(1)
+            -- Add the loading scene
+            scaleform.Stage.add_scene(loading)
+            isFirstLoad = false
+        end
         --Guncys Logo BGM
     	local wwise_world = stingray.Wwise.wwise_world(SimpleProject.world)
 		stingray.WwiseWorld.trigger_event(wwise_world, "Play_SE_logo_guncys")
@@ -261,11 +264,11 @@ local function perform_action()
 		stingray.Application.quit()
 	elseif MainMenu.action == "start_title" then
 	    print("スタートタイトルのアクションが走ってる")
-	    local loading = scaleform.Actor.load("Mainmenu.s2dscene")
+	    --local loading = scaleform.Actor.load("Mainmenu.s2dscene")
 	    -- Remove the main menu scene
-        scaleform.Stage.remove_scene_by_index(1)
+        --scaleform.Stage.remove_scene_by_index(1)
         -- Add the loading scene
-        scaleform.Stage.add_scene(loading)
+        --scaleform.Stage.add_scene(loading)
         --title BGM
 	end
 	MainMenu.action = nil
