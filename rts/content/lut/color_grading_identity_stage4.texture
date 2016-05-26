@@ -1,0 +1,47 @@
+android = {
+	output = {
+		apply_processing = true
+	}
+}
+common = {
+	input = {
+		filename = "content/lut/color_grading_identity_stage4"
+	}
+	output = {
+		category = ""
+		cut_alpha_threshold = 0.5
+		enable_cut_alpha_threshold = false
+		format = "R8G8B8A8"
+		mipmap_filter = "box"
+		mipmap_filter_wrap_mode = "mirror"
+		mipmap_keep_original = false
+		mipmap_num_largest_steps_to_discard = 0
+		mipmap_num_smallest_steps_to_discard = 0
+		srgb = true
+	}
+}
+ios = {
+	output = {
+		apply_processing = true
+	}
+}
+ps4 = {
+	output = {
+		apply_processing = true
+	}
+}
+webgl = {
+	output = {
+		apply_processing = true
+	}
+}
+win32 = {
+	output = {
+		apply_processing = false
+	}
+}
+xb1 = {
+	output = {
+		apply_processing = true
+	}
+}

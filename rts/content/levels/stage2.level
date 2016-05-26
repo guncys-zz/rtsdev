@@ -5,6 +5,15 @@ editor_metadata = {
 			id = "437628ab-f75d-4bbc-bdec-2e65126b15be"
 			layer = "Default"
 			modified_components = {
+				"04d5202f-c4cb-45b5-8e0f-4c5605fb7533" = {
+					data = {
+						color_grading_enabled = true
+						color_grading_map = {
+							"$resource_name" = "content/lut/color_grading_identity_stage2"
+							"$resource_type" = "texture"
+						}
+					}
+				}
 				"06c78e06-c921-4208-8069-d377b6415d30" = {
 					data = {
 						fog_color = {
@@ -16,8 +25,10 @@ editor_metadata = {
 						}
 						fog_depth_range = [
 							10
-							500
+							1500
 						]
+						fog_sun_blend = 1
+						fog_sun_exponent = 10
 						fog_sun_strength = 2
 					}
 				}
@@ -31,6 +42,21 @@ editor_metadata = {
 						exposure = 1.1
 					}
 				}
+				"6d36e8c5-dac7-4e28-b873-c4555b95e2bf" = {
+					data = {
+						lens_quality_distortion = 0.071
+						lens_quality_fringe_color = 0.005
+					}
+				}
+				"778c5da5-eaa2-4a5f-951f-8c8bf13a2a6e" = {
+					data = {
+						dof_enabled = true
+						dof_focal_distance = 7
+						dof_focal_region = 1
+						dof_focal_region_end = 15
+						dof_focal_region_start = 2
+					}
+				}
 				"a9f83eb8-b54a-4c45-bf62-4fe7e02a8ce4" = {
 					data = {
 						ao_enabled = false
@@ -39,6 +65,11 @@ editor_metadata = {
 				"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
 					data = {
 						motion_blur_enabled = false
+					}
+				}
+				"fd909d00-3e4d-4339-b1a9-784c7d6a60ad" = {
+					data = {
+						bloom_threshold = 0.201
 					}
 				}
 			}
@@ -12127,6 +12158,2742 @@ editor_metadata = {
 			}
 			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
 		}
+		{
+			Cameras = {
+			}
+			Id = "1106a2c5-e06d-4e61-9883-2fe9658d8e65"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 5.445343
+				Z = 7.064092
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3e7bcd57-13fb-4b8d-86c3-7b39eb749373"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 14.392748
+				Z = 7.064092
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "708ef2f5-f398-417e-b2b9-ad014408b23f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject10"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 59.737812
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "b070717d-3792-4168-9303-4285a96a4879"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject11"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 50.790409
+				Z = 7.064094
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "9e2736eb-4e0b-4667-a2ee-0b6920fa09d5"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject12"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 96.209465
+				Z = 7.064094
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e1468197-a47c-4b54-861e-d58f32f2f7e5"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject13"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 105.156876
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a49747fa-5851-4d95-a5e8-c7d877b36078"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject14"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 150.501923
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "74aa8ff5-5e1d-4ea9-9587-96a89e1b202d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject15"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 141.554535
+				Z = 7.064094
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "75518c05-d5df-430b-9983-692fa7df193c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject16"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039491
+				Y = 110.784821
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "530c70a7-27ec-4aee-87ec-58e2b55cceb2"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject17"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 118.396423
+				Z = 7.064094
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "1c2ff140-c739-4b2b-aa81-8de6baa10c94"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject18"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 127.343834
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "58c06c81-f79d-4103-89d6-e08acf47b945"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject19"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 132.971771
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ab71b511-b59b-45b9-ac0e-f42d574b5386"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.03949
+				Y = 20.020702
+				Z = 7.064092
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ec691bdd-38f3-4261-8d55-b8b7077c0bc2"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject20"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 163.741486
+				Z = 7.064094
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f09644e6-edf5-4b52-9e3b-b32060d1a07b"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject21"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 172.688873
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "73945009-9705-4fe0-a210-0f4677eec195"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject22"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 178.316833
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "9c85129a-412e-4d1b-8761-24862bf29154"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject23"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 156.129898
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "7fa2db29-3cc3-4bd0-b623-d813b6c485ee"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject24"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 187.182922
+				Z = 7.064094
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "8c52aa24-fc89-4445-b427-f4df32cb21a2"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject25"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 196.130325
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "50798fcc-d874-43b2-b658-9b7edf94b4e4"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject26"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 241.475388
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c564275b-ca9d-499e-864d-cadc08c8a3d1"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject27"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039493
+				Y = 232.527954
+				Z = 7.064094
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "399eeea8-29ac-44f2-a1f7-b4a362b0b76a"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject28"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 201.758286
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f3224073-029a-4099-aee2-e016cd4ff7e0"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject29"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 209.369827
+				Z = 7.064094
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6b39b29c-3443-4e6b-8e76-eb09b9116f7f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 27.632305
+				Z = 7.064092
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "060c7cae-07bc-43ee-a8ca-182ab0f69435"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject30"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 218.317291
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "d2c1b2a7-6bf2-408b-80bd-cb8012fdf91c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject31"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 223.945251
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "9bf487e4-02e8-44eb-996a-7f41b78326d9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject32"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039493
+				Y = 254.714935
+				Z = 7.064094
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "8ed6b459-0e5b-4600-9fc4-a1e3a107a21c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject33"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039493
+				Y = 263.662323
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "88c2976f-8d13-4d27-b831-74afe794adce"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject34"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039493
+				Y = 269.290283
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "aa8d53b2-855a-4e39-9780-f11cd41df0ff"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject35"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 247.103378
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "51f05f0b-d554-4ba0-9a83-2634a1edcc3e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject36"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 5.445343
+				Z = 7.064092
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "9f53ada5-e946-40f4-bf33-77c50d16b719"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject37"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 14.392748
+				Z = 7.064092
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "eb2d4661-58e7-4daa-82f9-bdfdaa41cbd9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject38"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 59.737812
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4fe1464c-b202-474d-8efe-abda2a534a52"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject39"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.863816
+				Y = 49.913094
+				Z = 7.03178
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "d31b68c5-f7ea-4420-9acd-4684f6e0a092"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -11.018253
+				Y = 34.911926
+				Z = 8.236675
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "dd399d30-1898-41e4-b1aa-287fd26ff4c9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject40"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 96.209465
+				Z = 7.064094
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a80bebf9-f016-423e-b9fd-a8862f796e31"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject41"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 105.156876
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "7dde20b8-9c6b-4072-a42b-529e917ad781"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject42"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 150.501923
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "7c2808c5-7873-41f6-9ad7-1a13af682c86"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject43"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 141.554535
+				Z = 7.064094
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "9f65602d-55e3-4410-ad66-cc1d0711ae3d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject44"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299427
+				Y = 110.784821
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ab6a9490-5b4c-4383-acde-0e95f1a3c261"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject45"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 118.396423
+				Z = 7.064094
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "13cf226e-acc3-46ff-9e54-1c087de99e73"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject46"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 127.343834
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e486639a-eac7-4dcd-ae23-97cea4a018b1"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject47"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 132.971771
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "dc8196b5-9dcd-4ff9-94b2-6e0c289622db"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject48"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299426
+				Y = 20.020702
+				Z = 7.064092
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "cf826068-d9e8-4708-a07f-09337a8c118e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject49"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 163.741486
+				Z = 7.064094
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "b4a86982-e16a-44a4-8310-23dd60cb0b12"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039491
+				Y = 42.207664
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "1a003221-a11d-4050-944a-35cae1d336a5"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject50"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 172.688873
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a79903ae-331c-4d63-b4c4-d844b209ded9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject51"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 178.316833
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6da74dce-fbf0-4460-a75c-7ef94a09934d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject52"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 156.129898
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "18e964b5-24fc-46cd-9703-72a74307b3b1"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject53"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 187.182922
+				Z = 7.064094
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "edd0c971-4a65-44af-8cef-19fe2b5c38a8"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject54"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 196.130325
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e36f25f2-beee-4610-8612-44dec7804ecb"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject55"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 241.475388
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "fb25a68f-ee3f-443e-b9d1-ea8de7fca072"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject56"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299429
+				Y = 232.527954
+				Z = 7.064094
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6f69588c-3225-4f5b-a08a-f6dab7681013"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject57"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 201.758286
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ee1d636d-fa43-4eb3-8b33-e85f8d8690ca"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject58"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 209.369827
+				Z = 7.064094
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "9399ef88-cc48-47d1-b6e6-877161af22cb"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject59"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 27.632305
+				Z = 7.064092
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "d57fdfc4-b7c4-41de-b25e-7c5a8a75505e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject6"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 72.977364
+				Z = 7.064094
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "0ba50858-2742-4ed3-a65d-a2c3bd794b05"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject60"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 218.317291
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "be8393ba-c825-4e71-bd03-7738d66cbd96"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject61"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 223.945251
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "333724c6-f97f-4369-8436-f558bc05c648"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject62"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299429
+				Y = 254.714935
+				Z = 7.064094
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "fe6f9061-ba82-442a-81c7-1d4e39c9b29d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject63"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299429
+				Y = 263.662323
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "eb016d4c-8e93-4fe9-9b48-78d131d3b5e8"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject64"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299429
+				Y = 269.290283
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "23bddfe3-1cd0-4fd3-91a1-214851891bf0"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject65"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 247.103378
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "43c286f1-997a-4c27-8673-3933226412dd"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject66"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 36.579712
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "12b66f2d-e58b-4487-84cd-bcc90862be20"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject67"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299427
+				Y = 42.207664
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "13979c18-5c08-480a-8807-90cf1d02b1aa"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject68"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 72.977364
+				Z = 7.064094
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "bedaf2d7-ff10-43c7-9578-07ca4d52e311"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject69"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299428
+				Y = 81.924774
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "5d4f26a2-3c76-4fd8-98ab-c108a5529246"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject7"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039492
+				Y = 81.924774
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.969504
+				X = 0
+				Y = 0
+				Z = -0.245075
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f40a27bc-8316-4d49-9663-994367b6a559"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject70"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299427
+				Y = 87.552727
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "b41b4e8b-3af4-4a06-8be3-a8502cca7515"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject71"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.299427
+				Y = 65.365768
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497017
+				Y = 30.497017
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "8e6eeec9-4779-4497-b361-ea7a2a32c2dc"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject8"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039491
+				Y = 87.552727
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
+		{
+			Cameras = {
+			}
+			Id = "28417901-4b64-48bd-b945-0fe64748f594"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+			}
+			Name = "leafShadowObject9"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -13.039491
+				Y = 65.365768
+				Z = 7.064094
+			}
+			Rot = {
+				W = -0.999956
+				X = 0
+				Y = 0
+				Z = 0.009413
+			}
+			Scl = {
+				X = 30.497015
+				Y = 30.497015
+				Z = 30.497015
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage2/leafShadowObject"
+		}
 	]
 	Volumes = [
 	]
@@ -12135,6 +14902,15 @@ entities = [
 	{
 		id = "437628ab-f75d-4bbc-bdec-2e65126b15be"
 		modified_components = {
+			"04d5202f-c4cb-45b5-8e0f-4c5605fb7533" = {
+				data = {
+					color_grading_enabled = true
+					color_grading_map = {
+						"$resource_name" = "content/lut/color_grading_identity_stage2"
+						"$resource_type" = "texture"
+					}
+				}
+			}
 			"06c78e06-c921-4208-8069-d377b6415d30" = {
 				data = {
 					fog_color = {
@@ -12146,8 +14922,10 @@ entities = [
 					}
 					fog_depth_range = [
 						10
-						500
+						1500
 					]
+					fog_sun_blend = 1
+					fog_sun_exponent = 10
 					fog_sun_strength = 2
 				}
 			}
@@ -12161,6 +14939,21 @@ entities = [
 					exposure = 1.1
 				}
 			}
+			"6d36e8c5-dac7-4e28-b873-c4555b95e2bf" = {
+				data = {
+					lens_quality_distortion = 0.071
+					lens_quality_fringe_color = 0.005
+				}
+			}
+			"778c5da5-eaa2-4a5f-951f-8c8bf13a2a6e" = {
+				data = {
+					dof_enabled = true
+					dof_focal_distance = 7
+					dof_focal_region = 1
+					dof_focal_region_end = 15
+					dof_focal_region_start = 2
+				}
+			}
 			"a9f83eb8-b54a-4c45-bf62-4fe7e02a8ce4" = {
 				data = {
 					ao_enabled = false
@@ -12169,6 +14962,11 @@ entities = [
 			"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
 				data = {
 					motion_blur_enabled = false
+				}
+			}
+			"fd909d00-3e4d-4339-b1a9-784c7d6a60ad" = {
+				data = {
+					bloom_threshold = 0.201
 				}
 			}
 		}
@@ -21827,6 +24625,2238 @@ units = [
 			1
 		]
 		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "1106a2c5-e06d-4e61-9883-2fe9658d8e65"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject"
+		pos = [
+			-13.039492
+			5.445343
+			7.064092
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3e7bcd57-13fb-4b8d-86c3-7b39eb749373"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject1"
+		pos = [
+			-13.039492
+			14.392748
+			7.064092
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "708ef2f5-f398-417e-b2b9-ad014408b23f"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject10"
+		pos = [
+			-13.039492
+			59.737812
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "b070717d-3792-4168-9303-4285a96a4879"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject11"
+		pos = [
+			-13.039492
+			50.790409
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "9e2736eb-4e0b-4667-a2ee-0b6920fa09d5"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject12"
+		pos = [
+			-13.039492
+			96.209465
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e1468197-a47c-4b54-861e-d58f32f2f7e5"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject13"
+		pos = [
+			-13.039492
+			105.156876
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a49747fa-5851-4d95-a5e8-c7d877b36078"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject14"
+		pos = [
+			-13.039492
+			150.501923
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "74aa8ff5-5e1d-4ea9-9587-96a89e1b202d"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject15"
+		pos = [
+			-13.039492
+			141.554535
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "75518c05-d5df-430b-9983-692fa7df193c"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject16"
+		pos = [
+			-13.039491
+			110.784821
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "530c70a7-27ec-4aee-87ec-58e2b55cceb2"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject17"
+		pos = [
+			-13.039492
+			118.396423
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "1c2ff140-c739-4b2b-aa81-8de6baa10c94"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject18"
+		pos = [
+			-13.039492
+			127.343834
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "58c06c81-f79d-4103-89d6-e08acf47b945"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject19"
+		pos = [
+			-13.039492
+			132.971771
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "ab71b511-b59b-45b9-ac0e-f42d574b5386"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject2"
+		pos = [
+			-13.03949
+			20.020702
+			7.064092
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "ec691bdd-38f3-4261-8d55-b8b7077c0bc2"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject20"
+		pos = [
+			-13.039492
+			163.741486
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f09644e6-edf5-4b52-9e3b-b32060d1a07b"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject21"
+		pos = [
+			-13.039492
+			172.688873
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "73945009-9705-4fe0-a210-0f4677eec195"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject22"
+		pos = [
+			-13.039492
+			178.316833
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "9c85129a-412e-4d1b-8761-24862bf29154"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject23"
+		pos = [
+			-13.039492
+			156.129898
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "7fa2db29-3cc3-4bd0-b623-d813b6c485ee"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject24"
+		pos = [
+			-13.039492
+			187.182922
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "8c52aa24-fc89-4445-b427-f4df32cb21a2"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject25"
+		pos = [
+			-13.039492
+			196.130325
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "50798fcc-d874-43b2-b658-9b7edf94b4e4"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject26"
+		pos = [
+			-13.039492
+			241.475388
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c564275b-ca9d-499e-864d-cadc08c8a3d1"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject27"
+		pos = [
+			-13.039493
+			232.527954
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "399eeea8-29ac-44f2-a1f7-b4a362b0b76a"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject28"
+		pos = [
+			-13.039492
+			201.758286
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f3224073-029a-4099-aee2-e016cd4ff7e0"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject29"
+		pos = [
+			-13.039492
+			209.369827
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6b39b29c-3443-4e6b-8e76-eb09b9116f7f"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject3"
+		pos = [
+			-13.039492
+			27.632305
+			7.064092
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "060c7cae-07bc-43ee-a8ca-182ab0f69435"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject30"
+		pos = [
+			-13.039492
+			218.317291
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "d2c1b2a7-6bf2-408b-80bd-cb8012fdf91c"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject31"
+		pos = [
+			-13.039492
+			223.945251
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "9bf487e4-02e8-44eb-996a-7f41b78326d9"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject32"
+		pos = [
+			-13.039493
+			254.714935
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "8ed6b459-0e5b-4600-9fc4-a1e3a107a21c"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject33"
+		pos = [
+			-13.039493
+			263.662323
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "88c2976f-8d13-4d27-b831-74afe794adce"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject34"
+		pos = [
+			-13.039493
+			269.290283
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "aa8d53b2-855a-4e39-9780-f11cd41df0ff"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject35"
+		pos = [
+			-13.039492
+			247.103378
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "51f05f0b-d554-4ba0-9a83-2634a1edcc3e"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject36"
+		pos = [
+			-4.299428
+			5.445343
+			7.064092
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "9f53ada5-e946-40f4-bf33-77c50d16b719"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject37"
+		pos = [
+			-4.299428
+			14.392748
+			7.064092
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "eb2d4661-58e7-4daa-82f9-bdfdaa41cbd9"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject38"
+		pos = [
+			-4.299428
+			59.737812
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "4fe1464c-b202-474d-8efe-abda2a534a52"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject39"
+		pos = [
+			-4.863816
+			49.913094
+			7.03178
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "d31b68c5-f7ea-4420-9acd-4684f6e0a092"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject4"
+		pos = [
+			-11.018253
+			34.911926
+			8.236675
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "dd399d30-1898-41e4-b1aa-287fd26ff4c9"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject40"
+		pos = [
+			-4.299428
+			96.209465
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a80bebf9-f016-423e-b9fd-a8862f796e31"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject41"
+		pos = [
+			-4.299428
+			105.156876
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "7dde20b8-9c6b-4072-a42b-529e917ad781"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject42"
+		pos = [
+			-4.299428
+			150.501923
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "7c2808c5-7873-41f6-9ad7-1a13af682c86"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject43"
+		pos = [
+			-4.299428
+			141.554535
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "9f65602d-55e3-4410-ad66-cc1d0711ae3d"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject44"
+		pos = [
+			-4.299427
+			110.784821
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "ab6a9490-5b4c-4383-acde-0e95f1a3c261"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject45"
+		pos = [
+			-4.299428
+			118.396423
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "13cf226e-acc3-46ff-9e54-1c087de99e73"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject46"
+		pos = [
+			-4.299428
+			127.343834
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e486639a-eac7-4dcd-ae23-97cea4a018b1"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject47"
+		pos = [
+			-4.299428
+			132.971771
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "dc8196b5-9dcd-4ff9-94b2-6e0c289622db"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject48"
+		pos = [
+			-4.299426
+			20.020702
+			7.064092
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "cf826068-d9e8-4708-a07f-09337a8c118e"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject49"
+		pos = [
+			-4.299428
+			163.741486
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "b4a86982-e16a-44a4-8310-23dd60cb0b12"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject5"
+		pos = [
+			-13.039491
+			42.207664
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "1a003221-a11d-4050-944a-35cae1d336a5"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject50"
+		pos = [
+			-4.299428
+			172.688873
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a79903ae-331c-4d63-b4c4-d844b209ded9"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject51"
+		pos = [
+			-4.299428
+			178.316833
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6da74dce-fbf0-4460-a75c-7ef94a09934d"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject52"
+		pos = [
+			-4.299428
+			156.129898
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "18e964b5-24fc-46cd-9703-72a74307b3b1"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject53"
+		pos = [
+			-4.299428
+			187.182922
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "edd0c971-4a65-44af-8cef-19fe2b5c38a8"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject54"
+		pos = [
+			-4.299428
+			196.130325
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e36f25f2-beee-4610-8612-44dec7804ecb"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject55"
+		pos = [
+			-4.299428
+			241.475388
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "fb25a68f-ee3f-443e-b9d1-ea8de7fca072"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject56"
+		pos = [
+			-4.299429
+			232.527954
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6f69588c-3225-4f5b-a08a-f6dab7681013"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject57"
+		pos = [
+			-4.299428
+			201.758286
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "ee1d636d-fa43-4eb3-8b33-e85f8d8690ca"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject58"
+		pos = [
+			-4.299428
+			209.369827
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "9399ef88-cc48-47d1-b6e6-877161af22cb"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject59"
+		pos = [
+			-4.299428
+			27.632305
+			7.064092
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "d57fdfc4-b7c4-41de-b25e-7c5a8a75505e"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject6"
+		pos = [
+			-13.039492
+			72.977364
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "0ba50858-2742-4ed3-a65d-a2c3bd794b05"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject60"
+		pos = [
+			-4.299428
+			218.317291
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "be8393ba-c825-4e71-bd03-7738d66cbd96"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject61"
+		pos = [
+			-4.299428
+			223.945251
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "333724c6-f97f-4369-8436-f558bc05c648"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject62"
+		pos = [
+			-4.299429
+			254.714935
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "fe6f9061-ba82-442a-81c7-1d4e39c9b29d"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject63"
+		pos = [
+			-4.299429
+			263.662323
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "eb016d4c-8e93-4fe9-9b48-78d131d3b5e8"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject64"
+		pos = [
+			-4.299429
+			269.290283
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "23bddfe3-1cd0-4fd3-91a1-214851891bf0"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject65"
+		pos = [
+			-4.299428
+			247.103378
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "43c286f1-997a-4c27-8673-3933226412dd"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject66"
+		pos = [
+			-4.299428
+			36.579712
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "12b66f2d-e58b-4487-84cd-bcc90862be20"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject67"
+		pos = [
+			-4.299427
+			42.207664
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "13979c18-5c08-480a-8807-90cf1d02b1aa"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject68"
+		pos = [
+			-4.299428
+			72.977364
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "bedaf2d7-ff10-43c7-9578-07ca4d52e311"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject69"
+		pos = [
+			-4.299428
+			81.924774
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "5d4f26a2-3c76-4fd8-98ab-c108a5529246"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject7"
+		pos = [
+			-13.039492
+			81.924774
+			7.064094
+		]
+		rot = [
+			0
+			0
+			-0.245075
+			-0.969504
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f40a27bc-8316-4d49-9663-994367b6a559"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject70"
+		pos = [
+			-4.299427
+			87.552727
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "b41b4e8b-3af4-4a06-8be3-a8502cca7515"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject71"
+		pos = [
+			-4.299427
+			65.365768
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497017
+			30.497017
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "8e6eeec9-4779-4497-b361-ea7a2a32c2dc"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject8"
+		pos = [
+			-13.039491
+			87.552727
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "28417901-4b64-48bd-b945-0fe64748f594"
+		lights = {
+		}
+		material = ""
+		materials = {
+			"content/models/stage2/leafShadowObject" = "content/models/stage2/materials/shadowObject"
+		}
+		name = "leafShadowObject9"
+		pos = [
+			-13.039491
+			65.365768
+			7.064094
+		]
+		rot = [
+			0
+			0
+			0.009413
+			-0.999956
+		]
+		scl = [
+			30.497015
+			30.497015
+			30.497015
+		]
+		type = "content/models/stage2/leafShadowObject"
 	}
 ]
 volumes = [
