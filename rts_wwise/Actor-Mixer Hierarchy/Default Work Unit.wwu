@@ -13,41 +13,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="sfx_spawn_sound" ID="{5A1708C3-1052-4559-9762-929E700D47D6}" ShortID="198192591" Type="SoundFX">
-							<PropertyList>
-								<Property Name="EnablePanner" Type="bool" Value="True"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-10</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sfx_spawn_sound" ID="{B5C6CD7F-F0FC-4534-A929-31D4BD6CCF40}" ShortID="704244969">
-									<Language>SFX</Language>
-									<AudioFile>sfx_spawn_sound.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<PositioningInfo>
-								<Panner Name="" ID="{D87DA259-E424-4399-9A98-866E71B2B00F}">
-									<PropertyList>
-										<Property Name="PanY" Type="Real64" Value="20"/>
-									</PropertyList>
-								</Panner>
-							</PositioningInfo>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_spawn_sound" ID="{B5C6CD7F-F0FC-4534-A929-31D4BD6CCF40}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="se_1" ID="{30080A84-4CDC-48B8-93E8-29BCD05BBFFB}" ShortID="881952565" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -68,6 +33,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="se_2_1" ID="{1E183CD3-0350-456B-9F76-A8383A96C215}" ShortID="772454634" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
@@ -223,7 +195,7 @@
 							<PropertyList>
 								<Property Name="InitialDelay" Type="Real64">
 									<ValueList>
-										<Value>3</Value>
+										<Value>1.5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -267,20 +239,99 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="bgm_3_1" ID="{AAA95367-EEAB-4628-83FF-AFB3788C2BA9}" ShortID="842552426" Type="SoundFX">
+						<SwitchContainer Name="BGM_Stage1_switch" ID="{6BCCFDD3-14DF-4E4F-B345-195528F05742}" ShortID="176671462">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+									<ObjectRef Name="SFX" ID="{92FA64AA-5EEC-4C5D-852D-21DCBAA347B9}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="bgm_3_1" ID="{F1DACBCE-EEC6-420D-A610-BF19A209E3D5}" ShortID="1020263905">
-									<Language>SFX</Language>
-									<AudioFile>bgm_3_1.wav</AudioFile>
-								</AudioFileSource>
+								<RandomSequenceContainer Name="Normal" ID="{5AA69DF5-54F0-41B7-9D3E-8040D6E64171}" ShortID="544709435">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="bgm_2_1" ID="{29C0BB4D-8935-4136-92DB-58412835BAF2}" ShortID="223376904" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bgm_2_1" ID="{579BC6B3-0618-43FA-BD4D-21B023E2F79F}" ShortID="241192432">
+													<Language>SFX</Language>
+													<AudioFile>bgm_2_1 .wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bgm_2_1" ID="{579BC6B3-0618-43FA-BD4D-21B023E2F79F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="bgm_2_1" ID="{29C0BB4D-8935-4136-92DB-58412835BAF2}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Hurry" ID="{3D2BC9C4-9484-45B8-88F9-B4D0D805866E}" ShortID="757781096">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="bgm_2_2" ID="{18CAF2B3-E34B-4980-BE5D-8F50B7329A25}" ShortID="277737155" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="MUSIC" ID="{FD57498F-FB4D-4C36-B47F-573B05BF493A}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bgm_2_2" ID="{09FF3AAE-64BE-4288-ACCB-800C1D0CDC3B}" ShortID="204878764">
+													<Language>SFX</Language>
+													<AudioFile>bgm_2_2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bgm_2_2" ID="{09FF3AAE-64BE-4288-ACCB-800C1D0CDC3B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="bgm_2_2" ID="{18CAF2B3-E34B-4980-BE5D-8F50B7329A25}"/>
+									</Playlist>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
@@ -289,106 +340,312 @@
 									</StateGroupInfo>
 								</StateGroupList>
 							</StateInfo>
-							<ActiveSourceList>
-								<ActiveSource Name="bgm_3_1" ID="{F1DACBCE-EEC6-420D-A610-BF19A209E3D5}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="bgm_3_2" ID="{8ACD9C68-777D-48B6-AC14-FD14B96E0179}" ShortID="1069425119" Type="SoundFX">
+							<GroupingInfo>
+								<GroupRef Name="State_Player" ID="{ACD2A636-DA5F-4F03-A747-50ACC5C01CCD}"/>
+								<DefaultSwitchRef Name="State_Player_Normal" ID="{91480B7A-5855-4F6C-9F5F-D62EEBA1713B}"/>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Hurry" ID="{3D2BC9C4-9484-45B8-88F9-B4D0D805866E}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Normal" ID="{5AA69DF5-54F0-41B7-9D3E-8040D6E64171}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="State_Player_Normal" ID="{91480B7A-5855-4F6C-9F5F-D62EEBA1713B}"/>
+										<ItemList>
+											<ItemRef Name="Normal" ID="{5AA69DF5-54F0-41B7-9D3E-8040D6E64171}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="State_Player_Hurry" ID="{7E68C3AC-850F-425C-AC86-B1BE106C02D1}"/>
+										<ItemList>
+											<ItemRef Name="Hurry" ID="{3D2BC9C4-9484-45B8-88F9-B4D0D805866E}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="BGM_Stage2_switch" ID="{44B8E072-3F57-44EF-8837-4FA57A635F64}" ShortID="467347970">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+									<ObjectRef Name="SFX" ID="{92FA64AA-5EEC-4C5D-852D-21DCBAA347B9}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="bgm_3_2" ID="{43EFF441-4629-4588-91CE-574935FFAD02}" ShortID="304607729">
-									<Language>SFX</Language>
-									<AudioFile>bgm_3_2.wav</AudioFile>
-								</AudioFileSource>
+								<RandomSequenceContainer Name="Normal" ID="{923DF847-8D48-4CD0-90BB-9BDA812697A7}" ShortID="117130037">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="bgm_3_1" ID="{AAA95367-EEAB-4628-83FF-AFB3788C2BA9}" ShortID="842552426" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="MUSIC" ID="{FD57498F-FB4D-4C36-B47F-573B05BF493A}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bgm_3_1" ID="{F1DACBCE-EEC6-420D-A610-BF19A209E3D5}" ShortID="1020263905">
+													<Language>SFX</Language>
+													<AudioFile>bgm_3_1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="407460578"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="State_Player" ID="{ACD2A636-DA5F-4F03-A747-50ACC5C01CCD}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+											</StateInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="bgm_3_1" ID="{F1DACBCE-EEC6-420D-A610-BF19A209E3D5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="bgm_3_1" ID="{AAA95367-EEAB-4628-83FF-AFB3788C2BA9}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Hurry" ID="{D91908F0-D6D7-4047-81F6-AE620317621B}" ShortID="564105977">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="bgm_3_2" ID="{8ACD9C68-777D-48B6-AC14-FD14B96E0179}" ShortID="1069425119" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="MUSIC" ID="{FD57498F-FB4D-4C36-B47F-573B05BF493A}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bgm_3_2" ID="{43EFF441-4629-4588-91CE-574935FFAD02}" ShortID="304607729">
+													<Language>SFX</Language>
+													<AudioFile>bgm_3_2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="1057127781"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bgm_3_2" ID="{43EFF441-4629-4588-91CE-574935FFAD02}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="bgm_3_2" ID="{8ACD9C68-777D-48B6-AC14-FD14B96E0179}"/>
+									</Playlist>
+								</RandomSequenceContainer>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="bgm_3_2" ID="{43EFF441-4629-4588-91CE-574935FFAD02}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="bgm_4_1" ID="{49AF4D43-384F-43E7-9639-1ADDB624BF39}" ShortID="604287418" Type="SoundFX">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="State_Player" ID="{ACD2A636-DA5F-4F03-A747-50ACC5C01CCD}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+							</StateInfo>
+							<GroupingInfo>
+								<GroupRef Name="State_Player" ID="{ACD2A636-DA5F-4F03-A747-50ACC5C01CCD}"/>
+								<DefaultSwitchRef Name="State_Player_Normal" ID="{91480B7A-5855-4F6C-9F5F-D62EEBA1713B}"/>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Normal" ID="{923DF847-8D48-4CD0-90BB-9BDA812697A7}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Hurry" ID="{D91908F0-D6D7-4047-81F6-AE620317621B}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="State_Player_Normal" ID="{91480B7A-5855-4F6C-9F5F-D62EEBA1713B}"/>
+										<ItemList>
+											<ItemRef Name="Normal" ID="{923DF847-8D48-4CD0-90BB-9BDA812697A7}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="State_Player_Hurry" ID="{7E68C3AC-850F-425C-AC86-B1BE106C02D1}"/>
+										<ItemList>
+											<ItemRef Name="Hurry" ID="{D91908F0-D6D7-4047-81F6-AE620317621B}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="BGM_Stage3_switch" ID="{1F644654-D76B-43B3-B7DD-74E9F851F73E}" ShortID="731501585">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+									<ObjectRef Name="SFX" ID="{92FA64AA-5EEC-4C5D-852D-21DCBAA347B9}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="bgm_4_1" ID="{D1951821-56B9-46D6-8FD5-C8B8A40F3293}" ShortID="896825195">
-									<Language>SFX</Language>
-									<AudioFile>bgm_4_1.wav</AudioFile>
-								</AudioFileSource>
+								<RandomSequenceContainer Name="Normal" ID="{C25AA8E8-03E6-4FD4-9CEE-CFA4D06C75E3}" ShortID="610611178">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="bgm_4_1" ID="{49AF4D43-384F-43E7-9639-1ADDB624BF39}" ShortID="604287418" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="MUSIC" ID="{FD57498F-FB4D-4C36-B47F-573B05BF493A}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bgm_4_1" ID="{D1951821-56B9-46D6-8FD5-C8B8A40F3293}" ShortID="896825195">
+													<Language>SFX</Language>
+													<AudioFile>bgm_4_1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="193401151"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bgm_4_1" ID="{D1951821-56B9-46D6-8FD5-C8B8A40F3293}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="bgm_4_1" ID="{49AF4D43-384F-43E7-9639-1ADDB624BF39}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Hurry" ID="{96E1C9DB-4C72-412B-9FCF-A797CC52846D}" ShortID="818249211">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="bgm_4_2" ID="{2F385F31-BF88-49D9-8A96-EFC24B05FC3E}" ShortID="473797258" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="MUSIC" ID="{FD57498F-FB4D-4C36-B47F-573B05BF493A}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bgm_4_2" ID="{EF1008C6-56E6-4461-8177-59ADDBCDCF5C}" ShortID="146198387">
+													<Language>SFX</Language>
+													<AudioFile>bgm_4_2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="8337968"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bgm_4_2" ID="{EF1008C6-56E6-4461-8177-59ADDBCDCF5C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="bgm_4_2" ID="{2F385F31-BF88-49D9-8A96-EFC24B05FC3E}"/>
+									</Playlist>
+								</RandomSequenceContainer>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="bgm_4_1" ID="{D1951821-56B9-46D6-8FD5-C8B8A40F3293}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="bgm_4_2" ID="{2F385F31-BF88-49D9-8A96-EFC24B05FC3E}" ShortID="473797258" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="bgm_4_2" ID="{EF1008C6-56E6-4461-8177-59ADDBCDCF5C}" ShortID="146198387">
-									<Language>SFX</Language>
-									<AudioFile>bgm_4_2.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="bgm_4_2" ID="{EF1008C6-56E6-4461-8177-59ADDBCDCF5C}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="bgm_5_1" ID="{71EC5D17-0406-44EA-B7CC-66498A0E5126}" ShortID="807805442" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="bgm_5_1" ID="{E66EAE7B-8448-48F2-8671-3A8481EF3B43}" ShortID="176731202">
-									<Language>SFX</Language>
-									<AudioFile>bgm_5_1.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="bgm_5_1" ID="{E66EAE7B-8448-48F2-8671-3A8481EF3B43}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="bgm_5_2" ID="{2D3E90BC-0A9B-4117-8314-3A0D57B8B30B}" ShortID="441934139" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="bgm_5_2" ID="{7E997D3A-566A-44F9-848F-35E96A136713}" ShortID="391606186">
-									<Language>SFX</Language>
-									<AudioFile>bgm_5_2.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="bgm_5_2" ID="{7E997D3A-566A-44F9-848F-35E96A136713}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="bgm_2_2" ID="{18CAF2B3-E34B-4980-BE5D-8F50B7329A25}" ShortID="277737155" Type="SoundFX">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="State_Player" ID="{ACD2A636-DA5F-4F03-A747-50ACC5C01CCD}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+							</StateInfo>
+							<GroupingInfo>
+								<GroupRef Name="State_Player" ID="{ACD2A636-DA5F-4F03-A747-50ACC5C01CCD}"/>
+								<DefaultSwitchRef Name="State_Player_Normal" ID="{91480B7A-5855-4F6C-9F5F-D62EEBA1713B}"/>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Hurry" ID="{96E1C9DB-4C72-412B-9FCF-A797CC52846D}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Normal" ID="{C25AA8E8-03E6-4FD4-9CEE-CFA4D06C75E3}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="State_Player_Normal" ID="{91480B7A-5855-4F6C-9F5F-D62EEBA1713B}"/>
+										<ItemList>
+											<ItemRef Name="Normal" ID="{C25AA8E8-03E6-4FD4-9CEE-CFA4D06C75E3}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="State_Player_Hurry" ID="{7E68C3AC-850F-425C-AC86-B1BE106C02D1}"/>
+										<ItemList>
+											<ItemRef Name="Hurry" ID="{96E1C9DB-4C72-412B-9FCF-A797CC52846D}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="BGM_Stage4_switch" ID="{4ECB2570-AA4F-407A-BBB5-075F509D845E}" ShortID="336462552">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
@@ -398,13 +655,147 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="bgm_2_2" ID="{09FF3AAE-64BE-4288-ACCB-800C1D0CDC3B}" ShortID="204878764">
+								<RandomSequenceContainer Name="Normal" ID="{9FCF8CDE-446F-4EBE-916E-AC1E1244072F}" ShortID="151456517">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="bgm_5_1" ID="{71EC5D17-0406-44EA-B7CC-66498A0E5126}" ShortID="807805442" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="MUSIC" ID="{FD57498F-FB4D-4C36-B47F-573B05BF493A}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bgm_5_1" ID="{E66EAE7B-8448-48F2-8671-3A8481EF3B43}" ShortID="176731202">
+													<Language>SFX</Language>
+													<AudioFile>bgm_5_1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="967914306"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bgm_5_1" ID="{E66EAE7B-8448-48F2-8671-3A8481EF3B43}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="bgm_5_1" ID="{71EC5D17-0406-44EA-B7CC-66498A0E5126}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Hurry" ID="{982B5299-FCCE-47BA-B911-53464A99313A}" ShortID="763124588">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="bgm_5_2" ID="{2D3E90BC-0A9B-4117-8314-3A0D57B8B30B}" ShortID="441934139" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="MUSIC" ID="{FD57498F-FB4D-4C36-B47F-573B05BF493A}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bgm_5_2" ID="{7E997D3A-566A-44F9-848F-35E96A136713}" ShortID="391606186">
+													<Language>SFX</Language>
+													<AudioFile>bgm_5_2.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="597989343"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="bgm_5_2" ID="{7E997D3A-566A-44F9-848F-35E96A136713}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="bgm_5_2" ID="{2D3E90BC-0A9B-4117-8314-3A0D57B8B30B}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="State_Player" ID="{ACD2A636-DA5F-4F03-A747-50ACC5C01CCD}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+							</StateInfo>
+							<GroupingInfo>
+								<GroupRef Name="State_Player" ID="{ACD2A636-DA5F-4F03-A747-50ACC5C01CCD}"/>
+								<DefaultSwitchRef Name="State_Player_Normal" ID="{91480B7A-5855-4F6C-9F5F-D62EEBA1713B}"/>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Hurry" ID="{982B5299-FCCE-47BA-B911-53464A99313A}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Normal" ID="{9FCF8CDE-446F-4EBE-916E-AC1E1244072F}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="State_Player_Normal" ID="{91480B7A-5855-4F6C-9F5F-D62EEBA1713B}"/>
+										<ItemList>
+											<ItemRef Name="Normal" ID="{9FCF8CDE-446F-4EBE-916E-AC1E1244072F}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="State_Player_Hurry" ID="{7E68C3AC-850F-425C-AC86-B1BE106C02D1}"/>
+										<ItemList>
+											<ItemRef Name="Hurry" ID="{982B5299-FCCE-47BA-B911-53464A99313A}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<Sound Name="BGM_Title" ID="{A340824E-B704-4808-9663-898000A3CF90}" ShortID="982797617" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="bgm_0_1" ID="{A2BB0F81-A70E-495D-8975-8EEEF0A4CCCD}" ShortID="631202683">
 									<Language>SFX</Language>
-									<AudioFile>bgm_2_2.wav</AudioFile>
+									<AudioFile>bgm_0_1.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="bgm_2_2" ID="{09FF3AAE-64BE-4288-ACCB-800C1D0CDC3B}" Platform="Linked"/>
+								<ActiveSource Name="bgm_0_1" ID="{A2BB0F81-A70E-495D-8975-8EEEF0A4CCCD}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
