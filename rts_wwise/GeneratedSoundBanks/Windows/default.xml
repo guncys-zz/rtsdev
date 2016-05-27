@@ -12,6 +12,7 @@
 			<ShortName>default</ShortName>
 			<Path>default.bnk</Path>
 			<IncludedEvents>
+				<Event Id="225526817" Name="Play_BGM_Opening" DurationType="OneShot" DurationMin="15.800980" DurationMax="15.800980"/>
 				<Event Id="605006723" Name="Play_BGM_Stage_1" DurationType="Infinite"/>
 				<Event Id="605006720" Name="Play_BGM_Stage_2" DurationType="Infinite"/>
 				<Event Id="605006721" Name="Play_BGM_Stage_3" DurationType="Infinite"/>
@@ -104,6 +105,10 @@
 				<File Id="497027078" Language="SFX">
 					<ShortName>wow_003.wav</ShortName>
 					<Path>SFX\wow_003_DB50BAB0.wem</Path>
+				</File>
+				<File Id="503821301" Language="SFX">
+					<ShortName>opening_v02.wav</ShortName>
+					<Path>SFX\opening_v02_DB50BAB0.wem</Path>
 				</File>
 				<File Id="531519515" Language="SFX">
 					<ShortName>ouch_003.wav</ShortName>

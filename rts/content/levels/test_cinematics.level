@@ -264,6 +264,14 @@ editor_metadata = {
 				ToItem = "In"
 				ToNode = "d7a3566b-ace0-47bf-a611-419c46a73dd9"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out7"
+				FromNode = "29a09db9-9d86-4dd9-a531-21326d3bdfb9"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "4ddc81ca-a097-41b9-8d11-ea461f3735c6"
+			}
 		]
 		Groups = [
 			{
@@ -1097,6 +1105,82 @@ editor_metadata = {
 				]
 				Width = 160
 			}
+			{
+				Arguments = [
+					{
+						RawName = "Name"
+						Type = "element"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableElement"
+							Type = "wwise_event"
+							Value = "Play_BGM_Opening"
+						}
+					}
+					{
+						RawName = "Unit"
+						Type = "unit"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableUnit"
+							UseMyUnit = false
+						}
+					}
+					{
+						RawName = "Unit_Node"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+						}
+					}
+					{
+						RawName = "Position"
+						Type = "vector3"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableVector3"
+						}
+					}
+					{
+						RawName = "Existing_Source_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableFloat"
+						}
+					}
+				]
+				Brief = "Posts the given event to the Wwise engine, creating a source if none is provided."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/wwise/wwise"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "4ddc81ca-a097-41b9-8d11-ea461f3735c6"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Wwise Trigger Event"
+				NodeLocation = {
+					X = -200
+					Y = 680
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+					{
+						RawName = "Playing_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableFloat"
+						}
+					}
+					{
+						RawName = "Source_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableFloat"
+						}
+					}
+				]
+				Width = 160
+			}
 		]
 	}
 	Groups = [
@@ -1116,7 +1200,6 @@ editor_metadata = {
 	LevelReferences = [
 	]
 	LightBakeSettings = {
-		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
 		FilterGain = 20
@@ -1134,7 +1217,6 @@ editor_metadata = {
 			Z = 1
 		}
 		TexelScale = 10
-		TotalPasses = 256
 		Variance = 0.5
 	}
 	LuaPluginObjects = [
@@ -1241,7 +1323,6 @@ editor_metadata = {
 					Intensity = 1.9
 					Material = ""
 					MaterialResource = ""
-					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "directional"
@@ -1665,7 +1746,6 @@ editor_metadata = {
 					Intensity = 4
 					Material = ""
 					MaterialResource = ""
-					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -1732,7 +1812,6 @@ editor_metadata = {
 					Intensity = 10
 					Material = ""
 					MaterialResource = ""
-					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -1799,7 +1878,6 @@ editor_metadata = {
 					Intensity = 5
 					Material = ""
 					MaterialResource = ""
-					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -8980,6 +9058,13 @@ flow = {
 						node = "52839ae1-ea57-422b-8bf1-bdad270f45dc"
 					}
 				]
+				out7 = [
+					{
+						event = 0
+						id = "4ddc81ca-a097-41b9-8d11-ea461f3735c6:0"
+						node = "4ddc81ca-a097-41b9-8d11-ea461f3735c6"
+					}
+				]
 			}
 			type = "sequence"
 		}
@@ -9071,6 +9156,71 @@ flow = {
 			variables = [
 			]
 		}
+		{
+			flow_nodes_resource = "core/wwise/wwise"
+			id = "4ddc81ca-a097-41b9-8d11-ea461f3735c6"
+			in_variables = {
+				Existing_Source_Id = {
+					type = "float"
+				}
+				Name = {
+					type = "string"
+				}
+				Position = {
+					type = "vector3"
+				}
+				Unit = {
+					type = "unit"
+				}
+				Unit_Node = {
+					type = "string"
+				}
+			}
+			name = "Wwise Trigger Event"
+			query = false
+			return_values = [
+				{
+					name = "Playing_Id"
+					type = "float"
+				}
+				{
+					name = "Source_Id"
+					type = "float"
+				}
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Existing_Source_Id = null
+				Name = "Play_BGM_Opening"
+				Playing_Id = null
+				Position = null
+				Source_Id = null
+				Unit = null
+				Unit_Node = null
+			}
+			variables = [
+				{
+					name = "Name"
+					type = "string"
+				}
+				{
+					name = "Unit"
+					type = "unit"
+				}
+				{
+					name = "Unit_Node"
+					type = "string"
+				}
+				{
+					name = "Position"
+					type = "vector3"
+				}
+				{
+					name = "Existing_Source_Id"
+					type = "float"
+				}
+			]
+		}
 	]
 }
 level_references = [
@@ -9155,7 +9305,6 @@ units = [
 				falloff_start = 0
 				intensity = 1.9
 				material = ""
-				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "directional"
@@ -9507,7 +9656,6 @@ units = [
 				falloff_start = 0
 				intensity = 4
 				material = ""
-				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"
@@ -9565,7 +9713,6 @@ units = [
 				falloff_start = 0
 				intensity = 10
 				material = ""
-				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"
@@ -9623,7 +9770,6 @@ units = [
 				falloff_start = 0
 				intensity = 5
 				material = ""
-				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"

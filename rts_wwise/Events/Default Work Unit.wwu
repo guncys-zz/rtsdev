@@ -232,6 +232,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_BGM_Opening" ID="{A6B9D42A-FCB5-4D99-AE94-752E17F2C7C3}">
+							<ChildrenList>
+								<Action Name="Play" ID="{4BC9AF5D-439A-43F2-A5A1-CB21224D4D0A}" ShortID="800113853" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{909D6D67-DFDC-475D-ABAE-FD7B1407307D}" Global="false">
+											<ObjectRef Name="opening_v02" ID="{92190361-C716-4B26-BCA5-F519148E03E1}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

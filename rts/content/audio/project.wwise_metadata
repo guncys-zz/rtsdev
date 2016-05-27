@@ -4,6 +4,7 @@ aux_buses = [
 banks = {
 	default = {
 		events = [
+			"Play_BGM_Opening"
 			"Play_BGM_Stage_1"
 			"Play_BGM_Stage_2"
 			"Play_BGM_Stage_3"
@@ -38,6 +39,13 @@ buses = [
 	"VO"
 ]
 events = {
+	Play_BGM_Opening = {
+		attenuation_max = 0
+		duration_max = 15.80098
+		duration_min = 15.80098
+		duration_type = "OneShot"
+		positioning = "2D"
+	}
 	Play_BGM_Stage_1 = {
 		attenuation_max = 0
 		duration_max = 0

@@ -1273,6 +1273,25 @@
 								<ActiveSource Name="bgm_0_1" ID="{A2BB0F81-A70E-495D-8975-8EEEF0A4CCCD}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="opening_v02" ID="{92190361-C716-4B26-BCA5-F519148E03E1}" ShortID="621410278" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="opening_v02" ID="{4BFEE6F4-445B-48DC-9EAC-D9CADA78D713}" ShortID="503821301">
+									<Language>SFX</Language>
+									<AudioFile>opening_v02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="opening_v02" ID="{4BFEE6F4-445B-48DC-9EAC-D9CADA78D713}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
