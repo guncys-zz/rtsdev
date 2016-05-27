@@ -59,13 +59,13 @@ function Project.on_level_load_pre_flow()
         GameUI.start()
         local UIanim = require 'script/lua/ui'
         if level_name == Project.level_names.stage1 then
-            UIanim.reset(2,1)
+            UIanim.reset(9,1)
         elseif level_name == Project.level_names.stage2 then
-            UIanim.reset(2,250)
+            UIanim.reset(9,250)
         elseif level_name == Project.level_names.stage3 then
-            UIanim.reset(2,500)
-        elseif level_name == Project.level_names.stage2 then
-            UIanim.reset(2,750)
+            UIanim.reset(9,500)
+        elseif level_name == Project.level_names.stage4 then
+            UIanim.reset(9,750)
         end
     elseif level_name == Project.level_names.test_cinematics then
         local Opening = require 'script/lua/opening'
