@@ -7,6 +7,7 @@ local logoAnimation = scaleform.Actor.component_by_name(thisActor, "Animation")
 
 --local hitpoint = scaleform.ContainerComponent.actor_by_name(rootAnimation, "hitpoint")
 --local hitpointAnimation = scaleform.Actor.component_by_name(hitpoint, "animation")
+local SimpleProject = require 'core/appkit/lua/simple_project'
 
 -- http://help.autodesk.com/view/ScaleformStudio/ENU/?guid=__lua_ref_obj_scaleform_AnimationComponent_html
 --animetionを止める
@@ -31,6 +32,9 @@ if current_frame == 119 then
         scaleform.Stage.add_scene(loading)
         --change_levelってイベントをコールする
         --print("change_levelをコールする")
+        local wwise_world = stingray.Wwise.wwise_world(SimpleProject.world)
+		stingray.WwiseWorld.trigger_event(wwise_world, "Play_BGM_Title")
+
         dispatched = true
         end
 end
