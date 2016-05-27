@@ -14,6 +14,13 @@
 										</Element>
 									</ElementList>
 								</Action>
+								<Action Name="Play" ID="{385CFF6B-58AB-4E90-822D-1F4A956731DC}" ShortID="426331354" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{E3362CB9-E3E9-4AFE-949D-340A73212B30}" Global="false">
+											<ObjectRef Name="PPK_SE_Jump" ID="{4095E660-8681-4ED2-82D1-39752FC2E0D5}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="SE_PPK_damage1" ID="{06BCEFC1-4778-406A-BC3A-965A31E46279}">
@@ -22,6 +29,13 @@
 									<ElementList>
 										<Element ID="{8F895345-BB37-4E38-A1C1-7C2D7091157A}" Global="false">
 											<ObjectRef Name="se_2_1" ID="{1E183CD3-0350-456B-9F76-A8383A96C215}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{2B7EBA2B-B1E7-4D5C-B521-CF4F53DC7CF6}" ShortID="1007954108" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{EACF8333-965C-4A75-B351-84D68BBED519}" Global="false">
+											<ObjectRef Name="PPK_SE_Hit" ID="{23B1976F-DB8F-4975-B30C-92932D70BC8A}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -36,6 +50,13 @@
 										</Element>
 									</ElementList>
 								</Action>
+								<Action Name="Play" ID="{06CBA835-6AE3-4AFC-8DB0-9189CD97CBD2}" ShortID="897137562" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{61C8ECAF-B2F0-4D0B-8A8C-D7AB32DCAA9B}" Global="false">
+											<ObjectRef Name="PPK_SE_Roll" ID="{0F9B8F54-CC81-4D3C-BCC0-6250508F0AA5}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="SE_PPK_jump2" ID="{533EB566-203B-405A-9272-5A97E5E4F5F6}">
@@ -44,6 +65,13 @@
 									<ElementList>
 										<Element ID="{76E84BA7-A775-4413-932B-01FFA0B43F24}" Global="false">
 											<ObjectRef Name="se_9" ID="{913C2CDD-0115-4075-BF2E-E9DA230D0687}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{723E3713-AB19-4F46-AF5A-A96616CF1ADA}" ShortID="592532931" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{B01E5B7F-2648-48B9-940E-92579D8EAF9B}" Global="false">
+											<ObjectRef Name="PPK_SE_Jump2" ID="{EA43CF65-D8B0-42C6-A573-876B3AB90120}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
 										</Element>
 									</ElementList>
 								</Action>
