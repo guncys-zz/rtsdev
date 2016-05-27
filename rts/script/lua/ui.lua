@@ -2,7 +2,7 @@ require 'core/appkit/lua/class'
 require 'core/appkit/lua/app'
 
 local SimpleProject = require 'core/appkit/lua/simple_project'
-local damage_anim = 3   --ダメージのアニメーション
+local damage_anim = 10   --ダメージのアニメーション
 local gauge_anim = 1    --ゲージのアニメーション   
 local loding_flag = false   --1ステージごとにローディングされたかどうかを確認
 
@@ -18,17 +18,32 @@ function UI.reset(hp, pos)
 	--ダメージアニメーションの呼び出しイベント名登録
 	event.name = "damage_reset"
 
-    if hp == 2 then 
+    if hp == 9 then 
         damage_anim = 1
-    elseif hp == 1 then 
+    elseif hp == 8 then 
         damage_anim = 12
-    elseif hp == 0 then
+    elseif hp == 7 then
         damage_anim = 24
-    else
+    elseif hp == 6 then 
         damage_anim = 36
+    elseif hp == 5 then
+        damage_anim = 48
+    elseif hp == 4 then 
+        damage_anim = 60
+    elseif hp == 3 then
+        damage_anim = 72
+    elseif hp == 2 then 
+        damage_anim = 84
+    elseif hp == 1 then
+        damage_anim = 96
+    elseif hp == 0 then 
+        damage_anim = 108
+    else
+        damage_anim = 120
     end
+    
     --ダメージ受けるのをUIアニメーションに伝達
-    if damage_anim < 36 then
+    if damage_anim < 120 then
         event.data =  {value = damage_anim}
     	scaleform.Stage.dispatch_event(event)
 	end
@@ -50,7 +65,7 @@ function UI.reset(hp, pos)
 	--gauge_anim = gauge_anim + 1
 	
 	--レベルまたぐ用にpos情報を保管
-	
+	gauge_anim = gauge_pos
 --	print(gauge_pos)
     event.data =  {value = gauge_anim}
     scaleform.Stage.dispatch_event(event)
@@ -68,18 +83,32 @@ function UI.damage(hp)
 	--ダメージアニメーションの呼び出しイベント名登録
 	event.name = "damage"
 
-    if hp.HP == 2 then 
+    if hp.HP == 9 then 
         damage_anim = 1
-    elseif hp.HP == 1 then 
+    elseif hp.HP == 8 then 
         damage_anim = 12
-    elseif hp.HP == 0 then
+    elseif hp.HP == 7 then
         damage_anim = 24
-    else
+    elseif hp.HP == 6 then 
         damage_anim = 36
+    elseif hp.HP == 5 then
+        damage_anim = 48
+    elseif hp.HP == 4 then 
+        damage_anim = 60
+    elseif hp.HP == 3 then
+        damage_anim = 72
+    elseif hp.HP == 2 then 
+        damage_anim = 84
+    elseif hp.HP == 1 then
+        damage_anim = 96
+    elseif hp.HP == 0 then 
+        damage_anim = 108
+    else
+        damage_anim = 120
     end
     
     --ダメージ受けるのをUIアニメーションに伝達
-    if damage_anim < 36 then
+    if damage_anim < 120 then
         event.data =  {value = damage_anim}
     	scaleform.Stage.dispatch_event(event)
 	end

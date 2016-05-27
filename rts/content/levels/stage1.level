@@ -4873,6 +4873,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				IsTutorial = false
 			}
 			Type = "content/models/TutorialActor/tutorial_actor_cube"
 		}
@@ -4942,82 +4943,6 @@ editor_metadata = {
 			ScriptData = {
 			}
 			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
-		}
-		{
-			Cameras = {
-			}
-			Id = "2dba580b-5c62-4207-8f36-7832da591278"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "tutorial_actor_cube1"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = -0.20634
-				Y = 30.569199
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-				TutorialName = "Jump_01"
-			}
-			Type = "content/models/TutorialActor/tutorial_actor_cube"
-		}
-		{
-			Cameras = {
-			}
-			Id = "c550692c-42a5-44ba-adb3-65f31dfc2021"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "tutorial_actor_cube2"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0.254439
-				Y = 42.673477
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-				TutorialName = "Roll_00"
-			}
-			Type = "content/models/TutorialActor/tutorial_actor_cube"
 		}
 		{
 			Cameras = {
@@ -8962,6 +8887,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			IsTutorial = false
 		}
 		id = "ae1c1bac-67a1-4a78-8379-6adc29f4d870"
 		lights = {
@@ -9045,68 +8971,6 @@ units = [
 			1
 		]
 		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
-	}
-	{
-		cameras = {
-		}
-		data = {
-			TutorialName = "Jump_01"
-		}
-		id = "2dba580b-5c62-4207-8f36-7832da591278"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "tutorial_actor_cube1"
-		pos = [
-			-0.20634
-			30.569199
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/TutorialActor/tutorial_actor_cube"
-	}
-	{
-		cameras = {
-		}
-		data = {
-			TutorialName = "Roll_00"
-		}
-		id = "c550692c-42a5-44ba-adb3-65f31dfc2021"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "tutorial_actor_cube2"
-		pos = [
-			0.254439
-			42.673477
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/TutorialActor/tutorial_actor_cube"
 	}
 	{
 		cameras = {
