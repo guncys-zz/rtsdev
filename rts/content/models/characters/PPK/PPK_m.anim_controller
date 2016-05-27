@@ -96,6 +96,13 @@ compiler_data = {
 					root_driving = "ignore"
 					speed = "1"
 					state_type = "regular"
+					timeline = [
+						{
+							name = "AnimEvent_PhysX_All_Enable"
+							time = 0.019271948608137
+							type = "event"
+						}
+					]
 					transitions = [
 						{
 							blend_time = 0.2
@@ -138,6 +145,11 @@ compiler_data = {
 							name = "run_Enter"
 							time = 0
 							type = "enter_trigger"
+						}
+						{
+							name = "AnimEvent_PhysX_All_Enable"
+							time = 0.0593861558452663
+							type = "event"
 						}
 					]
 					transitions = [
@@ -232,6 +244,18 @@ compiler_data = {
 					root_driving = "ignore"
 					speed = "0.6"
 					state_type = "regular"
+					timeline = [
+						{
+							name = "AnimEvent_PhysX_All_Disable"
+							time = 0.0816559617983964
+							type = "event"
+						}
+						{
+							name = "AnimEvent_PhysX_All_Enable"
+							time = 0.162526770117962
+							type = "event"
+						}
+					]
 					transitions = [
 						{
 							blend_time = 0.2
@@ -278,6 +302,18 @@ compiler_data = {
 					root_driving = "ignore"
 					speed = "1"
 					state_type = "regular"
+					timeline = [
+						{
+							name = "AnimEvent_PhysX_All_Disable"
+							time = 0.0492505412030271
+							type = "event"
+						}
+						{
+							name = "AnimEvent_PhysX_All_Enable"
+							time = 0.0824411233181106
+							type = "event"
+						}
+					]
 					transitions = [
 						{
 							blend_time = 0.2
@@ -324,6 +360,18 @@ compiler_data = {
 					root_driving = "ignore"
 					speed = "1"
 					state_type = "regular"
+					timeline = [
+						{
+							name = "AnimEvent_PhysX_All_Disable"
+							time = 0.0644539603584584
+							type = "event"
+						}
+						{
+							name = "AnimEvent_PhysX_All_Enable"
+							time = 0.391220550082736
+							type = "event"
+						}
+					]
 					transitions = [
 						{
 							blend_time = 0.2
@@ -430,6 +478,11 @@ compiler_data = {
 							time = 0
 							type = "enter_trigger"
 						}
+						{
+							name = "AnimEvent_PhysX_All_Disable"
+							time = 0.200428275977774
+							type = "event"
+						}
 					]
 					transitions = [
 						{
@@ -469,6 +522,21 @@ compiler_data = {
 							time = 1
 							type = "trigger"
 						}
+						{
+							name = "AnimEvent_PhysX_All_Disable"
+							time = 0.258886501671671
+							type = "event"
+						}
+						{
+							name = "AnimEvent_PhysX_All_Enable"
+							time = 0.515560298200848
+							type = "event"
+						}
+						{
+							name = "AnimEvent_PhysX_All_Disable"
+							time = 0.887294762139658
+							type = "event"
+						}
 					]
 					transitions = [
 						{
@@ -502,6 +570,13 @@ compiler_data = {
 					root_driving = "ignore"
 					speed = "1"
 					state_type = "regular"
+					timeline = [
+						{
+							name = "AnimEvent_PhysX_All_Disable"
+							time = 0.0042112777268861
+							type = "event"
+						}
+					]
 					transitions = [
 						{
 							blend_time = 0
@@ -658,6 +733,16 @@ compiler_data = {
 							time = 1.44468193135884
 							type = "event"
 						}
+						{
+							name = "AnimEvent_PhysX_All_Disable"
+							time = 0.85738732013253
+							type = "event"
+						}
+						{
+							name = "AnimEvent_PhysX_All_Enable"
+							time = 0.970449384325831
+							type = "event"
+						}
 					]
 					transitions = [
 						{
@@ -684,6 +769,13 @@ compiler_data = {
 					root_driving = "ignore"
 					speed = "1"
 					state_type = "regular"
+					timeline = [
+						{
+							name = "AnimEvent_PhysX_All_Disable"
+							time = 0.0013561741442956
+							type = "event"
+						}
+					]
 					transitions = [
 						{
 							blend_time = 0
@@ -923,7 +1015,7 @@ layers = [
 		constraints = [
 		]
 		default_state_ref = {
-			_id = "cfd0a150-06ab-48bb-83a9-5cd97ff27711"
+			_id = "c280eba1-1543-460a-b1f2-cd6b0d21113f"
 			ref_filename = null
 			ref_id = "3606ba1a-de01-444b-bf7f-535fd1f39dad"
 		}
@@ -1233,7 +1325,7 @@ layers = [
 						}
 						transitions = [
 						]
-						width = 150
+						width = 160
 						x = -720
 						y = 460
 					}
@@ -1274,6 +1366,13 @@ layers = [
 								_time = 0
 								time = 0
 								type = "enter_trigger"
+							}
+							{
+								_id = "521382ec-6e5e-4d76-8683-3877a2990ea7"
+								_name = "AnimEvent_PhysX_All_Enable"
+								_time = 0.0593861558452663
+								time = 0.0593861558452663
+								type = "event"
 							}
 						]
 						muted_layers = [
@@ -1561,6 +1660,20 @@ layers = [
 						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
+							{
+								_id = "1f205c36-30bd-47d1-968b-2527a509c327"
+								_name = "AnimEvent_PhysX_All_Disable"
+								_time = 0.0816559617983964
+								time = 0.0816559617983964
+								type = "event"
+							}
+							{
+								_id = "1801a9cf-5386-4c6f-8377-abdacbbf5a6a"
+								_name = "AnimEvent_PhysX_All_Enable"
+								_time = 0.162526770117962
+								time = 0.162526770117962
+								type = "event"
+							}
 						]
 						muted_layers = [
 						]
@@ -1714,6 +1827,20 @@ layers = [
 						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
+							{
+								_id = "d8142fb7-6f48-419b-99a9-7fa196333577"
+								_name = "AnimEvent_PhysX_All_Disable"
+								_time = 0.0492505412030271
+								time = 0.0492505412030271
+								type = "event"
+							}
+							{
+								_id = "bf2af779-5e29-4590-8115-2c6096088ab7"
+								_name = "AnimEvent_PhysX_All_Enable"
+								_time = 0.0824411233181106
+								time = 0.0824411233181106
+								type = "event"
+							}
 						]
 						muted_layers = [
 						]
@@ -1867,6 +1994,20 @@ layers = [
 						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
+							{
+								_id = "36d9339a-4619-41c5-a046-f6b8746aa07d"
+								_name = "AnimEvent_PhysX_All_Disable"
+								_time = 0.0644539603584584
+								time = 0.0644539603584584
+								type = "event"
+							}
+							{
+								_id = "b1eaca23-0243-4389-aace-cdae8739cd16"
+								_name = "AnimEvent_PhysX_All_Enable"
+								_time = 0.391220550082736
+								time = 0.391220550082736
+								type = "event"
+							}
 						]
 						muted_layers = [
 						]
@@ -2174,6 +2315,13 @@ layers = [
 								time = 0
 								type = "enter_trigger"
 							}
+							{
+								_id = "7ea5c94d-38ed-456c-8c2c-d50a645a40f1"
+								_name = "AnimEvent_PhysX_All_Disable"
+								_time = 0.200428275977774
+								time = 0.200428275977774
+								type = "event"
+							}
 						]
 						muted_layers = [
 						]
@@ -2279,6 +2427,27 @@ layers = [
 								_time = 1
 								time = 1
 								type = "trigger"
+							}
+							{
+								_id = "2b303309-7f87-412b-aa00-d83e89eb83c8"
+								_name = "AnimEvent_PhysX_All_Disable"
+								_time = 0.258886501671671
+								time = 0.258886501671671
+								type = "event"
+							}
+							{
+								_id = "0906b3d1-3287-40b6-9349-3fae97a08772"
+								_name = "AnimEvent_PhysX_All_Enable"
+								_time = 0.515560298200848
+								time = 0.515560298200848
+								type = "event"
+							}
+							{
+								_id = "cd7f0dda-dc8a-4dfc-8739-c8fa38a6ecfe"
+								_name = "AnimEvent_PhysX_All_Disable"
+								_time = 0.887294762139658
+								time = 0.887294762139658
+								type = "event"
 							}
 						]
 						muted_layers = [
@@ -2436,6 +2605,13 @@ layers = [
 						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
+							{
+								_id = "27d68288-4678-4ab5-ae43-fb04387ebccb"
+								_name = "AnimEvent_PhysX_All_Disable"
+								_time = 0.0042112777268861
+								time = 0.0042112777268861
+								type = "event"
+							}
 						]
 						muted_layers = [
 						]
@@ -2855,6 +3031,20 @@ layers = [
 								time = 1.44468193135884
 								type = "event"
 							}
+							{
+								_id = "c11cda20-2368-4bc3-8ee8-2f8d439c732f"
+								_name = "AnimEvent_PhysX_All_Disable"
+								_time = 0.85738732013253
+								time = 0.85738732013253
+								type = "event"
+							}
+							{
+								_id = "2d525583-a585-45c6-a006-bb5dce6cccb2"
+								_name = "AnimEvent_PhysX_All_Enable"
+								_time = 0.970449384325831
+								time = 0.970449384325831
+								type = "event"
+							}
 						]
 						muted_layers = [
 						]
@@ -2984,6 +3174,13 @@ layers = [
 						inherit_muted_layers = true
 						loop_animation = false
 						markers = [
+							{
+								_id = "a0f6d1ee-8802-41aa-b50a-4a789556ef81"
+								_name = "AnimEvent_PhysX_All_Disable"
+								_time = 0.0013561741442956
+								time = 0.0013561741442956
+								type = "event"
+							}
 						]
 						muted_layers = [
 						]
@@ -3269,6 +3466,13 @@ layers = [
 				inherit_muted_layers = true
 				loop_animation = true
 				markers = [
+					{
+						_id = "bf97631a-a47b-4d22-8a14-badeea142f1a"
+						_name = "AnimEvent_PhysX_All_Enable"
+						_time = 0.019271948608137
+						time = 0.019271948608137
+						type = "event"
+					}
 				]
 				muted_layers = [
 				]
