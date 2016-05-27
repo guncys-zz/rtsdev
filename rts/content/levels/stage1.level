@@ -4566,15 +4566,15 @@ editor_metadata = {
 				Z = 0
 			}
 			Rot = {
-				W = 0
+				W = 0.707106781186548
 				X = 0
 				Y = 0
-				Z = 1
+				Z = -0.707106781186547
 			}
 			Scl = {
-				X = 3
-				Y = 3
-				Z = 3
+				X = 2
+				Y = 2
+				Z = 2
 			}
 			ScriptData = {
 			}
@@ -4788,15 +4788,15 @@ editor_metadata = {
 				Z = 0
 			}
 			Rot = {
-				W = 0
+				W = -0.707107
 				X = 0
 				Y = 0
-				Z = 1
+				Z = 0.707107
 			}
 			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
+				X = 1.5
+				Y = 1.5
+				Z = 1.5
 			}
 			ScriptData = {
 			}
@@ -5018,6 +5018,154 @@ editor_metadata = {
 				TutorialName = "Roll_00"
 			}
 			Type = "content/models/TutorialActor/tutorial_actor_cube"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e74daa48-d61a-4667-8230-79ba2faaa25c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "PIG1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 1.76596
+				Y = 215.923416
+				Z = 0
+			}
+			Rot = {
+				W = 0.34905
+				X = 0
+				Y = 0
+				Z = 0.937104
+			}
+			Scl = {
+				X = 0.7
+				Y = 0.7
+				Z = 0.7
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/PIG/PIG"
+		}
+		{
+			Cameras = {
+			}
+			Id = "bf7881be-5800-4de4-8753-093a20516c35"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "PIG2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 1.946531
+				Y = 214.823029
+				Z = 0
+			}
+			Rot = {
+				W = -0.761687
+				X = 0
+				Y = 0
+				Z = -0.647945
+			}
+			Scl = {
+				X = 0.7
+				Y = 0.7
+				Z = 0.7
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/PIG/PIG"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ad5ff4ee-45db-4efc-801f-f6611fa02481"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "CHI1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.895474
+				Y = 154.886353
+				Z = 0
+			}
+			Rot = {
+				W = 0.707106781186548
+				X = 0
+				Y = 0
+				Z = -0.707106781186547
+			}
+			Scl = {
+				X = 2
+				Y = 2
+				Z = 2
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/CHI/CHI"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a74980f0-6f9e-44b6-b8ff-41a48b346602"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "CHI2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.897535
+				Y = 154.886353
+				Z = 0
+			}
+			Rot = {
+				W = 0.707106781186548
+				X = 0
+				Y = 0
+				Z = -0.707106781186547
+			}
+			Scl = {
+				X = 2
+				Y = 2
+				Z = 2
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/CHI/CHI"
 		}
 	]
 	Volumes = [
@@ -8590,13 +8738,13 @@ units = [
 		rot = [
 			0
 			0
-			1
-			0
+			-0.707106781186547
+			0.707106781186548
 		]
 		scl = [
-			3
-			3
-			3
+			2
+			2
+			2
 		]
 		type = "content/models/blockers/CHI/CHI"
 	}
@@ -8770,13 +8918,13 @@ units = [
 		rot = [
 			0
 			0
-			1
-			0
+			0.707107
+			-0.707107
 		]
 		scl = [
-			1
-			1
-			1
+			1.5
+			1.5
+			1.5
 		]
 		type = "content/models/blockers/PIG/PIG"
 	}
@@ -8959,6 +9107,126 @@ units = [
 			1
 		]
 		type = "content/models/TutorialActor/tutorial_actor_cube"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e74daa48-d61a-4667-8230-79ba2faaa25c"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "PIG1"
+		pos = [
+			1.76596
+			215.923416
+			0
+		]
+		rot = [
+			0
+			0
+			0.937104
+			0.34905
+		]
+		scl = [
+			0.7
+			0.7
+			0.7
+		]
+		type = "content/models/blockers/PIG/PIG"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "bf7881be-5800-4de4-8753-093a20516c35"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "PIG2"
+		pos = [
+			1.946531
+			214.823029
+			0
+		]
+		rot = [
+			0
+			0
+			-0.647945
+			-0.761687
+		]
+		scl = [
+			0.7
+			0.7
+			0.7
+		]
+		type = "content/models/blockers/PIG/PIG"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "ad5ff4ee-45db-4efc-801f-f6611fa02481"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "CHI1"
+		pos = [
+			-0.895474
+			154.886353
+			0
+		]
+		rot = [
+			0
+			0
+			-0.707106781186547
+			0.707106781186548
+		]
+		scl = [
+			2
+			2
+			2
+		]
+		type = "content/models/blockers/CHI/CHI"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a74980f0-6f9e-44b6-b8ff-41a48b346602"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "CHI2"
+		pos = [
+			0.897535
+			154.886353
+			0
+		]
+		rot = [
+			0
+			0
+			-0.707106781186547
+			0.707106781186548
+		]
+		scl = [
+			2
+			2
+			2
+		]
+		type = "content/models/blockers/CHI/CHI"
 	}
 ]
 volumes = [
