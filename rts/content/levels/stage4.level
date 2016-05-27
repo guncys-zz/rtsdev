@@ -142,14 +142,6 @@ editor_metadata = {
 			}
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
-				FromNode = "1a0cac56-884e-4b37-92d5-e650aed65bb7"
-				Priority = 0
-				ToItem = "destroy units CSV file"
-				ToNode = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
 				FromItem = "Pressed"
 				FromNode = "abb3ba29-2a11-4732-82c4-d091e15d0cb9"
 				Priority = 0
@@ -195,14 +187,6 @@ editor_metadata = {
 				ToItem = "Height_scale"
 				ToNode = "4ecdeb84-04d4-4622-a07f-963c9438a8e3"
 				Type = "Float"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
-				FromNode = "1a0cac56-884e-4b37-92d5-e650aed65bb7"
-				Priority = 0
-				ToItem = "start_load_csv"
-				ToNode = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
 			}
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
@@ -14921,16 +14905,6 @@ flow = {
 			id = "1a0cac56-884e-4b37-92d5-e650aed65bb7"
 			out_events = {
 				out = [
-					{
-						event = 0
-						id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7:0"
-						node = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
-					}
-					{
-						event = 1
-						id = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7:1"
-						node = "a2e81bf0-556a-4dd4-bba4-059b471c4ee7"
-					}
 					{
 						event = 0
 						id = "de2d4a2c-361d-4aed-9584-b8d4fb3d1540:0"
