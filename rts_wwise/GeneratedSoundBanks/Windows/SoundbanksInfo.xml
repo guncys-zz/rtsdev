@@ -14,8 +14,8 @@
 			<ShortName>default</ShortName>
 			<Path>default.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3290586542" Name="Play_BGM_Ending" DurationType="OneShot" DurationMin="12.422354" DurationMax="12.422354"/>
-				<Event Id="225526817" Name="Play_BGM_Opening" DurationType="OneShot" DurationMin="15.800980" DurationMax="15.800980"/>
+				<Event Id="3290586542" Name="Play_BGM_Ending" DurationType="OneShot" DurationMin="14.724792" DurationMax="14.724792"/>
+				<Event Id="225526817" Name="Play_BGM_Opening" DurationType="OneShot" DurationMin="17.875000" DurationMax="17.875000"/>
 				<Event Id="605006723" Name="Play_BGM_Stage_1" DurationType="Infinite"/>
 				<Event Id="605006720" Name="Play_BGM_Stage_2" DurationType="Infinite"/>
 				<Event Id="605006721" Name="Play_BGM_Stage_3" DurationType="Infinite"/>
@@ -101,6 +101,10 @@
 					<ShortName>joy_001.wav</ShortName>
 					<Path>SFX\joy_001_DB50BAB0.wem</Path>
 				</File>
+				<File Id="444046076" Language="SFX">
+					<ShortName>bgm_0_2.wav</ShortName>
+					<Path>SFX\bgm_0_2_DB50BAB0.wem</Path>
+				</File>
 				<File Id="450531341" Language="SFX">
 					<ShortName>wow_001.wav</ShortName>
 					<Path>SFX\wow_001_DB50BAB0.wem</Path>
@@ -109,13 +113,13 @@
 					<ShortName>wow_003.wav</ShortName>
 					<Path>SFX\wow_003_DB50BAB0.wem</Path>
 				</File>
-				<File Id="503821301" Language="SFX">
-					<ShortName>opening_v02.wav</ShortName>
-					<Path>SFX\opening_v02_DB50BAB0.wem</Path>
-				</File>
 				<File Id="531519515" Language="SFX">
 					<ShortName>ouch_003.wav</ShortName>
 					<Path>SFX\ouch_003_DB50BAB0.wem</Path>
+				</File>
+				<File Id="558460669" Language="SFX">
+					<ShortName>bgm_0_3.wav</ShortName>
+					<Path>SFX\bgm_0_3_DB50BAB0.wem</Path>
 				</File>
 				<File Id="559175138" Language="SFX">
 					<ShortName>se_1.wav</ShortName>
@@ -124,10 +128,6 @@
 				<File Id="597989343" Language="SFX">
 					<ShortName>bgm_5_2.wav</ShortName>
 					<Path>SFX\bgm_5_2_6BBC2BAA.wem</Path>
-				</File>
-				<File Id="612102724" Language="SFX">
-					<ShortName>ending_v01.wav</ShortName>
-					<Path>SFX\ending_v01_DB50BAB0.wem</Path>
 				</File>
 				<File Id="618674183" Language="SFX">
 					<ShortName>kya_002.wav</ShortName>
@@ -161,6 +161,10 @@
 					<ShortName>awe_002.wav</ShortName>
 					<Path>SFX\awe_002_DB50BAB0.wem</Path>
 				</File>
+				<File Id="926718316" Language="SFX">
+					<ShortName>title_001.wav</ShortName>
+					<Path>SFX\title_001_DB50BAB0.wem</Path>
+				</File>
 				<File Id="943554591" Language="SFX">
 					<ShortName>hunm_001.wav</ShortName>
 					<Path>SFX\hunm_001_DB50BAB0.wem</Path>
@@ -191,8 +195,8 @@
 			<ShortName>Stage1</ShortName>
 			<Path>Stage1.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3290586542" Name="Play_BGM_Ending" DurationType="OneShot" DurationMin="12.422354" DurationMax="12.422354"/>
-				<Event Id="225526817" Name="Play_BGM_Opening" DurationType="OneShot" DurationMin="15.800980" DurationMax="15.800980"/>
+				<Event Id="3290586542" Name="Play_BGM_Ending" DurationType="OneShot" DurationMin="14.724792" DurationMax="14.724792"/>
+				<Event Id="225526817" Name="Play_BGM_Opening" DurationType="OneShot" DurationMin="17.875000" DurationMax="17.875000"/>
 				<Event Id="605006723" Name="Play_BGM_Stage_1" DurationType="Infinite"/>
 				<Event Id="605006720" Name="Play_BGM_Stage_2" DurationType="Infinite"/>
 				<Event Id="605006721" Name="Play_BGM_Stage_3" DurationType="Infinite"/>
@@ -224,21 +228,25 @@
 					<ShortName>bgm_3_1.wav</ShortName>
 					<Path>SFX\bgm_3_1_6BBC2BAA.wem</Path>
 				</File>
-				<File Id="503821301" Language="SFX">
-					<ShortName>opening_v02.wav</ShortName>
-					<Path>SFX\opening_v02_DB50BAB0.wem</Path>
+				<File Id="444046076" Language="SFX">
+					<ShortName>bgm_0_2.wav</ShortName>
+					<Path>SFX\bgm_0_2_DB50BAB0.wem</Path>
+				</File>
+				<File Id="558460669" Language="SFX">
+					<ShortName>bgm_0_3.wav</ShortName>
+					<Path>SFX\bgm_0_3_DB50BAB0.wem</Path>
 				</File>
 				<File Id="597989343" Language="SFX">
 					<ShortName>bgm_5_2.wav</ShortName>
 					<Path>SFX\bgm_5_2_6BBC2BAA.wem</Path>
 				</File>
-				<File Id="612102724" Language="SFX">
-					<ShortName>ending_v01.wav</ShortName>
-					<Path>SFX\ending_v01_DB50BAB0.wem</Path>
-				</File>
 				<File Id="631202683" Language="SFX">
 					<ShortName>bgm_0_1.wav</ShortName>
 					<Path>SFX\bgm_0_1_6BBC2BAA.wem</Path>
+				</File>
+				<File Id="926718316" Language="SFX">
+					<ShortName>title_001.wav</ShortName>
+					<Path>SFX\title_001_DB50BAB0.wem</Path>
 				</File>
 				<File Id="967914306" Language="SFX">
 					<ShortName>bgm_5_1.wav</ShortName>
