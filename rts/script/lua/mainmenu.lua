@@ -283,7 +283,7 @@ function MainMenu.update(object, dt)
 			if Appkit.Util.is_pc() then
 				if stingray.Keyboard.pressed(stingray.Keyboard.button_id("1")) then
 					--MainMenu.action = "start"
-					local loading = scaleform.Actor.load("Loading.s2dscene")	--Loding用のシーンをロード
+					local loading = scaleform.Actor.load("Credits.s2dscene")	--Loding用のシーンをロード
 				--	print("cボタンが押されたよ！！！！！")
             	    -- Remove the main menu scene
                     scaleform.Stage.remove_scene_by_index(1)

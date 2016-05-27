@@ -15,7 +15,7 @@ local logoAnimation = scaleform.Actor.component_by_name(thisActor, "Animation")
 
 local enterFrameEventListener = scaleform.EventListener.create(enterFrameEventListener, function(e, thisListener)
 local current_frame = scaleform.AnimationComponent.current_frame(logoAnimation)
-print(current_frame)
+--print(current_frame)
 if current_frame == 119 then
     if dispatched ~= true then  --まだイベントをコールしていなかったら
         local evt = { eventId = scaleform.EventTypes.Custom, 
