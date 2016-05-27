@@ -243,6 +243,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_BGM_Ending" ID="{D8314D6D-9F31-447D-A3A4-535148CCF3AD}">
+							<ChildrenList>
+								<Action Name="Play" ID="{BEA3F28D-BF92-4A11-BD1C-8E32926AE134}" ShortID="173489563" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{5D0D86BC-2949-4F19-AAAD-A1E3AD0E2C6C}" Global="false">
+											<ObjectRef Name="ending_v01" ID="{532E5CDF-0302-4DF6-9782-2EEFE7B3BE61}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

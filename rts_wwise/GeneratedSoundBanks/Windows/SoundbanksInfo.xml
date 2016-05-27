@@ -14,6 +14,7 @@
 			<ShortName>default</ShortName>
 			<Path>default.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3290586542" Name="Play_BGM_Ending" DurationType="OneShot" DurationMin="12.422354" DurationMax="12.422354"/>
 				<Event Id="225526817" Name="Play_BGM_Opening" DurationType="OneShot" DurationMin="15.800980" DurationMax="15.800980"/>
 				<Event Id="605006723" Name="Play_BGM_Stage_1" DurationType="Infinite"/>
 				<Event Id="605006720" Name="Play_BGM_Stage_2" DurationType="Infinite"/>
@@ -124,6 +125,10 @@
 					<ShortName>bgm_5_2.wav</ShortName>
 					<Path>SFX\bgm_5_2_6BBC2BAA.wem</Path>
 				</File>
+				<File Id="612102724" Language="SFX">
+					<ShortName>ending_v01.wav</ShortName>
+					<Path>SFX\ending_v01_DB50BAB0.wem</Path>
+				</File>
 				<File Id="618674183" Language="SFX">
 					<ShortName>kya_002.wav</ShortName>
 					<Path>SFX\kya_002_DB50BAB0.wem</Path>
@@ -186,6 +191,7 @@
 			<ShortName>Stage1</ShortName>
 			<Path>Stage1.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3290586542" Name="Play_BGM_Ending" DurationType="OneShot" DurationMin="12.422354" DurationMax="12.422354"/>
 				<Event Id="225526817" Name="Play_BGM_Opening" DurationType="OneShot" DurationMin="15.800980" DurationMax="15.800980"/>
 				<Event Id="605006723" Name="Play_BGM_Stage_1" DurationType="Infinite"/>
 				<Event Id="605006720" Name="Play_BGM_Stage_2" DurationType="Infinite"/>
@@ -225,6 +231,10 @@
 				<File Id="597989343" Language="SFX">
 					<ShortName>bgm_5_2.wav</ShortName>
 					<Path>SFX\bgm_5_2_6BBC2BAA.wem</Path>
+				</File>
+				<File Id="612102724" Language="SFX">
+					<ShortName>ending_v01.wav</ShortName>
+					<Path>SFX\ending_v01_DB50BAB0.wem</Path>
 				</File>
 				<File Id="631202683" Language="SFX">
 					<ShortName>bgm_0_1.wav</ShortName>
