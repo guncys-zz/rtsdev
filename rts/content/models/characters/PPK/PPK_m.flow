@@ -1513,6 +1513,15 @@ nodes = [
 				variable = "value"
 			}
 		}
+		out_events = {
+			true = [
+				{
+					event = 0
+					id = "f3c80810-70ef-40d1-b5d1-6511c427fe8d:0"
+					node = "f3c80810-70ef-40d1-b5d1-6511c427fe8d"
+				}
+			]
+		}
 		type = "branch"
 		variable_values = {
 			condition = null
@@ -2475,25 +2484,6 @@ nodes = [
 		]
 	}
 	{
-		id = "c6c02652-61c4-403e-965f-4a239fc9965a"
-		in_variables = {
-			key = {
-				type = "string"
-			}
-			unit = {
-				node = "11111111-2222-3333-4444-555555555555"
-				type = "unit"
-				variable = "unit"
-			}
-		}
-		type = "get_unit_bool_data"
-		variable_values = {
-			key = "Debug"
-			unit = null
-			value = null
-		}
-	}
-	{
 		id = "c7b743d3-cf9f-4f5a-9b1c-7ae11af00f03"
 		in_variables = {
 			key = {
@@ -2725,6 +2715,15 @@ nodes = [
 				type = "bool"
 				variable = "value"
 			}
+		}
+		out_events = {
+			true = [
+				{
+					event = 0
+					id = "b0c011fc-acba-4254-ab8e-3cebc5e56f76:0"
+					node = "b0c011fc-acba-4254-ab8e-3cebc5e56f76"
+				}
+			]
 		}
 		type = "branch"
 		variable_values = {
@@ -2966,17 +2965,6 @@ nodes = [
 			label = "tutorial:"
 			text = null
 		}
-	}
-	{
-		flow_nodes_resource = "script/custom_nodes/pause"
-		id = "f1ec2bd5-b82c-4012-bd57-9ccd9a63106a"
-		name = "Puase"
-		query = false
-		return_values = [
-		]
-		type = "custom_script_node"
-		variables = [
-		]
 	}
 	{
 		id = "f3768104-4b25-420f-9aec-e18df4fe240c"
@@ -3398,6 +3386,122 @@ nodes = [
 			key = "MaxRollCount"
 			unit = null
 			value = null
+		}
+	}
+	{
+		id = "f3c80810-70ef-40d1-b5d1-6511c427fe8d"
+		in_variables = {
+			condition = {
+				node = "c6c02652-61c4-403e-965f-4a239fc9965a"
+				type = "bool"
+				variable = "value"
+			}
+		}
+		out_events = {
+			false = [
+				{
+					event = 0
+					id = "530202c7-08ed-4887-82e2-5822f2d1c0b2:0"
+					node = "530202c7-08ed-4887-82e2-5822f2d1c0b2"
+				}
+			]
+		}
+		type = "branch"
+		variable_values = {
+			condition = null
+		}
+	}
+	{
+		id = "c6c02652-61c4-403e-965f-4a239fc9965a"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "bool"
+			}
+		}
+		type = "get_unit_bool_data"
+		variable_values = {
+			key = "Debug"
+			unit = null
+			value = null
+		}
+	}
+	{
+		flow_nodes_resource = "script/custom_nodes/gameover"
+		id = "530202c7-08ed-4887-82e2-5822f2d1c0b2"
+		name = "GameOver"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variables = [
+		]
+	}
+	{
+		id = "19110b0b-e7d4-44ec-aba9-c30d59a58f38"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "bool"
+			}
+		}
+		type = "get_unit_bool_data"
+		variable_values = {
+			key = "Debug"
+			unit = null
+			value = null
+		}
+	}
+	{
+		flow_nodes_resource = "script/custom_nodes/gameover"
+		id = "29c287c6-5ab4-433d-a888-2e480bb503bf"
+		name = "GameOver"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variables = [
+		]
+	}
+	{
+		id = "b0c011fc-acba-4254-ab8e-3cebc5e56f76"
+		in_variables = {
+			condition = {
+				node = "19110b0b-e7d4-44ec-aba9-c30d59a58f38"
+				type = "bool"
+				variable = "value"
+			}
+		}
+		out_events = {
+			false = [
+				{
+					event = 0
+					id = "29c287c6-5ab4-433d-a888-2e480bb503bf:0"
+					node = "29c287c6-5ab4-433d-a888-2e480bb503bf"
+				}
+			]
+		}
+		type = "branch"
+		variable_values = {
+			condition = null
 		}
 	}
 	{

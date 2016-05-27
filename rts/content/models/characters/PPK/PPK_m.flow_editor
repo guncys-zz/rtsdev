@@ -3861,6 +3861,60 @@ Connections = [
 		ToNode = "b0d7f7d9-b51d-4a37-a9f1-e182e5f39663"
 		Type = "Float"
 	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "True"
+		FromNode = "68533231-935a-4e4d-9480-6df5eddb1eb4"
+		Id = "099e89c0-7a50-46b9-afc5-236748e0c845"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "f3c80810-70ef-40d1-b5d1-6511c427fe8d"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "c6c02652-61c4-403e-965f-4a239fc9965a"
+		Id = "3bb60275-cbdf-4e36-b776-f6b56c6135a9"
+		ToItem = "Condition"
+		ToNode = "f3c80810-70ef-40d1-b5d1-6511c427fe8d"
+		Type = "Bool"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "False"
+		FromNode = "f3c80810-70ef-40d1-b5d1-6511c427fe8d"
+		Id = "ee78db2c-96c7-4178-b8bf-c0c4263499b2"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "530202c7-08ed-4887-82e2-5822f2d1c0b2"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "19110b0b-e7d4-44ec-aba9-c30d59a58f38"
+		Id = "fcec89fc-3b15-4670-8cbf-86b67f8f0f99"
+		ToItem = "Condition"
+		ToNode = "b0c011fc-acba-4254-ab8e-3cebc5e56f76"
+		Type = "Bool"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "False"
+		FromNode = "b0c011fc-acba-4254-ab8e-3cebc5e56f76"
+		Id = "0c9ce516-58db-4872-8b07-93d5e78cf27a"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "29c287c6-5ab4-433d-a888-2e480bb503bf"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "True"
+		FromNode = "df502459-82b2-4806-bfa0-84fb95f2c134"
+		Id = "1ca7c848-3fa6-4b5c-b91c-8b238583819a"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "b0c011fc-acba-4254-ab8e-3cebc5e56f76"
+	}
 ]
 Groups = [
 	{
@@ -4125,8 +4179,9 @@ Groups = [
 		]
 		Id = "fb2a3a0d-6f17-4597-b682-bf4f150b5b9c"
 		Nodes = [
-			"f1ec2bd5-b82c-4012-bd57-9ccd9a63106a"
 			"c6c02652-61c4-403e-965f-4a239fc9965a"
+			"530202c7-08ed-4887-82e2-5822f2d1c0b2"
+			"f3c80810-70ef-40d1-b5d1-6511c427fe8d"
 		]
 		Title = "Game Over"
 	}
@@ -4158,6 +4213,18 @@ Groups = [
 			"b4a92f42-0652-4079-9758-cc4d03f1d7e7"
 		]
 		Title = "移動距離の計算"
+	}
+	{
+		Collapsed = false
+		Groups = [
+		]
+		Id = "30b504a4-9c0f-46e2-960d-fadacfc71177"
+		Nodes = [
+			"19110b0b-e7d4-44ec-aba9-c30d59a58f38"
+			"29c287c6-5ab4-433d-a888-2e480bb503bf"
+			"b0c011fc-acba-4254-ab8e-3cebc5e56f76"
+		]
+		Title = "Game Over"
 	}
 ]
 Nodes = [
@@ -4323,8 +4390,6 @@ Nodes = [
 		Numeric = {
 			Value = 0
 		}
-		Out = {
-		}
 		Scope = {
 			Value = "local"
 		}
@@ -4379,8 +4444,8 @@ Nodes = [
 		Class = "Stingray.Flow.GetUnitWorldPosition"
 		Id = "122d99b1-949d-4589-a7e6-9ecbfdfc1d04"
 		NodeLocation = {
-			X = 160
-			Y = 540
+			X = 100
+			Y = -1180
 		}
 		Object = {
 		}
@@ -4742,8 +4807,6 @@ Nodes = [
 			X = 280
 			Y = -40
 		}
-		Out = {
-		}
 		Scope = {
 			Value = "local"
 		}
@@ -4763,8 +4826,6 @@ Nodes = [
 		NodeLocation = {
 			X = 280
 			Y = -40
-		}
-		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -4824,8 +4885,6 @@ Nodes = [
 		NodeLocation = {
 			X = 2780
 			Y = 740
-		}
-		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -5230,8 +5289,8 @@ Nodes = [
 		Class = "Stingray.Flow.VectorComponents"
 		Id = "5b89b908-44e5-411f-a63f-7200b1994471"
 		NodeLocation = {
-			X = 420
-			Y = 520
+			X = 360
+			Y = -1200
 		}
 		Vector = {
 		}
@@ -5465,7 +5524,7 @@ Nodes = [
 		}
 		True = {
 		}
-		Width = 160
+		Width = 140
 	}
 	{
 		Class = "Stingray.Flow.Branch"
@@ -5670,8 +5729,8 @@ Nodes = [
 		Class = "Stingray.Flow.NumericLessThanNumeric"
 		Id = "84a8a614-5794-4b28-8746-03c80e6502e9"
 		NodeLocation = {
-			X = 620
-			Y = 600
+			X = 560
+			Y = -1120
 		}
 		Value = {
 		}
@@ -5776,8 +5835,6 @@ Nodes = [
 			X = 60
 			Y = -160
 		}
-		Out = {
-		}
 		Scope = {
 			Value = "local"
 		}
@@ -5816,8 +5873,6 @@ Nodes = [
 		NodeLocation = {
 			X = 2240
 			Y = -200
-		}
-		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -6109,8 +6164,6 @@ Nodes = [
 			X = -140
 			Y = 1460
 		}
-		Out = {
-		}
 		Scope = {
 			Value = "local"
 		}
@@ -6269,23 +6322,6 @@ Nodes = [
 		Width = 160
 	}
 	{
-		Class = "Stingray.Flow.GetUnitBoolData"
-		Id = "c6c02652-61c4-403e-965f-4a239fc9965a"
-		Key = {
-			Value = "Debug"
-		}
-		NodeLocation = {
-			X = -200
-			Y = 940
-		}
-		Unit = {
-			UseMyUnit = true
-		}
-		Value = {
-		}
-		Width = 160
-	}
-	{
 		Class = "Stingray.Flow.SetUnitNumericData"
 		Id = "c7b743d3-cf9f-4f5a-9b1c-7ae11af00f03"
 		In = {
@@ -6360,8 +6396,8 @@ Nodes = [
 			Value = "HeightGameOver"
 		}
 		NodeLocation = {
-			X = 420
-			Y = 660
+			X = 360
+			Y = -1060
 		}
 		Unit = {
 			UseMyUnit = true
@@ -6462,8 +6498,8 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 800
-			Y = 640
+			X = 740
+			Y = -1080
 		}
 		True = {
 		}
@@ -6502,8 +6538,6 @@ Nodes = [
 			Y = 940
 		}
 		Numeric = {
-		}
-		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -6638,8 +6672,6 @@ Nodes = [
 			X = -140
 			Y = 700
 		}
-		Out = {
-		}
 		Scope = {
 			Value = "local"
 		}
@@ -6669,29 +6701,6 @@ Nodes = [
 		Width = 160
 	}
 	{
-		Arguments = [
-		]
-		Class = "Stingray.Flow.CustomScriptNode"
-		FlowNodesResource = "script/custom_nodes/pause"
-		FlowNodesResourceKey = "flow_nodes_resource"
-		Id = "f1ec2bd5-b82c-4012-bd57-9ccd9a63106a"
-		InEvents = [
-			"In"
-		]
-		IsQuery = false
-		Name = "Puase"
-		NodeLocation = {
-			X = 140
-			Y = 980
-		}
-		OutEvents = [
-			"Out"
-		]
-		ReturnValues = [
-		]
-		Width = 160
-	}
-	{
 		Class = "Stingray.Flow.SetNumericVariable"
 		Id = "f3768104-4b25-420f-9aec-e18df4fe240c"
 		Name = {
@@ -6702,8 +6711,6 @@ Nodes = [
 			Y = 340
 		}
 		Numeric = {
-		}
-		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -6820,8 +6827,6 @@ Nodes = [
 		}
 		Numeric = {
 		}
-		Out = {
-		}
 		Scope = {
 			Value = "local"
 		}
@@ -6873,8 +6878,6 @@ Nodes = [
 			Y = 120
 		}
 		Numeric = {
-		}
-		Out = {
 		}
 		Scope = {
 			Value = "local"
@@ -7002,6 +7005,120 @@ Nodes = [
 			UseMyUnit = true
 		}
 		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.Branch"
+		Condition = {
+		}
+		False = {
+		}
+		Id = "f3c80810-70ef-40d1-b5d1-6511c427fe8d"
+		In = {
+		}
+		NodeLocation = {
+			X = -60
+			Y = 960
+		}
+		True = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.GetUnitBoolData"
+		Id = "c6c02652-61c4-403e-965f-4a239fc9965a"
+		Key = {
+			Value = "Debug"
+		}
+		NodeLocation = {
+			X = -240
+			Y = 960
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Arguments = [
+		]
+		Class = "Stingray.Flow.CustomScriptNode"
+		FlowNodesResource = "script/custom_nodes/gameover"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "530202c7-08ed-4887-82e2-5822f2d1c0b2"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "GameOver"
+		NodeLocation = {
+			X = 120
+			Y = 940
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = [
+		]
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.GetUnitBoolData"
+		Id = "19110b0b-e7d4-44ec-aba9-c30d59a58f38"
+		Key = {
+			Value = "Debug"
+		}
+		NodeLocation = {
+			X = 1020
+			Y = -1060
+		}
+		Unit = {
+			UseMyUnit = true
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Arguments = [
+		]
+		Class = "Stingray.Flow.CustomScriptNode"
+		FlowNodesResource = "script/custom_nodes/gameover"
+		FlowNodesResourceKey = "flow_nodes_resource"
+		Id = "29c287c6-5ab4-433d-a888-2e480bb503bf"
+		InEvents = [
+			"In"
+		]
+		IsQuery = false
+		Name = "GameOver"
+		NodeLocation = {
+			X = 1380
+			Y = -1080
+		}
+		OutEvents = [
+			"Out"
+		]
+		ReturnValues = [
+		]
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.Branch"
+		Condition = {
+		}
+		False = {
+		}
+		Id = "b0c011fc-acba-4254-ab8e-3cebc5e56f76"
+		In = {
+		}
+		NodeLocation = {
+			X = 1200
+			Y = -1060
+		}
+		True = {
 		}
 		Width = 160
 	}

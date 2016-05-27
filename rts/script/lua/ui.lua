@@ -140,11 +140,11 @@ function UI.gauge_update(pos)  --positionにはプレイヤーのY方向の位�
     end
 end
 
-function UI.pause()
-    local evt = { eventId = scaleform.EventTypes.Custom,
-                      name = "pause",
-                      data = { value = 1 }}
-    scaleform.Stage.dispatch_event(evt)
+function UI.gameOver()
+    print("gameOver")
+    print(SimpleProject.level_name)
+    Appkit.set_pending_level_change(stingray.Application.flow_callback_context_level(), SimpleProject.level_name)
+
 end
 
 function UI.loading()
