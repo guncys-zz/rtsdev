@@ -1,0 +1,34 @@
+
+import_options = {
+	combine_meshes = false
+	combine_meshes_by_material = false
+	reverse_forward_axis = true
+	shared_materials = false
+	shared_textures = false
+	skip_animations = true
+	skip_cameras = true
+	skip_create_animations_folder = true
+	skip_create_extra_root = false
+	skip_create_textures_folder = false
+	skip_extract_root_motion = true
+	skip_lights = true
+	skip_lods = true
+	skip_materials = true
+	skip_mesh = false
+	skip_textures = true
+	test_want_failure = false
+}
+materials = {
+	stump_col = "content/models/blockers/STM/STM_AB_MT"
+}
+mesh = "content/models/blockers/ST3_blockers/STM/STM_A"
+renderables = {
+	pCube1 = {
+		shadow_caster = true
+		viewport_visible = true
+	}
+	stumpA = {
+		shadow_caster = true
+		viewport_visible = true
+	}
+}

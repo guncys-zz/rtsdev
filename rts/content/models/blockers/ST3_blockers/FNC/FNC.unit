@@ -30,13 +30,13 @@ editor_metadata = {
 	}
 }
 materials = {
-	pumpkinC_col = "content/models/blockers/FNC/FNC_MT"
+	pumpkinC_col = "content/models/blockers/ST3_blockers/FNC/FNC_MT"
 }
 renderables = {
 	fenceA = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
