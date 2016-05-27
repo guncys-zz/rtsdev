@@ -5,7 +5,7 @@ data = {
 editor_metadata = {
 	camera_settings = {
 		far_range = 1000
-		interest_point_distance = 2.880056
+		interest_point_distance = 3.419716
 		orthographic_plane = [
 			0
 			0
@@ -14,25 +14,34 @@ editor_metadata = {
 		]
 		orthographic_zoom = 10
 		position = [
-			1.779703
-			-1.6465
-			2.562555
+			2.234704
+			-2.237568
+			2.066556
 		]
 		projection_type = "perspective"
 		rotation = [
-			0.263778
-			0.117037
-			-0.388311
-			-0.875179
+			0.193605
+			0.081763
+			-0.380358
+			-0.900644
 		]
 		rotation_speed = 0.003
 		translation_speed = 0.05
 	}
 }
 materials = {
-	stump_col = "content/models/stage1/stump/materials/stump_col"
+	lambert51 = "content/models/blockers/MSH/MSH_A_MT"
 }
 renderables = {
+	mushroomA = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
 	pCube1 = {
 		always_keep = false
 		culling = "bounding_volume"
@@ -41,14 +50,5 @@ renderables = {
 		shadow_caster = false
 		surface_queries = false
 		viewport_visible = false
-	}
-	stumpB = {
-		always_keep = false
-		culling = "bounding_volume"
-		generate_uv_unwrap = false
-		occluder = false
-		shadow_caster = true
-		surface_queries = false
-		viewport_visible = true
 	}
 }

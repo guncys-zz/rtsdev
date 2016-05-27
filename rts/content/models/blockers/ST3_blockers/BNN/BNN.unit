@@ -1,11 +1,12 @@
 
 data = {
+	ElaspedTime = 0
 	IsBlocker = true
 }
 editor_metadata = {
 	camera_settings = {
 		far_range = 1000
-		interest_point_distance = 2.880056
+		interest_point_distance = 0.481286
 		orthographic_plane = [
 			0
 			0
@@ -14,35 +15,31 @@ editor_metadata = {
 		]
 		orthographic_zoom = 10
 		position = [
-			1.779703
-			-1.6465
-			2.562555
+			0.281909
+			0.280108
+			0.335459
 		]
 		projection_type = "perspective"
 		rotation = [
-			0.263778
-			0.117037
-			-0.388311
-			-0.875179
+			-0.115917
+			-0.279848
+			0.880476
+			0.364705
 		]
 		rotation_speed = 0.003
 		translation_speed = 0.05
 	}
+	flow_framing = {
+		scale = 0.833333333333333
+		x = 131.866666666666
+		y = 44.5525925925926
+	}
 }
 materials = {
-	stump_col = "content/models/stage1/stump/materials/stump_col"
+	lambert3 = "content/models/blockers/BNN/BNN_MT"
 }
 renderables = {
-	pCube1 = {
-		always_keep = false
-		culling = "bounding_volume"
-		generate_uv_unwrap = false
-		occluder = false
-		shadow_caster = false
-		surface_queries = false
-		viewport_visible = false
-	}
-	stumpB = {
+	banana = {
 		always_keep = false
 		culling = "bounding_volume"
 		generate_uv_unwrap = false
@@ -50,5 +47,14 @@ renderables = {
 		shadow_caster = true
 		surface_queries = false
 		viewport_visible = true
+	}
+	BNN_cln1 = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = false
+		surface_queries = false
+		viewport_visible = false
 	}
 }

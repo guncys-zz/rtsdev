@@ -5,7 +5,7 @@ data = {
 editor_metadata = {
 	camera_settings = {
 		far_range = 1000
-		interest_point_distance = 2.880056
+		interest_point_distance = 2.381448
 		orthographic_plane = [
 			0
 			0
@@ -14,23 +14,23 @@ editor_metadata = {
 		]
 		orthographic_zoom = 10
 		position = [
-			1.779703
-			-1.6465
-			2.562555
+			1.638505
+			-1.362238
+			1.48125
 		]
 		projection_type = "perspective"
 		rotation = [
-			0.263778
-			0.117037
-			-0.388311
-			-0.875179
+			0.213641
+			0.101388
+			-0.416579
+			-0.877804
 		]
 		rotation_speed = 0.003
 		translation_speed = 0.05
 	}
 }
 materials = {
-	stump_col = "content/models/stage1/stump/materials/stump_col"
+	stump_col = "content/models/blockers/STM/STM_AB_MT"
 }
 renderables = {
 	pCube1 = {
@@ -42,7 +42,7 @@ renderables = {
 		surface_queries = false
 		viewport_visible = false
 	}
-	stumpB = {
+	stumpA = {
 		always_keep = false
 		culling = "bounding_volume"
 		generate_uv_unwrap = false
