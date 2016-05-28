@@ -1113,7 +1113,6 @@ editor_metadata = {
 	LevelReferences = [
 	]
 	LightBakeSettings = {
-		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
 		FilterGain = 20
@@ -1131,7 +1130,6 @@ editor_metadata = {
 			Z = 1
 		}
 		TexelScale = 5
-		TotalPasses = 256
 		Variance = 0.5
 	}
 	LuaPluginObjects = [
@@ -1205,7 +1203,6 @@ editor_metadata = {
 					Intensity = 3.5
 					Material = ""
 					MaterialResource = ""
-					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "directional"
@@ -12257,7 +12254,6 @@ editor_metadata = {
 					Intensity = 1
 					Material = ""
 					MaterialResource = "content/levels/stage2-cubemaps/reflection_probe1_bake"
-					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "box"
@@ -12327,7 +12323,6 @@ editor_metadata = {
 					Intensity = 1
 					Material = ""
 					MaterialResource = "content/levels/stage2-cubemaps/reflection_probe_bake"
-					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "box"
@@ -15104,6 +15099,376 @@ editor_metadata = {
 			}
 			Type = "content/models/stage2/leafShadowObject"
 		}
+		{
+			Cameras = {
+			}
+			Id = "7d85d28a-2eee-4ab8-994f-abeaa71a424b"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "CHI"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 27
+				Z = 0
+			}
+			Rot = {
+				W = 8.94896662497055E-10
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 3
+				Y = 3
+				Z = 3
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/CHI/CHI"
+		}
+		{
+			Cameras = {
+			}
+			Id = "0397049f-1bb6-4ae9-87ab-bf86c5098ba1"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "BNN"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 35
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 3
+				Z = 3
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/BNN/BNN"
+		}
+		{
+			Cameras = {
+			}
+			Id = "7281cc9b-ca73-48a2-b0db-6c9aff7985b7"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "MSH_B1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 50
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/MSH/MSH_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "5dad45ce-0cf0-4c10-b96d-7a75f6f49fad"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STM_B5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 71
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/STM/STM_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "569c9845-a1c0-4170-85ec-254f5234fb40"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STN_B3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 80
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/STN/STN_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6cfc8d40-8072-45f9-a91a-53f2e5556580"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STM_B6"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 85
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/STM/STM_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "08aa63b8-e3ad-4e20-b384-b7b7d6d5245b"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "FNC"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 105
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/FNC/FNC"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4be4d7a3-cc24-4db7-9af4-e11b5ec677f7"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "MSH_A1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 125
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/MSH/MSH_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "2cc4e792-dc88-4b3b-94e0-5d07523cdbe1"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STN_B4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 155
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/STN/STN_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "54c71bf9-9921-44de-96f7-5bfdc2acf09e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "CHI1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 168
+				Z = 0
+			}
+			Rot = {
+				W = 8.94896662497055E-10
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 3
+				Y = 3
+				Z = 3
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/CHI/CHI"
+		}
 	]
 	Volumes = [
 	]
@@ -15912,7 +16277,6 @@ units = [
 				falloff_start = 0
 				intensity = 3.5
 				material = ""
-				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "directional"
@@ -24885,7 +25249,6 @@ units = [
 				falloff_start = 0
 				intensity = 1
 				material = "content/levels/stage2-cubemaps/reflection_probe1_bake"
-				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "box"
@@ -24946,7 +25309,6 @@ units = [
 				falloff_start = 0
 				intensity = 1
 				material = "content/levels/stage2-cubemaps/reflection_probe_bake"
-				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "box"
@@ -27207,6 +27569,306 @@ units = [
 			30.497015
 		]
 		type = "content/models/stage2/leafShadowObject"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "7d85d28a-2eee-4ab8-994f-abeaa71a424b"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "CHI"
+		pos = [
+			0
+			27
+			0
+		]
+		rot = [
+			0
+			0
+			1
+			8.94896662497055E-10
+		]
+		scl = [
+			3
+			3
+			3
+		]
+		type = "content/models/blockers/CHI/CHI"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "0397049f-1bb6-4ae9-87ab-bf86c5098ba1"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "BNN"
+		pos = [
+			0
+			35
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			3
+			3
+		]
+		type = "content/models/blockers/BNN/BNN"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "7281cc9b-ca73-48a2-b0db-6c9aff7985b7"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "MSH_B1"
+		pos = [
+			0
+			50
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/MSH/MSH_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "5dad45ce-0cf0-4c10-b96d-7a75f6f49fad"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STM_B5"
+		pos = [
+			0
+			71
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/STM/STM_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "569c9845-a1c0-4170-85ec-254f5234fb40"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STN_B3"
+		pos = [
+			0
+			80
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/STN/STN_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6cfc8d40-8072-45f9-a91a-53f2e5556580"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STM_B6"
+		pos = [
+			0
+			85
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/STM/STM_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "08aa63b8-e3ad-4e20-b384-b7b7d6d5245b"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "FNC"
+		pos = [
+			0
+			105
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/FNC/FNC"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "4be4d7a3-cc24-4db7-9af4-e11b5ec677f7"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "MSH_A1"
+		pos = [
+			0
+			125
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/MSH/MSH_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "2cc4e792-dc88-4b3b-94e0-5d07523cdbe1"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STN_B4"
+		pos = [
+			0
+			155
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/STN/STN_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "54c71bf9-9921-44de-96f7-5bfdc2acf09e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "CHI1"
+		pos = [
+			0
+			168
+			0
+		]
+		rot = [
+			0
+			0
+			1
+			8.94896662497055E-10
+		]
+		scl = [
+			3
+			3
+			3
+		]
+		type = "content/models/blockers/CHI/CHI"
 	}
 ]
 volumes = [
