@@ -57,7 +57,7 @@ editor_metadata = {
 				"778c5da5-eaa2-4a5f-951f-8c8bf13a2a6e" = {
 					data = {
 						dof_enabled = true
-						dof_focal_distance = 7
+						dof_focal_distance = 5
 						dof_focal_region = 1
 						dof_focal_region_end = 15
 						dof_focal_region_start = 2
@@ -1250,20 +1250,20 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = 4.825863
-				Y = -1.996042
-				Z = 2.96333
+				X = 4.96136
+				Y = 0.220613
+				Z = 3.319376
 			}
 			Rot = {
-				W = -0.90289
-				X = 0.204255
-				Y = 0.054039
-				Z = -0.374365
+				W = -0.88266
+				X = 0.206729
+				Y = 0.066281
+				Z = -0.416871
 			}
 			Scl = {
-				X = 1.000006
-				Y = 1.000005
-				Z = 1.000002
+				X = 1.000012
+				Y = 1.000034
+				Z = 1
 			}
 			ScriptData = {
 			}
@@ -5235,7 +5235,7 @@ entities = [
 			"778c5da5-eaa2-4a5f-951f-8c8bf13a2a6e" = {
 				data = {
 					dof_enabled = true
-					dof_focal_distance = 7
+					dof_focal_distance = 5
 					dof_focal_region = 1
 					dof_focal_region_end = 15
 					dof_focal_region_start = 2
@@ -6028,20 +6028,20 @@ units = [
 		}
 		name = "camera"
 		pos = [
-			4.825863
-			-1.996042
-			2.96333
+			4.96136
+			0.220613
+			3.319376
 		]
 		rot = [
-			0.204255
-			0.054039
-			-0.374365
-			-0.90289
+			0.206729
+			0.066281
+			-0.416871
+			-0.88266
 		]
 		scl = [
-			1.000006
-			1.000005
-			1.000002
+			1.000012
+			1.000034
+			1
 		]
 		type = "core/units/camera"
 	}
