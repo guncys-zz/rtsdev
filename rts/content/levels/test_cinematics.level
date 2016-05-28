@@ -331,14 +331,6 @@ editor_metadata = {
 			{
 				Class = "Stingray.Foundation.Flow.VariableConnection"
 				FromItem = "Value"
-				FromNode = "638469dc-ab9e-4db5-b64f-7259dcbd9cfa"
-				ToItem = "Change"
-				ToNode = "11cd3c36-e3a7-4c65-a3dd-4a2484f62eca"
-				Type = "Float"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.VariableConnection"
-				FromItem = "Value"
 				FromNode = "bc406d89-bdd9-420d-9544-6c2fcd127fc5"
 				ToItem = "Max"
 				ToNode = "11cd3c36-e3a7-4c65-a3dd-4a2484f62eca"
@@ -349,6 +341,30 @@ editor_metadata = {
 				FromItem = "Value"
 				FromNode = "d4d974d7-92b7-4652-a99e-5cc828591092"
 				ToItem = "Min"
+				ToNode = "11cd3c36-e3a7-4c65-a3dd-4a2484f62eca"
+				Type = "Float"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "638469dc-ab9e-4db5-b64f-7259dcbd9cfa"
+				ToItem = "A"
+				ToNode = "34f9baae-0175-41b9-9e70-fe8b14b0fb7c"
+				Type = "Float"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Time"
+				FromNode = "7dae2917-58fa-4fa1-b69e-202f75cd114f"
+				ToItem = "B"
+				ToNode = "34f9baae-0175-41b9-9e70-fe8b14b0fb7c"
+				Type = "Float"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "34f9baae-0175-41b9-9e70-fe8b14b0fb7c"
+				ToItem = "Change"
 				ToNode = "11cd3c36-e3a7-4c65-a3dd-4a2484f62eca"
 				Type = "Float"
 			}
@@ -394,6 +410,8 @@ editor_metadata = {
 					"bc406d89-bdd9-420d-9544-6c2fcd127fc5"
 					"d4d974d7-92b7-4652-a99e-5cc828591092"
 					"638469dc-ab9e-4db5-b64f-7259dcbd9cfa"
+					"7dae2917-58fa-4fa1-b69e-202f75cd114f"
+					"34f9baae-0175-41b9-9e70-fe8b14b0fb7c"
 				]
 				Title = "Close Vignette"
 			}
@@ -1310,7 +1328,7 @@ editor_metadata = {
 				In = {
 				}
 				NodeLocation = {
-					X = 320
+					X = 240
 					Y = 1660
 				}
 				Title = "Branch"
@@ -1456,8 +1474,8 @@ editor_metadata = {
 				IsQuery = false
 				Name = "Change Vignett"
 				NodeLocation = {
-					X = 780
-					Y = 1820
+					X = 820
+					Y = 1900
 				}
 				OutEvents = [
 					"Out"
@@ -1471,8 +1489,8 @@ editor_metadata = {
 				Class = "Stingray.Foundation.Flow.NumericData"
 				Id = "bc406d89-bdd9-420d-9544-6c2fcd127fc5"
 				NodeLocation = {
-					X = 580
-					Y = 1740
+					X = 560
+					Y = 1880
 				}
 				Set = {
 					Value = 1
@@ -1487,8 +1505,8 @@ editor_metadata = {
 				Class = "Stingray.Foundation.Flow.NumericData"
 				Id = "d4d974d7-92b7-4652-a99e-5cc828591092"
 				NodeLocation = {
-					X = 580
-					Y = 1820
+					X = 560
+					Y = 1960
 				}
 				Set = {
 					Value = 0
@@ -1503,13 +1521,43 @@ editor_metadata = {
 				Class = "Stingray.Foundation.Flow.NumericData"
 				Id = "638469dc-ab9e-4db5-b64f-7259dcbd9cfa"
 				NodeLocation = {
-					X = 580
-					Y = 1660
+					X = 440
+					Y = 1600
 				}
 				Set = {
-					Value = -0.01
+					Value = -1
 				}
 				Title = "Numeric Data"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Returns the time elapsed since the last frame update."
+				Class = "Stingray.Foundation.Flow.GetLastDeltaTime"
+				Id = "7dae2917-58fa-4fa1-b69e-202f75cd114f"
+				NodeLocation = {
+					X = 440
+					Y = 1700
+				}
+				Time = {
+				}
+				Title = "Get Last Delta Time"
+				Width = 160
+			}
+			{
+				A = {
+				}
+				B = {
+				}
+				Brief = "Returns a numeric value that represents the product of A and B."
+				Class = "Stingray.Foundation.Flow.NumericTimesNumeric"
+				Id = "34f9baae-0175-41b9-9e70-fe8b14b0fb7c"
+				NodeLocation = {
+					X = 620
+					Y = 1640
+				}
+				Title = "Multiplication"
 				Value = {
 				}
 				Width = 160
@@ -9712,7 +9760,7 @@ flow = {
 			id = "11cd3c36-e3a7-4c65-a3dd-4a2484f62eca"
 			in_variables = {
 				Change = {
-					node = "638469dc-ab9e-4db5-b64f-7259dcbd9cfa"
+					node = "34f9baae-0175-41b9-9e70-fe8b14b0fb7c"
 					type = "float"
 					variable = "value"
 				}
@@ -9787,7 +9835,45 @@ flow = {
 			}
 			type = "numeric_data"
 			variable_values = {
-				set = -0.01
+				set = -1
+				value = null
+			}
+		}
+		{
+			id = "7dae2917-58fa-4fa1-b69e-202f75cd114f"
+			out_variables = {
+				time = {
+					type = "float"
+				}
+			}
+			type = "get_last_delta_time"
+			variable_values = {
+				time = null
+			}
+		}
+		{
+			id = "34f9baae-0175-41b9-9e70-fe8b14b0fb7c"
+			in_variables = {
+				a = {
+					node = "638469dc-ab9e-4db5-b64f-7259dcbd9cfa"
+					type = "float"
+					variable = "value"
+				}
+				b = {
+					node = "7dae2917-58fa-4fa1-b69e-202f75cd114f"
+					type = "float"
+					variable = "time"
+				}
+			}
+			out_variables = {
+				value = {
+					type = "float"
+				}
+			}
+			type = "numeric_times_numeric"
+			variable_values = {
+				a = null
+				b = null
 				value = null
 			}
 		}
