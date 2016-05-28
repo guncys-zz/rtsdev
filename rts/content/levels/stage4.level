@@ -276,6 +276,78 @@ editor_metadata = {
 				ToItem = "Set"
 				ToNode = "0094de48-504b-4c41-9176-5ef4b49398d9"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "68840378-8359-400a-8e65-73d25da8244a"
+				ToItem = "A"
+				ToNode = "7025a441-d093-4b51-99c8-80de4fea4d24"
+				Type = "Float"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "7025a441-d093-4b51-99c8-80de4fea4d24"
+				ToItem = "Condition"
+				ToNode = "6d285d1d-bc78-4b9b-ae7f-91c04fd8f38c"
+				Type = "Bool"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "29beef00-a9a2-4383-9095-daa70a7066ac"
+				ToItem = "Unit"
+				ToNode = "68840378-8359-400a-8e65-73d25da8244a"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "8d1a0048-58c8-4973-9be1-ed2bed0f9053"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "9cb4d85f-7645-48bf-b306-cbd6d58f28c8"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "8d1a0048-58c8-4973-9be1-ed2bed0f9053"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "a4fbfe5e-c964-4e18-91e3-8db9933c04a5"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "True"
+				FromNode = "6d285d1d-bc78-4b9b-ae7f-91c04fd8f38c"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "0bc6418b-9d77-47b6-ab6d-0201f738da11"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "0bc6418b-9d77-47b6-ab6d-0201f738da11"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "8d1a0048-58c8-4973-9be1-ed2bed0f9053"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "0bc6418b-9d77-47b6-ab6d-0201f738da11"
+				Priority = 0
+				ToItem = "Start"
+				ToNode = "9b2aa05c-a8c1-474c-bf04-a54f954d5aff"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "9c7b5dd9-2e42-40da-801d-de561afb533e"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "6d285d1d-bc78-4b9b-ae7f-91c04fd8f38c"
+			}
 		]
 		Groups = [
 			{
@@ -774,7 +846,7 @@ editor_metadata = {
 				}
 				NodeLocation = {
 					X = 1540
-					Y = 580
+					Y = 740
 				}
 				Numeric = {
 					Value = 1
@@ -801,7 +873,7 @@ editor_metadata = {
 				}
 				NodeLocation = {
 					X = 1100
-					Y = 620
+					Y = 780
 				}
 				Title = "Branch"
 				True = {
@@ -817,7 +889,7 @@ editor_metadata = {
 				}
 				NodeLocation = {
 					X = 1540
-					Y = 720
+					Y = 880
 				}
 				Numeric = {
 					Value = 0
@@ -966,7 +1038,7 @@ editor_metadata = {
 				}
 				NodeLocation = {
 					X = 260
-					Y = 500
+					Y = 660
 				}
 				Title = "Get Actor Colliding Below Mover"
 				Unit = {
@@ -982,7 +1054,7 @@ editor_metadata = {
 				Id = "1e9bd6de-ae79-4e71-8b90-442a20c1280a"
 				NodeLocation = {
 					X = 480
-					Y = 600
+					Y = 760
 				}
 				Title = "Get Actor Unit"
 				Unit = {
@@ -995,7 +1067,7 @@ editor_metadata = {
 				Id = "e8e33851-a843-441f-9917-172555e79fad"
 				NodeLocation = {
 					X = 620
-					Y = 740
+					Y = 900
 				}
 				Title = "Unit Is Of Type"
 				Type = {
@@ -1020,7 +1092,7 @@ editor_metadata = {
 				}
 				NodeLocation = {
 					X = 880
-					Y = 800
+					Y = 960
 				}
 				Title = "Branch"
 				True = {
@@ -1036,7 +1108,7 @@ editor_metadata = {
 				}
 				NodeLocation = {
 					X = 880
-					Y = 680
+					Y = 840
 				}
 				Title = "Get Unit Bool Data"
 				Unit = {
@@ -1044,6 +1116,159 @@ editor_metadata = {
 				}
 				Value = {
 				}
+				Width = 160
+			}
+			{
+				Brief = "Returns the current numeric value of the specified unit script data."
+				Class = "Stingray.Foundation.Flow.GetUnitNumericData"
+				Id = "68840378-8359-400a-8e65-73d25da8244a"
+				Key = {
+					Value = "Distance"
+				}
+				NodeLocation = {
+					X = 500
+					Y = 180
+				}
+				Title = "Get Unit Numeric Data"
+				Unit = {
+					UseMyUnit = false
+				}
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				A = {
+				}
+				B = {
+					Value = 1000
+				}
+				Brief = "Returns a boolean based on whether A is greater than B."
+				Class = "Stingray.Foundation.Flow.NumericGreaterThanNumeric"
+				Id = "7025a441-d093-4b51-99c8-80de4fea4d24"
+				NodeLocation = {
+					X = 740
+					Y = 200
+				}
+				Title = "Greater Than"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Creates a decision based data flow from a single boolean condition."
+				Class = "Stingray.Foundation.Flow.Branch"
+				Condition = {
+				}
+				False = {
+				}
+				Id = "6d285d1d-bc78-4b9b-ae7f-91c04fd8f38c"
+				In = {
+				}
+				NodeLocation = {
+					X = 980
+					Y = 220
+				}
+				Title = "Branch"
+				True = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Inserts a delay in evaluation by the specified numeric value."
+				Class = "Stingray.Foundation.Flow.Delay"
+				Id = "8d1a0048-58c8-4973-9be1-ed2bed0f9053"
+				In = {
+				}
+				NodeLocation = {
+					X = 1440
+					Y = 220
+				}
+				Out = {
+				}
+				Time = {
+					Value = 1.1
+				}
+				Title = "Delay"
+				Width = 160
+			}
+			{
+				Brief = "Encapsulates a graph of logic stored in a separate flow resource file in the project."
+				Class = "Stingray.Foundation.Flow.FlowSubroutine"
+				Disable = {
+				}
+				Enable = {
+				}
+				Flow = {
+					Value = "script/custom_flows/Close_Vignette"
+				}
+				Id = "9b2aa05c-a8c1-474c-bf04-a54f954d5aff"
+				InEvents = [
+					"Start"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = 1440
+					Y = 360
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				Title = "Flow Subroutine"
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Name"
+						Type = "resource"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableResource"
+							Extension = "level"
+							Value = "content/levels/ending"
+						}
+					}
+				]
+				Brief = "Switches the currently active level in the world to the specified level."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/appkit/appkit"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "9cb4d85f-7645-48bf-b306-cbd6d58f28c8"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Change Level"
+				NodeLocation = {
+					X = 1620
+					Y = 240
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 220
+			}
+			{
+				Brief = "Fires an event only once and ceases execution until the level is reloaded."
+				Class = "Stingray.Foundation.Flow.Once"
+				Id = "0bc6418b-9d77-47b6-ab6d-0201f738da11"
+				In = {
+				}
+				NodeLocation = {
+					X = 1200
+					Y = 220
+				}
+				Out = {
+				}
+				Title = "Once"
 				Width = 160
 			}
 		]
@@ -14729,6 +14954,11 @@ flow = {
 						id = "0dd4fdf4-4a16-41de-98a3-99dbe3cc1340:0"
 						node = "0dd4fdf4-4a16-41de-98a3-99dbe3cc1340"
 					}
+					{
+						event = 0
+						id = "6d285d1d-bc78-4b9b-ae7f-91c04fd8f38c:0"
+						node = "6d285d1d-bc78-4b9b-ae7f-91c04fd8f38c"
+					}
 				]
 			}
 			type = "level_update"
@@ -15304,6 +15534,156 @@ flow = {
 				unit = null
 				value = null
 			}
+		}
+		{
+			id = "68840378-8359-400a-8e65-73d25da8244a"
+			in_variables = {
+				key = {
+					type = "string"
+				}
+				unit = {
+					node = "29beef00-a9a2-4383-9095-daa70a7066ac"
+					type = "unit"
+					variable = "unit"
+				}
+			}
+			out_variables = {
+				value = {
+					type = "float"
+				}
+			}
+			type = "get_unit_numeric_data"
+			variable_values = {
+				key = "Distance"
+				unit = null
+				value = null
+			}
+		}
+		{
+			id = "7025a441-d093-4b51-99c8-80de4fea4d24"
+			in_variables = {
+				a = {
+					node = "68840378-8359-400a-8e65-73d25da8244a"
+					type = "float"
+					variable = "value"
+				}
+				b = {
+					type = "float"
+				}
+			}
+			out_variables = {
+				value = {
+					type = "bool"
+				}
+			}
+			type = "numeric_greater_than_numeric"
+			variable_values = {
+				a = null
+				b = 1000
+				value = null
+			}
+		}
+		{
+			id = "6d285d1d-bc78-4b9b-ae7f-91c04fd8f38c"
+			in_variables = {
+				condition = {
+					node = "7025a441-d093-4b51-99c8-80de4fea4d24"
+					type = "bool"
+					variable = "value"
+				}
+			}
+			out_events = {
+				true = [
+					{
+						event = 0
+						id = "0bc6418b-9d77-47b6-ab6d-0201f738da11:0"
+						node = "0bc6418b-9d77-47b6-ab6d-0201f738da11"
+					}
+				]
+			}
+			type = "branch"
+			variable_values = {
+				condition = null
+			}
+		}
+		{
+			id = "8d1a0048-58c8-4973-9be1-ed2bed0f9053"
+			in_variables = {
+				time = {
+					type = "float"
+				}
+			}
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "9cb4d85f-7645-48bf-b306-cbd6d58f28c8:0"
+						node = "9cb4d85f-7645-48bf-b306-cbd6d58f28c8"
+					}
+					{
+						event = 0
+						id = "a4fbfe5e-c964-4e18-91e3-8db9933c04a5:0"
+						node = "a4fbfe5e-c964-4e18-91e3-8db9933c04a5"
+					}
+				]
+			}
+			type = "delay"
+			variable_values = {
+				time = 1.1
+			}
+		}
+		{
+			id = "9b2aa05c-a8c1-474c-bf04-a54f954d5aff"
+			in_event_index = [
+				"Start"
+			]
+			out_event_index = [
+			]
+			type = "flow_subroutine"
+			variable_values = {
+				flow = "script/custom_flows/Close_Vignette"
+			}
+		}
+		{
+			flow_nodes_resource = "core/appkit/appkit"
+			id = "9cb4d85f-7645-48bf-b306-cbd6d58f28c8"
+			in_variables = {
+				Name = {
+					type = "string"
+				}
+			}
+			name = "Change Level"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Name = "content/levels/ending"
+			}
+			variables = [
+				{
+					name = "Name"
+					type = "string"
+				}
+			]
+		}
+		{
+			id = "0bc6418b-9d77-47b6-ab6d-0201f738da11"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "8d1a0048-58c8-4973-9be1-ed2bed0f9053:0"
+						node = "8d1a0048-58c8-4973-9be1-ed2bed0f9053"
+					}
+					{
+						event = 0
+						id = "9b2aa05c-a8c1-474c-bf04-a54f954d5aff:0"
+						node = "9b2aa05c-a8c1-474c-bf04-a54f954d5aff"
+					}
+				]
+			}
+			type = "once"
 		}
 	]
 }

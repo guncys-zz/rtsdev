@@ -260,6 +260,58 @@ nodes = [
 		}
 	}
 	{
+		id = "3604c905-546d-4e90-9c63-022b1d6c32f2"
+		in_variables = {
+			label = {
+				type = "string"
+			}
+			text = {
+				type = "string"
+			}
+		}
+		type = "debug_print"
+		variable_values = {
+			label = "close started"
+			text = null
+		}
+	}
+	{
+		id = "5ad45b7e-e01b-4dac-aa70-b40530e1b8f2"
+		in_variables = {
+			label = {
+				type = "string"
+			}
+			text = {
+				node = "dd21e80f-7ff0-4a27-a188-fec578c220dc"
+				type = "string"
+				variable = "value"
+			}
+		}
+		type = "debug_print"
+		variable_values = {
+			label = "rad"
+			text = null
+		}
+	}
+	{
+		id = "dd21e80f-7ff0-4a27-a188-fec578c220dc"
+		in_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "string"
+			}
+		}
+		type = "numeric_to_string"
+		variable_values = {
+			numeric = null
+			value = null
+		}
+	}
+	{
 		id = "11111111-2222-3333-4444-555555555555"
 		type = "unit_spawned"
 		variable_values = {

@@ -99,6 +99,15 @@ Connections = [
 		ToItem = "Set"
 		ToNode = "64c04f7e-e487-4146-bfbf-383b8b9091fe"
 	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "dd21e80f-7ff0-4a27-a188-fec578c220dc"
+		Id = "38acc4ba-008b-465a-baa2-9d30a98ca871"
+		ToItem = "Text"
+		ToNode = "5ad45b7e-e01b-4dac-aa70-b40530e1b8f2"
+		Type = "String"
+	}
 ]
 Groups = [
 	{
@@ -358,6 +367,55 @@ Nodes = [
 			Y = -340
 		}
 		Out = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.DebugPrint"
+		Id = "3604c905-546d-4e90-9c63-022b1d6c32f2"
+		In = {
+		}
+		Label = {
+			Value = "close started"
+		}
+		NodeLocation = {
+			X = 400
+			Y = -280
+		}
+		Out = {
+		}
+		Text = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.DebugPrint"
+		Id = "5ad45b7e-e01b-4dac-aa70-b40530e1b8f2"
+		In = {
+		}
+		Label = {
+			Value = "rad"
+		}
+		NodeLocation = {
+			X = 1140
+			Y = -300
+		}
+		Out = {
+		}
+		Text = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.NumericToString"
+		Id = "dd21e80f-7ff0-4a27-a188-fec578c220dc"
+		NodeLocation = {
+			X = 800
+			Y = -360
+		}
+		Numeric = {
+		}
+		Value = {
 		}
 		Width = 160
 	}

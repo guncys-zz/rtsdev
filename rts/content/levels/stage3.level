@@ -208,20 +208,44 @@ editor_metadata = {
 				ToNode = "32a94c4c-696f-4927-a076-375dddad1403"
 			}
 			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "True"
-				FromNode = "32a94c4c-696f-4927-a076-375dddad1403"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "566711f9-387e-41c8-a8d1-4a9e0b45240d"
-			}
-			{
 				Class = "Stingray.Foundation.Flow.VariableConnection"
 				FromItem = "Unit"
 				FromNode = "29beef00-a9a2-4383-9095-daa70a7066ac"
 				ToItem = "Unit"
 				ToNode = "3af51b89-b490-4ffb-b9e9-39e9979e62fd"
 				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "acb2bbf9-95fc-4e0a-90cc-78e9f86b3489"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "566711f9-387e-41c8-a8d1-4a9e0b45240d"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "True"
+				FromNode = "32a94c4c-696f-4927-a076-375dddad1403"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "0355fade-374c-4880-b0c6-078de249a1b6"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "0355fade-374c-4880-b0c6-078de249a1b6"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "acb2bbf9-95fc-4e0a-90cc-78e9f86b3489"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "0355fade-374c-4880-b0c6-078de249a1b6"
+				Priority = 0
+				ToItem = "Start"
+				ToNode = "dc2049c0-5d16-4792-9ff7-d07d2ff50bb7"
 			}
 		]
 		Groups = [
@@ -933,14 +957,78 @@ editor_metadata = {
 				IsQuery = false
 				Name = "Loading"
 				NodeLocation = {
-					X = 195
-					Y = 488
+					X = 600
+					Y = 520
 				}
 				OutEvents = [
 					"Out"
 				]
 				ReturnValues = [
 				]
+				Width = 160
+			}
+			{
+				Brief = "Inserts a delay in evaluation by the specified numeric value."
+				Class = "Stingray.Foundation.Flow.Delay"
+				Id = "acb2bbf9-95fc-4e0a-90cc-78e9f86b3489"
+				In = {
+				}
+				NodeLocation = {
+					X = 400
+					Y = 520
+				}
+				Out = {
+				}
+				Time = {
+					Value = 1.1
+				}
+				Title = "Delay"
+				Width = 160
+			}
+			{
+				Brief = "Encapsulates a graph of logic stored in a separate flow resource file in the project."
+				Class = "Stingray.Foundation.Flow.FlowSubroutine"
+				Disable = {
+				}
+				Enable = {
+				}
+				Flow = {
+					Value = "script/custom_flows/Close_Vignette"
+				}
+				Id = "dc2049c0-5d16-4792-9ff7-d07d2ff50bb7"
+				InEvents = [
+					"Start"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = 400
+					Y = 640
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				Title = "Flow Subroutine"
+				Width = 160
+			}
+			{
+				Brief = "Fires an event only once and ceases execution until the level is reloaded."
+				Class = "Stingray.Foundation.Flow.Once"
+				Id = "0355fade-374c-4880-b0c6-078de249a1b6"
+				In = {
+				}
+				NodeLocation = {
+					X = 180
+					Y = 520
+				}
+				Out = {
+				}
+				Title = "Once"
 				Width = 160
 			}
 		]
@@ -20527,8 +20615,8 @@ flow = {
 				true = [
 					{
 						event = 0
-						id = "566711f9-387e-41c8-a8d1-4a9e0b45240d:0"
-						node = "566711f9-387e-41c8-a8d1-4a9e0b45240d"
+						id = "0355fade-374c-4880-b0c6-078de249a1b6:0"
+						node = "0355fade-374c-4880-b0c6-078de249a1b6"
 					}
 				]
 			}
@@ -20547,6 +20635,57 @@ flow = {
 			type = "custom_script_node"
 			variables = [
 			]
+		}
+		{
+			id = "acb2bbf9-95fc-4e0a-90cc-78e9f86b3489"
+			in_variables = {
+				time = {
+					type = "float"
+				}
+			}
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "566711f9-387e-41c8-a8d1-4a9e0b45240d:0"
+						node = "566711f9-387e-41c8-a8d1-4a9e0b45240d"
+					}
+				]
+			}
+			type = "delay"
+			variable_values = {
+				time = 1.1
+			}
+		}
+		{
+			id = "dc2049c0-5d16-4792-9ff7-d07d2ff50bb7"
+			in_event_index = [
+				"Start"
+			]
+			out_event_index = [
+			]
+			type = "flow_subroutine"
+			variable_values = {
+				flow = "script/custom_flows/Close_Vignette"
+			}
+		}
+		{
+			id = "0355fade-374c-4880-b0c6-078de249a1b6"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "acb2bbf9-95fc-4e0a-90cc-78e9f86b3489:0"
+						node = "acb2bbf9-95fc-4e0a-90cc-78e9f86b3489"
+					}
+					{
+						event = 0
+						id = "dc2049c0-5d16-4792-9ff7-d07d2ff50bb7:0"
+						node = "dc2049c0-5d16-4792-9ff7-d07d2ff50bb7"
+					}
+				]
+			}
+			type = "once"
 		}
 	]
 }
