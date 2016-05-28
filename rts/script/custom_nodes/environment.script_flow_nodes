@@ -1,10 +1,40 @@
 nodes = [
 	{
+		name = "Set Start Vignett"
+		args = {
+			Radius = "float"
+		}
+		function = "Environment.set_start_vignette"
+		category = "Environment"
+		returns = {}
+	}
+	{
+		name = "Change Vignett"
+		args = {
+			Change = "float"
+			Max = "float"
+			Min = "float"
+		}
+		function = "Environment.change_vignett"
+		category = "Environment"
+		returns = {}
+	}
+
+	{
 		name = "Close Vignett"
 		args = {
 			Time = "float"
 		}
 		function = "Environment.close_vignett"
+		category = "Environment"
+		returns = {}
+	}
+	{
+		name = "Set Vignett"
+		args = {
+			Radius = "float"
+		}
+		function = "Environment.set_vignett"
 		category = "Environment"
 		returns = {}
 	}

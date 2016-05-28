@@ -258,19 +258,99 @@ editor_metadata = {
 			}
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out7"
+				FromNode = "29a09db9-9d86-4dd9-a531-21326d3bdfb9"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "4ddc81ca-a097-41b9-8d11-ea461f3735c6"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
 				FromItem = "Out"
 				FromNode = "8c43497c-2b0c-447e-b460-d652c7308a0b"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "34c3ceb6-1eee-4ec7-86d4-3996340f8a70"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "34c3ceb6-1eee-4ec7-86d4-3996340f8a70"
 				Priority = 0
 				ToItem = "In"
 				ToNode = "d7a3566b-ace0-47bf-a611-419c46a73dd9"
 			}
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out7"
-				FromNode = "29a09db9-9d86-4dd9-a531-21326d3bdfb9"
+				FromItem = "Out"
+				FromNode = "8c43497c-2b0c-447e-b460-d652c7308a0b"
+				Priority = 0
+				ToItem = "Set"
+				ToNode = "016bd62c-2791-46a5-9812-53f5da6b1a69"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "46b084be-463f-40ea-a06c-7538f3395d6d"
 				Priority = 0
 				ToItem = "In"
-				ToNode = "4ddc81ca-a097-41b9-8d11-ea461f3735c6"
+				ToNode = "4bb5378e-20b8-44ce-9333-8cbfa1c9bfd8"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Bool"
+				FromNode = "14fe303e-523c-40af-bed4-fa1f41440cc5"
+				ToItem = "Condition"
+				ToNode = "4bb5378e-20b8-44ce-9333-8cbfa1c9bfd8"
+				Type = "Bool"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "89523531-0e7b-4dfd-9339-025660b63af4"
+				ToItem = "Radius"
+				ToNode = "e81c8ef0-f1bc-47d7-95b1-26287a71043a"
+				Type = "Float"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "8c43497c-2b0c-447e-b460-d652c7308a0b"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "e81c8ef0-f1bc-47d7-95b1-26287a71043a"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "True"
+				FromNode = "4bb5378e-20b8-44ce-9333-8cbfa1c9bfd8"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "11cd3c36-e3a7-4c65-a3dd-4a2484f62eca"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "638469dc-ab9e-4db5-b64f-7259dcbd9cfa"
+				ToItem = "Change"
+				ToNode = "11cd3c36-e3a7-4c65-a3dd-4a2484f62eca"
+				Type = "Float"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "bc406d89-bdd9-420d-9544-6c2fcd127fc5"
+				ToItem = "Max"
+				ToNode = "11cd3c36-e3a7-4c65-a3dd-4a2484f62eca"
+				Type = "Float"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "d4d974d7-92b7-4652-a99e-5cc828591092"
+				ToItem = "Min"
+				ToNode = "11cd3c36-e3a7-4c65-a3dd-4a2484f62eca"
+				Type = "Float"
 			}
 		]
 		Groups = [
@@ -294,8 +374,28 @@ editor_metadata = {
 					"8c43497c-2b0c-447e-b460-d652c7308a0b"
 					"c8e0f50d-b65e-41ae-8a81-94b5b91113f6"
 					"d7a3566b-ace0-47bf-a611-419c46a73dd9"
+					"34c3ceb6-1eee-4ec7-86d4-3996340f8a70"
 				]
 				Title = "stage1へ移動（苦肉の策）"
+			}
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "6b4ab1a9-fee5-4692-ba1a-1e8587e76436"
+				Nodes = [
+					"4bb5378e-20b8-44ce-9333-8cbfa1c9bfd8"
+					"016bd62c-2791-46a5-9812-53f5da6b1a69"
+					"46b084be-463f-40ea-a06c-7538f3395d6d"
+					"14fe303e-523c-40af-bed4-fa1f41440cc5"
+					"89523531-0e7b-4dfd-9339-025660b63af4"
+					"e81c8ef0-f1bc-47d7-95b1-26287a71043a"
+					"11cd3c36-e3a7-4c65-a3dd-4a2484f62eca"
+					"bc406d89-bdd9-420d-9544-6c2fcd127fc5"
+					"d4d974d7-92b7-4652-a99e-5cc828591092"
+					"638469dc-ab9e-4db5-b64f-7259dcbd9cfa"
+				]
+				Title = "Close Vignette"
 			}
 		]
 		Nodes = [
@@ -1095,7 +1195,7 @@ editor_metadata = {
 				IsQuery = false
 				Name = "Loading"
 				NodeLocation = {
-					X = 440
+					X = 600
 					Y = 1180
 				}
 				OutEvents = [
@@ -1181,6 +1281,239 @@ editor_metadata = {
 				]
 				Width = 160
 			}
+			{
+				Brief = "Inserts a delay in evaluation by the specified numeric value."
+				Class = "Stingray.Foundation.Flow.Delay"
+				Id = "34c3ceb6-1eee-4ec7-86d4-3996340f8a70"
+				In = {
+				}
+				NodeLocation = {
+					X = 400
+					Y = 1280
+				}
+				Out = {
+				}
+				Time = {
+					Value = 1.1
+				}
+				Title = "Delay"
+				Width = 160
+			}
+			{
+				Brief = "Creates a decision based data flow from a single boolean condition."
+				Class = "Stingray.Foundation.Flow.Branch"
+				Condition = {
+				}
+				False = {
+				}
+				Id = "4bb5378e-20b8-44ce-9333-8cbfa1c9bfd8"
+				In = {
+				}
+				NodeLocation = {
+					X = 320
+					Y = 1660
+				}
+				Title = "Branch"
+				True = {
+				}
+				Width = 160
+			}
+			{
+				Bool = {
+					Value = true
+				}
+				Brief = "Sets a variable to the specified boolean value."
+				Class = "Stingray.Foundation.Flow.SetBoolVariable"
+				Id = "016bd62c-2791-46a5-9812-53f5da6b1a69"
+				Name = {
+					Value = "StageChange"
+				}
+				NodeLocation = {
+					X = 0
+					Y = 1460
+				}
+				Out = {
+				}
+				Scope = {
+					Value = "local"
+				}
+				Set = {
+				}
+				Title = "Set Bool Variable"
+				Width = 160
+			}
+			{
+				Brief = "Passes an event at every update interval of the engine."
+				Class = "Stingray.Foundation.Flow.LevelUpdate"
+				Id = "46b084be-463f-40ea-a06c-7538f3395d6d"
+				NodeLocation = {
+					X = 0
+					Y = 1720
+				}
+				Out = {
+				}
+				Title = "Level Update"
+				Width = 160
+			}
+			{
+				Bool = {
+				}
+				Brief = "Returns the current boolean value of the specified named variable."
+				Class = "Stingray.Foundation.Flow.GetBoolVariable"
+				Id = "14fe303e-523c-40af-bed4-fa1f41440cc5"
+				Name = {
+					Value = "StageChange"
+				}
+				NodeLocation = {
+					X = 0
+					Y = 1600
+				}
+				Scope = {
+					Value = "local"
+				}
+				Title = "Get Bool Variable"
+				Width = 160
+			}
+			{
+				Brief = "Creates a numeric constant."
+				Class = "Stingray.Foundation.Flow.NumericData"
+				Id = "89523531-0e7b-4dfd-9339-025660b63af4"
+				NodeLocation = {
+					X = 300
+					Y = 1480
+				}
+				Set = {
+					Value = 1
+				}
+				Title = "Numeric Data"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Radius"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableFloat"
+						}
+					}
+				]
+				Brief = ""
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "script/custom_nodes/environment"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "e81c8ef0-f1bc-47d7-95b1-26287a71043a"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Set Start Vignett"
+				NodeLocation = {
+					X = 520
+					Y = 1480
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Change"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableFloat"
+						}
+					}
+					{
+						RawName = "Max"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableFloat"
+						}
+					}
+					{
+						RawName = "Min"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableFloat"
+						}
+					}
+				]
+				Brief = ""
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "script/custom_nodes/environment"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "11cd3c36-e3a7-4c65-a3dd-4a2484f62eca"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Change Vignett"
+				NodeLocation = {
+					X = 780
+					Y = 1820
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
+			{
+				Brief = "Creates a numeric constant."
+				Class = "Stingray.Foundation.Flow.NumericData"
+				Id = "bc406d89-bdd9-420d-9544-6c2fcd127fc5"
+				NodeLocation = {
+					X = 580
+					Y = 1740
+				}
+				Set = {
+					Value = 1
+				}
+				Title = "Numeric Data"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Creates a numeric constant."
+				Class = "Stingray.Foundation.Flow.NumericData"
+				Id = "d4d974d7-92b7-4652-a99e-5cc828591092"
+				NodeLocation = {
+					X = 580
+					Y = 1820
+				}
+				Set = {
+					Value = 0
+				}
+				Title = "Numeric Data"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Creates a numeric constant."
+				Class = "Stingray.Foundation.Flow.NumericData"
+				Id = "638469dc-ab9e-4db5-b64f-7259dcbd9cfa"
+				NodeLocation = {
+					X = 580
+					Y = 1660
+				}
+				Set = {
+					Value = -0.01
+				}
+				Title = "Numeric Data"
+				Value = {
+				}
+				Width = 160
+			}
 		]
 	}
 	Groups = [
@@ -1200,6 +1533,7 @@ editor_metadata = {
 	LevelReferences = [
 	]
 	LightBakeSettings = {
+		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
 		FilterGain = 20
@@ -1217,6 +1551,7 @@ editor_metadata = {
 			Z = 1
 		}
 		TexelScale = 10
+		TotalPasses = 256
 		Variance = 0.5
 	}
 	LuaPluginObjects = [
@@ -1323,6 +1658,7 @@ editor_metadata = {
 					Intensity = 1.9
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "directional"
@@ -1746,6 +2082,7 @@ editor_metadata = {
 					Intensity = 4
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -1812,6 +2149,7 @@ editor_metadata = {
 					Intensity = 10
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -1878,6 +2216,7 @@ editor_metadata = {
 					Intensity = 5
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -8983,8 +9322,18 @@ flow = {
 				out = [
 					{
 						event = 0
-						id = "d7a3566b-ace0-47bf-a611-419c46a73dd9:0"
-						node = "d7a3566b-ace0-47bf-a611-419c46a73dd9"
+						id = "34c3ceb6-1eee-4ec7-86d4-3996340f8a70:0"
+						node = "34c3ceb6-1eee-4ec7-86d4-3996340f8a70"
+					}
+					{
+						event = 0
+						id = "016bd62c-2791-46a5-9812-53f5da6b1a69:0"
+						node = "016bd62c-2791-46a5-9812-53f5da6b1a69"
+					}
+					{
+						event = 0
+						id = "e81c8ef0-f1bc-47d7-95b1-26287a71043a:0"
+						node = "e81c8ef0-f1bc-47d7-95b1-26287a71043a"
 					}
 				]
 			}
@@ -9221,6 +9570,227 @@ flow = {
 				}
 			]
 		}
+		{
+			id = "34c3ceb6-1eee-4ec7-86d4-3996340f8a70"
+			in_variables = {
+				time = {
+					type = "float"
+				}
+			}
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "d7a3566b-ace0-47bf-a611-419c46a73dd9:0"
+						node = "d7a3566b-ace0-47bf-a611-419c46a73dd9"
+					}
+				]
+			}
+			type = "delay"
+			variable_values = {
+				time = 1.1
+			}
+		}
+		{
+			id = "4bb5378e-20b8-44ce-9333-8cbfa1c9bfd8"
+			in_variables = {
+				condition = {
+					node = "14fe303e-523c-40af-bed4-fa1f41440cc5"
+					type = "bool"
+					variable = "bool"
+				}
+			}
+			out_events = {
+				true = [
+					{
+						event = 0
+						id = "11cd3c36-e3a7-4c65-a3dd-4a2484f62eca:0"
+						node = "11cd3c36-e3a7-4c65-a3dd-4a2484f62eca"
+					}
+				]
+			}
+			type = "branch"
+			variable_values = {
+				condition = null
+			}
+		}
+		{
+			id = "016bd62c-2791-46a5-9812-53f5da6b1a69"
+			in_variables = {
+				bool = {
+					type = "bool"
+				}
+				name = {
+					type = "string"
+				}
+				scope = {
+					type = "string"
+				}
+			}
+			type = "set_bool_variable"
+			variable_values = {
+				bool = true
+				name = "StageChange"
+				scope = "local"
+			}
+		}
+		{
+			id = "46b084be-463f-40ea-a06c-7538f3395d6d"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "4bb5378e-20b8-44ce-9333-8cbfa1c9bfd8:0"
+						node = "4bb5378e-20b8-44ce-9333-8cbfa1c9bfd8"
+					}
+				]
+			}
+			type = "level_update"
+		}
+		{
+			id = "14fe303e-523c-40af-bed4-fa1f41440cc5"
+			in_variables = {
+				name = {
+					type = "string"
+				}
+				scope = {
+					type = "string"
+				}
+			}
+			out_variables = {
+				bool = {
+					type = "bool"
+				}
+			}
+			type = "get_bool_variable"
+			variable_values = {
+				bool = null
+				name = "StageChange"
+				scope = "local"
+			}
+		}
+		{
+			id = "89523531-0e7b-4dfd-9339-025660b63af4"
+			out_variables = {
+				value = {
+					type = "float"
+				}
+			}
+			type = "numeric_data"
+			variable_values = {
+				set = 1
+				value = null
+			}
+		}
+		{
+			flow_nodes_resource = "script/custom_nodes/environment"
+			id = "e81c8ef0-f1bc-47d7-95b1-26287a71043a"
+			in_variables = {
+				Radius = {
+					node = "89523531-0e7b-4dfd-9339-025660b63af4"
+					type = "float"
+					variable = "value"
+				}
+			}
+			name = "Set Start Vignett"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Radius = null
+			}
+			variables = [
+				{
+					name = "Radius"
+					type = "float"
+				}
+			]
+		}
+		{
+			flow_nodes_resource = "script/custom_nodes/environment"
+			id = "11cd3c36-e3a7-4c65-a3dd-4a2484f62eca"
+			in_variables = {
+				Change = {
+					node = "638469dc-ab9e-4db5-b64f-7259dcbd9cfa"
+					type = "float"
+					variable = "value"
+				}
+				Max = {
+					node = "bc406d89-bdd9-420d-9544-6c2fcd127fc5"
+					type = "float"
+					variable = "value"
+				}
+				Min = {
+					node = "d4d974d7-92b7-4652-a99e-5cc828591092"
+					type = "float"
+					variable = "value"
+				}
+			}
+			name = "Change Vignett"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Change = null
+				Max = null
+				Min = null
+			}
+			variables = [
+				{
+					name = "Change"
+					type = "float"
+				}
+				{
+					name = "Max"
+					type = "float"
+				}
+				{
+					name = "Min"
+					type = "float"
+				}
+			]
+		}
+		{
+			id = "bc406d89-bdd9-420d-9544-6c2fcd127fc5"
+			out_variables = {
+				value = {
+					type = "float"
+				}
+			}
+			type = "numeric_data"
+			variable_values = {
+				set = 1
+				value = null
+			}
+		}
+		{
+			id = "d4d974d7-92b7-4652-a99e-5cc828591092"
+			out_variables = {
+				value = {
+					type = "float"
+				}
+			}
+			type = "numeric_data"
+			variable_values = {
+				set = 0
+				value = null
+			}
+		}
+		{
+			id = "638469dc-ab9e-4db5-b64f-7259dcbd9cfa"
+			out_variables = {
+				value = {
+					type = "float"
+				}
+			}
+			type = "numeric_data"
+			variable_values = {
+				set = -0.01
+				value = null
+			}
+		}
 	]
 }
 level_references = [
@@ -9305,6 +9875,7 @@ units = [
 				falloff_start = 0
 				intensity = 1.9
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "directional"
@@ -9656,6 +10227,7 @@ units = [
 				falloff_start = 0
 				intensity = 4
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"
@@ -9713,6 +10285,7 @@ units = [
 				falloff_start = 0
 				intensity = 10
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"
@@ -9770,6 +10343,7 @@ units = [
 				falloff_start = 0
 				intensity = 5
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"
