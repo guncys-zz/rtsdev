@@ -5,6 +5,7 @@ local SimpleProject = require 'core/appkit/lua/simple_project'
 local damage_anim = 10   --ダメージのアニメーション
 local gauge_anim = 1    --ゲージのアニメーション   
 local loding_flag = false   --1ステージごとにローディングされたかどうかを確認
+local credits_flag = false
 
 UI = UI or{}
 
@@ -187,6 +188,18 @@ function UI.loading()
         loding_flag = true
     end
 
+end
+
+function UI.credits()
+    if credits_flag ~= true then
+        local loading = scaleform.Actor.load("Credits.s2dscene")	--Loding用のシーンをロード
+    	--print("ローディングシーンに切り替え")
+        -- Remove the main menu scene
+        scaleform.Stage.remove_scene_by_index(1)
+        -- Add the loading scene
+        scaleform.Stage.add_scene(loading)
+        credits_flag = true
+    end
 end
 
 return UI
