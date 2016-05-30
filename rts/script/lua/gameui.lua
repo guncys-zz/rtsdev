@@ -67,13 +67,29 @@ end
 GameUI.action = nil
 function GameUI.on_custom_event(evt)
 	if evt.name == "pause" then
+		units = stingray.World.units_by_resource(SimpleProject.world, "content/models/characters/PPK/PPK_m")
+
+		ppk = units[1]
+
+	    if ppk ~= nil then
+		    -- stingray.Unit.disable_animation_state_machine(ppk)
+		    -- stingray.Unit.stop_simple_animation(ppk)
+		    stingray.Unit.flow_event(ppk,"pause")
+			end
 		--ゲームをポーズするためにactionの文字列を変更
-		GameUI.action = "pause"
     elseif evt.name == "restart" then
         GameUI.action = "restart"
     elseif evt.name == "go_to_top" then
         GameUI.action = "go_to_top"
     elseif evt.name == "resume" then
+				units = stingray.World.units_by_resource(SimpleProject.world, "content/models/characters/PPK/PPK_m")
+
+				ppk = units[1]
+
+		    if ppk ~= nil then
+			    -- stingray.Unit.enable_animation_state_machine(ppk)
+			    stingray.Unit.flow_event(ppk,"unpause")
+				end
         GameUI.action = "resume"
     elseif evt.name == "change_level" then
         GameUI.action = "change_level"
