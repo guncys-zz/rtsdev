@@ -209,6 +209,14 @@ editor_metadata = {
 				ToItem = "In"
 				ToNode = "dc1a64aa-526f-4599-8778-3ced70ab902f"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "dc1a64aa-526f-4599-8778-3ced70ab902f"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "f09375bf-3324-4087-b519-df23d5bc1423"
+			}
 		]
 		Groups = [
 			{
@@ -6325,6 +6333,15 @@ flow = {
 		}
 		{
 			id = "dc1a64aa-526f-4599-8778-3ced70ab902f"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "f09375bf-3324-4087-b519-df23d5bc1423:0"
+						node = "f09375bf-3324-4087-b519-df23d5bc1423"
+					}
+				]
+			}
 			type = "once"
 		}
 	]

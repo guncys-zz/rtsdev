@@ -5,11 +5,9 @@ local dispatched = false;
 local creditAnimation = scaleform.Actor.component_by_name(thisActor, "Animation")
 local SimpleProject = require 'core/appkit/lua/simple_project'
 
-print("creditでSimpleプロジェクトをロードした")
 
 local enterFrameEventListener = scaleform.EventListener.create(enterFrameEventListener, function(e, thisListener)
 local current_frame = scaleform.AnimationComponent.current_frame(creditAnimation)
-print("current-frame="..current_frame)
 --print(current_frame)
 if current_frame == 5489 then
     if dispatched ~= true then  --まだイベントをコールしていなかったら
