@@ -1039,8 +1039,15 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="PPK_SE_Cat" ID="{575976CC-B307-4FA5-8A90-B45DB2973E31}" ShortID="235024232">
 							<PropertyList>
+								<Property Name="EnablePanner" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1147,6 +1154,14 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{2295D3F6-44ED-4078-AD14-77AA87390439}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="67.6171079429736"/>
+										<Property Name="PanY" Type="Real64" Value="71.2742980561555"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
