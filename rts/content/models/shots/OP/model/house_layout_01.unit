@@ -2,7 +2,7 @@
 editor_metadata = {
 	camera_settings = {
 		far_range = 1000
-		interest_point_distance = 4.775214
+		interest_point_distance = 6.907908
 		orthographic_plane = [
 			0
 			0
@@ -11,16 +11,16 @@ editor_metadata = {
 		]
 		orthographic_zoom = 10
 		position = [
-			-2.548025
-			4.074455
-			4.023234
+			1.611436
+			4.313189
+			2.633546
 		]
 		projection_type = "perspective"
 		rotation = [
-			-0.044627
-			-0.145971
-			0.9451
-			0.288939
+			0.031055
+			0.123059
+			0.961761
+			0.24271
 		]
 		rotation_speed = 0.003
 		translation_speed = 0.05
@@ -42,7 +42,7 @@ renderables = {
 	ceilingLampA_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = true
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
@@ -51,16 +51,16 @@ renderables = {
 	ceilingLampB_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = true
 		occluder = false
-		shadow_caster = true
+		shadow_caster = false
 		surface_queries = false
 		viewport_visible = true
 	}
 	couch_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = true
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
@@ -69,7 +69,7 @@ renderables = {
 	drawerA_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = true
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
@@ -78,7 +78,7 @@ renderables = {
 	exterior_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
@@ -87,7 +87,7 @@ renderables = {
 	hosue_TV_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = true
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
@@ -96,7 +96,7 @@ renderables = {
 	house_coffeeTable_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = true
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
@@ -105,7 +105,7 @@ renderables = {
 	interior_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
 		surface_queries = false

@@ -7,8 +7,9 @@ editor_metadata = {
 			modified_components = {
 				"04d5202f-c4cb-45b5-8e0f-4c5605fb7533" = {
 					data = {
+						color_grading_enabled = true
 						color_grading_map = {
-							"$resource_name" = "content/models/ENV/ColorGrading/cc"
+							"$resource_name" = "content/lut/color_grading_identity_stage1"
 							"$resource_type" = "texture"
 						}
 					}
@@ -24,25 +25,44 @@ editor_metadata = {
 						}
 						fog_depth_range = [
 							100
-							300
+							1000.1
 						]
+						fog_enabled = false
 					}
 				}
 				"3eb1ba63-3a53-4846-970b-57e3d4d75d2b" = {
 					data = {
 						baked_diffuse_tint = {
-							intensity = 1.5
+							intensity = 2
+							rgb = [
+								0.473648303391694
+								0.86865284109405
+								0.883066953555255
+							]
 						}
 						global_diffuse_map = {
 							"$resource_name" = "content/models/shots/OP/lighting/diffuse_interior"
 							"$resource_type" = "texture"
 						}
+						reflections_tint = {
+							intensity = 2
+						}
 						skydome_intensity = 3
+					}
+				}
+				"68333c83-9659-4d2e-b664-35790e366f08" = {
+					data = {
+						exposure = 1
 					}
 				}
 				"a9f83eb8-b54a-4c45-bf62-4fe7e02a8ce4" = {
 					data = {
 						ao_enabled = false
+					}
+				}
+				"dd1dccf2-6f2f-4b8c-9199-290c069ab62b" = {
+					data = {
+						vignette_enabled = false
 					}
 				}
 			}
@@ -479,6 +499,8 @@ editor_metadata = {
 				Class = "Stingray.Foundation.Flow.LevelUnit"
 				Id = "1a390d8d-3ea2-4221-8f58-9fbaa7bb0e45"
 				InEvents = [
+					"pause"
+					"unpause"
 				]
 				InVariableNames = [
 				]
@@ -1281,25 +1303,23 @@ editor_metadata = {
 	LevelReferences = [
 	]
 	LightBakeSettings = {
-		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
-		FilterGain = 20
-		FilterType = "Both"
-		IlluminationType = "Both"
+		FilterGain = 40
+		FilterType = "Indirect"
+		IlluminationType = "Indirect"
 		Layers = [
 		]
 		LightmapType = "Standard"
-		MaxSamples = 96
+		MaxSamples = 500
 		MinSamples = 32
-		QualityPreset = "Low"
+		QualityPreset = "Custom"
 		SkylightIntensityRGB = {
 			X = 1
 			Y = 1
 			Z = 1
 		}
 		TexelScale = 10
-		TotalPasses = 256
 		Variance = 0.5
 	}
 	LuaPluginObjects = [
@@ -1406,7 +1426,6 @@ editor_metadata = {
 					Intensity = 1.9
 					Material = ""
 					MaterialResource = ""
-					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "directional"
@@ -1830,7 +1849,6 @@ editor_metadata = {
 					Intensity = 4
 					Material = ""
 					MaterialResource = ""
-					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -1897,7 +1915,6 @@ editor_metadata = {
 					Intensity = 10
 					Material = ""
 					MaterialResource = ""
-					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -1964,7 +1981,6 @@ editor_metadata = {
 					Intensity = 5
 					Material = ""
 					MaterialResource = ""
-					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -2182,6 +2198,7 @@ editor_metadata = {
 				Z = 5.673944
 			}
 			ScriptData = {
+				"light_baking.treeD.bake_target" = false
 			}
 			Type = "content/models/shots/OP/tree/tree_D"
 		}
@@ -2219,6 +2236,7 @@ editor_metadata = {
 				Z = 3.266543
 			}
 			ScriptData = {
+				"light_baking.treeB.bake_target" = false
 			}
 			Type = "content/models/shots/OP/tree/tree_B"
 		}
@@ -2256,6 +2274,7 @@ editor_metadata = {
 				Z = 2.960393
 			}
 			ScriptData = {
+				"light_baking.treeE.bake_target" = false
 			}
 			Type = "content/models/shots/OP/tree/tree_E"
 		}
@@ -2589,6 +2608,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.pool_A.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_A"
 		}
@@ -2626,6 +2646,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.pool_C.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_C"
 		}
@@ -2663,6 +2684,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.pool_B.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_B"
 		}
@@ -2848,6 +2870,7 @@ editor_metadata = {
 				Z = 1.624578
 			}
 			ScriptData = {
+				"light_baking.pool_C.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_C"
 		}
@@ -2885,6 +2908,7 @@ editor_metadata = {
 				Z = 1.537472
 			}
 			ScriptData = {
+				"light_baking.pool_B.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_B"
 		}
@@ -2922,6 +2946,7 @@ editor_metadata = {
 				Z = 1.57232
 			}
 			ScriptData = {
+				"light_baking.pool_B.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_B"
 		}
@@ -2959,6 +2984,7 @@ editor_metadata = {
 				Z = 1.544733
 			}
 			ScriptData = {
+				"light_baking.pool_A.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_A"
 		}
@@ -3403,6 +3429,7 @@ editor_metadata = {
 				Z = 2.960393
 			}
 			ScriptData = {
+				"light_baking.treeE.bake_target" = false
 			}
 			Type = "content/models/shots/OP/tree/tree_E"
 		}
@@ -3477,6 +3504,7 @@ editor_metadata = {
 				Z = 1.544733
 			}
 			ScriptData = {
+				"light_baking.pool_A.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_A"
 		}
@@ -3514,6 +3542,7 @@ editor_metadata = {
 				Z = 2.585016
 			}
 			ScriptData = {
+				"light_baking.pool_B.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_B"
 		}
@@ -3551,6 +3580,7 @@ editor_metadata = {
 				Z = 1.624578
 			}
 			ScriptData = {
+				"light_baking.pool_C.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_C"
 		}
@@ -3773,6 +3803,7 @@ editor_metadata = {
 				Z = 2.033121
 			}
 			ScriptData = {
+				"light_baking.pool_B.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_B"
 		}
@@ -3810,6 +3841,7 @@ editor_metadata = {
 				Z = 1.080817
 			}
 			ScriptData = {
+				"light_baking.pool_A.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_A"
 		}
@@ -3921,6 +3953,7 @@ editor_metadata = {
 				Z = 1.301391
 			}
 			ScriptData = {
+				"light_baking.pool_C.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_C"
 		}
@@ -3958,6 +3991,7 @@ editor_metadata = {
 				Z = 1.030849
 			}
 			ScriptData = {
+				"light_baking.pool_C.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_C"
 		}
@@ -3995,6 +4029,7 @@ editor_metadata = {
 				Z = 1.196687
 			}
 			ScriptData = {
+				"light_baking.pool_B.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_B"
 		}
@@ -4032,6 +4067,7 @@ editor_metadata = {
 				Z = 1.080817
 			}
 			ScriptData = {
+				"light_baking.pool_A.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_A"
 		}
@@ -4069,6 +4105,7 @@ editor_metadata = {
 				Z = 0.901641
 			}
 			ScriptData = {
+				"light_baking.pool_A.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_A"
 		}
@@ -4106,6 +4143,7 @@ editor_metadata = {
 				Z = 1.161178
 			}
 			ScriptData = {
+				"light_baking.pool_B.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_B"
 		}
@@ -5216,6 +5254,7 @@ editor_metadata = {
 				Z = 7.255087
 			}
 			ScriptData = {
+				"light_baking.treeD.bake_target" = false
 			}
 			Type = "content/models/shots/OP/tree/tree_D"
 		}
@@ -5364,6 +5403,7 @@ editor_metadata = {
 				Z = 6.877372
 			}
 			ScriptData = {
+				"light_baking.treeE.bake_target" = false
 			}
 			Type = "content/models/shots/OP/tree/tree_E"
 		}
@@ -5401,6 +5441,7 @@ editor_metadata = {
 				Z = 4.946241
 			}
 			ScriptData = {
+				"light_baking.treeF.bake_target" = false
 			}
 			Type = "content/models/shots/OP/tree/tree_F"
 		}
@@ -5438,6 +5479,7 @@ editor_metadata = {
 				Z = 7.486661
 			}
 			ScriptData = {
+				"light_baking.treeF.bake_target" = false
 			}
 			Type = "content/models/shots/OP/tree/tree_F"
 		}
@@ -5993,6 +6035,7 @@ editor_metadata = {
 				Z = 1.295674
 			}
 			ScriptData = {
+				"light_baking.pool_A.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_A"
 		}
@@ -6030,6 +6073,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.pool_B.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_B"
 		}
@@ -6067,6 +6111,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.pool_C.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_C"
 		}
@@ -6252,6 +6297,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.pool_C.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_C"
 		}
@@ -6289,6 +6335,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.pool_A.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_A"
 		}
@@ -6326,6 +6373,7 @@ editor_metadata = {
 				Z = 7.53866
 			}
 			ScriptData = {
+				"light_baking.treeB.bake_target" = false
 			}
 			Type = "content/models/shots/OP/tree/tree_B"
 		}
@@ -6955,6 +7003,7 @@ editor_metadata = {
 				Z = 7.239414
 			}
 			ScriptData = {
+				"light_baking.treeE.bake_target" = false
 			}
 			Type = "content/models/shots/OP/tree/tree_E"
 		}
@@ -7151,6 +7200,7 @@ editor_metadata = {
 			Lights = {
 			}
 			Materials = {
+				blinn2 = "content/models/shots/OP/OP_ground/material"
 			}
 			Name = "OP_ground"
 			OverridePoses = {
@@ -7177,6 +7227,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.house:pPlane1.texel_scale" = 0.5
 			}
 			Type = "content/models/shots/OP/OP_ground/OP_ground"
 		}
@@ -7214,6 +7265,7 @@ editor_metadata = {
 				Z = 1.969431
 			}
 			ScriptData = {
+				"light_baking.pool_A.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_A"
 		}
@@ -7251,6 +7303,7 @@ editor_metadata = {
 				Z = 1.87181
 			}
 			ScriptData = {
+				"light_baking.pool_B.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_B"
 		}
@@ -7288,6 +7341,7 @@ editor_metadata = {
 				Z = 2.240856
 			}
 			ScriptData = {
+				"light_baking.pool_C.bake_target" = false
 			}
 			Type = "content/models/shots/OP/model/pool_C"
 		}
@@ -7584,6 +7638,7 @@ editor_metadata = {
 				Z = 7.643317
 			}
 			ScriptData = {
+				"light_baking.treeB.bake_target" = false
 			}
 			Type = "content/models/shots/OP/tree/tree_B"
 		}
@@ -7732,6 +7787,7 @@ editor_metadata = {
 				Z = 5.322017
 			}
 			ScriptData = {
+				"light_baking.treeB.bake_target" = false
 			}
 			Type = "content/models/shots/OP/tree/tree_B"
 		}
@@ -7954,6 +8010,7 @@ editor_metadata = {
 				Z = 3.91517
 			}
 			ScriptData = {
+				"light_baking.treeB.bake_target" = false
 			}
 			Type = "content/models/shots/OP/tree/tree_B"
 		}
@@ -8287,6 +8344,7 @@ editor_metadata = {
 				Z = 2.152604
 			}
 			ScriptData = {
+				"light_baking.treeF.bake_target" = false
 			}
 			Type = "content/models/shots/OP/tree/tree_F"
 		}
@@ -8324,6 +8382,7 @@ editor_metadata = {
 				Z = 1.670016
 			}
 			ScriptData = {
+				"light_baking.treeF.bake_target" = false
 			}
 			Type = "content/models/shots/OP/tree/tree_F"
 		}
@@ -8361,6 +8420,7 @@ editor_metadata = {
 				Z = 6.850381
 			}
 			ScriptData = {
+				"light_baking.treeB.bake_target" = false
 			}
 			Type = "content/models/shots/OP/tree/tree_B"
 		}
@@ -8435,6 +8495,14 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				"light_baking.ceilingLampA_GEO.texel_scale" = 2
+				"light_baking.ceilingLampB_GEO.texel_scale" = 2
+				"light_baking.couch_GEO.texel_scale" = 2
+				"light_baking.drawerA_GEO.texel_scale" = 2
+				"light_baking.exterior_GEO.texel_scale" = 2
+				"light_baking.hosue_TV_GEO.texel_scale" = 2
+				"light_baking.house_coffeeTable_GEO.texel_scale" = 2
+				"light_baking.interior_GEO.texel_scale" = 2
 			}
 			Type = "content/models/shots/OP/model/house_layout_01"
 		}
@@ -8472,8 +8540,209 @@ editor_metadata = {
 				Z = 2.104
 			}
 			ScriptData = {
+				"light_baking.OP_BG1.bake_target" = false
+				"light_baking.OP_BG1.contributes" = false
 			}
 			Type = "content/models/shots/OP/background/OP_BG_01"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ee442b7d-2b20-4b99-9c65-1c128e69fff0"
+			Layer = "Default"
+			Lights = {
+				probe = {
+					Baked = false
+					BoxMax = {
+						X = 7.7
+						Y = 4
+						Z = 10
+					}
+					BoxMin = {
+						X = -3.8
+						Y = -9
+						Z = -4
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1
+					Material = ""
+					MaterialResource = "content/levels/test_cinematics-cubemaps/reflection_probe_bake"
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "box"
+				}
+			}
+			Materials = {
+			}
+			Name = "reflection_probe"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.055319
+				Y = 0.021822
+				Z = 2.424287
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+		}
+		{
+			Cameras = {
+			}
+			Id = "76f71f80-0f81-4687-9cae-57403ba20bd8"
+			Layer = "Default"
+			Lights = {
+				probe = {
+					Baked = false
+					BoxMax = {
+						X = 7.7
+						Y = 4
+						Z = 10
+					}
+					BoxMin = {
+						X = -3.8
+						Y = -9
+						Z = -4
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1
+					Material = ""
+					MaterialResource = "content/levels/test_cinematics-cubemaps/reflection_probe1_bake"
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "box"
+				}
+			}
+			Materials = {
+			}
+			Name = "reflection_probe1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.93762
+				Y = -0.348309
+				Z = 1.440492
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+		}
+		{
+			Cameras = {
+			}
+			Id = "1f6886f9-3024-4690-8327-8d3f4e8030c5"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = false
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1.5
+					Material = ""
+					MaterialResource = ""
+					SpotAngleEnd = 59.9999999984761
+					SpotAngleStart = 0
+					Type = "omni"
+				}
+			}
+			Materials = {
+			}
+			Name = "light_source2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.431358
+				Y = -1.157805
+				Z = 1.416288
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"light_baking.light.indirect_intensity" = 0.3
+			}
+			Type = "core/units/light_source"
 		}
 	]
 	Volumes = [
@@ -8485,8 +8754,9 @@ entities = [
 		modified_components = {
 			"04d5202f-c4cb-45b5-8e0f-4c5605fb7533" = {
 				data = {
+					color_grading_enabled = true
 					color_grading_map = {
-						"$resource_name" = "content/models/ENV/ColorGrading/cc"
+						"$resource_name" = "content/lut/color_grading_identity_stage1"
 						"$resource_type" = "texture"
 					}
 				}
@@ -8502,25 +8772,44 @@ entities = [
 					}
 					fog_depth_range = [
 						100
-						300
+						1000.1
 					]
+					fog_enabled = false
 				}
 			}
 			"3eb1ba63-3a53-4846-970b-57e3d4d75d2b" = {
 				data = {
 					baked_diffuse_tint = {
-						intensity = 1.5
+						intensity = 2
+						rgb = [
+							0.473648303391694
+							0.86865284109405
+							0.883066953555255
+						]
 					}
 					global_diffuse_map = {
 						"$resource_name" = "content/models/shots/OP/lighting/diffuse_interior"
 						"$resource_type" = "texture"
 					}
+					reflections_tint = {
+						intensity = 2
+					}
 					skydome_intensity = 3
+				}
+			}
+			"68333c83-9659-4d2e-b664-35790e366f08" = {
+				data = {
+					exposure = 1
 				}
 			}
 			"a9f83eb8-b54a-4c45-bf62-4fe7e02a8ce4" = {
 				data = {
 					ao_enabled = false
+				}
+			}
+			"dd1dccf2-6f2f-4b8c-9199-290c069ab62b" = {
+				data = {
+					vignette_enabled = false
 				}
 			}
 		}
@@ -8653,6 +8942,8 @@ flow = {
 		{
 			id = "1a390d8d-3ea2-4221-8f58-9fbaa7bb0e45"
 			in_event_index = [
+				"pause"
+				"unpause"
 			]
 			out_event_index = [
 			]
@@ -9445,7 +9736,6 @@ units = [
 				falloff_start = 0
 				intensity = 1.9
 				material = ""
-				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "directional"
@@ -9797,7 +10087,6 @@ units = [
 				falloff_start = 0
 				intensity = 4
 				material = ""
-				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"
@@ -9855,7 +10144,6 @@ units = [
 				falloff_start = 0
 				intensity = 10
 				material = ""
-				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"
@@ -9913,7 +10201,6 @@ units = [
 				falloff_start = 0
 				intensity = 5
 				material = ""
-				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"
@@ -10065,6 +10352,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.treeD.bake_target" = false
 		}
 		id = "a010b970-11db-4eff-9a91-9dd6b051c457"
 		lights = {
@@ -10095,6 +10383,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.treeB.bake_target" = false
 		}
 		id = "6f83b267-ff7c-4d5f-9d4b-3379ba9e0809"
 		lights = {
@@ -10125,6 +10414,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.treeE.bake_target" = false
 		}
 		id = "94607ec8-e2f3-47ef-afbd-67d15c538fd9"
 		lights = {
@@ -10395,6 +10685,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_A.bake_target" = false
 		}
 		id = "5a0870c8-9dc0-41fb-a62f-cffad66d2229"
 		lights = {
@@ -10425,6 +10716,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_C.bake_target" = false
 		}
 		id = "c1242f2f-d2b1-44ea-8299-196abe5bc378"
 		lights = {
@@ -10455,6 +10747,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_B.bake_target" = false
 		}
 		id = "a3e4679d-91ca-49fc-8011-dda1ba027036"
 		lights = {
@@ -10605,6 +10898,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_C.bake_target" = false
 		}
 		id = "6d9407cb-c7f2-40b2-8841-1a3baf618e32"
 		lights = {
@@ -10635,6 +10929,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_B.bake_target" = false
 		}
 		id = "6250d683-d505-40b6-8a0d-5dff56138198"
 		lights = {
@@ -10665,6 +10960,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_B.bake_target" = false
 		}
 		id = "38807a7e-6c50-4849-b647-aa8ba2b42073"
 		lights = {
@@ -10695,6 +10991,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_A.bake_target" = false
 		}
 		id = "7214f244-2b85-4aed-a288-9e321f081220"
 		lights = {
@@ -11055,6 +11352,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.treeE.bake_target" = false
 		}
 		id = "e68f1d07-f3b3-40be-8736-34b0749022f8"
 		lights = {
@@ -11115,6 +11413,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_A.bake_target" = false
 		}
 		id = "e5262606-fd55-4290-894e-4c71ecbbf6f2"
 		lights = {
@@ -11145,6 +11444,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_B.bake_target" = false
 		}
 		id = "d56cf18d-4815-4210-93e2-8240129909c9"
 		lights = {
@@ -11175,6 +11475,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_C.bake_target" = false
 		}
 		id = "9189f270-9bb2-48b9-91aa-daf7f8368a73"
 		lights = {
@@ -11355,6 +11656,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_B.bake_target" = false
 		}
 		id = "becc06ca-4c14-40c7-87a0-a24b5f319512"
 		lights = {
@@ -11385,6 +11687,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_A.bake_target" = false
 		}
 		id = "e137a8cb-410f-4232-a91e-75b9a874f506"
 		lights = {
@@ -11475,6 +11778,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_C.bake_target" = false
 		}
 		id = "983557e2-89e2-4589-a744-4ee3eec2771f"
 		lights = {
@@ -11505,6 +11809,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_C.bake_target" = false
 		}
 		id = "3c8f1575-ad7c-4be7-bda2-d342167aed9a"
 		lights = {
@@ -11535,6 +11840,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_B.bake_target" = false
 		}
 		id = "02ee4d07-70a4-420d-8df9-e120bbd6f154"
 		lights = {
@@ -11565,6 +11871,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_A.bake_target" = false
 		}
 		id = "61bdf2a1-59d8-4b8f-9cf9-571ad9e3695a"
 		lights = {
@@ -11595,6 +11902,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_A.bake_target" = false
 		}
 		id = "b62ed61b-dfa2-4afe-bf5e-2dec9767d167"
 		lights = {
@@ -11625,6 +11933,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_B.bake_target" = false
 		}
 		id = "a7d10f6a-fe04-4852-8ad1-861ae11951f8"
 		lights = {
@@ -12525,6 +12834,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.treeD.bake_target" = false
 		}
 		id = "c663039e-9d8b-44ba-ab17-51132023cc47"
 		lights = {
@@ -12645,6 +12955,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.treeE.bake_target" = false
 		}
 		id = "3e331a6c-267d-4a0e-82d5-f18036c50075"
 		lights = {
@@ -12675,6 +12986,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.treeF.bake_target" = false
 		}
 		id = "e886e968-1749-444b-b385-1878f66aa370"
 		lights = {
@@ -12705,6 +13017,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.treeF.bake_target" = false
 		}
 		id = "6d1d8926-733a-44b3-9f81-f92deab5112d"
 		lights = {
@@ -13155,6 +13468,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_A.bake_target" = false
 		}
 		id = "40f4c598-2090-4747-afa8-2190981d3a0c"
 		lights = {
@@ -13185,6 +13499,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_B.bake_target" = false
 		}
 		id = "e5668636-714a-4e34-9ef2-823c62a2354d"
 		lights = {
@@ -13215,6 +13530,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_C.bake_target" = false
 		}
 		id = "e573bc5f-4bbc-480d-bb03-540750651fbb"
 		lights = {
@@ -13365,6 +13681,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_C.bake_target" = false
 		}
 		id = "f350c11f-9409-4d54-a3b1-f1ff83902a52"
 		lights = {
@@ -13395,6 +13712,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_A.bake_target" = false
 		}
 		id = "c519f3bc-ce4a-4e11-89ff-9d186421612c"
 		lights = {
@@ -13425,6 +13743,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.treeB.bake_target" = false
 		}
 		id = "5f491add-c688-4d54-b7ff-a391a8049311"
 		lights = {
@@ -13935,6 +14254,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.treeE.bake_target" = false
 		}
 		id = "4201422b-d2c7-428b-b879-c74731d9aba2"
 		lights = {
@@ -14115,12 +14435,14 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.house:pPlane1.texel_scale" = 0.5
 		}
 		id = "0d584522-310f-4fc0-af49-7506e65767f0"
 		lights = {
 		}
 		material = ""
 		materials = {
+			blinn2 = "content/models/shots/OP/OP_ground/material"
 		}
 		name = "OP_ground"
 		pos = [
@@ -14145,6 +14467,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_A.bake_target" = false
 		}
 		id = "32f556e3-3887-45ce-8ca6-c2c1dcc17db8"
 		lights = {
@@ -14175,6 +14498,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_B.bake_target" = false
 		}
 		id = "af1e9862-d6af-48af-96c8-5887a1541aef"
 		lights = {
@@ -14205,6 +14529,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.pool_C.bake_target" = false
 		}
 		id = "298c8a2e-1a44-4e1e-8c72-e93667935dbd"
 		lights = {
@@ -14445,6 +14770,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.treeB.bake_target" = false
 		}
 		id = "3e40b526-5a1b-4b18-a95d-bfef28a10304"
 		lights = {
@@ -14565,6 +14891,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.treeB.bake_target" = false
 		}
 		id = "da71fa9b-2c03-4302-a9b0-43e76269f236"
 		lights = {
@@ -14745,6 +15072,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.treeB.bake_target" = false
 		}
 		id = "83443bc4-13d5-4095-b12e-dfd9ff6f1f8f"
 		lights = {
@@ -15015,6 +15343,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.treeF.bake_target" = false
 		}
 		id = "1f36b515-961a-49bb-b9da-b71b71a426e1"
 		lights = {
@@ -15045,6 +15374,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.treeF.bake_target" = false
 		}
 		id = "980a3c89-e491-487a-af80-eb8a50011a23"
 		lights = {
@@ -15075,6 +15405,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.treeB.bake_target" = false
 		}
 		id = "1568cc1c-3ff9-4c7b-a8e5-26c9104b39c3"
 		lights = {
@@ -15135,6 +15466,14 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.ceilingLampA_GEO.texel_scale" = 2
+			"light_baking.ceilingLampB_GEO.texel_scale" = 2
+			"light_baking.couch_GEO.texel_scale" = 2
+			"light_baking.drawerA_GEO.texel_scale" = 2
+			"light_baking.exterior_GEO.texel_scale" = 2
+			"light_baking.hosue_TV_GEO.texel_scale" = 2
+			"light_baking.house_coffeeTable_GEO.texel_scale" = 2
+			"light_baking.interior_GEO.texel_scale" = 2
 		}
 		id = "2c9ae5e7-7b6a-4d49-8e90-81bf135436fb"
 		lights = {
@@ -15165,6 +15504,8 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.OP_BG1.bake_target" = false
+			"light_baking.OP_BG1.contributes" = false
 		}
 		id = "24aa9fa9-d14a-4043-a7b2-7abd3f8a0355"
 		lights = {
@@ -15190,6 +15531,178 @@ units = [
 			2.104
 		]
 		type = "content/models/shots/OP/background/OP_BG_01"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "ee442b7d-2b20-4b99-9c65-1c128e69fff0"
+		lights = {
+			probe = {
+				baked = false
+				box_max = [
+					7.7
+					4
+					10
+				]
+				box_min = [
+					-3.8
+					-9
+					-4
+				]
+				cast_shadows = false
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1
+				material = "content/levels/test_cinematics-cubemaps/reflection_probe_bake"
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "box"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "reflection_probe"
+		pos = [
+			0.055319
+			0.021822
+			2.424287
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "76f71f80-0f81-4687-9cae-57403ba20bd8"
+		lights = {
+			probe = {
+				baked = false
+				box_max = [
+					7.7
+					4
+					10
+				]
+				box_min = [
+					-3.8
+					-9
+					-4
+				]
+				cast_shadows = false
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1
+				material = "content/levels/test_cinematics-cubemaps/reflection_probe1_bake"
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "box"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "reflection_probe1"
+		pos = [
+			-4.93762
+			-0.348309
+			1.440492
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"light_baking.light.indirect_intensity" = 0.3
+		}
+		id = "1f6886f9-3024-4690-8327-8d3f4e8030c5"
+		lights = {
+			light = {
+				baked = false
+				box_max = [
+					10
+					10
+					10
+				]
+				box_min = [
+					-10
+					0
+					-10
+				]
+				cast_shadows = false
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1.5
+				material = ""
+				spot_angle_end = 1.04719755117
+				spot_angle_start = 0
+				type = "omni"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "light_source2"
+		pos = [
+			-4.431358
+			-1.157805
+			1.416288
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/units/light_source"
 	}
 ]
 volumes = [
