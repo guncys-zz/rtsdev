@@ -20,7 +20,8 @@ Project.level_names = {
 	stage2 = "content/levels/stage2",
 	stage3 = "content/levels/stage3",
 	stage4 = "content/levels/stage4",
-	test_cinematics = "content/levels/test_cinematics"
+	test_cinematics = "content/levels/test_cinematics",
+	ending = "content/levels/ending"
 }
 
 -- Can provide a config for the basic project, or it will use a default if not.
@@ -70,6 +71,9 @@ function Project.on_level_load_pre_flow()
     elseif level_name == Project.level_names.test_cinematics then
         local Opening = require 'script/lua/opening'
         Opening.start()
+    elseif level_name == Project.level_names.ending then
+        local Ending = require 'script/lua/ending'
+        Ending.start()
     end
 
 end

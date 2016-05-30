@@ -9,7 +9,7 @@ print("creditでSimpleプロジェクトをロードした")
 
 local enterFrameEventListener = scaleform.EventListener.create(enterFrameEventListener, function(e, thisListener)
 local current_frame = scaleform.AnimationComponent.current_frame(creditAnimation)
-print("surrent-frame="..current_frame)
+print("current-frame="..current_frame)
 --print(current_frame)
 if current_frame == 5489 then
     if dispatched ~= true then  --まだイベントをコールしていなかったら
