@@ -193,8 +193,37 @@ editor_metadata = {
 				ToItem = "In"
 				ToNode = "528ea9cc-3f63-463e-9cd7-3a6a528abd76"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Touched"
+				FromNode = "21cad230-6ce8-4130-926d-43982b3a2e06"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "f2f90edd-3271-4598-b18b-7fe15f9db1e8"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "f2f90edd-3271-4598-b18b-7fe15f9db1e8"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "dc1a64aa-526f-4599-8778-3ced70ab902f"
+			}
 		]
 		Groups = [
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "7af70d30-0625-4a54-8442-e008d99ff109"
+				Nodes = [
+					"21cad230-6ce8-4130-926d-43982b3a2e06"
+					"f2f90edd-3271-4598-b18b-7fe15f9db1e8"
+					"dc1a64aa-526f-4599-8778-3ced70ab902f"
+					"f09375bf-3324-4087-b519-df23d5bc1423"
+				]
+				Title = "ぱぴこが噴水の上に着地してから数秒後、EDクレジット開始"
+			}
 		]
 		Nodes = [
 			{
@@ -655,6 +684,89 @@ editor_metadata = {
 				]
 				Width = 160
 			}
+			{
+				Brief = "Fires an event when a physics actor touches the trigger volume. Returns touching actor and touching unit."
+				Class = "Stingray.Foundation.Flow.Trigger"
+				Disable = {
+				}
+				Enable = {
+				}
+				Id = "21cad230-6ce8-4130-926d-43982b3a2e06"
+				NodeLocation = {
+					X = -260
+					Y = 1060
+				}
+				Shape = {
+					Id = "20f17b57-9750-491b-9029-699f300cd363"
+				}
+				Title = "Trigger"
+				Touched = {
+				}
+				TouchingActor = {
+				}
+				TouchingUnit = {
+				}
+				Untouched = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Inserts a delay in evaluation by the specified numeric value."
+				Class = "Stingray.Foundation.Flow.Delay"
+				Id = "f2f90edd-3271-4598-b18b-7fe15f9db1e8"
+				In = {
+				}
+				NodeLocation = {
+					X = -60
+					Y = 1100
+				}
+				Out = {
+				}
+				Time = {
+					Value = 6
+				}
+				Title = "Delay"
+				Width = 160
+			}
+			{
+				Arguments = [
+				]
+				Brief = ""
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "script/custom_nodes/credits"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "f09375bf-3324-4087-b519-df23d5bc1423"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Credits"
+				NodeLocation = {
+					X = 480
+					Y = 1100
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
+			{
+				Brief = "Fires an event only once and ceases execution until the level is reloaded."
+				Class = "Stingray.Foundation.Flow.Once"
+				Id = "dc1a64aa-526f-4599-8778-3ced70ab902f"
+				In = {
+				}
+				NodeLocation = {
+					X = 140
+					Y = 1100
+				}
+				Out = {
+				}
+				Title = "Once"
+				Width = 160
+			}
 		]
 	}
 	Groups = [
@@ -674,6 +786,7 @@ editor_metadata = {
 	LevelReferences = [
 	]
 	LightBakeSettings = {
+		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
 		FilterGain = 40
@@ -691,6 +804,7 @@ editor_metadata = {
 			Z = 1
 		}
 		TexelScale = 5
+		TotalPasses = 256
 		Variance = 0.5
 	}
 	LuaPluginObjects = [
@@ -731,6 +845,39 @@ editor_metadata = {
 	Stories = [
 	]
 	Triggers = [
+		{
+			ActorTemplate = "static"
+			Id = "20f17b57-9750-491b-9029-699f300cd363"
+			Layer = "Default"
+			Name = "trigger"
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.076814
+				Y = 0.048784
+				Z = 5.562361
+			}
+			Radius = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			Rot = {
+				W = 1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ShapeTemplate = "trigger"
+		}
 	]
 	Units = [
 		{
@@ -764,6 +911,7 @@ editor_metadata = {
 					Intensity = 3.5
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "directional"
@@ -5562,6 +5710,7 @@ editor_metadata = {
 					Intensity = 1
 					Material = ""
 					MaterialResource = "content/levels/ending-cubemaps/reflection_probe_bake"
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "box"
@@ -6099,6 +6248,85 @@ flow = {
 				}
 			]
 		}
+		{
+			id = "21cad230-6ce8-4130-926d-43982b3a2e06"
+			out_events = {
+				touched = [
+					{
+						event = 0
+						id = "f2f90edd-3271-4598-b18b-7fe15f9db1e8:0"
+						node = "f2f90edd-3271-4598-b18b-7fe15f9db1e8"
+					}
+				]
+			}
+			type = "trigger"
+			variable_values = {
+				shape = {
+					actor_template = "static"
+					id = "20f17b57-9750-491b-9029-699f300cd363"
+					pos = [
+						0.076814
+						0.048784
+						5.562361
+					]
+					radius = [
+						1
+						1
+						1
+					]
+					rot = [
+						0
+						0
+						0
+						1
+					]
+					scale = [
+						1
+						1
+						1
+					]
+					shape_template = "trigger"
+				}
+				touching_actor = null
+				touching_unit = null
+			}
+		}
+		{
+			id = "f2f90edd-3271-4598-b18b-7fe15f9db1e8"
+			in_variables = {
+				time = {
+					type = "float"
+				}
+			}
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "dc1a64aa-526f-4599-8778-3ced70ab902f:0"
+						node = "dc1a64aa-526f-4599-8778-3ced70ab902f"
+					}
+				]
+			}
+			type = "delay"
+			variable_values = {
+				time = 6
+			}
+		}
+		{
+			flow_nodes_resource = "script/custom_nodes/credits"
+			id = "f09375bf-3324-4087-b519-df23d5bc1423"
+			name = "Credits"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variables = [
+			]
+		}
+		{
+			id = "dc1a64aa-526f-4599-8778-3ced70ab902f"
+			type = "once"
+		}
 	]
 }
 level_references = [
@@ -6125,6 +6353,32 @@ splines = [
 stories = [
 ]
 triggers = [
+	{
+		actor_template = "static"
+		id = "20f17b57-9750-491b-9029-699f300cd363"
+		pos = [
+			0.076814
+			0.048784
+			5.562361
+		]
+		radius = [
+			1
+			1
+			1
+		]
+		rot = [
+			0
+			0
+			0
+			1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		shape_template = "trigger"
+	}
 ]
 units = [
 	{
@@ -6157,6 +6411,7 @@ units = [
 				falloff_start = 0
 				intensity = 3.5
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "directional"
@@ -10059,6 +10314,7 @@ units = [
 				falloff_start = 0
 				intensity = 1
 				material = "content/levels/ending-cubemaps/reflection_probe_bake"
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "box"
