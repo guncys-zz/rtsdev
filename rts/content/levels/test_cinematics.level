@@ -318,10 +318,26 @@ editor_metadata = {
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
 				FromItem = "Out"
-				FromNode = "8c43497c-2b0c-447e-b460-d652c7308a0b"
+				FromNode = "7c2136ac-4624-4680-9536-2462285fc6d7"
 				Priority = 0
 				ToItem = "Play"
 				ToNode = "4b3164da-8c14-426b-ad85-4d3bd975436b"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "8c43497c-2b0c-447e-b460-d652c7308a0b"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "7c2136ac-4624-4680-9536-2462285fc6d7"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "8c43497c-2b0c-447e-b460-d652c7308a0b"
+				Priority = 0
+				ToItem = "Play"
+				ToNode = "22be5b79-118e-4c55-9166-51165f720f1b"
 			}
 		]
 		Groups = [
@@ -1242,8 +1258,8 @@ editor_metadata = {
 				In = {
 				}
 				NodeLocation = {
-					X = 400
-					Y = 1280
+					X = 420
+					Y = 1220
 				}
 				Out = {
 				}
@@ -1272,7 +1288,7 @@ editor_metadata = {
 				InVariables = [
 				]
 				NodeLocation = {
-					X = 700
+					X = 840
 					Y = 1500
 				}
 				OutEvents = [
@@ -1295,8 +1311,8 @@ editor_metadata = {
 				LoopStart = {
 				}
 				NodeLocation = {
-					X = 460
-					Y = 1500
+					X = 660
+					Y = 1400
 				}
 				OutEvents = [
 					"default shading environment"
@@ -1313,6 +1329,61 @@ editor_metadata = {
 				}
 				Story = {
 					Id = "c493df73-1f8d-435f-a668-076ddda66008"
+				}
+				StoryId = {
+				}
+				Time = {
+				}
+				Title = "Level Story"
+				Width = 160
+			}
+			{
+				Brief = "Inserts a delay in evaluation by the specified numeric value."
+				Class = "Stingray.Foundation.Flow.Delay"
+				Id = "7c2136ac-4624-4680-9536-2462285fc6d7"
+				In = {
+				}
+				NodeLocation = {
+					X = 460
+					Y = 1400
+				}
+				Out = {
+				}
+				Time = {
+					Value = 0.1
+				}
+				Title = "Delay"
+				Width = 160
+			}
+			{
+				Brief = "Allows the interaction and control of a story event within the level from Flow."
+				Class = "Stingray.Foundation.Flow.LevelStory"
+				Id = "22be5b79-118e-4c55-9166-51165f720f1b"
+				LoopEnd = {
+				}
+				LoopMode = {
+				}
+				LoopStart = {
+				}
+				NodeLocation = {
+					X = 460
+					Y = 1520
+				}
+				OutEvents = [
+					"default shading environment"
+				]
+				Play = {
+				}
+				Played = {
+				}
+				Speed = {
+				}
+				Stop = {
+				}
+				Stopped = {
+				}
+				Story = {
+					Id = "6f35be38-eba5-498a-b686-3fc0e8361d80"
 				}
 				StoryId = {
 				}
@@ -1340,6 +1411,7 @@ editor_metadata = {
 	LevelReferences = [
 	]
 	LightBakeSettings = {
+		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
 		FilterGain = 40
@@ -1357,6 +1429,7 @@ editor_metadata = {
 			Z = 1
 		}
 		TexelScale = 10
+		TotalPasses = 256
 		Variance = 0.5
 	}
 	LuaPluginObjects = [
@@ -1621,6 +1694,107 @@ editor_metadata = {
 				}
 			]
 		}
+		{
+			Curves = [
+				{
+					ArrayPropertyIndex = 0
+					ComponentId = "dd1dccf2-6f2f-4b8c-9199-290c069ab62b"
+					ComponentName = "Vignette"
+					EntityName = "default shading environment"
+					EntityPropertyPath = [
+						"vignette_enabled"
+					]
+					Id = "c22bbebc-8d78-414b-976f-7c5129347cd2"
+					IsPrefabChild = false
+					LeftBehavior = "Constant"
+					PrefabChildEntityPath = [
+					]
+					RightBehavior = "Constant"
+					StoryPropertyDisplayPath = [
+						"Enabled"
+					]
+					StoryPropertyPath = [
+						"vignette_enabled"
+					]
+					TrackId = "790a737e-0f80-425f-afe3-281415a502cb"
+					Type = "EntityPropertyCurveModel"
+				}
+			]
+			End = 0.1
+			Id = "6f35be38-eba5-498a-b686-3fc0e8361d80"
+			Keys = [
+				{
+					CurveId = "c22bbebc-8d78-414b-976f-7c5129347cd2"
+					Id = "87f00947-6e97-465b-8371-62619aecfa4b"
+					KeyType = "Spline"
+					Step = false
+					Time = 0
+					TrackId = null
+					Value0 = 1
+					Value1 = 0
+					Value2 = 0
+					Value3 = 0
+				}
+			]
+			Name = "VignetteOn"
+			OnionSkinning = {
+				Color = {
+					A = 25
+					B = 255
+					G = 255
+					R = 0
+				}
+				Enabled = false
+				Objects = "Selected"
+				SkinsAfter = 10
+				SkinsBefore = 10
+				SkinStep = 4
+			}
+			OnionSkinningColor = {
+				A = 25
+				B = 255
+				G = 255
+				R = 0
+			}
+			OnionSkinningEnabled = false
+			OnionSkinningObjects = "Selected"
+			OnionSkinningSkinsAfter = 10
+			OnionSkinningSkinsBefore = 10
+			OnionSkinningSkinStep = 4
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Rot = {
+				W = 1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			Start = 0
+			Tracks = [
+				{
+					Entity = {
+						Id = "cb452151-b31f-434a-aac8-35e0669cfa53"
+						Index = 0
+					}
+					Id = "790a737e-0f80-425f-afe3-281415a502cb"
+					Name = "default shading environment"
+					Unit = null
+				}
+			]
+		}
 	]
 	Triggers = [
 		{
@@ -1689,6 +1863,7 @@ editor_metadata = {
 					Intensity = 1.9
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "directional"
@@ -2112,6 +2287,7 @@ editor_metadata = {
 					Intensity = 4
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -2178,6 +2354,7 @@ editor_metadata = {
 					Intensity = 10
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -2244,6 +2421,7 @@ editor_metadata = {
 					Intensity = 5
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -8839,6 +9017,7 @@ editor_metadata = {
 					Intensity = 1
 					Material = ""
 					MaterialResource = "content/levels/test_cinematics-cubemaps/reflection_probe_bake"
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "box"
@@ -8905,6 +9084,7 @@ editor_metadata = {
 					Intensity = 1
 					Material = ""
 					MaterialResource = "content/levels/test_cinematics-cubemaps/reflection_probe1_bake"
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "box"
@@ -8971,6 +9151,7 @@ editor_metadata = {
 					Intensity = 1.5
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 59.9999999984761
 					SpotAngleStart = 0
 					Type = "omni"
@@ -9644,8 +9825,13 @@ flow = {
 					}
 					{
 						event = 0
-						id = "4b3164da-8c14-426b-ad85-4d3bd975436b:0"
-						node = "4b3164da-8c14-426b-ad85-4d3bd975436b"
+						id = "7c2136ac-4624-4680-9536-2462285fc6d7:0"
+						node = "7c2136ac-4624-4680-9536-2462285fc6d7"
+					}
+					{
+						event = 0
+						id = "22be5b79-118e-4c55-9166-51165f720f1b:0"
+						node = "22be5b79-118e-4c55-9166-51165f720f1b"
 					}
 				]
 			}
@@ -9947,6 +10133,59 @@ flow = {
 				time = null
 			}
 		}
+		{
+			id = "7c2136ac-4624-4680-9536-2462285fc6d7"
+			in_variables = {
+				time = {
+					type = "float"
+				}
+			}
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "4b3164da-8c14-426b-ad85-4d3bd975436b:0"
+						node = "4b3164da-8c14-426b-ad85-4d3bd975436b"
+					}
+				]
+			}
+			type = "delay"
+			variable_values = {
+				time = 0.1
+			}
+		}
+		{
+			id = "22be5b79-118e-4c55-9166-51165f720f1b"
+			in_variables = {
+				loop_end = {
+					type = "float"
+				}
+				loop_mode = {
+					type = "string"
+				}
+				loop_start = {
+					type = "float"
+				}
+				speed = {
+					type = "float"
+				}
+				time = {
+					type = "float"
+				}
+			}
+			type = "level_story"
+			variable_values = {
+				loop_end = null
+				loop_mode = null
+				loop_start = null
+				speed = null
+				story = {
+					id = "6f35be38-eba5-498a-b686-3fc0e8361d80"
+				}
+				story_id = null
+				time = null
+			}
+		}
 	]
 }
 level_references = [
@@ -10053,6 +10292,42 @@ stories = [
 		name = "OpenVignette"
 		start = 0
 	}
+	{
+		curves = [
+			{
+				array_property_index = 0
+				component_id = "dd1dccf2-6f2f-4b8c-9199-290c069ab62b"
+				curve_type = "cubic"
+				entity_id = "cb452151-b31f-434a-aac8-35e0669cfa53"
+				is_prefab_child = false
+				left_behavior = "constant"
+				prefab_child_entity_path = [
+				]
+				property = [
+					"vignette_enabled"
+				]
+				right_behavior = "constant"
+				step = [
+					false
+				]
+				times = [
+					0
+				]
+				type = "entity_property"
+				values = [
+					1
+					0
+					0
+				]
+			}
+		]
+		end = 0.1
+		events = [
+		]
+		id = "6f35be38-eba5-498a-b686-3fc0e8361d80"
+		name = "VignetteOn"
+		start = 0
+	}
 ]
 triggers = [
 	{
@@ -10113,6 +10388,7 @@ units = [
 				falloff_start = 0
 				intensity = 1.9
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "directional"
@@ -10464,6 +10740,7 @@ units = [
 				falloff_start = 0
 				intensity = 4
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"
@@ -10521,6 +10798,7 @@ units = [
 				falloff_start = 0
 				intensity = 10
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"
@@ -10578,6 +10856,7 @@ units = [
 				falloff_start = 0
 				intensity = 5
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"
@@ -15939,6 +16218,7 @@ units = [
 				falloff_start = 0
 				intensity = 1
 				material = "content/levels/test_cinematics-cubemaps/reflection_probe_bake"
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "box"
@@ -15996,6 +16276,7 @@ units = [
 				falloff_start = 0
 				intensity = 1
 				material = "content/levels/test_cinematics-cubemaps/reflection_probe1_bake"
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "box"
@@ -16054,6 +16335,7 @@ units = [
 				falloff_start = 0
 				intensity = 1.5
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.04719755117
 				spot_angle_start = 0
 				type = "omni"
