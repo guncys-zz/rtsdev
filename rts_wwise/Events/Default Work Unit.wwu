@@ -82,7 +82,7 @@
 								<Action Name="Play" ID="{BE70A540-9FFA-4CA3-8DC5-57BBEB227C0E}" ShortID="239196019" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{2689956F-36A1-4968-A3BB-3EF571996980}" Global="false">
-											<ObjectRef Name="se_7" ID="{B77F0387-F676-4468-AB7A-C298031BB89F}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
+											<ObjectRef Name="PPK_SE_Start" ID="{B866D2DE-4CFD-49E8-A5FB-AC44574357B6}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -94,6 +94,17 @@
 									<ElementList>
 										<Element ID="{6B4EA345-4A9C-41B3-BF4A-7BF41B2C2142}" Global="true">
 											<ObjectRef Name="MUSIC" ID="{C587D4AB-926A-442A-89DF-D35843B37FD0}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SE_PPK_Cat" ID="{2921D0D5-1A7E-403A-AB06-395F6F9F0D98}">
+							<ChildrenList>
+								<Action Name="Play" ID="{7511D551-0AF7-449E-9CE9-F929C4974371}" ShortID="514362281" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{9360B6A8-3EDB-4AC4-99AF-151874F328F2}" Global="false">
+											<ObjectRef Name="PPK_SE_Cat" ID="{575976CC-B307-4FA5-8A90-B45DB2973E31}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -249,6 +260,17 @@
 									<ElementList>
 										<Element ID="{5D0D86BC-2949-4F19-AAAD-A1E3AD0E2C6C}" Global="false">
 											<ObjectRef Name="bgm_0_3" ID="{C40B0A97-9260-418C-AACE-FC15163D9FAB}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_BGM_StaffRoll" ID="{3530DBA7-17B3-42E7-9829-527A9A8CF877}">
+							<ChildrenList>
+								<Action Name="Play" ID="{C886D961-5086-471D-889F-FE336D8878AD}" ShortID="243503602" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{4412AC9D-0C46-4CA0-AA56-9A566BC6857A}" Global="false">
+											<ObjectRef Name="BGM_Title" ID="{A340824E-B704-4808-9663-898000A3CF90}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
 										</Element>
 									</ElementList>
 								</Action>
