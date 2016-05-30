@@ -53,7 +53,7 @@ editor_metadata = {
 						dof_enabled = true
 						dof_focal_distance = 7
 						dof_focal_region = 1
-						dof_focal_region_end = 15
+						dof_focal_region_end = 40
 						dof_focal_region_start = 2
 					}
 				}
@@ -1113,6 +1113,7 @@ editor_metadata = {
 	LevelReferences = [
 	]
 	LightBakeSettings = {
+		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
 		FilterGain = 20
@@ -1130,6 +1131,7 @@ editor_metadata = {
 			Z = 1
 		}
 		TexelScale = 5
+		TotalPasses = 256
 		Variance = 0.5
 	}
 	LuaPluginObjects = [
@@ -1203,6 +1205,7 @@ editor_metadata = {
 					Intensity = 3.5
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "directional"
@@ -12254,6 +12257,7 @@ editor_metadata = {
 					Intensity = 1
 					Material = ""
 					MaterialResource = "content/levels/stage2-cubemaps/reflection_probe1_bake"
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "box"
@@ -12323,6 +12327,7 @@ editor_metadata = {
 					Intensity = 1
 					Material = ""
 					MaterialResource = "content/levels/stage2-cubemaps/reflection_probe_bake"
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "box"
@@ -15525,7 +15530,7 @@ entities = [
 					dof_enabled = true
 					dof_focal_distance = 7
 					dof_focal_region = 1
-					dof_focal_region_end = 15
+					dof_focal_region_end = 40
 					dof_focal_region_start = 2
 				}
 			}
@@ -16277,6 +16282,7 @@ units = [
 				falloff_start = 0
 				intensity = 3.5
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "directional"
@@ -25249,6 +25255,7 @@ units = [
 				falloff_start = 0
 				intensity = 1
 				material = "content/levels/stage2-cubemaps/reflection_probe1_bake"
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "box"
@@ -25309,6 +25316,7 @@ units = [
 				falloff_start = 0
 				intensity = 1
 				material = "content/levels/stage2-cubemaps/reflection_probe_bake"
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "box"
