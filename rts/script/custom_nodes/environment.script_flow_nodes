@@ -17,7 +17,9 @@ nodes = [
 		}
 		function = "Environment.change_vignett"
 		category = "Environment"
-		returns = {}
+		returns = {
+		    Finished = "bool"
+		}
 	}
 
 	{

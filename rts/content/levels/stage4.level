@@ -79,11 +79,6 @@ editor_metadata = {
 						motion_blur_enabled = false
 					}
 				}
-				"dd1dccf2-6f2f-4b8c-9199-290c069ab62b" = {
-					data = {
-						vignette_enabled = false
-					}
-				}
 				"fd909d00-3e4d-4339-b1a9-784c7d6a60ad" = {
 					data = {
 						bloom_falloff = 0.5
@@ -335,18 +330,26 @@ editor_metadata = {
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
 				FromItem = "Out"
-				FromNode = "0bc6418b-9d77-47b6-ab6d-0201f738da11"
-				Priority = 0
-				ToItem = "Start"
-				ToNode = "9b2aa05c-a8c1-474c-bf04-a54f954d5aff"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
 				FromNode = "9c7b5dd9-2e42-40da-801d-de561afb533e"
 				Priority = 0
 				ToItem = "In"
 				ToNode = "6d285d1d-bc78-4b9b-ae7f-91c04fd8f38c"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "f5b80e33-f7ab-4eff-ae5f-304ed7f45c2b"
+				Priority = 0
+				ToItem = "Play"
+				ToNode = "9b6e4026-b341-4c5d-8ffc-a2beb8a5a003"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "0bc6418b-9d77-47b6-ab6d-0201f738da11"
+				Priority = 0
+				ToItem = "Play"
+				ToNode = "56971506-1fbf-48b3-9a8a-62888a34772c"
 			}
 		]
 		Groups = [
@@ -1141,7 +1144,7 @@ editor_metadata = {
 				A = {
 				}
 				B = {
-					Value = 1000
+					Value = 930
 				}
 				Brief = "Returns a boolean based on whether A is greater than B."
 				Class = "Stingray.Foundation.Flow.NumericGreaterThanNumeric"
@@ -1211,8 +1214,8 @@ editor_metadata = {
 				InVariables = [
 				]
 				NodeLocation = {
-					X = 1440
-					Y = 360
+					X = 1640
+					Y = 400
 				}
 				OutEvents = [
 				]
@@ -1269,6 +1272,80 @@ editor_metadata = {
 				Out = {
 				}
 				Title = "Once"
+				Width = 160
+			}
+			{
+				Brief = "Allows the interaction and control of a story event within the level from Flow."
+				Class = "Stingray.Foundation.Flow.LevelStory"
+				Id = "9b6e4026-b341-4c5d-8ffc-a2beb8a5a003"
+				LoopEnd = {
+				}
+				LoopMode = {
+				}
+				LoopStart = {
+				}
+				NodeLocation = {
+					X = -468
+					Y = 87
+				}
+				OutEvents = [
+					"default shading environment"
+				]
+				Play = {
+				}
+				Played = {
+				}
+				Speed = {
+				}
+				Stop = {
+				}
+				Stopped = {
+				}
+				Story = {
+					Id = "4bacfab2-982a-44f1-90f2-2a6f40473d08"
+				}
+				StoryId = {
+				}
+				Time = {
+				}
+				Title = "Level Story"
+				Width = 160
+			}
+			{
+				Brief = "Allows the interaction and control of a story event within the level from Flow."
+				Class = "Stingray.Foundation.Flow.LevelStory"
+				Id = "56971506-1fbf-48b3-9a8a-62888a34772c"
+				LoopEnd = {
+				}
+				LoopMode = {
+				}
+				LoopStart = {
+				}
+				NodeLocation = {
+					X = 1440
+					Y = 340
+				}
+				OutEvents = [
+					"default shading environment"
+				]
+				Play = {
+				}
+				Played = {
+				}
+				Speed = {
+				}
+				Stop = {
+				}
+				Stopped = {
+				}
+				Story = {
+					Id = "503ac47c-5dd5-4651-86df-f1b5c96218a8"
+				}
+				StoryId = {
+				}
+				Time = {
+				}
+				Title = "Level Story"
 				Width = 160
 			}
 		]
@@ -1358,6 +1435,232 @@ editor_metadata = {
 	Splines = [
 	]
 	Stories = [
+		{
+			Curves = [
+				{
+					ArrayPropertyIndex = 0
+					ComponentId = "dd1dccf2-6f2f-4b8c-9199-290c069ab62b"
+					ComponentName = "Vignette"
+					EntityName = "default shading environment"
+					EntityPropertyPath = [
+						"vignette_radius"
+					]
+					Id = "3800baed-96b0-428c-8090-3d2a1eecab9a"
+					IsPrefabChild = false
+					LeftBehavior = "Constant"
+					PrefabChildEntityPath = [
+					]
+					RightBehavior = "Constant"
+					StoryPropertyDisplayPath = [
+						"Radius"
+					]
+					StoryPropertyPath = [
+						"vignette_radius"
+					]
+					TrackId = "85458be5-a4bc-48e5-bf8a-42eb4ff8cbd2"
+					Type = "EntityPropertyCurveModel"
+				}
+			]
+			End = 1.1
+			Id = "4bacfab2-982a-44f1-90f2-2a6f40473d08"
+			Keys = [
+				{
+					CurveId = "3800baed-96b0-428c-8090-3d2a1eecab9a"
+					Id = "377e553d-5b09-4bcb-839c-3b2cc2a882f2"
+					KeyType = "Spline"
+					Step = false
+					Time = 1
+					TrackId = null
+					Value0 = 1
+					Value1 = 0
+					Value2 = 0
+					Value3 = 0
+				}
+				{
+					CurveId = "3800baed-96b0-428c-8090-3d2a1eecab9a"
+					Id = "2d51d1da-d297-44ea-a887-7d1f05458bca"
+					KeyType = "Spline"
+					Step = false
+					Time = 0
+					TrackId = null
+					Value0 = 0
+					Value1 = 0
+					Value2 = 0
+					Value3 = 0
+				}
+			]
+			Name = "openVignette"
+			OnionSkinning = {
+				Color = {
+					A = 25
+					B = 255
+					G = 255
+					R = 0
+				}
+				Enabled = false
+				Objects = "Selected"
+				SkinsAfter = 10
+				SkinsBefore = 10
+				SkinStep = 4
+			}
+			OnionSkinningColor = {
+				A = 25
+				B = 255
+				G = 255
+				R = 0
+			}
+			OnionSkinningEnabled = false
+			OnionSkinningObjects = "Selected"
+			OnionSkinningSkinsAfter = 10
+			OnionSkinningSkinsBefore = 10
+			OnionSkinningSkinStep = 4
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Rot = {
+				W = 1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			Start = 0
+			Tracks = [
+				{
+					Entity = {
+						Id = "41982f64-a77c-4720-9714-80fb7e806528"
+						Index = 0
+					}
+					Id = "85458be5-a4bc-48e5-bf8a-42eb4ff8cbd2"
+					Name = "default shading environment"
+					Unit = null
+				}
+			]
+		}
+		{
+			Curves = [
+				{
+					ArrayPropertyIndex = 0
+					ComponentId = "dd1dccf2-6f2f-4b8c-9199-290c069ab62b"
+					ComponentName = "Vignette"
+					EntityName = "default shading environment"
+					EntityPropertyPath = [
+						"vignette_radius"
+					]
+					Id = "b72fbcba-9f10-4849-942c-b5d8efefe32a"
+					IsPrefabChild = false
+					LeftBehavior = "Constant"
+					PrefabChildEntityPath = [
+					]
+					RightBehavior = "Constant"
+					StoryPropertyDisplayPath = [
+						"Radius"
+					]
+					StoryPropertyPath = [
+						"vignette_radius"
+					]
+					TrackId = "1a5f0fb9-cb55-4a81-8a61-2da62366bc28"
+					Type = "EntityPropertyCurveModel"
+				}
+			]
+			End = 1.1
+			Id = "503ac47c-5dd5-4651-86df-f1b5c96218a8"
+			Keys = [
+				{
+					CurveId = "b72fbcba-9f10-4849-942c-b5d8efefe32a"
+					Id = "2e7a4b36-f506-4d9a-ade5-74529708dc2d"
+					KeyType = "Spline"
+					Step = false
+					Time = 0
+					TrackId = null
+					Value0 = 1
+					Value1 = 0
+					Value2 = 0
+					Value3 = 0
+				}
+				{
+					CurveId = "b72fbcba-9f10-4849-942c-b5d8efefe32a"
+					Id = "cb34b97a-4472-4733-9ba8-816ace20c7d4"
+					KeyType = "Spline"
+					Step = false
+					Time = 1
+					TrackId = null
+					Value0 = 0
+					Value1 = 0
+					Value2 = 0
+					Value3 = 0
+				}
+			]
+			Name = "CloseVignette"
+			OnionSkinning = {
+				Color = {
+					A = 25
+					B = 255
+					G = 255
+					R = 0
+				}
+				Enabled = false
+				Objects = "Selected"
+				SkinsAfter = 10
+				SkinsBefore = 10
+				SkinStep = 4
+			}
+			OnionSkinningColor = {
+				A = 25
+				B = 255
+				G = 255
+				R = 0
+			}
+			OnionSkinningEnabled = false
+			OnionSkinningObjects = "Selected"
+			OnionSkinningSkinsAfter = 10
+			OnionSkinningSkinsBefore = 10
+			OnionSkinningSkinStep = 4
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Rot = {
+				W = 1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			Start = 0
+			Tracks = [
+				{
+					Entity = {
+						Id = "41982f64-a77c-4720-9714-80fb7e806528"
+						Index = 0
+					}
+					Id = "1a5f0fb9-cb55-4a81-8a61-2da62366bc28"
+					Name = "default shading environment"
+					Unit = null
+				}
+			]
+		}
 	]
 	Triggers = [
 	]
@@ -14855,11 +15158,6 @@ entities = [
 					motion_blur_enabled = false
 				}
 			}
-			"dd1dccf2-6f2f-4b8c-9199-290c069ab62b" = {
-				data = {
-					vignette_enabled = false
-				}
-			}
 			"fd909d00-3e4d-4339-b1a9-784c7d6a60ad" = {
 				data = {
 					bloom_falloff = 0.5
@@ -14889,6 +15187,11 @@ flow = {
 						event = 0
 						id = "e33042e0-5008-47e1-bb3b-699614f30835:0"
 						node = "e33042e0-5008-47e1-bb3b-699614f30835"
+					}
+					{
+						event = 0
+						id = "9b6e4026-b341-4c5d-8ffc-a2beb8a5a003:0"
+						node = "9b6e4026-b341-4c5d-8ffc-a2beb8a5a003"
 					}
 				]
 			}
@@ -15579,7 +15882,7 @@ flow = {
 			type = "numeric_greater_than_numeric"
 			variable_values = {
 				a = null
-				b = 1000
+				b = 930
 				value = null
 			}
 		}
@@ -15678,12 +15981,76 @@ flow = {
 					}
 					{
 						event = 0
-						id = "9b2aa05c-a8c1-474c-bf04-a54f954d5aff:0"
-						node = "9b2aa05c-a8c1-474c-bf04-a54f954d5aff"
+						id = "56971506-1fbf-48b3-9a8a-62888a34772c:0"
+						node = "56971506-1fbf-48b3-9a8a-62888a34772c"
 					}
 				]
 			}
 			type = "once"
+		}
+		{
+			id = "9b6e4026-b341-4c5d-8ffc-a2beb8a5a003"
+			in_variables = {
+				loop_end = {
+					type = "float"
+				}
+				loop_mode = {
+					type = "string"
+				}
+				loop_start = {
+					type = "float"
+				}
+				speed = {
+					type = "float"
+				}
+				time = {
+					type = "float"
+				}
+			}
+			type = "level_story"
+			variable_values = {
+				loop_end = null
+				loop_mode = null
+				loop_start = null
+				speed = null
+				story = {
+					id = "4bacfab2-982a-44f1-90f2-2a6f40473d08"
+				}
+				story_id = null
+				time = null
+			}
+		}
+		{
+			id = "56971506-1fbf-48b3-9a8a-62888a34772c"
+			in_variables = {
+				loop_end = {
+					type = "float"
+				}
+				loop_mode = {
+					type = "string"
+				}
+				loop_start = {
+					type = "float"
+				}
+				speed = {
+					type = "float"
+				}
+				time = {
+					type = "float"
+				}
+			}
+			type = "level_story"
+			variable_values = {
+				loop_end = null
+				loop_mode = null
+				loop_start = null
+				speed = null
+				story = {
+					id = "503ac47c-5dd5-4651-86df-f1b5c96218a8"
+				}
+				story_id = null
+				time = null
+			}
 		}
 	]
 }
@@ -15709,6 +16076,88 @@ sounds = [
 splines = [
 ]
 stories = [
+	{
+		curves = [
+			{
+				array_property_index = 0
+				component_id = "dd1dccf2-6f2f-4b8c-9199-290c069ab62b"
+				curve_type = "cubic"
+				entity_id = "41982f64-a77c-4720-9714-80fb7e806528"
+				is_prefab_child = false
+				left_behavior = "constant"
+				prefab_child_entity_path = [
+				]
+				property = [
+					"vignette_radius"
+				]
+				right_behavior = "constant"
+				step = [
+					false
+					false
+				]
+				times = [
+					0
+					1
+				]
+				type = "entity_property"
+				values = [
+					0
+					0
+					0
+					1
+					0
+					0
+				]
+			}
+		]
+		end = 1.1
+		events = [
+		]
+		id = "4bacfab2-982a-44f1-90f2-2a6f40473d08"
+		name = "openVignette"
+		start = 0
+	}
+	{
+		curves = [
+			{
+				array_property_index = 0
+				component_id = "dd1dccf2-6f2f-4b8c-9199-290c069ab62b"
+				curve_type = "cubic"
+				entity_id = "41982f64-a77c-4720-9714-80fb7e806528"
+				is_prefab_child = false
+				left_behavior = "constant"
+				prefab_child_entity_path = [
+				]
+				property = [
+					"vignette_radius"
+				]
+				right_behavior = "constant"
+				step = [
+					false
+					false
+				]
+				times = [
+					0
+					1
+				]
+				type = "entity_property"
+				values = [
+					1
+					0
+					0
+					0
+					0
+					0
+				]
+			}
+		]
+		end = 1.1
+		events = [
+		]
+		id = "503ac47c-5dd5-4651-86df-f1b5c96218a8"
+		name = "CloseVignette"
+		start = 0
+	}
 ]
 triggers = [
 ]

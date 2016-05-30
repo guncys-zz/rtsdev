@@ -11,18 +11,27 @@ end
 
 function Environment.change_vignett(arg)
     
+    r = {}
+    
     radius_val = radius_val + arg.Change
+    print( radius_val )
     
     if ( radius_val < arg.Min ) then
-        return
+         r["Finished"] = true
+         return r
     end
 
     if ( radius_val > arg.Max ) then
-        return
+        r["Finished"] = true
+        return r
     end
 
+    local SimpleProject = require 'core/appkit/lua/simple_project'
     local data_component_manager = stingray.EntityManager.data_component(SimpleProject.world)
     local all_entity_handles = stingray.World.entities(SimpleProject.world)
+    --local level = SimpleProject.level
+    --local data_component_manager = stingray.EntityManager.data_component()
+    --local all_entity_handles = stingray.World.entities(SimpleProject.level_name.World)
 
     -- iterate through all entities in the world.
     for _, entity_handle in ipairs(all_entity_handles) do
@@ -45,12 +54,16 @@ function Environment.change_vignett(arg)
                 vignette_component = data_component_handle;
                 -- now we have the shading environment entity and the component, we can set the
                 -- value we want for the property.
+                print( "setting radius" )
+                print( radius_val )
                 stingray.DataComponent.set_property(data_component_manager, shading_env_entity, vignette_component, {"vignette_radius"}, radius_val)
             end
         end
     end
 
-    print(time)
+    r["Finished"] = false
+    return r
+    
 end
 
 function Environment.close_vignett(arg)

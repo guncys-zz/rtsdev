@@ -1,0 +1,725 @@
+
+editor_metadata = {
+	Entities = [
+		{
+			id = "51b6319d-65c0-4075-9b28-29cf3a71a11d"
+			layer = "Default"
+			name = "Default Shading Environment"
+			prefab = {
+				"$resource_name" = "core/stingray_renderer/environments/midday/midday_shading_environment"
+				"$resource_type" = "entity"
+			}
+		}
+	]
+	Flow = {
+		Connections = [
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "6fa48cd1-5247-4fb0-a48c-b0edb5cba0f4"
+				Priority = 0
+				ToItem = "Start"
+				ToNode = "c8840502-1778-40e1-9e7e-2e86e84492f9"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "6fa48cd1-5247-4fb0-a48c-b0edb5cba0f4"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "833c639b-891d-44a8-bf28-258badf79c46"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "833c639b-891d-44a8-bf28-258badf79c46"
+				Priority = 0
+				ToItem = "Start"
+				ToNode = "029a73b1-b8fe-4570-b9ad-43038ee3554c"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "833c639b-891d-44a8-bf28-258badf79c46"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "dd5c6f55-584f-4fae-97be-1d3a6db8b971"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "dd5c6f55-584f-4fae-97be-1d3a6db8b971"
+				Priority = 0
+				ToItem = "Start"
+				ToNode = "d4da240e-4802-4344-809e-d08dc260d835"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "dd5c6f55-584f-4fae-97be-1d3a6db8b971"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "eb5e50ef-1a70-4ec0-a63c-a21641fb908b"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "eb5e50ef-1a70-4ec0-a63c-a21641fb908b"
+				Priority = 0
+				ToItem = "Start"
+				ToNode = "0ae78971-db2c-4799-ba4b-4b0fbba6096b"
+			}
+		]
+		Groups = [
+		]
+		Nodes = [
+			{
+				Brief = "Passes an event when the level has been loaded into the world."
+				Class = "Stingray.Foundation.Flow.LevelLoaded"
+				Id = "6fa48cd1-5247-4fb0-a48c-b0edb5cba0f4"
+				NodeLocation = {
+					X = -960
+					Y = -220
+				}
+				Out = {
+				}
+				Title = "Level Loaded"
+				Width = 160
+			}
+			{
+				Brief = "Inserts a delay in evaluation by the specified numeric value."
+				Class = "Stingray.Foundation.Flow.Delay"
+				Id = "833c639b-891d-44a8-bf28-258badf79c46"
+				In = {
+				}
+				NodeLocation = {
+					X = -660
+					Y = -220
+				}
+				Out = {
+				}
+				Time = {
+					Value = 5
+				}
+				Title = "Delay"
+				Width = 160
+			}
+			{
+				Brief = "Encapsulates a graph of logic stored in a separate flow resource file in the project."
+				Class = "Stingray.Foundation.Flow.FlowSubroutine"
+				Disable = {
+				}
+				Enable = {
+				}
+				Flow = {
+					Value = "script/custom_flows/Close_Vignette"
+				}
+				Id = "c8840502-1778-40e1-9e7e-2e86e84492f9"
+				InEvents = [
+					"Start"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = -960
+					Y = 0
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				Title = "Flow Subroutine"
+				Width = 160
+			}
+			{
+				Brief = "Encapsulates a graph of logic stored in a separate flow resource file in the project."
+				Class = "Stingray.Foundation.Flow.FlowSubroutine"
+				Disable = {
+				}
+				Enable = {
+				}
+				Flow = {
+					Value = "script/custom_flows/Open_Vignette"
+				}
+				Id = "029a73b1-b8fe-4570-b9ad-43038ee3554c"
+				InEvents = [
+					"Start"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = -660
+					Y = 0
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				Title = "Flow Subroutine"
+				Width = 160
+			}
+			{
+				Brief = "Inserts a delay in evaluation by the specified numeric value."
+				Class = "Stingray.Foundation.Flow.Delay"
+				Id = "dd5c6f55-584f-4fae-97be-1d3a6db8b971"
+				In = {
+				}
+				NodeLocation = {
+					X = -360
+					Y = -220
+				}
+				Out = {
+				}
+				Time = {
+					Value = 5
+				}
+				Title = "Delay"
+				Width = 160
+			}
+			{
+				Brief = "Encapsulates a graph of logic stored in a separate flow resource file in the project."
+				Class = "Stingray.Foundation.Flow.FlowSubroutine"
+				Disable = {
+				}
+				Enable = {
+				}
+				Flow = {
+					Value = "script/custom_flows/Close_Vignette"
+				}
+				Id = "d4da240e-4802-4344-809e-d08dc260d835"
+				InEvents = [
+					"Start"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = -360
+					Y = 0
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				Title = "Flow Subroutine"
+				Width = 160
+			}
+			{
+				Brief = "Inserts a delay in evaluation by the specified numeric value."
+				Class = "Stingray.Foundation.Flow.Delay"
+				Id = "eb5e50ef-1a70-4ec0-a63c-a21641fb908b"
+				In = {
+				}
+				NodeLocation = {
+					X = -100
+					Y = -220
+				}
+				Out = {
+				}
+				Time = {
+					Value = 5
+				}
+				Title = "Delay"
+				Width = 160
+			}
+			{
+				Brief = "Encapsulates a graph of logic stored in a separate flow resource file in the project."
+				Class = "Stingray.Foundation.Flow.FlowSubroutine"
+				Disable = {
+				}
+				Enable = {
+				}
+				Flow = {
+					Value = "script/custom_flows/Open_Vignette"
+				}
+				Id = "0ae78971-db2c-4799-ba4b-4b0fbba6096b"
+				InEvents = [
+					"Start"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = -100
+					Y = 0
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				Title = "Flow Subroutine"
+				Width = 160
+			}
+		]
+	}
+	Groups = [
+	]
+	Layers = [
+		"Default"
+		"Background"
+	]
+	LevelObjectSets = {
+		NestedSetNamesBySetName = {
+		}
+		ObjectIdsBySetName = {
+		}
+		VisibleSetNames = [
+		]
+	}
+	LevelReferences = [
+	]
+	LightBakeSettings = {
+		Baker = "Beast"
+		ExcludedObjectSets = [
+		]
+		FilterGain = 20
+		FilterType = "Both"
+		IlluminationType = "Both"
+		Layers = [
+		]
+		LightmapType = "Standard"
+		MaxSamples = 96
+		MinSamples = 32
+		QualityPreset = "Low"
+		SkylightIntensityRGB = {
+			X = 1
+			Y = 1
+			Z = 1
+		}
+		TexelScale = 10
+		TotalPasses = 256
+		Variance = 0.5
+	}
+	LuaPluginObjects = [
+	]
+	Navmeshes = [
+	]
+	Notes = [
+	]
+	ParticleEffects = [
+	]
+	PositionMarkers = [
+	]
+	Prototypes = [
+	]
+	Scatter = {
+		PoolSettings = {
+		}
+		ScatterData = {
+		}
+	}
+	Settings = {
+		FrozenLayers = [
+			"Background"
+		]
+		HiddenLayers = [
+		]
+		HiddenObjects = [
+		]
+		LastHiddenObjects = [
+		]
+		SoundEnvironment = ""
+		TimpaniSoundEnvironment = "default"
+	}
+	Sounds = [
+	]
+	Splines = [
+	]
+	Stories = [
+	]
+	Triggers = [
+	]
+	Units = [
+		{
+			Cameras = {
+			}
+			Id = "cfc93e95-46af-454b-8578-d261f49962b9"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = false
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = true
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 4
+					Material = ""
+					MaterialResource = ""
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "directional"
+				}
+			}
+			Material = "core/units/light_source"
+			Materials = {
+			}
+			Name = "Sun Light"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 5
+			}
+			Rot = {
+				W = 0.5
+				X = -0.707106781186547
+				Y = -2.77555756156289E-17
+				Z = 0.5
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a5d858f9-17e0-468a-abe8-901667ec4cd6"
+			Layer = "Background"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Skydome"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Rot = {
+				W = 1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/editor_slave/units/skydome/skydome"
+		}
+	]
+	Volumes = [
+	]
+}
+entities = [
+	{
+		id = "51b6319d-65c0-4075-9b28-29cf3a71a11d"
+		name = "Default Shading Environment"
+		prefab = {
+			"$resource_name" = "core/stingray_renderer/environments/midday/midday_shading_environment"
+			"$resource_type" = "entity"
+		}
+	}
+]
+flow = {
+	nodes = [
+		{
+			id = "6fa48cd1-5247-4fb0-a48c-b0edb5cba0f4"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "c8840502-1778-40e1-9e7e-2e86e84492f9:0"
+						node = "c8840502-1778-40e1-9e7e-2e86e84492f9"
+					}
+					{
+						event = 0
+						id = "833c639b-891d-44a8-bf28-258badf79c46:0"
+						node = "833c639b-891d-44a8-bf28-258badf79c46"
+					}
+				]
+			}
+			type = "level_loaded"
+		}
+		{
+			id = "833c639b-891d-44a8-bf28-258badf79c46"
+			in_variables = {
+				time = {
+					type = "float"
+				}
+			}
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "029a73b1-b8fe-4570-b9ad-43038ee3554c:0"
+						node = "029a73b1-b8fe-4570-b9ad-43038ee3554c"
+					}
+					{
+						event = 0
+						id = "dd5c6f55-584f-4fae-97be-1d3a6db8b971:0"
+						node = "dd5c6f55-584f-4fae-97be-1d3a6db8b971"
+					}
+				]
+			}
+			type = "delay"
+			variable_values = {
+				time = 5
+			}
+		}
+		{
+			id = "c8840502-1778-40e1-9e7e-2e86e84492f9"
+			in_event_index = [
+				"Start"
+			]
+			out_event_index = [
+			]
+			type = "flow_subroutine"
+			variable_values = {
+				flow = "script/custom_flows/Close_Vignette"
+			}
+		}
+		{
+			id = "029a73b1-b8fe-4570-b9ad-43038ee3554c"
+			in_event_index = [
+				"Start"
+			]
+			out_event_index = [
+			]
+			type = "flow_subroutine"
+			variable_values = {
+				flow = "script/custom_flows/Open_Vignette"
+			}
+		}
+		{
+			id = "dd5c6f55-584f-4fae-97be-1d3a6db8b971"
+			in_variables = {
+				time = {
+					type = "float"
+				}
+			}
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "d4da240e-4802-4344-809e-d08dc260d835:0"
+						node = "d4da240e-4802-4344-809e-d08dc260d835"
+					}
+					{
+						event = 0
+						id = "eb5e50ef-1a70-4ec0-a63c-a21641fb908b:0"
+						node = "eb5e50ef-1a70-4ec0-a63c-a21641fb908b"
+					}
+				]
+			}
+			type = "delay"
+			variable_values = {
+				time = 5
+			}
+		}
+		{
+			id = "d4da240e-4802-4344-809e-d08dc260d835"
+			in_event_index = [
+				"Start"
+			]
+			out_event_index = [
+			]
+			type = "flow_subroutine"
+			variable_values = {
+				flow = "script/custom_flows/Close_Vignette"
+			}
+		}
+		{
+			id = "eb5e50ef-1a70-4ec0-a63c-a21641fb908b"
+			in_variables = {
+				time = {
+					type = "float"
+				}
+			}
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "0ae78971-db2c-4799-ba4b-4b0fbba6096b:0"
+						node = "0ae78971-db2c-4799-ba4b-4b0fbba6096b"
+					}
+				]
+			}
+			type = "delay"
+			variable_values = {
+				time = 5
+			}
+		}
+		{
+			id = "0ae78971-db2c-4799-ba4b-4b0fbba6096b"
+			in_event_index = [
+				"Start"
+			]
+			out_event_index = [
+			]
+			type = "flow_subroutine"
+			variable_values = {
+				flow = "script/custom_flows/Open_Vignette"
+			}
+		}
+	]
+}
+level_references = [
+]
+level_settings = {
+	num_background_units = 0
+	sound_environment = ""
+	timpani_sound_environment = "default"
+}
+navmeshes = [
+]
+object_sets = {
+}
+particle_effects = [
+]
+prototypes = [
+]
+scatter = [
+]
+sounds = [
+]
+splines = [
+]
+stories = [
+]
+triggers = [
+]
+units = [
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "cfc93e95-46af-454b-8578-d261f49962b9"
+		lights = {
+			light = {
+				baked = false
+				box_max = [
+					10
+					10
+					10
+				]
+				box_min = [
+					-10
+					0
+					-10
+				]
+				cast_shadows = true
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 4
+				material = ""
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "directional"
+			}
+		}
+		material = "core/units/light_source"
+		materials = {
+		}
+		name = "Sun Light"
+		pos = [
+			0
+			0
+			5
+		]
+		rot = [
+			-0.707106781186547
+			-2.77555756156289E-17
+			0.5
+			0.5
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a5d858f9-17e0-468a-abe8-901667ec4cd6"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Skydome"
+		pos = [
+			0
+			0
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/editor_slave/units/skydome/skydome"
+	}
+]
+volumes = [
+]

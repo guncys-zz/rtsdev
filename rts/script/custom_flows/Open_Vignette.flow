@@ -1,10 +1,10 @@
 
 nodes = [
 	{
-		id = "236126d9-67c2-412e-8445-e6f14e8e131a"
+		id = "f2e66278-0288-4acb-89d3-ad5b559e8d37"
 		in_variables = {
 			condition = {
-				node = "52b95078-0ba9-4586-8514-bd433433cd5b"
+				node = "aeabe3c7-cad7-4085-9260-b28648e0c9ae"
 				type = "bool"
 				variable = "bool"
 			}
@@ -13,8 +13,8 @@ nodes = [
 			true = [
 				{
 					event = 0
-					id = "37e443d2-4fc6-4315-8c48-21bf6b38a299:0"
-					node = "37e443d2-4fc6-4315-8c48-21bf6b38a299"
+					id = "643f6c6c-a279-4683-8ccd-c8d51b8ed0cd:0"
+					node = "643f6c6c-a279-4683-8ccd-c8d51b8ed0cd"
 				}
 			]
 		}
@@ -24,7 +24,7 @@ nodes = [
 		}
 	}
 	{
-		id = "64c04f7e-e487-4146-bfbf-383b8b9091fe"
+		id = "c4ff313d-752f-403f-9c3a-2d03c910cdca"
 		in_variables = {
 			bool = {
 				type = "bool"
@@ -44,20 +44,20 @@ nodes = [
 		}
 	}
 	{
-		id = "b56af783-5301-4946-82bc-a1ac28425423"
+		id = "68fe6fc8-b854-4931-af29-01552a3dea98"
 		out_events = {
 			out = [
 				{
 					event = 0
-					id = "236126d9-67c2-412e-8445-e6f14e8e131a:0"
-					node = "236126d9-67c2-412e-8445-e6f14e8e131a"
+					id = "f2e66278-0288-4acb-89d3-ad5b559e8d37:0"
+					node = "f2e66278-0288-4acb-89d3-ad5b559e8d37"
 				}
 			]
 		}
 		type = "level_update"
 	}
 	{
-		id = "52b95078-0ba9-4586-8514-bd433433cd5b"
+		id = "aeabe3c7-cad7-4085-9260-b28648e0c9ae"
 		in_variables = {
 			name = {
 				type = "string"
@@ -79,7 +79,7 @@ nodes = [
 		}
 	}
 	{
-		id = "1bdef812-9631-418b-b355-4756636a72e6"
+		id = "dad76090-5be5-4f00-aeba-88023e021668"
 		out_variables = {
 			value = {
 				type = "float"
@@ -87,16 +87,16 @@ nodes = [
 		}
 		type = "numeric_data"
 		variable_values = {
-			set = 1
+			set = 0
 			value = null
 		}
 	}
 	{
 		flow_nodes_resource = "script/custom_nodes/environment"
-		id = "17423433-ece6-47d3-bc1a-2101e63d1738"
+		id = "62454fe0-5a37-43d0-a3cd-499d018d1d68"
 		in_variables = {
 			Radius = {
-				node = "1bdef812-9631-418b-b355-4756636a72e6"
+				node = "dad76090-5be5-4f00-aeba-88023e021668"
 				type = "float"
 				variable = "value"
 			}
@@ -118,20 +118,20 @@ nodes = [
 	}
 	{
 		flow_nodes_resource = "script/custom_nodes/environment"
-		id = "37e443d2-4fc6-4315-8c48-21bf6b38a299"
+		id = "643f6c6c-a279-4683-8ccd-c8d51b8ed0cd"
 		in_variables = {
 			Change = {
-				node = "bd741a47-c6fb-4d44-a349-a585cbd2a3d3"
+				node = "9ce86b05-0c4d-4385-a4ba-b6b2d0275e07"
 				type = "float"
 				variable = "value"
 			}
 			Max = {
-				node = "b274ab89-ba54-474a-a636-62e50a97d6bf"
+				node = "19342250-7caf-46fb-89c4-4cda7af743d6"
 				type = "float"
 				variable = "value"
 			}
 			Min = {
-				node = "432347bb-9db7-4cb8-aeff-06af9a4d8188"
+				node = "8bf7dfc9-8bb4-44a7-8602-98338f8de15f"
 				type = "float"
 				variable = "value"
 			}
@@ -141,8 +141,8 @@ nodes = [
 			Out = [
 				{
 					event = 0
-					id = "d45006c8-03b8-4385-8d40-af42c199d870:0"
-					node = "d45006c8-03b8-4385-8d40-af42c199d870"
+					id = "fc75ef5c-b903-4bcb-8d8f-cfd7b040f7a3:0"
+					node = "fc75ef5c-b903-4bcb-8d8f-cfd7b040f7a3"
 				}
 			]
 		}
@@ -181,7 +181,7 @@ nodes = [
 		]
 	}
 	{
-		id = "b274ab89-ba54-474a-a636-62e50a97d6bf"
+		id = "19342250-7caf-46fb-89c4-4cda7af743d6"
 		out_variables = {
 			value = {
 				type = "float"
@@ -194,7 +194,7 @@ nodes = [
 		}
 	}
 	{
-		id = "432347bb-9db7-4cb8-aeff-06af9a4d8188"
+		id = "8bf7dfc9-8bb4-44a7-8602-98338f8de15f"
 		out_variables = {
 			value = {
 				type = "float"
@@ -207,7 +207,7 @@ nodes = [
 		}
 	}
 	{
-		id = "caa84c22-2caa-41e3-8e14-75de30c63a1c"
+		id = "4434f1cf-87bd-45f2-9642-6d08189d076c"
 		out_variables = {
 			value = {
 				type = "float"
@@ -215,12 +215,12 @@ nodes = [
 		}
 		type = "numeric_data"
 		variable_values = {
-			set = -1
+			set = 1
 			value = null
 		}
 	}
 	{
-		id = "e2cf1d22-3ca6-41a3-9c9b-f4fef39a33cb"
+		id = "a822c05a-3f06-4dd4-a93f-d75bc4e468d3"
 		out_variables = {
 			time = {
 				type = "float"
@@ -232,15 +232,15 @@ nodes = [
 		}
 	}
 	{
-		id = "bd741a47-c6fb-4d44-a349-a585cbd2a3d3"
+		id = "9ce86b05-0c4d-4385-a4ba-b6b2d0275e07"
 		in_variables = {
 			a = {
-				node = "caa84c22-2caa-41e3-8e14-75de30c63a1c"
+				node = "4434f1cf-87bd-45f2-9642-6d08189d076c"
 				type = "float"
 				variable = "value"
 			}
 			b = {
-				node = "e2cf1d22-3ca6-41a3-9c9b-f4fef39a33cb"
+				node = "a822c05a-3f06-4dd4-a93f-d75bc4e468d3"
 				type = "float"
 				variable = "time"
 			}
@@ -258,83 +258,10 @@ nodes = [
 		}
 	}
 	{
-		id = "8f2b864c-e12f-4fe2-aab7-955fd2a6c281"
-		out_events = {
-			out = [
-				{
-					event = 0
-					id = "17423433-ece6-47d3-bc1a-2101e63d1738:0"
-					node = "17423433-ece6-47d3-bc1a-2101e63d1738"
-				}
-				{
-					event = 0
-					id = "64c04f7e-e487-4146-bfbf-383b8b9091fe:0"
-					node = "64c04f7e-e487-4146-bfbf-383b8b9091fe"
-				}
-			]
-		}
-		type = "external_event"
-		variable_values = {
-			event_name = "Start"
-		}
-	}
-	{
-		id = "3604c905-546d-4e90-9c63-022b1d6c32f2"
-		in_variables = {
-			label = {
-				type = "string"
-			}
-			text = {
-				type = "string"
-			}
-		}
-		type = "debug_print"
-		variable_values = {
-			label = "close started"
-			text = null
-		}
-	}
-	{
-		id = "5ad45b7e-e01b-4dac-aa70-b40530e1b8f2"
-		in_variables = {
-			label = {
-				type = "string"
-			}
-			text = {
-				node = "dd21e80f-7ff0-4a27-a188-fec578c220dc"
-				type = "string"
-				variable = "value"
-			}
-		}
-		type = "debug_print"
-		variable_values = {
-			label = "rad"
-			text = null
-		}
-	}
-	{
-		id = "dd21e80f-7ff0-4a27-a188-fec578c220dc"
-		in_variables = {
-			numeric = {
-				type = "float"
-			}
-		}
-		out_variables = {
-			value = {
-				type = "string"
-			}
-		}
-		type = "numeric_to_string"
-		variable_values = {
-			numeric = null
-			value = null
-		}
-	}
-	{
-		id = "d45006c8-03b8-4385-8d40-af42c199d870"
+		id = "fc75ef5c-b903-4bcb-8d8f-cfd7b040f7a3"
 		in_variables = {
 			condition = {
-				node = "37e443d2-4fc6-4315-8c48-21bf6b38a299"
+				node = "643f6c6c-a279-4683-8ccd-c8d51b8ed0cd"
 				type = "bool"
 				variable = "Finished"
 			}
@@ -343,8 +270,8 @@ nodes = [
 			true = [
 				{
 					event = 0
-					id = "f900e5e8-5d4a-41ed-94af-5863c02d5a28:0"
-					node = "f900e5e8-5d4a-41ed-94af-5863c02d5a28"
+					id = "93ddb78a-d66f-4349-a9f7-4dab03613d41:0"
+					node = "93ddb78a-d66f-4349-a9f7-4dab03613d41"
 				}
 			]
 		}
@@ -354,7 +281,7 @@ nodes = [
 		}
 	}
 	{
-		id = "f900e5e8-5d4a-41ed-94af-5863c02d5a28"
+		id = "93ddb78a-d66f-4349-a9f7-4dab03613d41"
 		in_variables = {
 			bool = {
 				type = "bool"
@@ -371,6 +298,79 @@ nodes = [
 			bool = false
 			name = "StageChange"
 			scope = "local"
+		}
+	}
+	{
+		id = "839161d0-59c8-483a-b283-88fb9afd5f47"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "62454fe0-5a37-43d0-a3cd-499d018d1d68:0"
+					node = "62454fe0-5a37-43d0-a3cd-499d018d1d68"
+				}
+				{
+					event = 0
+					id = "c4ff313d-752f-403f-9c3a-2d03c910cdca:0"
+					node = "c4ff313d-752f-403f-9c3a-2d03c910cdca"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "Start"
+		}
+	}
+	{
+		id = "6cb1ca6e-b1fc-4723-b422-9388b40a74d3"
+		in_variables = {
+			label = {
+				type = "string"
+			}
+			text = {
+				type = "string"
+			}
+		}
+		type = "debug_print"
+		variable_values = {
+			label = "close started"
+			text = null
+		}
+	}
+	{
+		id = "422dba14-356e-41d7-9883-61af4ad7f7f3"
+		in_variables = {
+			label = {
+				type = "string"
+			}
+			text = {
+				node = "81c61a21-8d64-4301-8141-9b66744c6e86"
+				type = "string"
+				variable = "value"
+			}
+		}
+		type = "debug_print"
+		variable_values = {
+			label = "rad"
+			text = null
+		}
+	}
+	{
+		id = "81c61a21-8d64-4301-8141-9b66744c6e86"
+		in_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "string"
+			}
+		}
+		type = "numeric_to_string"
+		variable_values = {
+			numeric = null
+			value = null
 		}
 	}
 	{
