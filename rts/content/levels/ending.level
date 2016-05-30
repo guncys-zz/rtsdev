@@ -5,16 +5,78 @@ editor_metadata = {
 			id = "92f70595-4e6a-4e55-82a8-2b15fdb17437"
 			layer = "Default"
 			modified_components = {
+				"04d5202f-c4cb-45b5-8e0f-4c5605fb7533" = {
+					data = {
+						color_grading_enabled = true
+						color_grading_map = {
+							"$resource_name" = "content/lut/color_grading_identity_stage4"
+							"$resource_type" = "texture"
+						}
+					}
+				}
+				"06c78e06-c921-4208-8069-d377b6415d30" = {
+					data = {
+						fog_color = {
+							rgb = [
+								0.574018965107237
+								0.755224796760961
+								0.770031559063209
+							]
+						}
+						fog_depth_range = [
+							0
+							1200
+						]
+						fog_sun_blend = 1
+						fog_sun_exponent = 4
+					}
+				}
 				"3eb1ba63-3a53-4846-970b-57e3d4d75d2b" = {
 					data = {
 						baked_diffuse_tint = {
-							intensity = 1.5
+							intensity = 1.05
+							rgb = [
+								0.254649852254742
+								0.766081658553127
+								0.973789927569461
+							]
 						}
 						global_diffuse_map = {
 							"$resource_name" = "content/models/shots/OP/lighting/diffuse_interior"
 							"$resource_type" = "texture"
 						}
-						skydome_intensity = 3
+						reflections_tint = {
+							rgb = [
+								0.549921800787772
+								0.848196079624052
+								1
+							]
+						}
+						skydome_intensity = 0.7
+					}
+				}
+				"68333c83-9659-4d2e-b664-35790e366f08" = {
+					data = {
+						exposure = 1.4
+					}
+				}
+				"778c5da5-eaa2-4a5f-951f-8c8bf13a2a6e" = {
+					data = {
+						dof_enabled = true
+						dof_focal_distance = 1
+						dof_focal_region = 20
+						dof_focal_region_end = 50
+						dof_focal_region_start = 1
+					}
+				}
+				"a9f83eb8-b54a-4c45-bf62-4fe7e02a8ce4" = {
+					data = {
+						ao_enabled = false
+					}
+				}
+				"fd909d00-3e4d-4339-b1a9-784c7d6a60ad" = {
+					data = {
+						bloom_falloff = 0.5
 					}
 				}
 			}
@@ -131,8 +193,37 @@ editor_metadata = {
 				ToItem = "In"
 				ToNode = "528ea9cc-3f63-463e-9cd7-3a6a528abd76"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Touched"
+				FromNode = "21cad230-6ce8-4130-926d-43982b3a2e06"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "f2f90edd-3271-4598-b18b-7fe15f9db1e8"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "f2f90edd-3271-4598-b18b-7fe15f9db1e8"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "dc1a64aa-526f-4599-8778-3ced70ab902f"
+			}
 		]
 		Groups = [
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "7af70d30-0625-4a54-8442-e008d99ff109"
+				Nodes = [
+					"21cad230-6ce8-4130-926d-43982b3a2e06"
+					"f2f90edd-3271-4598-b18b-7fe15f9db1e8"
+					"dc1a64aa-526f-4599-8778-3ced70ab902f"
+					"f09375bf-3324-4087-b519-df23d5bc1423"
+				]
+				Title = "ぱぴこが噴水の上に着地してから数秒後、EDクレジット開始"
+			}
 		]
 		Nodes = [
 			{
@@ -593,6 +684,89 @@ editor_metadata = {
 				]
 				Width = 160
 			}
+			{
+				Brief = "Fires an event when a physics actor touches the trigger volume. Returns touching actor and touching unit."
+				Class = "Stingray.Foundation.Flow.Trigger"
+				Disable = {
+				}
+				Enable = {
+				}
+				Id = "21cad230-6ce8-4130-926d-43982b3a2e06"
+				NodeLocation = {
+					X = -260
+					Y = 1060
+				}
+				Shape = {
+					Id = "20f17b57-9750-491b-9029-699f300cd363"
+				}
+				Title = "Trigger"
+				Touched = {
+				}
+				TouchingActor = {
+				}
+				TouchingUnit = {
+				}
+				Untouched = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Inserts a delay in evaluation by the specified numeric value."
+				Class = "Stingray.Foundation.Flow.Delay"
+				Id = "f2f90edd-3271-4598-b18b-7fe15f9db1e8"
+				In = {
+				}
+				NodeLocation = {
+					X = -60
+					Y = 1100
+				}
+				Out = {
+				}
+				Time = {
+					Value = 6
+				}
+				Title = "Delay"
+				Width = 160
+			}
+			{
+				Arguments = [
+				]
+				Brief = ""
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "script/custom_nodes/credits"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "f09375bf-3324-4087-b519-df23d5bc1423"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Credits"
+				NodeLocation = {
+					X = 480
+					Y = 1100
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
+			{
+				Brief = "Fires an event only once and ceases execution until the level is reloaded."
+				Class = "Stingray.Foundation.Flow.Once"
+				Id = "dc1a64aa-526f-4599-8778-3ced70ab902f"
+				In = {
+				}
+				NodeLocation = {
+					X = 140
+					Y = 1100
+				}
+				Out = {
+				}
+				Title = "Once"
+				Width = 160
+			}
 		]
 	}
 	Groups = [
@@ -615,21 +789,21 @@ editor_metadata = {
 		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
-		FilterGain = 20
-		FilterType = "Both"
-		IlluminationType = "Both"
+		FilterGain = 40
+		FilterType = "Indirect"
+		IlluminationType = "Indirect"
 		Layers = [
 		]
 		LightmapType = "Standard"
-		MaxSamples = 96
+		MaxSamples = 500
 		MinSamples = 32
-		QualityPreset = "Low"
+		QualityPreset = "Custom"
 		SkylightIntensityRGB = {
 			X = 1
 			Y = 1
 			Z = 1
 		}
-		TexelScale = 10
+		TexelScale = 5
 		TotalPasses = 256
 		Variance = 0.5
 	}
@@ -671,6 +845,39 @@ editor_metadata = {
 	Stories = [
 	]
 	Triggers = [
+		{
+			ActorTemplate = "static"
+			Id = "20f17b57-9750-491b-9029-699f300cd363"
+			Layer = "Default"
+			Name = "trigger"
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.076814
+				Y = 0.048784
+				Z = 5.562361
+			}
+			Radius = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			Rot = {
+				W = 1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ShapeTemplate = "trigger"
+		}
 	]
 	Units = [
 		{
@@ -694,14 +901,14 @@ editor_metadata = {
 					CastShadows = true
 					Color = {
 						A = 255
-						B = 255
-						G = 255
+						B = 48
+						G = 80
 						R = 255
 					}
 					Enabled = true
 					FalloffEnd = 8
 					FalloffStart = 0
-					Intensity = 4
+					Intensity = 3.5
 					Material = ""
 					MaterialResource = ""
 					ShadowDepthBias = 0.4
@@ -727,10 +934,10 @@ editor_metadata = {
 				Z = 5
 			}
 			Rot = {
-				W = 0.5
-				X = -0.707106781186547
-				Y = -2.77555756156289E-17
-				Z = 0.5
+				W = 0.265418
+				X = -0.631703
+				Y = 0.037987
+				Z = 0.727366
 			}
 			Scl = {
 				X = 1
@@ -1038,6 +1245,7 @@ editor_metadata = {
 			Lights = {
 			}
 			Materials = {
+				ED_load_lambert = "content/models/shots/ED/load/ED_ground2"
 			}
 			Name = "load"
 			OverridePoses = {
@@ -1075,6 +1283,7 @@ editor_metadata = {
 			Lights = {
 			}
 			Materials = {
+				ED_wall_lambert2 = "content/models/shots/ED/wall/ED_wall2"
 			}
 			Name = "wall"
 			OverridePoses = {
@@ -5470,6 +5679,79 @@ editor_metadata = {
 			}
 			Type = "content/models/stage4/Building_01_Green"
 		}
+		{
+			Cameras = {
+			}
+			Id = "0ed3532a-934c-4969-85e3-520364555e40"
+			Layer = "Default"
+			Lights = {
+				probe = {
+					Baked = false
+					BoxMax = {
+						X = 50
+						Y = 50
+						Z = 50
+					}
+					BoxMin = {
+						X = -50
+						Y = -50
+						Z = -40
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1
+					Material = ""
+					MaterialResource = "content/levels/ending-cubemaps/reflection_probe_bake"
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "box"
+				}
+			}
+			Materials = {
+			}
+			Name = "reflection_probe"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.009529
+				Y = 0.140957
+				Z = 4.28417
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"probe.trace_box_max[0]" = 50
+				"probe.trace_box_max[1]" = 50
+				"probe.trace_box_max[2]" = 50
+				"probe.trace_box_min[0]" = -50
+				"probe.trace_box_min[1]" = -50
+				"probe.trace_box_min[2]" = -40
+			}
+			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+		}
 	]
 	Volumes = [
 	]
@@ -5478,16 +5760,78 @@ entities = [
 	{
 		id = "92f70595-4e6a-4e55-82a8-2b15fdb17437"
 		modified_components = {
+			"04d5202f-c4cb-45b5-8e0f-4c5605fb7533" = {
+				data = {
+					color_grading_enabled = true
+					color_grading_map = {
+						"$resource_name" = "content/lut/color_grading_identity_stage4"
+						"$resource_type" = "texture"
+					}
+				}
+			}
+			"06c78e06-c921-4208-8069-d377b6415d30" = {
+				data = {
+					fog_color = {
+						rgb = [
+							0.574018965107237
+							0.755224796760961
+							0.770031559063209
+						]
+					}
+					fog_depth_range = [
+						0
+						1200
+					]
+					fog_sun_blend = 1
+					fog_sun_exponent = 4
+				}
+			}
 			"3eb1ba63-3a53-4846-970b-57e3d4d75d2b" = {
 				data = {
 					baked_diffuse_tint = {
-						intensity = 1.5
+						intensity = 1.05
+						rgb = [
+							0.254649852254742
+							0.766081658553127
+							0.973789927569461
+						]
 					}
 					global_diffuse_map = {
 						"$resource_name" = "content/models/shots/OP/lighting/diffuse_interior"
 						"$resource_type" = "texture"
 					}
-					skydome_intensity = 3
+					reflections_tint = {
+						rgb = [
+							0.549921800787772
+							0.848196079624052
+							1
+						]
+					}
+					skydome_intensity = 0.7
+				}
+			}
+			"68333c83-9659-4d2e-b664-35790e366f08" = {
+				data = {
+					exposure = 1.4
+				}
+			}
+			"778c5da5-eaa2-4a5f-951f-8c8bf13a2a6e" = {
+				data = {
+					dof_enabled = true
+					dof_focal_distance = 1
+					dof_focal_region = 20
+					dof_focal_region_end = 50
+					dof_focal_region_start = 1
+				}
+			}
+			"a9f83eb8-b54a-4c45-bf62-4fe7e02a8ce4" = {
+				data = {
+					ao_enabled = false
+				}
+			}
+			"fd909d00-3e4d-4339-b1a9-784c7d6a60ad" = {
+				data = {
+					bloom_falloff = 0.5
 				}
 			}
 		}
@@ -5904,6 +6248,85 @@ flow = {
 				}
 			]
 		}
+		{
+			id = "21cad230-6ce8-4130-926d-43982b3a2e06"
+			out_events = {
+				touched = [
+					{
+						event = 0
+						id = "f2f90edd-3271-4598-b18b-7fe15f9db1e8:0"
+						node = "f2f90edd-3271-4598-b18b-7fe15f9db1e8"
+					}
+				]
+			}
+			type = "trigger"
+			variable_values = {
+				shape = {
+					actor_template = "static"
+					id = "20f17b57-9750-491b-9029-699f300cd363"
+					pos = [
+						0.076814
+						0.048784
+						5.562361
+					]
+					radius = [
+						1
+						1
+						1
+					]
+					rot = [
+						0
+						0
+						0
+						1
+					]
+					scale = [
+						1
+						1
+						1
+					]
+					shape_template = "trigger"
+				}
+				touching_actor = null
+				touching_unit = null
+			}
+		}
+		{
+			id = "f2f90edd-3271-4598-b18b-7fe15f9db1e8"
+			in_variables = {
+				time = {
+					type = "float"
+				}
+			}
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "dc1a64aa-526f-4599-8778-3ced70ab902f:0"
+						node = "dc1a64aa-526f-4599-8778-3ced70ab902f"
+					}
+				]
+			}
+			type = "delay"
+			variable_values = {
+				time = 6
+			}
+		}
+		{
+			flow_nodes_resource = "script/custom_nodes/credits"
+			id = "f09375bf-3324-4087-b519-df23d5bc1423"
+			name = "Credits"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variables = [
+			]
+		}
+		{
+			id = "dc1a64aa-526f-4599-8778-3ced70ab902f"
+			type = "once"
+		}
 	]
 }
 level_references = [
@@ -5930,6 +6353,32 @@ splines = [
 stories = [
 ]
 triggers = [
+	{
+		actor_template = "static"
+		id = "20f17b57-9750-491b-9029-699f300cd363"
+		pos = [
+			0.076814
+			0.048784
+			5.562361
+		]
+		radius = [
+			1
+			1
+			1
+		]
+		rot = [
+			0
+			0
+			0
+			1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		shape_template = "trigger"
+	}
 ]
 units = [
 	{
@@ -5954,13 +6403,13 @@ units = [
 				cast_shadows = true
 				color = [
 					1
-					1
-					1
+					0.313725490196078
+					0.188235294117647
 				]
 				enabled = true
 				falloff_end = 8
 				falloff_start = 0
-				intensity = 4
+				intensity = 3.5
 				material = ""
 				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
@@ -5978,10 +6427,10 @@ units = [
 			5
 		]
 		rot = [
-			-0.707106781186547
-			-2.77555756156289E-17
-			0.5
-			0.5
+			-0.631703
+			0.037987
+			0.727366
+			0.265418
 		]
 		scl = [
 			1
@@ -6237,6 +6686,7 @@ units = [
 		}
 		material = ""
 		materials = {
+			ED_load_lambert = "content/models/shots/ED/load/ED_ground2"
 		}
 		name = "load"
 		pos = [
@@ -6267,6 +6717,7 @@ units = [
 		}
 		material = ""
 		materials = {
+			ED_wall_lambert2 = "content/models/shots/ED/wall/ED_wall2"
 		}
 		name = "wall"
 		pos = [
@@ -9826,6 +10277,70 @@ units = [
 			3
 		]
 		type = "content/models/stage4/Building_01_Green"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"probe.trace_box_max[0]" = 50
+			"probe.trace_box_max[1]" = 50
+			"probe.trace_box_max[2]" = 50
+			"probe.trace_box_min[0]" = -50
+			"probe.trace_box_min[1]" = -50
+			"probe.trace_box_min[2]" = -40
+		}
+		id = "0ed3532a-934c-4969-85e3-520364555e40"
+		lights = {
+			probe = {
+				baked = false
+				box_max = [
+					50
+					50
+					50
+				]
+				box_min = [
+					-50
+					-50
+					-40
+				]
+				cast_shadows = false
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1
+				material = "content/levels/ending-cubemaps/reflection_probe_bake"
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "box"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "reflection_probe"
+		pos = [
+			0.009529
+			0.140957
+			4.28417
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
 	}
 ]
 volumes = [

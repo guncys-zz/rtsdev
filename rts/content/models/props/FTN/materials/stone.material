@@ -288,18 +288,6 @@ shader = {
 		}
 		{
 			destination = {
-				connector_id = "4cbb4480-79e8-4ce7-ac0f-8b09baf12390"
-				instance_id = "4480f32a-9f95-4bee-8f67-f5567221534d"
-			}
-			select = [
-				"rgb"
-			]
-			source = {
-				instance_id = "20461e9a-8cc0-4af3-a588-22191cc9cfcd"
-			}
-		}
-		{
-			destination = {
 				connector_id = "cdc83a63-3365-4c10-9353-79ff5f2fd1f0"
 				instance_id = "e3c34855-d3da-458f-be40-ea6ba31151de"
 			}
@@ -332,6 +320,27 @@ shader = {
 			}
 			source = {
 				instance_id = "e3c34855-d3da-458f-be40-ea6ba31151de"
+			}
+		}
+		{
+			destination = {
+				connector_id = "c5823c75-4ae5-4c71-b070-315fa4d03e8e"
+				instance_id = "564a8bc8-0771-4d27-9556-3e33f2867ada"
+			}
+			source = {
+				instance_id = "20461e9a-8cc0-4af3-a588-22191cc9cfcd"
+			}
+		}
+		{
+			destination = {
+				connector_id = "4cbb4480-79e8-4ce7-ac0f-8b09baf12390"
+				instance_id = "4480f32a-9f95-4bee-8f67-f5567221534d"
+			}
+			select = [
+				"rgb"
+			]
+			source = {
+				instance_id = "564a8bc8-0771-4d27-9556-3e33f2867ada"
 			}
 		}
 	]
@@ -389,6 +398,17 @@ shader = {
 			id = "a333d901-0d47-4f7c-b9b0-e40a721126d7"
 			instance_id = "4480f32a-9f95-4bee-8f67-f5567221534d"
 			value = [
+				1
+			]
+		}
+		{
+			connector_id = "242d1648-a626-445b-9534-bccec094112f"
+			id = "3da0ad45-8d01-40eb-ad46-d6400495edaf"
+			instance_id = "564a8bc8-0771-4d27-9556-3e33f2867ada"
+			value = [
+				0.5
+				0.5
+				0.5
 				1
 			]
 		}
@@ -654,7 +674,7 @@ shader = {
 			options = [
 			]
 			position = [
-				440
+				520
 				-460
 			]
 			samplers = {
@@ -676,8 +696,8 @@ shader = {
 				"fb3f709b-a54a-4e93-ac9f-e9fc76fb8bcd"
 			]
 			position = [
-				440
-				-400
+				240
+				-380
 			]
 			samplers = {
 				texture_map = {
@@ -1259,6 +1279,24 @@ shader = {
 			}
 			type = "core/shader_nodes/lerp"
 		}
+		{
+			content_size = [
+				160
+				0
+			]
+			export = {
+			}
+			id = "564a8bc8-0771-4d27-9556-3e33f2867ada"
+			options = [
+			]
+			position = [
+				480
+				-380
+			]
+			samplers = {
+			}
+			type = "core/shader_nodes/mul"
+		}
 	]
 	version = 3
 }
@@ -1274,9 +1312,9 @@ variables = {
 	base_color = {
 		type = "vector3"
 		value = [
-			1
-			1
-			1
+			0.1
+			0.0387
+			0.0387
 		]
 	}
 	emissive = {
@@ -1298,18 +1336,18 @@ variables = {
 	mix_color = {
 		type = "vector3"
 		value = [
-			1
-			0.508474576271187
-			0
+			0.775
+			0.465
+			0.465
 		]
 	}
 	mix_weight = {
 		type = "scalar"
-		value = 0.244
+		value = 0.185
 	}
 	roughness = {
 		type = "scalar"
-		value = 0.3
+		value = 0.6
 	}
 	use_ao_map = {
 		type = "scalar"

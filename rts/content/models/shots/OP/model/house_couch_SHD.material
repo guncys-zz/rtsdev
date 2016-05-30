@@ -165,15 +165,6 @@ shader = {
 		}
 		{
 			destination = {
-				connector_id = "aca690cb-6305-4a2f-bf3d-69183a493db3"
-				instance_id = "f8bf5438-b06f-4d56-ae0c-e4abd31c1dc1"
-			}
-			source = {
-				instance_id = "4480f32a-9f95-4bee-8f67-f5567221534d"
-			}
-		}
-		{
-			destination = {
 				connector_id = "b1c86408-aacb-4466-b754-ddcf37a3a2c8"
 				instance_id = "f8bf5438-b06f-4d56-ae0c-e4abd31c1dc1"
 			}
@@ -532,6 +523,15 @@ shader = {
 				instance_id = "787613f2-aa99-4afb-b2d2-483321c6911a"
 			}
 		}
+		{
+			destination = {
+				connector_id = "aca690cb-6305-4a2f-bf3d-69183a493db3"
+				instance_id = "f8bf5438-b06f-4d56-ae0c-e4abd31c1dc1"
+			}
+			source = {
+				instance_id = "4480f32a-9f95-4bee-8f67-f5567221534d"
+			}
+		}
 	]
 	constants = [
 		{
@@ -800,7 +800,7 @@ shader = {
 				"9a84282b-f1a2-46d4-9fc4-5a76fc9b30dd"
 			]
 			position = [
-				1020
+				1040
 				1100
 			]
 			samplers = {
@@ -1926,14 +1926,14 @@ variables = {
 	}
 	emissive_intensity = {
 		type = "scalar"
-		value = 0.1
+		value = 0
 	}
 	material_variable_d36682b3 = {
 		type = "vector3"
 		value = [
 			1
-			0.842373204826529
-			0.575
+			0.843137254901961
+			0.533
 		]
 	}
 	metallic = {
@@ -1942,7 +1942,7 @@ variables = {
 	}
 	roughness = {
 		type = "scalar"
-		value = 0.9368821
+		value = 0.98
 	}
 	use_ao_map = {
 		type = "scalar"
