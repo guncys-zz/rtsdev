@@ -15,7 +15,17 @@ editor_metadata = {
 				}
 				"06c78e06-c921-4208-8069-d377b6415d30" = {
 					data = {
-						fog_enabled = false
+						fog_color = {
+							rgb = [
+								0.284750377046225
+								0.419180101033488
+								0.421180543065365
+							]
+						}
+						fog_depth_range = [
+							100
+							300
+						]
 					}
 				}
 				"3eb1ba63-3a53-4846-970b-57e3d4d75d2b" = {
@@ -28,6 +38,11 @@ editor_metadata = {
 							"$resource_type" = "texture"
 						}
 						skydome_intensity = 3
+					}
+				}
+				"a9f83eb8-b54a-4c45-bf62-4fe7e02a8ce4" = {
+					data = {
+						ao_enabled = false
 					}
 				}
 			}
@@ -1732,7 +1747,7 @@ editor_metadata = {
 			Cameras = {
 				camera = {
 					CameraInfo = {
-						FarRange = 1000
+						FarRange = 50000
 						NearRange = 0.1
 						ProjectionType = "Perspective"
 						VerticalFov = 62.72
@@ -1836,7 +1851,7 @@ editor_metadata = {
 			Cameras = {
 				cam = {
 					CameraInfo = {
-						FarRange = 1000
+						FarRange = 50000
 						NearRange = 0.1
 						ProjectionType = "Perspective"
 						VerticalFov = 22.6198209271818
@@ -8741,7 +8756,17 @@ entities = [
 			}
 			"06c78e06-c921-4208-8069-d377b6415d30" = {
 				data = {
-					fog_enabled = false
+					fog_color = {
+						rgb = [
+							0.284750377046225
+							0.419180101033488
+							0.421180543065365
+						]
+					}
+					fog_depth_range = [
+						100
+						300
+					]
 				}
 			}
 			"3eb1ba63-3a53-4846-970b-57e3d4d75d2b" = {
@@ -8754,6 +8779,11 @@ entities = [
 						"$resource_type" = "texture"
 					}
 					skydome_intensity = 3
+				}
+			}
+			"a9f83eb8-b54a-4c45-bf62-4fe7e02a8ce4" = {
+				data = {
+					ao_enabled = false
 				}
 			}
 		}
@@ -9853,7 +9883,7 @@ units = [
 	{
 		cameras = {
 			camera = {
-				far_range = 1000
+				far_range = 50000
 				interest_point_distance = 10
 				near_range = 0.1
 				orthographic_plane = [
@@ -9940,7 +9970,7 @@ units = [
 	{
 		cameras = {
 			cam = {
-				far_range = 1000
+				far_range = 50000
 				interest_point_distance = 10
 				near_range = 0.1
 				orthographic_plane = [

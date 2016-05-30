@@ -11,7 +11,7 @@ scaleform.AnimationComponent.stop(tutorialAnimation)
 --外部でe.data.valueの値を1-100まで変えてあげることで、
 --gaugeバーの動きを制御
 local customListener = scaleform.EventListener.create(customListener, function(e)
-if e.name == "tutorial" then
+--[[if e.name == "tutorial" then
     if e.data.value == "Jump_00" then
         local container = scaleform.Actor.container(thisActor);
         scaleform.AnimationComponent.play_label(container, "jump00_btn");
@@ -24,7 +24,7 @@ if e.name == "tutorial" then
         --scaleform.AnimationComponent.goto_frame(gaugeAnimation, e.data.value)
     end
 
-end
+end]]--
 end );
 ----http://help.autodesk.com/view/ScaleformStudio/ENU/?guid=__lua_ref_ns_scaleform_EventListener_html
 scaleform.EventListener.connect(customListener, thisActor,scaleform.EventTypes.Custom)

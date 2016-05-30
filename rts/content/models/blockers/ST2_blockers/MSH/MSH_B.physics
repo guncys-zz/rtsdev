@@ -1,0 +1,33 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "mushroomB"
+		node = "mushroomB"
+		shapes = [
+			{
+				material = "default"
+				shape = "mushroomB"
+				template = "default"
+				type = "box"
+			}
+		]
+		template = "static"
+	}
+	{
+		enabled = true
+		mass = 0
+		name = "pCube1"
+		node = "pCube1"
+		shapes = [
+			{
+				material = "default"
+				shape = "pCube1"
+				template = "blocker"
+				type = "box"
+			}
+		]
+		template = "static"
+	}
+]

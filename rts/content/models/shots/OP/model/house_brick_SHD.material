@@ -99,18 +99,6 @@ shader = {
 		}
 		{
 			destination = {
-				connector_id = "4cbb4480-79e8-4ce7-ac0f-8b09baf12390"
-				instance_id = "1c9a0cc2-86b3-471d-933d-ccc4fa94baf3"
-			}
-			select = [
-				"rgb"
-			]
-			source = {
-				instance_id = "06e20b35-09bf-4f22-84dd-db8f9e5588da"
-			}
-		}
-		{
-			destination = {
 				connector_id = "f2f74e58-402d-472b-87dd-331e00db416c"
 				instance_id = "1c9a0cc2-86b3-471d-933d-ccc4fa94baf3"
 			}
@@ -182,18 +170,6 @@ shader = {
 			}
 			source = {
 				instance_id = "af89d1a9-402d-49e0-a0a6-c1100c158f91"
-			}
-		}
-		{
-			destination = {
-				connector_id = "4cbb4480-79e8-4ce7-ac0f-8b09baf12390"
-				instance_id = "af89d1a9-402d-49e0-a0a6-c1100c158f91"
-			}
-			select = [
-				"r"
-			]
-			source = {
-				instance_id = "d65549bb-2c6b-4b39-86d4-210200c5529c"
 			}
 		}
 		{
@@ -385,6 +361,96 @@ shader = {
 				instance_id = "61721838-d7df-46bc-9e78-12694df37216"
 			}
 		}
+		{
+			destination = {
+				connector_id = "c5823c75-4ae5-4c71-b070-315fa4d03e8e"
+				instance_id = "67d7ce6d-5d96-442e-9400-9b4633f9f8fc"
+			}
+			source = {
+				instance_id = "89c2b337-b6e5-4562-b739-e374f019ef3d"
+			}
+		}
+		{
+			destination = {
+				connector_id = "242d1648-a626-445b-9534-bccec094112f"
+				instance_id = "67d7ce6d-5d96-442e-9400-9b4633f9f8fc"
+			}
+			source = {
+				instance_id = "c522a482-2b51-445e-a448-e3a4279050cb"
+			}
+		}
+		{
+			destination = {
+				connector_id = "c4d6bc08-c489-430f-a836-ed490e59c3f9"
+				instance_id = "19c03ed7-36e1-4ffe-8a5f-9b2b4f10ab2a"
+			}
+			select = [
+				"r"
+			]
+			source = {
+				instance_id = "67d7ce6d-5d96-442e-9400-9b4633f9f8fc"
+			}
+		}
+		{
+			destination = {
+				connector_id = "be3ca146-3448-40d8-bd4b-da66ef6ff935"
+				instance_id = "0362777b-ee03-42af-872b-3be6beb8c79d"
+			}
+			source = {
+				instance_id = "19c03ed7-36e1-4ffe-8a5f-9b2b4f10ab2a"
+			}
+		}
+		{
+			destination = {
+				connector_id = "6f471281-8e67-4fd5-978f-5e378ef0668d"
+				instance_id = "0362777b-ee03-42af-872b-3be6beb8c79d"
+			}
+			source = {
+				instance_id = "dfad29f3-0591-41da-ad46-5b4292386179"
+			}
+		}
+		{
+			destination = {
+				connector_id = "e64169ad-12a5-41ba-a708-4cc5526e1ea0"
+				instance_id = "0362777b-ee03-42af-872b-3be6beb8c79d"
+			}
+			source = {
+				instance_id = "d192e709-cae9-490e-9d0e-8c0bdba91365"
+			}
+		}
+		{
+			destination = {
+				connector_id = "4cbb4480-79e8-4ce7-ac0f-8b09baf12390"
+				instance_id = "1c9a0cc2-86b3-471d-933d-ccc4fa94baf3"
+			}
+			select = [
+				"rgb"
+			]
+			source = {
+				instance_id = "06e20b35-09bf-4f22-84dd-db8f9e5588da"
+			}
+		}
+		{
+			destination = {
+				connector_id = "6ff26be7-68a1-4b89-b9dd-551d216086c2"
+				instance_id = "89c2b337-b6e5-4562-b739-e374f019ef3d"
+			}
+			select = [
+				"rgb"
+			]
+			source = {
+				instance_id = "d65549bb-2c6b-4b39-86d4-210200c5529c"
+			}
+		}
+		{
+			destination = {
+				connector_id = "4cbb4480-79e8-4ce7-ac0f-8b09baf12390"
+				instance_id = "af89d1a9-402d-49e0-a0a6-c1100c158f91"
+			}
+			source = {
+				instance_id = "0362777b-ee03-42af-872b-3be6beb8c79d"
+			}
+		}
 	]
 	constants = [
 		{
@@ -441,6 +507,22 @@ shader = {
 			instance_id = "829e0be2-93fb-4831-a842-5b7ea3944c08"
 			value = [
 				1
+			]
+		}
+		{
+			connector_id = "c4d6bc08-c489-430f-a836-ed490e59c3f9"
+			id = "2ef9a64c-ab5a-4560-98df-46a35f328fa3"
+			instance_id = "dfad29f3-0591-41da-ad46-5b4292386179"
+			value = [
+				1
+			]
+		}
+		{
+			connector_id = "c4d6bc08-c489-430f-a836-ed490e59c3f9"
+			id = "08ea9416-82db-46ce-9278-14914c0e3481"
+			instance_id = "d192e709-cae9-490e-9d0e-8c0bdba91365"
+			value = [
+				0
 			]
 		}
 	]
@@ -619,8 +701,8 @@ shader = {
 				"e94e53e6-49b6-4194-a747-8f064a5932e0"
 			]
 			position = [
-				700
-				540
+				-300
+				480
 			]
 			samplers = {
 				texture_map = {
@@ -1381,6 +1463,145 @@ shader = {
 			}
 			type = "core/shader_nodes/constant_scalar"
 		}
+		{
+			content_size = [
+				160
+				0
+			]
+			export = {
+			}
+			id = "89c2b337-b6e5-4562-b739-e374f019ef3d"
+			options = [
+			]
+			position = [
+				-755
+				719
+			]
+			samplers = {
+			}
+			type = "core/shader_nodes/constant_vector3"
+		}
+		{
+			content_size = [
+				160
+				0
+			]
+			export = {
+				material_variable = {
+					display_name = "roughness adjust"
+					name = "material_variable_5115c9c7"
+					type = "float"
+					ui = {
+						max = 2
+						min = 0
+						step = 0.001
+						ui_type = "NumberSlider"
+					}
+					value = 0
+				}
+			}
+			id = "c522a482-2b51-445e-a448-e3a4279050cb"
+			options = [
+			]
+			position = [
+				-755
+				819
+			]
+			samplers = {
+			}
+			title = "adjust slider"
+			type = "core/shader_nodes/material_variable"
+		}
+		{
+			content_size = [
+				160
+				0
+			]
+			export = {
+			}
+			id = "67d7ce6d-5d96-442e-9400-9b4633f9f8fc"
+			options = [
+			]
+			position = [
+				-515
+				719
+			]
+			samplers = {
+			}
+			type = "core/shader_nodes/mul"
+		}
+		{
+			content_size = [
+				160
+				0
+			]
+			export = {
+			}
+			id = "19c03ed7-36e1-4ffe-8a5f-9b2b4f10ab2a"
+			options = [
+			]
+			position = [
+				-215
+				659
+			]
+			samplers = {
+			}
+			type = "core/shader_nodes/constant_scalar"
+		}
+		{
+			content_size = [
+				160
+				0
+			]
+			export = {
+			}
+			id = "dfad29f3-0591-41da-ad46-5b4292386179"
+			options = [
+			]
+			position = [
+				-215
+				759
+			]
+			samplers = {
+			}
+			type = "core/shader_nodes/constant_scalar"
+		}
+		{
+			content_size = [
+				160
+				0
+			]
+			export = {
+			}
+			id = "d192e709-cae9-490e-9d0e-8c0bdba91365"
+			options = [
+			]
+			position = [
+				-215
+				839
+			]
+			samplers = {
+			}
+			type = "core/shader_nodes/constant_scalar"
+		}
+		{
+			content_size = [
+				160
+				0
+			]
+			export = {
+			}
+			id = "0362777b-ee03-42af-872b-3be6beb8c79d"
+			options = [
+			]
+			position = [
+				25
+				699
+			]
+			samplers = {
+			}
+			type = "core/shader_nodes/clamp"
+		}
 	]
 	version = 3
 }
@@ -1417,6 +1638,10 @@ variables = {
 	material_variable = {
 		type = "scalar"
 		value = 5
+	}
+	material_variable_5115c9c7 = {
+		type = "scalar"
+		value = 0.997
 	}
 	metallic = {
 		type = "scalar"

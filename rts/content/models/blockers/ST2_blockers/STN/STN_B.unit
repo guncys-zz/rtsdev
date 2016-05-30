@@ -1,0 +1,54 @@
+
+data = {
+	IsBlocker = true
+}
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 5.583467
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			5.402179
+			-1.157208
+			2.38279
+		]
+		projection_type = "perspective"
+		rotation = [
+			0.063866
+			0.052454
+			-0.632511
+			-0.77013
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
+materials = {
+	stoneA_col = "content/models/blockers/ST2_blockers/STN/STN_B_MT"
+}
+renderables = {
+	pCube1 = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = false
+		surface_queries = false
+		viewport_visible = false
+	}
+	stoneB = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

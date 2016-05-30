@@ -57,9 +57,9 @@ editor_metadata = {
 				"778c5da5-eaa2-4a5f-951f-8c8bf13a2a6e" = {
 					data = {
 						dof_enabled = true
-						dof_focal_distance = 7
+						dof_focal_distance = 5
 						dof_focal_region = 1
-						dof_focal_region_end = 15
+						dof_focal_region_end = 40
 						dof_focal_region_start = 2
 					}
 				}
@@ -1589,20 +1589,20 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = 4.825863
-				Y = -1.996042
-				Z = 2.96333
+				X = 4.960904
+				Y = 0.135286
+				Z = 3.179197
 			}
 			Rot = {
-				W = -0.90289
-				X = 0.204255
-				Y = 0.054039
-				Z = -0.374365
+				W = -0.893313
+				X = 0.207012
+				Y = 0.060397
+				Z = -0.394321
 			}
 			Scl = {
-				X = 1.000006
-				Y = 1.000005
-				Z = 1.000002
+				X = 1.000012
+				Y = 1.000035
+				Z = 1
 			}
 			ScriptData = {
 			}
@@ -5264,44 +5264,6 @@ editor_metadata = {
 		{
 			Cameras = {
 			}
-			Id = "ae1c1bac-67a1-4a78-8379-6adc29f4d870"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "tutorial_actor_cube"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0.128907
-				Y = 9.701083
-				Z = 0.092766
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-				IsTutorial = false
-			}
-			Type = "content/models/TutorialActor/tutorial_actor_cube"
-		}
-		{
-			Cameras = {
-			}
 			Id = "c0f9cb4b-508b-4b35-aad7-b8c16433b37a"
 			Layer = "Default"
 			Lights = {
@@ -5574,9 +5536,9 @@ entities = [
 			"778c5da5-eaa2-4a5f-951f-8c8bf13a2a6e" = {
 				data = {
 					dof_enabled = true
-					dof_focal_distance = 7
+					dof_focal_distance = 5
 					dof_focal_region = 1
-					dof_focal_region_end = 15
+					dof_focal_region_end = 40
 					dof_focal_region_start = 2
 				}
 			}
@@ -6530,20 +6492,20 @@ units = [
 		}
 		name = "camera"
 		pos = [
-			4.825863
-			-1.996042
-			2.96333
+			4.960904
+			0.135286
+			3.179197
 		]
 		rot = [
-			0.204255
-			0.054039
-			-0.374365
-			-0.90289
+			0.207012
+			0.060397
+			-0.394321
+			-0.893313
 		]
 		scl = [
-			1.000006
-			1.000005
-			1.000002
+			1.000012
+			1.000035
+			1
 		]
 		type = "core/units/camera"
 	}
@@ -9513,37 +9475,6 @@ units = [
 			1
 		]
 		type = "content/models/blockers/STM/STM_B"
-	}
-	{
-		cameras = {
-		}
-		data = {
-			IsTutorial = false
-		}
-		id = "ae1c1bac-67a1-4a78-8379-6adc29f4d870"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "tutorial_actor_cube"
-		pos = [
-			0.128907
-			9.701083
-			0.092766
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/TutorialActor/tutorial_actor_cube"
 	}
 	{
 		cameras = {

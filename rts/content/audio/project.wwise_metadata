@@ -6,12 +6,14 @@ banks = {
 		events = [
 			"Play_BGM_Ending"
 			"Play_BGM_Opening"
+			"Play_BGM_StaffRoll"
 			"Play_BGM_Stage_1"
 			"Play_BGM_Stage_2"
 			"Play_BGM_Stage_3"
 			"Play_BGM_Stage_4"
 			"Play_BGM_Title"
 			"Play_SE_logo_guncys"
+			"SE_PPK_Cat"
 			"SE_PPK_damage1"
 			"SE_PPK_jump"
 			"SE_PPK_jump2"
@@ -52,6 +54,13 @@ events = {
 		duration_max = 17.875
 		duration_min = 17.875
 		duration_type = "OneShot"
+		positioning = "2D"
+	}
+	Play_BGM_StaffRoll = {
+		attenuation_max = 0
+		duration_max = 0
+		duration_min = 0
+		duration_type = "Infinite"
 		positioning = "2D"
 	}
 	Play_BGM_Stage_1 = {
@@ -96,6 +105,13 @@ events = {
 		duration_type = "OneShot"
 		positioning = "2D"
 	}
+	SE_PPK_Cat = {
+		attenuation_max = 0
+		duration_max = 1.234563
+		duration_min = 0.834167
+		duration_type = "OneShot"
+		positioning = "2D"
+	}
 	SE_PPK_damage1 = {
 		attenuation_max = 0
 		duration_max = 1.368021
@@ -126,8 +142,8 @@ events = {
 	}
 	SE_UI_OK = {
 		attenuation_max = 0
-		duration_max = 2.125
-		duration_min = 2.125
+		duration_max = 1.368042
+		duration_min = 1.267938
 		duration_type = "OneShot"
 		positioning = "2D"
 	}

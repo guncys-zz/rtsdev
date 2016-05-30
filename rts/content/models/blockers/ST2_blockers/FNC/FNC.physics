@@ -1,0 +1,18 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "fenceA"
+		node = "fenceA"
+		shapes = [
+			{
+				material = "default"
+				shape = "fenceA"
+				template = "blocker"
+				type = "box"
+			}
+		]
+		template = "static"
+	}
+]

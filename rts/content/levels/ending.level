@@ -242,6 +242,8 @@ editor_metadata = {
 				Class = "Stingray.Foundation.Flow.LevelUnit"
 				Id = "5d99ecc7-9f15-4cb4-a6b0-61a36bc64e6c"
 				InEvents = [
+					"pause"
+					"unpause"
 				]
 				InVariableNames = [
 				]
@@ -610,6 +612,7 @@ editor_metadata = {
 	LevelReferences = [
 	]
 	LightBakeSettings = {
+		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
 		FilterGain = 20
@@ -627,6 +630,7 @@ editor_metadata = {
 			Z = 1
 		}
 		TexelScale = 10
+		TotalPasses = 256
 		Variance = 0.5
 	}
 	LuaPluginObjects = [
@@ -700,6 +704,7 @@ editor_metadata = {
 					Intensity = 4
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "directional"
@@ -2967,7 +2972,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = 58.405487
+				X = 54.783459
 				Y = -84.990051
 				Z = 0
 			}
@@ -3041,8 +3046,8 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = 57.129097
-				Y = -118.84758
+				X = 40.153736
+				Y = -115.711441
 				Z = 0
 			}
 			Rot = {
@@ -4190,7 +4195,7 @@ editor_metadata = {
 			Pos = {
 				X = -16.498571
 				Y = -75.732124
-				Z = 54.816242
+				Z = 60.398441
 			}
 			Rot = {
 				W = -1
@@ -5354,6 +5359,117 @@ editor_metadata = {
 			}
 			Type = "content/models/stage4/Building_02_Red"
 		}
+		{
+			Cameras = {
+			}
+			Id = "65a678c9-7a1f-45f5-b19f-81668847a332"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Building_03_Yellow1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 3.214898
+				Y = -155.627838
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1.7
+				Y = 1
+				Z = 1.7
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/Building_03_Yellow"
+		}
+		{
+			Cameras = {
+			}
+			Id = "67c7bf15-58b2-4de8-8e66-c628e0e91cd6"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Building_01_Skyblue3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -23.175003
+				Y = -117.954926
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 2
+				Y = 2
+				Z = 3
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/Building_01_Skyblue"
+		}
+		{
+			Cameras = {
+			}
+			Id = "90187edc-5333-4da4-a0ce-4d9d0b866a35"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Building_01_Green1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 30.9445
+				Y = -134.182159
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 2
+				Z = 3
+			}
+			ScriptData = {
+			}
+			Type = "content/models/stage4/Building_01_Green"
+		}
 	]
 	Volumes = [
 	]
@@ -5475,6 +5591,8 @@ flow = {
 		{
 			id = "5d99ecc7-9f15-4cb4-a6b0-61a36bc64e6c"
 			in_event_index = [
+				"pause"
+				"unpause"
 			]
 			out_event_index = [
 			]
@@ -5844,6 +5962,7 @@ units = [
 				falloff_start = 0
 				intensity = 4
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "directional"
@@ -7681,7 +7800,7 @@ units = [
 		}
 		name = "Building_02_Red"
 		pos = [
-			58.405487
+			54.783459
 			-84.990051
 			0
 		]
@@ -7741,8 +7860,8 @@ units = [
 		}
 		name = "Building_02_Green"
 		pos = [
-			57.129097
-			-118.84758
+			40.153736
+			-115.711441
 			0
 		]
 		rot = [
@@ -8673,7 +8792,7 @@ units = [
 		pos = [
 			-16.498571
 			-75.732124
-			54.816242
+			60.398441
 		]
 		rot = [
 			0
@@ -9617,6 +9736,96 @@ units = [
 			2.124
 		]
 		type = "content/models/stage4/Building_02_Red"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "65a678c9-7a1f-45f5-b19f-81668847a332"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Building_03_Yellow1"
+		pos = [
+			3.214898
+			-155.627838
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1.7
+			1
+			1.7
+		]
+		type = "content/models/stage4/Building_03_Yellow"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "67c7bf15-58b2-4de8-8e66-c628e0e91cd6"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Building_01_Skyblue3"
+		pos = [
+			-23.175003
+			-117.954926
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			2
+			2
+			3
+		]
+		type = "content/models/stage4/Building_01_Skyblue"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "90187edc-5333-4da4-a0ce-4d9d0b866a35"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Building_01_Green1"
+		pos = [
+			30.9445
+			-134.182159
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			2
+			3
+		]
+		type = "content/models/stage4/Building_01_Green"
 	}
 ]
 volumes = [
