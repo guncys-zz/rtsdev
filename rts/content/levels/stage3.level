@@ -446,6 +446,8 @@ editor_metadata = {
 				Class = "Stingray.Foundation.Flow.LevelUnit"
 				Id = "29beef00-a9a2-4383-9095-daa70a7066ac"
 				InEvents = [
+					"pause"
+					"unpause"
 				]
 				InVariableNames = [
 				]
@@ -4088,7 +4090,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = -1.51623
+				X = 0.311065
 				Y = 10.652934
 				Z = 0
 			}
@@ -4421,7 +4423,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = -1.51623
+				X = 0.14586
 				Y = 74.011497
 				Z = 0
 			}
@@ -4458,7 +4460,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = 1.754055
+				X = 1.068223
 				Y = 81.310425
 				Z = 0.224695
 			}
@@ -9595,7 +9597,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = 1.754055
+				X = 1.292682
 				Y = 143.381912
 				Z = 0.224695
 			}
@@ -9632,7 +9634,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = -1.51623
+				X = -0.736435
 				Y = 136.082993
 				Z = 0
 			}
@@ -12367,7 +12369,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = 1.754055
+				X = 1.151181
 				Y = 206.174683
 				Z = 0.224695
 			}
@@ -12404,7 +12406,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = -1.51623
+				X = -0.047274
 				Y = 198.875763
 				Z = 0
 			}
@@ -19398,7 +19400,7 @@ editor_metadata = {
 			}
 			Pos = {
 				X = 0
-				Y = 146
+				Y = 145
 				Z = 0
 			}
 			Rot = {
@@ -19900,43 +19902,6 @@ editor_metadata = {
 		{
 			Cameras = {
 			}
-			Id = "09a5f554-bfe1-4ac8-aa7d-ca4721c56ce9"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "PUM4"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 195
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/blockers/PUM/PUM"
-		}
-		{
-			Cameras = {
-			}
 			Id = "56208a33-e8d6-459e-8ab9-04c3f08f2ee6"
 			Layer = "Default"
 			Lights = {
@@ -20007,6 +19972,43 @@ editor_metadata = {
 			ScriptData = {
 			}
 			Type = "content/models/blockers/ST3_blockers/STN/STN_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "d36dafcc-13fe-4d6f-8572-5a12f96b3e2b"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "PUM5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 195
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/ST3_blockers/PUM/PUM"
 		}
 	]
 	Volumes = [
@@ -20214,6 +20216,8 @@ flow = {
 		{
 			id = "29beef00-a9a2-4383-9095-daa70a7066ac"
 			in_event_index = [
+				"pause"
+				"unpause"
 			]
 			out_event_index = [
 			]
@@ -23204,7 +23208,7 @@ units = [
 		}
 		name = "trap_root_A"
 		pos = [
-			-1.51623
+			0.311065
 			10.652934
 			0
 		]
@@ -23474,7 +23478,7 @@ units = [
 		}
 		name = "trap_root_A1"
 		pos = [
-			-1.51623
+			0.14586
 			74.011497
 			0
 		]
@@ -23504,7 +23508,7 @@ units = [
 		}
 		name = "trap_root_B1"
 		pos = [
-			1.754055
+			1.068223
 			81.310425
 			0.224695
 		]
@@ -27750,7 +27754,7 @@ units = [
 		}
 		name = "trap_root_B2"
 		pos = [
-			1.754055
+			1.292682
 			143.381912
 			0.224695
 		]
@@ -27780,7 +27784,7 @@ units = [
 		}
 		name = "trap_root_A2"
 		pos = [
-			-1.51623
+			-0.736435
 			136.082993
 			0
 		]
@@ -30038,7 +30042,7 @@ units = [
 		}
 		name = "trap_root_B3"
 		pos = [
-			1.754055
+			1.151181
 			206.174683
 			0.224695
 		]
@@ -30068,7 +30072,7 @@ units = [
 		}
 		name = "trap_root_A3"
 		pos = [
-			-1.51623
+			-0.047274
 			198.875763
 			0
 		]
@@ -35739,7 +35743,7 @@ units = [
 		name = "MSH_B"
 		pos = [
 			0
-			146
+			145
 			0
 		]
 		rot = [
@@ -36150,36 +36154,6 @@ units = [
 		}
 		data = {
 		}
-		id = "09a5f554-bfe1-4ac8-aa7d-ca4721c56ce9"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "PUM4"
-		pos = [
-			0
-			195
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/blockers/PUM/PUM"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
 		id = "56208a33-e8d6-459e-8ab9-04c3f08f2ee6"
 		lights = {
 		}
@@ -36234,6 +36208,36 @@ units = [
 			1
 		]
 		type = "content/models/blockers/ST3_blockers/STN/STN_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "d36dafcc-13fe-4d6f-8572-5a12f96b3e2b"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "PUM5"
+		pos = [
+			0
+			195
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/ST3_blockers/PUM/PUM"
 	}
 ]
 volumes = [
