@@ -4665,7 +4665,7 @@ editor_metadata = {
 			Scl = {
 				X = 1
 				Y = 1
-				Z = 1
+				Z = 0.9
 			}
 			ScriptData = {
 			}
@@ -4776,7 +4776,7 @@ editor_metadata = {
 			Scl = {
 				X = 1
 				Y = 1
-				Z = 1
+				Z = 0.9
 			}
 			ScriptData = {
 			}
@@ -4990,10 +4990,10 @@ editor_metadata = {
 				Z = 0
 			}
 			Rot = {
-				W = 0.707106781186548
+				W = 6.12303176911189E-17
 				X = 0
 				Y = 0
-				Z = -0.707106781186547
+				Z = 1
 			}
 			Scl = {
 				X = 2
@@ -5146,7 +5146,7 @@ editor_metadata = {
 			Scl = {
 				X = 1
 				Y = 1
-				Z = 1
+				Z = 0.9
 			}
 			ScriptData = {
 			}
@@ -5183,7 +5183,7 @@ editor_metadata = {
 			Scl = {
 				X = 1
 				Y = 1
-				Z = 1
+				Z = 0.9
 			}
 			ScriptData = {
 			}
@@ -5257,7 +5257,7 @@ editor_metadata = {
 			Scl = {
 				X = 1
 				Y = 1
-				Z = 1
+				Z = 0.9
 			}
 			ScriptData = {
 			}
@@ -5403,80 +5403,6 @@ editor_metadata = {
 			ScriptData = {
 			}
 			Type = "content/models/blockers/PIG/PIG"
-		}
-		{
-			Cameras = {
-			}
-			Id = "ad5ff4ee-45db-4efc-801f-f6611fa02481"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "CHI1"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = -0.895474
-				Y = 154.886353
-				Z = 0
-			}
-			Rot = {
-				W = 0.707106781186548
-				X = 0
-				Y = 0
-				Z = -0.707106781186547
-			}
-			Scl = {
-				X = 2
-				Y = 2
-				Z = 2
-			}
-			ScriptData = {
-			}
-			Type = "content/models/blockers/CHI/CHI"
-		}
-		{
-			Cameras = {
-			}
-			Id = "a74980f0-6f9e-44b6-b8ff-41a48b346602"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "CHI2"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0.897535
-				Y = 154.886353
-				Z = 0
-			}
-			Rot = {
-				W = 0.707106781186548
-				X = 0
-				Y = 0
-				Z = -0.707106781186547
-			}
-			Scl = {
-				X = 2
-				Y = 2
-				Z = 2
-			}
-			ScriptData = {
-			}
-			Type = "content/models/blockers/CHI/CHI"
 		}
 	]
 	Volumes = [
@@ -8996,7 +8922,7 @@ units = [
 		scl = [
 			1
 			1
-			1
+			0.9
 		]
 		type = "content/models/blockers/STM/STM_B"
 	}
@@ -9086,7 +9012,7 @@ units = [
 		scl = [
 			1
 			1
-			1
+			0.9
 		]
 		type = "content/models/blockers/STM/STM_B"
 	}
@@ -9260,8 +9186,8 @@ units = [
 		rot = [
 			0
 			0
-			-0.707106781186547
-			0.707106781186548
+			1
+			6.12303176911189E-17
 		]
 		scl = [
 			2
@@ -9386,7 +9312,7 @@ units = [
 		scl = [
 			1
 			1
-			1
+			0.9
 		]
 		type = "content/models/blockers/STM/STM_B"
 	}
@@ -9416,7 +9342,7 @@ units = [
 		scl = [
 			1
 			1
-			1
+			0.9
 		]
 		type = "content/models/blockers/STM/STM_B"
 	}
@@ -9476,7 +9402,7 @@ units = [
 		scl = [
 			1
 			1
-			1
+			0.9
 		]
 		type = "content/models/blockers/STM/STM_B"
 	}
@@ -9597,66 +9523,6 @@ units = [
 			0.7
 		]
 		type = "content/models/blockers/PIG/PIG"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "ad5ff4ee-45db-4efc-801f-f6611fa02481"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "CHI1"
-		pos = [
-			-0.895474
-			154.886353
-			0
-		]
-		rot = [
-			0
-			0
-			-0.707106781186547
-			0.707106781186548
-		]
-		scl = [
-			2
-			2
-			2
-		]
-		type = "content/models/blockers/CHI/CHI"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "a74980f0-6f9e-44b6-b8ff-41a48b346602"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "CHI2"
-		pos = [
-			0.897535
-			154.886353
-			0
-		]
-		rot = [
-			0
-			0
-			-0.707106781186547
-			0.707106781186548
-		]
-		scl = [
-			2
-			2
-			2
-		]
-		type = "content/models/blockers/CHI/CHI"
 	}
 ]
 volumes = [
