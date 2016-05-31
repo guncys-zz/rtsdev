@@ -1,4 +1,31 @@
 
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 232.062073
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			133.981094
+			133.981155
+			133.98111
+		]
+		projection_type = "perspective"
+		rotation = [
+			-0.115917
+			-0.279848
+			0.880476
+			0.364705
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
 materials = {
 	ED_floor_lambert = "content/models/shots/ED/floor/ED_floor_lambert"
 }
@@ -6,7 +33,7 @@ renderables = {
 	ED_floor = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = true
 		occluder = false
 		shadow_caster = true
 		surface_queries = false

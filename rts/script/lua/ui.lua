@@ -72,6 +72,7 @@ function UI.reset(hp, pos)
     scaleform.Stage.dispatch_event(event)
     
 	loding_flag = false
+	credits_flag = false
 end
 
 --ダメージアニメーションの制御
@@ -192,7 +193,7 @@ end
 
 function UI.credits()
     if credits_flag ~= true then
-        local loading = scaleform.Actor.load("Credits.s2dscene")	--Loding用のシーンをロード
+        local loading = scaleform.Actor.load("Credits.s2dscene")	
     	--print("ローディングシーンに切り替え")
         -- Remove the main menu scene
         scaleform.Stage.remove_scene_by_index(1)

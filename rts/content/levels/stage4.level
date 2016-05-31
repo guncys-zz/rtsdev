@@ -79,11 +79,6 @@ editor_metadata = {
 						motion_blur_enabled = false
 					}
 				}
-				"dd1dccf2-6f2f-4b8c-9199-290c069ab62b" = {
-					data = {
-						vignette_enabled = false
-					}
-				}
 				"fd909d00-3e4d-4339-b1a9-784c7d6a60ad" = {
 					data = {
 						bloom_falloff = 0.5
@@ -335,18 +330,26 @@ editor_metadata = {
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
 				FromItem = "Out"
-				FromNode = "0bc6418b-9d77-47b6-ab6d-0201f738da11"
-				Priority = 0
-				ToItem = "Start"
-				ToNode = "9b2aa05c-a8c1-474c-bf04-a54f954d5aff"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
 				FromNode = "9c7b5dd9-2e42-40da-801d-de561afb533e"
 				Priority = 0
 				ToItem = "In"
 				ToNode = "6d285d1d-bc78-4b9b-ae7f-91c04fd8f38c"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "f5b80e33-f7ab-4eff-ae5f-304ed7f45c2b"
+				Priority = 0
+				ToItem = "Play"
+				ToNode = "e5bf51da-1344-4041-a737-453a74e2cd27"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "0bc6418b-9d77-47b6-ab6d-0201f738da11"
+				Priority = 0
+				ToItem = "Play"
+				ToNode = "c15e229b-376b-4631-815b-beb94100e8a7"
 			}
 		]
 		Groups = [
@@ -510,6 +513,8 @@ editor_metadata = {
 				Class = "Stingray.Foundation.Flow.LevelUnit"
 				Id = "29beef00-a9a2-4383-9095-daa70a7066ac"
 				InEvents = [
+					"pause"
+					"unpause"
 				]
 				InVariableNames = [
 				]
@@ -1211,8 +1216,8 @@ editor_metadata = {
 				InVariables = [
 				]
 				NodeLocation = {
-					X = 1440
-					Y = 360
+					X = 1700
+					Y = 400
 				}
 				OutEvents = [
 				]
@@ -1269,6 +1274,80 @@ editor_metadata = {
 				Out = {
 				}
 				Title = "Once"
+				Width = 160
+			}
+			{
+				Brief = "Allows the interaction and control of a story event within the level from Flow."
+				Class = "Stingray.Foundation.Flow.LevelStory"
+				Id = "e5bf51da-1344-4041-a737-453a74e2cd27"
+				LoopEnd = {
+				}
+				LoopMode = {
+				}
+				LoopStart = {
+				}
+				NodeLocation = {
+					X = -500
+					Y = 100
+				}
+				OutEvents = [
+					"default shading environment"
+				]
+				Play = {
+				}
+				Played = {
+				}
+				Speed = {
+				}
+				Stop = {
+				}
+				Stopped = {
+				}
+				Story = {
+					Id = "3b75795f-43f1-41d0-9540-26c095780e57"
+				}
+				StoryId = {
+				}
+				Time = {
+				}
+				Title = "Level Story"
+				Width = 160
+			}
+			{
+				Brief = "Allows the interaction and control of a story event within the level from Flow."
+				Class = "Stingray.Foundation.Flow.LevelStory"
+				Id = "c15e229b-376b-4631-815b-beb94100e8a7"
+				LoopEnd = {
+				}
+				LoopMode = {
+				}
+				LoopStart = {
+				}
+				NodeLocation = {
+					X = 1440
+					Y = 340
+				}
+				OutEvents = [
+					"default shading environment"
+				]
+				Play = {
+				}
+				Played = {
+				}
+				Speed = {
+				}
+				Stop = {
+				}
+				Stopped = {
+				}
+				Story = {
+					Id = "b757d189-b0c8-48b8-93d6-a85d7a76f0be"
+				}
+				StoryId = {
+				}
+				Time = {
+				}
+				Title = "Level Story"
 				Width = 160
 			}
 		]
@@ -1358,6 +1437,232 @@ editor_metadata = {
 	Splines = [
 	]
 	Stories = [
+		{
+			Curves = [
+				{
+					ArrayPropertyIndex = 0
+					ComponentId = "dd1dccf2-6f2f-4b8c-9199-290c069ab62b"
+					ComponentName = "Vignette"
+					EntityName = "default shading environment"
+					EntityPropertyPath = [
+						"vignette_radius"
+					]
+					Id = "15a64fc5-16b9-4755-b927-35a9531050e8"
+					IsPrefabChild = false
+					LeftBehavior = "Constant"
+					PrefabChildEntityPath = [
+					]
+					RightBehavior = "Constant"
+					StoryPropertyDisplayPath = [
+						"Radius"
+					]
+					StoryPropertyPath = [
+						"vignette_radius"
+					]
+					TrackId = "17d2385e-cab8-4ec1-9d29-ca2e464878b1"
+					Type = "EntityPropertyCurveModel"
+				}
+			]
+			End = 1.1
+			Id = "3b75795f-43f1-41d0-9540-26c095780e57"
+			Keys = [
+				{
+					CurveId = "15a64fc5-16b9-4755-b927-35a9531050e8"
+					Id = "ea104aa5-e8a3-4160-be09-b5099402b84c"
+					KeyType = "Spline"
+					Step = false
+					Time = 0
+					TrackId = null
+					Value0 = 0
+					Value1 = 0
+					Value2 = 0
+					Value3 = 0
+				}
+				{
+					CurveId = "15a64fc5-16b9-4755-b927-35a9531050e8"
+					Id = "4c8ff0df-6344-4bb3-988e-3bdf1628567c"
+					KeyType = "Spline"
+					Step = false
+					Time = 1
+					TrackId = null
+					Value0 = 1
+					Value1 = 0
+					Value2 = 0
+					Value3 = 0
+				}
+			]
+			Name = "OpenVignette"
+			OnionSkinning = {
+				Color = {
+					A = 25
+					B = 255
+					G = 255
+					R = 0
+				}
+				Enabled = false
+				Objects = "Selected"
+				SkinsAfter = 10
+				SkinsBefore = 10
+				SkinStep = 4
+			}
+			OnionSkinningColor = {
+				A = 25
+				B = 255
+				G = 255
+				R = 0
+			}
+			OnionSkinningEnabled = false
+			OnionSkinningObjects = "Selected"
+			OnionSkinningSkinsAfter = 10
+			OnionSkinningSkinsBefore = 10
+			OnionSkinningSkinStep = 4
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Rot = {
+				W = 1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			Start = 0
+			Tracks = [
+				{
+					Entity = {
+						Id = "41982f64-a77c-4720-9714-80fb7e806528"
+						Index = 0
+					}
+					Id = "17d2385e-cab8-4ec1-9d29-ca2e464878b1"
+					Name = "default shading environment"
+					Unit = null
+				}
+			]
+		}
+		{
+			Curves = [
+				{
+					ArrayPropertyIndex = 0
+					ComponentId = "dd1dccf2-6f2f-4b8c-9199-290c069ab62b"
+					ComponentName = "Vignette"
+					EntityName = "default shading environment"
+					EntityPropertyPath = [
+						"vignette_radius"
+					]
+					Id = "de073494-d4de-46d8-b1bb-1d9db94b7734"
+					IsPrefabChild = false
+					LeftBehavior = "Constant"
+					PrefabChildEntityPath = [
+					]
+					RightBehavior = "Constant"
+					StoryPropertyDisplayPath = [
+						"Radius"
+					]
+					StoryPropertyPath = [
+						"vignette_radius"
+					]
+					TrackId = "49c7e387-e17f-4fb5-a20f-adbae2001f6d"
+					Type = "EntityPropertyCurveModel"
+				}
+			]
+			End = 1.1
+			Id = "b757d189-b0c8-48b8-93d6-a85d7a76f0be"
+			Keys = [
+				{
+					CurveId = "de073494-d4de-46d8-b1bb-1d9db94b7734"
+					Id = "b9e16e71-2e7f-46e0-89e2-e4697f06386f"
+					KeyType = "Spline"
+					Step = false
+					Time = 0
+					TrackId = null
+					Value0 = 1
+					Value1 = 0
+					Value2 = 0
+					Value3 = 0
+				}
+				{
+					CurveId = "de073494-d4de-46d8-b1bb-1d9db94b7734"
+					Id = "882ec3fb-12a6-49f5-b033-fe09dd2248ea"
+					KeyType = "Spline"
+					Step = false
+					Time = 1
+					TrackId = null
+					Value0 = 0
+					Value1 = 0
+					Value2 = 0
+					Value3 = 0
+				}
+			]
+			Name = "CloseVignette"
+			OnionSkinning = {
+				Color = {
+					A = 25
+					B = 255
+					G = 255
+					R = 0
+				}
+				Enabled = false
+				Objects = "Selected"
+				SkinsAfter = 10
+				SkinsBefore = 10
+				SkinStep = 4
+			}
+			OnionSkinningColor = {
+				A = 25
+				B = 255
+				G = 255
+				R = 0
+			}
+			OnionSkinningEnabled = false
+			OnionSkinningObjects = "Selected"
+			OnionSkinningSkinsAfter = 10
+			OnionSkinningSkinsBefore = 10
+			OnionSkinningSkinStep = 4
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Rot = {
+				W = 1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			Start = 0
+			Tracks = [
+				{
+					Entity = {
+						Id = "41982f64-a77c-4720-9714-80fb7e806528"
+						Index = 0
+					}
+					Id = "49c7e387-e17f-4fb5-a20f-adbae2001f6d"
+					Name = "default shading environment"
+					Unit = null
+				}
+			]
+		}
 	]
 	Triggers = [
 	]
@@ -13126,8 +13431,8 @@ editor_metadata = {
 			}
 			Pos = {
 				X = 0
-				Y = 130
-				Z = 0.237
+				Y = 126.800896
+				Z = 0.236473
 			}
 			Rot = {
 				W = -1
@@ -13481,43 +13786,6 @@ editor_metadata = {
 		{
 			Cameras = {
 			}
-			Id = "c1ebd7e9-975b-41a5-b0c7-ef7fcc00a80d"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Sign"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 45.005764
-				Z = -0.527564
-			}
-			Rot = {
-				W = 0
-				X = 0
-				Y = 0
-				Z = 1
-			}
-			Scl = {
-				X = 2.5
-				Y = 2.5
-				Z = 2.5
-			}
-			ScriptData = {
-			}
-			Type = "content/models/blockers/SIN/Sign"
-		}
-		{
-			Cameras = {
-			}
 			Id = "52aaa789-982f-4774-aef8-8b766e422b75"
 			Layer = "Default"
 			Lights = {
@@ -13534,7 +13802,7 @@ editor_metadata = {
 			}
 			Pos = {
 				X = 0
-				Y = 67.022987
+				Y = 68
 				Z = 0.598853
 			}
 			Rot = {
@@ -13544,9 +13812,9 @@ editor_metadata = {
 				Z = 1
 			}
 			Scl = {
-				X = 2.5
-				Y = 2.5
-				Z = 2.5
+				X = 3
+				Y = 3
+				Z = 3
 			}
 			ScriptData = {
 			}
@@ -13571,7 +13839,7 @@ editor_metadata = {
 			}
 			Pos = {
 				X = 0
-				Y = 139.940079
+				Y = 140
 				Z = 0.222772
 			}
 			Rot = {
@@ -13582,8 +13850,8 @@ editor_metadata = {
 			}
 			Scl = {
 				X = 2.3
-				Y = 2.5
-				Z = 2.5
+				Y = 3
+				Z = 3
 			}
 			ScriptData = {
 			}
@@ -13618,9 +13886,9 @@ editor_metadata = {
 				Z = 1
 			}
 			Scl = {
-				X = 2.5
-				Y = 2.5
-				Z = 2.5
+				X = 3
+				Y = 3
+				Z = 3
 			}
 			ScriptData = {
 			}
@@ -13655,9 +13923,9 @@ editor_metadata = {
 				Z = 1
 			}
 			Scl = {
-				X = 2.5
-				Y = 2.5
-				Z = 2.5
+				X = 3
+				Y = 3
+				Z = 3
 			}
 			ScriptData = {
 			}
@@ -13682,7 +13950,7 @@ editor_metadata = {
 			}
 			Pos = {
 				X = -0.404204
-				Y = 35.009163
+				Y = 36
 				Z = -0.551185
 			}
 			Rot = {
@@ -13692,9 +13960,9 @@ editor_metadata = {
 				Z = 0
 			}
 			Scl = {
-				X = 1.5
-				Y = 1.5
-				Z = 1.5
+				X = 1.2
+				Y = 1.2
+				Z = 1.2
 			}
 			ScriptData = {
 			}
@@ -13719,7 +13987,7 @@ editor_metadata = {
 			}
 			Pos = {
 				X = 0.414587
-				Y = 35.009163
+				Y = 36
 				Z = -0.551185
 			}
 			Rot = {
@@ -13729,9 +13997,9 @@ editor_metadata = {
 				Z = 0
 			}
 			Scl = {
-				X = 1.5
-				Y = 1.5
-				Z = 1.5
+				X = 1.2
+				Y = 1.2
+				Z = 1.2
 			}
 			ScriptData = {
 			}
@@ -13793,7 +14061,7 @@ editor_metadata = {
 			}
 			Pos = {
 				X = 0
-				Y = 80.156204
+				Y = 80
 				Z = 0.716252
 			}
 			Rot = {
@@ -13830,7 +14098,7 @@ editor_metadata = {
 			}
 			Pos = {
 				X = 2.035364
-				Y = 80.156204
+				Y = 80
 				Z = 0.716252
 			}
 			Rot = {
@@ -13867,7 +14135,7 @@ editor_metadata = {
 			}
 			Pos = {
 				X = 2.035364
-				Y = 89.968292
+				Y = 90
 				Z = 0.716252
 			}
 			Rot = {
@@ -13904,7 +14172,7 @@ editor_metadata = {
 			}
 			Pos = {
 				X = 0
-				Y = 89.968292
+				Y = 90
 				Z = 0.716252
 			}
 			Rot = {
@@ -14090,7 +14358,7 @@ editor_metadata = {
 			Pos = {
 				X = 0
 				Y = 210
-				Z = 1.556363
+				Z = 1.307177
 			}
 			Rot = {
 				W = -1
@@ -14101,7 +14369,7 @@ editor_metadata = {
 			Scl = {
 				X = 2
 				Y = 2
-				Z = 2
+				Z = 1.5
 			}
 			ScriptData = {
 			}
@@ -14127,7 +14395,7 @@ editor_metadata = {
 			Pos = {
 				X = -2.665447
 				Y = 211.337112
-				Z = 1.556363
+				Z = 1.3
 			}
 			Rot = {
 				W = -0.707107
@@ -14138,7 +14406,7 @@ editor_metadata = {
 			Scl = {
 				X = 2
 				Y = 2
-				Z = 2
+				Z = 1.5
 			}
 			ScriptData = {
 			}
@@ -14274,7 +14542,7 @@ editor_metadata = {
 			}
 			Pos = {
 				X = 0
-				Y = 234.639267
+				Y = 234
 				Z = -1.55766
 			}
 			Rot = {
@@ -14311,7 +14579,7 @@ editor_metadata = {
 			}
 			Pos = {
 				X = -0.883442
-				Y = 234.639267
+				Y = 234
 				Z = -1.55766
 			}
 			Rot = {
@@ -14348,7 +14616,7 @@ editor_metadata = {
 			}
 			Pos = {
 				X = 0.847983
-				Y = 234.639267
+				Y = 234
 				Z = -1.55766
 			}
 			Rot = {
@@ -14469,9 +14737,9 @@ editor_metadata = {
 				Z = 0
 			}
 			Scl = {
-				X = 1.5
-				Y = 1.5
-				Z = 1.5
+				X = 1.2
+				Y = 1.2
+				Z = 1.2
 			}
 			ScriptData = {
 			}
@@ -14506,9 +14774,9 @@ editor_metadata = {
 				Z = 0
 			}
 			Scl = {
-				X = 1.5
-				Y = 1.5
-				Z = 1.5
+				X = 1.2
+				Y = 1.2
+				Z = 1.2
 			}
 			ScriptData = {
 			}
@@ -14543,9 +14811,9 @@ editor_metadata = {
 				Z = 0
 			}
 			Scl = {
-				X = 1.5
-				Y = 1.5
-				Z = 1.5
+				X = 1.2
+				Y = 1.2
+				Z = 1.2
 			}
 			ScriptData = {
 			}
@@ -14643,7 +14911,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = -5.917107
+				X = -10.16043
 				Y = 103.088425
 				Z = 0.625261
 			}
@@ -14680,7 +14948,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = -5.906456
+				X = -10.149778
 				Y = 104.541801
 				Z = 0.625261
 			}
@@ -14717,7 +14985,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = -5.896111
+				X = -10.139434
 				Y = 102.60215
 				Z = 0.625261
 			}
@@ -14754,7 +15022,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = -5.906456
+				X = -10.149778
 				Y = 104.926331
 				Z = 0.625261
 			}
@@ -14768,6 +15036,746 @@ editor_metadata = {
 				X = 0.5
 				Y = 0.5
 				Z = 0.5
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/CONE/cone"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3b166048-949b-4e63-a905-757cd2608603"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Airconditioning11"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 179
+				Z = 0.305609
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/ACD/Airconditioning"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a07fdce8-a783-4f65-a614-a475e11c608d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Airconditioning12"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 1.950754
+				Y = 179
+				Z = 0.305609
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/ACD/Airconditioning"
+		}
+		{
+			Cameras = {
+			}
+			Id = "7a9d55ef-1161-4dfa-a68f-f13799e43cec"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Sign7"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 19
+				Z = 0
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 3
+				Y = 3
+				Z = 3
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/SIN/Sign"
+		}
+		{
+			Cameras = {
+			}
+			Id = "46467244-0e0e-4ac2-95d9-f1b1579ebbe3"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Sign8"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 14
+				Z = 0
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 3
+				Y = 3
+				Z = 3
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/SIN/Sign"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ba5da2bf-b1e8-4033-b832-6e2aed1a4a6c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Sign9"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 9
+				Z = 0
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 3
+				Y = 3
+				Z = 3
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/SIN/Sign"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6dd45574-bdf1-4c5b-9223-bc7c983660be"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Sign10"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 41
+				Z = -0.527564
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 3
+				Y = 3
+				Z = 3
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/SIN/Sign"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c20d9a65-f1be-4d86-bfcb-f626a15cf601"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Sign12"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 142.5
+				Z = 0.222772
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 2.3
+				Y = 3
+				Z = 3
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/SIN/Sign"
+		}
+		{
+			Cameras = {
+			}
+			Id = "fab56cbe-f670-436c-ab9d-077b46d0ddb3"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Airconditioning13"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 2.035364
+				Y = 85
+				Z = 0.716252
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/ACD/Airconditioning"
+		}
+		{
+			Cameras = {
+			}
+			Id = "fd8a7291-e561-4f52-9683-45c533f07639"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Airconditioning14"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 85
+				Z = 0.716252
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/ACD/Airconditioning"
+		}
+		{
+			Cameras = {
+			}
+			Id = "97542951-a5d5-4fde-b938-740d7308f13d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Sign14"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 65
+				Z = 0.598853
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 3
+				Y = 3
+				Z = 3
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/SIN/Sign"
+		}
+		{
+			Cameras = {
+			}
+			Id = "bc71b780-882c-4811-b203-8d8be8499cf4"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "cone17"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 165
+				Z = 2.551794
+			}
+			Rot = {
+				W = -0.993572
+				X = -0.113203
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/CONE/cone"
+		}
+		{
+			Cameras = {
+			}
+			Id = "b9b9cc56-e364-4899-8f2a-7ffa79cfc01f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "cone18"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 170
+				Z = 3.663777
+			}
+			Rot = {
+				W = -0.993572
+				X = -0.113203
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/CONE/cone"
+		}
+		{
+			Cameras = {
+			}
+			Id = "626e6fe7-4c93-4aa5-914b-48e3f5e4d0a1"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "cone19"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.591375
+				Y = 165
+				Z = 2.551794
+			}
+			Rot = {
+				W = -0.993572
+				X = -0.113203
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/CONE/cone"
+		}
+		{
+			Cameras = {
+			}
+			Id = "0045d1a6-731e-45a6-a4ed-a9b5df8d44f5"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "cone20"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.591375
+				Y = 170
+				Z = 3.663777
+			}
+			Rot = {
+				W = -0.993572
+				X = -0.113203
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/CONE/cone"
+		}
+		{
+			Cameras = {
+			}
+			Id = "71750637-a365-4ddb-9345-012174bbf92b"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "cone21"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.591375
+				Y = 147.962738
+				Z = -1.248443
+			}
+			Rot = {
+				W = -0.993572
+				X = -0.113203
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/CONE/cone"
+		}
+		{
+			Cameras = {
+			}
+			Id = "80c29e62-453f-45d6-bfb5-25ffcb5c366e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "cone22"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 147.962738
+				Z = -1.248443
+			}
+			Rot = {
+				W = -0.993572
+				X = -0.113203
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/CONE/cone"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c4ea5f8c-531a-481c-951a-7830c96b1f5d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "cone23"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 6.338218
+				Y = 174.438812
+				Z = 4.405791
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/CONE/cone"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3a859ef9-8196-4d3a-ab94-682d8ceb9a8d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "cone24"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 4.301454
+				Y = 174.438812
+				Z = 4.404636
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/CONE/cone"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3b2eec4d-84d9-4374-bfb9-6a0a7c79c453"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "cone25"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.414587
+				Y = 46
+				Z = -0.551185
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1.2
+				Y = 1.2
+				Z = 1.2
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/CONE/cone"
+		}
+		{
+			Cameras = {
+			}
+			Id = "69634c95-502d-404e-8dc7-59c40823c67e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "cone26"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.404204
+				Y = 46
+				Z = -0.551185
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1.2
+				Y = 1.2
+				Z = 1.2
 			}
 			ScriptData = {
 			}
@@ -14855,11 +15863,6 @@ entities = [
 					motion_blur_enabled = false
 				}
 			}
-			"dd1dccf2-6f2f-4b8c-9199-290c069ab62b" = {
-				data = {
-					vignette_enabled = false
-				}
-			}
 			"fd909d00-3e4d-4339-b1a9-784c7d6a60ad" = {
 				data = {
 					bloom_falloff = 0.5
@@ -14889,6 +15892,11 @@ flow = {
 						event = 0
 						id = "e33042e0-5008-47e1-bb3b-699614f30835:0"
 						node = "e33042e0-5008-47e1-bb3b-699614f30835"
+					}
+					{
+						event = 0
+						id = "e5bf51da-1344-4041-a737-453a74e2cd27:0"
+						node = "e5bf51da-1344-4041-a737-453a74e2cd27"
 					}
 				]
 			}
@@ -14966,6 +15974,8 @@ flow = {
 		{
 			id = "29beef00-a9a2-4383-9095-daa70a7066ac"
 			in_event_index = [
+				"pause"
+				"unpause"
 			]
 			out_event_index = [
 			]
@@ -15678,12 +16688,76 @@ flow = {
 					}
 					{
 						event = 0
-						id = "9b2aa05c-a8c1-474c-bf04-a54f954d5aff:0"
-						node = "9b2aa05c-a8c1-474c-bf04-a54f954d5aff"
+						id = "c15e229b-376b-4631-815b-beb94100e8a7:0"
+						node = "c15e229b-376b-4631-815b-beb94100e8a7"
 					}
 				]
 			}
 			type = "once"
+		}
+		{
+			id = "e5bf51da-1344-4041-a737-453a74e2cd27"
+			in_variables = {
+				loop_end = {
+					type = "float"
+				}
+				loop_mode = {
+					type = "string"
+				}
+				loop_start = {
+					type = "float"
+				}
+				speed = {
+					type = "float"
+				}
+				time = {
+					type = "float"
+				}
+			}
+			type = "level_story"
+			variable_values = {
+				loop_end = null
+				loop_mode = null
+				loop_start = null
+				speed = null
+				story = {
+					id = "3b75795f-43f1-41d0-9540-26c095780e57"
+				}
+				story_id = null
+				time = null
+			}
+		}
+		{
+			id = "c15e229b-376b-4631-815b-beb94100e8a7"
+			in_variables = {
+				loop_end = {
+					type = "float"
+				}
+				loop_mode = {
+					type = "string"
+				}
+				loop_start = {
+					type = "float"
+				}
+				speed = {
+					type = "float"
+				}
+				time = {
+					type = "float"
+				}
+			}
+			type = "level_story"
+			variable_values = {
+				loop_end = null
+				loop_mode = null
+				loop_start = null
+				speed = null
+				story = {
+					id = "b757d189-b0c8-48b8-93d6-a85d7a76f0be"
+				}
+				story_id = null
+				time = null
+			}
 		}
 	]
 }
@@ -15709,6 +16783,88 @@ sounds = [
 splines = [
 ]
 stories = [
+	{
+		curves = [
+			{
+				array_property_index = 0
+				component_id = "dd1dccf2-6f2f-4b8c-9199-290c069ab62b"
+				curve_type = "cubic"
+				entity_id = "41982f64-a77c-4720-9714-80fb7e806528"
+				is_prefab_child = false
+				left_behavior = "constant"
+				prefab_child_entity_path = [
+				]
+				property = [
+					"vignette_radius"
+				]
+				right_behavior = "constant"
+				step = [
+					false
+					false
+				]
+				times = [
+					0
+					1
+				]
+				type = "entity_property"
+				values = [
+					0
+					0
+					0
+					1
+					0
+					0
+				]
+			}
+		]
+		end = 1.1
+		events = [
+		]
+		id = "3b75795f-43f1-41d0-9540-26c095780e57"
+		name = "OpenVignette"
+		start = 0
+	}
+	{
+		curves = [
+			{
+				array_property_index = 0
+				component_id = "dd1dccf2-6f2f-4b8c-9199-290c069ab62b"
+				curve_type = "cubic"
+				entity_id = "41982f64-a77c-4720-9714-80fb7e806528"
+				is_prefab_child = false
+				left_behavior = "constant"
+				prefab_child_entity_path = [
+				]
+				property = [
+					"vignette_radius"
+				]
+				right_behavior = "constant"
+				step = [
+					false
+					false
+				]
+				times = [
+					0
+					1
+				]
+				type = "entity_property"
+				values = [
+					1
+					0
+					0
+					0
+					0
+					0
+				]
+			}
+		]
+		end = 1.1
+		events = [
+		]
+		id = "b757d189-b0c8-48b8-93d6-a85d7a76f0be"
+		name = "CloseVignette"
+		start = 0
+	}
 ]
 triggers = [
 ]
@@ -25279,8 +26435,8 @@ units = [
 		name = "Jump6"
 		pos = [
 			0
-			130
-			0.237
+			126.800896
+			0.236473
 		]
 		rot = [
 			0
@@ -25585,36 +26741,6 @@ units = [
 		}
 		data = {
 		}
-		id = "c1ebd7e9-975b-41a5-b0c7-ef7fcc00a80d"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Sign"
-		pos = [
-			0
-			45.005764
-			-0.527564
-		]
-		rot = [
-			0
-			0
-			1
-			0
-		]
-		scl = [
-			2.5
-			2.5
-			2.5
-		]
-		type = "content/models/blockers/SIN/Sign"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
 		id = "52aaa789-982f-4774-aef8-8b766e422b75"
 		lights = {
 		}
@@ -25624,7 +26750,7 @@ units = [
 		name = "Sign1"
 		pos = [
 			0
-			67.022987
+			68
 			0.598853
 		]
 		rot = [
@@ -25634,9 +26760,9 @@ units = [
 			0
 		]
 		scl = [
-			2.5
-			2.5
-			2.5
+			3
+			3
+			3
 		]
 		type = "content/models/blockers/SIN/Sign"
 	}
@@ -25654,7 +26780,7 @@ units = [
 		name = "Sign2"
 		pos = [
 			0
-			139.940079
+			140
 			0.222772
 		]
 		rot = [
@@ -25665,8 +26791,8 @@ units = [
 		]
 		scl = [
 			2.3
-			2.5
-			2.5
+			3
+			3
 		]
 		type = "content/models/blockers/SIN/Sign"
 	}
@@ -25694,9 +26820,9 @@ units = [
 			0
 		]
 		scl = [
-			2.5
-			2.5
-			2.5
+			3
+			3
+			3
 		]
 		type = "content/models/blockers/SIN/Sign"
 	}
@@ -25724,9 +26850,9 @@ units = [
 			0
 		]
 		scl = [
-			2.5
-			2.5
-			2.5
+			3
+			3
+			3
 		]
 		type = "content/models/blockers/SIN/Sign"
 	}
@@ -25744,7 +26870,7 @@ units = [
 		name = "cone"
 		pos = [
 			-0.404204
-			35.009163
+			36
 			-0.551185
 		]
 		rot = [
@@ -25754,9 +26880,9 @@ units = [
 			-1
 		]
 		scl = [
-			1.5
-			1.5
-			1.5
+			1.2
+			1.2
+			1.2
 		]
 		type = "content/models/blockers/CONE/cone"
 	}
@@ -25774,7 +26900,7 @@ units = [
 		name = "cone1"
 		pos = [
 			0.414587
-			35.009163
+			36
 			-0.551185
 		]
 		rot = [
@@ -25784,9 +26910,9 @@ units = [
 			-1
 		]
 		scl = [
-			1.5
-			1.5
-			1.5
+			1.2
+			1.2
+			1.2
 		]
 		type = "content/models/blockers/CONE/cone"
 	}
@@ -25834,7 +26960,7 @@ units = [
 		name = "Airconditioning1"
 		pos = [
 			0
-			80.156204
+			80
 			0.716252
 		]
 		rot = [
@@ -25864,7 +26990,7 @@ units = [
 		name = "Airconditioning2"
 		pos = [
 			2.035364
-			80.156204
+			80
 			0.716252
 		]
 		rot = [
@@ -25894,7 +27020,7 @@ units = [
 		name = "Airconditioning3"
 		pos = [
 			2.035364
-			89.968292
+			90
 			0.716252
 		]
 		rot = [
@@ -25924,7 +27050,7 @@ units = [
 		name = "Airconditioning4"
 		pos = [
 			0
-			89.968292
+			90
 			0.716252
 		]
 		rot = [
@@ -26075,7 +27201,7 @@ units = [
 		pos = [
 			0
 			210
-			1.556363
+			1.307177
 		]
 		rot = [
 			0
@@ -26086,7 +27212,7 @@ units = [
 		scl = [
 			2
 			2
-			2
+			1.5
 		]
 		type = "content/models/blockers/ACD/Airconditioning"
 	}
@@ -26105,7 +27231,7 @@ units = [
 		pos = [
 			-2.665447
 			211.337112
-			1.556363
+			1.3
 		]
 		rot = [
 			0
@@ -26116,7 +27242,7 @@ units = [
 		scl = [
 			2
 			2
-			2
+			1.5
 		]
 		type = "content/models/blockers/ACD/Airconditioning"
 	}
@@ -26224,7 +27350,7 @@ units = [
 		name = "cone7"
 		pos = [
 			0
-			234.639267
+			234
 			-1.55766
 		]
 		rot = [
@@ -26254,7 +27380,7 @@ units = [
 		name = "cone8"
 		pos = [
 			-0.883442
-			234.639267
+			234
 			-1.55766
 		]
 		rot = [
@@ -26284,7 +27410,7 @@ units = [
 		name = "cone9"
 		pos = [
 			0.847983
-			234.639267
+			234
 			-1.55766
 		]
 		rot = [
@@ -26384,9 +27510,9 @@ units = [
 			-1
 		]
 		scl = [
-			1.5
-			1.5
-			1.5
+			1.2
+			1.2
+			1.2
 		]
 		type = "content/models/blockers/CONE/cone"
 	}
@@ -26414,9 +27540,9 @@ units = [
 			-1
 		]
 		scl = [
-			1.5
-			1.5
-			1.5
+			1.2
+			1.2
+			1.2
 		]
 		type = "content/models/blockers/CONE/cone"
 	}
@@ -26444,9 +27570,9 @@ units = [
 			-1
 		]
 		scl = [
-			1.5
-			1.5
-			1.5
+			1.2
+			1.2
+			1.2
 		]
 		type = "content/models/blockers/CONE/cone"
 	}
@@ -26523,7 +27649,7 @@ units = [
 		}
 		name = "cone13"
 		pos = [
-			-5.917107
+			-10.16043
 			103.088425
 			0.625261
 		]
@@ -26553,7 +27679,7 @@ units = [
 		}
 		name = "cone14"
 		pos = [
-			-5.906456
+			-10.149778
 			104.541801
 			0.625261
 		]
@@ -26583,7 +27709,7 @@ units = [
 		}
 		name = "cone15"
 		pos = [
-			-5.896111
+			-10.139434
 			102.60215
 			0.625261
 		]
@@ -26613,7 +27739,7 @@ units = [
 		}
 		name = "cone16"
 		pos = [
-			-5.906456
+			-10.149778
 			104.926331
 			0.625261
 		]
@@ -26627,6 +27753,606 @@ units = [
 			0.5
 			0.5
 			0.5
+		]
+		type = "content/models/blockers/CONE/cone"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3b166048-949b-4e63-a905-757cd2608603"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Airconditioning11"
+		pos = [
+			0
+			179
+			0.305609
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/ACD/Airconditioning"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a07fdce8-a783-4f65-a614-a475e11c608d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Airconditioning12"
+		pos = [
+			1.950754
+			179
+			0.305609
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/ACD/Airconditioning"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "7a9d55ef-1161-4dfa-a68f-f13799e43cec"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Sign7"
+		pos = [
+			0
+			19
+			0
+		]
+		rot = [
+			0
+			0
+			1
+			0
+		]
+		scl = [
+			3
+			3
+			3
+		]
+		type = "content/models/blockers/SIN/Sign"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "46467244-0e0e-4ac2-95d9-f1b1579ebbe3"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Sign8"
+		pos = [
+			0
+			14
+			0
+		]
+		rot = [
+			0
+			0
+			1
+			0
+		]
+		scl = [
+			3
+			3
+			3
+		]
+		type = "content/models/blockers/SIN/Sign"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "ba5da2bf-b1e8-4033-b832-6e2aed1a4a6c"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Sign9"
+		pos = [
+			0
+			9
+			0
+		]
+		rot = [
+			0
+			0
+			1
+			0
+		]
+		scl = [
+			3
+			3
+			3
+		]
+		type = "content/models/blockers/SIN/Sign"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6dd45574-bdf1-4c5b-9223-bc7c983660be"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Sign10"
+		pos = [
+			0
+			41
+			-0.527564
+		]
+		rot = [
+			0
+			0
+			1
+			0
+		]
+		scl = [
+			3
+			3
+			3
+		]
+		type = "content/models/blockers/SIN/Sign"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c20d9a65-f1be-4d86-bfcb-f626a15cf601"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Sign12"
+		pos = [
+			0
+			142.5
+			0.222772
+		]
+		rot = [
+			0
+			0
+			1
+			0
+		]
+		scl = [
+			2.3
+			3
+			3
+		]
+		type = "content/models/blockers/SIN/Sign"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "fab56cbe-f670-436c-ab9d-077b46d0ddb3"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Airconditioning13"
+		pos = [
+			2.035364
+			85
+			0.716252
+		]
+		rot = [
+			0
+			0
+			1
+			0
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/ACD/Airconditioning"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "fd8a7291-e561-4f52-9683-45c533f07639"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Airconditioning14"
+		pos = [
+			0
+			85
+			0.716252
+		]
+		rot = [
+			0
+			0
+			1
+			0
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/ACD/Airconditioning"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "97542951-a5d5-4fde-b938-740d7308f13d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Sign14"
+		pos = [
+			0
+			65
+			0.598853
+		]
+		rot = [
+			0
+			0
+			1
+			0
+		]
+		scl = [
+			3
+			3
+			3
+		]
+		type = "content/models/blockers/SIN/Sign"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "bc71b780-882c-4811-b203-8d8be8499cf4"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "cone17"
+		pos = [
+			0
+			165
+			2.551794
+		]
+		rot = [
+			-0.113203
+			0
+			0
+			-0.993572
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/CONE/cone"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "b9b9cc56-e364-4899-8f2a-7ffa79cfc01f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "cone18"
+		pos = [
+			0
+			170
+			3.663777
+		]
+		rot = [
+			-0.113203
+			0
+			0
+			-0.993572
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/CONE/cone"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "626e6fe7-4c93-4aa5-914b-48e3f5e4d0a1"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "cone19"
+		pos = [
+			0.591375
+			165
+			2.551794
+		]
+		rot = [
+			-0.113203
+			0
+			0
+			-0.993572
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/CONE/cone"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "0045d1a6-731e-45a6-a4ed-a9b5df8d44f5"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "cone20"
+		pos = [
+			0.591375
+			170
+			3.663777
+		]
+		rot = [
+			-0.113203
+			0
+			0
+			-0.993572
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/CONE/cone"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "71750637-a365-4ddb-9345-012174bbf92b"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "cone21"
+		pos = [
+			0.591375
+			147.962738
+			-1.248443
+		]
+		rot = [
+			-0.113203
+			0
+			0
+			-0.993572
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/CONE/cone"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "80c29e62-453f-45d6-bfb5-25ffcb5c366e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "cone22"
+		pos = [
+			0
+			147.962738
+			-1.248443
+		]
+		rot = [
+			-0.113203
+			0
+			0
+			-0.993572
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/CONE/cone"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c4ea5f8c-531a-481c-951a-7830c96b1f5d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "cone23"
+		pos = [
+			6.338218
+			174.438812
+			4.405791
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/CONE/cone"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3a859ef9-8196-4d3a-ab94-682d8ceb9a8d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "cone24"
+		pos = [
+			4.301454
+			174.438812
+			4.404636
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/CONE/cone"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3b2eec4d-84d9-4374-bfb9-6a0a7c79c453"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "cone25"
+		pos = [
+			0.414587
+			46
+			-0.551185
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1.2
+			1.2
+			1.2
+		]
+		type = "content/models/blockers/CONE/cone"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "69634c95-502d-404e-8dc7-59c40823c67e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "cone26"
+		pos = [
+			-0.404204
+			46
+			-0.551185
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1.2
+			1.2
+			1.2
 		]
 		type = "content/models/blockers/CONE/cone"
 	}

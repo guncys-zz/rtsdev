@@ -1,4 +1,31 @@
 
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 299.086212
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			172.677505
+			220.637451
+			165.37767
+		]
+		projection_type = "perspective"
+		rotation = [
+			-0.115917
+			-0.279848
+			0.880476
+			0.364705
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
 materials = {
 	blinn2 = "content/models/shots/OP/OP_ground/ground_SHD"
 }
@@ -6,7 +33,7 @@ renderables = {
 	"house:pPlane1" = {
 		always_keep = false
 		culling = "bounding_volume"
-		light_baking = "none"
+		generate_uv_unwrap = true
 		occluder = false
 		shadow_caster = true
 		surface_queries = false

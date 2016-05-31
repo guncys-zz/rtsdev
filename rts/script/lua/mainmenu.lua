@@ -258,8 +258,8 @@ local function perform_action()
 	    MainMenu.shutdown()
 		SimpleProject.change_level(Project.level_names.stage4)
 	elseif MainMenu.action == "to_ending" then
-	  --  MainMenu.shutdown()
-	--	SimpleProject.change_level(Project.level_names.stage1)
+	    MainMenu.shutdown()
+		SimpleProject.change_level(Project.level_names.ending)
 	elseif MainMenu.action == "exit" then
 		stingray.Application.quit()
 	elseif MainMenu.action == "start_title" then

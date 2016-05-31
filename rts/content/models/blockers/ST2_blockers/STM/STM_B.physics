@@ -1,0 +1,33 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "pCube1"
+		node = "StingrayEntityRoot"
+		shapes = [
+			{
+				material = "default"
+				shape = "pCube1"
+				template = "blocker"
+				type = "box"
+			}
+		]
+		template = "static"
+	}
+	{
+		enabled = true
+		mass = 0
+		name = "stumpB"
+		node = "stumpB"
+		shapes = [
+			{
+				material = "default"
+				shape = "stumpB"
+				template = "default"
+				type = "box"
+			}
+		]
+		template = "static"
+	}
+]

@@ -29,7 +29,7 @@ function Opening.start()
         --http://help.autodesk.com/view/ScaleformStudio/ENU/?guid=__scaleform_studio_help_getting_started_interface_overview_project_panel_html
 		scaleform.Stage.set_view_scale_mode(2)  --Sets the current scale mode for the stage
 
-        local loading = scaleform.Actor.load("Opening.s2dscene")
+        local loading = scaleform.Actor.load("Empty.s2dscene")
 	    -- Remove the main menu scene
         scaleform.Stage.remove_scene_by_index(1)
         -- Add the loading scene

@@ -137,12 +137,31 @@ nodes = [
 			}
 		}
 		name = "Change Vignett"
+		out_events = {
+			Out = [
+				{
+					event = 0
+					id = "d45006c8-03b8-4385-8d40-af42c199d870:0"
+					node = "d45006c8-03b8-4385-8d40-af42c199d870"
+				}
+			]
+		}
+		out_variables = {
+			Finished = {
+				type = "bool"
+			}
+		}
 		query = false
 		return_values = [
+			{
+				name = "Finished"
+				type = "bool"
+			}
 		]
 		type = "custom_script_node"
 		variable_values = {
 			Change = null
+			Finished = null
 			Max = null
 			Min = null
 		}
@@ -309,6 +328,49 @@ nodes = [
 		variable_values = {
 			numeric = null
 			value = null
+		}
+	}
+	{
+		id = "d45006c8-03b8-4385-8d40-af42c199d870"
+		in_variables = {
+			condition = {
+				node = "37e443d2-4fc6-4315-8c48-21bf6b38a299"
+				type = "bool"
+				variable = "Finished"
+			}
+		}
+		out_events = {
+			true = [
+				{
+					event = 0
+					id = "f900e5e8-5d4a-41ed-94af-5863c02d5a28:0"
+					node = "f900e5e8-5d4a-41ed-94af-5863c02d5a28"
+				}
+			]
+		}
+		type = "branch"
+		variable_values = {
+			condition = null
+		}
+	}
+	{
+		id = "f900e5e8-5d4a-41ed-94af-5863c02d5a28"
+		in_variables = {
+			bool = {
+				type = "bool"
+			}
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_bool_variable"
+		variable_values = {
+			bool = false
+			name = "StageChange"
+			scope = "local"
 		}
 	}
 	{

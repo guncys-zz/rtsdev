@@ -253,18 +253,26 @@ editor_metadata = {
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
 				FromItem = "Out"
-				FromNode = "e6969a1e-3907-4fe4-a266-a5106ac401b1"
-				Priority = 0
-				ToItem = "Start"
-				ToNode = "526bee88-eaa8-4ecd-bbaf-c11b2e353e09"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
 				FromNode = "9c7b5dd9-2e42-40da-801d-de561afb533e"
 				Priority = 0
 				ToItem = "In"
 				ToNode = "2afd5495-6651-42d6-a758-5da9ace0ac77"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "f5b80e33-f7ab-4eff-ae5f-304ed7f45c2b"
+				Priority = 0
+				ToItem = "Play"
+				ToNode = "6a7844ee-9cc7-40ec-b3d9-1377aedce115"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "e6969a1e-3907-4fe4-a266-a5106ac401b1"
+				Priority = 0
+				ToItem = "Play"
+				ToNode = "04c230fd-8a74-456f-b282-a183ed11bd6a"
 			}
 		]
 		Groups = [
@@ -435,6 +443,8 @@ editor_metadata = {
 				Class = "Stingray.Foundation.Flow.LevelUnit"
 				Id = "29beef00-a9a2-4383-9095-daa70a7066ac"
 				InEvents = [
+					"pause"
+					"unpause"
 				]
 				InVariableNames = [
 				]
@@ -1043,8 +1053,8 @@ editor_metadata = {
 				InVariables = [
 				]
 				NodeLocation = {
-					X = 640
-					Y = 680
+					X = 900
+					Y = 700
 				}
 				OutEvents = [
 				]
@@ -1092,6 +1102,80 @@ editor_metadata = {
 				Out = {
 				}
 				Title = "Once"
+				Width = 160
+			}
+			{
+				Brief = "Allows the interaction and control of a story event within the level from Flow."
+				Class = "Stingray.Foundation.Flow.LevelStory"
+				Id = "6a7844ee-9cc7-40ec-b3d9-1377aedce115"
+				LoopEnd = {
+				}
+				LoopMode = {
+				}
+				LoopStart = {
+				}
+				NodeLocation = {
+					X = -461
+					Y = -3
+				}
+				OutEvents = [
+					"default shading environment"
+				]
+				Play = {
+				}
+				Played = {
+				}
+				Speed = {
+				}
+				Stop = {
+				}
+				Stopped = {
+				}
+				Story = {
+					Id = "28ee0de6-e3ba-4040-9e60-36cd74e72ac2"
+				}
+				StoryId = {
+				}
+				Time = {
+				}
+				Title = "Level Story"
+				Width = 160
+			}
+			{
+				Brief = "Allows the interaction and control of a story event within the level from Flow."
+				Class = "Stingray.Foundation.Flow.LevelStory"
+				Id = "04c230fd-8a74-456f-b282-a183ed11bd6a"
+				LoopEnd = {
+				}
+				LoopMode = {
+				}
+				LoopStart = {
+				}
+				NodeLocation = {
+					X = 594
+					Y = 726
+				}
+				OutEvents = [
+					"default shading environment"
+				]
+				Play = {
+				}
+				Played = {
+				}
+				Speed = {
+				}
+				Stop = {
+				}
+				Stopped = {
+				}
+				Story = {
+					Id = "e71a52ca-f190-4f24-8f4d-ef07790b2d4c"
+				}
+				StoryId = {
+				}
+				Time = {
+				}
+				Title = "Level Story"
 				Width = 160
 			}
 		]
@@ -1170,6 +1254,232 @@ editor_metadata = {
 	Splines = [
 	]
 	Stories = [
+		{
+			Curves = [
+				{
+					ArrayPropertyIndex = 0
+					ComponentId = "dd1dccf2-6f2f-4b8c-9199-290c069ab62b"
+					ComponentName = "Vignette"
+					EntityName = "default shading environment"
+					EntityPropertyPath = [
+						"vignette_radius"
+					]
+					Id = "da23412e-df82-4a7c-b33f-bf5400b01134"
+					IsPrefabChild = false
+					LeftBehavior = "Constant"
+					PrefabChildEntityPath = [
+					]
+					RightBehavior = "Constant"
+					StoryPropertyDisplayPath = [
+						"Radius"
+					]
+					StoryPropertyPath = [
+						"vignette_radius"
+					]
+					TrackId = "eea8cf9b-655d-4f07-9254-0b729b603ccd"
+					Type = "EntityPropertyCurveModel"
+				}
+			]
+			End = 1.1
+			Id = "28ee0de6-e3ba-4040-9e60-36cd74e72ac2"
+			Keys = [
+				{
+					CurveId = "da23412e-df82-4a7c-b33f-bf5400b01134"
+					Id = "a666f18d-32ba-4adc-b11a-ed9c1c2e5ae7"
+					KeyType = "Spline"
+					Step = false
+					Time = 0
+					TrackId = null
+					Value0 = 0
+					Value1 = 0
+					Value2 = 0
+					Value3 = 0
+				}
+				{
+					CurveId = "da23412e-df82-4a7c-b33f-bf5400b01134"
+					Id = "6426c995-a3f4-4a1f-b423-6b018a373bb0"
+					KeyType = "Spline"
+					Step = false
+					Time = 1
+					TrackId = null
+					Value0 = 1
+					Value1 = 0
+					Value2 = 0
+					Value3 = 0
+				}
+			]
+			Name = "OpenVignette"
+			OnionSkinning = {
+				Color = {
+					A = 25
+					B = 255
+					G = 255
+					R = 0
+				}
+				Enabled = false
+				Objects = "Selected"
+				SkinsAfter = 10
+				SkinsBefore = 10
+				SkinStep = 4
+			}
+			OnionSkinningColor = {
+				A = 25
+				B = 255
+				G = 255
+				R = 0
+			}
+			OnionSkinningEnabled = false
+			OnionSkinningObjects = "Selected"
+			OnionSkinningSkinsAfter = 10
+			OnionSkinningSkinsBefore = 10
+			OnionSkinningSkinStep = 4
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Rot = {
+				W = 1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			Start = 0
+			Tracks = [
+				{
+					Entity = {
+						Id = "437628ab-f75d-4bbc-bdec-2e65126b15be"
+						Index = 0
+					}
+					Id = "eea8cf9b-655d-4f07-9254-0b729b603ccd"
+					Name = "default shading environment"
+					Unit = null
+				}
+			]
+		}
+		{
+			Curves = [
+				{
+					ArrayPropertyIndex = 0
+					ComponentId = "dd1dccf2-6f2f-4b8c-9199-290c069ab62b"
+					ComponentName = "Vignette"
+					EntityName = "default shading environment"
+					EntityPropertyPath = [
+						"vignette_radius"
+					]
+					Id = "b59df227-bf4c-4dfe-8d6b-cd7b2405fdf5"
+					IsPrefabChild = false
+					LeftBehavior = "Constant"
+					PrefabChildEntityPath = [
+					]
+					RightBehavior = "Constant"
+					StoryPropertyDisplayPath = [
+						"Radius"
+					]
+					StoryPropertyPath = [
+						"vignette_radius"
+					]
+					TrackId = "bcab2ed3-1c15-4ce6-9dda-da9c0ef0bb85"
+					Type = "EntityPropertyCurveModel"
+				}
+			]
+			End = 1.1
+			Id = "e71a52ca-f190-4f24-8f4d-ef07790b2d4c"
+			Keys = [
+				{
+					CurveId = "b59df227-bf4c-4dfe-8d6b-cd7b2405fdf5"
+					Id = "be5766c2-27b5-4651-b91e-9108c92759e3"
+					KeyType = "Spline"
+					Step = false
+					Time = 0
+					TrackId = null
+					Value0 = 1
+					Value1 = 0
+					Value2 = 0
+					Value3 = 0
+				}
+				{
+					CurveId = "b59df227-bf4c-4dfe-8d6b-cd7b2405fdf5"
+					Id = "160ea50b-1212-4e76-8068-f716bc51eef7"
+					KeyType = "Spline"
+					Step = false
+					Time = 1
+					TrackId = null
+					Value0 = 0
+					Value1 = 0
+					Value2 = 0
+					Value3 = 0
+				}
+			]
+			Name = "CloseVignette"
+			OnionSkinning = {
+				Color = {
+					A = 25
+					B = 255
+					G = 255
+					R = 0
+				}
+				Enabled = false
+				Objects = "Selected"
+				SkinsAfter = 10
+				SkinsBefore = 10
+				SkinStep = 4
+			}
+			OnionSkinningColor = {
+				A = 25
+				B = 255
+				G = 255
+				R = 0
+			}
+			OnionSkinningEnabled = false
+			OnionSkinningObjects = "Selected"
+			OnionSkinningSkinsAfter = 10
+			OnionSkinningSkinsBefore = 10
+			OnionSkinningSkinStep = 4
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Rot = {
+				W = 1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			Start = 0
+			Tracks = [
+				{
+					Entity = {
+						Id = "437628ab-f75d-4bbc-bdec-2e65126b15be"
+						Index = 0
+					}
+					Id = "bcab2ed3-1c15-4ce6-9dda-da9c0ef0bb85"
+					Name = "default shading environment"
+					Unit = null
+				}
+			]
+		}
 	]
 	Triggers = [
 	]
@@ -6747,524 +7057,6 @@ editor_metadata = {
 				"light_baking.mushroomD.bake_target" = false
 			}
 			Type = "content/models/stage2/mushroom/mushroomD"
-		}
-		{
-			Cameras = {
-			}
-			Id = "694890ad-b93e-453c-91e8-cde30f927331"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "MSH_A"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 20.025326
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/blockers/MSH/MSH_A"
-		}
-		{
-			Cameras = {
-			}
-			Id = "519a0b60-bc13-455c-8ac3-d6802a6b4744"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "STM_B"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 40.058201
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/blockers/STM/STM_B"
-		}
-		{
-			Cameras = {
-			}
-			Id = "65fa36a2-ed33-4ff3-a505-2f9e7b6033c3"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "STN_B"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 55.011253
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/blockers/STN/STN_B"
-		}
-		{
-			Cameras = {
-			}
-			Id = "56dce8de-04d4-4338-94eb-2832078b1d54"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "STM_A"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 65.150322
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/blockers/STM/STM_A"
-		}
-		{
-			Cameras = {
-			}
-			Id = "3e5dd3a4-8863-4023-b670-5ee38423c2a6"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "MSH_B"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 74.986404
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/blockers/MSH/MSH_B"
-		}
-		{
-			Cameras = {
-			}
-			Id = "1870835d-b136-4df6-9f2c-ae88c5c3af6e"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "STM_B1"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 90.03643
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/blockers/STM/STM_B"
-		}
-		{
-			Cameras = {
-			}
-			Id = "831d2228-2d95-4c52-af5b-d2410ed30ac8"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "STM_B2"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 110.001747
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/blockers/STM/STM_B"
-		}
-		{
-			Cameras = {
-			}
-			Id = "ed055d79-a563-4d9d-bc2f-aa4ae004dcbc"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "STM_B3"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 140.004807
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/blockers/STM/STM_B"
-		}
-		{
-			Cameras = {
-			}
-			Id = "6b1b3fc0-daae-4dc7-85fd-0b9c1897364b"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "STM_B4"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 174.921478
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/blockers/STM/STM_B"
-		}
-		{
-			Cameras = {
-			}
-			Id = "da44c566-3ef5-444c-b496-bd40c68d153e"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "STN_B1"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 99.997749
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/blockers/STN/STN_B"
-		}
-		{
-			Cameras = {
-			}
-			Id = "789cfbe8-b8ab-452f-ad7f-195ed3db4de9"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "STN_B2"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 115.226082
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/blockers/STN/STN_B"
-		}
-		{
-			Cameras = {
-			}
-			Id = "83699199-eafa-4caa-8d8a-e3e6d7d8bb83"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "STN_C"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 130.020508
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/blockers/STN/STN_C"
-		}
-		{
-			Cameras = {
-			}
-			Id = "a46e89ab-d66b-412b-986b-cda3b8034aad"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "PLT_A"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 149.976059
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/blockers/PLT/PLT_A"
-		}
-		{
-			Cameras = {
-			}
-			Id = "64b97be9-5f60-4777-8b6b-447918c319bb"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "PLT_A1"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 160.071655
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/blockers/PLT/PLT_A"
 		}
 		{
 			Cameras = {
@@ -15107,13 +14899,50 @@ editor_metadata = {
 		{
 			Cameras = {
 			}
-			Id = "7d85d28a-2eee-4ab8-994f-abeaa71a424b"
+			Id = "42ab2fbb-c762-4026-8a29-ae4692c010a4"
 			Layer = "Default"
 			Lights = {
 			}
 			Materials = {
 			}
-			Name = "CHI"
+			Name = "MSH_A2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 20
+				Z = -0.039361
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 0.8
+				Y = 0.8
+				Z = 0.8
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/ST2_blockers/MSH/MSH_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3037c987-106f-4efc-85fa-450d5b882ef7"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "CHI2"
 			OverridePoses = {
 			}
 			Pivot = {
@@ -15127,30 +14956,30 @@ editor_metadata = {
 				Z = 0
 			}
 			Rot = {
-				W = 8.94896662497055E-10
+				W = 6.12303176911189E-17
 				X = 0
 				Y = 0
-				Z = 1
+				Z = -1
 			}
 			Scl = {
-				X = 3
-				Y = 3
-				Z = 3
+				X = 2.5
+				Y = 2.5
+				Z = 2.5
 			}
 			ScriptData = {
 			}
-			Type = "content/models/blockers/CHI/CHI"
+			Type = "content/models/blockers/ST2_blockers/CHI/CHI"
 		}
 		{
 			Cameras = {
 			}
-			Id = "0397049f-1bb6-4ae9-87ab-bf86c5098ba1"
+			Id = "dd74925a-e536-47b9-b55e-d2c3245b53d8"
 			Layer = "Default"
 			Lights = {
 			}
 			Materials = {
 			}
-			Name = "BNN"
+			Name = "BNN1"
 			OverridePoses = {
 			}
 			Pivot = {
@@ -15176,12 +15005,197 @@ editor_metadata = {
 			}
 			ScriptData = {
 			}
-			Type = "content/models/blockers/BNN/BNN"
+			Type = "content/models/blockers/ST2_blockers/BNN/BNN"
 		}
 		{
 			Cameras = {
 			}
-			Id = "7281cc9b-ca73-48a2-b0db-6c9aff7985b7"
+			Id = "5727964d-3593-4bb6-9df4-cfe473892fd1"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STM_B7"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 40
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/ST2_blockers/STM/STM_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "61fe7a54-fc17-4f39-a93c-db889a6f624a"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "MSH_B2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 48
+				Z = -0.05
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/ST2_blockers/MSH/MSH_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a8ab6d19-680f-4071-802f-7d82a03a09ae"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STN_B5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 55
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/ST2_blockers/STN/STN_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "bab8f9f3-9487-477e-afef-037c5598e748"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STM_A1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 65
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/ST2_blockers/STM/STM_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6d065fc7-3532-4163-a88c-5c769171aefe"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STM_B"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 70
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/ST2_blockers/STM/STM_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f694d24c-f870-4694-8ab4-6f873e197cf7"
 			Layer = "Default"
 			Lights = {
 			}
@@ -15197,8 +15211,8 @@ editor_metadata = {
 			}
 			Pos = {
 				X = 0
-				Y = 50
-				Z = 0
+				Y = 75
+				Z = -0.05
 			}
 			Rot = {
 				W = -1
@@ -15213,55 +15227,18 @@ editor_metadata = {
 			}
 			ScriptData = {
 			}
-			Type = "content/models/blockers/MSH/MSH_B"
+			Type = "content/models/blockers/ST2_blockers/MSH/MSH_B"
 		}
 		{
 			Cameras = {
 			}
-			Id = "5dad45ce-0cf0-4c10-b96d-7a75f6f49fad"
+			Id = "b7a36963-8b07-4660-b944-5c11b43890ab"
 			Layer = "Default"
 			Lights = {
 			}
 			Materials = {
 			}
-			Name = "STM_B5"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0
-				Y = 71
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/blockers/STM/STM_B"
-		}
-		{
-			Cameras = {
-			}
-			Id = "569c9845-a1c0-4170-85ec-254f5234fb40"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "STN_B3"
+			Name = "STN_B"
 			OverridePoses = {
 			}
 			Pivot = {
@@ -15287,18 +15264,18 @@ editor_metadata = {
 			}
 			ScriptData = {
 			}
-			Type = "content/models/blockers/STN/STN_B"
+			Type = "content/models/blockers/ST2_blockers/STN/STN_B"
 		}
 		{
 			Cameras = {
 			}
-			Id = "6cfc8d40-8072-45f9-a91a-53f2e5556580"
+			Id = "a02bdad8-183f-463f-9218-6a860bba71ec"
 			Layer = "Default"
 			Lights = {
 			}
 			Materials = {
 			}
-			Name = "STM_B6"
+			Name = "STM_B1"
 			OverridePoses = {
 			}
 			Pivot = {
@@ -15324,12 +15301,86 @@ editor_metadata = {
 			}
 			ScriptData = {
 			}
-			Type = "content/models/blockers/STM/STM_B"
+			Type = "content/models/blockers/ST2_blockers/STM/STM_B"
 		}
 		{
 			Cameras = {
 			}
-			Id = "08aa63b8-e3ad-4e20-b384-b7b7d6d5245b"
+			Id = "2ddfed79-e12a-48c1-b081-041c7cf2bd6d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STM_B5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 90
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/ST2_blockers/STM/STM_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "092b1a3e-5e49-4efe-8b75-794b1fac4ec8"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STN_B3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 100
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/ST2_blockers/STN/STN_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "b626b2a3-f80d-4180-9f25-768b37291d28"
 			Layer = "Default"
 			Lights = {
 			}
@@ -15361,18 +15412,18 @@ editor_metadata = {
 			}
 			ScriptData = {
 			}
-			Type = "content/models/blockers/FNC/FNC"
+			Type = "content/models/blockers/ST2_blockers/FNC/FNC"
 		}
 		{
 			Cameras = {
 			}
-			Id = "4be4d7a3-cc24-4db7-9af4-e11b5ec677f7"
+			Id = "39287062-bc7e-4b35-8483-ebde780fdffe"
 			Layer = "Default"
 			Lights = {
 			}
 			Materials = {
 			}
-			Name = "MSH_A1"
+			Name = "STM_B6"
 			OverridePoses = {
 			}
 			Pivot = {
@@ -15382,7 +15433,7 @@ editor_metadata = {
 			}
 			Pos = {
 				X = 0
-				Y = 125
+				Y = 110
 				Z = 0
 			}
 			Rot = {
@@ -15398,18 +15449,203 @@ editor_metadata = {
 			}
 			ScriptData = {
 			}
-			Type = "content/models/blockers/MSH/MSH_A"
+			Type = "content/models/blockers/ST2_blockers/STM/STM_B"
 		}
 		{
 			Cameras = {
 			}
-			Id = "2cc4e792-dc88-4b3b-94e0-5d07523cdbe1"
+			Id = "61dedf65-3507-43ee-9ed9-bf32987c57ed"
 			Layer = "Default"
 			Lights = {
 			}
 			Materials = {
 			}
-			Name = "STN_B4"
+			Name = "STN_B1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 115
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/ST2_blockers/STN/STN_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "50a1c726-7933-48b4-9654-f423406b787c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "MSH_A"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 125
+				Z = -0.063011
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 0.8
+				Y = 0.8
+				Z = 0.8
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/ST2_blockers/MSH/MSH_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6a9ce1c8-9a48-40ab-bcb2-86325aaa1869"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STN_C"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 130
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/ST2_blockers/STN/STN_C"
+		}
+		{
+			Cameras = {
+			}
+			Id = "0ed0b6c3-f5eb-49d1-867b-14b0a88c56be"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STM_B2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 140
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/ST2_blockers/STM/STM_B"
+		}
+		{
+			Cameras = {
+			}
+			Id = "04c02f92-1dbf-4e52-9b2c-bcc48bd945d2"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "PLT_A2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 150
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/ST2_blockers/PLT/PLT_A"
+		}
+		{
+			Cameras = {
+			}
+			Id = "d25943f6-214e-49e1-a907-50ccd1034ce6"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "STN_B2"
 			OverridePoses = {
 			}
 			Pivot = {
@@ -15435,18 +15671,18 @@ editor_metadata = {
 			}
 			ScriptData = {
 			}
-			Type = "content/models/blockers/STN/STN_B"
+			Type = "content/models/blockers/ST2_blockers/STN/STN_B"
 		}
 		{
 			Cameras = {
 			}
-			Id = "54c71bf9-9921-44de-96f7-5bfdc2acf09e"
+			Id = "68b06554-f2fe-4674-bb1f-8e3ccd8d19ec"
 			Layer = "Default"
 			Lights = {
 			}
 			Materials = {
 			}
-			Name = "CHI1"
+			Name = "PLT_A"
 			OverridePoses = {
 			}
 			Pivot = {
@@ -15456,23 +15692,23 @@ editor_metadata = {
 			}
 			Pos = {
 				X = 0
-				Y = 168
+				Y = 160
 				Z = 0
 			}
 			Rot = {
-				W = 8.94896662497055E-10
+				W = -1
 				X = 0
 				Y = 0
-				Z = 1
+				Z = 0
 			}
 			Scl = {
-				X = 3
-				Y = 3
-				Z = 3
+				X = 1
+				Y = 1
+				Z = 1
 			}
 			ScriptData = {
 			}
-			Type = "content/models/blockers/CHI/CHI"
+			Type = "content/models/blockers/ST2_blockers/PLT/PLT_A"
 		}
 	]
 	Volumes = [
@@ -15578,6 +15814,11 @@ flow = {
 						id = "121ab2e8-e899-4bc0-939f-15535a49f17b:0"
 						node = "121ab2e8-e899-4bc0-939f-15535a49f17b"
 					}
+					{
+						event = 0
+						id = "6a7844ee-9cc7-40ec-b3d9-1377aedce115:0"
+						node = "6a7844ee-9cc7-40ec-b3d9-1377aedce115"
+					}
 				]
 			}
 			type = "level_loaded"
@@ -15652,6 +15893,8 @@ flow = {
 		{
 			id = "29beef00-a9a2-4383-9095-daa70a7066ac"
 			in_event_index = [
+				"pause"
+				"unpause"
 			]
 			out_event_index = [
 			]
@@ -16217,12 +16460,76 @@ flow = {
 					}
 					{
 						event = 0
-						id = "526bee88-eaa8-4ecd-bbaf-c11b2e353e09:0"
-						node = "526bee88-eaa8-4ecd-bbaf-c11b2e353e09"
+						id = "04c230fd-8a74-456f-b282-a183ed11bd6a:0"
+						node = "04c230fd-8a74-456f-b282-a183ed11bd6a"
 					}
 				]
 			}
 			type = "once"
+		}
+		{
+			id = "6a7844ee-9cc7-40ec-b3d9-1377aedce115"
+			in_variables = {
+				loop_end = {
+					type = "float"
+				}
+				loop_mode = {
+					type = "string"
+				}
+				loop_start = {
+					type = "float"
+				}
+				speed = {
+					type = "float"
+				}
+				time = {
+					type = "float"
+				}
+			}
+			type = "level_story"
+			variable_values = {
+				loop_end = null
+				loop_mode = null
+				loop_start = null
+				speed = null
+				story = {
+					id = "28ee0de6-e3ba-4040-9e60-36cd74e72ac2"
+				}
+				story_id = null
+				time = null
+			}
+		}
+		{
+			id = "04c230fd-8a74-456f-b282-a183ed11bd6a"
+			in_variables = {
+				loop_end = {
+					type = "float"
+				}
+				loop_mode = {
+					type = "string"
+				}
+				loop_start = {
+					type = "float"
+				}
+				speed = {
+					type = "float"
+				}
+				time = {
+					type = "float"
+				}
+			}
+			type = "level_story"
+			variable_values = {
+				loop_end = null
+				loop_mode = null
+				loop_start = null
+				speed = null
+				story = {
+					id = "e71a52ca-f190-4f24-8f4d-ef07790b2d4c"
+				}
+				story_id = null
+				time = null
+			}
 		}
 	]
 }
@@ -16248,6 +16555,88 @@ sounds = [
 splines = [
 ]
 stories = [
+	{
+		curves = [
+			{
+				array_property_index = 0
+				component_id = "dd1dccf2-6f2f-4b8c-9199-290c069ab62b"
+				curve_type = "cubic"
+				entity_id = "437628ab-f75d-4bbc-bdec-2e65126b15be"
+				is_prefab_child = false
+				left_behavior = "constant"
+				prefab_child_entity_path = [
+				]
+				property = [
+					"vignette_radius"
+				]
+				right_behavior = "constant"
+				step = [
+					false
+					false
+				]
+				times = [
+					0
+					1
+				]
+				type = "entity_property"
+				values = [
+					0
+					0
+					0
+					1
+					0
+					0
+				]
+			}
+		]
+		end = 1.1
+		events = [
+		]
+		id = "28ee0de6-e3ba-4040-9e60-36cd74e72ac2"
+		name = "OpenVignette"
+		start = 0
+	}
+	{
+		curves = [
+			{
+				array_property_index = 0
+				component_id = "dd1dccf2-6f2f-4b8c-9199-290c069ab62b"
+				curve_type = "cubic"
+				entity_id = "437628ab-f75d-4bbc-bdec-2e65126b15be"
+				is_prefab_child = false
+				left_behavior = "constant"
+				prefab_child_entity_path = [
+				]
+				property = [
+					"vignette_radius"
+				]
+				right_behavior = "constant"
+				step = [
+					false
+					false
+				]
+				times = [
+					0
+					1
+				]
+				type = "entity_property"
+				values = [
+					1
+					0
+					0
+					0
+					0
+					0
+				]
+			}
+		]
+		end = 1.1
+		events = [
+		]
+		id = "e71a52ca-f190-4f24-8f4d-ef07790b2d4c"
+		name = "CloseVignette"
+		start = 0
+	}
 ]
 triggers = [
 ]
@@ -20779,426 +21168,6 @@ units = [
 			1
 		]
 		type = "content/models/stage2/mushroom/mushroomD"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "694890ad-b93e-453c-91e8-cde30f927331"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "MSH_A"
-		pos = [
-			0
-			20.025326
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/blockers/MSH/MSH_A"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "519a0b60-bc13-455c-8ac3-d6802a6b4744"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "STM_B"
-		pos = [
-			0
-			40.058201
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/blockers/STM/STM_B"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "65fa36a2-ed33-4ff3-a505-2f9e7b6033c3"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "STN_B"
-		pos = [
-			0
-			55.011253
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/blockers/STN/STN_B"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "56dce8de-04d4-4338-94eb-2832078b1d54"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "STM_A"
-		pos = [
-			0
-			65.150322
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/blockers/STM/STM_A"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "3e5dd3a4-8863-4023-b670-5ee38423c2a6"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "MSH_B"
-		pos = [
-			0
-			74.986404
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/blockers/MSH/MSH_B"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "1870835d-b136-4df6-9f2c-ae88c5c3af6e"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "STM_B1"
-		pos = [
-			0
-			90.03643
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/blockers/STM/STM_B"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "831d2228-2d95-4c52-af5b-d2410ed30ac8"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "STM_B2"
-		pos = [
-			0
-			110.001747
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/blockers/STM/STM_B"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "ed055d79-a563-4d9d-bc2f-aa4ae004dcbc"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "STM_B3"
-		pos = [
-			0
-			140.004807
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/blockers/STM/STM_B"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "6b1b3fc0-daae-4dc7-85fd-0b9c1897364b"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "STM_B4"
-		pos = [
-			0
-			174.921478
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/blockers/STM/STM_B"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "da44c566-3ef5-444c-b496-bd40c68d153e"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "STN_B1"
-		pos = [
-			0
-			99.997749
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/blockers/STN/STN_B"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "789cfbe8-b8ab-452f-ad7f-195ed3db4de9"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "STN_B2"
-		pos = [
-			0
-			115.226082
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/blockers/STN/STN_B"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "83699199-eafa-4caa-8d8a-e3e6d7d8bb83"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "STN_C"
-		pos = [
-			0
-			130.020508
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/blockers/STN/STN_C"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "a46e89ab-d66b-412b-986b-cda3b8034aad"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "PLT_A"
-		pos = [
-			0
-			149.976059
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/blockers/PLT/PLT_A"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "64b97be9-5f60-4777-8b6b-447918c319bb"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "PLT_A1"
-		pos = [
-			0
-			160.071655
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/blockers/PLT/PLT_A"
 	}
 	{
 		cameras = {
@@ -27583,13 +27552,43 @@ units = [
 		}
 		data = {
 		}
-		id = "7d85d28a-2eee-4ab8-994f-abeaa71a424b"
+		id = "42ab2fbb-c762-4026-8a29-ae4692c010a4"
 		lights = {
 		}
 		material = ""
 		materials = {
 		}
-		name = "CHI"
+		name = "MSH_A2"
+		pos = [
+			0
+			20
+			-0.039361
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			0.8
+			0.8
+			0.8
+		]
+		type = "content/models/blockers/ST2_blockers/MSH/MSH_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3037c987-106f-4efc-85fa-450d5b882ef7"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "CHI2"
 		pos = [
 			0
 			27
@@ -27598,28 +27597,28 @@ units = [
 		rot = [
 			0
 			0
-			1
-			8.94896662497055E-10
+			-1
+			6.12303176911189E-17
 		]
 		scl = [
-			3
-			3
-			3
+			2.5
+			2.5
+			2.5
 		]
-		type = "content/models/blockers/CHI/CHI"
+		type = "content/models/blockers/ST2_blockers/CHI/CHI"
 	}
 	{
 		cameras = {
 		}
 		data = {
 		}
-		id = "0397049f-1bb6-4ae9-87ab-bf86c5098ba1"
+		id = "dd74925a-e536-47b9-b55e-d2c3245b53d8"
 		lights = {
 		}
 		material = ""
 		materials = {
 		}
-		name = "BNN"
+		name = "BNN1"
 		pos = [
 			0
 			35
@@ -27636,14 +27635,164 @@ units = [
 			3
 			3
 		]
-		type = "content/models/blockers/BNN/BNN"
+		type = "content/models/blockers/ST2_blockers/BNN/BNN"
 	}
 	{
 		cameras = {
 		}
 		data = {
 		}
-		id = "7281cc9b-ca73-48a2-b0db-6c9aff7985b7"
+		id = "5727964d-3593-4bb6-9df4-cfe473892fd1"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STM_B7"
+		pos = [
+			0
+			40
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/ST2_blockers/STM/STM_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "61fe7a54-fc17-4f39-a93c-db889a6f624a"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "MSH_B2"
+		pos = [
+			0
+			48
+			-0.05
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/ST2_blockers/MSH/MSH_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a8ab6d19-680f-4071-802f-7d82a03a09ae"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STN_B5"
+		pos = [
+			0
+			55
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/ST2_blockers/STN/STN_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "bab8f9f3-9487-477e-afef-037c5598e748"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STM_A1"
+		pos = [
+			0
+			65
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/ST2_blockers/STM/STM_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6d065fc7-3532-4163-a88c-5c769171aefe"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STM_B"
+		pos = [
+			0
+			70
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/ST2_blockers/STM/STM_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f694d24c-f870-4694-8ab4-6f873e197cf7"
 		lights = {
 		}
 		material = ""
@@ -27652,8 +27801,8 @@ units = [
 		name = "MSH_B1"
 		pos = [
 			0
-			50
-			0
+			75
+			-0.05
 		]
 		rot = [
 			0
@@ -27666,50 +27815,20 @@ units = [
 			1
 			1
 		]
-		type = "content/models/blockers/MSH/MSH_B"
+		type = "content/models/blockers/ST2_blockers/MSH/MSH_B"
 	}
 	{
 		cameras = {
 		}
 		data = {
 		}
-		id = "5dad45ce-0cf0-4c10-b96d-7a75f6f49fad"
+		id = "b7a36963-8b07-4660-b944-5c11b43890ab"
 		lights = {
 		}
 		material = ""
 		materials = {
 		}
-		name = "STM_B5"
-		pos = [
-			0
-			71
-			0
-		]
-		rot = [
-			0
-			0
-			0
-			-1
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/blockers/STM/STM_B"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "569c9845-a1c0-4170-85ec-254f5234fb40"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "STN_B3"
+		name = "STN_B"
 		pos = [
 			0
 			80
@@ -27726,20 +27845,20 @@ units = [
 			1
 			1
 		]
-		type = "content/models/blockers/STN/STN_B"
+		type = "content/models/blockers/ST2_blockers/STN/STN_B"
 	}
 	{
 		cameras = {
 		}
 		data = {
 		}
-		id = "6cfc8d40-8072-45f9-a91a-53f2e5556580"
+		id = "a02bdad8-183f-463f-9218-6a860bba71ec"
 		lights = {
 		}
 		material = ""
 		materials = {
 		}
-		name = "STM_B6"
+		name = "STM_B1"
 		pos = [
 			0
 			85
@@ -27756,14 +27875,74 @@ units = [
 			1
 			1
 		]
-		type = "content/models/blockers/STM/STM_B"
+		type = "content/models/blockers/ST2_blockers/STM/STM_B"
 	}
 	{
 		cameras = {
 		}
 		data = {
 		}
-		id = "08aa63b8-e3ad-4e20-b384-b7b7d6d5245b"
+		id = "2ddfed79-e12a-48c1-b081-041c7cf2bd6d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STM_B5"
+		pos = [
+			0
+			90
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/ST2_blockers/STM/STM_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "092b1a3e-5e49-4efe-8b75-794b1fac4ec8"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STN_B3"
+		pos = [
+			0
+			100
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/ST2_blockers/STN/STN_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "b626b2a3-f80d-4180-9f25-768b37291d28"
 		lights = {
 		}
 		material = ""
@@ -27786,23 +27965,23 @@ units = [
 			1
 			1
 		]
-		type = "content/models/blockers/FNC/FNC"
+		type = "content/models/blockers/ST2_blockers/FNC/FNC"
 	}
 	{
 		cameras = {
 		}
 		data = {
 		}
-		id = "4be4d7a3-cc24-4db7-9af4-e11b5ec677f7"
+		id = "39287062-bc7e-4b35-8483-ebde780fdffe"
 		lights = {
 		}
 		material = ""
 		materials = {
 		}
-		name = "MSH_A1"
+		name = "STM_B6"
 		pos = [
 			0
-			125
+			110
 			0
 		]
 		rot = [
@@ -27816,20 +27995,170 @@ units = [
 			1
 			1
 		]
-		type = "content/models/blockers/MSH/MSH_A"
+		type = "content/models/blockers/ST2_blockers/STM/STM_B"
 	}
 	{
 		cameras = {
 		}
 		data = {
 		}
-		id = "2cc4e792-dc88-4b3b-94e0-5d07523cdbe1"
+		id = "61dedf65-3507-43ee-9ed9-bf32987c57ed"
 		lights = {
 		}
 		material = ""
 		materials = {
 		}
-		name = "STN_B4"
+		name = "STN_B1"
+		pos = [
+			0
+			115
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/ST2_blockers/STN/STN_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "50a1c726-7933-48b4-9654-f423406b787c"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "MSH_A"
+		pos = [
+			0
+			125
+			-0.063011
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			0.8
+			0.8
+			0.8
+		]
+		type = "content/models/blockers/ST2_blockers/MSH/MSH_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6a9ce1c8-9a48-40ab-bcb2-86325aaa1869"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STN_C"
+		pos = [
+			0
+			130
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/ST2_blockers/STN/STN_C"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "0ed0b6c3-f5eb-49d1-867b-14b0a88c56be"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STM_B2"
+		pos = [
+			0
+			140
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/ST2_blockers/STM/STM_B"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "04c02f92-1dbf-4e52-9b2c-bcc48bd945d2"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "PLT_A2"
+		pos = [
+			0
+			150
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/ST2_blockers/PLT/PLT_A"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "d25943f6-214e-49e1-a907-50ccd1034ce6"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "STN_B2"
 		pos = [
 			0
 			155
@@ -27846,37 +28175,37 @@ units = [
 			1
 			1
 		]
-		type = "content/models/blockers/STN/STN_B"
+		type = "content/models/blockers/ST2_blockers/STN/STN_B"
 	}
 	{
 		cameras = {
 		}
 		data = {
 		}
-		id = "54c71bf9-9921-44de-96f7-5bfdc2acf09e"
+		id = "68b06554-f2fe-4674-bb1f-8e3ccd8d19ec"
 		lights = {
 		}
 		material = ""
 		materials = {
 		}
-		name = "CHI1"
+		name = "PLT_A"
 		pos = [
 			0
-			168
+			160
 			0
 		]
 		rot = [
 			0
 			0
-			1
-			8.94896662497055E-10
+			0
+			-1
 		]
 		scl = [
-			3
-			3
-			3
+			1
+			1
+			1
 		]
-		type = "content/models/blockers/CHI/CHI"
+		type = "content/models/blockers/ST2_blockers/PLT/PLT_A"
 	}
 ]
 volumes = [

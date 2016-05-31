@@ -1,0 +1,54 @@
+
+data = {
+	IsBlocker = true
+}
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 1.880079
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			0.956155
+			-1.088005
+			1.654223
+		]
+		projection_type = "perspective"
+		rotation = [
+			0.324954
+			0.125327
+			-0.337311
+			-0.874597
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
+materials = {
+	lambert52 = "content/models/blockers/ST2_blockers/MSH/MSH_B_MT"
+}
+renderables = {
+	mushroomB = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	pCube1 = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = false
+		surface_queries = false
+		viewport_visible = false
+	}
+}
