@@ -1225,8 +1225,8 @@ shader = {
 }
 textures = {
 	ao_map = null
-	color_map = "content/models/stage4/background/textures/ST4_BG"
-	emissive_map = null
+	color_map = null
+	emissive_map = "content/models/stage4/background/textures/ST4_BG"
 	metallic_map = null
 	normal_map = null
 	roughness_map = null
@@ -1235,9 +1235,9 @@ variables = {
 	base_color = {
 		type = "vector3"
 		value = [
-			1
-			1
-			1
+			0
+			0
+			0
 		]
 	}
 	emissive = {
@@ -1250,7 +1250,7 @@ variables = {
 	}
 	emissive_intensity = {
 		type = "scalar"
-		value = 0
+		value = 0.8
 	}
 	material_variable = {
 		type = "scalar"
@@ -1270,11 +1270,11 @@ variables = {
 	}
 	use_color_map = {
 		type = "scalar"
-		value = 1
+		value = 0
 	}
 	use_emissive_map = {
 		type = "scalar"
-		value = 0
+		value = 1
 	}
 	use_metallic_map = {
 		type = "scalar"

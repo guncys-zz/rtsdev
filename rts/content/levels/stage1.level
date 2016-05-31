@@ -418,6 +418,8 @@ editor_metadata = {
 				Class = "Stingray.Foundation.Flow.LevelUnit"
 				Id = "29beef00-a9a2-4383-9095-daa70a7066ac"
 				InEvents = [
+					"pause"
+					"unpause"
 				]
 				InVariableNames = [
 				]
@@ -4578,7 +4580,7 @@ editor_metadata = {
 			Pos = {
 				X = -87
 				Y = 212
-				Z = -29
+				Z = -30
 			}
 			Rot = {
 				W = 8.94896662497055E-10
@@ -5655,6 +5657,8 @@ flow = {
 		{
 			id = "29beef00-a9a2-4383-9095-daa70a7066ac"
 			in_event_index = [
+				"pause"
+				"unpause"
 			]
 			out_event_index = [
 			]
@@ -8921,7 +8925,7 @@ units = [
 		pos = [
 			-87
 			212
-			-29
+			-30
 		]
 		rot = [
 			0

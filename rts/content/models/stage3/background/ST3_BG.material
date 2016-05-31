@@ -138,15 +138,6 @@ shader = {
 		}
 		{
 			destination = {
-				connector_id = "1ee9af1f-65f2-4739-ad28-5ea6a0e68fc3"
-				instance_id = "06e20b35-09bf-4f22-84dd-db8f9e5588da"
-			}
-			source = {
-				instance_id = "a464c282-44a3-40ee-a808-8d9541b6ad70"
-			}
-		}
-		{
-			destination = {
 				connector_id = "f2f74e58-402d-472b-87dd-331e00db416c"
 				instance_id = "1c9a0cc2-86b3-471d-933d-ccc4fa94baf3"
 			}
@@ -323,6 +314,33 @@ shader = {
 			}
 			source = {
 				instance_id = "2ed10d4b-3b19-4386-b661-5835aadbd577"
+			}
+		}
+		{
+			destination = {
+				connector_id = "c5823c75-4ae5-4c71-b070-315fa4d03e8e"
+				instance_id = "3c8f5acf-88d5-43d6-84e2-15b9d47532c4"
+			}
+			source = {
+				instance_id = "3023e25d-b9e1-46e0-9fec-277d03376cb4"
+			}
+		}
+		{
+			destination = {
+				connector_id = "242d1648-a626-445b-9534-bccec094112f"
+				instance_id = "3c8f5acf-88d5-43d6-84e2-15b9d47532c4"
+			}
+			source = {
+				instance_id = "d8addec3-ac48-4e3f-a83c-77b90bfa808d"
+			}
+		}
+		{
+			destination = {
+				connector_id = "1ee9af1f-65f2-4739-ad28-5ea6a0e68fc3"
+				instance_id = "06e20b35-09bf-4f22-84dd-db8f9e5588da"
+			}
+			source = {
+				instance_id = "3c8f5acf-88d5-43d6-84e2-15b9d47532c4"
 			}
 		}
 	]
@@ -1220,13 +1238,79 @@ shader = {
 			}
 			type = "core/shader_nodes/material_variable"
 		}
+		{
+			content_size = [
+				160
+				0
+			]
+			export = {
+			}
+			id = "3c8f5acf-88d5-43d6-84e2-15b9d47532c4"
+			options = [
+			]
+			position = [
+				180
+				780
+			]
+			samplers = {
+			}
+			type = "core/shader_nodes/mul"
+		}
+		{
+			content_size = [
+				160
+				0
+			]
+			export = {
+			}
+			id = "3023e25d-b9e1-46e0-9fec-277d03376cb4"
+			options = [
+			]
+			position = [
+				-20
+				720
+			]
+			samplers = {
+			}
+			type = "core/shader_nodes/texture_coordinate0"
+		}
+		{
+			content_size = [
+				160
+				0
+			]
+			export = {
+				material_variable = {
+					display_name = "material_variable"
+					name = "material_variable_0bfa808d"
+					type = "float"
+					ui = {
+						max = 10
+						min = 0
+						step = 0.001
+						ui_type = "NumberSlider"
+					}
+					value = 0
+				}
+			}
+			id = "d8addec3-ac48-4e3f-a83c-77b90bfa808d"
+			options = [
+			]
+			position = [
+				-20
+				880
+			]
+			samplers = {
+			}
+			type = "core/shader_nodes/material_variable"
+		}
 	]
 	version = 3
 }
 textures = {
 	ao_map = null
-	color_map = "content/models/stage3/background/textures/ST3_BG"
-	emissive_map = null
+	color_map = null
+	emissive_map = "content/models/stage3/background/textures/ST3_BG"
 	metallic_map = null
 	normal_map = null
 	roughness_map = null
@@ -1235,9 +1319,9 @@ variables = {
 	base_color = {
 		type = "vector3"
 		value = [
-			1
-			1
-			1
+			0
+			0
+			0
 		]
 	}
 	emissive = {
@@ -1250,9 +1334,13 @@ variables = {
 	}
 	emissive_intensity = {
 		type = "scalar"
-		value = 0
+		value = 0.18
 	}
 	material_variable = {
+		type = "scalar"
+		value = 6.096
+	}
+	material_variable_0bfa808d = {
 		type = "scalar"
 		value = 6.096
 	}
@@ -1262,7 +1350,7 @@ variables = {
 	}
 	roughness = {
 		type = "scalar"
-		value = 0.98
+		value = 1
 	}
 	use_ao_map = {
 		type = "scalar"
@@ -1270,11 +1358,11 @@ variables = {
 	}
 	use_color_map = {
 		type = "scalar"
-		value = 1
+		value = 0
 	}
 	use_emissive_map = {
 		type = "scalar"
-		value = 0
+		value = 1
 	}
 	use_metallic_map = {
 		type = "scalar"
