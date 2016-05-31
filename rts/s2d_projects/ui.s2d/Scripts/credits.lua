@@ -1,6 +1,7 @@
 local thisActor = ...
 --local thisActor = scaleform.Stage.actor_by_name_path("GameUI/hitpoint")
 local dispatched = false;
+local bgmcall = false;
 
 local creditAnimation = scaleform.Actor.component_by_name(thisActor, "Animation")
 local SimpleProject = require 'core/appkit/lua/simple_project'
@@ -8,6 +9,14 @@ local SimpleProject = require 'core/appkit/lua/simple_project'
 
 local enterFrameEventListener = scaleform.EventListener.create(enterFrameEventListener, function(e, thisListener)
 local current_frame = scaleform.AnimationComponent.current_frame(creditAnimation)
+
+if bgmcall == false then
+    --stingray.Wwise.load_bank("content/audio/default")
+    local wwise_world = stingray.Wwise.wwise_world(SimpleProject.world)
+    stingray.WwiseWorld.trigger_event(wwise_world, "Play_BGM_StaffRoll")
+    bgmcall = true
+end
+
 --print(current_frame)
 if current_frame == 5489 then
     if dispatched ~= true then  --まだイベントをコールしていなかったら
