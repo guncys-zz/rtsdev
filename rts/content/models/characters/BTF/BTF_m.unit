@@ -27,13 +27,13 @@ editor_metadata = {
 	}
 }
 materials = {
-	BTF1 = "content/models/characters/BTF/BTF1"
+	BTF1 = "content/models/characters/BTF/materials/BTF1"
 }
 renderables = {
 	"BTF:polySurface2" = {
 		always_keep = false
 		culling = "disabled"
-		light_baking = "none"
+		generate_uv_unwrap = false
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
