@@ -128,7 +128,7 @@ local function perform_action()
             SimpleProject.change_level(Project.level_names.stage4)
             --print("stage3->stage4")
         elseif SimpleProject.level_name == Project.level_names.stage4 then
-            --SimpleProject.change_level(Project.level_names.stage2)
+            SimpleProject.change_level(Project.level_names.ending)
             --endシーンを呼ぶ
         end
         --print("レベル遷移")

@@ -20,9 +20,12 @@ end
 --print(current_frame)
 if current_frame == 5489 then
     if dispatched ~= true then  --まだイベントをコールしていなかったら
-        print("spaceキーを押して！")
         if stingray.Keyboard.pressed(stingray.Keyboard.button_id("space")) then
-            SimpleProject.change_level(Project.level_names.mainmenu)
+            local evt = { eventId = scaleform.EventTypes.Custom,
+                      name = "go_to_top",
+                      data = {} }
+            scaleform.Stage.dispatch_event(evt)
+            print("タイトルに戻るイベントを発生")
             dispatched = true
         end
     end

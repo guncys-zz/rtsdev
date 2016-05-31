@@ -71,12 +71,18 @@ Ending.action = nil
 function Ending.on_custom_event(evt)
 	if evt.name == "change_level" then
         Ending.action = "change_level"
+    elseif evt.name == "go_to_top" then
+        Ending.action = "go_to_top"
     end
 end
 
 local function perform_action()
 	if Ending.action == "change_level" then
     SimpleProject.change_level(Project.level_names.stage1)
+elseif Ending.action == "go_to_top" then
+    --print("イベントに入った")
+        SimpleProject.change_level(Project.level_names.mainmenu)
+     --   print("イベントを実行した")
     end
 	Ending.action = nil
 end
