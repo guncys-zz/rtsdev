@@ -2824,6 +2824,13 @@ nodes = [
 					node = "ae78f537-f8ac-40eb-aa1d-bab7180954b8"
 				}
 			]
+			out8 = [
+				{
+					event = 1
+					id = "da507579-c407-41d2-9f61-5fc76c7510a5:1"
+					node = "da507579-c407-41d2-9f61-5fc76c7510a5"
+				}
+			]
 		}
 		type = "sequence"
 	}
@@ -3175,6 +3182,7 @@ nodes = [
 		id = "da507579-c407-41d2-9f61-5fc76c7510a5"
 		in_event_index = [
 			"Start"
+			"Update"
 		]
 		in_variables = {
 			me = {

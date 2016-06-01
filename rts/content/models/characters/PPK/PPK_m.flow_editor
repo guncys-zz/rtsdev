@@ -4086,6 +4086,15 @@ Connections = [
 		ToItem = "In"
 		ToNode = "78a7aa8c-feaa-4006-ae7a-ff7467d64e6b"
 	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out8"
+		FromNode = "b33f1e63-83bb-4089-b122-851b9ffcd7ca"
+		Id = "3f687ba7-350a-4ec1-a17f-1a21e06abb2f"
+		Priority = 0
+		ToItem = "Update"
+		ToNode = "da507579-c407-41d2-9f61-5fc76c7510a5"
+	}
 ]
 Groups = [
 	{
@@ -7115,6 +7124,7 @@ Nodes = [
 		Id = "da507579-c407-41d2-9f61-5fc76c7510a5"
 		InEvents = [
 			"Start"
+			"Update"
 		]
 		InVariableNames = [
 			"Me"
