@@ -1363,6 +1363,11 @@ nodes = [
 					id = "43b01176-ff39-4642-aba3-057d5091f349:0"
 					node = "43b01176-ff39-4642-aba3-057d5091f349"
 				}
+				{
+					event = 0
+					id = "3c6166dd-0a4d-420b-9041-20a5ad8cc894:0"
+					node = "3c6166dd-0a4d-420b-9041-20a5ad8cc894"
+				}
 			]
 		}
 		type = "delay"
@@ -2974,19 +2979,6 @@ nodes = [
 		}
 	}
 	{
-		id = "c87c7756-7496-4c56-9d55-db5fc09bb57b"
-		out_events = {
-			out = [
-				{
-					event = 0
-					id = "5af3abe8-4341-4d39-9d03-66b95aa53293:0"
-					node = "5af3abe8-4341-4d39-9d03-66b95aa53293"
-				}
-			]
-		}
-		type = "once"
-	}
-	{
 		id = "c9531973-e761-4632-b238-407c15ffdec3"
 		in_variables = {
 			name = {
@@ -3904,6 +3896,46 @@ nodes = [
 			min = 10
 			value = null
 		}
+	}
+	{
+		id = "c87c7756-7496-4c56-9d55-db5fc09bb57b"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "5af3abe8-4341-4d39-9d03-66b95aa53293:0"
+					node = "5af3abe8-4341-4d39-9d03-66b95aa53293"
+				}
+				{
+					event = 0
+					id = "19f029e9-f4cb-4042-9532-ee760c960bd8:0"
+					node = "19f029e9-f4cb-4042-9532-ee760c960bd8"
+				}
+			]
+		}
+		type = "once"
+	}
+	{
+		flow_nodes_resource = "script/custom_nodes/loading"
+		id = "19f029e9-f4cb-4042-9532-ee760c960bd8"
+		name = "Loading"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variables = [
+		]
+	}
+	{
+		flow_nodes_resource = "script/custom_nodes/done_loading"
+		id = "3c6166dd-0a4d-420b-9041-20a5ad8cc894"
+		name = "Done Loading"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variables = [
+		]
 	}
 	{
 		id = "11111111-2222-3333-4444-555555555555"

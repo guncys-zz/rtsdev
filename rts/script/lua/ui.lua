@@ -183,12 +183,16 @@ function UI.loading()
         local loading = scaleform.Actor.load("Loading.s2dscene")	--Loding用のシーンをロード
     	--print("ローディングシーンに切り替え")
         -- Remove the main menu scene
-        scaleform.Stage.remove_scene_by_index(1)
+        --scaleform.Stage.remove_scene_by_index(1)
         -- Add the loading scene
         scaleform.Stage.add_scene(loading)
         loding_flag = true
     end
+end
 
+function UI.done_loading()
+    -- Remove the main menu scene
+    scaleform.Stage.remove_scene_by_index(2)
 end
 
 function UI.credits()

@@ -221,14 +221,6 @@ editor_metadata = {
 			}
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
-				FromNode = "20cc85e8-b27d-4345-9ec1-37a28c302963"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "da3f5d09-2c8d-4835-aa18-b86dc6258876"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
 				FromItem = "True"
 				FromNode = "97f511cc-c05e-496c-a8ea-1caa89062322"
 				Priority = 0
@@ -258,6 +250,14 @@ editor_metadata = {
 				Priority = 0
 				ToItem = "Play"
 				ToNode = "be61c6c5-b725-4a48-b70e-270d168a20eb"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "20cc85e8-b27d-4345-9ec1-37a28c302963"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "dba8d47d-c0f7-4fbf-9c80-7fec766674da"
 			}
 		]
 		Groups = [
@@ -965,30 +965,6 @@ editor_metadata = {
 				Title = "Branch"
 				True = {
 				}
-				Width = 160
-			}
-			{
-				Arguments = [
-				]
-				Brief = ""
-				Class = "Stingray.Foundation.Flow.CustomScriptNode"
-				FlowNodesResource = "script/custom_nodes/loading"
-				FlowNodesResourceKey = "flow_nodes_resource"
-				Id = "da3f5d09-2c8d-4835-aa18-b86dc6258876"
-				InEvents = [
-					"In"
-				]
-				IsQuery = false
-				Name = "Loading"
-				NodeLocation = {
-					X = 540
-					Y = 420
-				}
-				OutEvents = [
-					"Out"
-				]
-				ReturnValues = [
-				]
 				Width = 160
 			}
 			{
@@ -6074,17 +6050,6 @@ flow = {
 			}
 		}
 		{
-			flow_nodes_resource = "script/custom_nodes/loading"
-			id = "da3f5d09-2c8d-4835-aa18-b86dc6258876"
-			name = "Loading"
-			query = false
-			return_values = [
-			]
-			type = "custom_script_node"
-			variables = [
-			]
-		}
-		{
 			id = "20cc85e8-b27d-4345-9ec1-37a28c302963"
 			in_variables = {
 				time = {
@@ -6095,8 +6060,8 @@ flow = {
 				out = [
 					{
 						event = 0
-						id = "da3f5d09-2c8d-4835-aa18-b86dc6258876:0"
-						node = "da3f5d09-2c8d-4835-aa18-b86dc6258876"
+						id = "dba8d47d-c0f7-4fbf-9c80-7fec766674da:0"
+						node = "dba8d47d-c0f7-4fbf-9c80-7fec766674da"
 					}
 				]
 			}
