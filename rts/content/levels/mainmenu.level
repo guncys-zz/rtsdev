@@ -4,6 +4,33 @@ editor_metadata = {
 		{
 			id = "ceda5ac5-8646-4fc0-bf6d-c073335f394f"
 			layer = "Default"
+			modified_components = {
+				"06c78e06-c921-4208-8069-d377b6415d30" = {
+					data = {
+						fog_enabled = false
+					}
+				}
+				"a9f83eb8-b54a-4c45-bf62-4fe7e02a8ce4" = {
+					data = {
+						ao_enabled = false
+					}
+				}
+				"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
+					data = {
+						motion_blur_enabled = false
+					}
+				}
+				"dd1dccf2-6f2f-4b8c-9199-290c069ab62b" = {
+					data = {
+						vignette_enabled = false
+					}
+				}
+				"fd909d00-3e4d-4339-b1a9-784c7d6a60ad" = {
+					data = {
+						bloom_enabled = false
+					}
+				}
+			}
 			name = "Default Shading Environment"
 			prefab = {
 				"$resource_name" = "core/stingray_renderer/environments/midday/midday_shading_environment"
@@ -36,6 +63,7 @@ editor_metadata = {
 	LevelReferences = [
 	]
 	LightBakeSettings = {
+		Baker = "Beast"
 		ExcludedObjectSets = [
 		]
 		FilterGain = 20
@@ -53,6 +81,7 @@ editor_metadata = {
 			Z = 1
 		}
 		TexelScale = 10
+		TotalPasses = 256
 		Variance = 0.5
 	}
 	LuaPluginObjects = [
@@ -126,6 +155,7 @@ editor_metadata = {
 					Intensity = 4
 					Material = ""
 					MaterialResource = ""
+					ShadowDepthBias = 0.4
 					SpotAngleEnd = 60
 					SpotAngleStart = 0
 					Type = "directional"
@@ -206,6 +236,33 @@ editor_metadata = {
 entities = [
 	{
 		id = "ceda5ac5-8646-4fc0-bf6d-c073335f394f"
+		modified_components = {
+			"06c78e06-c921-4208-8069-d377b6415d30" = {
+				data = {
+					fog_enabled = false
+				}
+			}
+			"a9f83eb8-b54a-4c45-bf62-4fe7e02a8ce4" = {
+				data = {
+					ao_enabled = false
+				}
+			}
+			"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
+				data = {
+					motion_blur_enabled = false
+				}
+			}
+			"dd1dccf2-6f2f-4b8c-9199-290c069ab62b" = {
+				data = {
+					vignette_enabled = false
+				}
+			}
+			"fd909d00-3e4d-4339-b1a9-784c7d6a60ad" = {
+				data = {
+					bloom_enabled = false
+				}
+			}
+		}
 		name = "Default Shading Environment"
 		prefab = {
 			"$resource_name" = "core/stingray_renderer/environments/midday/midday_shading_environment"
@@ -273,6 +330,7 @@ units = [
 				falloff_start = 0
 				intensity = 4
 				material = ""
+				shadow_depth_bias = 0.4
 				spot_angle_end = 1.0471975511966
 				spot_angle_start = 0
 				type = "directional"
