@@ -191,8 +191,10 @@ function UI.loading()
 end
 
 function UI.done_loading()
-    -- Remove the main menu scene
-    scaleform.Stage.remove_scene_by_index(2)
+    -- ロードシーンをリムーブ
+    if SimpleProject.level_name ~= "content/levels/ending" then
+        scaleform.Stage.remove_scene_by_index(2)
+    end
 end
 
 function UI.credits()
