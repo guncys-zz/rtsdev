@@ -18,6 +18,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3677206770	Play_BGM_StaffRoll			\Default Work Unit\MUSIC\Play_BGM_StaffRoll	
 	3933739290	Set_State_Hurry			\Default Work Unit\MUSIC\Set_State_Hurry	
 	4209880378	SE_PPK_jump			\Default Work Unit\SFX\SE_PPK_jump	
+	4217458018	SE_PPK_Fail			\Default Work Unit\SFX\SE_PPK_Fail	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	4016824040	State_Player			\Default Work Unit\State_Player	
@@ -32,6 +33,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	19789776	laugh_001	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\laugh_001_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump2\laugh_001		18883
 	78561604	jump_015	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\jump_015_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump\jump_015		11320
 	105125152	good_002	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\good_002_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump2\good_002		9773
+	112560746	hoew_001	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\hoew_001_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Fail\hoew_001		10682
 	116471246	meow_003	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\meow_003_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Cat\meow_003		10468
 	117641111	jump_004	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\jump_004_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump\jump_004		4452
 	118707906	awe_001	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\awe_001_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Hit\awe_001		7151
@@ -49,9 +51,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	258269560	jump_017	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\jump_017_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump\jump_017		9356
 	292509270	hunm_003	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\hunm_003_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump\hunm_003		4862
 	293913199	hauuw_002	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\hauuw_002_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Hit\hauuw_002		11672
+	312520302	umm_002	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\umm_002_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Fail\umm_002		31231
 	318328114	jump_016	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\jump_016_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump\jump_016		8649
 	338880203	good_003	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\good_003_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump2\good_003		10167
 	374410299	jump_009	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\jump_009_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump\jump_009		8499
+	385702342	umm_001	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\umm_001_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Fail\umm_001		38171
 	407460578	bgm_3_1	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\bgm_3_1_6BBC2BAA.wem		\Actor-Mixer Hierarchy\Default Work Unit\MUSIC\BGM_Stage2_switch\Normal\bgm_3_1		1125790
 	414258818	jump_010	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\jump_010_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump\jump_010		9879
 	414300741	jump_007	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\jump_007_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump\jump_007		6289
@@ -60,14 +64,19 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	450531341	wow_001	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\wow_001_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump2\wow_001		9523
 	497027078	wow_003	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\wow_003_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump2\wow_003		13344
 	511383648	jump_012	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\jump_012_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump\jump_012		10483
+	517637947	hoew_008	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\hoew_008_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Fail\hoew_008		12535
 	531519515	ouch_003	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\ouch_003_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Hit\ouch_003		9125
+	538530870	hoew_004	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\hoew_004_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Fail\hoew_004		11587
 	542027682	meow_019	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\meow_019_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Cat\meow_019		13344
+	542248691	cry_002	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\cry_002_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Fail\cry_002		26588
 	558460669	bgm_0_3	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\bgm_0_3_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\MUSIC\bgm_0_3		225608
 	559175138	se_1	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\se_1_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\se_1		6886
 	597989343	bgm_5_2	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\bgm_5_2_6BBC2BAA.wem		\Actor-Mixer Hierarchy\Default Work Unit\MUSIC\BGM_Stage4_switch\Hurry\bgm_5_2		911370
+	613268574	hoew_007	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\hoew_007_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Fail\hoew_007		9634
 	618674183	kya_002	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\kya_002_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Hit\kya_002		8238
 	631202683	BGM_Title	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\bgm_0_1_6BBC2BAA.wem		\Actor-Mixer Hierarchy\Default Work Unit\MUSIC\BGM_Title2\BGM_Title		460483
 	635793677	se_2_1	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\se_2_1_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\se_2_1		6024
+	645799261	hoew_006	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\hoew_006_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Fail\hoew_006		12133
 	664309739	rolling_003	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\rolling_003_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Roll\rolling_003		11356
 	670541449	meow_001	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\meow_001_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Cat\meow_001		14526
 	673725382	jump_013	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\jump_013_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump\jump_013		7161
@@ -75,16 +84,20 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	683151359	wow_002	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\wow_002_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump2\wow_002		9690
 	694839117	awe_003	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\awe_003_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Hit\awe_003		11793
 	723701960	meow_009	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\meow_009_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Cat\meow_009		10123
+	736182488	umm_003	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\umm_003_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Fail\umm_003		35437
 	741758864	jump_005	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\jump_005_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump\jump_005		4893
 	748111035	rolling_001	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\rolling_001_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Roll\rolling_001		10509
+	763271863	cry_001	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\cry_001_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Fail\cry_001		27488
 	777390586	jump_018	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\jump_018_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump\jump_018		12924
 	778618248	awe_002	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\awe_002_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Hit\awe_002		9941
 	814427827	jump_008	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\jump_008_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump\jump_008		6174
 	926718316	title_001	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\title_001_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\MUSIC\BGM_Title2\title_001		29458
 	943554591	hunm_001	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\hunm_001_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump\hunm_001		5223
 	962995962	start_003	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\start_003_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Start\start_003		15496
+	967901413	hoew_003	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\hoew_003_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Fail\hoew_003		11171
 	967914306	bgm_5_1	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\bgm_5_1_6BBC2BAA.wem		\Actor-Mixer Hierarchy\Default Work Unit\MUSIC\BGM_Stage4_switch\Normal\bgm_5_1		1344456
 	968896365	hauuw_003	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\hauuw_003_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Hit\hauuw_003		16155
+	993619733	hoew_009	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\hoew_009_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Fail\hoew_009		9542
 	999557827	GUNCY'S_CI_gingle	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\GUNCY'S_CI_gingle_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\GUNCY'S_CI_gingle		58049
 	1054773677	joy_003	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\joy_003_DB50BAB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PPK_SE_Jump2\joy_003		17136
 	1057127781	bgm_3_2	C:\stingray\projects\rtsdev\rts_wwise\.cache\Windows\SFX\bgm_3_2_6BBC2BAA.wem		\Actor-Mixer Hierarchy\Default Work Unit\MUSIC\BGM_Stage2_switch\Hurry\bgm_3_2		862053
