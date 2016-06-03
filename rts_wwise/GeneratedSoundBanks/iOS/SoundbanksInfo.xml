@@ -14,13 +14,338 @@
 			<ShortName>default</ShortName>
 			<Path>default.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3741836291" Name="bgm_switch_stage_1" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1577926306" Name="sfx_spawn_sound" DurationType="OneShot" DurationMin="2.767347" DurationMax="2.767347"/>
+				<Event Id="3290586542" Name="Play_BGM_Ending" DurationType="OneShot" DurationMin="14.724792" DurationMax="14.724792"/>
+				<Event Id="225526817" Name="Play_BGM_Opening" DurationType="OneShot" DurationMin="17.875000" DurationMax="17.875000"/>
+				<Event Id="3677206770" Name="Play_BGM_StaffRoll" DurationType="Infinite"/>
+				<Event Id="605006723" Name="Play_BGM_Stage_1" DurationType="Infinite"/>
+				<Event Id="605006720" Name="Play_BGM_Stage_2" DurationType="Infinite"/>
+				<Event Id="605006721" Name="Play_BGM_Stage_3" DurationType="Infinite"/>
+				<Event Id="605006726" Name="Play_BGM_Stage_4" DurationType="Infinite"/>
+				<Event Id="379376351" Name="Play_BGM_Title" DurationType="Infinite"/>
+				<Event Id="499255886" Name="Play_SE_logo_guncys" DurationType="OneShot" DurationMin="4.628750" DurationMax="4.628750"/>
+				<Event Id="586582286" Name="SE_PPK_Cat" DurationType="OneShot" DurationMin="0.834167" DurationMax="1.234563"/>
+				<Event Id="481900818" Name="SE_PPK_damage1" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.368021"/>
+				<Event Id="4209880378" Name="SE_PPK_jump" DurationType="OneShot" DurationMin="2.000000" DurationMax="2.000000"/>
+				<Event Id="1042788988" Name="SE_PPK_jump2" DurationType="OneShot" DurationMin="1.250000" DurationMax="1.568229"/>
+				<Event Id="1592542803" Name="SE_PPK_roll" DurationType="OneShot" DurationMin="1.250000" DurationMax="1.250000"/>
+				<Event Id="1610742463" Name="SE_UI_OK" DurationType="OneShot" DurationMin="1.267938" DurationMax="1.368042"/>
+				<Event Id="3933739290" Name="Set_State_Hurry" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2630068541" Name="Set_State_Normal" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2549073309" Name="Set_Voice_Volume" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="452547817" Name="Stop_All" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="704244969" Language="SFX">
-					<ShortName>sfx_spawn_sound.wav</ShortName>
-					<Path>SFX\sfx_spawn_sound_DB50BAB0.wem</Path>
+				<File Id="8337968" Language="SFX">
+					<ShortName>bgm_4_2.wav</ShortName>
+					<Path>SFX\bgm_4_2_6BBC2BAA.wem</Path>
+				</File>
+				<File Id="19789776" Language="SFX">
+					<ShortName>laugh_001.wav</ShortName>
+					<Path>SFX\laugh_001_DB50BAB0.wem</Path>
+				</File>
+				<File Id="78561604" Language="SFX">
+					<ShortName>jump_015.wav</ShortName>
+					<Path>SFX\jump_015_DB50BAB0.wem</Path>
+				</File>
+				<File Id="105125152" Language="SFX">
+					<ShortName>good_002.wav</ShortName>
+					<Path>SFX\good_002_DB50BAB0.wem</Path>
+				</File>
+				<File Id="116471246" Language="SFX">
+					<ShortName>meow_003.wav</ShortName>
+					<Path>SFX\meow_003_DB50BAB0.wem</Path>
+				</File>
+				<File Id="117641111" Language="SFX">
+					<ShortName>jump_004.wav</ShortName>
+					<Path>SFX\jump_004_DB50BAB0.wem</Path>
+				</File>
+				<File Id="118707906" Language="SFX">
+					<ShortName>awe_001.wav</ShortName>
+					<Path>SFX\awe_001_DB50BAB0.wem</Path>
+				</File>
+				<File Id="121808291" Language="SFX">
+					<ShortName>jump_014.wav</ShortName>
+					<Path>SFX\jump_014_DB50BAB0.wem</Path>
+				</File>
+				<File Id="152902053" Language="SFX">
+					<ShortName>se_9.wav</ShortName>
+					<Path>SFX\se_9_DB50BAB0.wem</Path>
+				</File>
+				<File Id="178271573" Language="SFX">
+					<ShortName>start_002.wav</ShortName>
+					<Path>SFX\start_002_DB50BAB0.wem</Path>
+				</File>
+				<File Id="179888842" Language="SFX">
+					<ShortName>rolling_004.wav</ShortName>
+					<Path>SFX\rolling_004_DB50BAB0.wem</Path>
+				</File>
+				<File Id="190374531" Language="SFX">
+					<ShortName>jump_006.wav</ShortName>
+					<Path>SFX\jump_006_DB50BAB0.wem</Path>
+				</File>
+				<File Id="193401151" Language="SFX">
+					<ShortName>bgm_4_1.wav</ShortName>
+					<Path>SFX\bgm_4_1_6BBC2BAA.wem</Path>
+				</File>
+				<File Id="204878764" Language="SFX">
+					<ShortName>bgm_2_2.wav</ShortName>
+					<Path>SFX\bgm_2_2_6BBC2BAA.wem</Path>
+				</File>
+				<File Id="214080918" Language="SFX">
+					<ShortName>se_3.wav</ShortName>
+					<Path>SFX\se_3_DB50BAB0.wem</Path>
+				</File>
+				<File Id="237165058" Language="SFX">
+					<ShortName>rolling_002.wav</ShortName>
+					<Path>SFX\rolling_002_DB50BAB0.wem</Path>
+				</File>
+				<File Id="241192432" Language="SFX">
+					<ShortName>bgm_2_1 .wav</ShortName>
+					<Path>SFX\bgm_2_1 _6BBC2BAA.wem</Path>
+				</File>
+				<File Id="249128246" Language="SFX">
+					<ShortName>meow_025.wav</ShortName>
+					<Path>SFX\meow_025_DB50BAB0.wem</Path>
+				</File>
+				<File Id="258269560" Language="SFX">
+					<ShortName>jump_017.wav</ShortName>
+					<Path>SFX\jump_017_DB50BAB0.wem</Path>
+				</File>
+				<File Id="292509270" Language="SFX">
+					<ShortName>hunm_003.wav</ShortName>
+					<Path>SFX\hunm_003_DB50BAB0.wem</Path>
+				</File>
+				<File Id="293913199" Language="SFX">
+					<ShortName>hauuw_002.wav</ShortName>
+					<Path>SFX\hauuw_002_DB50BAB0.wem</Path>
+				</File>
+				<File Id="318328114" Language="SFX">
+					<ShortName>jump_016.wav</ShortName>
+					<Path>SFX\jump_016_DB50BAB0.wem</Path>
+				</File>
+				<File Id="338880203" Language="SFX">
+					<ShortName>good_003.wav</ShortName>
+					<Path>SFX\good_003_DB50BAB0.wem</Path>
+				</File>
+				<File Id="374410299" Language="SFX">
+					<ShortName>jump_009.wav</ShortName>
+					<Path>SFX\jump_009_DB50BAB0.wem</Path>
+				</File>
+				<File Id="407460578" Language="SFX">
+					<ShortName>bgm_3_1.wav</ShortName>
+					<Path>SFX\bgm_3_1_6BBC2BAA.wem</Path>
+				</File>
+				<File Id="414258818" Language="SFX">
+					<ShortName>jump_010.wav</ShortName>
+					<Path>SFX\jump_010_DB50BAB0.wem</Path>
+				</File>
+				<File Id="414300741" Language="SFX">
+					<ShortName>jump_007.wav</ShortName>
+					<Path>SFX\jump_007_DB50BAB0.wem</Path>
+				</File>
+				<File Id="442045984" Language="SFX">
+					<ShortName>joy_001.wav</ShortName>
+					<Path>SFX\joy_001_DB50BAB0.wem</Path>
+				</File>
+				<File Id="444046076" Language="SFX">
+					<ShortName>bgm_0_2.wav</ShortName>
+					<Path>SFX\bgm_0_2_DB50BAB0.wem</Path>
+				</File>
+				<File Id="450531341" Language="SFX">
+					<ShortName>wow_001.wav</ShortName>
+					<Path>SFX\wow_001_DB50BAB0.wem</Path>
+				</File>
+				<File Id="497027078" Language="SFX">
+					<ShortName>wow_003.wav</ShortName>
+					<Path>SFX\wow_003_DB50BAB0.wem</Path>
+				</File>
+				<File Id="511383648" Language="SFX">
+					<ShortName>jump_012.wav</ShortName>
+					<Path>SFX\jump_012_DB50BAB0.wem</Path>
+				</File>
+				<File Id="531519515" Language="SFX">
+					<ShortName>ouch_003.wav</ShortName>
+					<Path>SFX\ouch_003_DB50BAB0.wem</Path>
+				</File>
+				<File Id="542027682" Language="SFX">
+					<ShortName>meow_019.wav</ShortName>
+					<Path>SFX\meow_019_DB50BAB0.wem</Path>
+				</File>
+				<File Id="558460669" Language="SFX">
+					<ShortName>bgm_0_3.wav</ShortName>
+					<Path>SFX\bgm_0_3_DB50BAB0.wem</Path>
+				</File>
+				<File Id="559175138" Language="SFX">
+					<ShortName>se_1.wav</ShortName>
+					<Path>SFX\se_1_DB50BAB0.wem</Path>
+				</File>
+				<File Id="597989343" Language="SFX">
+					<ShortName>bgm_5_2.wav</ShortName>
+					<Path>SFX\bgm_5_2_6BBC2BAA.wem</Path>
+				</File>
+				<File Id="618674183" Language="SFX">
+					<ShortName>kya_002.wav</ShortName>
+					<Path>SFX\kya_002_DB50BAB0.wem</Path>
+				</File>
+				<File Id="631202683" Language="SFX">
+					<ShortName>bgm_0_1.wav</ShortName>
+					<Path>SFX\bgm_0_1_6BBC2BAA.wem</Path>
+				</File>
+				<File Id="635793677" Language="SFX">
+					<ShortName>se_2_1.wav</ShortName>
+					<Path>SFX\se_2_1_DB50BAB0.wem</Path>
+				</File>
+				<File Id="664309739" Language="SFX">
+					<ShortName>rolling_003.wav</ShortName>
+					<Path>SFX\rolling_003_DB50BAB0.wem</Path>
+				</File>
+				<File Id="670541449" Language="SFX">
+					<ShortName>meow_001.wav</ShortName>
+					<Path>SFX\meow_001_DB50BAB0.wem</Path>
+				</File>
+				<File Id="673725382" Language="SFX">
+					<ShortName>jump_013.wav</ShortName>
+					<Path>SFX\jump_013_DB50BAB0.wem</Path>
+				</File>
+				<File Id="678351372" Language="SFX">
+					<ShortName>start_001.wav</ShortName>
+					<Path>SFX\start_001_DB50BAB0.wem</Path>
+				</File>
+				<File Id="683151359" Language="SFX">
+					<ShortName>wow_002.wav</ShortName>
+					<Path>SFX\wow_002_DB50BAB0.wem</Path>
+				</File>
+				<File Id="694839117" Language="SFX">
+					<ShortName>awe_003.wav</ShortName>
+					<Path>SFX\awe_003_DB50BAB0.wem</Path>
+				</File>
+				<File Id="723701960" Language="SFX">
+					<ShortName>meow_009.wav</ShortName>
+					<Path>SFX\meow_009_DB50BAB0.wem</Path>
+				</File>
+				<File Id="741758864" Language="SFX">
+					<ShortName>jump_005.wav</ShortName>
+					<Path>SFX\jump_005_DB50BAB0.wem</Path>
+				</File>
+				<File Id="748111035" Language="SFX">
+					<ShortName>rolling_001.wav</ShortName>
+					<Path>SFX\rolling_001_DB50BAB0.wem</Path>
+				</File>
+				<File Id="777390586" Language="SFX">
+					<ShortName>jump_018.wav</ShortName>
+					<Path>SFX\jump_018_DB50BAB0.wem</Path>
+				</File>
+				<File Id="778618248" Language="SFX">
+					<ShortName>awe_002.wav</ShortName>
+					<Path>SFX\awe_002_DB50BAB0.wem</Path>
+				</File>
+				<File Id="814427827" Language="SFX">
+					<ShortName>jump_008.wav</ShortName>
+					<Path>SFX\jump_008_DB50BAB0.wem</Path>
+				</File>
+				<File Id="926718316" Language="SFX">
+					<ShortName>title_001.wav</ShortName>
+					<Path>SFX\title_001_DB50BAB0.wem</Path>
+				</File>
+				<File Id="943554591" Language="SFX">
+					<ShortName>hunm_001.wav</ShortName>
+					<Path>SFX\hunm_001_DB50BAB0.wem</Path>
+				</File>
+				<File Id="962995962" Language="SFX">
+					<ShortName>start_003.wav</ShortName>
+					<Path>SFX\start_003_DB50BAB0.wem</Path>
+				</File>
+				<File Id="967914306" Language="SFX">
+					<ShortName>bgm_5_1.wav</ShortName>
+					<Path>SFX\bgm_5_1_6BBC2BAA.wem</Path>
+				</File>
+				<File Id="968896365" Language="SFX">
+					<ShortName>hauuw_003.wav</ShortName>
+					<Path>SFX\hauuw_003_DB50BAB0.wem</Path>
+				</File>
+				<File Id="999557827" Language="SFX">
+					<ShortName>GUNCY'S_CI_gingle.wav</ShortName>
+					<Path>SFX\GUNCY'S_CI_gingle_DB50BAB0.wem</Path>
+				</File>
+				<File Id="1054773677" Language="SFX">
+					<ShortName>joy_003.wav</ShortName>
+					<Path>SFX\joy_003_DB50BAB0.wem</Path>
+				</File>
+				<File Id="1057127781" Language="SFX">
+					<ShortName>bgm_3_2.wav</ShortName>
+					<Path>SFX\bgm_3_2_6BBC2BAA.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="936729722" Language="SFX">
+			<ShortName>Stage1</ShortName>
+			<Path>Stage1.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3290586542" Name="Play_BGM_Ending" DurationType="OneShot" DurationMin="14.724792" DurationMax="14.724792"/>
+				<Event Id="225526817" Name="Play_BGM_Opening" DurationType="OneShot" DurationMin="17.875000" DurationMax="17.875000"/>
+				<Event Id="3677206770" Name="Play_BGM_StaffRoll" DurationType="Infinite"/>
+				<Event Id="605006723" Name="Play_BGM_Stage_1" DurationType="Infinite"/>
+				<Event Id="605006720" Name="Play_BGM_Stage_2" DurationType="Infinite"/>
+				<Event Id="605006721" Name="Play_BGM_Stage_3" DurationType="Infinite"/>
+				<Event Id="605006726" Name="Play_BGM_Stage_4" DurationType="Infinite"/>
+				<Event Id="379376351" Name="Play_BGM_Title" DurationType="Infinite"/>
+				<Event Id="499255886" Name="Play_SE_logo_guncys" DurationType="OneShot" DurationMin="4.628750" DurationMax="4.628750"/>
+				<Event Id="3933739290" Name="Set_State_Hurry" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2630068541" Name="Set_State_Normal" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="452547817" Name="Stop_All" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="8337968" Language="SFX">
+					<ShortName>bgm_4_2.wav</ShortName>
+					<Path>SFX\bgm_4_2_6BBC2BAA.wem</Path>
+				</File>
+				<File Id="193401151" Language="SFX">
+					<ShortName>bgm_4_1.wav</ShortName>
+					<Path>SFX\bgm_4_1_6BBC2BAA.wem</Path>
+				</File>
+				<File Id="204878764" Language="SFX">
+					<ShortName>bgm_2_2.wav</ShortName>
+					<Path>SFX\bgm_2_2_6BBC2BAA.wem</Path>
+				</File>
+				<File Id="241192432" Language="SFX">
+					<ShortName>bgm_2_1 .wav</ShortName>
+					<Path>SFX\bgm_2_1 _6BBC2BAA.wem</Path>
+				</File>
+				<File Id="407460578" Language="SFX">
+					<ShortName>bgm_3_1.wav</ShortName>
+					<Path>SFX\bgm_3_1_6BBC2BAA.wem</Path>
+				</File>
+				<File Id="444046076" Language="SFX">
+					<ShortName>bgm_0_2.wav</ShortName>
+					<Path>SFX\bgm_0_2_DB50BAB0.wem</Path>
+				</File>
+				<File Id="558460669" Language="SFX">
+					<ShortName>bgm_0_3.wav</ShortName>
+					<Path>SFX\bgm_0_3_DB50BAB0.wem</Path>
+				</File>
+				<File Id="597989343" Language="SFX">
+					<ShortName>bgm_5_2.wav</ShortName>
+					<Path>SFX\bgm_5_2_6BBC2BAA.wem</Path>
+				</File>
+				<File Id="631202683" Language="SFX">
+					<ShortName>bgm_0_1.wav</ShortName>
+					<Path>SFX\bgm_0_1_6BBC2BAA.wem</Path>
+				</File>
+				<File Id="926718316" Language="SFX">
+					<ShortName>title_001.wav</ShortName>
+					<Path>SFX\title_001_DB50BAB0.wem</Path>
+				</File>
+				<File Id="967914306" Language="SFX">
+					<ShortName>bgm_5_1.wav</ShortName>
+					<Path>SFX\bgm_5_1_6BBC2BAA.wem</Path>
+				</File>
+				<File Id="999557827" Language="SFX">
+					<ShortName>GUNCY'S_CI_gingle.wav</ShortName>
+					<Path>SFX\GUNCY'S_CI_gingle_DB50BAB0.wem</Path>
+				</File>
+				<File Id="1057127781" Language="SFX">
+					<ShortName>bgm_3_2.wav</ShortName>
+					<Path>SFX\bgm_3_2_6BBC2BAA.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
