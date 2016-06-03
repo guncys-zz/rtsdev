@@ -110,6 +110,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="SE_PPK_Fail" ID="{B023470A-ABE5-49DE-9A9B-36251084005D}">
+							<ChildrenList>
+								<Action Name="Play" ID="{82B3B937-1359-4897-8258-E4CA2EA411DD}" ShortID="381035507" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{EFD41393-4D2C-45BD-B164-06B8A5AD5206}" Global="false">
+											<ObjectRef Name="PPK_SE_Fail" ID="{C037432F-F1F8-4D4A-8DED-EA69CA5E68FA}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="VO" ID="{B83884E8-4D1A-4BC6-AA1E-7F006C86ADF8}" ShortID="449022605"/>

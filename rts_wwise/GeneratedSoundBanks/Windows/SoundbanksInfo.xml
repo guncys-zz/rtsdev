@@ -25,6 +25,7 @@
 				<Event Id="499255886" Name="Play_SE_logo_guncys" DurationType="OneShot" DurationMin="4.628750" DurationMax="4.628750"/>
 				<Event Id="586582286" Name="SE_PPK_Cat" DurationType="OneShot" DurationMin="0.834167" DurationMax="1.234563"/>
 				<Event Id="481900818" Name="SE_PPK_damage1" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.368021"/>
+				<Event Id="4217458018" Name="SE_PPK_Fail" DurationType="OneShot" DurationMin="0.767438" DurationMax="3.136458"/>
 				<Event Id="4209880378" Name="SE_PPK_jump" DurationType="OneShot" DurationMin="2.000000" DurationMax="2.000000"/>
 				<Event Id="1042788988" Name="SE_PPK_jump2" DurationType="OneShot" DurationMin="1.250000" DurationMax="1.568229"/>
 				<Event Id="1592542803" Name="SE_PPK_roll" DurationType="OneShot" DurationMin="1.250000" DurationMax="1.250000"/>
@@ -50,6 +51,10 @@
 				<File Id="105125152" Language="SFX">
 					<ShortName>good_002.wav</ShortName>
 					<Path>SFX\good_002_DB50BAB0.wem</Path>
+				</File>
+				<File Id="112560746" Language="SFX">
+					<ShortName>hoew_001.wav</ShortName>
+					<Path>SFX\hoew_001_DB50BAB0.wem</Path>
 				</File>
 				<File Id="116471246" Language="SFX">
 					<ShortName>meow_003.wav</ShortName>
@@ -119,6 +124,10 @@
 					<ShortName>hauuw_002.wav</ShortName>
 					<Path>SFX\hauuw_002_DB50BAB0.wem</Path>
 				</File>
+				<File Id="312520302" Language="SFX">
+					<ShortName>umm_002.wav</ShortName>
+					<Path>SFX\umm_002_DB50BAB0.wem</Path>
+				</File>
 				<File Id="318328114" Language="SFX">
 					<ShortName>jump_016.wav</ShortName>
 					<Path>SFX\jump_016_DB50BAB0.wem</Path>
@@ -130,6 +139,10 @@
 				<File Id="374410299" Language="SFX">
 					<ShortName>jump_009.wav</ShortName>
 					<Path>SFX\jump_009_DB50BAB0.wem</Path>
+				</File>
+				<File Id="385702342" Language="SFX">
+					<ShortName>umm_001.wav</ShortName>
+					<Path>SFX\umm_001_DB50BAB0.wem</Path>
 				</File>
 				<File Id="407460578" Language="SFX">
 					<ShortName>bgm_3_1.wav</ShortName>
@@ -163,13 +176,25 @@
 					<ShortName>jump_012.wav</ShortName>
 					<Path>SFX\jump_012_DB50BAB0.wem</Path>
 				</File>
+				<File Id="517637947" Language="SFX">
+					<ShortName>hoew_008.wav</ShortName>
+					<Path>SFX\hoew_008_DB50BAB0.wem</Path>
+				</File>
 				<File Id="531519515" Language="SFX">
 					<ShortName>ouch_003.wav</ShortName>
 					<Path>SFX\ouch_003_DB50BAB0.wem</Path>
 				</File>
+				<File Id="538530870" Language="SFX">
+					<ShortName>hoew_004.wav</ShortName>
+					<Path>SFX\hoew_004_DB50BAB0.wem</Path>
+				</File>
 				<File Id="542027682" Language="SFX">
 					<ShortName>meow_019.wav</ShortName>
 					<Path>SFX\meow_019_DB50BAB0.wem</Path>
+				</File>
+				<File Id="542248691" Language="SFX">
+					<ShortName>cry_002.wav</ShortName>
+					<Path>SFX\cry_002_DB50BAB0.wem</Path>
 				</File>
 				<File Id="558460669" Language="SFX">
 					<ShortName>bgm_0_3.wav</ShortName>
@@ -183,6 +208,10 @@
 					<ShortName>bgm_5_2.wav</ShortName>
 					<Path>SFX\bgm_5_2_6BBC2BAA.wem</Path>
 				</File>
+				<File Id="613268574" Language="SFX">
+					<ShortName>hoew_007.wav</ShortName>
+					<Path>SFX\hoew_007_DB50BAB0.wem</Path>
+				</File>
 				<File Id="618674183" Language="SFX">
 					<ShortName>kya_002.wav</ShortName>
 					<Path>SFX\kya_002_DB50BAB0.wem</Path>
@@ -194,6 +223,10 @@
 				<File Id="635793677" Language="SFX">
 					<ShortName>se_2_1.wav</ShortName>
 					<Path>SFX\se_2_1_DB50BAB0.wem</Path>
+				</File>
+				<File Id="645799261" Language="SFX">
+					<ShortName>hoew_006.wav</ShortName>
+					<Path>SFX\hoew_006_DB50BAB0.wem</Path>
 				</File>
 				<File Id="664309739" Language="SFX">
 					<ShortName>rolling_003.wav</ShortName>
@@ -223,6 +256,10 @@
 					<ShortName>meow_009.wav</ShortName>
 					<Path>SFX\meow_009_DB50BAB0.wem</Path>
 				</File>
+				<File Id="736182488" Language="SFX">
+					<ShortName>umm_003.wav</ShortName>
+					<Path>SFX\umm_003_DB50BAB0.wem</Path>
+				</File>
 				<File Id="741758864" Language="SFX">
 					<ShortName>jump_005.wav</ShortName>
 					<Path>SFX\jump_005_DB50BAB0.wem</Path>
@@ -230,6 +267,10 @@
 				<File Id="748111035" Language="SFX">
 					<ShortName>rolling_001.wav</ShortName>
 					<Path>SFX\rolling_001_DB50BAB0.wem</Path>
+				</File>
+				<File Id="763271863" Language="SFX">
+					<ShortName>cry_001.wav</ShortName>
+					<Path>SFX\cry_001_DB50BAB0.wem</Path>
 				</File>
 				<File Id="777390586" Language="SFX">
 					<ShortName>jump_018.wav</ShortName>
@@ -255,6 +296,10 @@
 					<ShortName>start_003.wav</ShortName>
 					<Path>SFX\start_003_DB50BAB0.wem</Path>
 				</File>
+				<File Id="967901413" Language="SFX">
+					<ShortName>hoew_003.wav</ShortName>
+					<Path>SFX\hoew_003_DB50BAB0.wem</Path>
+				</File>
 				<File Id="967914306" Language="SFX">
 					<ShortName>bgm_5_1.wav</ShortName>
 					<Path>SFX\bgm_5_1_6BBC2BAA.wem</Path>
@@ -262,6 +307,10 @@
 				<File Id="968896365" Language="SFX">
 					<ShortName>hauuw_003.wav</ShortName>
 					<Path>SFX\hauuw_003_DB50BAB0.wem</Path>
+				</File>
+				<File Id="993619733" Language="SFX">
+					<ShortName>hoew_009.wav</ShortName>
+					<Path>SFX\hoew_009_DB50BAB0.wem</Path>
 				</File>
 				<File Id="999557827" Language="SFX">
 					<ShortName>GUNCY'S_CI_gingle.wav</ShortName>
