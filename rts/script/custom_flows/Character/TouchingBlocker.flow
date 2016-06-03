@@ -79,6 +79,7 @@ nodes = [
 			"ExitFlowEvent_PPK_jump"
 			"flowevent_cinematics_ed_effect_ctf"
 			"flowevent_damage_exit"
+			"roll_enter"
 			"roll_exit"
 			"rolln_enter"
 			"rolln_exit"
@@ -234,66 +235,6 @@ nodes = [
 		}
 	}
 	{
-		id = "b3e7f25a-0bab-4003-9db8-7f45f8dad588"
-		in_variables = {
-			a = {
-				node = "edee7af9-42ee-4ef3-a37d-d5f0abc62717"
-				type = "float"
-				variable = "numeric"
-			}
-			b = {
-				node = "2d2cbb76-f48f-47c7-8f23-c946e82e9856"
-				type = "float"
-				variable = "time"
-			}
-		}
-		out_variables = {
-			value = {
-				type = "float"
-			}
-		}
-		type = "numeric_minus_numeric"
-		variable_values = {
-			a = null
-			b = null
-			value = null
-		}
-	}
-	{
-		id = "2d2cbb76-f48f-47c7-8f23-c946e82e9856"
-		out_variables = {
-			time = {
-				type = "float"
-			}
-		}
-		type = "get_last_delta_time"
-		variable_values = {
-			time = null
-		}
-	}
-	{
-		id = "edee7af9-42ee-4ef3-a37d-d5f0abc62717"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		out_variables = {
-			numeric = {
-				type = "float"
-			}
-		}
-		type = "get_numeric_variable"
-		variable_values = {
-			name = "unrivaled_time"
-			numeric = null
-			scope = "local"
-		}
-	}
-	{
 		id = "4929bd7e-67ad-4d24-9940-94fad9cd143b"
 		in_variables = {
 			name = {
@@ -356,13 +297,6 @@ nodes = [
 					node = "e5b02873-92ef-44a1-b978-0468d4bd976d"
 				}
 			]
-			true = [
-				{
-					event = 0
-					id = "f5c24756-c0fe-483a-8fcb-2936c83d0fcb:0"
-					node = "f5c24756-c0fe-483a-8fcb-2936c83d0fcb"
-				}
-			]
 		}
 		type = "branch"
 		variable_values = {
@@ -408,13 +342,26 @@ nodes = [
 		}
 	}
 	{
-		id = "f5c24756-c0fe-483a-8fcb-2936c83d0fcb"
+		id = "1158b82b-bcf4-428e-b5f8-e4c7421d3f22"
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "external_input_numeric"
+		variable_values = {
+			name = "unrivaled_time"
+			numeric = null
+		}
+	}
+	{
+		id = "cbf61c0f-3a67-4be0-b6dc-d4155407e484"
 		in_variables = {
 			name = {
 				type = "string"
 			}
 			numeric = {
-				node = "b3e7f25a-0bab-4003-9db8-7f45f8dad588"
+				node = "e17bfc0d-5dc2-4454-8ed6-4d31a69b9678"
 				type = "float"
 				variable = "value"
 			}
@@ -430,16 +377,148 @@ nodes = [
 		}
 	}
 	{
-		id = "1158b82b-bcf4-428e-b5f8-e4c7421d3f22"
+		id = "5885a8b8-3a99-409a-b436-f739942f3d33"
+		in_variables = {
+			condition = {
+				node = "a8e9119e-fa45-4af1-8661-652c949357f8"
+				type = "bool"
+				variable = "value"
+			}
+		}
+		out_events = {
+			true = [
+				{
+					event = 0
+					id = "cbf61c0f-3a67-4be0-b6dc-d4155407e484:0"
+					node = "cbf61c0f-3a67-4be0-b6dc-d4155407e484"
+				}
+			]
+		}
+		type = "branch"
+		variable_values = {
+			condition = null
+		}
+	}
+	{
+		id = "e17bfc0d-5dc2-4454-8ed6-4d31a69b9678"
+		in_variables = {
+			a = {
+				node = "08e921eb-ff3c-4e30-bcc7-fe31ee5af39e"
+				type = "float"
+				variable = "numeric"
+			}
+			b = {
+				node = "beaf572f-e598-42a3-8826-bac98d685e42"
+				type = "float"
+				variable = "time"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_minus_numeric"
+		variable_values = {
+			a = null
+			b = null
+			value = null
+		}
+	}
+	{
+		id = "beaf572f-e598-42a3-8826-bac98d685e42"
+		out_variables = {
+			time = {
+				type = "float"
+			}
+		}
+		type = "get_last_delta_time"
+		variable_values = {
+			time = null
+		}
+	}
+	{
+		id = "08e921eb-ff3c-4e30-bcc7-fe31ee5af39e"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
 		out_variables = {
 			numeric = {
 				type = "float"
 			}
 		}
-		type = "external_input_numeric"
+		type = "get_numeric_variable"
 		variable_values = {
 			name = "unrivaled_time"
 			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "63bdb2ea-5aef-455c-b711-9591cb96e6a8"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "get_numeric_variable"
+		variable_values = {
+			name = "unrivaled_time"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "a8e9119e-fa45-4af1-8661-652c949357f8"
+		in_variables = {
+			a = {
+				node = "63bdb2ea-5aef-455c-b711-9591cb96e6a8"
+				type = "float"
+				variable = "numeric"
+			}
+			b = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "bool"
+			}
+		}
+		type = "numeric_greater_than_numeric"
+		variable_values = {
+			a = null
+			b = 0
+			value = null
+		}
+	}
+	{
+		id = "5e369247-9623-4306-9630-edf68487ab75"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "5885a8b8-3a99-409a-b436-f739942f3d33:0"
+					node = "5885a8b8-3a99-409a-b436-f739942f3d33"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "Update"
 		}
 	}
 	{

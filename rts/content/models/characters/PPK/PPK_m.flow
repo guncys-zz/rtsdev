@@ -195,9 +195,9 @@ nodes = [
 			]
 			released = [
 				{
-					event = 0
-					id = "6a693800-8dce-47f4-bbf8-7ddab34bf7d8:0"
-					node = "6a693800-8dce-47f4-bbf8-7ddab34bf7d8"
+					event = 1
+					id = "b0d7f7d9-b51d-4a37-a9f1-e182e5f39663:1"
+					node = "b0d7f7d9-b51d-4a37-a9f1-e182e5f39663"
 				}
 			]
 		}
@@ -647,28 +647,6 @@ nodes = [
 		variable_values = {
 			numeric = null
 			value = null
-		}
-	}
-	{
-		id = "360e01cd-a8cb-46bc-aebd-70fe3dce9036"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		out_variables = {
-			bool = {
-				type = "bool"
-			}
-		}
-		type = "get_bool_variable"
-		variable_values = {
-			bool = null
-			name = "pause"
-			scope = "local"
 		}
 	}
 	{
@@ -1711,29 +1689,6 @@ nodes = [
 					event = 0
 					id = "1cbfc126-a8f4-4864-82ac-bf008d018258:0"
 					node = "1cbfc126-a8f4-4864-82ac-bf008d018258"
-				}
-			]
-		}
-		type = "branch"
-		variable_values = {
-			condition = null
-		}
-	}
-	{
-		id = "6a693800-8dce-47f4-bbf8-7ddab34bf7d8"
-		in_variables = {
-			condition = {
-				node = "360e01cd-a8cb-46bc-aebd-70fe3dce9036"
-				type = "bool"
-				variable = "bool"
-			}
-		}
-		out_events = {
-			false = [
-				{
-					event = 1
-					id = "b0d7f7d9-b51d-4a37-a9f1-e182e5f39663:1"
-					node = "b0d7f7d9-b51d-4a37-a9f1-e182e5f39663"
 				}
 			]
 		}
@@ -2824,6 +2779,13 @@ nodes = [
 					node = "ae78f537-f8ac-40eb-aa1d-bab7180954b8"
 				}
 			]
+			out8 = [
+				{
+					event = 1
+					id = "da507579-c407-41d2-9f61-5fc76c7510a5:1"
+					node = "da507579-c407-41d2-9f61-5fc76c7510a5"
+				}
+			]
 		}
 		type = "sequence"
 	}
@@ -3175,6 +3137,7 @@ nodes = [
 		id = "da507579-c407-41d2-9f61-5fc76c7510a5"
 		in_event_index = [
 			"Start"
+			"Update"
 		]
 		in_variables = {
 			me = {
