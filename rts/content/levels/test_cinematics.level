@@ -310,14 +310,6 @@ editor_metadata = {
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
 				FromItem = "Out"
-				FromNode = "34c3ceb6-1eee-4ec7-86d4-3996340f8a70"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "d7a3566b-ace0-47bf-a611-419c46a73dd9"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
 				FromNode = "7c2136ac-4624-4680-9536-2462285fc6d7"
 				Priority = 0
 				ToItem = "Play"
@@ -338,6 +330,14 @@ editor_metadata = {
 				Priority = 0
 				ToItem = "Play"
 				ToNode = "22be5b79-118e-4c55-9166-51165f720f1b"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "34c3ceb6-1eee-4ec7-86d4-3996340f8a70"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "c8e0f50d-b65e-41ae-8a81-94b5b91113f6"
 			}
 		]
 		Groups = [
@@ -10079,8 +10079,8 @@ flow = {
 				out = [
 					{
 						event = 0
-						id = "d7a3566b-ace0-47bf-a611-419c46a73dd9:0"
-						node = "d7a3566b-ace0-47bf-a611-419c46a73dd9"
+						id = "c8e0f50d-b65e-41ae-8a81-94b5b91113f6:0"
+						node = "c8e0f50d-b65e-41ae-8a81-94b5b91113f6"
 					}
 				]
 			}
