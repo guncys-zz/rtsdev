@@ -16,9 +16,10 @@ if bgmcall == false then
     stingray.WwiseWorld.trigger_event(wwise_world, "Play_BGM_StaffRoll")
     bgmcall = true
 end
+print("フレーﾑ数（5760目標）" .. current_frame)
 
 --print(current_frame)
-if current_frame == 5489 then
+if current_frame == 5760 then
     if dispatched ~= true then  --まだイベントをコールしていなかったら
         if stingray.Keyboard.pressed(stingray.Keyboard.button_id("space")) then
             local evt = { eventId = scaleform.EventTypes.Custom,
