@@ -5,7 +5,8 @@ local SimpleProject = require 'core/appkit/lua/simple_project'
 local damage_anim = 10   --ダメージのアニメーション
 local gauge_anim = 1    --ゲージのアニメーション   
 local loding_flag = false   --1ステージごとにローディングされたかどうかを確認
-local credits_flag = false
+local credits_flag = false  --クレジットシーンをエンディングの度に1回だけ呼ぶ
+local gameover_flag = false --ゲームオーバーしたかどうか
 
 UI = UI or{}
 
@@ -73,6 +74,7 @@ function UI.reset(hp, pos)
     
 	loding_flag = false
 	credits_flag = false
+	gameover_flag = false
 end
 
 --ダメージアニメーションの制御
@@ -172,10 +174,35 @@ function UI.gauge_update(pos)  --positionにはプレイヤーのY方向の位�
 end
 
 function UI.gameOver()
-    print("gameOver")
-    print(SimpleProject.level_name)
-    Appkit.set_pending_level_change(stingray.Application.flow_callback_context_level(), SimpleProject.level_name)
+    --print("gameOver")
+    --print(SimpleProject.level_name)
+    --Appkit.set_pending_level_change(stingray.Application.flow_callback_context_level(), SimpleProject.level_name)
+    if gameover_flag ~= true then
+        local loading = scaleform.Actor.load("GameOver.s2dscene")   --gameoverシーンのロード
+        scaleform.Stage.add_scene(loading)
+        
+	    --GameOver SE Start
+	    --ここはゲームオーバーの時に一回だけ通過するので
+        --音を鳴らすならここです。
+        --もしflowで処理を記述する場合は、PPKのUnitflow内の
+        --"GameOver"というグループの"Branch"からfalseが伸びているのでそこだと思います。
+        --このスクリプトはそこで、"GameOver"ノードで呼ばれています
+	    --Gameover SE End
+	    stingray.Wwise.load_bank("content/audio/default")
+    	local wwise_world = stingray.Wwise.wwise_world(SimpleProject.world)
+		stingray.WwiseWorld.trigger_event(wwise_world, "SE_PPK_Fail")
 
+	    
+	    --ポーズ処理
+	    units = stingray.World.units_by_resource(SimpleProject.world, "content/models/characters/PPK/PPK_m")
+		ppk = units[1]
+	    if ppk ~= nil then
+		    -- stingray.Unit.disable_animation_state_machine(ppk)
+		    -- stingray.Unit.stop_simple_animation(ppk)
+		    stingray.Unit.flow_event(ppk,"pause")
+		end
+        gameover_flag = true
+    end
 end
 
 function UI.loading()
@@ -183,12 +210,18 @@ function UI.loading()
         local loading = scaleform.Actor.load("Loading.s2dscene")	--Loding用のシーンをロード
     	--print("ローディングシーンに切り替え")
         -- Remove the main menu scene
-        scaleform.Stage.remove_scene_by_index(1)
+        --scaleform.Stage.remove_scene_by_index(1)
         -- Add the loading scene
         scaleform.Stage.add_scene(loading)
         loding_flag = true
     end
+end
 
+function UI.done_loading()
+    -- ロードシーンをリムーブ
+    if SimpleProject.level_name ~= "content/levels/ending" then
+        scaleform.Stage.remove_scene_by_index(2)
+    end
 end
 
 function UI.credits()

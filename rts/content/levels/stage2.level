@@ -219,14 +219,6 @@ editor_metadata = {
 				Type = "Bool"
 			}
 			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
-				FromNode = "78838da3-0cc6-4e87-9aab-efeeed1a03c9"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "d15af930-8a8f-4a39-aeea-2df53b3d10a0"
-			}
-			{
 				Class = "Stingray.Foundation.Flow.VariableConnection"
 				FromItem = "Unit"
 				FromNode = "29beef00-a9a2-4383-9095-daa70a7066ac"
@@ -273,6 +265,14 @@ editor_metadata = {
 				Priority = 0
 				ToItem = "Play"
 				ToNode = "04c230fd-8a74-456f-b282-a183ed11bd6a"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "78838da3-0cc6-4e87-9aab-efeeed1a03c9"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "f4946a4f-4dd9-4028-8e1c-09d32a380aa8"
 			}
 		]
 		Groups = [
@@ -1063,30 +1063,6 @@ editor_metadata = {
 				OutVariables = [
 				]
 				Title = "Flow Subroutine"
-				Width = 160
-			}
-			{
-				Arguments = [
-				]
-				Brief = ""
-				Class = "Stingray.Foundation.Flow.CustomScriptNode"
-				FlowNodesResource = "script/custom_nodes/loading"
-				FlowNodesResourceKey = "flow_nodes_resource"
-				Id = "d15af930-8a8f-4a39-aeea-2df53b3d10a0"
-				InEvents = [
-					"In"
-				]
-				IsQuery = false
-				Name = "Loading"
-				NodeLocation = {
-					X = 880
-					Y = 560
-				}
-				OutEvents = [
-					"Out"
-				]
-				ReturnValues = [
-				]
 				Width = 160
 			}
 			{
@@ -16342,8 +16318,8 @@ flow = {
 				out = [
 					{
 						event = 0
-						id = "d15af930-8a8f-4a39-aeea-2df53b3d10a0:0"
-						node = "d15af930-8a8f-4a39-aeea-2df53b3d10a0"
+						id = "f4946a4f-4dd9-4028-8e1c-09d32a380aa8:0"
+						node = "f4946a4f-4dd9-4028-8e1c-09d32a380aa8"
 					}
 				]
 			}
@@ -16363,17 +16339,6 @@ flow = {
 			variable_values = {
 				flow = "script/custom_flows/Close_Vignette"
 			}
-		}
-		{
-			flow_nodes_resource = "script/custom_nodes/loading"
-			id = "d15af930-8a8f-4a39-aeea-2df53b3d10a0"
-			name = "Loading"
-			query = false
-			return_values = [
-			]
-			type = "custom_script_node"
-			variables = [
-			]
 		}
 		{
 			id = "e6969a1e-3907-4fe4-a266-a5106ac401b1"

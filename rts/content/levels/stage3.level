@@ -217,14 +217,6 @@ editor_metadata = {
 			}
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
-				FromNode = "acb2bbf9-95fc-4e0a-90cc-78e9f86b3489"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "566711f9-387e-41c8-a8d1-4a9e0b45240d"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
 				FromItem = "True"
 				FromNode = "32a94c4c-696f-4927-a076-375dddad1403"
 				Priority = 0
@@ -254,6 +246,14 @@ editor_metadata = {
 				Priority = 0
 				ToItem = "Play"
 				ToNode = "b447209b-b379-4d47-84fe-7cc1100ebe69"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "acb2bbf9-95fc-4e0a-90cc-78e9f86b3489"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "93a42ee8-822c-42fe-b212-603f8a40ef40"
 			}
 		]
 		Groups = [
@@ -951,30 +951,6 @@ editor_metadata = {
 				Title = "Branch"
 				True = {
 				}
-				Width = 160
-			}
-			{
-				Arguments = [
-				]
-				Brief = ""
-				Class = "Stingray.Foundation.Flow.CustomScriptNode"
-				FlowNodesResource = "script/custom_nodes/loading"
-				FlowNodesResourceKey = "flow_nodes_resource"
-				Id = "566711f9-387e-41c8-a8d1-4a9e0b45240d"
-				InEvents = [
-					"In"
-				]
-				IsQuery = false
-				Name = "Loading"
-				NodeLocation = {
-					X = 600
-					Y = 520
-				}
-				OutEvents = [
-					"Out"
-				]
-				ReturnValues = [
-				]
 				Width = 160
 			}
 			{
@@ -20980,17 +20956,6 @@ flow = {
 			}
 		}
 		{
-			flow_nodes_resource = "script/custom_nodes/loading"
-			id = "566711f9-387e-41c8-a8d1-4a9e0b45240d"
-			name = "Loading"
-			query = false
-			return_values = [
-			]
-			type = "custom_script_node"
-			variables = [
-			]
-		}
-		{
 			id = "acb2bbf9-95fc-4e0a-90cc-78e9f86b3489"
 			in_variables = {
 				time = {
@@ -21001,8 +20966,8 @@ flow = {
 				out = [
 					{
 						event = 0
-						id = "566711f9-387e-41c8-a8d1-4a9e0b45240d:0"
-						node = "566711f9-387e-41c8-a8d1-4a9e0b45240d"
+						id = "93a42ee8-822c-42fe-b212-603f8a40ef40:0"
+						node = "93a42ee8-822c-42fe-b212-603f8a40ef40"
 					}
 				]
 			}
