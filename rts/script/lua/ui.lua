@@ -188,6 +188,10 @@ function UI.gameOver()
         --"GameOver"というグループの"Branch"からfalseが伸びているのでそこだと思います。
         --このスクリプトはそこで、"GameOver"ノードで呼ばれています
 	    --Gameover SE End
+	    stingray.Wwise.load_bank("content/audio/default")
+    	local wwise_world = stingray.Wwise.wwise_world(SimpleProject.world)
+		stingray.WwiseWorld.trigger_event(wwise_world, "SE_PPK_Fail")
+
 	    
 	    --ポーズ処理
 	    units = stingray.World.units_by_resource(SimpleProject.world, "content/models/characters/PPK/PPK_m")
