@@ -3428,45 +3428,6 @@ nodes = [
 		}
 	}
 	{
-		id = "f0b4f2f1-f3fa-462f-8b1e-93ed3896e4be"
-		in_variables = {
-			effect = {
-				type = "string"
-			}
-			linked = {
-				type = "bool"
-			}
-			object = {
-				type = "id"
-			}
-			offset = {
-				type = "vector3"
-			}
-			orphaned_policy = {
-				type = "string"
-			}
-			rotation_offset = {
-				type = "quaternion"
-			}
-			unit = {
-				node = "11111111-2222-3333-4444-555555555555"
-				type = "unit"
-				variable = "unit"
-			}
-		}
-		type = "particle_effect"
-		variable_values = {
-			effect = "content/effect/fx_e_dmg00_00"
-			effect_id = null
-			linked = false
-			object = null
-			offset = null
-			orphaned_policy = null
-			rotation_offset = null
-			unit = null
-		}
-	}
-	{
 		id = "f114301c-c770-4081-bfbb-a4f91ec26d5e"
 		in_variables = {
 			name = {
@@ -3936,6 +3897,45 @@ nodes = [
 		type = "custom_script_node"
 		variables = [
 		]
+	}
+	{
+		id = "f0b4f2f1-f3fa-462f-8b1e-93ed3896e4be"
+		in_variables = {
+			effect = {
+				type = "string"
+			}
+			linked = {
+				type = "bool"
+			}
+			object = {
+				type = "id"
+			}
+			offset = {
+				type = "vector3"
+			}
+			orphaned_policy = {
+				type = "string"
+			}
+			rotation_offset = {
+				type = "quaternion"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		type = "particle_effect"
+		variable_values = {
+			effect = "content/effect/fx_e_dmg00_00"
+			effect_id = null
+			linked = false
+			object = null
+			offset = null
+			orphaned_policy = null
+			rotation_offset = null
+			unit = null
+		}
 	}
 	{
 		id = "11111111-2222-3333-4444-555555555555"

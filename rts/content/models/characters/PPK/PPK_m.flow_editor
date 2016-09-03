@@ -5204,8 +5204,8 @@ Nodes = [
 			Value = "status"
 		}
 		NodeLocation = {
-			X = 280
-			Y = -40
+			X = 340
+			Y = -60
 		}
 		Out = {
 		}
@@ -5337,8 +5337,8 @@ Nodes = [
 			Value = "IsRun"
 		}
 		NodeLocation = {
-			X = -340
-			Y = -180
+			X = -280
+			Y = -200
 		}
 		Unit = {
 			UseMyUnit = true
@@ -5699,8 +5699,8 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = -340
-			Y = -80
+			X = -280
+			Y = -100
 		}
 		Out = {
 		}
@@ -5735,8 +5735,8 @@ Nodes = [
 			Value = "Speed"
 		}
 		NodeLocation = {
-			X = 460
-			Y = -160
+			X = 520
+			Y = -180
 		}
 		Out = {
 		}
@@ -6315,8 +6315,8 @@ Nodes = [
 			Value = "IsMove"
 		}
 		NodeLocation = {
-			X = 60
-			Y = -160
+			X = 120
+			Y = -180
 		}
 		Out = {
 		}
@@ -7041,8 +7041,8 @@ Nodes = [
 			Value = "RunSpeed"
 		}
 		NodeLocation = {
-			X = 260
-			Y = -200
+			X = 320
+			Y = -220
 		}
 		Unit = {
 			UseMyUnit = true
@@ -7288,8 +7288,8 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 60
-			Y = -60
+			X = 120
+			Y = -80
 		}
 		Out = {
 		}
@@ -7341,40 +7341,6 @@ Nodes = [
 			Value = "local"
 		}
 		Width = 180
-	}
-	{
-		Class = "Stingray.Flow.ParticleEffect"
-		Create = {
-		}
-		Destroy = {
-		}
-		Effect = {
-			Value = "content/effect/fx_e_dmg00_00"
-		}
-		EffectId = {
-		}
-		Id = "f0b4f2f1-f3fa-462f-8b1e-93ed3896e4be"
-		Kill = {
-		}
-		Linked = {
-			Value = false
-		}
-		NodeLocation = {
-			X = -900
-			Y = 1880
-		}
-		Object = {
-		}
-		Offset = {
-		}
-		OrphanedPolicy = {
-		}
-		RotationOffset = {
-		}
-		Unit = {
-			UseMyUnit = true
-		}
-		Width = 160
 	}
 	{
 		Class = "Stingray.Flow.SetStringVariable"
@@ -7766,8 +7732,8 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = -620
-			Y = -80
+			X = -560
+			Y = -100
 		}
 		Out = {
 		}
@@ -7786,8 +7752,8 @@ Nodes = [
 		IsQuery = false
 		Name = "Loading"
 		NodeLocation = {
-			X = -540
-			Y = -180
+			X = -480
+			Y = -200
 		}
 		OutEvents = [
 			"Out"
@@ -7809,14 +7775,48 @@ Nodes = [
 		IsQuery = false
 		Name = "Done Loading"
 		NodeLocation = {
-			X = -140
-			Y = -200
+			X = -80
+			Y = -220
 		}
 		OutEvents = [
 			"Out"
 		]
 		ReturnValues = [
 		]
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ParticleEffect"
+		Create = {
+		}
+		Destroy = {
+		}
+		Effect = {
+			Value = "content/effect/fx_e_dmg00_00"
+		}
+		EffectId = {
+		}
+		Id = "f0b4f2f1-f3fa-462f-8b1e-93ed3896e4be"
+		Kill = {
+		}
+		Linked = {
+			Value = false
+		}
+		NodeLocation = {
+			X = -900
+			Y = 1880
+		}
+		Object = {
+		}
+		Offset = {
+		}
+		OrphanedPolicy = {
+		}
+		RotationOffset = {
+		}
+		Unit = {
+			UseMyUnit = true
+		}
 		Width = 160
 	}
 ]
