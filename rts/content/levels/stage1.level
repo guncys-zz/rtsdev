@@ -5380,6 +5380,681 @@ editor_metadata = {
 			}
 			Type = "content/models/blockers/PIG/PIG"
 		}
+		{
+			Cameras = {
+			}
+			Id = "7595f624-3d49-41e8-95b6-cdaed067ae0b"
+			Layer = "Default"
+			Lights = {
+				probe = {
+					Baked = false
+					BoxMax = {
+						X = 3
+						Y = 3
+						Z = 3
+					}
+					BoxMin = {
+						X = -3
+						Y = -3
+						Z = -3
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1
+					Material = ""
+					MaterialResource = "content/levels/stage1-cubemaps/reflection_probe1_bake"
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "box"
+				}
+			}
+			Materials = {
+			}
+			Name = "reflection_probe1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 5.17217
+				Y = 27.324034
+				Z = 0.012
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"probe.falloff[0]" = 1
+				"probe.falloff[1]" = 1
+				"probe.falloff[2]" = 1
+				"probe.trace_box_max[0]" = 3
+				"probe.trace_box_max[1]" = 3
+				"probe.trace_box_max[2]" = 3
+				"probe.trace_box_min[0]" = -3
+				"probe.trace_box_min[1]" = -3
+				"probe.trace_box_min[2]" = -3
+			}
+			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+		}
+		{
+			Cameras = {
+			}
+			Id = "5ae7cda1-47db-4856-9b7d-158ce328ba62"
+			Layer = "Default"
+			Lights = {
+				probe = {
+					Baked = false
+					BoxMax = {
+						X = 6
+						Y = 6
+						Z = 6
+					}
+					BoxMin = {
+						X = -6
+						Y = -6
+						Z = -6
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1
+					Material = ""
+					MaterialResource = "content/levels/stage1-cubemaps/reflection_probe2_bake"
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "box"
+				}
+			}
+			Materials = {
+			}
+			Name = "reflection_probe2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -11.267281
+				Y = 45.508415
+				Z = 0.012
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"probe.trace_box_max[0]" = 5
+				"probe.trace_box_max[1]" = 5
+				"probe.trace_box_max[2]" = 5
+				"probe.trace_box_min[0]" = -5
+				"probe.trace_box_min[1]" = -5
+				"probe.trace_box_min[2]" = -5
+			}
+			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+		}
+		{
+			Cameras = {
+			}
+			Id = "494feca8-3b5b-484d-8727-a90e80ca8eed"
+			Layer = "Default"
+			Lights = {
+				probe = {
+					Baked = false
+					BoxMax = {
+						X = 6
+						Y = 6
+						Z = 6
+					}
+					BoxMin = {
+						X = -6
+						Y = -6
+						Z = -6
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1
+					Material = ""
+					MaterialResource = "content/levels/stage1-cubemaps/reflection_probe3_bake"
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "box"
+				}
+			}
+			Materials = {
+			}
+			Name = "reflection_probe3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -11.267281
+				Y = 143.13916
+				Z = 0.012
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"probe.trace_box_max[0]" = 5
+				"probe.trace_box_max[1]" = 5
+				"probe.trace_box_max[2]" = 5
+				"probe.trace_box_min[0]" = -5
+				"probe.trace_box_min[1]" = -5
+				"probe.trace_box_min[2]" = -5
+			}
+			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+		}
+		{
+			Cameras = {
+			}
+			Id = "03adfb07-05d8-4655-bb5c-b3aebc51dac9"
+			Layer = "Default"
+			Lights = {
+				probe = {
+					Baked = false
+					BoxMax = {
+						X = 6
+						Y = 6
+						Z = 6
+					}
+					BoxMin = {
+						X = -6
+						Y = -6
+						Z = -6
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1
+					Material = ""
+					MaterialResource = "content/levels/stage1-cubemaps/reflection_probe4_bake"
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "box"
+				}
+			}
+			Materials = {
+			}
+			Name = "reflection_probe4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -11.267281
+				Y = 241.360504
+				Z = 0.012
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"probe.trace_box_max[0]" = 5
+				"probe.trace_box_max[1]" = 5
+				"probe.trace_box_max[2]" = 5
+				"probe.trace_box_min[0]" = -5
+				"probe.trace_box_min[1]" = -5
+				"probe.trace_box_min[2]" = -5
+			}
+			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+		}
+		{
+			Cameras = {
+			}
+			Id = "2c079290-79b2-443e-bcf0-ee23dbb3e708"
+			Layer = "Default"
+			Lights = {
+				probe = {
+					Baked = false
+					BoxMax = {
+						X = 3
+						Y = 3
+						Z = 3
+					}
+					BoxMin = {
+						X = -3
+						Y = -3
+						Z = -3
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1
+					Material = ""
+					MaterialResource = "content/levels/stage1-cubemaps/reflection_probe5_bake"
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "box"
+				}
+			}
+			Materials = {
+			}
+			Name = "reflection_probe5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 6.283614
+				Y = 74.589363
+				Z = 0.012
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"probe.falloff[0]" = 1
+				"probe.falloff[1]" = 1
+				"probe.falloff[2]" = 1
+				"probe.trace_box_max[0]" = 3
+				"probe.trace_box_max[1]" = 3
+				"probe.trace_box_max[2]" = 3
+				"probe.trace_box_min[0]" = -3
+				"probe.trace_box_min[1]" = -3
+				"probe.trace_box_min[2]" = -3
+			}
+			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c0210df8-be7a-4f45-9926-ca2124a9424b"
+			Layer = "Default"
+			Lights = {
+				probe = {
+					Baked = false
+					BoxMax = {
+						X = 3
+						Y = 3
+						Z = 3
+					}
+					BoxMin = {
+						X = -3
+						Y = -3
+						Z = -3
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1
+					Material = ""
+					MaterialResource = "content/levels/stage1-cubemaps/reflection_probe6_bake"
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "box"
+				}
+			}
+			Materials = {
+			}
+			Name = "reflection_probe6"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 5.051874
+				Y = 125.710464
+				Z = 0.012
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"probe.falloff[0]" = 1
+				"probe.falloff[1]" = 1
+				"probe.falloff[2]" = 1
+				"probe.trace_box_max[0]" = 3
+				"probe.trace_box_max[1]" = 3
+				"probe.trace_box_max[2]" = 3
+				"probe.trace_box_min[0]" = -3
+				"probe.trace_box_min[1]" = -3
+				"probe.trace_box_min[2]" = -3
+			}
+			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ef2f37cf-59ba-4ee3-9717-21a932b973a4"
+			Layer = "Default"
+			Lights = {
+				probe = {
+					Baked = false
+					BoxMax = {
+						X = 3
+						Y = 3
+						Z = 3
+					}
+					BoxMin = {
+						X = -3
+						Y = -3
+						Z = -3
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1
+					Material = ""
+					MaterialResource = "content/levels/stage1-cubemaps/reflection_probe7_bake"
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "box"
+				}
+			}
+			Materials = {
+			}
+			Name = "reflection_probe7"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 6.134278
+				Y = 172.880447
+				Z = 0.012
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"probe.falloff[0]" = 1
+				"probe.falloff[1]" = 1
+				"probe.falloff[2]" = 1
+				"probe.trace_box_max[0]" = 3
+				"probe.trace_box_max[1]" = 3
+				"probe.trace_box_max[2]" = 3
+				"probe.trace_box_min[0]" = -3
+				"probe.trace_box_min[1]" = -3
+				"probe.trace_box_min[2]" = -3
+			}
+			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+		}
+		{
+			Cameras = {
+			}
+			Id = "9066bc59-b81d-4012-b5d7-b2ae1c27b57b"
+			Layer = "Default"
+			Lights = {
+				probe = {
+					Baked = false
+					BoxMax = {
+						X = 3
+						Y = 3
+						Z = 3
+					}
+					BoxMin = {
+						X = -3
+						Y = -3
+						Z = -3
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1
+					Material = ""
+					MaterialResource = "content/levels/stage1-cubemaps/reflection_probe8_bake"
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "box"
+				}
+			}
+			Materials = {
+			}
+			Name = "reflection_probe8"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 5.079279
+				Y = 223.609558
+				Z = 0.012
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"probe.falloff[0]" = 1
+				"probe.falloff[1]" = 1
+				"probe.falloff[2]" = 1
+				"probe.trace_box_max[0]" = 3
+				"probe.trace_box_max[1]" = 3
+				"probe.trace_box_max[2]" = 3
+				"probe.trace_box_min[0]" = -3
+				"probe.trace_box_min[1]" = -3
+				"probe.trace_box_min[2]" = -3
+			}
+			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3716675a-fd4a-405e-b93b-43bdbfc315da"
+			Layer = "Default"
+			Lights = {
+				probe = {
+					Baked = false
+					BoxMax = {
+						X = 3
+						Y = 3
+						Z = 3
+					}
+					BoxMin = {
+						X = -3
+						Y = -3
+						Z = -3
+					}
+					CastShadows = false
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1
+					Material = ""
+					MaterialResource = "content/levels/stage1-cubemaps/reflection_probe9_bake"
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "box"
+				}
+			}
+			Materials = {
+			}
+			Name = "reflection_probe9"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 5.796147
+				Y = 271.268494
+				Z = 0.012
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+				"probe.falloff[0]" = 1
+				"probe.falloff[1]" = 1
+				"probe.falloff[2]" = 1
+				"probe.trace_box_max[0]" = 3
+				"probe.trace_box_max[1]" = 3
+				"probe.trace_box_max[2]" = 3
+				"probe.trace_box_min[0]" = -3
+				"probe.trace_box_min[1]" = -3
+				"probe.trace_box_min[2]" = -3
+			}
+			Type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+		}
 	]
 	Volumes = [
 	]
@@ -9488,6 +10163,600 @@ units = [
 			0.7
 		]
 		type = "content/models/blockers/PIG/PIG"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"probe.falloff[0]" = 1
+			"probe.falloff[1]" = 1
+			"probe.falloff[2]" = 1
+			"probe.trace_box_max[0]" = 3
+			"probe.trace_box_max[1]" = 3
+			"probe.trace_box_max[2]" = 3
+			"probe.trace_box_min[0]" = -3
+			"probe.trace_box_min[1]" = -3
+			"probe.trace_box_min[2]" = -3
+		}
+		id = "7595f624-3d49-41e8-95b6-cdaed067ae0b"
+		lights = {
+			probe = {
+				baked = false
+				box_max = [
+					3
+					3
+					3
+				]
+				box_min = [
+					-3
+					-3
+					-3
+				]
+				cast_shadows = false
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1
+				material = "content/levels/stage1-cubemaps/reflection_probe1_bake"
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "box"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "reflection_probe1"
+		pos = [
+			5.17217
+			27.324034
+			0.012
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"probe.trace_box_max[0]" = 5
+			"probe.trace_box_max[1]" = 5
+			"probe.trace_box_max[2]" = 5
+			"probe.trace_box_min[0]" = -5
+			"probe.trace_box_min[1]" = -5
+			"probe.trace_box_min[2]" = -5
+		}
+		id = "5ae7cda1-47db-4856-9b7d-158ce328ba62"
+		lights = {
+			probe = {
+				baked = false
+				box_max = [
+					6
+					6
+					6
+				]
+				box_min = [
+					-6
+					-6
+					-6
+				]
+				cast_shadows = false
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1
+				material = "content/levels/stage1-cubemaps/reflection_probe2_bake"
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "box"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "reflection_probe2"
+		pos = [
+			-11.267281
+			45.508415
+			0.012
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"probe.trace_box_max[0]" = 5
+			"probe.trace_box_max[1]" = 5
+			"probe.trace_box_max[2]" = 5
+			"probe.trace_box_min[0]" = -5
+			"probe.trace_box_min[1]" = -5
+			"probe.trace_box_min[2]" = -5
+		}
+		id = "494feca8-3b5b-484d-8727-a90e80ca8eed"
+		lights = {
+			probe = {
+				baked = false
+				box_max = [
+					6
+					6
+					6
+				]
+				box_min = [
+					-6
+					-6
+					-6
+				]
+				cast_shadows = false
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1
+				material = "content/levels/stage1-cubemaps/reflection_probe3_bake"
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "box"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "reflection_probe3"
+		pos = [
+			-11.267281
+			143.13916
+			0.012
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"probe.trace_box_max[0]" = 5
+			"probe.trace_box_max[1]" = 5
+			"probe.trace_box_max[2]" = 5
+			"probe.trace_box_min[0]" = -5
+			"probe.trace_box_min[1]" = -5
+			"probe.trace_box_min[2]" = -5
+		}
+		id = "03adfb07-05d8-4655-bb5c-b3aebc51dac9"
+		lights = {
+			probe = {
+				baked = false
+				box_max = [
+					6
+					6
+					6
+				]
+				box_min = [
+					-6
+					-6
+					-6
+				]
+				cast_shadows = false
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1
+				material = "content/levels/stage1-cubemaps/reflection_probe4_bake"
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "box"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "reflection_probe4"
+		pos = [
+			-11.267281
+			241.360504
+			0.012
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"probe.falloff[0]" = 1
+			"probe.falloff[1]" = 1
+			"probe.falloff[2]" = 1
+			"probe.trace_box_max[0]" = 3
+			"probe.trace_box_max[1]" = 3
+			"probe.trace_box_max[2]" = 3
+			"probe.trace_box_min[0]" = -3
+			"probe.trace_box_min[1]" = -3
+			"probe.trace_box_min[2]" = -3
+		}
+		id = "2c079290-79b2-443e-bcf0-ee23dbb3e708"
+		lights = {
+			probe = {
+				baked = false
+				box_max = [
+					3
+					3
+					3
+				]
+				box_min = [
+					-3
+					-3
+					-3
+				]
+				cast_shadows = false
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1
+				material = "content/levels/stage1-cubemaps/reflection_probe5_bake"
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "box"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "reflection_probe5"
+		pos = [
+			6.283614
+			74.589363
+			0.012
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"probe.falloff[0]" = 1
+			"probe.falloff[1]" = 1
+			"probe.falloff[2]" = 1
+			"probe.trace_box_max[0]" = 3
+			"probe.trace_box_max[1]" = 3
+			"probe.trace_box_max[2]" = 3
+			"probe.trace_box_min[0]" = -3
+			"probe.trace_box_min[1]" = -3
+			"probe.trace_box_min[2]" = -3
+		}
+		id = "c0210df8-be7a-4f45-9926-ca2124a9424b"
+		lights = {
+			probe = {
+				baked = false
+				box_max = [
+					3
+					3
+					3
+				]
+				box_min = [
+					-3
+					-3
+					-3
+				]
+				cast_shadows = false
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1
+				material = "content/levels/stage1-cubemaps/reflection_probe6_bake"
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "box"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "reflection_probe6"
+		pos = [
+			5.051874
+			125.710464
+			0.012
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"probe.falloff[0]" = 1
+			"probe.falloff[1]" = 1
+			"probe.falloff[2]" = 1
+			"probe.trace_box_max[0]" = 3
+			"probe.trace_box_max[1]" = 3
+			"probe.trace_box_max[2]" = 3
+			"probe.trace_box_min[0]" = -3
+			"probe.trace_box_min[1]" = -3
+			"probe.trace_box_min[2]" = -3
+		}
+		id = "ef2f37cf-59ba-4ee3-9717-21a932b973a4"
+		lights = {
+			probe = {
+				baked = false
+				box_max = [
+					3
+					3
+					3
+				]
+				box_min = [
+					-3
+					-3
+					-3
+				]
+				cast_shadows = false
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1
+				material = "content/levels/stage1-cubemaps/reflection_probe7_bake"
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "box"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "reflection_probe7"
+		pos = [
+			6.134278
+			172.880447
+			0.012
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"probe.falloff[0]" = 1
+			"probe.falloff[1]" = 1
+			"probe.falloff[2]" = 1
+			"probe.trace_box_max[0]" = 3
+			"probe.trace_box_max[1]" = 3
+			"probe.trace_box_max[2]" = 3
+			"probe.trace_box_min[0]" = -3
+			"probe.trace_box_min[1]" = -3
+			"probe.trace_box_min[2]" = -3
+		}
+		id = "9066bc59-b81d-4012-b5d7-b2ae1c27b57b"
+		lights = {
+			probe = {
+				baked = false
+				box_max = [
+					3
+					3
+					3
+				]
+				box_min = [
+					-3
+					-3
+					-3
+				]
+				cast_shadows = false
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1
+				material = "content/levels/stage1-cubemaps/reflection_probe8_bake"
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "box"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "reflection_probe8"
+		pos = [
+			5.079279
+			223.609558
+			0.012
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"probe.falloff[0]" = 1
+			"probe.falloff[1]" = 1
+			"probe.falloff[2]" = 1
+			"probe.trace_box_max[0]" = 3
+			"probe.trace_box_max[1]" = 3
+			"probe.trace_box_max[2]" = 3
+			"probe.trace_box_min[0]" = -3
+			"probe.trace_box_min[1]" = -3
+			"probe.trace_box_min[2]" = -3
+		}
+		id = "3716675a-fd4a-405e-b93b-43bdbfc315da"
+		lights = {
+			probe = {
+				baked = false
+				box_max = [
+					3
+					3
+					3
+				]
+				box_min = [
+					-3
+					-3
+					-3
+				]
+				cast_shadows = false
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1
+				material = "content/levels/stage1-cubemaps/reflection_probe9_bake"
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "box"
+			}
+		}
+		material = ""
+		materials = {
+		}
+		name = "reflection_probe9"
+		pos = [
+			5.796147
+			271.268494
+			0.012
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/stingray_renderer/helper_units/reflection_probe/reflection_probe"
 	}
 ]
 volumes = [

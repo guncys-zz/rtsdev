@@ -5,30 +5,6 @@ particle_system = {
 		{
 			controllers = [
 				{
-					Name = "Emitter: Rate"
-					RateMax = 7
-					RateMin = 5
-					Scale = [
-						[
-							0
-							1
-						]
-						[
-							0
-							1
-						]
-						[
-							0.5327
-							1
-						]
-						[
-							1
-							1
-						]
-					]
-					type = "rate_emitter"
-				}
-				{
 					AdditiveBlend = false
 					DepthFadeDistance = 0
 					DiffuseMap = "content/effect/fx_t_smk04_v2"
@@ -132,6 +108,16 @@ particle_system = {
 					MinZ = 0
 					Name = "Position: Box"
 					type = "position_box"
+				}
+				{
+					Bursts = [
+						[
+							0
+							100
+						]
+					]
+					Name = "Emitter: Bursts"
+					type = "burst_emitter"
 				}
 			]
 			Id = "0b6c7a5e-f7cc-4658-a556-e6a91e034acc"

@@ -74,27 +74,13 @@ clouds = [
 				type = "age_age"
 			}
 			{
-				rate_max = 7
-				rate_min = 5
-				scale = [
+				bursts = [
 					[
 						0
-						1
-					]
-					[
-						0
-						1
-					]
-					[
-						0.5327
-						1
-					]
-					[
-						1
-						1
+						100
 					]
 				]
-				type = "rate_emitter"
+				type = "burst_emitter"
 			}
 			{
 				type = "position_integrate"
