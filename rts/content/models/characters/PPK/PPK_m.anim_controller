@@ -11,6 +11,37 @@ anim_skeleton_ref = {
 clip_mappings = [
 ]
 compiler_data = {
+	blend_sets = {
+		BlendSet_Face = {
+			Jaw = 1
+			LeftCheek = 1
+			LeftEye = 1
+			LeftEyebrow1 = 1
+			LeftEyebrow2 = 1
+			LeftEyelid1 = 1
+			LeftEyelid2 = 1
+			LeftEyelid3 = 1
+			LeftLipRound1 = 1
+			LeftLipRound2 = 1
+			LeftLipSide1 = 1
+			LeftLipSide2 = 1
+			LipDown = 1
+			LipDownRound = 1
+			LipTop = 1
+			LipTopRound = 1
+			RightCheek = 1
+			RightEye = 1
+			RightEyebrow1 = 1
+			RightEyebrow2 = 1
+			RightEyelid1 = 1
+			RightEyelid2 = 1
+			RightEyelid3 = 1
+			RightLipRound1 = 1
+			RightLipRound2 = 1
+			RightLipSide1 = 1
+			RightLipSide2 = 1
+		}
+	}
 	bones = "content/models/characters/PPK/PPK_m"
 	events = {
 		"Anim End" = {
@@ -878,12 +909,23 @@ compiler_data = {
 			]
 		}
 		{
-			default_state = "Empty_State"
+			default_state = "Clip_State"
 			states = [
 				{
-					name = "Empty_State"
-					state_type = "empty"
+					animations = [
+						"content/models/characters/PPK/animations/PPK_a_FaceDefault"
+					]
+					blend_set = "BlendSet_Face"
+					loop_animation = true
+					name = "Clip_State"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
 					transitions = [
+					]
+					weights = [
+						"1.0"
 					]
 				}
 			]
@@ -3658,31 +3700,46 @@ layers = [
 		constraints = [
 		]
 		default_state_ref = {
-			_id = "06e5c2b3-6fe7-49f4-a9e0-990271fc1805"
+			_id = "6d232a60-160d-40c2-8fc8-2667f2757fce"
 			ref_filename = null
-			ref_id = "cf51e692-aacb-4bc5-bd99-29b29642d850"
+			ref_id = "47d4764a-4212-4e62-a035-938813acab23"
 		}
 		empty_states = [
+		]
+		group_states = [
+		]
+		notes = [
+		]
+		ragdoll_states = [
+		]
+		shortcut_states = [
+		]
+		states = [
 			{
-				_id = "cf51e692-aacb-4bc5-bd99-29b29642d850"
-				_name = "Empty_State"
+				_id = "47d4764a-4212-4e62-a035-938813acab23"
+				_name = "Clip_State"
 				anim_blend_set_ref = {
-					_id = "7a720dfb-fef6-4b73-9db0-266049b5d678"
-					ref_filename = null
-					ref_id = null
+					_id = "e15584c1-4f64-4966-92d1-217a2ef8f3f4"
+					ref_filename = "content/models/characters/PPK/PPK_m.anim_skeleton"
+					ref_id = "c85e9c7c-9626-4e48-a613-4b7461f075f7"
 				}
 				animations = [
+					{
+						_id = "175aca4d-c0db-497c-b31c-49f3ed0437ae"
+						ref_filename = "content/models/characters/PPK/animations/PPK_a_FaceDefault.anim_clip"
+						ref_id = null
+					}
 				]
 				constraints = [
 				]
 				exit_event_ref = {
-					_id = "43ca3965-644b-4ce6-9f1c-c56396fe0094"
+					_id = "7e9113e3-0fdd-4ead-af8a-60e4f1868105"
 					ref_filename = null
 					ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
 				}
 				group_transitions = [
 				]
-				inherit_anim_blend_set = true
+				inherit_anim_blend_set = false
 				inherit_constraints = true
 				inherit_muted_layers = true
 				loop_animation = true
@@ -3697,21 +3754,12 @@ layers = [
 				transitions = [
 				]
 				weights = [
+					"1.0"
 				]
 				width = 150
-				x = -120
-				y = 0
+				x = -58
+				y = -19
 			}
-		]
-		group_states = [
-		]
-		notes = [
-		]
-		ragdoll_states = [
-		]
-		shortcut_states = [
-		]
-		states = [
 		]
 		time_states = [
 		]

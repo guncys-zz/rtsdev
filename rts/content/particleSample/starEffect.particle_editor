@@ -1,0 +1,145 @@
+
+particle_system = {
+	CameraDistance = 3
+	clouds = [
+		{
+			controllers = [
+				{
+					AdditiveBlend = false
+					DepthFadeDistance = 0
+					DiffuseMap = "content/effect/fx_t_hitmark00_v2"
+					DissolveUsingVertexAlpha = false
+					Glossiness = 0
+					LitParticles = false
+					MaterialMap = null
+					Name = "Material: Billboard"
+					NormalMap = null
+					OneBitAlpha = false
+					SpecularMask = 0
+					type = "billboard_material"
+					UVAnimationX = 0.1
+					UVAnimationY = 0.1
+				}
+				{
+					CustomHeight = false
+					InitialMax = 0.1
+					InitialMaxHeight = 0.1
+					InitialMin = 0.1
+					InitialMinHeight = 0.1
+					Name = "Size"
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					ScaleHeight = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "size"
+					UseSystemLifetime = false
+					UseSystemLifetimeHeight = false
+				}
+				{
+					Gradient = [
+						[
+							0.5
+							[
+								255
+								255
+								255
+							]
+						]
+					]
+					LuminanceMax = 1
+					LuminanceMin = 1
+					Name = "Color"
+					Opacity = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "color_controller"
+				}
+				{
+					MaxX = 1
+					MaxY = 1
+					MaxZ = 1
+					MinX = -1
+					MinY = -1
+					MinZ = -1
+					Name = "Velocity: Box"
+					type = "velocity_box"
+				}
+				{
+					Name = "Emitter: Rate"
+					RateMax = 10
+					RateMin = 10
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "rate_emitter"
+				}
+				{
+					MaxSpin = 180
+					MinSpin = -180
+					Name = "Rotation: Spin"
+					Scale = [
+						[
+							0
+							1
+						]
+						[
+							1
+							1
+						]
+					]
+					type = "rotation_spin"
+				}
+			]
+			Id = "56915ce5-b9e4-4d98-b363-cb6a5111ee10"
+			max_particle_life = 1
+			min_particle_life = 1
+			Mute = false
+			name = "System 1"
+			OffsetX = 0
+			OffsetY = 0
+			OffsetZ = 0
+			Spin = 0
+			Tilt = 0
+			total = 10
+		}
+	]
+	Level = "core/editor_slave/levels/animation_preview"
+	life_time = 10000000000
+	ShowRuler = true
+	SpawnHeight = 1
+	UseRandomSeed = false
+	Variables = {
+		Variables = [
+		]
+	}
+}

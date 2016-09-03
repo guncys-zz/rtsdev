@@ -327,38 +327,11 @@ shader = {
 		}
 		{
 			destination = {
-				connector_id = "7bc3f92e-1302-40b5-9aea-723e5a7b6b94"
-				instance_id = "fab8e27a-f652-4ba5-ab5e-8dbdf8222be2"
-			}
-			source = {
-				instance_id = "3aa35dab-cd25-4d78-8ace-723e20f13e75"
-			}
-		}
-		{
-			destination = {
-				connector_id = "1227923c-0ef1-4823-b673-301cc9a5fc69"
-				instance_id = "85a92412-1472-461d-a3e8-a82d49032084"
-			}
-			source = {
-				instance_id = "fab8e27a-f652-4ba5-ab5e-8dbdf8222be2"
-			}
-		}
-		{
-			destination = {
 				connector_id = "0e627d0f-2503-4925-9811-d44aca00e49c"
 				instance_id = "85a92412-1472-461d-a3e8-a82d49032084"
 			}
 			source = {
 				instance_id = "4490e31f-1427-4fd4-8bf2-1adad285227d"
-			}
-		}
-		{
-			destination = {
-				connector_id = "1227923c-0ef1-4823-b673-301cc9a5fc69"
-				instance_id = "181e286b-7f37-4e55-8c79-dbc5053363f5"
-			}
-			source = {
-				instance_id = "fab8e27a-f652-4ba5-ab5e-8dbdf8222be2"
 			}
 		}
 		{
@@ -390,33 +363,6 @@ shader = {
 		}
 		{
 			destination = {
-				connector_id = "f72597c4-7487-419a-affb-ef690e6582e1"
-				instance_id = "4e9ecf63-d2fb-4849-9fa7-e811608d480d"
-			}
-			source = {
-				instance_id = "181e286b-7f37-4e55-8c79-dbc5053363f5"
-			}
-		}
-		{
-			destination = {
-				connector_id = "cff85d3c-d5da-4ffc-ad20-f3872809ac4f"
-				instance_id = "b7683c89-bfed-4fe2-b50c-b50818a8752e"
-			}
-			source = {
-				instance_id = "4e9ecf63-d2fb-4849-9fa7-e811608d480d"
-			}
-		}
-		{
-			destination = {
-				connector_id = "242d1648-a626-445b-9534-bccec094112f"
-				instance_id = "fdf1954a-e99c-4d15-9d35-7ee88552f912"
-			}
-			source = {
-				instance_id = "b7683c89-bfed-4fe2-b50c-b50818a8752e"
-			}
-		}
-		{
-			destination = {
 				connector_id = "242d1648-a626-445b-9534-bccec094112f"
 				instance_id = "6361bc65-044a-41f3-b73d-f31c007465ac"
 			}
@@ -431,6 +377,60 @@ shader = {
 			}
 			source = {
 				instance_id = "6361bc65-044a-41f3-b73d-f31c007465ac"
+			}
+		}
+		{
+			destination = {
+				connector_id = "1227923c-0ef1-4823-b673-301cc9a5fc69"
+				instance_id = "181e286b-7f37-4e55-8c79-dbc5053363f5"
+			}
+			source = {
+				instance_id = "3aa35dab-cd25-4d78-8ace-723e20f13e75"
+			}
+		}
+		{
+			destination = {
+				connector_id = "1227923c-0ef1-4823-b673-301cc9a5fc69"
+				instance_id = "85a92412-1472-461d-a3e8-a82d49032084"
+			}
+			source = {
+				instance_id = "3aa35dab-cd25-4d78-8ace-723e20f13e75"
+			}
+		}
+		{
+			destination = {
+				connector_id = "c5823c75-4ae5-4c71-b070-315fa4d03e8e"
+				instance_id = "b92a2b19-bd95-4761-a491-efc350cd631f"
+			}
+			source = {
+				instance_id = "181e286b-7f37-4e55-8c79-dbc5053363f5"
+			}
+		}
+		{
+			destination = {
+				connector_id = "f72597c4-7487-419a-affb-ef690e6582e1"
+				instance_id = "4e9ecf63-d2fb-4849-9fa7-e811608d480d"
+			}
+			source = {
+				instance_id = "b92a2b19-bd95-4761-a491-efc350cd631f"
+			}
+		}
+		{
+			destination = {
+				connector_id = "f72597c4-7487-419a-affb-df690e6582e1"
+				instance_id = "257f792c-8cc0-45de-8ab0-753dc3bf452e"
+			}
+			source = {
+				instance_id = "4e9ecf63-d2fb-4849-9fa7-e811608d480d"
+			}
+		}
+		{
+			destination = {
+				connector_id = "242d1648-a626-445b-9534-bccec094112f"
+				instance_id = "fdf1954a-e99c-4d15-9d35-7ee88552f912"
+			}
+			source = {
+				instance_id = "257f792c-8cc0-45de-8ab0-753dc3bf452e"
 			}
 		}
 	]
@@ -508,29 +508,11 @@ shader = {
 			]
 		}
 		{
-			connector_id = "0e627d0f-2503-4925-9811-d44aca00e49c"
-			id = "0d915b6c-baa3-4003-900c-c74facb9afaa"
-			instance_id = "181e286b-7f37-4e55-8c79-dbc5053363f5"
-			value = [
-				0
-				1
-				0
-			]
-		}
-		{
 			connector_id = "0806db0d-2c4a-43ca-99cc-e5a2f036a8e8"
 			id = "229cb6af-723a-4975-95dd-5ac68112e358"
 			instance_id = "4e9ecf63-d2fb-4849-9fa7-e811608d480d"
 			value = [
 				0
-			]
-		}
-		{
-			connector_id = "d5e375bc-daa4-4464-8448-14bf08d97f0e"
-			id = "3b547474-d280-4846-9c8a-3bae70ce0f17"
-			instance_id = "b7683c89-bfed-4fe2-b50c-b50818a8752e"
-			value = [
-				1
 			]
 		}
 		{
@@ -551,6 +533,32 @@ shader = {
 				0.07
 			]
 		}
+		{
+			connector_id = "242d1648-a626-445b-9534-bccec094112f"
+			id = "21583047-0166-4457-a742-9f9d4abdf40e"
+			instance_id = "b92a2b19-bd95-4761-a491-efc350cd631f"
+			value = [
+				-1
+			]
+		}
+		{
+			connector_id = "0806db0d-2c4a-43ca-99cc-f5a2f036a8e8"
+			id = "823ede0d-3578-4fa5-94e7-57d9043e3147"
+			instance_id = "257f792c-8cc0-45de-8ab0-753dc3bf452e"
+			value = [
+				0.3
+			]
+		}
+		{
+			connector_id = "0e627d0f-2503-4925-9811-d44aca00e49c"
+			id = "9b889225-7fdc-4448-a485-a9c2ba9bed20"
+			instance_id = "181e286b-7f37-4e55-8c79-dbc5053363f5"
+			value = [
+				0
+				0
+				-1
+			]
+		}
 	]
 	groups = [
 	]
@@ -567,8 +575,8 @@ shader = {
 				"9a84282b-f1a2-46d4-9fc4-5a76fc9b30dd"
 			]
 			position = [
-				1020
-				240
+				620
+				-480
 			]
 			samplers = {
 			}
@@ -587,8 +595,8 @@ shader = {
 				"9a84282b-f1a2-46d4-9fc4-5a76fc9b30dd"
 			]
 			position = [
-				740
-				780
+				340
+				60
 			]
 			samplers = {
 			}
@@ -607,8 +615,8 @@ shader = {
 				"9a84282b-f1a2-46d4-9fc4-5a76fc9b30dd"
 			]
 			position = [
-				1020
-				-340
+				620
+				-1060
 			]
 			samplers = {
 			}
@@ -627,8 +635,8 @@ shader = {
 				"9a84282b-f1a2-46d4-9fc4-5a76fc9b30dd"
 			]
 			position = [
-				1020
-				-60
+				620
+				-780
 			]
 			samplers = {
 			}
@@ -647,8 +655,8 @@ shader = {
 				"9a84282b-f1a2-46d4-9fc4-5a76fc9b30dd"
 			]
 			position = [
-				1020
-				540
+				620
+				-180
 			]
 			samplers = {
 			}
@@ -668,8 +676,8 @@ shader = {
 				"b2c7c0d2-beff-4b1a-a9d4-068a507625a2"
 			]
 			position = [
-				1360
-				260
+				980
+				620
 			]
 			samplers = {
 			}
@@ -687,8 +695,8 @@ shader = {
 				"9a84282b-f1a2-46d4-9fc4-5a76fc9b30dd"
 			]
 			position = [
-				1020
-				1100
+				620
+				380
 			]
 			samplers = {
 			}
@@ -706,8 +714,8 @@ shader = {
 			options = [
 			]
 			position = [
-				40
-				440
+				0
+				260
 			]
 			samplers = {
 			}
@@ -727,8 +735,8 @@ shader = {
 				"e94e53e6-49b6-4194-a747-8f064a5932e0"
 			]
 			position = [
-				700
-				540
+				300
+				-180
 			]
 			samplers = {
 				texture_map = {
@@ -756,8 +764,8 @@ shader = {
 				"1e067464-12d8-4826-9b72-cfd5765003e3"
 			]
 			position = [
-				420
-				780
+				20
+				60
 			]
 			samplers = {
 				texture_map = {
@@ -782,8 +790,8 @@ shader = {
 			options = [
 			]
 			position = [
-				1020
-				840
+				620
+				120
 			]
 			samplers = {
 			}
@@ -813,8 +821,8 @@ shader = {
 			options = [
 			]
 			position = [
-				700
-				-400
+				300
+				-1120
 			]
 			samplers = {
 			}
@@ -835,8 +843,8 @@ shader = {
 				"fb3f709b-a54a-4e93-ac9f-e9fc76fb8bcd"
 			]
 			position = [
-				700
-				-340
+				300
+				-1060
 			]
 			samplers = {
 				texture_map = {
@@ -890,8 +898,8 @@ shader = {
 			options = [
 			]
 			position = [
-				700
-				-240
+				300
+				-960
 			]
 			samplers = {
 			}
@@ -922,8 +930,8 @@ shader = {
 			options = [
 			]
 			position = [
-				700
-				-120
+				300
+				-840
 			]
 			samplers = {
 			}
@@ -941,8 +949,8 @@ shader = {
 			options = [
 			]
 			position = [
-				680
-				60
+				280
+				-660
 			]
 			samplers = {
 			}
@@ -959,8 +967,8 @@ shader = {
 			options = [
 			]
 			position = [
-				740
-				-60
+				340
+				-780
 			]
 			samplers = {
 			}
@@ -980,8 +988,8 @@ shader = {
 				"90e20826-8689-42fa-8e24-f484ec64c5c3"
 			]
 			position = [
-				440
-				-60
+				40
+				-780
 			]
 			samplers = {
 				texture_map = {
@@ -1009,8 +1017,8 @@ shader = {
 				"f669a3a6-0376-4187-840e-80000e2939d5"
 			]
 			position = [
-				700
-				240
+				300
+				-480
 			]
 			samplers = {
 				texture_map = {
@@ -1048,8 +1056,8 @@ shader = {
 			options = [
 			]
 			position = [
-				700
-				180
+				300
+				-540
 			]
 			samplers = {
 			}
@@ -1079,8 +1087,8 @@ shader = {
 			options = [
 			]
 			position = [
-				700
-				340
+				300
+				-380
 			]
 			samplers = {
 			}
@@ -1111,8 +1119,8 @@ shader = {
 			options = [
 			]
 			position = [
-				700
-				480
+				300
+				-240
 			]
 			samplers = {
 			}
@@ -1142,8 +1150,8 @@ shader = {
 			options = [
 			]
 			position = [
-				700
-				640
+				300
+				-80
 			]
 			samplers = {
 			}
@@ -1190,8 +1198,8 @@ shader = {
 			options = [
 			]
 			position = [
-				420
-				880
+				20
+				160
 			]
 			samplers = {
 			}
@@ -1222,8 +1230,8 @@ shader = {
 			options = [
 			]
 			position = [
-				420
-				720
+				20
+				0
 			]
 			samplers = {
 			}
@@ -1254,8 +1262,8 @@ shader = {
 			options = [
 			]
 			position = [
-				700
-				1100
+				300
+				380
 			]
 			samplers = {
 			}
@@ -1276,8 +1284,8 @@ shader = {
 				"e94e53e6-49b6-4194-a747-8f064a5932e0"
 			]
 			position = [
-				700
-				1160
+				300
+				440
 			]
 			samplers = {
 				texture_map = {
@@ -1314,8 +1322,8 @@ shader = {
 			options = [
 			]
 			position = [
-				740
-				920
+				340
+				200
 			]
 			samplers = {
 			}
@@ -1333,8 +1341,8 @@ shader = {
 			options = [
 			]
 			position = [
-				0
-				680
+				480
+				760
 			]
 			samplers = {
 			}
@@ -1351,8 +1359,8 @@ shader = {
 			options = [
 			]
 			position = [
-				-1140
-				520
+				-540
+				660
 			]
 			samplers = {
 			}
@@ -1369,8 +1377,8 @@ shader = {
 			options = [
 			]
 			position = [
-				-940
-				580
+				-540
+				740
 			]
 			samplers = {
 			}
@@ -1387,8 +1395,8 @@ shader = {
 			options = [
 			]
 			position = [
-				-1140
-				600
+				-720
+				720
 			]
 			samplers = {
 			}
@@ -1405,8 +1413,8 @@ shader = {
 			options = [
 			]
 			position = [
-				-740
-				540
+				-260
+				680
 			]
 			samplers = {
 			}
@@ -1419,30 +1427,12 @@ shader = {
 			]
 			export = {
 			}
-			id = "fab8e27a-f652-4ba5-ab5e-8dbdf8222be2"
-			options = [
-			]
-			position = [
-				-940
-				500
-			]
-			samplers = {
-			}
-			type = "core/shader_nodes/normalize"
-		}
-		{
-			content_size = [
-				160
-				0
-			]
-			export = {
-			}
 			id = "d69a1b9a-e848-420e-a0f9-b3c4d3b41ef3"
 			options = [
 			]
 			position = [
-				-560
-				440
+				-80
+				680
 			]
 			samplers = {
 			}
@@ -1459,8 +1449,8 @@ shader = {
 			options = [
 			]
 			position = [
-				-740
-				680
+				-260
+				820
 			]
 			samplers = {
 			}
@@ -1477,8 +1467,8 @@ shader = {
 			options = [
 			]
 			position = [
-				-400
-				600
+				100
+				680
 			]
 			samplers = {
 			}
@@ -1495,8 +1485,8 @@ shader = {
 			options = [
 			]
 			position = [
-				-560
-				680
+				100
+				820
 			]
 			samplers = {
 			}
@@ -1509,30 +1499,12 @@ shader = {
 			]
 			export = {
 			}
-			id = "b7683c89-bfed-4fe2-b50c-b50818a8752e"
-			options = [
-			]
-			position = [
-				-200
-				700
-			]
-			samplers = {
-			}
-			type = "core/shader_nodes/subtract"
-		}
-		{
-			content_size = [
-				160
-				0
-			]
-			export = {
-			}
 			id = "a69b76cb-c38f-46be-976c-a6006343bcca"
 			options = [
 			]
 			position = [
-				-200
-				580
+				280
+				680
 			]
 			samplers = {
 			}
@@ -1549,8 +1521,8 @@ shader = {
 			options = [
 			]
 			position = [
-				-140
-				440
+				560
+				620
 			]
 			samplers = {
 			}
@@ -1567,12 +1539,48 @@ shader = {
 			options = [
 			]
 			position = [
-				300
-				620
+				720
+				760
 			]
 			samplers = {
 			}
 			type = "core/shader_nodes/mul"
+		}
+		{
+			content_size = [
+				160
+				0
+			]
+			export = {
+			}
+			id = "b92a2b19-bd95-4761-a491-efc350cd631f"
+			options = [
+			]
+			position = [
+				-80
+				820
+			]
+			samplers = {
+			}
+			type = "core/shader_nodes/mul"
+		}
+		{
+			content_size = [
+				160
+				0
+			]
+			export = {
+			}
+			id = "257f792c-8cc0-45de-8ab0-753dc3bf452e"
+			options = [
+			]
+			position = [
+				280
+				820
+			]
+			samplers = {
+			}
+			type = "core/shader_nodes/add"
 		}
 	]
 	version = 3

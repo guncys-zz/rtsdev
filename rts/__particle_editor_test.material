@@ -2,7 +2,7 @@
 circle = {
 	shader = "billboard:BLEND_ADDITIVE:DIFFUSE_MAP:ROTATION:VERTEX_COLOR"
 	textures = {
-		diffuse_map = "content/effect/fx_t_sw00"
+		diffuse_map = "content/effect/fx_t_sw00_v2"
 	}
 	variables = {
 		animation_frame_size = {
@@ -25,7 +25,7 @@ circle = {
 Flash = {
 	shader = "billboard:BLEND_ADDITIVE:DIFFUSE_MAP:VERTEX_COLOR"
 	textures = {
-		diffuse_map = "content/effect/fx_t_flash00"
+		diffuse_map = "content/effect/fx_t_flash00_v2"
 	}
 	variables = {
 		animation_frame_size = {
@@ -48,7 +48,7 @@ Flash = {
 particle01 = {
 	shader = "billboard:DIFFUSE_MAP:VERTEX_COLOR"
 	textures = {
-		diffuse_map = "content/effect/fx_t_circle00"
+		diffuse_map = "content/effect/fx_t_circle00_v2"
 	}
 	variables = {
 		animation_frame_size = {
@@ -71,7 +71,7 @@ particle01 = {
 shock = {
 	shader = "billboard:DIFFUSE_MAP:ROTATION:VERTEX_COLOR"
 	textures = {
-		diffuse_map = "content/effect/fx_t_hitmark00"
+		diffuse_map = "content/effect/fx_t_hitmark00_v2"
 	}
 	variables = {
 		animation_frame_size = {
@@ -94,7 +94,7 @@ shock = {
 star = {
 	shader = "billboard:DIFFUSE_MAP:ROTATION:VERTEX_COLOR"
 	textures = {
-		diffuse_map = "content/effect/fx_t_star00"
+		diffuse_map = "content/effect/fx_t_star00_v2"
 	}
 	variables = {
 		animation_frame_size = {
